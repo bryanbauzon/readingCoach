@@ -107,8 +107,8 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
      */
     private void loadNavHeader() {
         // name, website
-        txtName.setText("Ravi Tamada");
-        txtWebsite.setText("www.androidhive.info");
+        txtName.setText("CAOPSTONE PROJECT");
+        txtWebsite.setText("Special Project");
 
 //        // loading header background image
 //        Glide.with(this).load(urlNavHeaderBg)
