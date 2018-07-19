@@ -24,13 +24,15 @@ import android.widget.Toast;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.fragment.AboutFragment;
 import sebastian.devmonkey.capstoneproject.fragment.BookmarksFragment;
+import sebastian.devmonkey.capstoneproject.fragment.HomeFragment;
 import sebastian.devmonkey.capstoneproject.fragment.JournalFragment;
 import sebastian.devmonkey.capstoneproject.fragment.ReadingPlansFragment;
 import sebastian.devmonkey.capstoneproject.fragment.SettingsFragment;
 
 
 public class MainActivity extends AppCompatActivity implements AboutFragment.OnFragmentInteractionListener, BookmarksFragment.OnFragmentInteractionListener
-, JournalFragment.OnFragmentInteractionListener, ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener{
+, JournalFragment.OnFragmentInteractionListener, ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener
+, HomeFragment.OnFragmentInteractionListener{
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -39,21 +41,18 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
     private TextView txtName, txtWebsite;
     private Toolbar toolbar;
 
-    // urls to load navigation header background image
-    // and profile image
-    private static final String urlNavHeaderBg = "https://api.androidhive.info/images/nav-menu-header-bg.jpg";
-    private static final String urlProfileImg = "https://lh3.googleusercontent.com/eCtE_G34M9ygdkmOpYvCag1vBARCmZwnVS6rS5t4JLzJ6QgQSBquM0nuTsCpLhYbKljoyS-txg";
 
     // index to identify current nav menu item
     public static int navItemIndex = 0;
 
     // tags used to attach the fragments
+    private static final String TAG_HOME = "home";
     private static final String TAG_READING_PLANS = "reading_plans";
     private static final String TAG_BOOKMARKS = "bookmarks";
     private static final String TAG_JOURNAL = "journal";
     private static final String TAG_ABOUT = "about";
     private static final String TAG_SETTINGS = "settings";
-    public static String CURRENT_TAG = TAG_READING_PLANS;
+    public static String CURRENT_TAG = TAG_HOME;
 
     // toolbar titles respected to selected nav menu item
     private String[] activityTitles;
@@ -95,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
 
         if (savedInstanceState == null) {
             navItemIndex = 0;
-            CURRENT_TAG = TAG_READING_PLANS;
+            CURRENT_TAG = TAG_HOME;
             loadHomeFragment();
         }
     }
@@ -107,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
      */
     private void loadNavHeader() {
         // name, website
-        txtName.setText("CAOPSTONE PROJECT");
+        txtName.setText("CAPSTONE PROJECT");
         txtWebsite.setText("Special Project");
 
 //        // loading header background image
@@ -183,24 +182,30 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
 
     private Fragment getHomeFragment() {
         switch (navItemIndex) {
+
             case 0:
+                // home
+                HomeFragment homeFragment = new HomeFragment();
+                return homeFragment;
+
+            case 1:
                 // home
                 ReadingPlansFragment readingPlansFragment = new ReadingPlansFragment();
                 return readingPlansFragment;
-            case 1:
+            case 2:
                 // bookmarks
                 BookmarksFragment bookmarksFragment = new BookmarksFragment();
                 return bookmarksFragment;
-            case 2:
+            case 3:
                 // movies fragment
                 JournalFragment journalFragment = new JournalFragment();
                 return journalFragment;
-            case 3:
+            case 4:
                 // notifications fragment
                 AboutFragment aboutFragment = new AboutFragment();
                 return aboutFragment;
 
-            case 4:
+            case 5:
                 // settings fragment
                 SettingsFragment settingsFragment = new SettingsFragment();
                 return settingsFragment;
@@ -228,24 +233,31 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                 //Check to see which item was being clicked and perform appropriate action
                 switch (menuItem.getItemId()) {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
-                    case R.id.reading_plans:
+
+                    case R.id.home:
                         navItemIndex = 0;
+                        CURRENT_TAG = TAG_HOME;
+                        break;
+
+                    case R.id.reading_plans:
+                        navItemIndex = 1;
                         CURRENT_TAG = TAG_READING_PLANS;
                         break;
+
                     case R.id.bookmarks:
-                        navItemIndex = 1;
+                        navItemIndex = 2;
                         CURRENT_TAG = TAG_BOOKMARKS;
                         break;
                     case R.id.journal:
-                        navItemIndex = 2;
+                        navItemIndex = 3;
                         CURRENT_TAG = TAG_JOURNAL;
                         break;
                     case R.id.about:
-                        navItemIndex = 3;
+                        navItemIndex = 4;
                         CURRENT_TAG = TAG_ABOUT;
                         break;
                     case R.id.nav_settings:
-                        navItemIndex = 4;
+                        navItemIndex = 5;
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
 //                    case R.id.nav_about_us:
@@ -313,7 +325,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
             // rather than home
             if (navItemIndex != 0) {
                 navItemIndex = 0;
-                CURRENT_TAG = TAG_READING_PLANS;
+                CURRENT_TAG =  TAG_HOME;
                 loadHomeFragment();
                 return;
             }
