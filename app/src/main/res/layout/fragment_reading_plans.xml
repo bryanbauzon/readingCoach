@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ReadingPlansFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/beginnerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_margin="10dp"
+            android:text="BEGINNER" />
+
+
+        <Button
+            android:id="@+id/intermediatebtn"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_margin="10dp"
+            android:text="Intermediate" />
+
+
+        <Button
+            android:id="@+id/hardcorebtn"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_margin="10dp"
+            android:text="Hard Core" />
+    </LinearLayout>
+
+
+</FrameLayout>
