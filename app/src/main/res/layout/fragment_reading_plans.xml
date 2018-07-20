@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="128dp"
             android:layout_margin="10dp"
-            android:text="BEGINNER" />
+            android:text="Poems" />
 
 
         <Button
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="128dp"
             android:layout_margin="10dp"
-            android:text="Intermediate" />
+            android:text="Story" />
 
 
         <Button
@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="128dp"
             android:layout_margin="10dp"
-            android:text="Hard Core" />
+            android:text="Flash Cards" />
     </LinearLayout>
 
 
