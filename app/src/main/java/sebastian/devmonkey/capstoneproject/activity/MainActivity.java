@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -14,25 +12,22 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.fragment.AboutFragment;
-import sebastian.devmonkey.capstoneproject.fragment.BookmarksFragment;
-import sebastian.devmonkey.capstoneproject.fragment.HomeFragment;
-import sebastian.devmonkey.capstoneproject.fragment.JournalFragment;
-import sebastian.devmonkey.capstoneproject.fragment.ReadingPlansFragment;
-import sebastian.devmonkey.capstoneproject.fragment.SettingsFragment;
-import sebastian.devmonkey.capstoneproject.fragment.TerminologiesFragment;
+import sebastian.devmonkey.capstoneproject.fragments.AboutFragment;
+import sebastian.devmonkey.capstoneproject.fragments.BookmarksFragment;
+import sebastian.devmonkey.capstoneproject.fragments.HomeFragment;
+import sebastian.devmonkey.capstoneproject.fragments.ReadingPlansFragment;
+import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
+import sebastian.devmonkey.capstoneproject.fragments.TerminologiesFragment;
 
 
 public class MainActivity extends AppCompatActivity implements AboutFragment.OnFragmentInteractionListener, BookmarksFragment.OnFragmentInteractionListener
-, JournalFragment.OnFragmentInteractionListener, ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener
+, ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener
 , HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener{
 
     private NavigationView navigationView;
@@ -50,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
     private static final String TAG_HOME = "home";
     private static final String TAG_READING_PLANS = "reading_plans";
     private static final String TAG_BOOKMARKS = "bookmarks";
-    private static final String TAG_JOURNAL = "journal";
+    //private static final String TAG_JOURNAL = "journal";
     private static final String TAG_ABOUT = "about";
     private static final String TAG_TERMINOLOGIES = "terminologies";
     private static final String TAG_SETTINGS = "settings";
@@ -198,10 +193,10 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                 // bookmarks
                 BookmarksFragment bookmarksFragment = new BookmarksFragment();
                 return bookmarksFragment;
-            case 3:
-                // journal fragment
-                JournalFragment journalFragment = new JournalFragment();
-                return journalFragment;
+//            case 3:
+//                // journal fragment
+//                JournalFragment journalFragment = new JournalFragment();
+//                return journalFragment;
             case 4:
                 // about fragment
                 AboutFragment aboutFragment = new AboutFragment();
@@ -257,9 +252,9 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                         CURRENT_TAG = TAG_BOOKMARKS;
                         break;
                     case R.id.journal:
-                        navItemIndex = 3;
-                        CURRENT_TAG = TAG_JOURNAL;
-                        break;
+                        startActivity(new Intent(MainActivity.this, Journal.class));
+                        drawer.closeDrawers();
+                        return true;
                     case R.id.about:
                         navItemIndex = 4;
                         CURRENT_TAG = TAG_ABOUT;

@@ -6,7 +6,6 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
@@ -15,7 +14,7 @@
 
     <style name="AppTheme.PopupOverlay" parent="AppTheme.PopupOverlay" tools:ignore="ResourceCycle">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">#53356b</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
@@ -29,6 +28,16 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+    </style>
+
+
+
+    <style name="HoloLight" parent="Theme.AppCompat.Light.DarkActionBar" tools:ignore="ResourceCycle">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+\
 
     </style>
 

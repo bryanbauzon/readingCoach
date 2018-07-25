@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject.fragment;
+package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
 import android.net.Uri;
