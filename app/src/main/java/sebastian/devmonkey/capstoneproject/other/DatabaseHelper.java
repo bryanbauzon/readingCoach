@@ -2,6 +2,7 @@ package sebastian.devmonkey.capstoneproject.other;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -50,4 +51,18 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
         return result != -1; //if result = -1 data doesn't insert
     }
+
+
+    //create method to view data
+    public Cursor viewData() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT *  FROM " + DB_TABLE;
+        Cursor cursor = db.rawQuery(query, null);
+
+        return cursor;
+
+    }
+
+
+
 }

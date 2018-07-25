@@ -50,4 +50,11 @@ public class AddJournal extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(this, Journal.class));
+
+    }
+
 }
