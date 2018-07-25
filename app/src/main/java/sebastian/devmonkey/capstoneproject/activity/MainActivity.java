@@ -251,10 +251,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                         navItemIndex = 2;
                         CURRENT_TAG = TAG_BOOKMARKS;
                         break;
-                    case R.id.journal:
-                        startActivity(new Intent(MainActivity.this, Journal.class));
-                        drawer.closeDrawers();
-                        return true;
+
                     case R.id.about:
                         navItemIndex = 4;
                         CURRENT_TAG = TAG_ABOUT;
@@ -269,6 +266,13 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                         navItemIndex = 6;
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
+
+                    case R.id.journal:
+                        startActivity(new Intent(MainActivity.this, Journal.class));
+                        drawer.closeDrawers();
+                        return true;
+
+
 //                    case R.id.nav_about_us:
 //                        // launch new intent instead of loading fragment
 //                        startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
