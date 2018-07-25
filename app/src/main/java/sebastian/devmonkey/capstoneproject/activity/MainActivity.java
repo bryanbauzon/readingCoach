@@ -28,11 +28,12 @@ import sebastian.devmonkey.capstoneproject.fragment.HomeFragment;
 import sebastian.devmonkey.capstoneproject.fragment.JournalFragment;
 import sebastian.devmonkey.capstoneproject.fragment.ReadingPlansFragment;
 import sebastian.devmonkey.capstoneproject.fragment.SettingsFragment;
+import sebastian.devmonkey.capstoneproject.fragment.TerminologiesFragment;
 
 
 public class MainActivity extends AppCompatActivity implements AboutFragment.OnFragmentInteractionListener, BookmarksFragment.OnFragmentInteractionListener
 , JournalFragment.OnFragmentInteractionListener, ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener
-, HomeFragment.OnFragmentInteractionListener{
+, HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener{
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
     private static final String TAG_BOOKMARKS = "bookmarks";
     private static final String TAG_JOURNAL = "journal";
     private static final String TAG_ABOUT = "about";
+    private static final String TAG_TERMINOLOGIES = "terminologies";
     private static final String TAG_SETTINGS = "settings";
     public static String CURRENT_TAG = TAG_HOME;
 
@@ -189,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                 return homeFragment;
 
             case 1:
-                // home
+                // reading fragments
                 ReadingPlansFragment readingPlansFragment = new ReadingPlansFragment();
                 return readingPlansFragment;
             case 2:
@@ -197,15 +199,21 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                 BookmarksFragment bookmarksFragment = new BookmarksFragment();
                 return bookmarksFragment;
             case 3:
-                // movies fragment
+                // journal fragment
                 JournalFragment journalFragment = new JournalFragment();
                 return journalFragment;
             case 4:
-                // notifications fragment
+                // about fragment
                 AboutFragment aboutFragment = new AboutFragment();
                 return aboutFragment;
 
             case 5:
+                // terminologiews fragment
+                TerminologiesFragment terminologiesFragment = new TerminologiesFragment();
+                return terminologiesFragment;
+
+
+            case 6:
                 // settings fragment
                 SettingsFragment settingsFragment = new SettingsFragment();
                 return settingsFragment;
@@ -256,8 +264,14 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                         navItemIndex = 4;
                         CURRENT_TAG = TAG_ABOUT;
                         break;
-                    case R.id.nav_settings:
+
+                    case R.id.terminologies:
                         navItemIndex = 5;
+                        CURRENT_TAG = TAG_TERMINOLOGIES;
+                        break;
+
+                    case R.id.nav_settings:
+                        navItemIndex = 6;
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
 //                    case R.id.nav_about_us:
