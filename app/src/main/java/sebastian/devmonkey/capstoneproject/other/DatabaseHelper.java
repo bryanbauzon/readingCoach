@@ -57,12 +57,24 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     public Cursor viewData() {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT *  FROM " + DB_TABLE;
-        Cursor cursor = db.rawQuery(query, null);
 
-        return cursor;
+        return db.rawQuery(query, null);
 
     }
 
 
+    public boolean updateData(String id ,String title, String content) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(ID, id);
+        contentValues.put(TITLE, title);
+        contentValues.put(CONTENT, content);
+        db.update(DB_TABLE, contentValues, "ID = ?",new String[] { id });
+        return true;
+    }
 
+    public Integer deleteData (String id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(DB_TABLE, "ID = ?",new String[] {id});
+    }
 }

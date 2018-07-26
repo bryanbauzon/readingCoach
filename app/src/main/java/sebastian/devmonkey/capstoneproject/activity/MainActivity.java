@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.Journal.Journal;
 import sebastian.devmonkey.capstoneproject.fragments.AboutFragment;
 import sebastian.devmonkey.capstoneproject.fragments.BookmarksFragment;
 import sebastian.devmonkey.capstoneproject.fragments.HomeFragment;

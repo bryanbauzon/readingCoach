@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject.activity;
+package sebastian.devmonkey.capstoneproject.activity.Journal;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

@@ -1,6 +1,5 @@
-package sebastian.devmonkey.capstoneproject.activity;
+package sebastian.devmonkey.capstoneproject.activity.Journal;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +7,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -17,6 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
 public class Journal extends AppCompatActivity {
@@ -24,6 +23,10 @@ public class Journal extends AppCompatActivity {
     DatabaseHelper db;
     ArrayList<String> listItem;
     ArrayAdapter adapter;
+
+
+    ArrayList<String> id;
+    ArrayList<String> content;
 
     ListView listView;
 
@@ -37,6 +40,8 @@ public class Journal extends AppCompatActivity {
 
         db = new DatabaseHelper(this);
         listItem = new ArrayList<>();
+        id = new ArrayList<>();
+        content = new ArrayList<>();
         listView = findViewById(R.id.listview);
         
         viewData();
@@ -45,13 +50,26 @@ public class Journal extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String title = listView.getItemAtPosition(i).toString();
-                Toast.makeText(getApplicationContext(), title, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), title, Toast.LENGTH_SHORT).show();
+
+//                Toast.makeText(getApplicationContext(), id.get(i), Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(getApplicationContext(), UpdateDeleteJournal.class);
+                //putting data to intent
+                intent.putExtra("ID", id.get(i));
+                intent.putExtra("TITLE", title);
+                intent.putExtra("CONTENT", content.get(i));
+                startActivity(intent);
+                finish();
+
 
             }
         });
 
     }
 
+
+    //getting data in database to display in listview
     private void viewData() {
         Cursor cursor = db.viewData();
 
@@ -60,9 +78,17 @@ public class Journal extends AppCompatActivity {
 
         } else {
             while (cursor.moveToNext()) {
-                listItem.add(cursor.getString(1)); // index 1 is the name, index 0 is id
-            }
+                //getting id in database to array
+                id.add(cursor.getString(0));
 
+                //getting title in database
+                listItem.add(cursor.getString(1)); // index 1 is the name, index 0 is id
+
+                //getting content
+                content.add(cursor.getString(2));
+
+            }
+            //display title to listview
             adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listItem);
             listView.setAdapter(adapter);
         }
@@ -81,6 +107,7 @@ public class Journal extends AppCompatActivity {
         startActivityForResult(myIntent, 0);
 
 
+
         switch (item.getItemId()) {
             case R.id.add:
                 startActivity(new Intent(this, AddJournal.class));
@@ -91,14 +118,13 @@ public class Journal extends AppCompatActivity {
                 return true;
         }
 
-
-
     }
 
 
     @Override
     public void onBackPressed() {
         startActivity(new Intent(this, MainActivity.class));
+        finish();
 
     }
 

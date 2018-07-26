@@ -4,20 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Journal.AddJournal"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    tools:context=".activity.Journal.UpdateDeleteJournal">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/inputTitle"
+        android:id="@+id/updateTitle"
         android:hint="Title"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/inputContent"
+        android:id="@+id/updateContent"
         android:hint="Content"/>
 
 
@@ -25,10 +24,14 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/save"/>
+        android:text="Update"
+        android:id="@+id/updatebtn"/>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deletebtn"/>
 
 
 
