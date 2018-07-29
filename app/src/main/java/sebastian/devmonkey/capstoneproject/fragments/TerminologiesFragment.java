@@ -4,10 +4,13 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.List;
@@ -31,6 +34,9 @@ public class TerminologiesFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
+    ArrayAdapter<String> listviewAdapter;
 
     private OnFragmentInteractionListener mListener;
 
@@ -76,13 +82,35 @@ public class TerminologiesFragment extends Fragment {
 
         ListView listView = view.findViewById(R.id.listviewTerminologies);
         //get array and display to listview
-        ArrayAdapter<String> listviewAdapter = new ArrayAdapter<>(
+        listviewAdapter = new ArrayAdapter<>(
                 getActivity(),
                 android.R.layout.simple_list_item_1,
                 menuItems
         );
 
         listView.setAdapter(listviewAdapter);
+
+
+
+        //search bar
+        EditText searchbar = view.findViewById(R.id.searcbar);
+
+        searchbar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                listviewAdapter.getFilter().filter(charSequence.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
 
 
 
