@@ -7,6 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.List;
 
 import sebastian.devmonkey.capstoneproject.R;
 
@@ -64,8 +68,26 @@ public class TerminologiesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_terminologies, container, false);
+
+        // array
+        String[] menuItems = {"Row1", "Row2", "Row3"};
+
+        ListView listView = view.findViewById(R.id.listviewTerminologies);
+        //get array and display to listview
+        ArrayAdapter<String> listviewAdapter = new ArrayAdapter<>(
+                getActivity(),
+                android.R.layout.simple_list_item_1,
+                menuItems
+        );
+
+        listView.setAdapter(listviewAdapter);
+
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_terminologies, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
