@@ -1,6 +1,5 @@
 package sebastian.devmonkey.capstoneproject.activity;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,10 +17,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Journal.Journal;
 import sebastian.devmonkey.capstoneproject.fragments.AboutFragment;
 import sebastian.devmonkey.capstoneproject.fragments.BookmarksFragment;
 import sebastian.devmonkey.capstoneproject.fragments.HomeFragment;
+import sebastian.devmonkey.capstoneproject.fragments.JournalFragments;
 import sebastian.devmonkey.capstoneproject.fragments.ReadingPlansFragment;
 import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
 import sebastian.devmonkey.capstoneproject.fragments.TerminologiesFragment;
@@ -29,7 +28,8 @@ import sebastian.devmonkey.capstoneproject.fragments.TerminologiesFragment;
 
 public class MainActivity extends AppCompatActivity implements AboutFragment.OnFragmentInteractionListener, BookmarksFragment.OnFragmentInteractionListener
 , ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener
-, HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener{
+, HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener ,
+JournalFragments.OnFragmentInteractionListener{
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
     private static final String TAG_HOME = "home";
     private static final String TAG_READING_PLANS = "reading_plans";
     private static final String TAG_BOOKMARKS = "bookmarks";
-    //private static final String TAG_JOURNAL = "journal";
+    private static final String TAG_JOURNAL = "journal";
     private static final String TAG_ABOUT = "about";
     private static final String TAG_TERMINOLOGIES = "terminologies";
     private static final String TAG_SETTINGS = "settings";
@@ -194,19 +194,20 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                 // bookmarks
                 BookmarksFragment bookmarksFragment = new BookmarksFragment();
                 return bookmarksFragment;
-//            case 3:
-//                // journal fragment
-//                JournalFragment journalFragment = new JournalFragment();
-//                return journalFragment;
-            case 4:
-                // about fragment
-                AboutFragment aboutFragment = new AboutFragment();
-                return aboutFragment;
+            case 3:
+                // journal fragment
+                JournalFragments journalFragmentsFragment = new JournalFragments();
+                return journalFragmentsFragment;
 
-            case 5:
+            case 4:
                 // terminologiews fragment
                 TerminologiesFragment terminologiesFragment = new TerminologiesFragment();
                 return terminologiesFragment;
+
+            case 5:
+                // about fragment
+                AboutFragment aboutFragment = new AboutFragment();
+                return aboutFragment;
 
 
             case 6:
@@ -253,14 +254,20 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                         CURRENT_TAG = TAG_BOOKMARKS;
                         break;
 
-                    case R.id.about:
-                        navItemIndex = 4;
-                        CURRENT_TAG = TAG_ABOUT;
+                    case R.id.journal:
+                        navItemIndex = 3;
+                        CURRENT_TAG = TAG_JOURNAL;
                         break;
 
+
                     case R.id.terminologies:
-                        navItemIndex = 5;
+                        navItemIndex = 4;
                         CURRENT_TAG = TAG_TERMINOLOGIES;
+                        break;
+
+                    case R.id.about:
+                        navItemIndex = 5;
+                        CURRENT_TAG = TAG_ABOUT;
                         break;
 
                     case R.id.nav_settings:
@@ -268,10 +275,6 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
 
-                    case R.id.journal:
-                        startActivity(new Intent(MainActivity.this, Journal.class));
-                        drawer.closeDrawers();
-                        return true;
 
 
 //                    case R.id.nav_about_us:

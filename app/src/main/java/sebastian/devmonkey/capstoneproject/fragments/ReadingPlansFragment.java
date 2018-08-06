@@ -114,16 +114,16 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.beginnerbtn:
-                Toast.makeText(getActivity(),"Beginner Button Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),"Poem Button Clicked",Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.intermediatebtn:
-                Toast.makeText(getActivity(), "Intermediate Button Clicked", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Story Button Clicked", Toast.LENGTH_LONG).show();
 
                 break;
 
             case R.id.hardcorebtn:
-                Toast.makeText(getActivity(),"Hard Core Button Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),"Flash Card Button Clicked",Toast.LENGTH_SHORT).show();
                 break;
         }
 

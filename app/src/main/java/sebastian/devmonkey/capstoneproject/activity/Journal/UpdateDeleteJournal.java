@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
 public class UpdateDeleteJournal extends AppCompatActivity {
@@ -51,7 +52,7 @@ public class UpdateDeleteJournal extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Successfully updated", Toast.LENGTH_LONG).show();
                     edtTitle.setText("");
                     edtContent.setText("");
-                    startActivity(new Intent(getApplicationContext(), Journal.class));
+//                    startActivity(new Intent(getApplicationContext(), JournalFragments.class));
                     finish();
                 } else {
                     Toast.makeText(getApplicationContext(), "Failed to update", Toast.LENGTH_LONG).show();
@@ -73,7 +74,7 @@ public class UpdateDeleteJournal extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Successfully deleted", Toast.LENGTH_LONG).show();
                     edtTitle.setText("");
                     edtContent.setText("");
-                    startActivity(new Intent(getApplicationContext(), Journal.class));
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     finish();
                 } else {
                     Toast.makeText(getApplicationContext(), "Failed to delete", Toast.LENGTH_LONG).show();
@@ -89,7 +90,7 @@ public class UpdateDeleteJournal extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(this, Journal.class));
+        startActivity(new Intent(this, MainActivity.class));
         finish();
 
     }
