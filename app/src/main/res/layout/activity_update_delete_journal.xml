@@ -21,18 +21,4 @@
 
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Update"
-        android:id="@+id/updatebtn"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        android:id="@+id/deletebtn"/>
-
-
-
 </LinearLayout>

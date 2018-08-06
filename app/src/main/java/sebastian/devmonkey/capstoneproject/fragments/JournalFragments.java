@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,6 +19,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Journal.AddJournal;
@@ -101,7 +104,22 @@ public class JournalFragments extends Fragment {
         content = new ArrayList<>();
         listView = view.findViewById(R.id.listview);
 
-        viewData();
+
+        // Auto update listview
+        final Handler handler = new Handler();
+        Timer timer = new Timer();
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(new Runnable() {
+                    public void run() {
+                        listItem.clear();
+                        viewData();
+                    }
+                });
+            }
+        };
+        timer.schedule(task, 0, 1000);
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -172,12 +190,14 @@ public class JournalFragments extends Fragment {
 
     //getting data in database to display in listview
     private void viewData() {
+
         Cursor cursor = db.viewData();
 
         if (cursor.getCount() == 0) {
             Toast.makeText(getActivity(), "No data to show", Toast.LENGTH_SHORT).show();
 
         } else {
+
             while (cursor.moveToNext()) {
                 //getting id in database to array
                 id.add(cursor.getString(0));
