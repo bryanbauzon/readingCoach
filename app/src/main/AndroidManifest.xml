@@ -20,10 +20,11 @@
         <activity
             android:name=".activity.Journal.AddJournal"
             android:theme="@style/HoloLight" />
-
-        <activity android:name=".activity.Journal.UpdateDeleteJournal"
+        <activity
+            android:name=".activity.Journal.UpdateDeleteJournal"
+            android:theme="@style/HoloLight" />
+        <activity android:name=".activity.Poem.PoemDifficulty"
             android:theme="@style/HoloLight"/>
-
     </application>
 
 </manifest>

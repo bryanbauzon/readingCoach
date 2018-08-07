@@ -39,8 +39,7 @@ public class AddJournal extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Data added", Toast.LENGTH_LONG).show();
                     edtTitle.setText("");
                     edtContent.setText("");
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    finish();
+                    Back();
                 } else {
                     Toast.makeText(getApplicationContext(), "Data not added", Toast.LENGTH_LONG).show();
 
@@ -54,8 +53,21 @@ public class AddJournal extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(this, MainActivity.class));
+        Back();
 
+    }
+
+    private void Back() {
+        int fragments = getSupportFragmentManager().getBackStackEntryCount();
+        if (fragments == 1) {
+            finish();
+        } else {
+            if (getFragmentManager().getBackStackEntryCount() > 1) {
+                getFragmentManager().popBackStack();
+            } else {
+                super.onBackPressed();
+            }
+        }
     }
 
 }

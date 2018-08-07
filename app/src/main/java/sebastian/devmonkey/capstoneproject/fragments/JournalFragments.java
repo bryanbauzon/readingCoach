@@ -105,21 +105,23 @@ public class JournalFragments extends Fragment {
         listView = view.findViewById(R.id.listview);
 
 
-        // Auto update listview
-        final Handler handler = new Handler();
-        Timer timer = new Timer();
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                handler.post(new Runnable() {
-                    public void run() {
-                        listItem.clear();
-                        viewData();
-                    }
-                });
-            }
-        };
-        timer.schedule(task, 0, 1000);
+//        // Auto update listview
+//        final Handler handler = new Handler();
+//        Timer timer = new Timer();
+//        TimerTask task = new TimerTask() {
+//            @Override
+//            public void run() {
+//                handler.post(new Runnable() {
+//                    public void run() {
+//                        listItem.clear();
+//                        viewData();
+//                    }
+//                });
+//            }
+//        };
+//        timer.schedule(task, 0, 1000);
+
+        viewData();
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
