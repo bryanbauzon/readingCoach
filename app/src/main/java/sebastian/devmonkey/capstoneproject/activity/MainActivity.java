@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.fragments.AboutFragment;
@@ -58,6 +59,8 @@ JournalFragments.OnFragmentInteractionListener{
     // flag to load home fragment when user presses back key
     private boolean shouldLoadHomeFragOnBackPress = true;
     private Handler mHandler;
+
+    boolean doubleBackToExitPressedOnce = false;
 
 
     @Override
@@ -330,6 +333,9 @@ JournalFragments.OnFragmentInteractionListener{
 
     @Override
     public void onBackPressed() {
+
+        DoubleClickBack();
+
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawers();
             return;
@@ -348,7 +354,6 @@ JournalFragments.OnFragmentInteractionListener{
             }
         }
 
-        super.onBackPressed();
     }
 
     @Override
@@ -356,55 +361,23 @@ JournalFragments.OnFragmentInteractionListener{
 
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//
-//        // show menu only when home fragment is selected
-//        if (navItemIndex == 0) {
-//            getMenuInflater().inflate(R.menu.main, menu);
-//        }
-//
-//        // when fragment is notifications, load the menu created for notifications
-//        if (navItemIndex == 3) {
-//            getMenuInflater().inflate(R.menu.notifications, menu);
-//        }
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_logout) {
-//            Toast.makeText(getApplicationContext(), "Logout user!", Toast.LENGTH_LONG).show();
-//            return true;
-//        }
-//
-//        // user is in notifications fragment
-//        // and selected 'Mark all as Read'
-//        if (id == R.id.action_mark_all_read) {
-//            Toast.makeText(getApplicationContext(), "All notifications marked as read!", Toast.LENGTH_LONG).show();
-//        }
-//
-//        // user is in notifications fragment
-//        // and selected 'Clear All'
-//        if (id == R.id.action_clear_notifications) {
-//            Toast.makeText(getApplicationContext(), "Clear all notifications!", Toast.LENGTH_LONG).show();
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-//
-//    // show or hide the fab
-//    private void toggleFab() {
-//        if (navItemIndex == 0)
-//            fab.show();
-//        else
-//            fab.hide();
-//    }
+
+
+    private void DoubleClickBack() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this,"Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
+    }
 }

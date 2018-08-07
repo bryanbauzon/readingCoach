@@ -7,7 +7,7 @@ import android.widget.ListView;
 
 import sebastian.devmonkey.capstoneproject.R;
 
-public class PoemDifficulty extends AppCompatActivity {
+public class PoemCategory extends AppCompatActivity {
 
     ArrayAdapter<String> listview;
 
