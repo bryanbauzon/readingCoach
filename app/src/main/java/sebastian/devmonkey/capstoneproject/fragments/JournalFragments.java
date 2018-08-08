@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -232,7 +233,8 @@ public class JournalFragments extends Fragment {
 
         switch (item.getItemId()) {
             case R.id.add:
-                startActivity(new Intent(getActivity(), AddJournal.class));
+               startActivity(new Intent(getActivity(), AddJournal.class));
+            //    this.overridePendingTransition()
                 return true;
 
             default:

@@ -12,20 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/inputTitle"
-        android:hint="Title"/>
+        android:hint="@string/txt_title"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/inputContent"
-        android:hint="Content"/>
-
-
+        android:hint="@string/txt_content"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="@string/btn_save"
+        android:onClick="save"
         android:id="@+id/save"/>
 
 

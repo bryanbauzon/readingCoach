@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="128dp"
             android:layout_margin="10dp"
-            android:text="Poems" />
+            android:text="@string/btn_poems"/>
 
 
         <Button
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="128dp"
             android:layout_margin="10dp"
-            android:text="Story" />
+            android:text="@string/btn_story"/>
 
 
         <Button
@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="128dp"
             android:layout_margin="10dp"
-            android:text="Flash Cards" />
+            android:text="@string/btn_flashCards"/>
     </LinearLayout>
 
 
