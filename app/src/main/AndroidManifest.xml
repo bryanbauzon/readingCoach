@@ -23,7 +23,10 @@
         <activity
             android:name=".activity.Journal.UpdateDeleteJournal"
             android:theme="@style/HoloLight" />
-        <activity android:name=".activity.Poem.PoemCategory"
+        <activity
+            android:name=".activity.Poem.PoemCategory"
+            android:theme="@style/HoloLight" />
+        <activity android:name=".activity.Poem.Story"
             android:theme="@style/HoloLight"/>
     </application>
 

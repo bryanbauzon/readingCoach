@@ -107,25 +107,8 @@ JournalFragments.OnFragmentInteractionListener{
      */
     private void loadNavHeader() {
         // name, website
-        txtName.setText("CAPSTONE PROJECT");
+        txtName.setText("BRAINIAC");
         txtWebsite.setText("Special Project");
-
-//        // loading header background image
-//        Glide.with(this).load(urlNavHeaderBg)
-//                .crossFade()
-//                .diskCacheStrategy(DiskCacheStrategy.ALL)
-//                .into(imgNavHeaderBg);
-//
-//        // Loading profile image
-//        Glide.with(this).load(urlProfileImg)
-//                .crossFade()
-//                .thumbnail(0.5f)
-//                .bitmapTransform(new CircleTransform(this))
-//                .diskCacheStrategy(DiskCacheStrategy.ALL)
-//                .into(imgProfile);
-
-        // showing dot next to notifications label
-        //navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);
     }
 
     /***

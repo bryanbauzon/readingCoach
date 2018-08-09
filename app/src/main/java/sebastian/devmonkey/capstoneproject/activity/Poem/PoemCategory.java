@@ -1,7 +1,10 @@
 package sebastian.devmonkey.capstoneproject.activity.Poem;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -35,6 +38,15 @@ public class PoemCategory extends AppCompatActivity {
         listView1.setAdapter(listview);
         listView2.setAdapter(listview);
         listView3.setAdapter(listview);
+
+
+        listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startActivity(new Intent(getApplicationContext(), Story.class));
+                finish();
+            }
+        });
 
 
 
