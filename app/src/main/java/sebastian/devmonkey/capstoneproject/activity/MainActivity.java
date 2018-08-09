@@ -317,8 +317,6 @@ JournalFragments.OnFragmentInteractionListener{
     @Override
     public void onBackPressed() {
 
-        DoubleClickBack();
-
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawers();
             return;
@@ -335,6 +333,10 @@ JournalFragments.OnFragmentInteractionListener{
                 loadHomeFragment();
                 return;
             }
+        }
+
+        if (navItemIndex == 0) {
+            DoubleClickBack();
         }
 
     }

@@ -1,5 +1,6 @@
 package sebastian.devmonkey.capstoneproject.fragments;
 
+import android.app.SearchManager;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -7,15 +8,18 @@ import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-
-import java.util.List;
+import android.support.v7.widget.SearchView;
 
 import sebastian.devmonkey.capstoneproject.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -34,6 +38,10 @@ public class TerminologiesFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private SearchView searchView = null;
+    private SearchView.OnQueryTextListener queryTextListener;
+
 
 
     ArrayAdapter<String> listviewAdapter;
@@ -69,6 +77,7 @@ public class TerminologiesFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -80,6 +89,9 @@ public class TerminologiesFragment extends Fragment {
         // array
         String[] menuItems = {"Row1", "Row2", "Row3"};
 
+        //
+
+
         ListView listView = view.findViewById(R.id.listviewTerminologies);
         //get array and display to listview
         listviewAdapter = new ArrayAdapter<>(
@@ -90,27 +102,6 @@ public class TerminologiesFragment extends Fragment {
 
         listView.setAdapter(listviewAdapter);
 
-
-
-        //search bar
-        EditText searchbar = view.findViewById(R.id.searcbar);
-
-        searchbar.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                listviewAdapter.getFilter().filter(charSequence.toString());
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
 
 
 
@@ -156,4 +147,39 @@ public class TerminologiesFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.search, menu);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
+
+        if (searchItem != null) {
+            searchView = (SearchView) searchItem.getActionView();
+        }
+        if (searchView != null) {
+            searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
+
+            queryTextListener = new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    listviewAdapter.getFilter().filter(newText);
+
+                    return true;
+                }
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                  //  Log.i("onQueryTextSubmit", query);
+
+                    return true;
+                }
+            };
+            searchView.setOnQueryTextListener(queryTextListener);
+        }
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+
+
 }
