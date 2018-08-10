@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.ReadingPlans.FlashCard;
 import sebastian.devmonkey.capstoneproject.activity.ReadingPlans.PoemCategory;
 
 /**
@@ -120,12 +121,12 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
                 break;
 
             case R.id.intermediatebtn:
-                Toast.makeText(getActivity(), "Story Button Clicked", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "PoemStory Button Clicked", Toast.LENGTH_LONG).show();
 
                 break;
 
             case R.id.hardcorebtn:
-                Toast.makeText(getActivity(),"Flash Card Button Clicked",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), FlashCard.class));
                 break;
         }
 

@@ -26,7 +26,11 @@
         <activity
             android:name=".activity.ReadingPlans.PoemCategory"
             android:theme="@style/HoloLight" />
-        <activity android:name=".activity.ReadingPlans.Story"
+        <activity
+            android:name=".activity.ReadingPlans.PoemStory"
+            android:theme="@style/HoloLight" />
+
+        <activity android:name=".activity.ReadingPlans.FlashCard"
             android:theme="@style/HoloLight"/>
     </application>
 

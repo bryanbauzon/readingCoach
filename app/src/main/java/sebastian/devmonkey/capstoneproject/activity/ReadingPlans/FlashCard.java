@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import sebastian.devmonkey.capstoneproject.R;
 
-public class Story extends AppCompatActivity {
+public class FlashCard extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_story);
+        setContentView(R.layout.activity_flash_card);
     }
 }

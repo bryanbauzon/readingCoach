@@ -17,11 +17,11 @@ public class PoemCategory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_poem_difficulty);
+        setContentView(R.layout.activity_poem_category);
 
 
         // array
-        String[] menuItems = {"Story 1", "Story 2", "Story 3"};
+        String[] menuItems = {"PoemStory 1", "PoemStory 2", "PoemStory 3"};
 
         ListView listView1 = findViewById(R.id.easyList);
         ListView listView2 = findViewById(R.id.mediumList);
@@ -43,7 +43,7 @@ public class PoemCategory extends AppCompatActivity {
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                startActivity(new Intent(getApplicationContext(), Story.class));
+                startActivity(new Intent(getApplicationContext(), PoemStory.class));
                 finish();
             }
         });
