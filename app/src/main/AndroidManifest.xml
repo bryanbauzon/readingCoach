@@ -24,9 +24,9 @@
             android:name=".activity.Journal.UpdateDeleteJournal"
             android:theme="@style/HoloLight" />
         <activity
-            android:name=".activity.Poem.PoemCategory"
+            android:name=".activity.ReadingPlans.PoemCategory"
             android:theme="@style/HoloLight" />
-        <activity android:name=".activity.Poem.Story"
+        <activity android:name=".activity.ReadingPlans.Story"
             android:theme="@style/HoloLight"/>
     </application>
 

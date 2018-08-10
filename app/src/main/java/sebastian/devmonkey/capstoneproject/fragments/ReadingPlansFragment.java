@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Poem.PoemCategory;
+import sebastian.devmonkey.capstoneproject.activity.ReadingPlans.PoemCategory;
 
 /**
  * A simple {@link Fragment} subclass.

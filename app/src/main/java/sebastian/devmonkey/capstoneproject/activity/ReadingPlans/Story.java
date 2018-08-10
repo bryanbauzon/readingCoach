@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject.activity.Poem;
+package sebastian.devmonkey.capstoneproject.activity.ReadingPlans;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
