@@ -6,9 +6,9 @@
     tools:context=".fragments.BookmarksFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/listviewBookmarks"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="bookmarks fragment" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>

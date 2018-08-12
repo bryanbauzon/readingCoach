@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import sebastian.devmonkey.capstoneproject.R;
 
@@ -27,6 +29,8 @@ public class BookmarksFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    ArrayAdapter<String> listviewAdapter;
 
     private OnFragmentInteractionListener mListener;
 
@@ -65,7 +69,27 @@ public class BookmarksFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bookmarks, container, false);
+        View view = inflater.inflate(R.layout.fragment_bookmarks, container, false);
+
+
+
+        // array
+        String[] menuItems = {"Story1", "Story2", "Story3"};
+
+        //
+
+
+        ListView listView = view.findViewById(R.id.listviewBookmarks);
+        //get array and display to listview
+        listviewAdapter = new ArrayAdapter<>(
+                getActivity(),
+                android.R.layout.simple_list_item_1,
+                menuItems
+        );
+
+        listView.setAdapter(listviewAdapter);
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

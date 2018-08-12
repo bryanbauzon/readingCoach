@@ -1,5 +1,6 @@
 package sebastian.devmonkey.capstoneproject.activity.Journal;
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -36,7 +37,7 @@ AddJournal extends AppCompatActivity {
         String title = edtTitle.getText().toString();
         String content = edtContent.getText().toString();
         if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
-            Toast.makeText(getApplicationContext(), "Data added", Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(), "Data added", Toast.LENGTH_LONG).show();
             edtTitle.setText("");
             edtContent.setText("");
             edtTitle.requestFocus();
@@ -56,29 +57,28 @@ AddJournal extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-        startActivity(new Intent(this, JournalFragments.class));
-    }
+//    @Override
+//    public void onBackPressed() {
+//        startActivity(new Intent(this, JournalFragments.class));
+//    }
 
-    //Returning and Refreshing
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        startActivity(new Intent(this, JournalFragments.class));
-    }
+//    Returning and Refreshing
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        startActivity(new Intent(this, JournalFragments.class));
+//    }
 
     private void Back() {
         int fragments = getSupportFragmentManager().getBackStackEntryCount();
         if (fragments == 1) {
             //
-             startActivity(new Intent(this, JournalFragments.class));finish();
+            finish();
         } else {
             if (getFragmentManager().getBackStackEntryCount() > 1) {
                 getFragmentManager().popBackStack();
             } else {
-                //super.onBackPressed();
-                startActivity(new Intent(this, JournalFragments.class));
+                super.onBackPressed();
             }
         }
     }
