@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ReadingPlans.PoemCategory"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"/>
+
+        <ListView
+            android:id="@+id/easyList"
+            android:layout_width="match_parent"
+            android:layout_height="197dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"/>
+
+        <ListView
+            android:id="@+id/mediumList"
+            android:layout_width="match_parent"
+            android:layout_height="197dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"/>
+
+        <ListView
+            android:id="@+id/hardList"
+            android:layout_width="match_parent"
+            android:layout_height="197dp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

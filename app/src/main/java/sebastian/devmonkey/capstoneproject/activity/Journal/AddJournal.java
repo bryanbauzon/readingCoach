@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
 public class
@@ -23,38 +24,39 @@ AddJournal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_journal);
-
         db = new DatabaseHelper(this);
-
         btnSave = findViewById(R.id.save);
         edtTitle = findViewById(R.id.inputTitle);
         edtContent = findViewById(R.id.inputContent);
+    }
 
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = edtTitle.getText().toString();
-                String content = edtContent.getText().toString();
-
-                if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
-                    Toast.makeText(getApplicationContext(), "Data added", Toast.LENGTH_LONG).show();
-                    edtTitle.setText("");
-                    edtContent.setText("");
-                    startActivity(new Intent(getApplicationContext(), Journal.class));
-                    finish();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Data not added", Toast.LENGTH_LONG).show();
-
-                }
-
-
+    public void save(View view){
+        String title = edtTitle.getText().toString();
+        String content = edtContent.getText().toString();
+        if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
+            Toast.makeText(getApplicationContext(), "Data added", Toast.LENGTH_LONG).show();
+            edtTitle.setText("");
+            edtContent.setText("");
+            edtTitle.requestFocus();
+            Back();
+        } else {
+            if(edtTitle.getText().toString().isEmpty() || edtTitle.getText().toString() == "" ){
+                edtTitle.requestFocus();
+                edtTitle.setError("Title is empty.");
+            }else if(edtContent.getText().toString().isEmpty() || edtContent.getText().toString() == ""){
+                edtContent.requestFocus();
+                edtContent.setError("Content is empty.");
+            }else{
+                Toast.makeText(this,"All fields are required to fill-up.",Toast.LENGTH_SHORT).show();
+                edtTitle.requestFocus();
             }
-        });
+        }
 
     }
 
     @Override
     public void onBackPressed() {
+<<<<<<< HEAD
         startActivity(new Intent(this, Journal.class));
     }
 
@@ -64,4 +66,23 @@ AddJournal extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         startActivity(new Intent(this, Journal.class));
     }
+=======
+        Back();
+
+    }
+
+    private void Back() {
+        int fragments = getSupportFragmentManager().getBackStackEntryCount();
+        if (fragments == 1) {
+            finish();
+        } else {
+            if (getFragmentManager().getBackStackEntryCount() > 1) {
+                getFragmentManager().popBackStack();
+            } else {
+                super.onBackPressed();
+            }
+        }
+    }
+
+>>>>>>> 99bbeee84527ae0a58cfd3d99e5034b88873472a
 }

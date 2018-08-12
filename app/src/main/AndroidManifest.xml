@@ -18,19 +18,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.Journal.Journal"
-            android:theme="@style/HoloLight">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.Journal.Journal" />
-        </activity>
-        <activity
             android:name=".activity.Journal.AddJournal"
             android:theme="@style/HoloLight" />
+        <activity
+            android:name=".activity.Journal.UpdateDeleteJournal"
+            android:theme="@style/HoloLight" />
+        <activity
+            android:name=".activity.ReadingPlans.PoemCategory"
+            android:theme="@style/HoloLight" />
+        <activity
+            android:name=".activity.ReadingPlans.PoemStory"
+            android:theme="@style/HoloLight" />
 
-        <activity android:name=".activity.Journal.UpdateDeleteJournal"
+        <activity android:name=".activity.ReadingPlans.FlashCard"
             android:theme="@style/HoloLight"/>
-
     </application>
 
 </manifest>

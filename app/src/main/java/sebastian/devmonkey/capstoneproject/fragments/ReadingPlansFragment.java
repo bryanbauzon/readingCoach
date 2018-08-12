@@ -1,6 +1,7 @@
 package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.ReadingPlans.FlashCard;
+import sebastian.devmonkey.capstoneproject.activity.ReadingPlans.PoemCategory;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,7 +30,7 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     private static final String ARG_PARAM2 = "param2";
 
 
-    Button btnBeginner, btnIntermediate, btnHardCore;
+    Button btnPoem, btnStory, btnFlashCard;
 
 
     // TODO: Rename and change types of parameters
@@ -74,13 +77,13 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
 
         View myView = inflater.inflate(R.layout.fragment_reading_plans, container, false);
 
-        btnBeginner = (Button) myView.findViewById(R.id.beginnerbtn);
-        btnIntermediate = (Button) myView.findViewById(R.id.intermediatebtn);
-        btnHardCore = (Button) myView.findViewById(R.id.hardcorebtn);
+        btnPoem = (Button) myView.findViewById(R.id.beginnerbtn);
+        btnStory = (Button) myView.findViewById(R.id.intermediatebtn);
+        btnFlashCard = (Button) myView.findViewById(R.id.hardcorebtn);
 
-        btnBeginner.setOnClickListener(this);
-        btnIntermediate.setOnClickListener(this);
-        btnHardCore.setOnClickListener(this);
+        btnPoem.setOnClickListener(this);
+        btnStory.setOnClickListener(this);
+        btnFlashCard.setOnClickListener(this);
 
         // Inflate the layout for this fragment
         return myView;
@@ -114,16 +117,16 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.beginnerbtn:
-                Toast.makeText(getActivity(),"Beginner Button Clicked",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), PoemCategory.class));
                 break;
 
             case R.id.intermediatebtn:
-                Toast.makeText(getActivity(), "Intermediate Button Clicked", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "PoemStory Button Clicked", Toast.LENGTH_LONG).show();
 
                 break;
 
             case R.id.hardcorebtn:
-                Toast.makeText(getActivity(),"Hard Core Button Clicked",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), FlashCard.class));
                 break;
         }
 

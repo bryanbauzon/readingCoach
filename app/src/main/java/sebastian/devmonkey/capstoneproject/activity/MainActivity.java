@@ -1,6 +1,5 @@
 package sebastian.devmonkey.capstoneproject.activity;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,12 +15,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Journal.Journal;
 import sebastian.devmonkey.capstoneproject.fragments.AboutFragment;
 import sebastian.devmonkey.capstoneproject.fragments.BookmarksFragment;
 import sebastian.devmonkey.capstoneproject.fragments.HomeFragment;
+import sebastian.devmonkey.capstoneproject.fragments.JournalFragments;
 import sebastian.devmonkey.capstoneproject.fragments.ReadingPlansFragment;
 import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
 import sebastian.devmonkey.capstoneproject.fragments.TerminologiesFragment;
@@ -29,7 +29,8 @@ import sebastian.devmonkey.capstoneproject.fragments.TerminologiesFragment;
 
 public class MainActivity extends AppCompatActivity implements AboutFragment.OnFragmentInteractionListener, BookmarksFragment.OnFragmentInteractionListener
 , ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener
-, HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener{
+, HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener ,
+JournalFragments.OnFragmentInteractionListener{
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
     private static final String TAG_HOME = "home";
     private static final String TAG_READING_PLANS = "reading_plans";
     private static final String TAG_BOOKMARKS = "bookmarks";
-    //private static final String TAG_JOURNAL = "journal";
+    private static final String TAG_JOURNAL = "journal";
     private static final String TAG_ABOUT = "about";
     private static final String TAG_TERMINOLOGIES = "terminologies";
     private static final String TAG_SETTINGS = "settings";
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
     // flag to load home fragment when user presses back key
     private boolean shouldLoadHomeFragOnBackPress = true;
     private Handler mHandler;
+
+    boolean doubleBackToExitPressedOnce = false;
 
 
     @Override
@@ -104,25 +107,8 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
      */
     private void loadNavHeader() {
         // name, website
-        txtName.setText("CAPSTONE PROJECT");
+        txtName.setText("BRAINIAC");
         txtWebsite.setText("Special Project");
-
-//        // loading header background image
-//        Glide.with(this).load(urlNavHeaderBg)
-//                .crossFade()
-//                .diskCacheStrategy(DiskCacheStrategy.ALL)
-//                .into(imgNavHeaderBg);
-//
-//        // Loading profile image
-//        Glide.with(this).load(urlProfileImg)
-//                .crossFade()
-//                .thumbnail(0.5f)
-//                .bitmapTransform(new CircleTransform(this))
-//                .diskCacheStrategy(DiskCacheStrategy.ALL)
-//                .into(imgProfile);
-
-        // showing dot next to notifications label
-        //navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);
     }
 
     /***
@@ -194,19 +180,20 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                 // bookmarks
                 BookmarksFragment bookmarksFragment = new BookmarksFragment();
                 return bookmarksFragment;
-//            case 3:
-//                // journal fragment
-//                JournalFragment journalFragment = new JournalFragment();
-//                return journalFragment;
-            case 4:
-                // about fragment
-                AboutFragment aboutFragment = new AboutFragment();
-                return aboutFragment;
+            case 3:
+                // journal fragment
+                JournalFragments journalFragmentsFragment = new JournalFragments();
+                return journalFragmentsFragment;
 
-            case 5:
+            case 4:
                 // terminologiews fragment
                 TerminologiesFragment terminologiesFragment = new TerminologiesFragment();
                 return terminologiesFragment;
+
+            case 5:
+                // about fragment
+                AboutFragment aboutFragment = new AboutFragment();
+                return aboutFragment;
 
 
             case 6:
@@ -253,14 +240,20 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                         CURRENT_TAG = TAG_BOOKMARKS;
                         break;
 
-                    case R.id.about:
-                        navItemIndex = 4;
-                        CURRENT_TAG = TAG_ABOUT;
+                    case R.id.journal:
+                        navItemIndex = 3;
+                        CURRENT_TAG = TAG_JOURNAL;
                         break;
 
+
                     case R.id.terminologies:
-                        navItemIndex = 5;
+                        navItemIndex = 4;
                         CURRENT_TAG = TAG_TERMINOLOGIES;
+                        break;
+
+                    case R.id.about:
+                        navItemIndex = 5;
+                        CURRENT_TAG = TAG_ABOUT;
                         break;
 
                     case R.id.nav_settings:
@@ -268,10 +261,6 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
 
-                    case R.id.journal:
-                        startActivity(new Intent(MainActivity.this, Journal.class));
-                        drawer.closeDrawers();
-                        return true;
 
 
 //                    case R.id.nav_about_us:
@@ -327,6 +316,7 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
 
     @Override
     public void onBackPressed() {
+
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawers();
             return;
@@ -345,7 +335,10 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
             }
         }
 
-        super.onBackPressed();
+        if (navItemIndex == 0) {
+            DoubleClickBack();
+        }
+
     }
 
     @Override
@@ -353,55 +346,23 @@ public class MainActivity extends AppCompatActivity implements AboutFragment.OnF
 
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//
-//        // show menu only when home fragment is selected
-//        if (navItemIndex == 0) {
-//            getMenuInflater().inflate(R.menu.main, menu);
-//        }
-//
-//        // when fragment is notifications, load the menu created for notifications
-//        if (navItemIndex == 3) {
-//            getMenuInflater().inflate(R.menu.notifications, menu);
-//        }
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_logout) {
-//            Toast.makeText(getApplicationContext(), "Logout user!", Toast.LENGTH_LONG).show();
-//            return true;
-//        }
-//
-//        // user is in notifications fragment
-//        // and selected 'Mark all as Read'
-//        if (id == R.id.action_mark_all_read) {
-//            Toast.makeText(getApplicationContext(), "All notifications marked as read!", Toast.LENGTH_LONG).show();
-//        }
-//
-//        // user is in notifications fragment
-//        // and selected 'Clear All'
-//        if (id == R.id.action_clear_notifications) {
-//            Toast.makeText(getApplicationContext(), "Clear all notifications!", Toast.LENGTH_LONG).show();
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-//
-//    // show or hide the fab
-//    private void toggleFab() {
-//        if (navItemIndex == 0)
-//            fab.show();
-//        else
-//            fab.hide();
-//    }
+
+
+    private void DoubleClickBack() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this,"Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
+    }
 }
