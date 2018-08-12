@@ -245,6 +245,4 @@ public class JournalFragments extends Fragment {
 
     }
 
-
-
 }

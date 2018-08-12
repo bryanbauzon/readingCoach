@@ -1,6 +1,7 @@
 package sebastian.devmonkey.capstoneproject.activity.Journal;
 
 import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -67,16 +68,17 @@ AddJournal extends AppCompatActivity {
         startActivity(new Intent(this, JournalFragments.class));
     }
 
-
     private void Back() {
         int fragments = getSupportFragmentManager().getBackStackEntryCount();
         if (fragments == 1) {
-            finish();
+            //
+             startActivity(new Intent(this, JournalFragments.class));finish();
         } else {
             if (getFragmentManager().getBackStackEntryCount() > 1) {
                 getFragmentManager().popBackStack();
             } else {
-                super.onBackPressed();
+                //super.onBackPressed();
+                startActivity(new Intent(this, JournalFragments.class));
             }
         }
     }
