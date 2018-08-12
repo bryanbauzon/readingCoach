@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.MainActivity;
+import sebastian.devmonkey.capstoneproject.fragments.JournalFragments;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
 public class
@@ -56,20 +57,16 @@ AddJournal extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-<<<<<<< HEAD
-        startActivity(new Intent(this, Journal.class));
+        startActivity(new Intent(this, JournalFragments.class));
     }
 
     //Returning and Refreshing
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        startActivity(new Intent(this, Journal.class));
+        startActivity(new Intent(this, JournalFragments.class));
     }
-=======
-        Back();
 
-    }
 
     private void Back() {
         int fragments = getSupportFragmentManager().getBackStackEntryCount();
@@ -84,5 +81,4 @@ AddJournal extends AppCompatActivity {
         }
     }
 
->>>>>>> 99bbeee84527ae0a58cfd3d99e5034b88873472a
 }
