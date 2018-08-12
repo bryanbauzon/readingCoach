@@ -11,7 +11,9 @@ import android.widget.Toast;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
-public class AddJournal extends AppCompatActivity {
+public class
+
+AddJournal extends AppCompatActivity {
 
     DatabaseHelper db;
     Button btnSave;
@@ -54,7 +56,12 @@ public class AddJournal extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         startActivity(new Intent(this, Journal.class));
-
     }
 
+    //Returning and Refreshing
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        startActivity(new Intent(this, Journal.class));
+    }
 }
