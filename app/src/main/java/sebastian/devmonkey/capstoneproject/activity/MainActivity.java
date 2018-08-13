@@ -20,6 +20,7 @@ import android.widget.Toast;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.fragments.AboutFragment;
 import sebastian.devmonkey.capstoneproject.fragments.BookmarksFragment;
+import sebastian.devmonkey.capstoneproject.fragments.HelpFragment;
 import sebastian.devmonkey.capstoneproject.fragments.HomeFragment;
 import sebastian.devmonkey.capstoneproject.fragments.JournalFragments;
 import sebastian.devmonkey.capstoneproject.fragments.ReadingPlansFragment;
@@ -51,6 +52,7 @@ JournalFragments.OnFragmentInteractionListener{
     private static final String TAG_ABOUT = "about";
     private static final String TAG_TERMINOLOGIES = "terminologies";
     private static final String TAG_SETTINGS = "settings";
+    private static final String TAG_HELP = "help";
     public static String CURRENT_TAG = TAG_HOME;
 
     // toolbar titles respected to selected nav menu item
@@ -78,15 +80,11 @@ JournalFragments.OnFragmentInteractionListener{
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
         txtName = (TextView) navHeader.findViewById(R.id.name);
-        txtWebsite = (TextView) navHeader.findViewById(R.id.website);
-        imgNavHeaderBg = (ImageView) navHeader.findViewById(R.id.img_header_bg);
-        imgProfile = (ImageView) navHeader.findViewById(R.id.img_profile);
-
+       // txtWebsite = (TextView) navHeader.findViewById(R.id.website);
+      //  imgNavHeaderBg = (ImageView) navHeader.findViewById(R.id.img_header_bg);
+       // imgProfile = (ImageView) navHeader.findViewById(R.id.img_profile);
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
-
-
-
         // load nav menu header data
         loadNavHeader();
 
@@ -107,8 +105,8 @@ JournalFragments.OnFragmentInteractionListener{
      */
     private void loadNavHeader() {
         // name, website
-        txtName.setText("CAPSTONE PROJECT");
-        txtWebsite.setText("Special Project");
+        txtName.setText("BRAINIAC");
+    //    txtWebsite.setText("Special Project");
 
 //        // loading header background image
 //        Glide.with(this).load(urlNavHeaderBg)
@@ -217,6 +215,12 @@ JournalFragments.OnFragmentInteractionListener{
                 // settings fragment
                 SettingsFragment settingsFragment = new SettingsFragment();
                 return settingsFragment;
+            case 7:
+//                HelpFragment helpFragment = new HelpFragment();
+//                return helpFragment;
+                Toast.makeText(this,"Help is underconstruction",Toast.LENGTH_SHORT).show();
+
+
             default:
                 return new ReadingPlansFragment();
         }
@@ -277,7 +281,10 @@ JournalFragments.OnFragmentInteractionListener{
                         navItemIndex = 6;
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
-
+                    case R.id.help:
+                        navItemIndex = 7;
+                        CURRENT_TAG = TAG_HELP;
+                        break;
 
 
 //                    case R.id.nav_about_us:

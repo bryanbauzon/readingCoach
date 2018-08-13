@@ -7,7 +7,6 @@
     tools:context=".activity.Journal.AddJournal"
     android:orientation="vertical">
 
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,12 +19,12 @@
         android:id="@+id/inputContent"
         android:hint="@string/txt_content"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_save"
-        android:onClick="save"
-        android:id="@+id/save"/>
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/btn_save"-->
+        <!--android:onClick="save"-->
+        <!--android:id="@+id/save"/>-->
 
 
 

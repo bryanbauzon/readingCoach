@@ -1,38 +1,28 @@
 package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Flash.FlashCards;
-import sebastian.devmonkey.capstoneproject.activity.Poem.PoemCategory;
-import sebastian.devmonkey.capstoneproject.activity.Stories.Story;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ReadingPlansFragment.OnFragmentInteractionListener} interface
+ * {@link HelpFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ReadingPlansFragment#newInstance} factory method to
+ * Use the {@link HelpFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ReadingPlansFragment extends Fragment implements View.OnClickListener {
+public class HelpFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-
-    Button btnPoem, btnStory, btnFlashCard;
-
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -40,7 +30,7 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
 
     private OnFragmentInteractionListener mListener;
 
-    public ReadingPlansFragment() {
+    public HelpFragment() {
         // Required empty public constructor
     }
 
@@ -50,11 +40,11 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ReadingPlansFragment.
+     * @return A new instance of fragment HelpFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ReadingPlansFragment newInstance(String param1, String param2) {
-        ReadingPlansFragment fragment = new ReadingPlansFragment();
+    public static HelpFragment newInstance(String param1, String param2) {
+        HelpFragment fragment = new HelpFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,26 +58,14 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View myView = inflater.inflate(R.layout.fragment_reading_plans, container, false);
-
-        btnPoem = (Button) myView.findViewById(R.id.btnPoems);
-        btnStory = (Button) myView.findViewById(R.id.btnStory);
-        btnFlashCard = (Button) myView.findViewById(R.id.btnFlashCards);
-
-        btnPoem.setOnClickListener(this);
-        btnStory.setOnClickListener(this);
-        btnFlashCard.setOnClickListener(this);
-
         // Inflate the layout for this fragment
-        return myView;
+        return inflater.inflate(R.layout.fragment_help, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -112,24 +90,6 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public void onDetach() {
         super.onDetach();
         mListener = null;
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btnPoems:
-                startActivity(new Intent(getActivity(), PoemCategory.class));
-                break;
-
-            case R.id.btnStory:
-                Toast.makeText(getActivity(), "This module is for testing purposes only.", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getActivity(), Story.class));
-                break;
-            case R.id.btnFlashCards:
-                startActivity(new Intent(getActivity(), FlashCards.class));
-               // Toast.makeText(getActivity(), "flash cards Button Clicked", Toast.LENGTH_SHORT).show();
-                break;
-        }
     }
 
     /**

@@ -46,18 +46,14 @@ public class JournalFragments extends Fragment {
     DatabaseHelper db;
     ArrayList<String> listItem;
     ArrayAdapter adapter;
-
-
     ArrayList<String> id;
     ArrayList<String> content;
-
     ListView listView;
 
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
     private OnFragmentInteractionListener mListener;
 
     public JournalFragments() {
@@ -98,14 +94,11 @@ public class JournalFragments extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_journal, container, false);
 
-
         db = new DatabaseHelper(getActivity());
         listItem = new ArrayList<>();
         id = new ArrayList<>();
         content = new ArrayList<>();
         listView = view.findViewById(R.id.listview);
-
-
 //        // Auto update listview
 //        final Handler handler = new Handler();
 //        Timer timer = new Timer();
@@ -142,11 +135,6 @@ public class JournalFragments extends Fragment {
 
             }
         });
-
-
-
-
-
         // Inflate the layout for this fragment
         return view;
     }
@@ -213,8 +201,12 @@ public class JournalFragments extends Fragment {
 
             }
             //display title to listview
+
+
             adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, listItem);
+
             listView.setAdapter(adapter);
+          //  listView.notifyDataSetChanged(adapter);
         }
 
     }

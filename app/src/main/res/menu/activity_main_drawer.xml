@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
 
     <group android:checkableBehavior="single">
 
         <item
             android:id="@+id/home"
             android:icon="@drawable/ic_home"
-            android:title="Home" />
+            android:title="@string/btn_home" />
 
 
         <item
             android:id="@+id/reading_plans"
             android:icon="@drawable/ic_reading_plans"
-            android:title="Reading Plans" />
+            android:title="@string/btn_reading_plans" />
         <item
             android:id="@+id/bookmarks"
-
-            android:title="Bookmarks" />
+            android:icon="@drawable/ic_action_name"
+            android:title="@string/btn_bookmarks" />
         <item
             android:id="@+id/journal"
             android:icon="@drawable/ic_journals"
-            android:title="Journal" />
+            android:title="@string/btn_journal" />
 
         <item
+            android:icon="@drawable/terminologies"
             android:id="@+id/terminologies"
-            android:title="Terminologies" />
+            android:title="@string/btn_terminologies" />
 
         <item
         android:id="@+id/about"
         android:icon="@drawable/ic_about"
-        android:title="About" />
-
+        android:title="@string/btn_about" />
+    <item android:title="@string/btn_help"
+        android:id="@+id/help"
+        android:icon="@drawable/help"
+        />
         <item
         android:id="@+id/nav_settings"
         android:icon="@drawable/ic_settings"
-        android:title="Settings" />
+        android:title="@string/btn_settings" />
 
 
     </group>
