@@ -19,7 +19,6 @@ public class PoemCategory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poem_category);
 
-
         // array
         String[] menuItems = {"PoemStory 1", "PoemStory 2", "PoemStory 3"};
 

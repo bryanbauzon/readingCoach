@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,7 +35,33 @@ AddJournal extends AppCompatActivity {
         edtContent = findViewById(R.id.inputContent);
     }
 
-    public void save(View view){
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.save_journal, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.save:
+
+                 save();
+
+
+                return true;
+
+
+            default:
+                break;
+        }
+
+        return false;
+    }
+    private void save(){
         String title = edtTitle.getText().toString();
         String content = edtContent.getText().toString();
         if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
@@ -46,12 +74,9 @@ AddJournal extends AppCompatActivity {
             if(edtTitle.getText().toString().isEmpty() || edtTitle.getText().toString() == "" ){
                 edtTitle.requestFocus();
                 edtTitle.setError("Title is empty.");
-            }else if(edtContent.getText().toString().isEmpty() || edtContent.getText().toString() == ""){
+            }else {
                 edtContent.requestFocus();
                 edtContent.setError("Content is empty.");
-            }else{
-                Toast.makeText(this,"All fields are required to fill-up.",Toast.LENGTH_SHORT).show();
-                edtTitle.requestFocus();
             }
         }
 
