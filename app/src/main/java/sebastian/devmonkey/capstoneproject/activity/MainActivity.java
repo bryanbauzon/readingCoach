@@ -28,10 +28,11 @@ import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
 import sebastian.devmonkey.capstoneproject.fragments.TerminologiesFragment;
 
 
-public class MainActivity extends AppCompatActivity implements AboutFragment.OnFragmentInteractionListener, BookmarksFragment.OnFragmentInteractionListener
+public class MainActivity extends AppCompatActivity implements
+        AboutFragment.OnFragmentInteractionListener, BookmarksFragment.OnFragmentInteractionListener
 , ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener
 , HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener ,
-JournalFragments.OnFragmentInteractionListener{
+JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteractionListener{
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -210,15 +211,14 @@ JournalFragments.OnFragmentInteractionListener{
                 AboutFragment aboutFragment = new AboutFragment();
                 return aboutFragment;
 
-
             case 6:
+                HelpFragment helpFragment = new HelpFragment();
+                return helpFragment;
+
+            case 7:
                 // settings fragment
                 SettingsFragment settingsFragment = new SettingsFragment();
                 return settingsFragment;
-            case 7:
-//                HelpFragment helpFragment = new HelpFragment();
-//                return helpFragment;
-                Toast.makeText(this,"Help is underconstruction",Toast.LENGTH_SHORT).show();
 
 
             default:
@@ -342,8 +342,6 @@ JournalFragments.OnFragmentInteractionListener{
     @Override
     public void onBackPressed() {
 
-        DoubleClickBack();
-
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawers();
             return;
@@ -360,6 +358,10 @@ JournalFragments.OnFragmentInteractionListener{
                 loadHomeFragment();
                 return;
             }
+        }
+
+        if (navItemIndex == 0) {
+            DoubleClickBack();
         }
 
     }

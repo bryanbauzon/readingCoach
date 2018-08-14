@@ -29,11 +29,11 @@
         <activity
             android:name=".activity.Flash.FlashCards"
             android:theme="@style/HoloLight" />
-        <activity android:name=".activity.Stories.Story"
-            android:theme="@style/HoloLight"
-            >
-
-        </activity>
+        <activity
+            android:name=".activity.Stories.Story"
+            android:theme="@style/HoloLight"/>
+        <activity android:name=".activity.Poem.PoemReading"
+            android:theme="@style/HoloLight"/>
     </application>
 
 </manifest>

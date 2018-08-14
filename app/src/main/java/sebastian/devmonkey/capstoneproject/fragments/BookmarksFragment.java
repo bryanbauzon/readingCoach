@@ -1,16 +1,20 @@
 package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.Poem.PoemReading;
+import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,6 +35,7 @@ public class BookmarksFragment extends Fragment {
     private String mParam2;
 
     ArrayAdapter<String> listviewAdapter;
+    ListView listView;
 
     private OnFragmentInteractionListener mListener;
 
@@ -71,15 +76,12 @@ public class BookmarksFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bookmarks, container, false);
 
+        Arrays storyTitles = new Arrays();
+
+        String[] menuItems = storyTitles.getStoryTitles();
 
 
-        // array
-        String[] menuItems = {"Story1", "Story2", "Story3"};
-
-        //
-
-
-        ListView listView = view.findViewById(R.id.listviewBookmarks);
+        listView = view.findViewById(R.id.listviewBookmarks);
         //get array and display to listview
         listviewAdapter = new ArrayAdapter<>(
                 getActivity(),
@@ -88,6 +90,14 @@ public class BookmarksFragment extends Fragment {
         );
 
         listView.setAdapter(listviewAdapter);
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startActivity(new Intent(getActivity(), PoemReading.class));
+            }
+        });
 
         return view;
     }
