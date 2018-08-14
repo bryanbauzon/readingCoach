@@ -277,13 +277,14 @@ JournalFragments.OnFragmentInteractionListener{
                         CURRENT_TAG = TAG_ABOUT;
                         break;
 
-                    case R.id.nav_settings:
-                        navItemIndex = 6;
-                        CURRENT_TAG = TAG_SETTINGS;
-                        break;
                     case R.id.help:
-                        navItemIndex = 7;
+                        navItemIndex = 6;
                         CURRENT_TAG = TAG_HELP;
+                        break;
+
+                    case R.id.nav_settings:
+                        navItemIndex = 7;
+                        CURRENT_TAG = TAG_SETTINGS;
                         break;
 
 

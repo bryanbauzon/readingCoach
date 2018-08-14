@@ -19,6 +19,7 @@ import android.widget.ListView;
 import android.support.v7.widget.SearchView;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 
 /**
@@ -86,10 +87,11 @@ public class TerminologiesFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_terminologies, container, false);
 
-        // array
-        String[] menuItems = {"Row1", "Row2", "Row3"};
+        Arrays storyTitle = new Arrays();
 
-        //
+        String[] menuItems = storyTitle.getStoryTitles();
+
+
 
 
         ListView listView = view.findViewById(R.id.listviewTerminologies);
