@@ -44,7 +44,7 @@ public class FlashCards extends AppCompatActivity {
         try{
             startActivityForResult(i,100);
         }catch(ActivityNotFoundException a){
-
+            Toast.makeText(getApplicationContext(), "Intent problem", Toast.LENGTH_SHORT).show();
         }
     }
     @Override

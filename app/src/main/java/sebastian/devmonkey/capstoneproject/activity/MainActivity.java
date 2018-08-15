@@ -37,8 +37,7 @@ JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteracti
     private NavigationView navigationView;
     private DrawerLayout drawer;
     private View navHeader;
-    private ImageView imgNavHeaderBg, imgProfile;
-    private TextView txtName, txtWebsite;
+    private TextView txtName;
     private Toolbar toolbar;
 
 
@@ -81,9 +80,6 @@ JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteracti
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
         txtName = (TextView) navHeader.findViewById(R.id.name);
-       // txtWebsite = (TextView) navHeader.findViewById(R.id.website);
-      //  imgNavHeaderBg = (ImageView) navHeader.findViewById(R.id.img_header_bg);
-       // imgProfile = (ImageView) navHeader.findViewById(R.id.img_profile);
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
         // load nav menu header data
@@ -107,24 +103,7 @@ JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteracti
     private void loadNavHeader() {
         // name, website
         txtName.setText("BRAINIAC");
-    //    txtWebsite.setText("Special Project");
 
-//        // loading header background image
-//        Glide.with(this).load(urlNavHeaderBg)
-//                .crossFade()
-//                .diskCacheStrategy(DiskCacheStrategy.ALL)
-//                .into(imgNavHeaderBg);
-//
-//        // Loading profile image
-//        Glide.with(this).load(urlProfileImg)
-//                .crossFade()
-//                .thumbnail(0.5f)
-//                .bitmapTransform(new CircleTransform(this))
-//                .diskCacheStrategy(DiskCacheStrategy.ALL)
-//                .into(imgProfile);
-
-        // showing dot next to notifications label
-        //navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);
     }
 
     /***
