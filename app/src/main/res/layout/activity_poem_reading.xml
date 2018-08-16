@@ -31,11 +31,29 @@
         android:text="@string/loremIpsum"/>
 
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Speech"
-        android:layout_marginTop="50dp"
-        android:text="T2S"/>
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Speech"
+            android:text="T2S"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Quizzer"
+            android:text="Quizzer"/>
+
+
+
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

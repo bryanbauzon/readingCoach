@@ -1,5 +1,6 @@
 package sebastian.devmonkey.capstoneproject.activity.Poem;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import java.util.Locale;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.Quizzer.Quizzer;
 
 public class PoemReading extends AppCompatActivity {
 
@@ -46,6 +48,12 @@ public class PoemReading extends AppCompatActivity {
                 textToSpeech.speak(content.getText().toString(), TextToSpeech.QUEUE_FLUSH,null );
             }
         }, 2000);
+    }
+
+
+    public void Quizzer(View view) {
+        startActivity(new Intent(getApplicationContext(), Quizzer.class));
+        finish();
     }
 
 
