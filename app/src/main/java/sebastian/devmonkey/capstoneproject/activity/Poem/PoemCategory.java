@@ -3,10 +3,12 @@ package sebastian.devmonkey.capstoneproject.activity.Poem;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
@@ -50,7 +52,14 @@ public class PoemCategory extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                startActivity(new Intent(getApplicationContext(), PoemReading.class));
+              //  Object object = adapter.getI
+                //Toast.makeText(getApplicationContext(),"id "+ l,Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(),PoemReading.class);
+                intent.putExtra("level","easy");
+                String value = Long.toString(l);
+                intent.putExtra("id",value);
+                startActivity(intent);
+
             }
         });
 
