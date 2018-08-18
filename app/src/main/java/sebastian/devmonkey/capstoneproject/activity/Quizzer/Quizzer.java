@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import sebastian.devmonkey.capstoneproject.R;
@@ -18,10 +19,12 @@ public class Quizzer extends AppCompatActivity implements View.OnClickListener {
 
     Button a,b,c,d;
 
-    Random rand = new Random();
     int max = 10;
     int randomized;
     int score = 0;
+
+    Random rand = new Random(max);
+
     TextView questions = null, containerScore = null;
 
     @Override
@@ -36,14 +39,13 @@ public class Quizzer extends AppCompatActivity implements View.OnClickListener {
         b = findViewById(R.id.b);
         c = findViewById(R.id.c);
         d = findViewById(R.id.d);
-        randomized = rand.nextInt(max);
-        //  Toast.makeText(this,randomized+"",Toast.LENGTH_SHORT).show();
 
         a.setOnClickListener(this);
         b.setOnClickListener(this);
         c.setOnClickListener(this);
         d.setOnClickListener(this);
-        shuffle();
+
+         shuffle();
     }
 
     @Override
@@ -88,18 +90,16 @@ public class Quizzer extends AppCompatActivity implements View.OnClickListener {
                     shuffle();
                 }
                 break;
-            // shuffle();
         }
 
     }
     public void shuffle(){
-        randomized = rand.nextInt(max);
-
-        questions.setText(object.question[randomized]);
-        a.setText(object.answers[randomized][0]);
-        b.setText(object.answers[randomized][1]);
-        c.setText(object.answers[randomized][2]);
-        d.setText(object.answers[randomized][3]);
+            randomized = rand.nextInt(max);
+           questions.setText(object.question[randomized]);
+            a.setText(object.answers[randomized][0]);
+            b.setText(object.answers[randomized][1]);
+            c.setText(object.answers[randomized][2]);
+            d.setText(object.answers[randomized][3]);
 
     }
     public void incrementScore(){

@@ -102,9 +102,7 @@ public class PoemReading extends AppCompatActivity {
         intent.putExtra("level",level);
         intent.putExtra("id",id_temp);
         startActivity(intent);
-
-        finish();
-    }
+ }
     @Override
     public void onBackPressed() {
         textToSpeech.shutdown();
