@@ -29,6 +29,12 @@ AddJournal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_journal);
+
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        setTitle("Add Journal");
+
         db = new DatabaseHelper(this);
         btnSave = findViewById(R.id.save);
         edtTitle = findViewById(R.id.inputTitle);
@@ -48,12 +54,12 @@ AddJournal extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.save:
-
                  save();
-
-
                 return true;
 
+            case android.R.id.home:
+                Back();
+                return true;
 
             default:
                 break;
@@ -82,17 +88,11 @@ AddJournal extends AppCompatActivity {
 
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        startActivity(new Intent(this, JournalFragments.class));
-//    }
+    @Override
+    public void onBackPressed() {
+        Back();
+    }
 
-//    Returning and Refreshing
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        startActivity(new Intent(this, JournalFragments.class));
-//    }
 
     private void Back() {
         int fragments = getSupportFragmentManager().getBackStackEntryCount();

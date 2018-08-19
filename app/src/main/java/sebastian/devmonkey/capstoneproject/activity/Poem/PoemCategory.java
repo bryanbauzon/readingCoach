@@ -1,9 +1,11 @@
 package sebastian.devmonkey.capstoneproject.activity.Poem;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -22,6 +24,8 @@ public class PoemCategory extends AppCompatActivity {
     ListView listView, listView1, listView2;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +34,11 @@ public class PoemCategory extends AppCompatActivity {
         Arrays storyTitles = new Arrays();
 
         menuItems = storyTitles.getStoryTitles();
+
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        setTitle("Poems");
 
 
         listView = findViewById(R.id.easyList);
@@ -65,4 +74,29 @@ public class PoemCategory extends AppCompatActivity {
 
 
     }
+
+
+
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        Back();
+        return true;
+
+    }
+
+
+
+    private void Back() {
+        int fragments = getSupportFragmentManager().getBackStackEntryCount();
+        if (fragments == 1) {
+            finish();
+        } else {
+            if (getFragmentManager().getBackStackEntryCount() > 1) {
+                getFragmentManager().popBackStack();
+            } else {
+                super.onBackPressed();
+            }
+        }
+    }
+
 }

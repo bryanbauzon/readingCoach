@@ -26,6 +26,11 @@ public class UpdateDeleteJournal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_delete_journal);
 
+
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         db = new DatabaseHelper(this);
 
         edtTitle = findViewById(R.id.updateTitle);
@@ -71,6 +76,10 @@ public class UpdateDeleteJournal extends AppCompatActivity {
             case R.id.delete:
 
                 Delete();
+                return true;
+
+            case android.R.id.home:
+                Back();
                 return true;
 
             default:

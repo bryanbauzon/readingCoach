@@ -6,6 +6,7 @@ import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeechService;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -23,6 +24,11 @@ public class Story extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
+
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        setTitle("Story");
 
         story = findViewById(R.id.story);
          tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -52,6 +58,12 @@ public class Story extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Back();
+
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        Back();
+        return true;
 
     }
 

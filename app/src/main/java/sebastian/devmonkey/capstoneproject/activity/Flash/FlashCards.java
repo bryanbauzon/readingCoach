@@ -6,6 +6,7 @@ import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +23,9 @@ public class FlashCards extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash_cards);
+        setTitle("Flash Cards");
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         textContainer = findViewById(R.id.text);
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -76,6 +80,13 @@ public class FlashCards extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Back();
+
+    }
+
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        Back();
+        return true;
 
     }
 
