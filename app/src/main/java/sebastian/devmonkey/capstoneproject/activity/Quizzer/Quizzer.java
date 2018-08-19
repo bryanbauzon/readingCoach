@@ -3,6 +3,7 @@ package sebastian.devmonkey.capstoneproject.activity.Quizzer;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -38,6 +39,9 @@ public class Quizzer extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizzer);
 
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         questions = findViewById(R.id.question);
         containerScore = findViewById(R.id.score);
         a = findViewById(R.id.a);
@@ -52,7 +56,7 @@ public class Quizzer extends AppCompatActivity implements View.OnClickListener {
 
         available = new ArrayList<>();
 
-        for (int i = 0; i< 10; i++) {
+        for (int i = 0; i < 10; i++) {
             available.add(i);
         }
 
@@ -64,56 +68,34 @@ public class Quizzer extends AppCompatActivity implements View.OnClickListener {
         switch (view.getId()){
             case R.id.a:
                 if (a.getText() == answer) {
-                    score++;
-                    updateScore(score);
-                    updateQuestion();
-
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                    Correct();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    updateQuestion();
+                    Wrong();
                 }
 
                 break;
             case R.id.b:
                 if (b.getText() == answer) {
-                    score++;
-                    updateScore(score);
-                    updateQuestion();
-
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                    Correct();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    updateQuestion();
+                    Wrong();
                 }
                 break;
             case R.id.c:
                 if (c.getText() == answer) {
-                    score++;
-                    updateScore(score);
-                    updateQuestion();
-
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                    Correct();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    updateQuestion();
+                    Wrong();
                 }
                 break;
 
             case R.id.d:
             if (d.getText() == answer) {
-                score++;
-                updateScore(score);
-                updateQuestion();
-
-                Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+              Correct();
             } else {
-                Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                updateQuestion();
+                Wrong();
             }
             break;
-
-
 
             default:
 
@@ -132,22 +114,48 @@ public class Quizzer extends AppCompatActivity implements View.OnClickListener {
 
     private void updateQuestion() {
 
-        Collections.shuffle(available);
+        if (!available.isEmpty()) {
 
-        questions.setText(QuestionLibrary.getQuestion(available.get(0)));
-        a.setText(QuestionLibrary.getChoice1(available.get(0)));
-        b.setText(QuestionLibrary.getChoice2(available.get(0)));
-        c.setText(QuestionLibrary.getChoice3(available.get(0)));
-        d.setText(QuestionLibrary.getChoice4(available.get(0)));
-        answer = QuestionLibrary.getCorrectAnswer(available.get(0));
+            Collections.shuffle(available);
 
-        available.remove(0);
+            questions.setText(QuestionLibrary.getQuestion(available.get(0)));
+            a.setText(QuestionLibrary.getChoice1(available.get(0)));
+            b.setText(QuestionLibrary.getChoice2(available.get(0)));
+            c.setText(QuestionLibrary.getChoice3(available.get(0)));
+            d.setText(QuestionLibrary.getChoice4(available.get(0)));
+            answer = QuestionLibrary.getCorrectAnswer(available.get(0));
 
-        questionNumber++;
+            available.remove(0);
+
+            questionNumber++;
+        } else {
+            Toast.makeText(getApplicationContext(), "Done", Toast.LENGTH_SHORT).show();
+            finish();
+        }
     }
 
     private void updateScore (int point) {
         containerScore.setText("" + point);
+    }
+
+    private void Correct() {
+        score++;
+        updateScore(score);
+        updateQuestion();
+
+        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+    }
+
+    private void Wrong() {
+        Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
+        updateQuestion();
+    }
+
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        finish();
+        return true;
+
     }
 
 

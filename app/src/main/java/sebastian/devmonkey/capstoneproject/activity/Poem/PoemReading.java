@@ -6,6 +6,7 @@ import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,11 @@ public class PoemReading extends AppCompatActivity {
 
         Intent intent = getIntent();
         content = findViewById(R.id.txtContent);
+
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        setTitle("Story");
 
 
 
@@ -109,6 +115,16 @@ public class PoemReading extends AppCompatActivity {
         textToSpeech.stop();
         finish();
     }
+
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        textToSpeech.shutdown();
+        textToSpeech.stop();
+        finish();
+        return true;
+
+    }
+
 
 
 
