@@ -111,7 +111,7 @@ public class FlashCards extends AppCompatActivity {
                                 word.setText(words[ctr]);
                                 textContainer.setText(null);
                             }
-
+//
                           //  textContainer.setBackgroundColor(getResources().getColor(R.color.correct));
                         }else{
                             textContainer.setBackgroundColor(getResources().getColor(R.color.incorrect));
