@@ -175,10 +175,6 @@ public class MainActivity extends AppCompatActivity implements
                 // bookmarks
                 BookmarksFragment bookmarksFragment = new BookmarksFragment();
                 return bookmarksFragment;
-//            case 3:
-//                // journal fragment
-//                JournalFragments journalFragmentsFragment = new JournalFragments();
-//                return journalFragmentsFragment;
 
             case 3:
                 // terminologiews fragment
@@ -241,10 +237,8 @@ public class MainActivity extends AppCompatActivity implements
                         break;
 
                     case R.id.journal:
-                      //  navItemIndex = 3;
-//                        CURRENT_TAG = TAG_JOURNAL;
+
                         startActivity(new Intent(MainActivity.this, JournalActivity.class));
-                      //  drawer.closeDrawers();
                         finish();
 
                         return true;
@@ -270,17 +264,6 @@ public class MainActivity extends AppCompatActivity implements
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
 
-
-//                    case R.id.nav_about_us:
-//                        // launch new intent instead of loading fragment
-//                        startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
-//                        drawer.closeDrawers();
-//                        return true;
-//                    case R.id.nav_privacy_policy:
-//                        // launch new intent instead of loading fragment
-//                        startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
-//                        drawer.closeDrawers();
-//                        return true;
                     default:
                         navItemIndex = 0;
                 }

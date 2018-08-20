@@ -35,7 +35,7 @@ public class StoryCategory extends AppCompatActivity {
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setTitle("Poems");
+        setTitle("Story");
 
 
         listView = findViewById(R.id.easyList);
