@@ -1,5 +1,6 @@
 package sebastian.devmonkey.capstoneproject.activity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,16 +14,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.Journal.JournalActivity;
 import sebastian.devmonkey.capstoneproject.fragments.AboutFragment;
 import sebastian.devmonkey.capstoneproject.fragments.BookmarksFragment;
 import sebastian.devmonkey.capstoneproject.fragments.HelpFragment;
 import sebastian.devmonkey.capstoneproject.fragments.HomeFragment;
-import sebastian.devmonkey.capstoneproject.fragments.JournalFragments;
 import sebastian.devmonkey.capstoneproject.fragments.ReadingPlansFragment;
 import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
 import sebastian.devmonkey.capstoneproject.fragments.TerminologiesFragment;
@@ -31,8 +31,8 @@ import sebastian.devmonkey.capstoneproject.fragments.TerminologiesFragment;
 public class MainActivity extends AppCompatActivity implements
         AboutFragment.OnFragmentInteractionListener, BookmarksFragment.OnFragmentInteractionListener
 , ReadingPlansFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener
-, HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener ,
-JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteractionListener{
+, HomeFragment.OnFragmentInteractionListener, TerminologiesFragment.OnFragmentInteractionListener
+        , HelpFragment.OnFragmentInteractionListener{
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -175,12 +175,8 @@ JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteracti
                 // bookmarks
                 BookmarksFragment bookmarksFragment = new BookmarksFragment();
                 return bookmarksFragment;
-            case 3:
-                // journal fragment
-                JournalFragments journalFragmentsFragment = new JournalFragments();
-                return journalFragmentsFragment;
 
-            case 4:
+            case 3:
                 // terminologiews fragment
                 TerminologiesFragment terminologiesFragment = new TerminologiesFragment();
                 return terminologiesFragment;
@@ -240,14 +236,9 @@ JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteracti
                         CURRENT_TAG = TAG_BOOKMARKS;
                         break;
 
-                    case R.id.journal:
-                        navItemIndex = 3;
-                        CURRENT_TAG = TAG_JOURNAL;
-                        break;
-
 
                     case R.id.terminologies:
-                        navItemIndex = 4;
+                        navItemIndex = 3;
                         CURRENT_TAG = TAG_TERMINOLOGIES;
                         break;
 
@@ -267,16 +258,11 @@ JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteracti
                         break;
 
 
-//                    case R.id.nav_about_us:
-//                        // launch new intent instead of loading fragment
-//                        startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
-//                        drawer.closeDrawers();
-//                        return true;
-//                    case R.id.nav_privacy_policy:
-//                        // launch new intent instead of loading fragment
-//                        startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
-//                        drawer.closeDrawers();
-//                        return true;
+                    case R.id.journal:
+                        startActivity(new Intent(MainActivity.this, JournalActivity.class));
+                        finish();
+                        return true;
+
                     default:
                         navItemIndex = 0;
                 }

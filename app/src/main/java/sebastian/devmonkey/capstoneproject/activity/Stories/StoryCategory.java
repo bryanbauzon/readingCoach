@@ -1,21 +1,18 @@
-package sebastian.devmonkey.capstoneproject.activity.Poem;
+package sebastian.devmonkey.capstoneproject.activity.Stories;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
 
-public class PoemCategory extends AppCompatActivity {
+public class StoryCategory extends AppCompatActivity {
 
 
     ArrayAdapter<String> listviewAdapter;
@@ -29,7 +26,7 @@ public class PoemCategory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_poem_category);
+        setContentView(R.layout.activity_story_category);
 
         Arrays storyTitles = new Arrays();
 
@@ -38,7 +35,7 @@ public class PoemCategory extends AppCompatActivity {
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setTitle("Poems");
+        setTitle("Story");
 
 
         listView = findViewById(R.id.easyList);
@@ -63,7 +60,7 @@ public class PoemCategory extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
               //  Object object = adapter.getI
                 //Toast.makeText(getApplicationContext(),"id "+ l,Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(),PoemReading.class);
+                Intent intent = new Intent(getApplicationContext(),StoryReading.class);
                 intent.putExtra("level","easy");
                 String value = Long.toString(l);
                 intent.putExtra("id",value);
