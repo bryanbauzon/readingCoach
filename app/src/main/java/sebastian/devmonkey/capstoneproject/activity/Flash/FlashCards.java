@@ -4,13 +4,17 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -18,7 +22,18 @@ import sebastian.devmonkey.capstoneproject.R;
 
 public class FlashCards extends AppCompatActivity {
     TextToSpeech tts;
-    TextView textContainer,word;
+    TextView textContainer,word,score;
+    Button  alertYes;
+
+    public String[] words = {
+            "hello",
+            "test",
+            "define",
+            "savage",
+            "deadline"
+    };
+    String lastitem = words[4];
+    int ctr = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +41,10 @@ public class FlashCards extends AppCompatActivity {
         setTitle("Flash Cards");
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         textContainer = findViewById(R.id.text);
         word = findViewById(R.id.words);
+        score = findViewById(R.id.score);
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int i) {
@@ -62,9 +79,40 @@ public class FlashCards extends AppCompatActivity {
                     ArrayList<String> resultData = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     textContainer.setText(resultData.get(0));
                     //..displaying the result by the use of toast or a pop up message
-                        Toast.makeText(this,"You said : "+textContainer.getText().toString().trim(),Toast.LENGTH_SHORT).show();
                         if(textContainer.getText().toString().equals(word.getText().toString())){
-                            textContainer.setBackgroundColor(getResources().getColor(R.color.correct));
+
+                            LayoutInflater factory = LayoutInflater.from(this);
+                            final View correctDialogView = factory.inflate(R.layout.customized_alert_dialog,null);
+                            final AlertDialog correctDialog = new AlertDialog.Builder(this).create();
+
+                            //initialization of button from custom alert dialog
+                            Button yes = (Button)correctDialogView.findViewById(R.id.btnYes);
+
+                            correctDialog.setView(correctDialogView);
+                            correctDialog.show();
+                            //incerment by 1
+                            ctr++;
+                            score.setText("Score: "+ ctr);
+                            if(words[ctr].equals(5)){
+                                ctr = 0;
+                                Toast.makeText(getApplicationContext(),"You have reach the ending word. The module is still under construction",Toast.LENGTH_LONG).show();
+                                correctDialog.dismiss();
+                            }else{
+                                yes.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        correctDialog.dismiss();
+                                        word.setText(words[ctr]);
+                                        textContainer.setText(null);
+                                        prompSpeech();
+                                    }
+                                });
+
+                                word.setText(words[ctr]);
+                                textContainer.setText(null);
+                            }
+
+                          //  textContainer.setBackgroundColor(getResources().getColor(R.color.correct));
                         }else{
                             textContainer.setBackgroundColor(getResources().getColor(R.color.incorrect));
                         }
@@ -98,6 +146,5 @@ public class FlashCards extends AppCompatActivity {
             }
         }
     }
-
 
 }

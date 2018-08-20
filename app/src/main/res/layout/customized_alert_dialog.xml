@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/correct"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="@string/txt_you_got_it"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="15dp"
+        android:layout_height="150dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to next word?"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="YES"
+            android:id="@+id/btnYes"
+            android:background="@color/correct"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
