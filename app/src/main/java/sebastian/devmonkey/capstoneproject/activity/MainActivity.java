@@ -364,7 +364,8 @@ public class MainActivity extends AppCompatActivity implements
 
         this.doubleBackToExitPressedOnce = true;
         Toast.makeText(this,"Please click BACK again to exit", Toast.LENGTH_SHORT).show();
-
+//e
+        //tl
         new Handler().postDelayed(new Runnable() {
 
             @Override
