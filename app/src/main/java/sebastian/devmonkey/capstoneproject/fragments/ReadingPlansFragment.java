@@ -13,8 +13,7 @@ import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Flash.FlashCards;
-import sebastian.devmonkey.capstoneproject.activity.Poem.PoemCategory;
-import sebastian.devmonkey.capstoneproject.activity.Stories.Story;
+import sebastian.devmonkey.capstoneproject.activity.Stories.StoryCategory;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -118,12 +117,11 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnPoems:
-                startActivity(new Intent(getActivity(), PoemCategory.class));
+               // startActivity(new Intent(getActivity(), StoryCategory.class));
                 break;
 
             case R.id.btnStory:
-                Toast.makeText(getActivity(), "This module is for testing purposes only.", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getActivity(), Story.class));
+                startActivity(new Intent(getActivity(), StoryCategory.class));
                 break;
             case R.id.btnFlashCards:
                 startActivity(new Intent(getActivity(), FlashCards.class));

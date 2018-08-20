@@ -13,7 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Poem.PoemReading;
+import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 /**
@@ -95,7 +95,7 @@ public class BookmarksFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                startActivity(new Intent(getActivity(), PoemReading.class));
+                startActivity(new Intent(getActivity(), StoryReading.class));
             }
         });
 

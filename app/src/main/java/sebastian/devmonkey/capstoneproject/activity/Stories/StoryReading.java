@@ -1,7 +1,6 @@
-package sebastian.devmonkey.capstoneproject.activity.Poem;
+package sebastian.devmonkey.capstoneproject.activity.Stories;
 
 import android.content.Intent;
-import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,7 +18,7 @@ import java.util.Locale;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Quizzer.Quizzer;
 
-public class PoemReading extends AppCompatActivity {
+public class StoryReading extends AppCompatActivity {
 
     TextView content;
     TextToSpeech textToSpeech;
@@ -31,7 +30,7 @@ public class PoemReading extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_poem_reading);
+        setContentView(R.layout.activity_story_reading);
 
         Intent intent = getIntent();
         content = findViewById(R.id.txtContent);

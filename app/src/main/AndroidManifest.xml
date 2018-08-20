@@ -24,18 +24,18 @@
             android:name=".activity.Journal.UpdateDeleteJournal"
             android:theme="@style/HoloLight" />
         <activity
-            android:name=".activity.Poem.PoemCategory"
+            android:name=".activity.Stories.StoryCategory"
             android:theme="@style/HoloLight" />
         <activity
             android:name=".activity.Flash.FlashCards"
             android:theme="@style/HoloLight" />
         <activity
-            android:name=".activity.Stories.Story"
+            android:name=".activity.Stories.StoryReading"
             android:theme="@style/HoloLight" />
         <activity
-            android:name=".activity.Poem.PoemReading"
+            android:name=".activity.Quizzer.Quizzer"
             android:theme="@style/HoloLight" />
-        <activity android:name=".activity.Quizzer.Quizzer"
+        <activity android:name=".activity.Journal.JournalActivity"
             android:theme="@style/HoloLight"/>
     </application>
 
