@@ -360,7 +360,7 @@ JournalFragments.OnFragmentInteractionListener, HelpFragment.OnFragmentInteracti
 
         this.doubleBackToExitPressedOnce = true;
         Toast.makeText(this,"Please click BACK again to exit", Toast.LENGTH_SHORT).show();
-
+//e
         new Handler().postDelayed(new Runnable() {
 
             @Override
