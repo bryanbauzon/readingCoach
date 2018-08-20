@@ -17,7 +17,7 @@
             android:title="@string/btn_reading_plans" />
         <item
             android:id="@+id/bookmarks"
-            android:icon="@drawable/ic_action_name"
+            android:icon="@drawable/ic_bookmark"
             android:title="@string/btn_bookmarks" />
         <item
             android:id="@+id/journal"

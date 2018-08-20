@@ -67,8 +67,8 @@ public class FlashCards extends AppCompatActivity {
                             textContainer.setBackgroundColor(getResources().getColor(R.color.correct));
                         }else{
                             textContainer.setBackgroundColor(getResources().getColor(R.color.incorrect));
-
                         }
+
                 }
                 break;
         }
