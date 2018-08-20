@@ -181,16 +181,16 @@ public class MainActivity extends AppCompatActivity implements
                 TerminologiesFragment terminologiesFragment = new TerminologiesFragment();
                 return terminologiesFragment;
 
-            case 4:
+            case 5:
                 // about fragment
                 AboutFragment aboutFragment = new AboutFragment();
                 return aboutFragment;
 
-            case 5:
+            case 6:
                 HelpFragment helpFragment = new HelpFragment();
                 return helpFragment;
 
-            case 6:
+            case 7:
                 // settings fragment
                 SettingsFragment settingsFragment = new SettingsFragment();
                 return settingsFragment;
@@ -236,13 +236,6 @@ public class MainActivity extends AppCompatActivity implements
                         CURRENT_TAG = TAG_BOOKMARKS;
                         break;
 
-                    case R.id.journal:
-
-                        startActivity(new Intent(MainActivity.this, JournalActivity.class));
-                        finish();
-
-                        return true;
-
 
                     case R.id.terminologies:
                         navItemIndex = 3;
@@ -250,19 +243,25 @@ public class MainActivity extends AppCompatActivity implements
                         break;
 
                     case R.id.about:
-                        navItemIndex = 4;
+                        navItemIndex = 5;
                         CURRENT_TAG = TAG_ABOUT;
                         break;
 
                     case R.id.help:
-                        navItemIndex = 5;
+                        navItemIndex = 6;
                         CURRENT_TAG = TAG_HELP;
                         break;
 
                     case R.id.nav_settings:
-                        navItemIndex = 6;
+                        navItemIndex = 7;
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
+
+
+                    case R.id.journal:
+                        startActivity(new Intent(MainActivity.this, JournalActivity.class));
+                        finish();
+                        return true;
 
                     default:
                         navItemIndex = 0;
