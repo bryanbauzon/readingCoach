@@ -26,7 +26,7 @@ AddJournal extends AppCompatActivity {
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setTitle("Add Journal");
+        setTitle("add Journal");
 
         db = new DatabaseHelper(this);
         btnSave = findViewById(R.id.save);

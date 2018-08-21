@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/story"
+        android:title="@string/title_t2s" />
+
+    <item
+        android:id="@+id/quizzer"
+        android:title="@string/quizzer" />
+
+    <item
+        android:id="@+id/notes"
+        android:title="@string/notes" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+</menu>

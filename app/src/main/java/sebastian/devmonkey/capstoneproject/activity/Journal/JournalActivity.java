@@ -16,8 +16,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Journal.AddJournal;
-import sebastian.devmonkey.capstoneproject.activity.Journal.UpdateDeleteJournal;
 import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
@@ -101,7 +99,7 @@ public class JournalActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.action_bar, menu);
+        inflater.inflate(R.menu.add, menu);
         return true;
     }
 
