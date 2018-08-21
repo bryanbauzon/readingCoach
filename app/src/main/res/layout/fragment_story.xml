@@ -10,20 +10,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding='10dp'>
+        android:padding="10dp"
+        android:layout_marginBottom="45dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Title"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author"
             android:paddingTop="5dp"
-            android:textSize="15dp"/>
+            android:text="Author"
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/txtContent"
@@ -34,23 +36,23 @@
             />
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="50dp">
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="50dp">-->
 
-            <!--<Button-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:id="@+id/btn"-->
-                <!--android:text="T2S"/>-->
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/btn"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="T2S"/>&ndash;&gt;-->
 
-            <!--<Button-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:id="@+id/btnQuizzer"-->
-                <!--android:text="Quizzer"/>-->
-        </LinearLayout>
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/btnQuizzer"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Quizzer"/>&ndash;&gt;-->
+        <!--</LinearLayout>-->
     </LinearLayout>
 </FrameLayout>

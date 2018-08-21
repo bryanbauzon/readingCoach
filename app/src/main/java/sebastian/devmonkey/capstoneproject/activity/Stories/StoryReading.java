@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
@@ -38,6 +39,7 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
 
         setTitle("Story");
         loadFragment(new Story());
+
 
 
     }

@@ -65,14 +65,13 @@ public class StoryCategory extends AppCompatActivity {
                 String value = Long.toString(l);
                 intent.putExtra("id",value);
                 startActivity(intent);
+                finish();
 
             }
         });
 
 
     }
-
-
 
 
     public boolean onOptionsItemSelected(MenuItem item){
