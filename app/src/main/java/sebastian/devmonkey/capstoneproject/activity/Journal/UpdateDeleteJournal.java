@@ -125,15 +125,7 @@ public class UpdateDeleteJournal extends AppCompatActivity {
 
 
     private void Back() {
-        int fragments = getSupportFragmentManager().getBackStackEntryCount();
-        if (fragments == 1) {
-            finish();
-        } else {
-            if (getFragmentManager().getBackStackEntryCount() > 1) {
-                getFragmentManager().popBackStack();
-            } else {
-                super.onBackPressed();
-            }
-        }
+        startActivity(new Intent(getApplicationContext(), JournalActivity.class));
+        finish();
     }
 }

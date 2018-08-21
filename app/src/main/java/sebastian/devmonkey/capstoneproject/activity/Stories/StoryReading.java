@@ -1,5 +1,6 @@
 package sebastian.devmonkey.capstoneproject.activity.Stories;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -105,15 +106,23 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
     public void onBackPressed() {
         finish();
     }
-//
-//
-//    public boolean onOptionsItemSelected(MenuItem item){
-//        textToSpeech.shutdown();
-//        textToSpeech.stop();
-//        finish();
-//        return true;
-//
-//    }
+
+
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
+            case android.R.id.home:
+                startActivity(new Intent(getApplicationContext(), StoryCategory.class));
+                finish();
+                return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
+
+    }
+
+
 
 
     @Override

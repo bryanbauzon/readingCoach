@@ -1,5 +1,6 @@
 package sebastian.devmonkey.capstoneproject.activity.Journal;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -26,7 +27,7 @@ AddJournal extends AppCompatActivity {
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setTitle("add Journal");
+        setTitle("Add Journal");
 
         db = new DatabaseHelper(this);
         btnSave = findViewById(R.id.save);
@@ -88,17 +89,8 @@ AddJournal extends AppCompatActivity {
 
 
     private void Back() {
-        int fragments = getSupportFragmentManager().getBackStackEntryCount();
-        if (fragments == 1) {
-            //
-            finish();
-        } else {
-            if (getFragmentManager().getBackStackEntryCount() > 1) {
-                getFragmentManager().popBackStack();
-            } else {
-                super.onBackPressed();
-            }
-        }
+        startActivity(new Intent(getApplicationContext(), JournalActivity.class));
+        finish();
     }
 
 }

@@ -206,4 +206,11 @@ public class Story extends Fragment {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onDestroy() {
+        textToSpeech.shutdown();
+        textToSpeech.stop();
+        super.onDestroy();
+    }
 }

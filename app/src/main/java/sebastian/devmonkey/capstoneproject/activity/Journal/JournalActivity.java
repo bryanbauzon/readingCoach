@@ -33,6 +33,10 @@ public class JournalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_journal);
 
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("Journal");
+
         db = new DatabaseHelper(this);
         listItem = new ArrayList<>();
         id = new ArrayList<>();
@@ -56,6 +60,7 @@ public class JournalActivity extends AppCompatActivity {
                 intent.putExtra("TITLE", title);
                 intent.putExtra("CONTENT", content.get(i));
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -112,12 +117,16 @@ public class JournalActivity extends AppCompatActivity {
                 //    this.overridePendingTransition()
                 return true;
 
+            case android.R.id.home:
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
+                return true;
+
             default:
                 break;
         }
 
-        return false;
-
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

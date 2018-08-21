@@ -32,9 +32,6 @@
         <activity
             android:name=".activity.Stories.StoryReading"
             android:theme="@style/HoloLight" />
-        <activity
-            android:name=".activity.Quizzer.Quizzer"
-            android:theme="@style/HoloLight" />
         <activity android:name=".activity.Journal.JournalActivity"
             android:theme="@style/HoloLight"/>
     </application>
