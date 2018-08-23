@@ -11,10 +11,6 @@
         android:icon="@drawable/ic_settings"
         android:title="@string/quizzer" />
 
-    <item
-        android:id="@+id/notes"
-        android:icon="@drawable/ic_settings"
-        android:title="@string/notes" />
 
     <item
         android:id="@+id/settings"

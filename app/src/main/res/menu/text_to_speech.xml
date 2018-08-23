@@ -3,10 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/t2s"
+    android:id="@+id/t2s"
+    android:icon="@drawable/ic_add_black_24dp"
+    app:showAsAction="ifRoom"
+    android:title="Text to Speech"
+    />
+
+    <item
+        android:id="@+id/addJournal"
         android:icon="@drawable/ic_add_black_24dp"
         app:showAsAction="ifRoom"
-        android:title="Add"
+        android:title="Add Journal"
         />
 
 </menu>
