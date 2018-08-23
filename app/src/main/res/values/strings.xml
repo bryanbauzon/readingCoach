@@ -41,7 +41,7 @@
     <string name="btn_yes">Yes</string>
     <string name="txt_you_got_it">You got it!</string>
 
-    <string name="title_t2s">Text to Speech</string>
+    <string name="title_t2s">Story</string>
     <string name="quizzer">Quizzer</string>
     <string name="notes">Notes</string>
     <string name="settings">Settings</string>
