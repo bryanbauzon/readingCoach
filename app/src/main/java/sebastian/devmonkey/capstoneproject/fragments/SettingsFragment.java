@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
@@ -26,6 +27,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    TextView appName,overView;
     View view;
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -62,6 +64,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -73,6 +76,9 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         Button small = (Button)view.findViewById(R.id.btnSmall);
         Button medium = (Button)view.findViewById(R.id.btnMedium);
         Button large = (Button)view.findViewById(R.id.btnLarge);
+
+        appName = (TextView)view.findViewById(R.id.app_name);
+        overView = (TextView)view.findViewById(R.id.overview);
         small.setOnClickListener(this);
         medium.setOnClickListener(this);
         large.setOnClickListener(this);
@@ -108,13 +114,15 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btnSmall:
-                Toast.makeText(getContext(),"Small",Toast.LENGTH_SHORT).show();
+                appName.setTextSize(getResources().getDimension(R.dimen.small));
                 break;
             case R.id.btnMedium:
-                Toast.makeText(getContext(),"Medium",Toast.LENGTH_SHORT).show();
+                appName.setTextSize(getResources().getDimension(R.dimen.medium));
+
                 break;
                 default:
-                    Toast.makeText(getContext(),"Large",Toast.LENGTH_SHORT).show();
+                    appName.setTextSize(getResources().getDimension(R.dimen.large));
+
                     break;
         }
     }
