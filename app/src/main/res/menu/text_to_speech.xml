@@ -4,11 +4,9 @@
 
     <item
     android:id="@+id/t2s"
-    android:icon="@drawable/ic_add_black_24dp"
     app:showAsAction="ifRoom"
-    android:title="Text to Speech"
+    android:title="Speech"
     />
-
     <item
         android:id="@+id/addJournal"
         android:icon="@drawable/ic_add_black_24dp"

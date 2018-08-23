@@ -41,6 +41,7 @@ public class Story extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private Menu menu;
     TextView content;
     TextToSpeech textToSpeech;
     int ctr;
@@ -184,6 +185,7 @@ public class Story extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.text_to_speech, menu);
+        this.menu = menu;
         super.onCreateOptionsMenu(menu,inflater);
     }
 
@@ -193,12 +195,17 @@ public class Story extends Fragment {
         switch (id) {
             case R.id.t2s:
                 ctr++;
+                MenuItem menuItem = menu.findItem(R.id.t2s);
+
                 if(ctr == 1){
+                    menuItem.setTitle("Stop");
                     String toSpeak = content.getText().toString();
                     textToSpeech.speak(toSpeak,TextToSpeech.QUEUE_FLUSH,null);
 
                 }else{
+                    menuItem.setTitle("Speech");
                     textToSpeech.stop();
+
                     ctr = 0;
                 }
                 return true;
