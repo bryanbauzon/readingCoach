@@ -20,9 +20,6 @@ public class StoryCategory extends AppCompatActivity {
 
     ListView listView, listView1, listView2;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
