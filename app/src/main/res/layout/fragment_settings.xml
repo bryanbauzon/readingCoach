@@ -31,22 +31,29 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button1"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Button"
+                android:textSize="10dp"
+                android:id="@+id/btnSmall"
+                />
 
             <Button
-                android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Button"
+                android:textSize="15dp"
+                android:id="@+id/btnMedium"
+                />
 
             <Button
-                android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:textSize="20dp"
+                android:text="Button"
+                android:id="@+id/btnLarge"
+                />
 
 
         </LinearLayout>

@@ -10,4 +10,8 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="profile_width">110dp</dimen>
     <dimen name="profile_height">110dp</dimen>
+
+    <dimen name="small">10dp</dimen>
+    <dimen name="medium">15dp</dimen>
+    <dimen name="large">20dp</dimen>
 </resources>

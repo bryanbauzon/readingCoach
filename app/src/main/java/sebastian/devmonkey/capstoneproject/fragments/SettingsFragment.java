@@ -4,9 +4,13 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 
@@ -18,11 +22,15 @@ import sebastian.devmonkey.capstoneproject.R;
  * Use the {@link SettingsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SettingsFragment extends Fragment {
+public class SettingsFragment extends Fragment implements View.OnClickListener{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+  //  TextView appName,overView;
+    View view;
+    TextView text;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -31,7 +39,7 @@ public class SettingsFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     public SettingsFragment() {
-        // Required empty public constructor
+     // Required empty public constructor
     }
 
     /**
@@ -59,13 +67,25 @@ public class SettingsFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+        view = inflater.inflate(R.layout.fragment_settings,container,false);
+
+        Button small = (Button)view.findViewById(R.id.btnSmall);
+        Button medium = (Button)view.findViewById(R.id.btnMedium);
+        Button large = (Button)view.findViewById(R.id.btnLarge);
+        // text = (TextView)getActivity().findViewById(R.id.app_name);
+        //TextView overView = (TextView)view.findViewById(R.id.overview);
+        small.setOnClickListener(this);
+        medium.setOnClickListener(this);
+        large.setOnClickListener(this);
+       // return inflater.inflate(R.layout.fragment_settings, container, false);
+    return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -90,6 +110,25 @@ public class SettingsFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onClick(View view) {
+
+
+        switch (view.getId()){
+            case R.id.btnSmall:
+              //text.setTextSize(getResources().getDimension(R.dimen.small));
+                break;
+            case R.id.btnMedium:
+              //  appName.setTextSize(getResources().getDimension(R.dimen.medium));
+
+                break;
+                default:
+               //     appName.setTextSize(getResources().getDimension(R.dimen.large));
+
+                    break;
+        }
     }
 
     /**

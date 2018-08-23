@@ -21,11 +21,13 @@
                 android:layout_centerHorizontal="true"
                 android:textAlignment="center"
                 android:textAllCaps="true"
+                android:id="@+id/app_name"
                 />
             <TextView
                 android:layout_centerInParent="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/overview"
                 android:text="@string/txt_overview"
                 />
         </RelativeLayout>

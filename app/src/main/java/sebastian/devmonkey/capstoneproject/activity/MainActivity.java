@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
-        txtName = (TextView) navHeader.findViewById(R.id.name);
+       txtName = (TextView) navHeader.findViewById(R.id.name);
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
         // load nav menu header data
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements
      */
     private void loadNavHeader() {
         // name, website
-        txtName.setText("BRAINIAC");
+       txtName.setText("BRAINIA");
 
     }
 
@@ -345,7 +345,7 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this,"Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Please click back again to exit", Toast.LENGTH_SHORT).show();
 //e
         //tl
         new Handler().postDelayed(new Runnable() {
