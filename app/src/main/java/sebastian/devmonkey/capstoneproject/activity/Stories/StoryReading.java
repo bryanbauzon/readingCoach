@@ -89,9 +89,7 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
         transaction.commit();
     }
 
-    private void save(){
 
-    }
 //    public void Speech(View view) {
 //        ctr++;
 //        if(ctr == 1){

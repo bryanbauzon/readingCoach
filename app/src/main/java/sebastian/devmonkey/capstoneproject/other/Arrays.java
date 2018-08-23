@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Arrays {
 
-    private String[] storyTitles = {"Story1", "Story2", "Story3"};
+    private String[] storyTitles = {"A Cold Day", "A Christmas in March", "Story3"};
 
     private String[] mQuestion = {
             "question1?",

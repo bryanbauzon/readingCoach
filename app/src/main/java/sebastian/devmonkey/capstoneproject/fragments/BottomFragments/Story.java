@@ -116,10 +116,9 @@ public class Story extends Fragment {
             //testing for id
             if(id == 0){
                 //array is always starts at 0;
-                is = getActivity().getResources().openRawResource(R.raw.easy_story1);
+                is = getActivity().getResources().openRawResource(R.raw.a_cold_day);
             } if(id == 1){
-                is = getActivity().getResources().openRawResource(R.raw.test);
-
+                is = getActivity().getResources().openRawResource(R.raw.a_christmas_in_march);
             }
         }//succeding is for higher level
 
@@ -128,7 +127,7 @@ public class Story extends Fragment {
             try {
                 //assigning the value of reader to data and test it until the condition meets,
                 while ((data = reader.readLine()) != null){
-                    stringBuffer.append(data + "n");
+                    stringBuffer.append(data + "");
                 }
                 content.setText(stringBuffer);
                 is.close();
