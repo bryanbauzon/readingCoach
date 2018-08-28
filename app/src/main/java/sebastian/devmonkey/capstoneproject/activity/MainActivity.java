@@ -12,6 +12,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -345,8 +346,10 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this,"Please click back again to exit", Toast.LENGTH_SHORT).show();
-//e
+
+        //Custom Dialog
+        LayoutInflater factory = LayoutInflater.from(MainActivity.this);
+
         //tl
         new Handler().postDelayed(new Runnable() {
 

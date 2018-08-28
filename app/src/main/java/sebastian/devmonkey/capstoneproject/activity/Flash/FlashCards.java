@@ -27,7 +27,7 @@ public class FlashCards extends AppCompatActivity {
 
     public String[] words = {
             "hello",
-            "test",
+            "best",
             "define",
             "savage",
             "deadline"

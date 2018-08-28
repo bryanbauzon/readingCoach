@@ -9,8 +9,6 @@
             android:id="@+id/home"
             android:icon="@drawable/ic_home"
             android:title="@string/btn_home" />
-
-
         <item
             android:id="@+id/reading_plans"
             android:icon="@drawable/ic_reading_plans"

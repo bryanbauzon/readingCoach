@@ -11,6 +11,7 @@
         <activity
             android:name=".activity.MainActivity"
             android:theme="@style/AppTheme">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,8 +33,14 @@
         <activity
             android:name=".activity.Stories.StoryReading"
             android:theme="@style/HoloLight" />
-        <activity android:name=".activity.Journal.JournalActivity"
-            android:theme="@style/HoloLight"/>
+        <activity
+            android:name=".activity.Journal.JournalActivity"
+            android:theme="@style/HoloLight" />
+        <activity android:name=".activity.SplashScreen"
+            android:theme="@style/HoloLight"
+            >
+
+        </activity>
     </application>
 
 </manifest>
