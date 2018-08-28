@@ -19,21 +19,22 @@
         </activity>
         <activity
             android:name=".activity.Journal.AddJournal"
-            android:theme="@style/HoloLight" />
+            android:theme="@style/Custom" />
         <activity
             android:name=".activity.Journal.UpdateDeleteJournal"
-            android:theme="@style/HoloLight" />
+            android:theme="@style/Custom" />
         <activity
             android:name=".activity.Stories.StoryCategory"
-            android:theme="@style/HoloLight" />
+            android:theme="@style/Custom" />
         <activity
             android:name=".activity.Flash.FlashCards"
-            android:theme="@style/HoloLight" />
+            android:theme="@style/Custom" />
         <activity
             android:name=".activity.Stories.StoryReading"
-            android:theme="@style/HoloLight" />
+            android:theme="@style/Custom" />
+
         <activity android:name=".activity.Journal.JournalActivity"
-            android:theme="@style/HoloLight"/>
+            android:theme="@style/Custom"/>
     </application>
 
 </manifest>

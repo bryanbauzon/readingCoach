@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Quizzer;
 import sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Story;
 import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
@@ -47,7 +48,6 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setTitle("Story");
         loadFragment(new Story());
 
 
@@ -67,7 +67,7 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
                     return true;
                 case R.id.quizzer:
                     toolbar.setTitle("Quizzer");
-                    fragment = new sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Quizzer();
+                    fragment = new Quizzer();
                     loadFragment(fragment);
                     return true;
 
@@ -89,29 +89,6 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
         transaction.commit();
     }
 
-    private void save(){
-
-    }
-//    public void Speech(View view) {
-//        ctr++;
-//        if(ctr == 1){
-//            String toSpeak = content.getText().toString();
-//            textToSpeech.speak(toSpeak,TextToSpeech.QUEUE_FLUSH,null);
-//
-//        }else{
-//            textToSpeech.stop();
-//            ctr = 0;
-//        }
-//
-//    }
-//    public void Quizzer(View view) {
-//        textToSpeech.stop();
-//        //startActivity(new Intent(getApplicationContext(), Quizzer.class));
-//        Intent intent = new Intent(getApplicationContext(),Quizzer.class);
-//        intent.putExtra("level",level);
-//        intent.putExtra("id",id_temp);
-//        startActivity(intent);
-// }
     @Override
     public void onBackPressed() {
         finish();

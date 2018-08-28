@@ -1,53 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ReadingPlans.PoemCategory"
-    android:padding="10dp">
+    tools:context=".activity.Stories.StoryCategory">
 
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/bottom_frame_container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Easy"/>
-
-        <ListView
-            android:id="@+id/easyList"
-            android:layout_width="match_parent"
-            android:layout_height="197dp" />
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/bgBottomNavigation"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/category" />
 
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Medium"/>
-
-        <ListView
-            android:id="@+id/mediumList"
-            android:layout_width="match_parent"
-            android:layout_height="197dp" />
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hard"/>
-
-        <ListView
-            android:id="@+id/hardList"
-            android:layout_width="match_parent"
-            android:layout_height="197dp" />
-    </LinearLayout>
-
-
-
-</ScrollView>
+</android.support.design.widget.CoordinatorLayout>

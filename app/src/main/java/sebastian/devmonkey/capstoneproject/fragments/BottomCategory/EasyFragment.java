@@ -1,43 +1,45 @@
-package sebastian.devmonkey.capstoneproject.fragments;
+package sebastian.devmonkey.capstoneproject.fragments.BottomCategory;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
+import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link SettingsFragment.OnFragmentInteractionListener} interface
+ * {@link EasyFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link SettingsFragment#newInstance} factory method to
+ * Use the {@link EasyFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SettingsFragment extends Fragment implements View.OnClickListener{
+public class EasyFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-  //  TextView appName,overView;
-    View view;
-    TextView text;
-
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
+    ArrayAdapter<String> listviewAdapter;
+
     private OnFragmentInteractionListener mListener;
 
-    public SettingsFragment() {
-     // Required empty public constructor
+    public EasyFragment() {
+        // Required empty public constructor
     }
 
     /**
@@ -46,11 +48,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment SettingsFragment.
+     * @return A new instance of fragment EasyFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SettingsFragment newInstance(String param1, String param2) {
-        SettingsFragment fragment = new SettingsFragment();
+    public static EasyFragment newInstance(String param1, String param2) {
+        EasyFragment fragment = new EasyFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,29 +67,44 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_settings,container,false);
 
-        Button small = (Button)view.findViewById(R.id.btnSmall);
-        Button medium = (Button)view.findViewById(R.id.btnMedium);
-        Button large = (Button)view.findViewById(R.id.btnLarge);
-        Button fontType1 = (Button)view.findViewById(R.id.btnFontType1);
-        Button fontType2 = (Button)view.findViewById(R.id.btnFontType2);
-        // text = (TextView)getActivity().findViewById(R.id.app_name);
-        //TextView overView = (TextView)view.findViewById(R.id.overview);
-        small.setOnClickListener(this);
-        medium.setOnClickListener(this);
-        large.setOnClickListener(this);
-        fontType1.setOnClickListener(this);
-        fontType2.setOnClickListener(this);
-       // return inflater.inflate(R.layout.fragment_settings, container, false);
-    return view;
+        View view = inflater.inflate(R.layout.fragment_easy, container, false);
+
+
+        Arrays storyTitle = new Arrays();
+
+        String[] menuItems = storyTitle.getStoryTitles();
+
+        ListView listView = view.findViewById(R.id.easyList);
+        //get array and display to listview
+        listviewAdapter = new ArrayAdapter<>(
+                getActivity(),
+                android.R.layout.simple_list_item_1,
+                menuItems
+        );
+
+        listView.setAdapter(listviewAdapter);
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(),StoryReading.class);
+                intent.putExtra("level","easy");
+                String value = Long.toString(l);
+                intent.putExtra("id",value);
+                startActivity(intent);
+                getActivity().finish();
+            }
+        });
+
+        // Inflate the layout for this fragment
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -114,37 +131,6 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         mListener = null;
     }
 
-    @Override
-    public void onClick(View view) {
-
-
-        switch (view.getId()){
-            case R.id.btnSmall:
-              //text.setTextSize(getResources().getDimension(R.dimen.small));
-                break;
-            case R.id.btnMedium:
-              //  appName.setTextSize(getResources().getDimension(R.dimen.medium));
-                break;
-
-
-            case R.id.btnFontType1:
-
-//                TypefaceUtil.overrideFont(getActivity(), "SERIF", "fonts/OpenSans-Bold.ttf");
-//                Toast.makeText(getActivity(), "Clicked", Toast.LENGTH_SHORT).show();
-//
-//
-//                FragmentTransaction ft = getFragmentManager().beginTransaction();
-//                ft.detach(this).attach(this).commit();
-
-                break;
-
-                default:
-               //     appName.setTextSize(getResources().getDimension(R.dimen.large));
-
-                    break;
-        }
-    }
-
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
@@ -159,22 +145,4 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-
-//    private void RefreshActivity() {
-//        new Handler().post(new Runnable() {
-//
-//            @Override
-//            public void run()
-//            {
-//                Intent intent = getActivity().getIntent();
-//                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK
-//                        | Intent.FLAG_ACTIVITY_NO_ANIMATION);
-//                getActivity().overridePendingTransition(0, 0);
-//                getActivity().finish();
-//
-//                getActivity().overridePendingTransition(0, 0);
-//                startActivity(intent);
-//            }
-//        });
-//    }
 }

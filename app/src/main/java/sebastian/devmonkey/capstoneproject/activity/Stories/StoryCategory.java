@@ -1,73 +1,86 @@
 package sebastian.devmonkey.capstoneproject.activity.Stories;
 
-import android.content.Intent;
+
+import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.other.Arrays;
+import sebastian.devmonkey.capstoneproject.fragments.BottomCategory.EasyFragment;
+import sebastian.devmonkey.capstoneproject.fragments.BottomCategory.HardFragment;
+import sebastian.devmonkey.capstoneproject.fragments.BottomCategory.IntermediateFragment;
 
-public class StoryCategory extends AppCompatActivity {
 
+public class StoryCategory extends AppCompatActivity implements EasyFragment.OnFragmentInteractionListener,
+IntermediateFragment.OnFragmentInteractionListener, HardFragment.OnFragmentInteractionListener{
 
-    ArrayAdapter<String> listviewAdapter;
-    String[] menuItems;
-
-    ListView listView, listView1, listView2;
+    private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story_category);
 
-        Arrays storyTitles = new Arrays();
 
-        menuItems = storyTitles.getStoryTitles();
+        toolbar = getSupportActionBar();
+
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_nav);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        toolbar.setTitle("Easy");
+
 
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setTitle("Story");
+        loadFragment(new EasyFragment());
 
 
-        listView = findViewById(R.id.easyList);
-        listView1 = findViewById(R.id.mediumList);
-        listView2 = findViewById(R.id.hardList);
+
+    }
 
 
-        //get array and display to listview
-        listviewAdapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1,
-                menuItems
-        );
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-        listView.setAdapter(listviewAdapter);
-        listView1.setAdapter(listviewAdapter);
-        listView2.setAdapter(listviewAdapter);
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment fragment;
+            switch (item.getItemId()) {
+                case R.id.nav_easy:
+                    toolbar.setTitle("Easy");
+                    fragment = new EasyFragment();
+                    loadFragment(fragment);
+                    return true;
+                case R.id.nav_intermediate:
+                    toolbar.setTitle("Intermediate");
+                    fragment = new IntermediateFragment();
+                    loadFragment(fragment);
+                    return true;
 
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-              //  Object object = adapter.getI
-                //Toast.makeText(getApplicationContext(),"id "+ l,Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(),StoryReading.class);
-                intent.putExtra("level","easy");
-                String value = Long.toString(l);
-                intent.putExtra("id",value);
-                startActivity(intent);
-                finish();
-
+                case R.id.nav_hard:
+                    toolbar.setTitle("Hard");
+                    fragment = new HardFragment();
+                    loadFragment(fragment);
+                    return true;
             }
-        });
+            return false;
+        }
+    };
 
-
+    private void loadFragment(Fragment fragment) {
+        // load fragment
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.bottom_frame_container1, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
 
@@ -92,4 +105,8 @@ public class StoryCategory extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 }

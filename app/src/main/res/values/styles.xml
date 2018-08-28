@@ -35,12 +35,10 @@
 
 
 
-    <style name="HoloLight" parent="Theme.AppCompat.Light.DarkActionBar" tools:ignore="ResourceCycle">
+    <style name="Custom" parent="Theme.AppCompat.Light.DarkActionBar" tools:ignore="ResourceCycle">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-
     </style>
 
 </resources>

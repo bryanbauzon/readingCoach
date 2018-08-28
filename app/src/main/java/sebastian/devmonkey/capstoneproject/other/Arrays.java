@@ -6,6 +6,8 @@ public class Arrays {
 
     private String[] storyTitles = {"Story1", "Story2", "Story3"};
 
+    private String[] storyIntermediateTitle = {"Intermediate1", "Intermediate2", "Intermediate3"};
+
     private String[] mQuestion = {
             "question1?",
             "question2?",
@@ -79,6 +81,10 @@ public class Arrays {
 
     public  String[] getStoryTitles() {
         return storyTitles.clone();
+    }
+
+    public  String[] getStoryIntermediateTitleTitles() {
+        return storyIntermediateTitle.clone();
     }
 
     public int getLength() {

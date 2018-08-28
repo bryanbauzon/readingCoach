@@ -34,7 +34,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
+                android:text="Aa"
                 android:textSize="10dp"
                 android:id="@+id/btnSmall"
                 />
@@ -42,7 +42,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
+                android:text="Aa"
                 android:textSize="15dp"
                 android:id="@+id/btnMedium"
                 />
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:text="Button"
+                android:text="Aa"
                 android:id="@+id/btnLarge"
                 />
 
@@ -75,13 +75,13 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btnFontType1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/btnFontType2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Button" />

@@ -1,5 +1,6 @@
 package sebastian.devmonkey.capstoneproject.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -94,6 +95,7 @@ public class MainActivity extends AppCompatActivity implements
             loadHomeFragment();
         }
     }
+
 
     /***
      * Load navigation menu header information
