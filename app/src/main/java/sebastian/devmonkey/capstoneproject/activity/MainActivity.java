@@ -10,11 +10,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -349,6 +351,24 @@ public class MainActivity extends AppCompatActivity implements
 
         //Custom Dialog
         LayoutInflater factory = LayoutInflater.from(MainActivity.this);
+        final View confirmationMessageView = factory.inflate(R.layout.customized_confirmation_message,null);
+        final AlertDialog confirmationDialog = new AlertDialog.Builder(MainActivity.this).create();
+        final Button yes = (Button)confirmationMessageView.findViewById(R.id.btnYes);
+        final Button no = (Button)confirmationMessageView.findViewById(R.id.btnNo);
+        confirmationDialog.setView(confirmationMessageView);
+        confirmationDialog.show();
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.exit(0);
+            }
+        });
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                confirmationDialog.dismiss();
+            }
+        });
 
         //tl
         new Handler().postDelayed(new Runnable() {
