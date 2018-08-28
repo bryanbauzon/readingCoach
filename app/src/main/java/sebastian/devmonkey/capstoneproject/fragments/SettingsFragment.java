@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import sebastian.devmonkey.capstoneproject.GlobalVariable;
 import sebastian.devmonkey.capstoneproject.R;
 
 /**
@@ -121,11 +123,20 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         switch (view.getId()){
             case R.id.btnSmall:
               //text.setTextSize(getResources().getDimension(R.dimen.small));
+                GlobalVariable.FontSize = 15;
+                Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
                 break;
             case R.id.btnMedium:
               //  appName.setTextSize(getResources().getDimension(R.dimen.medium));
+                GlobalVariable.FontSize = 17;
+                Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
                 break;
 
+            case R.id.btnLarge:
+                //  appName.setTextSize(getResources().getDimension(R.dimen.medium));
+                GlobalVariable.FontSize = 19;
+                Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
+                break;
 
             case R.id.btnFontType1:
 
