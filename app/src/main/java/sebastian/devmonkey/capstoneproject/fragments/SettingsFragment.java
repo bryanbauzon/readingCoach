@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import sebastian.devmonkey.capstoneproject.GlobalVariable;
+import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 import sebastian.devmonkey.capstoneproject.R;
 
 /**

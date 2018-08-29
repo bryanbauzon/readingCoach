@@ -344,12 +344,6 @@ public class MainActivity extends AppCompatActivity implements
 
 
     private void DoubleClickBack() {
-        if (doubleBackToExitPressedOnce) {
-            super.onBackPressed();
-            return;
-        }
-
-        this.doubleBackToExitPressedOnce = true;
 
         //Custom Dialog
         LayoutInflater factory = LayoutInflater.from(MainActivity.this);

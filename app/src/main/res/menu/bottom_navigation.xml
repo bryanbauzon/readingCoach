@@ -11,6 +11,11 @@
         android:icon="@drawable/ic_settings"
         android:title="@string/quizzer" />
 
+    <item
+        android:id="@+id/jounralFrag"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/txtJournal" />
+
 
     <item
         android:id="@+id/settings"

@@ -16,7 +16,6 @@ public class
 AddJournal extends AppCompatActivity {
 
     DatabaseHelper db;
-    Button btnSave;
     EditText edtTitle, edtContent;
 
     @Override
@@ -30,7 +29,6 @@ AddJournal extends AppCompatActivity {
         setTitle("Add Journal");
 
         db = new DatabaseHelper(this);
-        btnSave = findViewById(R.id.save);
         edtTitle = findViewById(R.id.inputTitle);
         edtContent = findViewById(R.id.inputContent);
     }

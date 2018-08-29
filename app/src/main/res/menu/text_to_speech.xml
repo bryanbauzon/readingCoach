@@ -7,11 +7,5 @@
     app:showAsAction="ifRoom"
     android:title="Speech"
     />
-    <item
-        android:id="@+id/addJournal"
-        android:icon="@drawable/ic_add_black_24dp"
-        app:showAsAction="ifRoom"
-        android:title="Add Journal"
-        />
 
 </menu>

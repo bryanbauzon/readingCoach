@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject;
+package sebastian.devmonkey.capstoneproject.other;
 
 public class GlobalVariable {
 

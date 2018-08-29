@@ -1,6 +1,7 @@
 package sebastian.devmonkey.capstoneproject.activity.Stories;
 
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -13,6 +14,7 @@ import android.view.MenuItem;
 
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.fragments.BottomCategory.EasyFragment;
 import sebastian.devmonkey.capstoneproject.fragments.BottomCategory.HardFragment;
 import sebastian.devmonkey.capstoneproject.fragments.BottomCategory.IntermediateFragment;
@@ -41,8 +43,6 @@ IntermediateFragment.OnFragmentInteractionListener, HardFragment.OnFragmentInter
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         loadFragment(new EasyFragment());
-
-
 
     }
 
@@ -85,24 +85,13 @@ IntermediateFragment.OnFragmentInteractionListener, HardFragment.OnFragmentInter
 
 
     public boolean onOptionsItemSelected(MenuItem item){
-        Back();
+        switch(item.getItemId()) {
+            case android.R.id.home:
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
+        }
         return true;
 
-    }
-
-
-
-    private void Back() {
-        int fragments = getSupportFragmentManager().getBackStackEntryCount();
-        if (fragments == 1) {
-            finish();
-        } else {
-            if (getFragmentManager().getBackStackEntryCount() > 1) {
-                getFragmentManager().popBackStack();
-            } else {
-                super.onBackPressed();
-            }
-        }
     }
 
     @Override

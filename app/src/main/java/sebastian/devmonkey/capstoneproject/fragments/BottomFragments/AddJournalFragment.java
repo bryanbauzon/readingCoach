@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject.fragments;
+package sebastian.devmonkey.capstoneproject.fragments.BottomFragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -7,23 +7,22 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link AboutFragment.OnFragmentInteractionListener} interface
+ * {@link AddJournalFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link AboutFragment#newInstance} factory method to
+ * Use the {@link AddJournalFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AboutFragment extends Fragment {
-
-    View view;
-
+public class AddJournalFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -33,9 +32,13 @@ public class AboutFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    DatabaseHelper db;
+    EditText edtTitle, edtContent;
+    Button btnSave;
+
     private OnFragmentInteractionListener mListener;
 
-    public AboutFragment() {
+    public AddJournalFragment() {
         // Required empty public constructor
     }
 
@@ -45,11 +48,11 @@ public class AboutFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AboutFragment.
+     * @return A new instance of fragment AddJournalFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static AboutFragment newInstance(String param1, String param2) {
-        AboutFragment fragment = new AboutFragment();
+    public static AddJournalFragment newInstance(String param1, String param2) {
+        AddJournalFragment fragment = new AddJournalFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -69,13 +72,38 @@ public class AboutFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_add_journal, container, false);
+
+        db = new DatabaseHelper(getActivity());
+        edtTitle = view.findViewById(R.id.inputTitle);
+        edtContent = view.findViewById(R.id.inputContent);
+
+        btnSave = view.findViewById(R.id.save);
+
+        btnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String title = edtTitle.getText().toString();
+                String content = edtContent.getText().toString();
+                if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
+                    Toast.makeText(getActivity(), "Data added", Toast.LENGTH_LONG).show();
+                    edtTitle.setText("");
+                    edtContent.setText("");
+                    edtTitle.requestFocus();
+                } else {
+                    if(edtTitle.getText().toString().isEmpty() || edtTitle.getText().toString() == "" ){
+                        edtTitle.requestFocus();
+                        edtTitle.setError("Title is empty.");
+                    }else {
+                        edtContent.requestFocus();
+                        edtContent.setError("Content is empty.");
+                    }
+                }
+            }
+        });
+
         // Inflate the layout for this fragment
-
-        view = inflater.inflate(R.layout.fragment_about,container,false);
-
-        TextView aboutTV =  view.findViewById(R.id.aboutTV);
-
-        aboutTV.setTextSize(GlobalVariable.FontSize);
         return view;
     }
 
