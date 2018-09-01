@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
+import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 public class
 

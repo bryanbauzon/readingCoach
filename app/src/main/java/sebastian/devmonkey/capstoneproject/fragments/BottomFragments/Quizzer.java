@@ -17,6 +17,7 @@ import java.util.List;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
+import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -46,6 +47,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     private int score = 0;
     private int questionNumber = 0;
     TextView questions = null, containerScore = null;
+    GlobalVariable gv;
 
 
     private OnFragmentInteractionListener mListener;
@@ -87,12 +89,22 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
         View view = inflater.inflate(R.layout.fragment_quizzer, container, false);
 
+        gv = new GlobalVariable();
+
         questions = view.findViewById(R.id.question);
         containerScore = view. findViewById(R.id.score);
         a = view.findViewById(R.id.a);
         b = view.findViewById(R.id.b);
         c = view.findViewById(R.id.c);
         d = view.findViewById(R.id.d);
+
+        questions.setTypeface(GlobalVariable.font);
+        containerScore.setTypeface(GlobalVariable.font);
+
+        gv.setMargins(questions, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+        gv.setMargins(containerScore ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+
+
 
         a.setOnClickListener(this);
         b.setOnClickListener(this);

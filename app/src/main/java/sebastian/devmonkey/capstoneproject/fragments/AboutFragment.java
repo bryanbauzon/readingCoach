@@ -32,6 +32,7 @@ public class AboutFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    GlobalVariable gv;
 
     private OnFragmentInteractionListener mListener;
 
@@ -72,10 +73,13 @@ public class AboutFragment extends Fragment {
         // Inflate the layout for this fragment
 
         view = inflater.inflate(R.layout.fragment_about,container,false);
+        gv = new GlobalVariable();
 
         TextView aboutTV =  view.findViewById(R.id.aboutTV);
-
+        aboutTV.setTypeface(GlobalVariable.font);
         aboutTV.setTextSize(GlobalVariable.FontSize);
+        gv.setMargins(aboutTV, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+
         return view;
     }
 

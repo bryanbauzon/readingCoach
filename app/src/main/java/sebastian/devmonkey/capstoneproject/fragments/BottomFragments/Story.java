@@ -22,6 +22,7 @@ import java.io.InputStreamReader;
 import java.util.Locale;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -49,6 +50,7 @@ public class Story extends Fragment {
     String level;
     String id_temp;
     InputStream is;
+    GlobalVariable gv;
 
     private OnFragmentInteractionListener mListener;
 
@@ -91,6 +93,11 @@ public class Story extends Fragment {
 
         Intent intent = getActivity().getIntent();
         content = view.findViewById(R.id.txtContent);
+
+        gv = new GlobalVariable();
+
+        content.setTypeface(GlobalVariable.font);
+        gv.setMargins(content ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
 
         //this variable is used for conditional statement and serves as the id
         level = intent.getStringExtra("level");

@@ -78,13 +78,13 @@
                 android:id="@+id/btnFontType1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="OpenSan-Bold" />
 
             <Button
                 android:id="@+id/btnFontType2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="OpenSan-Italic" />
 
         </LinearLayout>
 
@@ -108,16 +108,16 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btnDark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Dark" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btnLight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Light" />
 
         </LinearLayout>
 
@@ -175,19 +175,19 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/btnPageMargin1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/btnPageMargin2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/btnPageMargin3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Button" />

@@ -1,6 +1,7 @@
 package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -76,18 +77,28 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_settings,container,false);
 
-        Button small = (Button)view.findViewById(R.id.btnSmall);
-        Button medium = (Button)view.findViewById(R.id.btnMedium);
-        Button large = (Button)view.findViewById(R.id.btnLarge);
-        Button fontType1 = (Button)view.findViewById(R.id.btnFontType1);
-        Button fontType2 = (Button)view.findViewById(R.id.btnFontType2);
-        // text = (TextView)getActivity().findViewById(R.id.app_name);
-        //TextView overView = (TextView)view.findViewById(R.id.overview);
+        Button small = view.findViewById(R.id.btnSmall);
+        Button medium = view.findViewById(R.id.btnMedium);
+        Button large = view.findViewById(R.id.btnLarge);
+        Button fontType1 = view.findViewById(R.id.btnFontType1);
+        Button fontType2 = view.findViewById(R.id.btnFontType2);
+        Button dark = view.findViewById(R.id.btnDark);
+
+        Button pageMargin1 = view.findViewById(R.id.btnPageMargin1);
+        Button pageMargin2 = view.findViewById(R.id.btnPageMargin2);
+        Button pageMargin3 = view.findViewById(R.id.btnPageMargin3);
+
+
+
         small.setOnClickListener(this);
         medium.setOnClickListener(this);
         large.setOnClickListener(this);
         fontType1.setOnClickListener(this);
         fontType2.setOnClickListener(this);
+        dark.setOnClickListener(this);
+        pageMargin1.setOnClickListener(this);
+        pageMargin2.setOnClickListener(this);
+        pageMargin3.setOnClickListener(this);
        // return inflater.inflate(R.layout.fragment_settings, container, false);
     return view;
     }
@@ -122,37 +133,64 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
         switch (view.getId()){
             case R.id.btnSmall:
-              //text.setTextSize(getResources().getDimension(R.dimen.small));
                 GlobalVariable.FontSize = 15;
                 Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
                 break;
             case R.id.btnMedium:
-              //  appName.setTextSize(getResources().getDimension(R.dimen.medium));
                 GlobalVariable.FontSize = 17;
                 Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.btnLarge:
-                //  appName.setTextSize(getResources().getDimension(R.dimen.medium));
                 GlobalVariable.FontSize = 19;
                 Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.btnFontType1:
-
-//                TypefaceUtil.overrideFont(getActivity(), "SERIF", "fonts/OpenSans-Bold.ttf");
-//                Toast.makeText(getActivity(), "Clicked", Toast.LENGTH_SHORT).show();
-//
-//
-//                FragmentTransaction ft = getFragmentManager().beginTransaction();
-//                ft.detach(this).attach(this).commit();
-
+                GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Bold.ttf");
+                Toast.makeText(getContext(), "Font Changed", Toast.LENGTH_LONG).show();
                 break;
 
-                default:
-               //     appName.setTextSize(getResources().getDimension(R.dimen.large));
+            case R.id.btnFontType2:
+                GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Italic.ttf");
+                Toast.makeText(getContext(), "Font Changed", Toast.LENGTH_LONG).show();
+                break;
 
-                    break;
+//            case R.id.btnDark:
+//                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+//                break;
+
+
+            case R.id.btnPageMargin1:
+                GlobalVariable.left = 10;
+                GlobalVariable.top = 10;
+                GlobalVariable.right = 10;
+                GlobalVariable.bottom = 10;
+
+                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+                break;
+
+            case R.id.btnPageMargin2:
+                GlobalVariable.left = 20;
+                GlobalVariable.top = 20;
+                GlobalVariable.right = 20;
+                GlobalVariable.bottom = 20;
+
+                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+                break;
+
+
+
+            case R.id.btnPageMargin3:
+                GlobalVariable.left = 30;
+                GlobalVariable.top = 30;
+                GlobalVariable.right = 30;
+                GlobalVariable.bottom = 30;
+
+                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+                break;
+
+
         }
     }
 

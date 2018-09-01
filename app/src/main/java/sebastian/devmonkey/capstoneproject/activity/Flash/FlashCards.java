@@ -19,11 +19,13 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 public class FlashCards extends AppCompatActivity {
     TextToSpeech tts;
     TextView textContainer,word,score;
     Button  alertYes;
+    GlobalVariable gv;
 
     public String[] words = {
             "hello",
@@ -39,12 +41,25 @@ public class FlashCards extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash_cards);
         setTitle("Flash Cards");
+
+        gv = new GlobalVariable();
+
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         textContainer = findViewById(R.id.text);
         word = findViewById(R.id.words);
         score = findViewById(R.id.score);
+
+        textContainer.setTypeface(GlobalVariable.font);
+        word.setTypeface(GlobalVariable.font);
+        score.setTypeface(GlobalVariable.font);
+
+        gv.setMargins(textContainer ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+        gv.setMargins(word ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+        gv.setMargins(score ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+
+
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int i) {
