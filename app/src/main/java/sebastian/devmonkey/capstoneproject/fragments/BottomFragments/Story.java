@@ -126,7 +126,104 @@ public class Story extends Fragment {
                 is = getActivity().getResources().openRawResource(R.raw.a_cold_day);
             } if(id == 1){
                 is = getActivity().getResources().openRawResource(R.raw.a_christmas_in_march);
+            } if(id == 2){
+                is = getActivity().getResources().openRawResource(R.raw.a_call_to_the_pool);
+            } if(id == 3){
+                is = getActivity().getResources().openRawResource(R.raw.a_happy_visitor);
+            } if(id == 4){
+                is = getActivity().getResources().openRawResource(R.raw.alligators);
+            } if(id == 5){
+                is = getActivity().getResources().openRawResource(R.raw.an_adventure);
+            } if(id == 6){
+                is = getActivity().getResources().openRawResource(R.raw.bears);
+            } if(id == 7){
+                is = getActivity().getResources().openRawResource(R.raw.beds);
+            } if(id == 8){
+                is = getActivity().getResources().openRawResource(R.raw.bella_hides);
+            } if(id == 9){
+                is = getActivity().getResources().openRawResource(R.raw.big_city_noise);
+            } if(id == 10){
+                is = getActivity().getResources().openRawResource(R.raw.birds);
+            } if(id == 11){
+                is = getActivity().getResources().openRawResource(R.raw.butterfly);
+            } if(id == 12){
+                is = getActivity().getResources().openRawResource(R.raw.dogs);
+            } if(id == 13){
+                is = getActivity().getResources().openRawResource(R.raw.empress_the_blues);
+            } if(id == 14){
+                is = getActivity().getResources().openRawResource(R.raw.fish);
+            } if(id == 15){
+                is = getActivity().getResources().openRawResource(R.raw.flags);
+            } if(id == 16){
+                is = getActivity().getResources().openRawResource(R.raw.green_grass);
+            } if(id == 17){
+                is = getActivity().getResources().openRawResource(R.raw.grifins_talent);
+            } if(id == 18){
+                is = getActivity().getResources().openRawResource(R.raw.helicopters);
+            } if(id == 19){
+                is = getActivity().getResources().openRawResource(R.raw.houses);
+            } if(id == 20){
+                is = getActivity().getResources().openRawResource(R.raw.humans);
+            } if(id == 21){
+                is = getActivity().getResources().openRawResource(R.raw.i_fly);
+            } if(id == 22){
+                is = getActivity().getResources().openRawResource(R.raw.ice_fishing);
+            } if(id == 23){
+                is = getActivity().getResources().openRawResource(R.raw.julians_work);
+            } if(id == 24){
+                is = getActivity().getResources().openRawResource(R.raw.leornardo_da_vinci);
+            } if(id == 25){
+                is = getActivity().getResources().openRawResource(R.raw.money);
+            } if(id == 26){
+                is = getActivity().getResources().openRawResource(R.raw.my_family);
+            } if(id == 27){
+                is = getActivity().getResources().openRawResource(R.raw.my_friend);
+            } if(id == 28){
+                is = getActivity().getResources().openRawResource(R.raw.my_house);
+            } if(id == 29){
+                is = getActivity().getResources().openRawResource(R.raw.new_shoes_for_mandy);
+            } if(id == 30){
+                is = getActivity().getResources().openRawResource(R.raw.one_hundred_dollars);
+            } if(id == 31){
+                is = getActivity().getResources().openRawResource(R.raw.paul_cooks);
+            } if(id == 32){
+                is = getActivity().getResources().openRawResource(R.raw.rainy_day);
+            } if(id == 33){
+                is = getActivity().getResources().openRawResource(R.raw.running);
+            } if(id == 34){
+                is = getActivity().getResources().openRawResource(R.raw.seeing_stars);
+            } if(id == 35){
+                is = getActivity().getResources().openRawResource(R.raw.soda_pop);
+            } if(id == 36){
+                is = getActivity().getResources().openRawResource(R.raw.taste);
+            } if(id == 37){
+                is = getActivity().getResources().openRawResource(R.raw.tea);
+            } if(id == 38){
+                is = getActivity().getResources().openRawResource(R.raw.tennis);
+            } if(id == 39){
+                is = getActivity().getResources().openRawResource(R.raw.the_blow_driver);
+            } if(id == 40){
+                is = getActivity().getResources().openRawResource(R.raw.the_drive);
+            } if(id == 41){
+                is = getActivity().getResources().openRawResource(R.raw.the_heart);
+            } if(id == 42){
+                is = getActivity().getResources().openRawResource(R.raw.the_interview);
+            } if(id == 43){
+                is = getActivity().getResources().openRawResource(R.raw.the_music);
+            } if(id == 44){
+                is = getActivity().getResources().openRawResource(R.raw.the_singing_bird);
+            } if(id == 45){
+                is = getActivity().getResources().openRawResource(R.raw.time_to);
+            } if(id == 46){
+                is = getActivity().getResources().openRawResource(R.raw.trees);
+            } if(id == 47){
+                is = getActivity().getResources().openRawResource(R.raw.what_number);
+            } if(id == 48){
+                is = getActivity().getResources().openRawResource(R.raw.yellow_stone_national_park);
+            }if(id == 49){
+                is = getActivity().getResources().openRawResource(R.raw.zachs_animals);
             }
+
         }//succeding is for higher level
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
