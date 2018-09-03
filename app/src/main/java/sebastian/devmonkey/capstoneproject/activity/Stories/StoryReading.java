@@ -8,26 +8,19 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.fragments.BottomFragments.AddJournalFragment;
-import sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Quizzer;
-import sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Story;
+import sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav.AddJournalFragment;
+import sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav.Quizzer;
+import sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav.Story;
 import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
-import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
-public class StoryReading extends AppCompatActivity implements sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Quizzer.OnFragmentInteractionListener
+public class StoryReading extends AppCompatActivity implements sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav.Quizzer.OnFragmentInteractionListener
 , SettingsFragment.OnFragmentInteractionListener, Story.OnFragmentInteractionListener, AddJournalFragment.OnFragmentInteractionListener{
 
     private ActionBar toolbar;

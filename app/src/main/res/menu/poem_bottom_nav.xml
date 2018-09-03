@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_poem_easy"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/easy" />
+
+    <item
+        android:id="@+id/nav_poem_intermediate"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/intermediate" />
+
+
+    <item
+        android:id="@+id/nav_poem_hard"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/hard" />
+
+</menu>

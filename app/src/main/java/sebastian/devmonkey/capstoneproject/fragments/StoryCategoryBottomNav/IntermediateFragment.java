@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject.fragments;
+package sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,39 +8,38 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Flash.FlashCards;
-import sebastian.devmonkey.capstoneproject.activity.Poem.PoemCategory;
-import sebastian.devmonkey.capstoneproject.activity.Stories.StoryCategory;
+import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
+import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ReadingPlansFragment.OnFragmentInteractionListener} interface
+ * {@link IntermediateFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ReadingPlansFragment#newInstance} factory method to
+ * Use the {@link IntermediateFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ReadingPlansFragment extends Fragment implements View.OnClickListener {
+public class IntermediateFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-
-    Button btnPoem, btnStory, btnFlashCard;
-
-
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
+    ArrayAdapter<String> listviewAdapter;
+
     private OnFragmentInteractionListener mListener;
 
-    public ReadingPlansFragment() {
+    public IntermediateFragment() {
         // Required empty public constructor
     }
 
@@ -50,11 +49,11 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ReadingPlansFragment.
+     * @return A new instance of fragment IntermediateFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ReadingPlansFragment newInstance(String param1, String param2) {
-        ReadingPlansFragment fragment = new ReadingPlansFragment();
+    public static IntermediateFragment newInstance(String param1, String param2) {
+        IntermediateFragment fragment = new IntermediateFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,7 +67,6 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
         }
     }
 
@@ -76,18 +74,35 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View myView = inflater.inflate(R.layout.fragment_reading_plans, container, false);
+        View view = inflater.inflate(R.layout.fragment_intermediate, container, false);
 
-        btnPoem = (Button) myView.findViewById(R.id.btnPoems);
-        btnStory = (Button) myView.findViewById(R.id.btnStory);
-        btnFlashCard = (Button) myView.findViewById(R.id.btnFlashCards);
+        Arrays storyTitle = new Arrays();
 
-        btnPoem.setOnClickListener(this);
-        btnStory.setOnClickListener(this);
-        btnFlashCard.setOnClickListener(this);
+        String[] menuItems = storyTitle.getStoryIntermediateTitleTitles();
 
+        ListView listView = view.findViewById(R.id.intermediateList);
+        //get array and display to listview
+        listviewAdapter = new ArrayAdapter<>(
+                getActivity(),
+                android.R.layout.simple_list_item_1,
+                menuItems
+        );
+
+        listView.setAdapter(listviewAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(),StoryReading.class);
+                intent.putExtra("level","intermediate");
+                String value = Long.toString(l + 17);
+                intent.putExtra("id",value);
+                Toast.makeText(getContext(),value,Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
         // Inflate the layout for this fragment
-        return myView;
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -112,23 +127,6 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public void onDetach() {
         super.onDetach();
         mListener = null;
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btnPoems:
-                startActivity(new Intent(getActivity(), PoemCategory.class));
-                break;
-
-            case R.id.btnStory:
-                startActivity(new Intent(getActivity(), StoryCategory.class));
-                break;
-            case R.id.btnFlashCards:
-                startActivity(new Intent(getActivity(), FlashCards.class));
-               // Toast.makeText(getActivity(), "flash cards Button Clicked", Toast.LENGTH_SHORT).show();
-                break;
-        }
     }
 
     /**

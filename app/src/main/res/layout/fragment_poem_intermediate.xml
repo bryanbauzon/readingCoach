@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.StoryCategoryBottomNav.IntermediateFragment"
-    android:layout_marginBottom="45dp">
+    tools:context=".fragments.PoemBottomNav.PoemIntermediateFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ListView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/intermediateList"/>
+        android:text="Intermediate" />
 
 </FrameLayout>

@@ -1,7 +1,6 @@
-package sebastian.devmonkey.capstoneproject.fragments;
+package sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav;
 
 import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,38 +8,37 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Flash.FlashCards;
-import sebastian.devmonkey.capstoneproject.activity.Poem.PoemCategory;
-import sebastian.devmonkey.capstoneproject.activity.Stories.StoryCategory;
+import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ReadingPlansFragment.OnFragmentInteractionListener} interface
+ * {@link AddJournalFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ReadingPlansFragment#newInstance} factory method to
+ * Use the {@link AddJournalFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ReadingPlansFragment extends Fragment implements View.OnClickListener {
+public class AddJournalFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-
-    Button btnPoem, btnStory, btnFlashCard;
-
-
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
+    DatabaseHelper db;
+    EditText edtTitle, edtContent;
+    Button btnSave;
+
     private OnFragmentInteractionListener mListener;
 
-    public ReadingPlansFragment() {
+    public AddJournalFragment() {
         // Required empty public constructor
     }
 
@@ -50,11 +48,11 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ReadingPlansFragment.
+     * @return A new instance of fragment AddJournalFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ReadingPlansFragment newInstance(String param1, String param2) {
-        ReadingPlansFragment fragment = new ReadingPlansFragment();
+    public static AddJournalFragment newInstance(String param1, String param2) {
+        AddJournalFragment fragment = new AddJournalFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,7 +66,6 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
         }
     }
 
@@ -76,18 +73,38 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View myView = inflater.inflate(R.layout.fragment_reading_plans, container, false);
+        View view = inflater.inflate(R.layout.fragment_add_journal, container, false);
 
-        btnPoem = (Button) myView.findViewById(R.id.btnPoems);
-        btnStory = (Button) myView.findViewById(R.id.btnStory);
-        btnFlashCard = (Button) myView.findViewById(R.id.btnFlashCards);
+        db = new DatabaseHelper(getActivity());
+        edtTitle = view.findViewById(R.id.inputTitle);
+        edtContent = view.findViewById(R.id.inputContent);
 
-        btnPoem.setOnClickListener(this);
-        btnStory.setOnClickListener(this);
-        btnFlashCard.setOnClickListener(this);
+        btnSave = view.findViewById(R.id.save);
+
+        btnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String title = edtTitle.getText().toString();
+                String content = edtContent.getText().toString();
+                if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
+                    Toast.makeText(getActivity(), "Data added", Toast.LENGTH_LONG).show();
+                    edtTitle.setText("");
+                    edtContent.setText("");
+                    edtTitle.requestFocus();
+                } else {
+                    if(edtTitle.getText().toString().isEmpty() || edtTitle.getText().toString() == "" ){
+                        edtTitle.requestFocus();
+                        edtTitle.setError("Title is empty.");
+                    }else {
+                        edtContent.requestFocus();
+                        edtContent.setError("Content is empty.");
+                    }
+                }
+            }
+        });
 
         // Inflate the layout for this fragment
-        return myView;
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -112,23 +129,6 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public void onDetach() {
         super.onDetach();
         mListener = null;
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btnPoems:
-                startActivity(new Intent(getActivity(), PoemCategory.class));
-                break;
-
-            case R.id.btnStory:
-                startActivity(new Intent(getActivity(), StoryCategory.class));
-                break;
-            case R.id.btnFlashCards:
-                startActivity(new Intent(getActivity(), FlashCards.class));
-               // Toast.makeText(getActivity(), "flash cards Button Clicked", Toast.LENGTH_SHORT).show();
-                break;
-        }
     }
 
     /**

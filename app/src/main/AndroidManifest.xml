@@ -32,8 +32,10 @@
         <activity
             android:name=".activity.Stories.StoryReading"
             android:theme="@style/Custom" />
-
-        <activity android:name=".activity.Journal.JournalActivity"
+        <activity
+            android:name=".activity.Journal.JournalActivity"
+            android:theme="@style/Custom" />
+        <activity android:name=".activity.Poem.PoemCategory"
             android:theme="@style/Custom"/>
     </application>
 

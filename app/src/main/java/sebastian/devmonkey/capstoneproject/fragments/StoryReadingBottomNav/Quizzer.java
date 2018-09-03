@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject.fragments.BottomFragments;
+package sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav;
 
 import android.content.Context;
 import android.net.Uri;
