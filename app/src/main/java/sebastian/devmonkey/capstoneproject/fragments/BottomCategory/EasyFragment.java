@@ -98,8 +98,10 @@ public class EasyFragment extends Fragment {
                 intent.putExtra("level","easy");
                 String value = Long.toString(l);
                 intent.putExtra("id",value);
+                String title = adapterView.getItemAtPosition(i).toString();
+                intent.putExtra("title", title);
                 startActivity(intent);
-               // getActivity().finish();
+                getActivity().finish();
             }
         });
 
