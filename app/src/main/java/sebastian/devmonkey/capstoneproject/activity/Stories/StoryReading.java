@@ -2,6 +2,7 @@ package sebastian.devmonkey.capstoneproject.activity.Stories;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -32,6 +33,7 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
 
     DatabaseHelper db;
 
+    public TextToSpeech textToSpeech;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,12 +66,14 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
                 case R.id.story:
                     toolbar.setTitle("Story");
                     fragment = new Story();
+
                     loadFragment(fragment);
                     return true;
                 case R.id.quizzer:
                     toolbar.setTitle("Quizzer");
                     fragment = new Quizzer();
                     loadFragment(fragment);
+                   // textToSpeech.stop();
                     return true;
 
                 case R.id.jounralFrag:

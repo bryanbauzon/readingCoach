@@ -98,7 +98,7 @@ public class EasyFragment extends Fragment {
                 intent.putExtra("level","easy");
                 String value = Long.toString(l);
                 intent.putExtra("id",value);
-             //   startActivity(intent);
+                startActivity(intent);
                // getActivity().finish();
             }
         });

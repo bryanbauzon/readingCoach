@@ -21,43 +21,47 @@ public class Arrays {
     "Fish",
     "Flags",
     "Green Grass",
-    "Grifin's Talent",
-    "Helicopters",
-    "Houses",
-    "Humans",
-    "I Fly",
-    "Ice Fishing",
-    "Jualian's Work",
-    "Leonardo Da Vinci",
-    "Money",
-    "My Family",
-    "My Friend",
-    "My House",
-    "New Shoes For Mandy",
-    "One Hundred Dollars",
-    "Paul Cooks",
-    "Rainy Day",
-    "Running",
-    "Seeing Stars",
-    "Soda Pop",
-    "Taste",
-    "Tea",
-    "Tennis",
-    "The 20",
-    "The Blow Driver",
-    "The Drive",
-    "The Heart",
-    "The Interview",
-    "The Music",
-    "The Singing Bird",
-    "Time To",
-    "Trees",
-    "What Number",
-    "Yellow Stone National Park",
-    "Zach's Animals"};
 
-    private String[] storyIntermediateTitle = {"Intermediate1", "Intermediate2", "Intermediate3"};
+     };
 
+    private String[] storyIntermediateTitle = {
+            "Grifin's Talent",
+            "Helicopters",
+            "Houses",
+            "Humans",
+            "I Fly",
+            "Ice Fishing",
+            "Jualian's Work",
+            "Leonardo Da Vinci",
+            "Money",
+            "My Family",
+            "My Friend",
+            "My House",
+            "New Shoes For Mandy",
+            "One Hundred Dollars",
+            "Paul Cooks",
+            "Rainy Day",
+            "Running"
+                };
+    private String[] storyHardTitle = {
+            "Seeing Stars",
+            "Soda Pop",
+            "Taste",
+            "Tea",
+            "Tennis",
+            "The 20",
+            "The Blow Driver",
+            "The Drive",
+            "The Heart",
+            "The Interview",
+            "The Music",
+            "The Singing Bird",
+            "Time To",
+            "Trees",
+            "What Number",
+            "Yellow Stone National Park",
+            "Zach's Animals"
+    };
     private String[] mQuestion = {
             "question1?",
             "question2?",
@@ -136,7 +140,7 @@ public class Arrays {
     public  String[] getStoryIntermediateTitleTitles() {
         return storyIntermediateTitle.clone();
     }
-
+    public  String[] getStoryHardTitles(){return  storyHardTitle.clone();}
     public int getLength() {
         return mQuestion.length;
     }
