@@ -1,14 +1,21 @@
 package sebastian.devmonkey.capstoneproject.fragments.BottomCategory;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
+import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,7 +34,7 @@ public class HardFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    ArrayAdapter<String>listViewAdapter;
     private OnFragmentInteractionListener mListener;
 
     public HardFragment() {
@@ -65,7 +72,33 @@ public class HardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hard, container, false);
+        Arrays storyTitle = new Arrays();
+        View view = inflater.inflate(R.layout.fragment_hard, container, false);
+
+        String[] menuItems = storyTitle.getStoryHardTitles();
+
+        ListView listView = view.findViewById(R.id.hardList);
+        //get array and display to listview
+        listViewAdapter = new ArrayAdapter<>(
+                getActivity(),
+                android.R.layout.simple_list_item_1,
+                menuItems
+        );
+
+        listView.setAdapter(listViewAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(),StoryReading.class);
+                intent.putExtra("level","hard");
+                String value = Long.toString(l + 34);
+                intent.putExtra("id",value);
+                Toast.makeText(getContext(),value,Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+
+            }
+        });
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -11,16 +11,20 @@ public class Arrays {
             "Alligators",
             "An Adventure",
             "Bears",
-            "Beds",
-            "Bella Hides",
-            "Big City Noise",
-            "Birds",
-            "Butterfly",
-            "Dogs",
-            "Empress The Blues",
-            "Fish",
-            "Flags",
-            "Green Grass",
+    "Beds",
+    "Bella Hides",
+    "Big City Noise",
+    "Birds",
+    "Butterfly",
+    "Dogs",
+    "Empress The Blues",
+    "Fish",
+    "Flags",
+    "Green Grass",
+
+     };
+
+    private String[] storyIntermediateTitle = {
             "Grifin's Talent",
             "Helicopters",
             "Houses",
@@ -37,7 +41,9 @@ public class Arrays {
             "One Hundred Dollars",
             "Paul Cooks",
             "Rainy Day",
-            "Running",
+            "Running"
+                };
+    private String[] storyHardTitle = {
             "Seeing Stars",
             "Soda Pop",
             "Taste",
@@ -54,10 +60,8 @@ public class Arrays {
             "Trees",
             "What Number",
             "Yellow Stone National Park",
-            "Zach's Animals"};
-
-    private String[] storyIntermediateTitle = {"Intermediate1", "Intermediate2", "Intermediate3"};
-
+            "Zach's Animals"
+    };
     private String[] mQuestion = {
             "question1?",
             "question2?",
@@ -136,7 +140,7 @@ public class Arrays {
     public  String[] getStoryIntermediateTitleTitles() {
         return storyIntermediateTitle.clone();
     }
-
+    public  String[] getStoryHardTitles(){return  storyHardTitle.clone();}
     public int getLength() {
         return mQuestion.length;
     }

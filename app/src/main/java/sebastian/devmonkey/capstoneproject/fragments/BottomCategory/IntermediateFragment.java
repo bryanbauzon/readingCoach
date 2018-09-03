@@ -1,16 +1,20 @@
 package sebastian.devmonkey.capstoneproject.fragments.BottomCategory;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 /**
@@ -86,6 +90,17 @@ public class IntermediateFragment extends Fragment {
 
         listView.setAdapter(listviewAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(),StoryReading.class);
+                intent.putExtra("level","intermediate");
+                String value = Long.toString(l + 17);
+                intent.putExtra("id",value);
+                Toast.makeText(getContext(),value,Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
         // Inflate the layout for this fragment
         return view;
     }
