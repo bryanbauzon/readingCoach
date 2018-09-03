@@ -91,10 +91,10 @@ public class BookmarksFragment extends Fragment {
         db = new DatabaseHelper(getContext());
         content = new ArrayList<>();
 
-        viewDataBookmarks();
-
 
         listView = view.findViewById(R.id.listviewBookmarks);
+
+        viewDataBookmarks();
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

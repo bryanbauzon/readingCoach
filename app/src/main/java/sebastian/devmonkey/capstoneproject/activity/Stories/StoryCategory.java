@@ -98,4 +98,18 @@ IntermediateFragment.OnFragmentInteractionListener, HardFragment.OnFragmentInter
     public void onFragmentInteraction(Uri uri) {
 
     }
+
+    @Override
+    public void onBackPressed() {
+//        int fragments = getSupportFragmentManager().getBackStackEntryCount();
+////        if (fragments == 1) {
+////            finish();
+////        } else {
+////            if (getFragmentManager().getBackStackEntryCount() > 1) {
+////                getFragmentManager().popBackStack();
+////            } else {
+////                super.onBackPressed();
+////            }
+////        }
+    }
 }

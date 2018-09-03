@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
 
@@ -59,7 +60,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     }
 
     //bookmarks
-    public boolean insertDataBookmarks(String title, String content) {
+    public boolean insertDataBookmarks(String title) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(TITLE, title);
@@ -114,8 +115,39 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         return db.delete(DB_TABLE, "ID = ?",new String[] {id});
     }
 
-    public Integer deleteDataBookmarks(String id) {
+    public Integer deleteDataBookmarks(String title) {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(DB_TABLE_BOOKMARKS, "ID = ?",new String[] {id});
+        return db.delete(DB_TABLE_BOOKMARKS, "TITLE = ?",new String[] {title});
+    }
+
+
+    public boolean hasObject(String title) {
+        SQLiteDatabase db = getWritableDatabase();
+        String selectString = "SELECT * FROM " + DB_TABLE_BOOKMARKS + " WHERE " + TITLE + " =?";
+
+        // Add the String you are searching by here.
+        // Put it in an array to avoid an unrecognized token error
+        Cursor cursor = db.rawQuery(selectString, new String[] {title});
+
+        boolean hasObject = false;
+        if(cursor.moveToFirst()){
+            hasObject = true;
+
+            //region if you had multiple records to check for, use this region.
+
+            int count = 0;
+            while(cursor.moveToNext()){
+                count++;
+            }
+            //here, count is records found
+            Log.d("Result", String.format("%d records found", count));
+
+            //endregion
+
+        }
+
+        cursor.close();          // Dont forget to close your cursor
+        db.close();              //AND your Database!
+        return hasObject;
     }
 }
