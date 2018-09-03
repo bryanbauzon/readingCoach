@@ -2,6 +2,7 @@ package sebastian.devmonkey.capstoneproject.activity.Journal;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -18,6 +21,7 @@ import java.util.ArrayList;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
+import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 public class JournalActivity extends AppCompatActivity {
 
@@ -50,10 +54,6 @@ public class JournalActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String title = listView.getItemAtPosition(i).toString();
-//                Toast.makeText(getApplicationContext(), title, Toast.LENGTH_SHORT).show();
-
-//                Toast.makeText(getApplicationContext(), id.get(i), Toast.LENGTH_LONG).show();
-
                 Intent intent = new Intent(getApplicationContext(), UpdateDeleteJournal.class);
                 //putting data to intent
                 intent.putExtra("ID", id.get(i));
@@ -89,7 +89,6 @@ public class JournalActivity extends AppCompatActivity {
                 content.add(cursor.getString(2));
 
             }
-            //display title to listview
 
 
             adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listItem);

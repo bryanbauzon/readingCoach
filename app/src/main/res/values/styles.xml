@@ -42,5 +42,12 @@
     </style>
 
 
+    <style name="ColorScheme" parent="Theme.AppCompat.Light.DarkActionBar" tools:ignore="ResourceCycle">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryBlack</item>
+    </style>
+
+
 
 </resources>

@@ -2,6 +2,7 @@ package sebastian.devmonkey.capstoneproject.fragments.BottomFragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -43,7 +44,7 @@ public class Story extends Fragment {
     private String mParam2;
 
     private Menu menu;
-    TextView content;
+    TextView content, title, author;
     TextToSpeech textToSpeech;
     int ctr;
 
@@ -93,11 +94,27 @@ public class Story extends Fragment {
 
         Intent intent = getActivity().getIntent();
         content = view.findViewById(R.id.txtContent);
+        title = view.findViewById(R.id.txtTitle);
+        author = view.findViewById(R.id.txtAuthor);
 
         gv = new GlobalVariable();
 
+        if (GlobalVariable.color == 1){
+            view.setBackgroundColor(Color.parseColor("#000000"));
+            title.setTextColor(Color.WHITE);
+            author.setTextColor(Color.WHITE);
+            content.setTextColor(Color.WHITE);
+        } else {
+            view.setBackgroundColor(Color.WHITE);
+            title.setTextColor(Color.BLACK);
+            author.setTextColor(Color.BLACK);
+            content.setTextColor(Color.BLACK);
+        }
+
         content.setTypeface(GlobalVariable.font);
         gv.setMargins(content ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+
+
 
         //this variable is used for conditional statement and serves as the id
         level = intent.getStringExtra("level");

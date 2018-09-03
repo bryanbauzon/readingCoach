@@ -2,6 +2,7 @@ package sebastian.devmonkey.capstoneproject.activity.Flash;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.Color;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AlertDialog;
@@ -11,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +29,7 @@ public class FlashCards extends AppCompatActivity {
     TextView textContainer,word,score;
     Button  alertYes;
     GlobalVariable gv;
+//    RelativeLayout layout;
 
     public String[] words = {
             "hello",
@@ -44,12 +48,22 @@ public class FlashCards extends AppCompatActivity {
 
         gv = new GlobalVariable();
 
+
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         textContainer = findViewById(R.id.text);
         word = findViewById(R.id.words);
         score = findViewById(R.id.score);
+//        layout = findViewById(R.id.flashCardLayout);
+//
+//
+//        if (GlobalVariable.color == 1){
+//            layout.setBackgroundColor(Color.BLACK);
+//            textContainer.setTextColor(Color.WHITE);
+//            word.setTextColor(Color.WHITE);
+//            score.setTextColor(Color.WHITE);
+//        }
 
         textContainer.setTypeface(GlobalVariable.font);
         word.setTypeface(GlobalVariable.font);

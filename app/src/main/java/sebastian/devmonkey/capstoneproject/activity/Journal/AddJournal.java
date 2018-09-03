@@ -1,12 +1,14 @@
 package sebastian.devmonkey.capstoneproject.activity.Journal;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
@@ -32,6 +34,7 @@ AddJournal extends AppCompatActivity {
         db = new DatabaseHelper(this);
         edtTitle = findViewById(R.id.inputTitle);
         edtContent = findViewById(R.id.inputContent);
+
     }
 
     @Override

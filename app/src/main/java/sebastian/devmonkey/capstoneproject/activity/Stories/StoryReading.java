@@ -24,6 +24,7 @@ import sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Quizzer;
 import sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Story;
 import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
+import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 public class StoryReading extends AppCompatActivity implements sebastian.devmonkey.capstoneproject.fragments.BottomFragments.Quizzer.OnFragmentInteractionListener
 , SettingsFragment.OnFragmentInteractionListener, Story.OnFragmentInteractionListener, AddJournalFragment.OnFragmentInteractionListener{

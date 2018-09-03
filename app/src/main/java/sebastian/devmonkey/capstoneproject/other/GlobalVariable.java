@@ -18,6 +18,9 @@ public class GlobalVariable {
     public static int bottom;
 
 
+    public static int color;
+
+
     public void setMargins (View view, int left, int top, int right, int bottom) {
         if (view.getLayoutParams() instanceof ViewGroup.MarginLayoutParams) {
             ViewGroup.MarginLayoutParams p = (ViewGroup.MarginLayoutParams) view.getLayoutParams();

@@ -1,6 +1,7 @@
 package sebastian.devmonkey.capstoneproject.activity.Journal;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,11 +9,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
+import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 public class UpdateDeleteJournal extends AppCompatActivity {
 
@@ -38,6 +41,7 @@ public class UpdateDeleteJournal extends AppCompatActivity {
         id = getIntent().getStringExtra("ID");
         title = getIntent().getStringExtra("TITLE");
         content = getIntent().getStringExtra("CONTENT");
+
 
 
         edtTitle.setText(title);

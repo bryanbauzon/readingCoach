@@ -83,6 +83,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         Button fontType1 = view.findViewById(R.id.btnFontType1);
         Button fontType2 = view.findViewById(R.id.btnFontType2);
         Button dark = view.findViewById(R.id.btnDark);
+        Button light = view.findViewById(R.id.btnLight);
 
         Button pageMargin1 = view.findViewById(R.id.btnPageMargin1);
         Button pageMargin2 = view.findViewById(R.id.btnPageMargin2);
@@ -96,6 +97,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         fontType1.setOnClickListener(this);
         fontType2.setOnClickListener(this);
         dark.setOnClickListener(this);
+        light.setOnClickListener(this);
         pageMargin1.setOnClickListener(this);
         pageMargin2.setOnClickListener(this);
         pageMargin3.setOnClickListener(this);
@@ -156,9 +158,16 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "Font Changed", Toast.LENGTH_LONG).show();
                 break;
 
-//            case R.id.btnDark:
-//                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
-//                break;
+            case R.id.btnDark:
+                GlobalVariable.color  = 1;
+                Toast.makeText(getContext(), "Clicked Dark", Toast.LENGTH_LONG).show();
+                break;
+
+
+            case R.id.btnLight:
+                GlobalVariable.color  = 0;
+                Toast.makeText(getContext(), "Clicked Light", Toast.LENGTH_LONG).show();
+                break;
 
 
             case R.id.btnPageMargin1:
