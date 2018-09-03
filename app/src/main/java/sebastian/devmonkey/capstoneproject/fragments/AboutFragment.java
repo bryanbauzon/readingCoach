@@ -77,7 +77,7 @@ public class AboutFragment extends Fragment {
 
         TextView aboutTV =  view.findViewById(R.id.aboutTV);
         aboutTV.setTypeface(GlobalVariable.font);
-        aboutTV.setTextSize(GlobalVariable.FontSize);
+        aboutTV.setTextSize(GlobalVariable.fontSize);
         gv.setMargins(aboutTV, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
 
         return view;

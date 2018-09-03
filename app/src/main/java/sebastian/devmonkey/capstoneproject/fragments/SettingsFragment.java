@@ -135,17 +135,17 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
         switch (view.getId()){
             case R.id.btnSmall:
-                GlobalVariable.FontSize = 15;
-                Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
+                GlobalVariable.fontSize = 15;
+                Toast.makeText(getContext(), GlobalVariable.fontSize + "", Toast.LENGTH_LONG).show();
                 break;
             case R.id.btnMedium:
-                GlobalVariable.FontSize = 17;
-                Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
+                GlobalVariable.fontSize = 17;
+                Toast.makeText(getContext(), GlobalVariable.fontSize + "", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.btnLarge:
-                GlobalVariable.FontSize = 19;
-                Toast.makeText(getContext(), GlobalVariable.FontSize + "", Toast.LENGTH_LONG).show();
+                GlobalVariable.fontSize = 19;
+                Toast.makeText(getContext(), GlobalVariable.fontSize + "", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.btnFontType1:

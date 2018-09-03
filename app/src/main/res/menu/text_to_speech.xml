@@ -8,4 +8,10 @@
     android:title="Speech"
     />
 
+    <item
+        android:id="@+id/bm"
+        app:showAsAction="ifRoom"
+        android:title="Bookmarks"
+        />
+
 </menu>

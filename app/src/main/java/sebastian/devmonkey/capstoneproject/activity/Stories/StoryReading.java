@@ -111,33 +111,6 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
                 finish();
                 return true;
 
-//            case R.id.addJournal:
-//                LayoutInflater factory = LayoutInflater.from(StoryReading.this);
-//                final View journalDialogView = factory.inflate(R.layout.customized_alert_dialog_journal,null);
-//                final AlertDialog journalDialog = new AlertDialog.Builder(StoryReading.this).create();
-//                final EditText txtTitle = (EditText)journalDialogView.findViewById(R.id.txtTitle);
-//                final EditText txtContent = (EditText)journalDialogView.findViewById(R.id.txtContent);
-//                final Button save = (Button)journalDialogView.findViewById(R.id.btnSave);
-//
-//
-//                txtTitle.requestFocus();
-//                journalDialog.setView(journalDialogView);
-//                journalDialog.show();
-//
-//                save.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        if(!txtTitle.getText().toString().isEmpty() && !txtContent.getText().toString().isEmpty()){
-//
-//                            db.insertData(txtTitle.getText().toString(),txtContent.getText().toString());
-//                            Toast.makeText(getApplicationContext(),"yey",Toast.LENGTH_SHORT).show();
-//                            journalDialog.dismiss();
-//                        }
-//
-//                    }
-//                });
-//                return true;
-
         }
 
         return super.onOptionsItemSelected(item);

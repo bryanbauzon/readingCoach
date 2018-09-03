@@ -44,12 +44,12 @@ public class Story extends Fragment {
     private String mParam2;
 
     private Menu menu;
-    TextView content, title, author;
+    TextView txtContent, txtTitle;
     TextToSpeech textToSpeech;
     int ctr;
 
     String level;
-    String id_temp;
+    String id_temp, title;
     InputStream is;
     GlobalVariable gv;
 
@@ -93,32 +93,42 @@ public class Story extends Fragment {
         View view = inflater.inflate(R.layout.fragment_story, container, false);
 
         Intent intent = getActivity().getIntent();
-        content = view.findViewById(R.id.txtContent);
-        title = view.findViewById(R.id.txtTitle);
-        author = view.findViewById(R.id.txtAuthor);
+        txtContent = view.findViewById(R.id.txtContent);
+        txtTitle = view.findViewById(R.id.txtTitle);
 
         gv = new GlobalVariable();
 
+        //color scheme
         if (GlobalVariable.color == 1){
             view.setBackgroundColor(Color.parseColor("#000000"));
-            title.setTextColor(Color.WHITE);
-            author.setTextColor(Color.WHITE);
-            content.setTextColor(Color.WHITE);
+            txtTitle.setTextColor(Color.WHITE);
+            txtContent.setTextColor(Color.WHITE);
         } else {
             view.setBackgroundColor(Color.WHITE);
-            title.setTextColor(Color.BLACK);
-            author.setTextColor(Color.BLACK);
-            content.setTextColor(Color.BLACK);
+            txtTitle.setTextColor(Color.BLACK);
+            txtContent.setTextColor(Color.BLACK);
         }
 
-        content.setTypeface(GlobalVariable.font);
-        gv.setMargins(content ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+        //font
+        txtTitle.setTypeface(GlobalVariable.font);
+        txtContent.setTypeface(GlobalVariable.font);
+
+        //fontsize
+        txtTitle.setTextSize(GlobalVariable.fontSize);
+        txtContent.setTextSize(GlobalVariable.fontSize);
+
+        //line spacing
+        gv.setMargins(txtTitle, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+        gv.setMargins(txtContent ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
 
 
 
         //this variable is used for conditional statement and serves as the id
         level = intent.getStringExtra("level");
         id_temp = intent.getStringExtra("id");
+        title = intent.getStringExtra("title");
+
+        txtTitle.setText(title);
 
         int id = Integer.parseInt(id_temp);
         Toast.makeText(getActivity(),id_temp, Toast.LENGTH_SHORT).show();
@@ -133,7 +143,7 @@ public class Story extends Fragment {
             }
         });
 
-        content.setMovementMethod(new ScrollingMovementMethod());
+        txtContent.setMovementMethod(new ScrollingMovementMethod());
         String data = "";
         StringBuffer stringBuffer = new StringBuffer();
         if(level.equals("easy")){
@@ -250,7 +260,7 @@ public class Story extends Fragment {
                 while ((data = reader.readLine()) != null){
                     stringBuffer.append(data + "");
                 }
-                content.setText(stringBuffer);
+                txtContent.setText(stringBuffer);
                 is.close();
             }catch (Exception e){
 
@@ -319,7 +329,7 @@ public class Story extends Fragment {
 
                 if(ctr == 1){
                     menuItem.setTitle("Stop");
-                    String toSpeak = content.getText().toString();
+                    String toSpeak = txtContent.getText().toString();
                     textToSpeech.speak(toSpeak,TextToSpeech.QUEUE_FLUSH,null);
 
                 }else{
@@ -329,6 +339,10 @@ public class Story extends Fragment {
                     ctr = 0;
                 }
                 return true;
+
+            case R.id.bm:
+
+
         }
 
         return super.onOptionsItemSelected(item);

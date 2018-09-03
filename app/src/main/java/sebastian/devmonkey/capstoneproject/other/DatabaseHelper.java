@@ -10,6 +10,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
     private static final String DB_NAME = "capstone.db";
     private static final String DB_TABLE = "tbl_journal";
+    private static final String DB_TABLE_BOOKMARKS = "tbl_bookmaks";
 
     //columns
 
@@ -21,6 +22,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String CREATE_TABLE = "CREATE TABLE " + DB_TABLE + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, CONTENT TEXT)";
 
 
+    private static final String CREATE_TABLE_BOOKMARKS = "CREATE TABLE " + DB_TABLE_BOOKMARKS + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT)";
+
+
 
     public DatabaseHelper (Context context) {
         super(context, DB_NAME, null, 1);
@@ -30,11 +34,13 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(CREATE_TABLE);
+        sqLiteDatabase.execSQL(CREATE_TABLE_BOOKMARKS);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + DB_TABLE);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + DB_TABLE_BOOKMARKS);
 
         onCreate(sqLiteDatabase);
     }
@@ -52,11 +58,30 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         return result != -1; //if result = -1 data doesn't insert
     }
 
+    //bookmarks
+    public boolean insertDataBookmarks(String title, String content) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(TITLE, title);
+
+        long result = db.insert(DB_TABLE_BOOKMARKS, null, contentValues);
+
+        return result != -1; //if result = -1 data doesn't insert
+    }
+
 
     //create method to view data
     public Cursor viewData() {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT *  FROM " + DB_TABLE;
+
+        return db.rawQuery(query, null);
+
+    }
+
+    public Cursor viewDataBookmarks() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT *  FROM " + DB_TABLE_BOOKMARKS;
 
         return db.rawQuery(query, null);
 
@@ -73,8 +98,24 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         return true;
     }
 
+
+//    public boolean updateDataBookmarks(String id ,String title, String content) {
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        ContentValues contentValues = new ContentValues();
+//        contentValues.put(ID, id);
+//        contentValues.put(TITLE, title);
+//        contentValues.put(CONTENT, content);
+//        db.update(DB_TABLE, contentValues, "ID = ?",new String[] { id });
+//        return true;
+//    }
+
     public Integer deleteData (String id) {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(DB_TABLE, "ID = ?",new String[] {id});
+    }
+
+    public Integer deleteDataBookmarks(String id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(DB_TABLE_BOOKMARKS, "ID = ?",new String[] {id});
     }
 }

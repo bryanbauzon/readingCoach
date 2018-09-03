@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 
 public class GlobalVariable {
 
-    public static int FontSize = 15;
+    public static int fontSize = 15;
 
     public static Typeface font;
 

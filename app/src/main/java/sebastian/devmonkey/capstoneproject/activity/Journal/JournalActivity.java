@@ -94,7 +94,6 @@ public class JournalActivity extends AppCompatActivity {
             adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listItem);
 
             listView.setAdapter(adapter);
-            //  listView.notifyDataSetChanged(adapter);
         }
 
     }

@@ -2,6 +2,7 @@ package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,10 +12,14 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
+import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -36,6 +41,9 @@ public class BookmarksFragment extends Fragment {
 
     ArrayAdapter<String> listviewAdapter;
     ListView listView;
+    DatabaseHelper db;
+    ArrayList<String> content;
+    ArrayAdapter adapter;
 
     private OnFragmentInteractionListener mListener;
 
@@ -76,20 +84,17 @@ public class BookmarksFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bookmarks, container, false);
 
-        Arrays storyTitles = new Arrays();
+//        Arrays storyTitles = new Arrays();
+//
+//        String[] menuItems = storyTitles.getStoryTitles();
 
-        String[] menuItems = storyTitles.getStoryTitles();
+        db = new DatabaseHelper(getContext());
+        content = new ArrayList<>();
+
+        viewDataBookmarks();
 
 
         listView = view.findViewById(R.id.listviewBookmarks);
-        //get array and display to listview
-        listviewAdapter = new ArrayAdapter<>(
-                getActivity(),
-                android.R.layout.simple_list_item_1,
-                menuItems
-        );
-
-        listView.setAdapter(listviewAdapter);
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -100,6 +105,27 @@ public class BookmarksFragment extends Fragment {
         });
 
         return view;
+    }
+
+    private void viewDataBookmarks(){
+        Cursor cursor = db.viewDataBookmarks();
+
+        if (cursor.getCount() == 0) {
+            Toast.makeText(getContext(), "No data to show", Toast.LENGTH_SHORT).show();
+
+        } else {
+
+            while (cursor.moveToNext()) {
+                //getting id in database to array
+                content.add(cursor.getString(1));
+
+            }
+
+
+            adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, content);
+
+            listView.setAdapter(adapter);
+        }
     }
 
     // TODO: Rename method, update argument and hook method into UI event
