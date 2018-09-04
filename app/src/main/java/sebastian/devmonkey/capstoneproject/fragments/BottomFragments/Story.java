@@ -181,9 +181,11 @@ public class Story extends Fragment {
                 is = getActivity().getResources().openRawResource(R.raw.fish);
             } else if(id == 15){
                 is = getActivity().getResources().openRawResource(R.raw.flags);
-            } else if(id == 16){
+            } else {
                 is = getActivity().getResources().openRawResource(R.raw.green_grass);
-            } else if(id == 17){
+            }
+                    }else if(level.equals("intermediate")){
+            if(id == 17){
                 is = getActivity().getResources().openRawResource(R.raw.grifins_talent);
             } else if(id == 18){
                 is = getActivity().getResources().openRawResource(R.raw.helicopters);
@@ -217,7 +219,9 @@ public class Story extends Fragment {
                 is = getActivity().getResources().openRawResource(R.raw.rainy_day);
             } else if(id == 33){
                 is = getActivity().getResources().openRawResource(R.raw.running);
-            } else if(id == 34){
+            }
+        }else if(level.equals("hard")){
+            if(id == 34){
                 is = getActivity().getResources().openRawResource(R.raw.seeing_stars);
             } else if(id == 35){
                 is = getActivity().getResources().openRawResource(R.raw.soda_pop);
@@ -250,7 +254,7 @@ public class Story extends Fragment {
             }else{
                 is = getActivity().getResources().openRawResource(R.raw.zachs_animals);
             }
-                    }//succeding is for higher level
+        }
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         if(is != null){
