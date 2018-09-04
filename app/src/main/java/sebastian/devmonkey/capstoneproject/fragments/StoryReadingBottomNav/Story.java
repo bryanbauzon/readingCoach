@@ -355,12 +355,12 @@ public class Story extends Fragment {
 
     private void addBookmark() {
 
-        if (!db.hasObject(title)) {
-            db.insertDataBookmarks(title);
+        if (!db.hasObject(id_temp)) {
+            db.insertDataBookmarks(title, id_temp);
             check = true;
             Toast.makeText(getActivity(), "Added to bookmarks", Toast.LENGTH_SHORT).show();
         } else {
-            db.deleteDataBookmarks(title);
+            db.deleteDataBookmarks(id_temp);
             check = false;
             Toast.makeText(getActivity(), "Removed to bookmarks", Toast.LENGTH_SHORT).show();
         }

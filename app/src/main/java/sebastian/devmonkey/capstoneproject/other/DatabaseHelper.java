@@ -23,7 +23,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String CREATE_TABLE = "CREATE TABLE " + DB_TABLE + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, CONTENT TEXT)";
 
 
-    private static final String CREATE_TABLE_BOOKMARKS = "CREATE TABLE " + DB_TABLE_BOOKMARKS + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT)";
+    private static final String CREATE_TABLE_BOOKMARKS = "CREATE TABLE " + DB_TABLE_BOOKMARKS + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, TITLEID TEXT)";
 
 
 
@@ -60,10 +60,11 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     }
 
     //bookmarks
-    public boolean insertDataBookmarks(String title) {
+    public boolean insertDataBookmarks(String title, String titleid) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(TITLE, title);
+        contentValues.put("TITLEID", titleid);
 
         long result = db.insert(DB_TABLE_BOOKMARKS, null, contentValues);
 
@@ -115,19 +116,19 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         return db.delete(DB_TABLE, "ID = ?",new String[] {id});
     }
 
-    public Integer deleteDataBookmarks(String title) {
+    public Integer deleteDataBookmarks(String titleid) {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(DB_TABLE_BOOKMARKS, "TITLE = ?",new String[] {title});
+        return db.delete(DB_TABLE_BOOKMARKS, "TITLEID = ?",new String[] {titleid});
     }
 
 
-    public boolean hasObject(String title) {
+    public boolean hasObject(String titleid) {
         SQLiteDatabase db = getWritableDatabase();
-        String selectString = "SELECT * FROM " + DB_TABLE_BOOKMARKS + " WHERE " + TITLE + " =?";
+        String selectString = "SELECT * FROM " + DB_TABLE_BOOKMARKS + " WHERE TITLEID " + " = ?";
 
         // Add the String you are searching by here.
         // Put it in an array to avoid an unrecognized token error
-        Cursor cursor = db.rawQuery(selectString, new String[] {title});
+        Cursor cursor = db.rawQuery(selectString, new String[] {titleid});
 
         boolean hasObject = false;
         if(cursor.moveToFirst()){

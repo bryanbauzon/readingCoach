@@ -42,7 +42,9 @@ public class BookmarksFragment extends Fragment {
     ArrayAdapter<String> listviewAdapter;
     ListView listView;
     DatabaseHelper db;
-    ArrayList<String> content;
+    ArrayList<String> title;
+    ArrayList<String> titleid;
+
     ArrayAdapter adapter;
 
     private OnFragmentInteractionListener mListener;
@@ -89,7 +91,8 @@ public class BookmarksFragment extends Fragment {
 //        String[] menuItems = storyTitles.getStoryTitles();
 
         db = new DatabaseHelper(getContext());
-        content = new ArrayList<>();
+        title = new ArrayList<>();
+        titleid = new ArrayList<>();
 
 
         listView = view.findViewById(R.id.listviewBookmarks);
@@ -100,7 +103,15 @@ public class BookmarksFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                startActivity(new Intent(getActivity(), StoryReading.class));
+                Intent intent = new Intent(getActivity(), StoryReading.class);
+                intent.putExtra("id", titleid.get(i));
+                intent.putExtra("title", title.get(i));
+                intent.putExtra("level", "easy");
+                startActivity(intent);
+                getActivity().finish();
+
+
+               // startActivity(new Intent(getActivity(), StoryReading.class));
             }
         });
 
@@ -117,12 +128,13 @@ public class BookmarksFragment extends Fragment {
 
             while (cursor.moveToNext()) {
                 //getting id in database to array
-                content.add(cursor.getString(1));
+                title.add(cursor.getString(1));
+                titleid.add(cursor.getString(2));
 
             }
 
 
-            adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, content);
+            adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, title);
 
             listView.setAdapter(adapter);
         }
