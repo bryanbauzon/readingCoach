@@ -1,35 +1,28 @@
-package sebastian.devmonkey.capstoneproject.fragments;
+package sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav;
 
 import android.content.Context;
-import android.content.Intent;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
-import sebastian.devmonkey.capstoneproject.other.Arrays;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link BookmarksFragment.OnFragmentInteractionListener} interface
+ * {@link AddJournalFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link BookmarksFragment#newInstance} factory method to
+ * Use the {@link AddJournalFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BookmarksFragment extends Fragment {
+public class AddJournalFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -39,17 +32,13 @@ public class BookmarksFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    ArrayAdapter<String> listviewAdapter;
-    ListView listView;
     DatabaseHelper db;
-    ArrayList<String> title;
-    ArrayList<String> titleid;
-
-    ArrayAdapter adapter;
+    EditText edtTitle, edtContent;
+    Button btnSave;
 
     private OnFragmentInteractionListener mListener;
 
-    public BookmarksFragment() {
+    public AddJournalFragment() {
         // Required empty public constructor
     }
 
@@ -59,11 +48,11 @@ public class BookmarksFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment BookmarksFragment.
+     * @return A new instance of fragment AddJournalFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static BookmarksFragment newInstance(String param1, String param2) {
-        BookmarksFragment fragment = new BookmarksFragment();
+    public static AddJournalFragment newInstance(String param1, String param2) {
+        AddJournalFragment fragment = new AddJournalFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -83,61 +72,39 @@ public class BookmarksFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_bookmarks, container, false);
 
-//        Arrays storyTitles = new Arrays();
-//
-//        String[] menuItems = storyTitles.getStoryTitles();
+        View view = inflater.inflate(R.layout.fragment_add_journal, container, false);
 
-        db = new DatabaseHelper(getContext());
-        title = new ArrayList<>();
-        titleid = new ArrayList<>();
+        db = new DatabaseHelper(getActivity());
+        edtTitle = view.findViewById(R.id.inputTitle);
+        edtContent = view.findViewById(R.id.inputContent);
 
+        btnSave = view.findViewById(R.id.save);
 
-        listView = view.findViewById(R.id.listviewBookmarks);
-
-        viewDataBookmarks();
-
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), StoryReading.class);
-                intent.putExtra("id", titleid.get(i));
-                intent.putExtra("title", title.get(i));
-                intent.putExtra("level", "easy");
-                startActivity(intent);
-                getActivity().finish();
-
-
-               // startActivity(new Intent(getActivity(), StoryReading.class));
+            public void onClick(View view) {
+                String title = edtTitle.getText().toString();
+                String content = edtContent.getText().toString();
+                if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
+                    Toast.makeText(getActivity(), "Data added", Toast.LENGTH_LONG).show();
+                    edtTitle.setText("");
+                    edtContent.setText("");
+                    edtTitle.requestFocus();
+                } else {
+                    if(edtTitle.getText().toString().isEmpty() || edtTitle.getText().toString() == "" ){
+                        edtTitle.requestFocus();
+                        edtTitle.setError("Title is empty.");
+                    }else {
+                        edtContent.requestFocus();
+                        edtContent.setError("Content is empty.");
+                    }
+                }
             }
         });
 
+        // Inflate the layout for this fragment
         return view;
-    }
-
-    private void viewDataBookmarks(){
-        Cursor cursor = db.viewDataBookmarks();
-
-        if (cursor.getCount() == 0) {
-            Toast.makeText(getContext(), "No data to show", Toast.LENGTH_SHORT).show();
-
-        } else {
-
-            while (cursor.moveToNext()) {
-                //getting id in database to array
-                title.add(cursor.getString(1));
-                titleid.add(cursor.getString(2));
-
-            }
-
-
-            adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, title);
-
-            listView.setAdapter(adapter);
-        }
     }
 
     // TODO: Rename method, update argument and hook method into UI event

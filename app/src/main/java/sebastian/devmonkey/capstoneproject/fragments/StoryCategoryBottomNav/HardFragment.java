@@ -1,28 +1,31 @@
-package sebastian.devmonkey.capstoneproject.fragments.BottomFragments;
+package sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
+import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
+import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link AddJournalFragment.OnFragmentInteractionListener} interface
+ * {@link HardFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link AddJournalFragment#newInstance} factory method to
+ * Use the {@link HardFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AddJournalFragment extends Fragment {
+public class HardFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,14 +34,10 @@ public class AddJournalFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
-    DatabaseHelper db;
-    EditText edtTitle, edtContent;
-    Button btnSave;
-
+    ArrayAdapter<String>listViewAdapter;
     private OnFragmentInteractionListener mListener;
 
-    public AddJournalFragment() {
+    public HardFragment() {
         // Required empty public constructor
     }
 
@@ -48,11 +47,11 @@ public class AddJournalFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AddJournalFragment.
+     * @return A new instance of fragment HardFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static AddJournalFragment newInstance(String param1, String param2) {
-        AddJournalFragment fragment = new AddJournalFragment();
+    public static HardFragment newInstance(String param1, String param2) {
+        HardFragment fragment = new HardFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -72,38 +71,33 @@ public class AddJournalFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        Arrays storyTitle = new Arrays();
+        View view = inflater.inflate(R.layout.fragment_hard, container, false);
 
-        View view = inflater.inflate(R.layout.fragment_add_journal, container, false);
+        String[] menuItems = storyTitle.getStoryHardTitles();
 
-        db = new DatabaseHelper(getActivity());
-        edtTitle = view.findViewById(R.id.inputTitle);
-        edtContent = view.findViewById(R.id.inputContent);
+        ListView listView = view.findViewById(R.id.hardList);
+        //get array and display to listview
+        listViewAdapter = new ArrayAdapter<>(
+                getActivity(),
+                android.R.layout.simple_list_item_1,
+                menuItems
+        );
 
-        btnSave = view.findViewById(R.id.save);
-
-        btnSave.setOnClickListener(new View.OnClickListener() {
+        listView.setAdapter(listViewAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View view) {
-                String title = edtTitle.getText().toString();
-                String content = edtContent.getText().toString();
-                if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
-                    Toast.makeText(getActivity(), "Data added", Toast.LENGTH_LONG).show();
-                    edtTitle.setText("");
-                    edtContent.setText("");
-                    edtTitle.requestFocus();
-                } else {
-                    if(edtTitle.getText().toString().isEmpty() || edtTitle.getText().toString() == "" ){
-                        edtTitle.requestFocus();
-                        edtTitle.setError("Title is empty.");
-                    }else {
-                        edtContent.requestFocus();
-                        edtContent.setError("Content is empty.");
-                    }
-                }
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(),StoryReading.class);
+                intent.putExtra("level","hard");
+                String value = Long.toString(l + 34);
+                intent.putExtra("id",value);
+                Toast.makeText(getContext(),value,Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+
             }
         });
-
-        // Inflate the layout for this fragment
         return view;
     }
 

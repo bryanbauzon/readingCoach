@@ -1,7 +1,5 @@
-package sebastian.devmonkey.capstoneproject.activity.Stories;
+package sebastian.devmonkey.capstoneproject.activity.Poem;
 
-
-import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -12,39 +10,38 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.activity.MainActivity;
+import sebastian.devmonkey.capstoneproject.fragments.PoemBottomNav.PoemEasyFragment;
+import sebastian.devmonkey.capstoneproject.fragments.PoemBottomNav.PoemHardFragment;
+import sebastian.devmonkey.capstoneproject.fragments.PoemBottomNav.PoemIntermediateFragment;
 import sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav.EasyFragment;
 import sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav.HardFragment;
 import sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav.IntermediateFragment;
 
-
-public class StoryCategory extends AppCompatActivity implements EasyFragment.OnFragmentInteractionListener,
-IntermediateFragment.OnFragmentInteractionListener, HardFragment.OnFragmentInteractionListener{
+public class PoemCategory extends AppCompatActivity implements PoemEasyFragment.OnFragmentInteractionListener,
+        PoemIntermediateFragment.OnFragmentInteractionListener, PoemHardFragment.OnFragmentInteractionListener{
 
     private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_story_category);
-
+        setContentView(R.layout.activity_poem_category);
 
         toolbar = getSupportActionBar();
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_nav);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.poem_bottom_nav);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         toolbar.setTitle("Easy");
 
 
         //back Button beside activity title
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        loadFragment(new EasyFragment());
-
+        loadFragment(new PoemEasyFragment());
     }
+
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -54,20 +51,20 @@ IntermediateFragment.OnFragmentInteractionListener, HardFragment.OnFragmentInter
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment;
             switch (item.getItemId()) {
-                case R.id.nav_easy:
+                case R.id.nav_poem_easy:
                     toolbar.setTitle("Easy");
-                    fragment = new EasyFragment();
+                    fragment = new PoemEasyFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.nav_intermediate:
+                case R.id.nav_poem_intermediate:
                     toolbar.setTitle("Intermediate");
-                    fragment = new IntermediateFragment();
+                    fragment = new PoemIntermediateFragment();
                     loadFragment(fragment);
                     return true;
 
-                case R.id.nav_hard:
+                case R.id.nav_poem_hard:
                     toolbar.setTitle("Hard");
-                    fragment = new HardFragment();
+                    fragment = new PoemHardFragment();
                     loadFragment(fragment);
                     return true;
             }
@@ -78,38 +75,13 @@ IntermediateFragment.OnFragmentInteractionListener, HardFragment.OnFragmentInter
     private void loadFragment(Fragment fragment) {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.bottom_frame_container1, fragment);
+        transaction.replace(R.id.poem_bottom_frame_container1, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
-    }
-
-
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch(item.getItemId()) {
-            case android.R.id.home:
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                finish();
-        }
-        return true;
-
     }
 
     @Override
     public void onFragmentInteraction(Uri uri) {
 
-    }
-
-    @Override
-    public void onBackPressed() {
-//        int fragments = getSupportFragmentManager().getBackStackEntryCount();
-////        if (fragments == 1) {
-////            finish();
-////        } else {
-////            if (getFragmentManager().getBackStackEntryCount() > 1) {
-////                getFragmentManager().popBackStack();
-////            } else {
-////                super.onBackPressed();
-////            }
-////        }
     }
 }

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.BottomCategory.EasyFragment"
+    tools:context=".fragments.StoryCategoryBottomNav.EasyFragment"
     android:layout_marginBottom="45dp">
 
     <!-- TODO: Update blank fragment layout -->

@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject.fragments.BottomFragments;
+package sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,6 +23,7 @@ import java.io.InputStreamReader;
 import java.util.Locale;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 /**
@@ -52,6 +53,8 @@ public class Story extends Fragment {
     String id_temp, title;
     InputStream is;
     GlobalVariable gv;
+    DatabaseHelper db;
+    private boolean check = false;
 
     private OnFragmentInteractionListener mListener;
 
@@ -96,6 +99,7 @@ public class Story extends Fragment {
         txtContent = view.findViewById(R.id.txtContent);
         txtTitle = view.findViewById(R.id.txtTitle);
 
+        db = new DatabaseHelper(getActivity());
         gv = new GlobalVariable();
 
         //color scheme
@@ -275,6 +279,7 @@ public class Story extends Fragment {
         return view;
     }
 
+
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
@@ -344,11 +349,26 @@ public class Story extends Fragment {
                 return true;
 
             case R.id.bm:
-
+                addBookmark();
+                return true;
 
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void addBookmark() {
+
+        if (!db.hasObject(id_temp)) {
+            db.insertDataBookmarks(title, id_temp);
+            check = true;
+            Toast.makeText(getActivity(), "Added to bookmarks", Toast.LENGTH_SHORT).show();
+        } else {
+            db.deleteDataBookmarks(id_temp);
+            check = false;
+            Toast.makeText(getActivity(), "Removed to bookmarks", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
 }

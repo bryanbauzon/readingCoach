@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Flash.FlashCards;
+import sebastian.devmonkey.capstoneproject.activity.Poem.PoemCategory;
 import sebastian.devmonkey.capstoneproject.activity.Stories.StoryCategory;
 
 /**
@@ -117,7 +118,7 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnPoems:
-               // startActivity(new Intent(getActivity(), StoryCategory.class));
+                startActivity(new Intent(getActivity(), PoemCategory.class));
                 break;
 
             case R.id.btnStory:
