@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -187,76 +188,76 @@ public class Story extends Fragment {
                 is = getActivity().getResources().openRawResource(R.raw.fish);
             } else if(id == 15){
                 is = getActivity().getResources().openRawResource(R.raw.flags);
-            } else {
+            } else if (id == 16) {
                 is = getActivity().getResources().openRawResource(R.raw.green_grass);
             }
 
         }else if(level.equals("intermediate")){
-            if(id == 17){
+            if(id == 0){
                 is = getActivity().getResources().openRawResource(R.raw.grifins_talent);
-            } else if(id == 18){
+            } else if(id == 1){
                 is = getActivity().getResources().openRawResource(R.raw.helicopters);
-            } else if(id == 19){
+            } else if(id == 2){
                 is = getActivity().getResources().openRawResource(R.raw.houses);
-            } else if(id == 20){
+            } else if(id == 3){
                 is = getActivity().getResources().openRawResource(R.raw.humans);
-            } else if(id == 21){
+            } else if(id == 4){
                 is = getActivity().getResources().openRawResource(R.raw.i_fly);
-            } else if(id == 22){
+            } else if(id == 5){
                 is  = getActivity().getResources().openRawResource(R.raw.ice_fishing);
-            } else if(id == 23){
+            } else if(id == 6){
                 is = getActivity().getResources().openRawResource(R.raw.julians_work);
-            } else if(id == 24){
+            } else if(id == 7){
                 is = getActivity().getResources().openRawResource(R.raw.leornardo_da_vinci);
-            } else if(id == 25){
+            } else if(id == 8){
                 is = getActivity().getResources().openRawResource(R.raw.money);
-            } else if(id == 26){
+            } else if(id == 9){
                 is = getActivity().getResources().openRawResource(R.raw.my_family);
-            } else if(id == 27){
+            } else if(id == 10){
                 is = getActivity().getResources().openRawResource(R.raw.my_friend);
-            } else if(id == 28){
+            } else if(id == 11){
                 is = getActivity().getResources().openRawResource(R.raw.my_house);
-            } else if(id == 29){
+            } else if(id == 12){
                 is = getActivity().getResources().openRawResource(R.raw.new_shoes_for_mandy);
-            } else if(id == 30){
+            } else if(id == 13){
                 is = getActivity().getResources().openRawResource(R.raw.one_hundred_dollars);
-            } else if(id == 31){
+            } else if(id == 14){
                 is = getActivity().getResources().openRawResource(R.raw.paul_cooks);
-            } else if(id == 32){
+            } else if(id == 15){
                 is = getActivity().getResources().openRawResource(R.raw.rainy_day);
-            } else if(id == 33){
+            } else if(id == 16){
                 is = getActivity().getResources().openRawResource(R.raw.running);
             }
         }else if(level.equals("hard")){
-            if(id == 34){
+            if(id == 0){
                 is = getActivity().getResources().openRawResource(R.raw.seeing_stars);
-            } else if(id == 35){
+            } else if(id == 1){
                 is = getActivity().getResources().openRawResource(R.raw.soda_pop);
-            } else if(id == 36){
+            } else if(id == 2){
                 is = getActivity().getResources().openRawResource(R.raw.taste);
-            } else if(id == 37){
+            } else if(id == 3){
                 is = getActivity().getResources().openRawResource(R.raw.tea);
-            } else if(id == 38){
+            } else if(id == 4){
                 is = getActivity().getResources().openRawResource(R.raw.tennis);
-            } else if(id == 39){
+            } else if(id == 5){
                 is = getActivity().getResources().openRawResource(R.raw.the_blow_driver);
-            } else if(id == 40){
+            } else if(id == 6){
                 is = getActivity().getResources().openRawResource(R.raw.the_drive);
-            } else if(id == 41){
+            } else if(id == 7){
                 is = getActivity().getResources().openRawResource(R.raw.the_heart);
-            } else if(id == 42){
+            } else if(id == 8){
                 is = getActivity().getResources().openRawResource(R.raw.the_interview);
-            } else if(id == 43){
+            } else if(id == 9){
                 is = getActivity().getResources().openRawResource(R.raw.the_music);
-            } else if(id == 44){
+            } else if(id == 10){
                 is = getActivity().getResources().openRawResource(R.raw.the_singing_bird);
-            } else if(id == 45){
+            } else if(id == 11){
                 is = getActivity().getResources().openRawResource(R.raw.time_to);
-            } else if(id == 46){
+            } else if(id == 12){
                 is = getActivity().getResources().openRawResource(R.raw.trees);
-            } else if(id == 47){
+            } else if(id == 13){
                 is = getActivity().getResources().openRawResource(R.raw.what_number);
-            } else if(id == 48){
+            } else if(id == 14){
                 is = getActivity().getResources().openRawResource(R.raw.yellow_stone_national_park);
             }else{
                 is = getActivity().getResources().openRawResource(R.raw.zachs_animals);
@@ -363,7 +364,7 @@ public class Story extends Fragment {
     private void addBookmark() {
 
         if (!db.hasObject(id_temp)) {
-            db.insertDataBookmarks(title, id_temp);
+            db.insertDataBookmarks(title, id_temp, level);
             check = true;
             Toast.makeText(getActivity(), "Added to bookmarks", Toast.LENGTH_SHORT).show();
         } else {

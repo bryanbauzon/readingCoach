@@ -90,7 +90,6 @@ public class EasyFragment extends Fragment {
 
         listView.setAdapter(listviewAdapter);
 
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -101,7 +100,6 @@ public class EasyFragment extends Fragment {
                 String title = adapterView.getItemAtPosition(i).toString();
                 intent.putExtra("title", title);
                 startActivity(intent);
-                //getActivity().finish();
             }
         });
 
