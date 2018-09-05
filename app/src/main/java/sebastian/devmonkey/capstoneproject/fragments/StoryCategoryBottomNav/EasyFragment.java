@@ -101,7 +101,7 @@ public class EasyFragment extends Fragment {
                 String title = adapterView.getItemAtPosition(i).toString();
                 intent.putExtra("title", title);
                 startActivity(intent);
-                getActivity().finish();
+                //getActivity().finish();
             }
         });
 

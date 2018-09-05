@@ -104,7 +104,7 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case android.R.id.home:
-                startActivity(new Intent(getApplicationContext(), StoryCategory.class));
+                //startActivity(new Intent(getApplicationContext(), StoryCategory.class));
                 finish();
                 return true;
 

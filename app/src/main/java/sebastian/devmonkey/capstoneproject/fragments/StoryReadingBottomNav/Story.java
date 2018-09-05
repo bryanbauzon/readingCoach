@@ -125,6 +125,8 @@ public class Story extends Fragment {
         gv.setMargins(txtTitle, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
         gv.setMargins(txtContent ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
 
+        txtContent.setLineSpacing(GlobalVariable.lineSpacing, 1);
+
 
 
         //this variable is used for conditional statement and serves as the id
@@ -188,7 +190,8 @@ public class Story extends Fragment {
             } else {
                 is = getActivity().getResources().openRawResource(R.raw.green_grass);
             }
-                    }else if(level.equals("intermediate")){
+
+        }else if(level.equals("intermediate")){
             if(id == 17){
                 is = getActivity().getResources().openRawResource(R.raw.grifins_talent);
             } else if(id == 18){

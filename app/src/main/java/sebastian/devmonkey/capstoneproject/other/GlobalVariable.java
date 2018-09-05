@@ -6,8 +6,9 @@ import android.view.ViewGroup;
 
 public class GlobalVariable {
 
+    //fontsize
     public static int fontSize = 15;
-
+    //font
     public static Typeface font;
 
 
@@ -16,6 +17,9 @@ public class GlobalVariable {
     public static int top;
     public static int right;
     public static int bottom;
+
+    //line spacing
+    public static float lineSpacing = 0;
 
 
     public static int color;

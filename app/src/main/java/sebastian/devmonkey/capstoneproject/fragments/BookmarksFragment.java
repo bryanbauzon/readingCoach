@@ -108,7 +108,7 @@ public class BookmarksFragment extends Fragment {
                 intent.putExtra("title", title.get(i));
                 intent.putExtra("level", "easy");
                 startActivity(intent);
-                getActivity().finish();
+                //getActivity().finish();
 
 
                // startActivity(new Intent(getActivity(), StoryReading.class));

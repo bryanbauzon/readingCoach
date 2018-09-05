@@ -31,7 +31,6 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
   //  TextView appName,overView;
     View view;
-    TextView text;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -84,12 +83,12 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         Button fontType2 = view.findViewById(R.id.btnFontType2);
         Button dark = view.findViewById(R.id.btnDark);
         Button light = view.findViewById(R.id.btnLight);
-
+        Button lineSpacing = view.findViewById(R.id.btnLineSpacing);
+        Button lineSpacing1 = view.findViewById(R.id.btnLineSpacing1);
+        Button lineSpacing2 = view.findViewById(R.id.btnLineSpacing2);
         Button pageMargin1 = view.findViewById(R.id.btnPageMargin1);
         Button pageMargin2 = view.findViewById(R.id.btnPageMargin2);
         Button pageMargin3 = view.findViewById(R.id.btnPageMargin3);
-
-
 
         small.setOnClickListener(this);
         medium.setOnClickListener(this);
@@ -101,7 +100,10 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         pageMargin1.setOnClickListener(this);
         pageMargin2.setOnClickListener(this);
         pageMargin3.setOnClickListener(this);
-       // return inflater.inflate(R.layout.fragment_settings, container, false);
+        lineSpacing.setOnClickListener(this);
+        lineSpacing1.setOnClickListener(this);
+        lineSpacing2.setOnClickListener(this);
+
     return view;
     }
 
@@ -196,6 +198,21 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.right = 30;
                 GlobalVariable.bottom = 30;
 
+                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+                break;
+
+            case R.id.btnLineSpacing:
+                GlobalVariable.lineSpacing = 10;
+                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+                break;
+
+            case R.id.btnLineSpacing1:
+                GlobalVariable.lineSpacing = 12;
+                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+                break;
+
+            case R.id.btnLineSpacing2:
+                GlobalVariable.lineSpacing = 14;
                 Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
                 break;
 
