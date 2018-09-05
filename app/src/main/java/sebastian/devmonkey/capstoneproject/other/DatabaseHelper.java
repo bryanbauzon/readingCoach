@@ -23,7 +23,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String CREATE_TABLE = "CREATE TABLE " + DB_TABLE + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, CONTENT TEXT)";
 
 
-    private static final String CREATE_TABLE_BOOKMARKS = "CREATE TABLE " + DB_TABLE_BOOKMARKS + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, TITLEID TEXT)";
+    private static final String CREATE_TABLE_BOOKMARKS = "CREATE TABLE " + DB_TABLE_BOOKMARKS + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, TITLEID TEXT, LEVEL TEXT)";
 
 
 
@@ -60,11 +60,12 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     }
 
     //bookmarks
-    public boolean insertDataBookmarks(String title, String titleid) {
+    public boolean insertDataBookmarks(String title, String titleid, String level) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(TITLE, title);
         contentValues.put("TITLEID", titleid);
+        contentValues.put("LEVEL", level);
 
         long result = db.insert(DB_TABLE_BOOKMARKS, null, contentValues);
 

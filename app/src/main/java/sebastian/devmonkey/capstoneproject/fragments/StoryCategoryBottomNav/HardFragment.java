@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -91,9 +92,11 @@ public class HardFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(),StoryReading.class);
                 intent.putExtra("level","hard");
-                String value = Long.toString(l + 34);
+                String value = Long.toString(l);
                 intent.putExtra("id",value);
-                Toast.makeText(getContext(),value,Toast.LENGTH_SHORT).show();
+                String title = adapterView.getItemAtPosition(i).toString();
+                intent.putExtra("title", title);
+                Log.e("Result", value + " " + title);
                 startActivity(intent);
 
             }

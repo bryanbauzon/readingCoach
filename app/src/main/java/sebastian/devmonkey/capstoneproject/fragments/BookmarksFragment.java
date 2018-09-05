@@ -44,6 +44,7 @@ public class BookmarksFragment extends Fragment {
     DatabaseHelper db;
     ArrayList<String> title;
     ArrayList<String> titleid;
+    ArrayList<String> level;
 
     ArrayAdapter adapter;
 
@@ -93,6 +94,7 @@ public class BookmarksFragment extends Fragment {
         db = new DatabaseHelper(getContext());
         title = new ArrayList<>();
         titleid = new ArrayList<>();
+        level = new ArrayList<>();
 
 
         listView = view.findViewById(R.id.listviewBookmarks);
@@ -106,12 +108,8 @@ public class BookmarksFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), StoryReading.class);
                 intent.putExtra("id", titleid.get(i));
                 intent.putExtra("title", title.get(i));
-                intent.putExtra("level", "easy");
+                intent.putExtra("level", level.get(i));
                 startActivity(intent);
-                //getActivity().finish();
-
-
-               // startActivity(new Intent(getActivity(), StoryReading.class));
             }
         });
 
@@ -130,6 +128,7 @@ public class BookmarksFragment extends Fragment {
                 //getting id in database to array
                 title.add(cursor.getString(1));
                 titleid.add(cursor.getString(2));
+                level.add(cursor.getString(3));
 
             }
 
