@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
@@ -31,7 +32,7 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     private static final String ARG_PARAM2 = "param2";
 
 
-    Button btnPoem, btnStory, btnFlashCard;
+    ImageButton btnPoem, btnStory, btnFlashCard;
 
 
     // TODO: Rename and change types of parameters
@@ -78,9 +79,9 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
 
         View myView = inflater.inflate(R.layout.fragment_reading_plans, container, false);
 
-        btnPoem = (Button) myView.findViewById(R.id.btnPoems);
-        btnStory = (Button) myView.findViewById(R.id.btnStory);
-        btnFlashCard = (Button) myView.findViewById(R.id.btnFlashCards);
+        btnPoem = (ImageButton) myView.findViewById(R.id.btnPoems);
+        btnStory = (ImageButton) myView.findViewById(R.id.btnStory);
+        btnFlashCard = (ImageButton) myView.findViewById(R.id.btnFlashCards);
 
         btnPoem.setOnClickListener(this);
         btnStory.setOnClickListener(this);

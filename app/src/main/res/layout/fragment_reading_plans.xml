@@ -6,7 +6,8 @@
     tools:context=".fragments.ReadingPlansFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
@@ -15,38 +16,35 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:orientation="vertical">
-
-            <Button
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
                 android:id="@+id/btnPoems"
-                android:layout_width="match_parent"
-                android:layout_height="128dp"
-                android:background="@color/poems"
-                android:textColor="@color/colorAccent"
                 android:layout_margin="10dp"
-                android:text="@string/btn_poems"/>
+                android:src="@drawable/btn_poems"
+                />
 
-
-            <Button
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/btn_story"
                 android:id="@+id/btnStory"
-                android:background="@color/story"
-                android:textColor="@color/colorAccent"
+                />
+            <ImageButton
                 android:layout_width="match_parent"
-                android:layout_height="128dp"
+                android:layout_height="158dp"
+                android:src="@drawable/btn_flashcards"
                 android:layout_margin="10dp"
-                android:text="@string/btn_story"/>
-
-
-            <Button
-                android:textColor="@color/colorAccent"
-                android:background="@color/flashcards"
                 android:id="@+id/btnFlashCards"
-                android:layout_width="match_parent"
-                android:layout_height="128dp"
-                android:layout_margin="10dp"
-                android:text="@string/btn_flashCards"/>
+                />
+
+
+
         </LinearLayout>
 
-    </RelativeLayout>
+    </ScrollView>
+
 
 
 </FrameLayout>
