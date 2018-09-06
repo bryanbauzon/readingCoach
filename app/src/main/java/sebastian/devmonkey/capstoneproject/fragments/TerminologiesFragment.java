@@ -2,6 +2,7 @@ package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,11 +12,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.support.v7.widget.SearchView;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.Terminologies;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
 
 
@@ -86,7 +89,7 @@ public class TerminologiesFragment extends Fragment {
 
         Arrays storyTitle = new Arrays();
 
-        String[] menuItems = storyTitle.getStoryTitles();
+        String[] menuItems = storyTitle.getTerminologiesWords();
 
 
 
@@ -100,6 +103,16 @@ public class TerminologiesFragment extends Fragment {
         );
 
         listView.setAdapter(listviewAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), Terminologies.class);
+                String value = Long.toString(l);
+                intent.putExtra("id",value);
+                startActivity(intent);
+            }
+        });
 
 
 

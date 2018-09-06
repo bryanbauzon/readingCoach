@@ -99,6 +99,32 @@ public class Arrays {
             "a"
     };
 
+    private String[] terminologiesWords = {
+            "Spurious",
+            "Gossip",
+            "Fraternizing",
+            "Vicariously",
+            "Brazen",
+            "Coveted",
+            "Deficit",
+            "Copious",
+            "Augmentation",
+            "Evoke"
+    };
+
+    private String[] terminologiesMeaning = {
+            "not being what it purports to be; false or fake.",
+            "casual or unconstrained conversation or reports about other people, typically involving details that are not confirmed as being true.",
+            "associate or form a friendship with someone, especially when one is not supposed to.",
+            "in a way that is experienced in the imagination through the actions of another person.",
+            "endure an embarrassing or difficult situation by behaving with apparent confidence and lack of shame.",
+            "yearn to possess or have (something).",
+            "the amount by which something, especially a sum of money, is too small.",
+            "abundant in supply or quantity.",
+            "the action or process of making or becoming greater in size or amount.",
+            "bring or recall to the conscious mind."
+    };
+
 
     public String getQuestion(int a) {
          return mQuestion[a];
@@ -133,17 +159,33 @@ public class Arrays {
     }
 
 
-    public  String[] getStoryTitles() {
+    public String[] getStoryTitles() {
         return storyTitles.clone();
     }
-
-    public  String[] getStoryIntermediateTitleTitles() {
+    public String[] getStoryIntermediateTitleTitles() {
         return storyIntermediateTitle.clone();
     }
-    public  String[] getStoryHardTitles(){return  storyHardTitle.clone();}
-    public int getLength() {
-        return mQuestion.length;
+    public String[] getStoryHardTitles(){return  storyHardTitle.clone();}
+
+
+
+    public String[] getTerminologiesWords() {
+        return terminologiesWords.clone();
     }
+
+    public String getTerminologiesWords1(int a) {
+        return terminologiesWords[a];
+    }
+    public String getTerminologiesMeaning(int a) {
+        return terminologiesMeaning[a];
+    }
+
+
+
+
+//    public int getLength() {
+//        return mQuestion.length;
+//    }
 
 
 }

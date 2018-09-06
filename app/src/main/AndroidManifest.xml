@@ -7,8 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        >
+        android:supportsRtl="true">
         <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="portrait"
@@ -22,36 +21,32 @@
         <activity
             android:name=".activity.Journal.AddJournal"
             android:screenOrientation="portrait"
-
             android:theme="@style/Custom" />
         <activity
             android:name=".activity.Journal.UpdateDeleteJournal"
             android:screenOrientation="portrait"
-
             android:theme="@style/Custom" />
         <activity
             android:name=".activity.Stories.StoryCategory"
             android:screenOrientation="portrait"
-
             android:theme="@style/Custom" />
         <activity
             android:name=".activity.Flash.FlashCards"
             android:screenOrientation="portrait"
-
             android:theme="@style/Custom" />
         <activity
             android:name=".activity.Stories.StoryReading"
             android:screenOrientation="portrait"
-
             android:theme="@style/Custom" />
         <activity
             android:name=".activity.Journal.JournalActivity"
             android:screenOrientation="portrait"
-
             android:theme="@style/Custom" />
-        <activity android:name=".activity.Poem.PoemCategory"
+        <activity
+            android:name=".activity.Poem.PoemCategory"
             android:screenOrientation="portrait"
-
+            android:theme="@style/Custom" />
+        <activity android:name=".activity.Terminologies"
             android:theme="@style/Custom"/>
     </application>
 
