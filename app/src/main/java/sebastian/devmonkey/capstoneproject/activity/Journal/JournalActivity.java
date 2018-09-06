@@ -1,19 +1,19 @@
 package sebastian.devmonkey.capstoneproject.activity.Journal;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
-import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 public class JournalActivity extends AppCompatActivity {
 
@@ -31,6 +30,9 @@ public class JournalActivity extends AppCompatActivity {
     ArrayList<String> id;
     ArrayList<String> content;
     ListView listView;
+
+    private SearchView searchView = null;
+    private SearchView.OnQueryTextListener queryTextListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +105,34 @@ public class JournalActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.add, menu);
+
+        MenuItem searchItem = menu.findItem(R.id.action_search1);
+        SearchManager searchManager = (SearchManager) this.getSystemService(Context.SEARCH_SERVICE);
+
+        if (searchItem != null) {
+            searchView = (SearchView) searchItem.getActionView();
+        }
+        if (searchView != null) {
+            searchView.setSearchableInfo(searchManager.getSearchableInfo(this.getComponentName()));
+
+            queryTextListener = new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    adapter.getFilter().filter(newText);
+
+                    return true;
+                }
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    //  Log.i("onQueryTextSubmit", query);
+
+                    return true;
+                }
+            };
+            searchView.setOnQueryTextListener(queryTextListener);
+        }
+
+
         return true;
     }
 

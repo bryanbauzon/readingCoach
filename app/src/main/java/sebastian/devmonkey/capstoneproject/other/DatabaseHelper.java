@@ -123,6 +123,37 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     }
 
 
+    public boolean JournalHasObject(String title) {
+        SQLiteDatabase db = getWritableDatabase();
+        String selectString = "SELECT * FROM " + DB_TABLE + " WHERE TITLE " + " = ?";
+
+        // Add the String you are searching by here.
+        // Put it in an array to avoid an unrecognized token error
+        Cursor cursor = db.rawQuery(selectString, new String[] {title});
+
+        boolean hasObject = false;
+        if(cursor.moveToFirst()){
+            hasObject = true;
+
+            //region if you had multiple records to check for, use this region.
+
+            int count = 0;
+            while(cursor.moveToNext()){
+                count++;
+            }
+            //here, count is records found
+            Log.d("Result", String.format("%d records found", count));
+
+            //endregion
+
+        }
+
+        cursor.close();          // Dont forget to close your cursor
+        db.close();              //AND your Database!
+        return hasObject;
+    }
+
+
     public boolean hasObject(String titleid) {
         SQLiteDatabase db = getWritableDatabase();
         String selectString = "SELECT * FROM " + DB_TABLE_BOOKMARKS + " WHERE TITLEID " + " = ?";

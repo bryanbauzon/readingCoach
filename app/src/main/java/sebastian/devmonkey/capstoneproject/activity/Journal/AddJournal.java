@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
@@ -66,12 +67,19 @@ AddJournal extends AppCompatActivity {
     private void save(){
         String title = edtTitle.getText().toString();
         String content = edtContent.getText().toString();
-        if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
+        if (!title.equals("") && !content.equals("")) {
             //Toast.makeText(getApplicationContext(), "Data added", Toast.LENGTH_LONG).show();
-            edtTitle.setText("");
-            edtContent.setText("");
-            edtTitle.requestFocus();
-            Back();
+
+            if (!db.JournalHasObject(title)){
+                db.insertData(title, content);
+
+                edtTitle.setText("");
+                edtContent.setText("");
+                Back();
+            } else {
+                Toast.makeText(getApplicationContext(), "Your title have already exist, try something else.", Toast.LENGTH_LONG).show();
+            }
+
         } else {
             if(edtTitle.getText().toString().isEmpty() || edtTitle.getText().toString() == "" ){
                 edtTitle.requestFocus();

@@ -8,21 +8,22 @@ public class GlobalVariable {
 
     //fontsize
     public static int fontSize = 15;
+
     //font
     public static Typeface font;
 
 
     //page margin
-    public static int left;
-    public static int top;
-    public static int right;
-    public static int bottom;
+    public static int left = 0;
+    public static int top = 0;
+    public static int right = 0;
+    public static int bottom = 0;
 
     //line spacing
     public static float lineSpacing = 0;
 
 
-    public static int color;
+    public static int color = 0;
 
 
     public void setMargins (View view, int left, int top, int right, int bottom) {

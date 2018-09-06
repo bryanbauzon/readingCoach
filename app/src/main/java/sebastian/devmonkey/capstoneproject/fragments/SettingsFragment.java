@@ -89,6 +89,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         Button pageMargin1 = view.findViewById(R.id.btnPageMargin1);
         Button pageMargin2 = view.findViewById(R.id.btnPageMargin2);
         Button pageMargin3 = view.findViewById(R.id.btnPageMargin3);
+        Button reset = view.findViewById(R.id.btnReset);
 
         small.setOnClickListener(this);
         medium.setOnClickListener(this);
@@ -103,6 +104,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         lineSpacing.setOnClickListener(this);
         lineSpacing1.setOnClickListener(this);
         lineSpacing2.setOnClickListener(this);
+        reset.setOnClickListener(this);
 
     return view;
     }
@@ -215,6 +217,20 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.lineSpacing = 14;
                 Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
                 break;
+
+            case R.id.btnReset:
+                GlobalVariable.fontSize = 15;
+
+                GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Regular.ttf");
+
+                GlobalVariable.left = 0;
+                GlobalVariable.top = 0;
+                GlobalVariable.right = 0;
+                GlobalVariable.bottom = 0;
+
+                GlobalVariable.color  = 0;
+
+                GlobalVariable.lineSpacing = 0;
 
 
         }
