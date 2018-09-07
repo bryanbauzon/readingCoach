@@ -5,36 +5,63 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="20dp"
+    android:background="#D5D5D5"
     tools:context=".fragments.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
-        <RelativeLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
+            android:orientation="vertical"
             android:layout_height="match_parent">
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/app_name"
-                android:layout_centerHorizontal="true"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:id="@+id/app_name"
-                />
-            <com.tomer.fadingtextview.FadingTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:texts="@array/trivia"
-                android:textAllCaps="true"
-                app:timeout="6000"
-                android:textAlignment="center"
-                android:typeface="serif"
-                android:layout_centerInParent="true"
-                />
-        </RelativeLayout>
-    </LinearLayout>
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo"
+                    android:id="@+id/imageLogo"
+                    android:layout_marginBottom="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:layout_below="@+id/imageLogo"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/btnRedirect"
+                    android:background="@color/correct"
+                    android:layout_marginBottom="30dp"
+                    android:text="Click to redirect"
+                    />
+                <com.tomer.fadingtextview.FadingTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:texts="@array/trivia"
+                    android:textAllCaps="true"
+                    android:textColor="#3E3E3E"
+                    app:timeout="6000"
+
+                    android:textAlignment="center"
+                    android:typeface="serif"
+                    android:layout_below="@+id/btnRedirect"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
 
 </FrameLayout>
