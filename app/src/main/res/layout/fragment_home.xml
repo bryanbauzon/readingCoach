@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="20dp"
     tools:context=".fragments.HomeFragment">
 
@@ -23,12 +24,14 @@
                 android:textAllCaps="true"
                 android:id="@+id/app_name"
                 />
-            <TextView
-                android:layout_centerInParent="true"
+            <com.tomer.fadingtextview.FadingTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/overview"
-                android:text="@string/txt_overview"
+                app:texts="@array/trivia"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:typeface="serif"
+                android:layout_centerInParent="true"
                 />
         </RelativeLayout>
     </LinearLayout>
