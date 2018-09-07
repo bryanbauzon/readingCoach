@@ -29,6 +29,7 @@
                 android:layout_height="wrap_content"
                 app:texts="@array/trivia"
                 android:textAllCaps="true"
+                app:timeout="1500"
                 android:textAlignment="center"
                 android:typeface="serif"
                 android:layout_centerInParent="true"
