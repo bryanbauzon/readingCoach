@@ -28,6 +28,7 @@ public class PoemCategory extends AppCompatActivity implements PoemEasyFragment.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poem_category);
 
+
         toolbar = getSupportActionBar();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.poem_bottom_nav);
@@ -37,7 +38,7 @@ public class PoemCategory extends AppCompatActivity implements PoemEasyFragment.
 
 
         //back Button beside activity title
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         loadFragment(new PoemEasyFragment());
     }
@@ -82,6 +83,20 @@ public class PoemCategory extends AppCompatActivity implements PoemEasyFragment.
 
     @Override
     public void onFragmentInteraction(Uri uri) {
+
+    }
+
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
+            case android.R.id.home:
+                //startActivity(new Intent(getApplicationContext(), StoryCategory.class));
+                finish();
+                return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
 
     }
 }
