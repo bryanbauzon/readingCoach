@@ -1,7 +1,9 @@
 package sebastian.devmonkey.capstoneproject.activity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -97,6 +99,31 @@ public class MainActivity extends AppCompatActivity implements
             CURRENT_TAG = TAG_HOME;
             loadHomeFragment();
         }
+        SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
+        boolean firstStart = prefs.getBoolean("firstStart",true);
+
+        if(firstStart){
+            howTo();
+
+        }
+
+    }
+
+    private void howTo(){
+        new AlertDialog.Builder(MainActivity.this,R.style.MyDialogTheme)
+                .setTitle("How to")
+                .setMessage("Hello")
+                .setPositiveButton("Next", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                }).create().show();
+
+SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
+SharedPreferences.Editor editor = prefs.edit();
+editor.putBoolean("firstStart",false);
+editor.apply();
     }
 
 
