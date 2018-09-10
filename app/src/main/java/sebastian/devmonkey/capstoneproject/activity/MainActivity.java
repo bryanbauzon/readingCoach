@@ -82,10 +82,11 @@ public class MainActivity extends AppCompatActivity implements
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setItemIconTintList(null);
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
-       txtName = (TextView) navHeader.findViewById(R.id.name);
+        txtName = (TextView) navHeader.findViewById(R.id.name);
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
         // load nav menu header data
