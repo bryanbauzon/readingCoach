@@ -38,16 +38,9 @@
                     android:layout_below="@+id/imageLogo"
                     android:textAlignment="center"
                     android:textAllCaps="true"
+                    android:id="@+id/title"
                     />
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_centerInParent="true"
-                    android:id="@+id/btnRedirect"
-                    android:background="@color/correct"
-                    android:layout_marginBottom="30dp"
-                    android:text="Click to redirect"
-                    />
+
                 <com.tomer.fadingtextview.FadingTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -55,10 +48,21 @@
                     android:textAllCaps="true"
                     android:textColor="#3E3E3E"
                     app:timeout="6000"
-
+                    android:id="@+id/trivia"
                     android:textAlignment="center"
-                    android:typeface="serif"
-                    android:layout_below="@+id/btnRedirect"
+                    android:typeface="monospace"
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@+id/title"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/btnRedirect"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/correct"
+                    android:layout_marginBottom="30dp"
+                    android:text="Click to redirect"
+                    android:layout_alignParentBottom="true"
                     />
             </RelativeLayout>
         </LinearLayout>
