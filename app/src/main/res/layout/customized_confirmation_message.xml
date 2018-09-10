@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/confirmationMessage"
+        android:background="@color/theme"
         android:text="@string/message"
         android:paddingTop="15dp"
         android:paddingLeft="10dp"
@@ -19,22 +19,14 @@
         android:layout_width="match_parent"
         android:padding="10dp"
         android:layout_height="220dp">
-        <ImageView
-            android:layout_marginTop="20dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/warning"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/warning"
-        />
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/warning"
-            android:layout_marginTop="35dp"
             android:textAlignment="center"
             android:text="@string/confirmation_message"
+            android:layout_centerInParent="true"
             />
         <Button
             android:layout_width="wrap_content"

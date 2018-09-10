@@ -59,10 +59,11 @@
                     android:layout_height="110dp"
                     android:id="@+id/btnRedirect"
                     android:layout_marginTop="10dp"
-                    android:background="@color/correct"
+                    android:background="@drawable/buttons"
                     android:layout_marginBottom="30dp"
                     android:text="Click to redirect"
                     android:layout_alignParentBottom="true"
+
                     />
             </RelativeLayout>
         </LinearLayout>

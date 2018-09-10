@@ -43,8 +43,9 @@
         <activity
             android:name=".activity.Terminologies"
             android:theme="@style/Custom" />
-        <activity android:name=".activity.SplashScreen"
-            android:theme="@style/Custom" >
+        <activity
+            android:name=".activity.SplashScreen"
+            android:theme="@style/Custom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
