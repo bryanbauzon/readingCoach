@@ -11,18 +11,24 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import sebastian.devmonkey.capstoneproject.HowToUse;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Journal.JournalActivity;
 import sebastian.devmonkey.capstoneproject.fragments.AboutFragment;
@@ -70,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements
 
     boolean doubleBackToExitPressedOnce = false;
 
+    private HowToUse howToUse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements
         setSupportActionBar(toolbar);
 
         mHandler = new Handler();
-
+        howToUse = new HowToUse();
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setItemIconTintList(null);
@@ -100,32 +107,14 @@ public class MainActivity extends AppCompatActivity implements
             CURRENT_TAG = TAG_HOME;
             loadHomeFragment();
         }
-        SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
-        boolean firstStart = prefs.getBoolean("firstStart",true);
 
-        if(firstStart){
-            howTo();
 
-        }
 
     }
 
-    private void howTo(){
-        new AlertDialog.Builder(MainActivity.this,R.style.MyDialogTheme)
-                .setTitle("How to")
-                .setMessage("Hello")
-                .setPositiveButton("Next", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                }).create().show();
 
-SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
-SharedPreferences.Editor editor = prefs.edit();
-editor.putBoolean("firstStart",false);
-editor.apply();
-    }
+
+
 
 
     /***

@@ -8,7 +8,7 @@
     <color name="flashcards">#16a085</color>
     <color name="sidebarBg">#363636</color>
     <color name="theme">#363636</color>
-
+<color name="white">#fff</color>
     <color name="incorrect">#ff0000</color>
     <color name="correct">#6ab04c</color>
     <color name="colorPrimaryBlack">#202020</color>
@@ -17,7 +17,7 @@
     <color name="no">#F25152</color>
     <color name="yes">#2ECC71</color>
     <color name="splash">#363636</color>
-
+    <color name="transparentWhite">#c5c5c5</color>
 
 
 </resources>

@@ -42,15 +42,23 @@
             android:theme="@style/Custom" />
         <activity
             android:name=".activity.Terminologies"
+            android:screenOrientation="portrait"
             android:theme="@style/Custom" />
         <activity
             android:name=".activity.SplashScreen"
+            android:screenOrientation="portrait"
             android:theme="@style/Custom">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".HowToUse"
+            android:screenOrientation="portrait"
+            android:theme="@style/Custom"
+            >
         </activity>
     </application>
 
