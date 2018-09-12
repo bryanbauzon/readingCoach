@@ -20,8 +20,8 @@
                 android:paddingBottom="10dp"
                 >
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
                     android:layout_centerHorizontal="true"
                     android:src="@drawable/logo"
                     android:id="@+id/imageLogo"
@@ -51,16 +51,17 @@
                     android:id="@+id/trivia"
                     android:textAlignment="center"
                     android:typeface="monospace"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_below="@+id/title"
                     />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
+
                     android:id="@+id/btnRedirect"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/buttons"
-                    android:layout_marginBottom="30dp"
                     android:text="Click to redirect"
                     android:layout_alignParentBottom="true"
 

@@ -1,14 +1,28 @@
 package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import sebastian.devmonkey.capstoneproject.HowToUse;
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.MainActivity;
+import sebastian.devmonkey.capstoneproject.activity.SliderAdapter;
+
+import static android.content.Context.MODE_PRIVATE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +41,14 @@ public class HelpFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
+    private ViewPager mSliderViewPager;
+    private LinearLayout mDotLayout;
+    private  Button finish,back;
+    private SliderAdapter sliderAdapter;
+    private TextView[] dots;
+    private int currentPage;
 
     private OnFragmentInteractionListener mListener;
 
@@ -59,7 +81,97 @@ public class HelpFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+
+         finish = (Button)getView().findViewById(R.id.finishHelp);
+         back = (Button)getView().findViewById(R.id.backHelp);
+        mSliderViewPager = (ViewPager)getView().findViewById(R.id.slideViewPagerHelp);
+        mDotLayout =  (LinearLayout)getView().findViewById(R.id.dotLayoutHelp);
+
+
+        finish.setText("Next");
+        dots = new TextView[8];
+
+        sliderAdapter = new SliderAdapter(getContext());
+        mSliderViewPager.setAdapter(sliderAdapter);
+
+        addDotIndicator(0);
+        mSliderViewPager.addOnPageChangeListener(viewListener);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mSliderViewPager.setCurrentItem(currentPage - 1);
+            }
+        });
+        finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(finish.getText().toString().equals("Next")){
+                    mSliderViewPager.setCurrentItem(currentPage + 1);
+                }
+            }
+        });
+
+    }
+    public void addDotIndicator(int position){
+
+        mDotLayout.removeAllViews();
+        for(int i = 0 ; i < dots.length; i++){
+            dots[i] = new TextView(getContext());
+            dots[i].setText(Html.fromHtml("&#8226"));
+            dots[i].setTextSize(35);
+            dots[i].setTextColor(getResources().getColor(R.color.transparentWhite));
+            mDotLayout.addView(dots[i]);
+        }
+        if(dots.length > 0){
+            dots[position].setTextColor(getResources().getColor(R.color.white));
+        }
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        addDotIndicator(position);
+        currentPage = position;
+        if(position == 0  ){
+            back.setVisibility(View.INVISIBLE);
+            finish.setText("Next");
+            back.setText(null);
+          }else if(currentPage == dots.length - 1){
+            finish.setEnabled(true);
+            back.setVisibility(View.VISIBLE);
+            finish.setText(null);
+            finish.setEnabled(false);
+            back.setText("Back");
+
+        }
+
+        else{
+            back.setVisibility(View.VISIBLE);
+            finish.setText("Next");
+            back.setText("Back");
+
+        }
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
+    }
+};
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

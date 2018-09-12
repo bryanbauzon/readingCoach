@@ -3,12 +3,9 @@ package sebastian.devmonkey.capstoneproject;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -23,7 +20,6 @@ public class HowToUse extends AppCompatActivity {
     private ViewPager mSliderViewPager;
     private LinearLayout mDotLayout;
     private  Button finish,back;
-    private int indicator = 0;
     private SliderAdapter sliderAdapter;
     private TextView[] dots;
     private int currentPage;
@@ -42,15 +38,11 @@ public class HowToUse extends AppCompatActivity {
 
         finish = (Button)findViewById(R.id.finish);
         back = (Button)findViewById(R.id.back);
-        finish.setTextColor(getResources().getColor(R.color.transparentWhite));
-
-        finish.setText("Next");
+         finish.setText("Next");
         dots = new TextView[8];
         sliderAdapter = new SliderAdapter(this);
         mSliderViewPager.setAdapter(sliderAdapter);
 
-
-        //if(btnBack){
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,11 +60,6 @@ public class HowToUse extends AppCompatActivity {
                     }
                 }
             });
-
-        // }
-
-
-
 
         addDotIndicator(0);
         mSliderViewPager.addOnPageChangeListener(viewListener);
@@ -107,26 +94,26 @@ public class HowToUse extends AppCompatActivity {
         @Override
         public void onPageSelected(int position) {
             currentPage = position;
+            addDotIndicator(position);
             if(position == 0  ){
                 back.setVisibility(View.INVISIBLE);
                 finish.setText("Next");
                 back.setText(null);
               //  finish.setEnabled(false);
-                indicator = 0;
+
             }else if(currentPage == dots.length - 1){
                 finish.setEnabled(true);
                 back.setVisibility(View.VISIBLE);
-
                 finish.setText("Finish");
-                back.setText("back");
-                indicator = 1;
+                back.setText("Back");
+
             }
 
             else{
                 back.setVisibility(View.VISIBLE);
                 finish.setText("Next");
-                back.setText("back");
-                indicator = 0;
+                back.setText("Back");
+
             }
         }
 
