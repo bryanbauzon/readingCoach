@@ -1,90 +1,66 @@
 package sebastian.devmonkey.capstoneproject.activity.Poem;
 
-import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBar;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.fragments.PoemBottomNav.PoemEasyFragment;
-import sebastian.devmonkey.capstoneproject.fragments.PoemBottomNav.PoemHardFragment;
-import sebastian.devmonkey.capstoneproject.fragments.PoemBottomNav.PoemIntermediateFragment;
-import sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav.EasyFragment;
-import sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav.HardFragment;
-import sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav.IntermediateFragment;
+import sebastian.devmonkey.capstoneproject.other.Arrays;
 
-public class PoemCategory extends AppCompatActivity implements PoemEasyFragment.OnFragmentInteractionListener,
-        PoemIntermediateFragment.OnFragmentInteractionListener, PoemHardFragment.OnFragmentInteractionListener{
 
-    private ActionBar toolbar;
+public class PoemCategory extends AppCompatActivity {
+
+
+    ListView listView;
+    ArrayAdapter<String> listviewAdapter;
+
+    String[] poemTitles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poem_category);
 
+        listView = findViewById(R.id.poemListview);
 
-        toolbar = getSupportActionBar();
-
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.poem_bottom_nav);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-        toolbar.setTitle("Easy");
-
-
+        setTitle("Poems");
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        loadFragment(new PoemEasyFragment());
-    }
+        Arrays poemArrays = new Arrays();
+        poemTitles = poemArrays.getPoemTitles();
+
+        listviewAdapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_list_item_1,
+                poemTitles
+        );
+
+        listView.setAdapter(listviewAdapter);
 
 
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment fragment;
-            switch (item.getItemId()) {
-                case R.id.nav_poem_easy:
-                    toolbar.setTitle("Easy");
-                    fragment = new PoemEasyFragment();
-                    loadFragment(fragment);
-                    return true;
-                case R.id.nav_poem_intermediate:
-                    toolbar.setTitle("Intermediate");
-                    fragment = new PoemIntermediateFragment();
-                    loadFragment(fragment);
-                    return true;
-
-                case R.id.nav_poem_hard:
-                    toolbar.setTitle("Hard");
-                    fragment = new PoemHardFragment();
-                    loadFragment(fragment);
-                    return true;
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getApplicationContext(),PoemReading.class);
+                intent.putExtra("level","poem");
+                String value = Long.toString(l);
+                intent.putExtra("id",value);
+                String title = adapterView.getItemAtPosition(i).toString();
+                intent.putExtra("title", title);
+                startActivity(intent);
             }
-            return false;
-        }
-    };
-
-    private void loadFragment(Fragment fragment) {
-        // load fragment
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.poem_bottom_frame_container1, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
-
-    @Override
-    public void onFragmentInteraction(Uri uri) {
+        });
 
     }
+
+
+
 
 
     public boolean onOptionsItemSelected(MenuItem item){

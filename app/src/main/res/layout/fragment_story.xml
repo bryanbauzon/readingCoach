@@ -26,28 +26,7 @@
             android:id="@+id/txtContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="5dp"
+            android:paddingTop="5dp" />
 
-            />
-
-
-        <!--<LinearLayout-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:layout_marginTop="50dp">-->
-
-        <!--&lt;!&ndash;<Button&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/btn"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="T2S"/>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<Button&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/btnQuizzer"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="Quizzer"/>&ndash;&gt;-->
-        <!--</LinearLayout>-->
     </LinearLayout>
 </FrameLayout>

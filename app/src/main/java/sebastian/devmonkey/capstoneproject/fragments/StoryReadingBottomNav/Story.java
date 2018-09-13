@@ -50,8 +50,7 @@ public class Story extends Fragment {
     TextToSpeech textToSpeech;
     int ctr;
 
-    String level;
-    String id_temp, title;
+    String id_temp, title, level;
     InputStream is;
     GlobalVariable gv;
     DatabaseHelper db;

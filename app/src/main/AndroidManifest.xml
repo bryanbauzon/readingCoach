@@ -48,18 +48,19 @@
             android:name=".activity.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/Custom">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HowToUse"
+        <activity
+            android:name=".HowToUse"
             android:screenOrientation="portrait"
-            android:theme="@style/Custom"
-            >
-        </activity>
+            android:theme="@style/Custom"/>
+
+        <activity android:name=".activity.Poem.PoemReading"
+            android:theme="@style/Custom"/>
     </application>
 
 </manifest>

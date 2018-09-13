@@ -1,8 +1,61 @@
 package sebastian.devmonkey.capstoneproject.other;
 
-import java.util.Random;
-
 public class Arrays {
+
+    private String[] poemTitles = {
+            "Sonnet 1",
+            "Sonnet 2",
+            "Sonnet 3",
+            "Sonnet 4",
+            "Sonnet 5",
+            "Sonnet 6",
+            "Sonnet 7",
+            "Sonnet 8",
+            "Sonnet 9",
+            "Sonnet 10",
+            "Sonnet 11",
+            "Sonnet 12",
+            "Sonnet 13",
+            "Sonnet 14",
+            "Sonnet 15",
+            "Sonnet 16",
+            "Sonnet 17",
+            "Sonnet 18",
+            "Sonnet 19",
+            "Sonnet 20",
+            "Sonnet 21",
+            "Sonnet 22",
+            "Sonnet 23",
+            "Sonnet 24",
+            "Sonnet 25",
+            "Sonnet 26",
+            "Sonnet 27",
+            "Sonnet 28",
+            "Sonnet 29",
+            "Sonnet 30",
+            "Sonnet 31",
+            "Sonnet 32",
+            "Sonnet 33",
+            "Sonnet 34",
+            "Sonnet 35",
+            "Sonnet 36",
+            "Sonnet 37",
+            "Sonnet 38",
+            "Sonnet 39",
+            "Sonnet 40",
+            "Sonnet 41",
+            "Sonnet 42",
+            "Sonnet 43",
+            "Sonnet 44",
+            "Sonnet 45",
+            "Sonnet 46",
+            "Sonnet 47",
+            "Sonnet 48",
+            "Sonnet 49",
+            "Sonnet 50",
+            "Sonnet 51",
+            "Sonnet 52"
+    };
 
     private String[] storyTitles = {"A Cold Day",
             "A Christmas in March",
@@ -178,6 +231,10 @@ public class Arrays {
     }
     public String getTerminologiesMeaning(int a) {
         return terminologiesMeaning[a];
+    }
+
+    public String[] getPoemTitles() {
+        return poemTitles.clone();
     }
 
 
