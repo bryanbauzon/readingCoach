@@ -4,19 +4,30 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.os.Debug;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.MainActivity;
@@ -29,7 +40,9 @@ public class JournalActivity extends AppCompatActivity {
     ArrayAdapter adapter;
     ArrayList<String> id;
     ArrayList<String> content;
+    String[]titleJournal,contentJournal;
     ListView listView;
+    HashMap<String,String> titleContent;
 
     private SearchView searchView = null;
     private SearchView.OnQueryTextListener queryTextListener;
@@ -44,6 +57,7 @@ public class JournalActivity extends AppCompatActivity {
         setTitle("Journal");
 
         db = new DatabaseHelper(this);
+         titleContent = new HashMap<>();
         listItem = new ArrayList<>();
         id = new ArrayList<>();
         content = new ArrayList<>();
@@ -59,10 +73,11 @@ public class JournalActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), UpdateDeleteJournal.class);
                 //putting data to intent
                 intent.putExtra("ID", id.get(i));
-                intent.putExtra("TITLE", title);
+                intent.putExtra("TITLE", listItem.get(i));
                 intent.putExtra("CONTENT", content.get(i));
+                Toast.makeText(getApplicationContext(),id.get(i),Toast.LENGTH_SHORT).show();
                 startActivity(intent);
-                finish();
+               // finish();
 
             }
         });
@@ -85,20 +100,47 @@ public class JournalActivity extends AppCompatActivity {
                 id.add(cursor.getString(0));
 
                 //getting title in database
-                listItem.add(cursor.getString(1)); // index 1 is the name, index 0 is id
+               listItem.add(cursor.getString(1)); // index 1 is the name, index 0 is id
 
                 //getting content
                 content.add(cursor.getString(2));
 
+                titleContent.put(cursor.getString(1),cursor.getString(2));
+
             }
 
+            List<HashMap<String,String>>listItem = new ArrayList<>();
+            SimpleAdapter adapter = new SimpleAdapter(this,listItem,R.layout.customized_listview_journal,
+                    new String[]{"first line","second line"},
+                    new int[]
+                            {R.id.titleJournal,
+                                    R.id.contentJournal}
+                                    );
 
-            adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listItem);
+            Iterator it = titleContent.entrySet().iterator();
+            while (it.hasNext()){
+                HashMap<String,String>resultMap = new HashMap<>();
+                Map.Entry pair = (Map.Entry)it.next();
+                resultMap.put("first line",pair.getKey().toString());
+                resultMap.put("second line",pair.getValue().toString());
+                listItem.add(resultMap);
+
+            }
 
             listView.setAdapter(adapter);
+
+
+
+
+
+         //  adapter = new ArrayAdapter< >(this, android.R.layout.simple_list_item_1, listItem);
+//CustomAdapter customAdapter = new CustomAdapter(this,titleJournal.toString(),contentJournal.toString());
+     //       listView.setAdapter(adapter);
         }
 
     }
+
+
 
 
     @Override
