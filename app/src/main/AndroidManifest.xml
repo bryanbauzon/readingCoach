@@ -60,6 +60,7 @@
             android:theme="@style/Custom"/>
 
         <activity android:name=".activity.Poem.PoemReading"
+            android:screenOrientation="portrait"
             android:theme="@style/Custom"/>
     </application>
 
