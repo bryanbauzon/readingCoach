@@ -60,7 +60,6 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
                 case R.id.story:
                     toolbar.setTitle("Story");
                     fragment = new Story();
-
                     loadFragment(fragment);
                     return true;
                 case R.id.quizzer:

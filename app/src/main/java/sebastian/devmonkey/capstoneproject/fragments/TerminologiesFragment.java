@@ -18,6 +18,7 @@ import android.widget.ListView;
 import android.support.v7.widget.SearchView;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.activity.Terminologies;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
 
@@ -42,8 +43,6 @@ public class TerminologiesFragment extends Fragment {
 
     private SearchView searchView = null;
     private SearchView.OnQueryTextListener queryTextListener;
-
-
 
     ArrayAdapter<String> listviewAdapter;
 
@@ -79,6 +78,7 @@ public class TerminologiesFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         setHasOptionsMenu(true);
+
     }
 
     @Override
@@ -191,7 +191,6 @@ public class TerminologiesFragment extends Fragment {
         }
         super.onCreateOptionsMenu(menu, inflater);
     }
-
 
 
 }

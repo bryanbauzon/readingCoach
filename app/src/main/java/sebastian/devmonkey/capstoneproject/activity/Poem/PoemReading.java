@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -30,6 +31,12 @@ public class PoemReading extends AppCompatActivity {
         intent = getIntent();
         txtTitle = findViewById(R.id.txtTitlePoem);
         txtContent = findViewById(R.id.txtContentPoem);
+
+        setTitle("Poems");
+
+        //back Button beside activity title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
 
         level = intent.getStringExtra("level");
@@ -69,20 +76,88 @@ public class PoemReading extends AppCompatActivity {
                 is = getResources().openRawResource(R.raw.poem_sonnet10);
             } else if(id == 10){
                 is = getResources().openRawResource(R.raw.poem_sonnet11);
-//            } else if(id == 11){
-//                is = getResources().openRawResource(R.raw.s);
-//            } else if(id == 12){
-//                is = getActivity().getResources().openRawResource(R.raw.dogs);
-//            } else if(id == 13){
-//                is = getActivity().getResources().openRawResource(R.raw.empress_the_blues);
-//            } else if(id == 14){
-//                is = getActivity().getResources().openRawResource(R.raw.fish);
-//            } else if(id == 15){
-//                is = getActivity().getResources().openRawResource(R.raw.flags);
-//            } else if (id == 16) {
-//                is = getActivity().getResources().openRawResource(R.raw.green_grass);
-//            }
-
+            } else if(id == 11){
+                is = getResources().openRawResource(R.raw.poem_sonnet12);
+            } else if(id == 12){
+                is = getResources().openRawResource(R.raw.poem_sonnet13);
+            } else if(id == 13){
+                is = getResources().openRawResource(R.raw.poem_sonnet14);
+            } else if(id == 14){
+                is = getResources().openRawResource(R.raw.poem_sonnet15);
+            } else if(id == 15){
+                is = getResources().openRawResource(R.raw.poem_sonnet16);
+            } else if (id == 16) {
+                is = getResources().openRawResource(R.raw.poem_sonnet17);
+            } else if (id == 17) {
+                is = getResources().openRawResource(R.raw.poem_sonnet18);
+            } else if (id == 18) {
+                is = getResources().openRawResource(R.raw.poem_sonnet19);
+            } else if (id == 19) {
+                is = getResources().openRawResource(R.raw.poem_sonnet20);
+            } else if (id == 20) {
+                is = getResources().openRawResource(R.raw.poem_sonnet21);
+            } else if (id == 21) {
+                is = getResources().openRawResource(R.raw.poem_sonnet22);
+            } else if (id == 22) {
+                is = getResources().openRawResource(R.raw.poem_sonnet23);
+            } else if (id == 23) {
+                is = getResources().openRawResource(R.raw.poem_sonnet24);
+            } else if (id == 24) {
+                is = getResources().openRawResource(R.raw.poem_sonnet25);
+            } else if (id == 25) {
+                is = getResources().openRawResource(R.raw.poem_sonnet26);
+            } else if (id == 26) {
+                is = getResources().openRawResource(R.raw.poem_sonnet27);
+            } else if (id == 27) {
+                is = getResources().openRawResource(R.raw.poem_sonnet28);
+            } else if (id == 28) {
+                is = getResources().openRawResource(R.raw.poem_sonnet29);
+            } else if (id == 29) {
+                is = getResources().openRawResource(R.raw.poem_sonnet30);
+            } else if (id == 30) {
+                is = getResources().openRawResource(R.raw.poem_sonnet31);
+            } else if (id == 31) {
+                is = getResources().openRawResource(R.raw.poem_sonnet32);
+            } else if (id == 32) {
+                is = getResources().openRawResource(R.raw.poem_sonnet33);
+            } else if (id == 33) {
+                is = getResources().openRawResource(R.raw.poem_sonnet34);
+            } else if (id == 34) {
+                is = getResources().openRawResource(R.raw.poem_sonnet35);
+            } else if (id == 35) {
+                is = getResources().openRawResource(R.raw.poem_sonnet36);
+            } else if (id == 36) {
+                is = getResources().openRawResource(R.raw.poem_sonnet37);
+            } else if (id == 37) {
+                is = getResources().openRawResource(R.raw.poem_sonnet38);
+            } else if (id == 38) {
+                is = getResources().openRawResource(R.raw.poem_sonnet39);
+            } else if (id == 39) {
+                is = getResources().openRawResource(R.raw.poem_sonnet40);
+            } else if (id == 40) {
+                is = getResources().openRawResource(R.raw.poem_sonnet41);
+            } else if (id == 41) {
+                is = getResources().openRawResource(R.raw.poem_sonnet42);
+            } else if (id == 42) {
+                is = getResources().openRawResource(R.raw.poem_sonnet43);
+            } else if (id == 43) {
+                is = getResources().openRawResource(R.raw.poem_sonnet44);
+            } else if (id == 44) {
+                is = getResources().openRawResource(R.raw.poem_sonnet45);
+            } else if (id == 45) {
+                is = getResources().openRawResource(R.raw.poem_sonnet46);
+            } else if (id == 46) {
+                is = getResources().openRawResource(R.raw.poem_sonnet47);
+            } else if (id == 47) {
+                is = getResources().openRawResource(R.raw.poem_sonnet48);
+            } else if (id == 48) {
+                is = getResources().openRawResource(R.raw.poem_sonnet49);
+            } else if (id == 49) {
+                is = getResources().openRawResource(R.raw.poem_sonnet50);
+            } else if (id == 50) {
+                is = getResources().openRawResource(R.raw.poem_sonnet51);
+            } else if (id == 51) {
+                is = getResources().openRawResource(R.raw.poem_sonnet52);
             }
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(is));
@@ -100,5 +175,18 @@ public class PoemReading extends AppCompatActivity {
             }
         }
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return false;
     }
 }
