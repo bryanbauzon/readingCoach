@@ -47,11 +47,10 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
     private String answer;
     private int score = 0;
-    private int questionNumber = 0;
     TextView questions = null, containerScore = null;
     GlobalVariable gv;
     Intent intent;
-    String id_temp, title, level;
+    String id_temp, level;
     int id;
 
 
@@ -144,27 +143,25 @@ public class Quizzer extends Fragment implements View.OnClickListener{
             if (level.equals("easy")) {
 
                 if (id == 0) {
-                    questions.setText(QuestionLibrary.getQuestion(available.get(0), id));
-                    a.setText(QuestionLibrary.getChoice1(available.get(0), id));
-                    b.setText(QuestionLibrary.getChoice2(available.get(0), id));
-                    c.setText(QuestionLibrary.getChoice3(available.get(0), id));
-                    d.setText(QuestionLibrary.getChoice4(available.get(0), id));
-                    answer = QuestionLibrary.getCorrectAnswer(available.get(0), id);
+                    questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));
+                    a.setText(QuestionLibrary.getChoice1(available.get(0), id, level));
+                    b.setText(QuestionLibrary.getChoice2(available.get(0), id, level));
+                    c.setText(QuestionLibrary.getChoice3(available.get(0), id, level));
+                    d.setText(QuestionLibrary.getChoice4(available.get(0), id, level));
+                    answer = QuestionLibrary.getCorrectAnswer(available.get(0), id, level);
 
                     available.remove(0);
 
-                    questionNumber++;
                 } else if (id == 1) {
-                    questions.setText(QuestionLibrary.getQuestion(available.get(0), id));
-                    a.setText(QuestionLibrary.getChoice1(available.get(0), id));
-                    b.setText(QuestionLibrary.getChoice2(available.get(0), id));
-                    c.setText(QuestionLibrary.getChoice3(available.get(0), id));
-                    d.setText(QuestionLibrary.getChoice4(available.get(0), id));
-                    answer = QuestionLibrary.getCorrectAnswer(available.get(0), id);
+                    questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));
+                    a.setText(QuestionLibrary.getChoice1(available.get(0), id, level));
+                    b.setText(QuestionLibrary.getChoice2(available.get(0), id, level));
+                    c.setText(QuestionLibrary.getChoice3(available.get(0), id, level));
+                    d.setText(QuestionLibrary.getChoice4(available.get(0), id, level));
+                    answer = QuestionLibrary.getCorrectAnswer(available.get(0), id, level);
 
                     available.remove(0);
 
-                    questionNumber++;
                 }
             }
 

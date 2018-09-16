@@ -22,6 +22,24 @@ public class QuestionAndAnswer {
 
     };
 
+    private String[] question3 = {
+            "What kind of animal is an alligator?",
+            "What does an alligator look like?",
+            "What do alligators eat?",
+            "According to the story, most alligators are",
+            "The opposite of sharp is"
+
+    };
+
+    private String[] question4 = {
+            "Where does Jaime live?",
+            "What kind of animal is Go-Go?",
+            "In the middle of the story, they walk across the field. This means they walk..",
+            "What does Jaime do at the beginning of the story?",
+            "What does Jaime want to do at the end of the story?"
+
+    };
+
 
     private String[][] choices = {
             {"It is cold", "It is cool", "It is warm", "It is hot"},
@@ -38,6 +56,22 @@ public class QuestionAndAnswer {
             {"The dog is dry", "The dog is wet", "Maybe", "None of the above"},
             {"Strong", "Cute", "Small", "Both B and C", "None of the above"},
             {"Monday", "Tuesday", "Wednesday", "Thursday"}
+    };
+
+    private String[][] choices3 = {
+            {"An amphibian", "A mammal", "A reptile", "A fish"},
+            {"It has long legs", "It has a long tail", "It has sharp teeth", "B and C"},
+            {"Birds", "Plants", "Fish", "A and C"},
+            {"Big and long", "Tall and skinny", "Small and weak", "Fat and funny"},
+            {"Dull", "Big", "Soft", "Smark"}
+    };
+
+    private String[][] choices4 = {
+            {"He lives in a house in the city", "He lives in an apartment in the country", "He lives in a house in the country", "He lives in an apartment in the city"},
+            {"A Dog", "A Cat", "A Pig", "A Bird"},
+            {"Birds", "Plants", "Fish", "A and C"},
+            {"Big and long", "Tall and skinny", "Small and weak", "Fat and funny"},
+            {"Dull", "Big", "Soft", "Smark"}
     };
 
 
@@ -58,134 +92,103 @@ public class QuestionAndAnswer {
             "Thursday"
     };
 
-    public String getQuestion(int a, int id) {
-
-        if (id == 0) {
-            return question1[a];
-        } else if (id == 1) {
-            return question2[a];
-        }
-
-        return null;
-    }
-
-    public String getCorrectAnswer(int a, int id) {
-
-        if (id == 0){
-            return answer1[a];
-        } else if (id == 1) {
-            return answer2[a];
-        }
-        return null;
-    }
-
-
-
-
-    public String getChoice1(int a, int id) {
-
-        if (id == 0) {
-            return choices[a][0];
-        } else if (id == 1) {
-            return choices2[a][0];
-        }
-
-        return null;
-    }
-
-
-    public String getChoice2(int a, int id) {
-        if (id == 0) {
-            return choices[a][1];
-        } else if (id == 1) {
-            return choices2[a][1];
-        }
-        return null;
-    }
-
-    public String getChoice3(int a, int id) {
-        if (id == 0) {
-            return choices[a][2];
-        } else if (id == 1) {
-            return choices2[a][2];
-        }
-        return null;
-    }
-
-
-    public String getChoice4(int a, int id) {
-        if (id == 0) {
-            return choices[a][3];
-        } else if (id == 1) {
-            return choices2[a][3];
-        }
-        return null;
-    }
-
-
-
-
-
-    // intermediate
-
-    private String[] intermQuestion1 = {
-            "When does Griffin take violin lessons?",
-            "When does Mr. Thomas tell Griffin to practice?",
-            "When does Griffin practice the violin?",
-            "How does Griffin feel about the violin?",
-            "What does Mr. Thomas teach Griffin?"
+    private String[] answer3 = {
+            "A reptile",
+            "B and C",
+            "A and C",
+            "Big and long",
+            "Dull"
     };
 
-    private String[] intermAnswer1 = {
-            "On Tuesdays after school",
-            "Every day",
-            "Most days",
-            "He loves it",
-            "To play the violin"
-    };
+    public String getQuestion(int a, int id, String level) {
 
-    public String IntermGetQuestion1(int a) {
-        return intermQuestion1[a];
+        if (level.equals("easy")) {
+            if (id == 0) {
+                return question1[a];
+            } else if (id == 1) {
+                return question2[a];
+            } else if (id == 2) {
+                return question3[a];
+            }
+        }
+
+        return null;
     }
 
-    public String getIntermCorrectAnswer1(int a) {
-        String answer = intermAnswer1[a];
-        return answer;
-    }
+    public String getCorrectAnswer(int a, int id, String level) {
 
+        if (level.equals("easy")){
+            if (id == 0){
+                return answer1[a];
+            } else if (id == 1) {
+                return answer2[a];
+            } else if( id == 2) {
+                return answer3[a];
+            }
+        }
 
-
-    private String[][] IntermChoices = {
-            {"On Tuesdays after soccer", "On Thursdays after soccer", "On Tuesdays after school", "On Thursdays after school"},
-            {"Every day", "Most days", "Only on Tuesday", "When he wants to"},
-            {"Every day", "Most days", "Never", "Only on Tuesday"},
-            {"He loves it", "He thinks it is hard", "He hates to practice", "He does not like the sound"},
-            {"To play soccer", "To fix old clocks", "To play the violin", "To build birdhouses"}
-    };
-
-
-
-    public String IntermGetChoice1(int a) {
-        String choice0 = IntermChoices[a][0];
-        return choice0;
+        return null;
     }
 
 
-    public String IntermGetChoice2(int a) {
-        String choice1 = IntermChoices[a][1];
-        return choice1;
+    public String getChoice1(int a, int id, String level) {
+
+        if (level.equals("easy")) {
+            if (id == 0) {
+                return choices[a][0];
+            } else if (id == 1) {
+                return choices2[a][0];
+            } else if (id == 2) {
+                return choices3[a][0];
+            }
+        }
+        return null;
     }
 
-    public String IntermGetChoice3(int a) {
-        String choice2 = IntermChoices[a][2];
-        return choice2;
+
+    public String getChoice2(int a, int id, String level) {
+
+        if (level.equals("easy")) {
+            if (id == 0) {
+                return choices[a][1];
+            } else if (id == 1) {
+                return choices2[a][1];
+            } else if (id == 2) {
+                return choices3[a][1];
+            }
+        }
+        return null;
+    }
+
+    public String getChoice3(int a, int id, String level) {
+
+        if (level.equals("easy")) {
+            if (id == 0) {
+                return choices[a][2];
+            } else if (id == 1) {
+                return choices2[a][2];
+            } else if (id == 2) {
+                return choices3[a][2];
+            }
+        }
+        return null;
     }
 
 
-    public String IntermGetChoice4(int a) {
-        String choice3 = IntermChoices[a][3];
-        return choice3;
+    public String getChoice4(int a, int id, String level) {
+
+        if (level.equals("easy")) {
+            if (id == 0) {
+                return choices[a][3];
+            } else if (id == 1) {
+                return choices2[a][3];
+            } else if (id == 2) {
+                return choices3[a][3];
+            }
+        }
+        return null;
     }
+
 
 
 
