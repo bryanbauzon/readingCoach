@@ -144,23 +144,23 @@ public class Quizzer extends Fragment implements View.OnClickListener{
             if (level.equals("easy")) {
 
                 if (id == 0) {
-                    questions.setText(QuestionLibrary.getQuestion1(available.get(0)));
-                    a.setText(QuestionLibrary.getChoice1(available.get(0)));
-                    b.setText(QuestionLibrary.getChoice2(available.get(0)));
-                    c.setText(QuestionLibrary.getChoice3(available.get(0)));
-                    d.setText(QuestionLibrary.getChoice4(available.get(0)));
-                    answer = QuestionLibrary.getCorrectAnswer1(available.get(0));
+                    questions.setText(QuestionLibrary.getQuestion(available.get(0), id));
+                    a.setText(QuestionLibrary.getChoice1(available.get(0), id));
+                    b.setText(QuestionLibrary.getChoice2(available.get(0), id));
+                    c.setText(QuestionLibrary.getChoice3(available.get(0), id));
+                    d.setText(QuestionLibrary.getChoice4(available.get(0), id));
+                    answer = QuestionLibrary.getCorrectAnswer(available.get(0), id);
 
                     available.remove(0);
 
                     questionNumber++;
                 } else if (id == 1) {
-                    questions.setText(QuestionLibrary.getQuestion2(available.get(0)));
-                    a.setText(QuestionLibrary.getChoice5(available.get(0)));
-                    b.setText(QuestionLibrary.getChoice6(available.get(0)));
-                    c.setText(QuestionLibrary.getChoice7(available.get(0)));
-                    d.setText(QuestionLibrary.getChoice8(available.get(0)));
-                    answer = QuestionLibrary.getCorrectAnswer2(available.get(0));
+                    questions.setText(QuestionLibrary.getQuestion(available.get(0), id));
+                    a.setText(QuestionLibrary.getChoice1(available.get(0), id));
+                    b.setText(QuestionLibrary.getChoice2(available.get(0), id));
+                    c.setText(QuestionLibrary.getChoice3(available.get(0), id));
+                    d.setText(QuestionLibrary.getChoice4(available.get(0), id));
+                    answer = QuestionLibrary.getCorrectAnswer(available.get(0), id);
 
                     available.remove(0);
 

@@ -57,9 +57,7 @@ public class Arrays {
             "Sonnet 52"
     };
 
-    private String[] storyTitles = {"A Cold Day",
-            "A Christmas in March",
-            "A Call to the pool",
+    private String[] storyTitles = {"A Call To The Pool",
             "A Happy Visitor",
             "Alligators",
             "An Adventure",

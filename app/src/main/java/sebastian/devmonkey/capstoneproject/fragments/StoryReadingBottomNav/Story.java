@@ -46,7 +46,7 @@ public class Story extends Fragment {
     private String mParam2;
 
     private Menu menu;
-    TextView txtContent, txtTitle;
+    TextView txtContent, txtTitle, txtAuthor;
     TextToSpeech textToSpeech;
     int ctr;
 
@@ -98,6 +98,7 @@ public class Story extends Fragment {
         Intent intent = getActivity().getIntent();
         txtContent = view.findViewById(R.id.txtContent);
         txtTitle = view.findViewById(R.id.txtTitle);
+        txtAuthor = view.findViewById(R.id.txtAuthor);
 
         db = new DatabaseHelper(getActivity());
         gv = new GlobalVariable();
@@ -135,6 +136,7 @@ public class Story extends Fragment {
         title = intent.getStringExtra("title");
 
         txtTitle.setText(title);
+        txtAuthor.setText("Susan Carter");
 
         int id = Integer.parseInt(id_temp);
         Toast.makeText(getActivity(),id_temp, Toast.LENGTH_SHORT).show();
@@ -156,39 +158,37 @@ public class Story extends Fragment {
             //testing for id
             if(id == 0){
                 //array is always starts at 0;
-                is = getActivity().getResources().openRawResource(R.raw.a_cold_day);
-            } else if(id == 1){
-                is = getActivity().getResources().openRawResource(R.raw.a_christmas_in_march);
-            } else if(id == 2){
                 is = getActivity().getResources().openRawResource(R.raw.a_call_to_the_pool);
-            } else if(id == 3){
+            } else if(id == 1){
                 is = getActivity().getResources().openRawResource(R.raw.a_happy_visitor);
-            } else if(id == 4){
+            } else if(id == 2){
                 is = getActivity().getResources().openRawResource(R.raw.alligators);
-            } else if(id == 5){
+            } else if(id == 3){
                 is = getActivity().getResources().openRawResource(R.raw.an_adventure);
-            } else if(id == 6){
+            } else if(id == 4){
                 is = getActivity().getResources().openRawResource(R.raw.bears);
-            } else if(id == 7){
-                is = getActivity().getResources().openRawResource(R.raw.beds);
-            } else if(id == 8){
-                is = getActivity().getResources().openRawResource(R.raw.bella_hides);
-            } else if(id == 9){
-                is = getActivity().getResources().openRawResource(R.raw.big_city_noise);
-            } else if(id == 10){
+            } else if(id == 5){
                 is = getActivity().getResources().openRawResource(R.raw.birds);
-            } else if(id == 11){
+            } else if(id == 6){
+                is = getActivity().getResources().openRawResource(R.raw.bella_hides);
+            } else if(id == 7){
+                is = getActivity().getResources().openRawResource(R.raw.big_city_noise);
+            } else if(id == 8){
+                is = getActivity().getResources().openRawResource(R.raw.birds);
+            } else if(id == 9){
                 is = getActivity().getResources().openRawResource(R.raw.butterfly);
-            } else if(id == 12){
+            } else if(id == 10){
                 is = getActivity().getResources().openRawResource(R.raw.dogs);
-            } else if(id == 13){
+            } else if(id == 11){
                 is = getActivity().getResources().openRawResource(R.raw.empress_the_blues);
-            } else if(id == 14){
+            } else if(id == 12){
                 is = getActivity().getResources().openRawResource(R.raw.fish);
-            } else if(id == 15){
+            } else if(id == 13){
                 is = getActivity().getResources().openRawResource(R.raw.flags);
-            } else if (id == 16) {
+            } else if(id == 14){
                 is = getActivity().getResources().openRawResource(R.raw.green_grass);
+            } else if(id == 15) {
+                //is = getActivity().getResources().openRawResource(R.raw.g);
             }
 
         }else if(level.equals("intermediate")){

@@ -4,127 +4,189 @@ public class QuestionAndAnswer {
 
     //easy
     private String[] question1 = {
-            "If the weather is frigid, it is very ?",
-            "In what city does this story take place?",
-            "Dr. James doesn’t stay home because",
-            "What could Dr. James have put on his neck to keep it warm?",
-            "Given what is said in the story, what is probably true about Miami?"
+            "What is the weather like today?",
+            "Sam is hot, but Sam wants to be..",
+            "How can Sam get cool?",
+            "Why does Sam talk to Andrea?",
+            "Is the pool open?"
     };
 
 
 
     private String[] question2 = {
-            "After Clifton's letter is read to the family, the narrator’s mood shifts from",
-            "In the middle of the story, we learn that the mother is an optimist. This means she",
-            "Which of the following words best describes the work the sisters did to help keep the tree looking pretty?",
-            "What other title would best fit this passage?",
-            "How does Clifton seem to feel when he sees the Christmas tree?"
+            "What is at the door of the house?",
+            "What happens at the end of the story?",
+            "Is the dog dry or wet?",
+            "How does the wet dog look?",
+            "What day of the week is it in the story?"
 
     };
-
-
-
-
-    private String[] answer1 = {
-            "Cold",
-            "New York",
-            "There are sick people waiting for him",
-            "A scarf",
-            "It's a warm place"
-    };
-
-
-    private String[] answer2 = {
-            "Excited to disappointed",
-            "Maintains a positive viewpoint",
-            "Teamwork",
-            "Granting Clifton&'s Wish",
-            "Appreciative"
-    };
-
-    public String getQuestion1(int a) {
-        return question1[a];
-    }
-    public String getQuestion2(int a) {
-        return question2[a];
-    }
-
-    public String getCorrectAnswer1(int a) {
-        String answer = answer1[a];
-        return answer;
-    }
-
-    public String getCorrectAnswer2(int a) {
-        String answer = answer2[a];
-        return answer;
-    }
-
-
-
-
 
 
     private String[][] choices = {
-            {"Cold", "Rainy", "Windy", "Slippery"},
-            {"Florida", "Miami", "Pennsylvania", "New York"},
-            {"There are sick people waiting for him", "He listens to the weatherman", "He has to clear snow off his car.", "He must help the people in the accident"},
-            {"Gloves", "A scarf", "Another hat", "A Jacket"},
-            {"It's a warm place", "It's a rainy place", "It's a windy place", "People drive slowly there"}
+            {"It is cold", "It is cool", "It is warm", "It is hot"},
+            {"Cold", "Cool", "Warm", "Hot"},
+            {"He can go to the library", "He can go to the pool", "He can go to school", "He can go to work"},
+            {"Because she is his friend", "Because she knows his sister", "Because Sam needs to know what time it is", "Because Sam wants to know if the pool is open"},
+            {"Yes, the pool is open", "No, the pool is not open", "None of the choices", "Both A and B"}
     };
 
 
     private String[][] choices2 = {
-            {"Arrogant to humble", "Sad to joyful", "Uncertain to clear", "Excited to disappointed"},
-            {"Is not easily upset", "Upholds high standards", "Maintains a positive viewpoint", "considers all outcomes before making a decision"},
-            {"Miracle", "Disaster", "Drudgery", "Teamwork"},
-            {"Flying Home", "A Christmas War", "Granting Clifton&'s Wish", "The Disappointing Letter"},
-            {"Appreciative", "Disappointed", "Estranged", "Remorseful"}
+            {"A Man", "A Cat", "A Dog", "A Snake"},
+            {"Anna keeps the dog", "Anna takes the dog to the hospital", "Anna’s mom feeds the dog", "Anna dries the dog with a towel"},
+            {"The dog is dry", "The dog is wet", "Maybe", "None of the above"},
+            {"Strong", "Cute", "Small", "Both B and C", "None of the above"},
+            {"Monday", "Tuesday", "Wednesday", "Thursday"}
+    };
+
+
+    private String[] answer1 = {
+            "It is hot",
+            "Cool",
+            "He can go to the pool",
+            "Because Sam wants to know if the pool is open",
+            "Yes, the pool is open"
+    };
+
+
+    private String[] answer2 = {
+            "A Dog",
+            "Anna keeps the dog",
+            "The dog is wet",
+            "Both B and C",
+            "Thursday"
+    };
+
+    public String getQuestion(int a, int id) {
+
+        if (id == 0) {
+            return question1[a];
+        } else if (id == 1) {
+            return question2[a];
+        }
+
+        return null;
+    }
+
+    public String getCorrectAnswer(int a, int id) {
+
+        if (id == 0){
+            return answer1[a];
+        } else if (id == 1) {
+            return answer2[a];
+        }
+        return null;
+    }
+
+
+
+
+    public String getChoice1(int a, int id) {
+
+        if (id == 0) {
+            return choices[a][0];
+        } else if (id == 1) {
+            return choices2[a][0];
+        }
+
+        return null;
+    }
+
+
+    public String getChoice2(int a, int id) {
+        if (id == 0) {
+            return choices[a][1];
+        } else if (id == 1) {
+            return choices2[a][1];
+        }
+        return null;
+    }
+
+    public String getChoice3(int a, int id) {
+        if (id == 0) {
+            return choices[a][2];
+        } else if (id == 1) {
+            return choices2[a][2];
+        }
+        return null;
+    }
+
+
+    public String getChoice4(int a, int id) {
+        if (id == 0) {
+            return choices[a][3];
+        } else if (id == 1) {
+            return choices2[a][3];
+        }
+        return null;
+    }
+
+
+
+
+
+    // intermediate
+
+    private String[] intermQuestion1 = {
+            "When does Griffin take violin lessons?",
+            "When does Mr. Thomas tell Griffin to practice?",
+            "When does Griffin practice the violin?",
+            "How does Griffin feel about the violin?",
+            "What does Mr. Thomas teach Griffin?"
+    };
+
+    private String[] intermAnswer1 = {
+            "On Tuesdays after school",
+            "Every day",
+            "Most days",
+            "He loves it",
+            "To play the violin"
+    };
+
+    public String IntermGetQuestion1(int a) {
+        return intermQuestion1[a];
+    }
+
+    public String getIntermCorrectAnswer1(int a) {
+        String answer = intermAnswer1[a];
+        return answer;
+    }
+
+
+
+    private String[][] IntermChoices = {
+            {"On Tuesdays after soccer", "On Thursdays after soccer", "On Tuesdays after school", "On Thursdays after school"},
+            {"Every day", "Most days", "Only on Tuesday", "When he wants to"},
+            {"Every day", "Most days", "Never", "Only on Tuesday"},
+            {"He loves it", "He thinks it is hard", "He hates to practice", "He does not like the sound"},
+            {"To play soccer", "To fix old clocks", "To play the violin", "To build birdhouses"}
     };
 
 
 
-    public String getChoice1(int a) {
-        String choice0 = choices[a][0];
+    public String IntermGetChoice1(int a) {
+        String choice0 = IntermChoices[a][0];
         return choice0;
     }
 
 
-    public String getChoice2(int a) {
-        String choice1 = choices[a][1];
+    public String IntermGetChoice2(int a) {
+        String choice1 = IntermChoices[a][1];
         return choice1;
     }
 
-    public String getChoice3(int a) {
-        String choice2 = choices[a][2];
+    public String IntermGetChoice3(int a) {
+        String choice2 = IntermChoices[a][2];
         return choice2;
     }
 
 
-    public String getChoice4(int a) {
-        String choice3 = choices[a][3];
+    public String IntermGetChoice4(int a) {
+        String choice3 = IntermChoices[a][3];
         return choice3;
     }
 
 
-    //
 
-    public String getChoice5(int a) {
-        String choice3 = choices2[a][0];
-        return choice3;
-    }
-
-    public String getChoice6(int a) {
-        String choice3 = choices2[a][1];
-        return choice3;
-    }
-
-    public String getChoice7(int a) {
-        String choice3 = choices2[a][2];
-        return choice3;
-    }
-
-    public String getChoice8(int a) {
-        String choice3 = choices2[a][3];
-        return choice3;
-    }
 }
