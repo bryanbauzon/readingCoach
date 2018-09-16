@@ -55,7 +55,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HowToUse"
+            android:name=".other.HowToUse"
             android:screenOrientation="portrait"
             android:theme="@style/Custom"/>
 

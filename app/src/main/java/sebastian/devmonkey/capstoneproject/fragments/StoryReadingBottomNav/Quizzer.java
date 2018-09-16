@@ -1,6 +1,7 @@
 package sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,7 @@ import java.util.List;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.Arrays;
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
+import sebastian.devmonkey.capstoneproject.other.QuestionAndAnswer;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -37,7 +39,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     private String mParam1;
     private String mParam2;
 
-    private Arrays QuestionLibrary = new Arrays();
+    private QuestionAndAnswer QuestionLibrary = new QuestionAndAnswer();
 
     List<Integer> available;
 
@@ -48,6 +50,9 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     private int questionNumber = 0;
     TextView questions = null, containerScore = null;
     GlobalVariable gv;
+    Intent intent;
+    String id_temp, title, level;
+    int id;
 
 
     private OnFragmentInteractionListener mListener;
@@ -91,6 +96,13 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
         gv = new GlobalVariable();
 
+        intent = getActivity().getIntent();
+
+        level = intent.getStringExtra("level");
+        id_temp = intent.getStringExtra("id");
+
+        id = Integer.parseInt(id_temp);
+
         questions = view.findViewById(R.id.question);
         containerScore = view. findViewById(R.id.score);
         a = view.findViewById(R.id.a);
@@ -113,7 +125,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
         available = new ArrayList<>();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             available.add(i);
         }
 
@@ -129,19 +141,39 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
             Collections.shuffle(available);
 
-            questions.setText(QuestionLibrary.getQuestion(available.get(0)));
-            a.setText(QuestionLibrary.getChoice1(available.get(0)));
-            b.setText(QuestionLibrary.getChoice2(available.get(0)));
-            c.setText(QuestionLibrary.getChoice3(available.get(0)));
-            d.setText(QuestionLibrary.getChoice4(available.get(0)));
-            answer = QuestionLibrary.getCorrectAnswer(available.get(0));
+            if (level.equals("easy")) {
 
-            available.remove(0);
+                if (id == 0) {
+                    questions.setText(QuestionLibrary.getQuestion1(available.get(0)));
+                    a.setText(QuestionLibrary.getChoice1(available.get(0)));
+                    b.setText(QuestionLibrary.getChoice2(available.get(0)));
+                    c.setText(QuestionLibrary.getChoice3(available.get(0)));
+                    d.setText(QuestionLibrary.getChoice4(available.get(0)));
+                    answer = QuestionLibrary.getCorrectAnswer1(available.get(0));
 
-            questionNumber++;
+                    available.remove(0);
+
+                    questionNumber++;
+                } else if (id == 1) {
+                    questions.setText(QuestionLibrary.getQuestion2(available.get(0)));
+                    a.setText(QuestionLibrary.getChoice5(available.get(0)));
+                    b.setText(QuestionLibrary.getChoice6(available.get(0)));
+                    c.setText(QuestionLibrary.getChoice7(available.get(0)));
+                    d.setText(QuestionLibrary.getChoice8(available.get(0)));
+                    answer = QuestionLibrary.getCorrectAnswer2(available.get(0));
+
+                    available.remove(0);
+
+                    questionNumber++;
+                }
+            }
+
         } else {
             Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
-//            finish();
+            a.setEnabled(false);
+            b.setEnabled(false);
+            c.setEnabled(false);
+            d.setEnabled(false);
         }
     }
 

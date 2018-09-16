@@ -5,13 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.view.animation.DecelerateInterpolator;
 
-import sebastian.devmonkey.capstoneproject.HowToUse;
+import sebastian.devmonkey.capstoneproject.other.HowToUse;
 import sebastian.devmonkey.capstoneproject.R;
 
 public class SplashScreen extends AppCompatActivity {

@@ -258,7 +258,7 @@ public class Story extends Fragment {
                 is = getActivity().getResources().openRawResource(R.raw.what_number);
             } else if(id == 14){
                 is = getActivity().getResources().openRawResource(R.raw.yellow_stone_national_park);
-            }else{
+            }else if (id == 15){
                 is = getActivity().getResources().openRawResource(R.raw.zachs_animals);
             }
         }

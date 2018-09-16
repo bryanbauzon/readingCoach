@@ -1,4 +1,4 @@
-package sebastian.devmonkey.capstoneproject;
+package sebastian.devmonkey.capstoneproject.other;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.activity.SliderAdapter;
 
