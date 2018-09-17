@@ -38,7 +38,7 @@ public class Terminologies extends AppCompatActivity {
         Arrays arrays = new Arrays();
 
         txtTitle.setText(arrays.getTerminologiesWords1(id));
-        txtMeaning.setText(arrays.getTerminologiesMeaning(id));
+        txtMeaning.setText("\t\t - "+arrays.getTerminologiesMeaning(id));
 
     }
 
