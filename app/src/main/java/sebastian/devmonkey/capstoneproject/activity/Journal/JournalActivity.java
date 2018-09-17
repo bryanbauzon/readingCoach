@@ -109,24 +109,24 @@ public class JournalActivity extends AppCompatActivity {
 
             }
 
-            List<HashMap<String,String>>listItem = new ArrayList<>();
-            SimpleAdapter adapter = new SimpleAdapter(this,listItem,R.layout.customized_listview_journal,
-                    new String[]{"first line","second line"},
-                    new int[]
-                            {R.id.titleJournal,
-                                    R.id.contentJournal}
-                                    );
-
-            Iterator it = titleContent.entrySet().iterator();
-            while (it.hasNext()){
-                HashMap<String,String>resultMap = new HashMap<>();
-                Map.Entry pair = (Map.Entry)it.next();
-                resultMap.put("first line",pair.getKey().toString());
-                resultMap.put("second line",pair.getValue().toString());
-                listItem.add(resultMap);
-
-            }
-
+//            List<HashMap<String,String>>listItem = new ArrayList<>();
+//            SimpleAdapter adapter = new SimpleAdapter(this,listItem,R.layout.customized_listview_journal,
+//                    new String[]{"first line","second line"},
+//                    new int[]
+//                            {R.id.titleJournal,
+//                                    R.id.contentJournal}
+//                                    );
+//
+//            Iterator it = titleContent.entrySet().iterator();
+//            while (it.hasNext()){
+//                HashMap<String,String>resultMap = new HashMap<>();
+//                Map.Entry pair = (Map.Entry)it.next();
+//                resultMap.put("first line",pair.getKey().toString());
+//                resultMap.put("second line",pair.getValue().toString());
+//                listItem.add(resultMap);
+//
+//            }
+            adapter = new ArrayAdapter< >(this, android.R.layout.simple_list_item_1, listItem);
             listView.setAdapter(adapter);
 
 

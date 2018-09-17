@@ -58,7 +58,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
-
+                    android:textColor="@color/white"
                     android:id="@+id/btnRedirect"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/buttons"

@@ -22,7 +22,7 @@ public class SliderAdapter extends PagerAdapter {
     }
     //arrays
     public int[] slideImages  = {
-            R.drawable.sample1,
+            R.drawable.hhome,
             R.drawable.sample1,
             R.drawable.sample1,
             R.drawable.sample1,
@@ -43,15 +43,14 @@ public class SliderAdapter extends PagerAdapter {
             "Settings"
     };
     public String[] slideContents = {
- "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam in ligula malesuada accumsan. Donec tincidunt pulvinar sapien at mattis.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam in ligula malesuada accumsan. Donec tincidunt pulvinar sapien at mattis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam in ligula malesuada accumsan. Donec tincidunt pulvinar sapien at mattis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam in ligula malesuada accumsan. Donec tincidunt pulvinar sapien at mattis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam in ligula malesuada accumsan. Donec tincidunt pulvinar sapien at mattis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam in ligula malesuada accumsan. Donec tincidunt pulvinar sapien at mattis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam in ligula malesuada accumsan. Donec tincidunt pulvinar sapien at mattis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam in ligula malesuada accumsan. Donec tincidunt pulvinar sapien at mattis.",
-
+ "This feature contains a brief history of reading comprehension. You can also easily access the main menus of the application",
+    "Read and learn through this passage comprehension and word pronunciation tests",
+            "Save and read your favorite  stories and  poems anytime, anywhere you want.",
+            "Take a certain important details in every stories and poems.",
+            "Gain and acquire new terminologies and vocabulary from your favorite stories and poems.",
+            "Informs you about the developers and application information.",
+            "Ease and guide you to effectively and efficiently use the feature of the application.",
+            "Alter and adjust your stories and poems with your own style when reading."
     };
 
     @Override
@@ -77,10 +76,7 @@ public class SliderAdapter extends PagerAdapter {
         slideTitle.setText(slideHeading[position]);
         slideContent.setText(slideContents[position]);
 
-
         container.addView(view);
-
-
         return  view;
     }
 
