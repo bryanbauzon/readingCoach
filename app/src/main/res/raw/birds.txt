@@ -1,0 +1,3 @@
+BIRDS	"A bird is a kind of animal. A bird has two wings. Birds are the only animal with feathers. Pigeons, eagles,
+swans, and blue jays are all different kinds of birds. Most birds can fly. Turkeys and penguins are two
+kinds of birds that cannot fly."	Susan Carter

@@ -158,80 +158,116 @@ public class Story extends Fragment {
             //testing for id
             if(id == 0){
                 //array is always starts at 0;
-                is = getActivity().getResources().openRawResource(R.raw.a_call_to_the_pool);
+                is = getActivity().getResources().openRawResource(R.raw.miles_race);
             } else if(id == 1){
-                is = getActivity().getResources().openRawResource(R.raw.a_happy_visitor);
+                is = getActivity().getResources().openRawResource(R.raw.a_call_to_the_pool);
             } else if(id == 2){
-                is = getActivity().getResources().openRawResource(R.raw.alligators);
+                is = getActivity().getResources().openRawResource(R.raw.a_happy_visitor);
             } else if(id == 3){
-                is = getActivity().getResources().openRawResource(R.raw.an_adventure);
+                is = getActivity().getResources().openRawResource(R.raw.air_ballons);
             } else if(id == 4){
-                is = getActivity().getResources().openRawResource(R.raw.bears);
+                is = getActivity().getResources().openRawResource(R.raw.airplanes);
             } else if(id == 5){
-                is = getActivity().getResources().openRawResource(R.raw.birds);
+                is = getActivity().getResources().openRawResource(R.raw.alligators);
             } else if(id == 6){
-                is = getActivity().getResources().openRawResource(R.raw.bella_hides);
+                is = getActivity().getResources().openRawResource(R.raw.an_adventure);
             } else if(id == 7){
-                is = getActivity().getResources().openRawResource(R.raw.big_city_noise);
+                is = getActivity().getResources().openRawResource(R.raw.bears);
             } else if(id == 8){
-                is = getActivity().getResources().openRawResource(R.raw.birds);
+                is = getActivity().getResources().openRawResource(R.raw.beds);
             } else if(id == 9){
-                is = getActivity().getResources().openRawResource(R.raw.butterfly);
+                is = getActivity().getResources().openRawResource(R.raw.bella_hides);
             } else if(id == 10){
-                is = getActivity().getResources().openRawResource(R.raw.dogs);
+                is = getActivity().getResources().openRawResource(R.raw.big_city_noise);
             } else if(id == 11){
-                is = getActivity().getResources().openRawResource(R.raw.empress_the_blues);
+                is = getActivity().getResources().openRawResource(R.raw.birds);
             } else if(id == 12){
-                is = getActivity().getResources().openRawResource(R.raw.fish);
+                is = getActivity().getResources().openRawResource(R.raw.birds_nest);
             } else if(id == 13){
-                is = getActivity().getResources().openRawResource(R.raw.flags);
+                is = getActivity().getResources().openRawResource(R.raw.bullied);
             } else if(id == 14){
-                is = getActivity().getResources().openRawResource(R.raw.green_grass);
+                is = getActivity().getResources().openRawResource(R.raw.butterfly);
             } else if(id == 15) {
-                //is = getActivity().getResources().openRawResource(R.raw.g);
+                is = getActivity().getResources().openRawResource(R.raw.by_the_Water);
+            } else if(id == 16) {
+                is = getActivity().getResources().openRawResource(R.raw.campfire);
+            } else if(id == 17) {
+                is = getActivity().getResources().openRawResource(R.raw.canned_goods);
+            } else if(id == 18) {
+                is = getActivity().getResources().openRawResource(R.raw.dandelions);
+            } else if(id == 19) {
+                is = getActivity().getResources().openRawResource(R.raw.different_type_of_people);
+            } else if(id == 20) {
+                is = getActivity().getResources().openRawResource(R.raw.dogs);
+            } else if(id == 21) {
+                is = getActivity().getResources().openRawResource(R.raw.empress_the_blues);
+            } else if(id == 22) {
+                is = getActivity().getResources().openRawResource(R.raw.fish);
+            } else if(id == 23) {
+                is = getActivity().getResources().openRawResource(R.raw.flags);
+            } else if(id == 24) {
+                is = getActivity().getResources().openRawResource(R.raw.fried);
+            } else if(id == 25) {
+                is = getActivity().getResources().openRawResource(R.raw.grass);
+            } else if(id == 26) {
+                is = getActivity().getResources().openRawResource(R.raw.green_grass);
+            } else if(id == 27) {
+                is = getActivity().getResources().openRawResource(R.raw.griffin);
+            } else if(id == 28) {
+                is = getActivity().getResources().openRawResource(R.raw.grifins_talent);
             }
 
         }else if(level.equals("intermediate")){
             if(id == 0){
-                is = getActivity().getResources().openRawResource(R.raw.grifins_talent);
-            } else if(id == 1){
-                is = getActivity().getResources().openRawResource(R.raw.helicopters);
-            } else if(id == 2){
-                is = getActivity().getResources().openRawResource(R.raw.houses);
-            } else if(id == 3){
-                is = getActivity().getResources().openRawResource(R.raw.humans);
-            } else if(id == 4){
-                is = getActivity().getResources().openRawResource(R.raw.i_fly);
-            } else if(id == 5){
-                is  = getActivity().getResources().openRawResource(R.raw.ice_fishing);
-            } else if(id == 6){
-                is = getActivity().getResources().openRawResource(R.raw.julians_work);
-            } else if(id == 7){
-                is = getActivity().getResources().openRawResource(R.raw.leornardo_da_vinci);
-            } else if(id == 8){
-                is = getActivity().getResources().openRawResource(R.raw.money);
-            } else if(id == 9){
-                is = getActivity().getResources().openRawResource(R.raw.my_family);
-            } else if(id == 10){
-                is = getActivity().getResources().openRawResource(R.raw.my_friend);
-            } else if(id == 11){
-                is = getActivity().getResources().openRawResource(R.raw.my_house);
-            } else if(id == 12){
-                is = getActivity().getResources().openRawResource(R.raw.new_shoes_for_mandy);
-            } else if(id == 13){
-                is = getActivity().getResources().openRawResource(R.raw.one_hundred_dollars);
-            } else if(id == 14){
-                is = getActivity().getResources().openRawResource(R.raw.paul_cooks);
-            } else if(id == 15){
-                is = getActivity().getResources().openRawResource(R.raw.rainy_day);
-            } else if(id == 16){
-                is = getActivity().getResources().openRawResource(R.raw.running);
+                is = getActivity().getResources().openRawResource(R.raw.a_cold_day);
+//            } else if(id == 1){
+//                is = getActivity().getResources().openRawResource(R.raw.a_mystery);
+//            } else if(id == 2){
+//                is = getActivity().getResources().openRawResource(R.raw.abraham_lincoln);
+//            } else if(id == 3){
+//                is = getActivity().getResources().openRawResource(R.raw.bail);
+//            } else if(id == 4){
+//                is = getActivity().getResources().openRawResource(R.raw.benjamin_franklin);
+//            } else if(id == 5){
+//                is  = getActivity().getResources().openRawResource(R.raw.birdsongs);
+//            } else if(id == 6){
+//                is = getActivity().getResources().openRawResource(R.raw.black_american_author);
+//            } else if(id == 7){
+//                is = getActivity().getResources().openRawResource(R.raw.black_bears);
+//            } else if(id == 8){
+//                is = getActivity().getResources().openRawResource(R.raw.blizzard_un_birhingha);
+//            } else if(id == 9){
+//                is = getActivity().getResources().openRawResource(R.raw.blue_whale);
+//            } else if(id == 10){
+//                is = getActivity().getResources().openRawResource(R.raw.cars);
+//            } else if(id == 11){
+//                is = getActivity().getResources().openRawResource(R.raw.city_noise);
+//            } else if(id == 12){
+//                is = getActivity().getResources().openRawResource(R.raw.clocks);
+//            } else if(id == 13){
+//                is = getActivity().getResources().openRawResource(R.raw.coins);
+//            } else if(id == 14){
+//                is = getActivity().getResources().openRawResource(R.raw.corn);
+//            } else if(id == 15){
+//                is = getActivity().getResources().openRawResource(R.raw.counting);
+//            } else if(id == 16){
+//                is = getActivity().getResources().openRawResource(R.raw.easter_island);
+//            } else if(id == 17){
+//                is = getActivity().getResources().openRawResource(R.raw.helicopters);
+//            } else if(id == 18){
+//                is = getActivity().getResources().openRawResource(R.raw.hibernation_and_estivation);
+//            } else if(id == 19){
+//                is = getActivity().getResources().openRawResource(R.raw.houses);
+//            } else if(id == 20){
+//                is = getActivity().getResources().openRawResource(R.raw.how_to_be_a_pig);
             }
+
+
         }else if(level.equals("hard")){
             if(id == 0){
-                is = getActivity().getResources().openRawResource(R.raw.seeing_stars);
+                is = getActivity().getResources().openRawResource(R.raw.a_christmas_in_march);
             } else if(id == 1){
-                is = getActivity().getResources().openRawResource(R.raw.soda_pop);
+               // is = getActivity().getResources().openRawResource(R.raw.a_daring_escape);
             } else if(id == 2){
                 is = getActivity().getResources().openRawResource(R.raw.taste);
             } else if(id == 3){
