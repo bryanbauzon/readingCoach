@@ -23,12 +23,12 @@ public class SliderAdapter extends PagerAdapter {
     //arrays
     public int[] slideImages  = {
             R.drawable.hhome,
+            R.drawable.readingplansw,
+            R.drawable.bookmarkw,
             R.drawable.sample1,
             R.drawable.sample1,
             R.drawable.sample1,
-            R.drawable.sample1,
-            R.drawable.sample1,
-            R.drawable.sample1,
+            R.drawable.helpw,
             R.drawable.sample1
     };
 

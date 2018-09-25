@@ -5,17 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/addJournalLayout"
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
     tools:context=".activity.Journal.AddJournal"
     android:orientation="vertical">
 
     <EditText
         android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="10px"
+        android:inputType="text"
         android:layout_height="wrap_content"
         android:id="@+id/inputTitle"
+        android:layout_marginBottom="20px"
         android:hint="@string/txt_title"/>
 
     <EditText
         android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="10px"
+        android:inputType="text"
         android:layout_height="wrap_content"
         android:id="@+id/inputContent"
         android:hint="@string/txt_content"/>

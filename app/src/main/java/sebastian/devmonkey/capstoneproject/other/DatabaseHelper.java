@@ -12,6 +12,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String DB_NAME = "capstone.db";
     private static final String DB_TABLE = "tbl_journal";
     private static final String DB_TABLE_BOOKMARKS = "tbl_bookmaks";
+   // private static final String DB_TABLE_STORIES = "tbl_stories";
 
     //columns
 
@@ -25,6 +26,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
     private static final String CREATE_TABLE_BOOKMARKS = "CREATE TABLE " + DB_TABLE_BOOKMARKS + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, TITLEID TEXT, LEVEL TEXT)";
 
+  //  private static final String CREATE_TABLE_STORIES = "CREATE TABLE " + DB_TABLE_STORIES + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT)";
 
 
     public DatabaseHelper (Context context) {
