@@ -215,6 +215,76 @@ public class Story extends Fragment {
                 is = getActivity().getResources().openRawResource(R.raw.griffin);
             } else if(id == 28) {
                 is = getActivity().getResources().openRawResource(R.raw.grifins_talent);
+            } else if(id == 29) {
+                is = getActivity().getResources().openRawResource(R.raw.helicopters);
+            } else if(id == 30) {
+                is = getActivity().getResources().openRawResource(R.raw.houses);
+            } else if(id == 31) {
+                is = getActivity().getResources().openRawResource(R.raw.how_are_you);
+            } else if(id == 32) {
+                is = getActivity().getResources().openRawResource(R.raw.how_seeds_grow);
+            } else if(id == 33) {
+                is = getActivity().getResources().openRawResource(R.raw.how_warthog_lives);
+            } else if(id == 34) {
+                is = getActivity().getResources().openRawResource(R.raw.how_worms_get_inside_apple);
+            } else if(id == 35) {
+                is = getActivity().getResources().openRawResource(R.raw.humans);
+            } else if(id == 36) {
+                is = getActivity().getResources().openRawResource(R.raw.i_fly);
+            } else if(id == 37) {
+                is = getActivity().getResources().openRawResource(R.raw.ice_fishing);
+            } else if(id == 38) {
+                is = getActivity().getResources().openRawResource(R.raw.julian);
+            } else if(id == 39) {
+                is = getActivity().getResources().openRawResource(R.raw.jupiter);
+            } else if(id == 40) {
+                is = getActivity().getResources().openRawResource(R.raw.land_of_africa);
+            } else if(id == 41) {
+                is = getActivity().getResources().openRawResource(R.raw.leornardo_da_vinci);
+            } else if(id == 42) {
+                is = getActivity().getResources().openRawResource(R.raw.lord_of_olympus);
+            } else if(id == 43) {
+                is = getActivity().getResources().openRawResource(R.raw.money);
+            } else if(id == 44) {
+                is = getActivity().getResources().openRawResource(R.raw.my_family);
+            } else if(id == 45) {
+                is = getActivity().getResources().openRawResource(R.raw.my_friend);
+            } else if(id == 46) {
+                is = getActivity().getResources().openRawResource(R.raw.my_house);
+            } else if(id == 47) {
+                is = getActivity().getResources().openRawResource(R.raw.new_shoes_for_mandy);
+            } else if(id == 48) {
+                is = getActivity().getResources().openRawResource(R.raw.one_hundred_dollars);
+            } else if(id == 49) {
+                is = getActivity().getResources().openRawResource(R.raw.paper);
+            } else if(id == 50) {
+                is = getActivity().getResources().openRawResource(R.raw.parts_of_piano);
+            } else if(id == 51) {
+                is = getActivity().getResources().openRawResource(R.raw.paul_cooks);
+            } else if(id == 52) {
+                is = getActivity().getResources().openRawResource(R.raw.rainy_day);
+            } else if(id == 53) {
+                is = getActivity().getResources().openRawResource(R.raw.running);
+            } else if(id == 54) {
+                is = getActivity().getResources().openRawResource(R.raw.seeing_stars);
+            } else if(id == 55) {
+                is = getActivity().getResources().openRawResource(R.raw.sky);
+            } else if(id == 56) {
+                is = getActivity().getResources().openRawResource(R.raw.soap);
+            } else if(id == 57) {
+                is = getActivity().getResources().openRawResource(R.raw.soda_pop);
+            } else if(id == 58) {
+                is = getActivity().getResources().openRawResource(R.raw.story_of_lord_sandwich);
+            } else if(id == 59) {
+                is = getActivity().getResources().openRawResource(R.raw.talia);
+            } else if(id == 60) {
+                is = getActivity().getResources().openRawResource(R.raw.taste);
+            } else if(id == 61) {
+                is = getActivity().getResources().openRawResource(R.raw.tea);
+            } else if(id == 62) {
+                is = getActivity().getResources().openRawResource(R.raw.television);
+            } else if(id == 63) {
+                is = getActivity().getResources().openRawResource(R.raw.tennis);
             }
 
         }else if(level.equals("intermediate")){

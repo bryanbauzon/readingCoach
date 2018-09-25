@@ -1,6 +1,6 @@
 ﻿package sebastian.devmonkey.capstoneproject.other;
 
-public class QuestionAndAnswerEasy {
+public class QuestionAndAnswer {
 
     private String[] question1 = {
             "The race in the story was the",
