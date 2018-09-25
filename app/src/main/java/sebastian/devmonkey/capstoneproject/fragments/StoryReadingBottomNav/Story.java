@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -188,7 +187,7 @@ public class Story extends Fragment {
             } else if(id == 14){
                 is = getActivity().getResources().openRawResource(R.raw.butterfly);
             } else if(id == 15) {
-                is = getActivity().getResources().openRawResource(R.raw.by_the_Water);
+                is = getActivity().getResources().openRawResource(R.raw.by_the_water);
             } else if(id == 16) {
                 is = getActivity().getResources().openRawResource(R.raw.campfire);
             } else if(id == 17) {
@@ -200,7 +199,7 @@ public class Story extends Fragment {
             } else if(id == 20) {
                 is = getActivity().getResources().openRawResource(R.raw.dogs);
             } else if(id == 21) {
-                is = getActivity().getResources().openRawResource(R.raw.empress_the_blues);
+                is = getActivity().getResources().openRawResource(R.raw.empress_of_the_blues);
             } else if(id == 22) {
                 is = getActivity().getResources().openRawResource(R.raw.fish);
             } else if(id == 23) {
@@ -214,7 +213,7 @@ public class Story extends Fragment {
             } else if(id == 27) {
                 is = getActivity().getResources().openRawResource(R.raw.griffin);
             } else if(id == 28) {
-                is = getActivity().getResources().openRawResource(R.raw.grifins_talent);
+                is = getActivity().getResources().openRawResource(R.raw.griffins_talent);
             } else if(id == 29) {
                 is = getActivity().getResources().openRawResource(R.raw.helicopters);
             } else if(id == 30) {
@@ -240,7 +239,7 @@ public class Story extends Fragment {
             } else if(id == 40) {
                 is = getActivity().getResources().openRawResource(R.raw.land_of_africa);
             } else if(id == 41) {
-                is = getActivity().getResources().openRawResource(R.raw.leornardo_da_vinci);
+                is = getActivity().getResources().openRawResource(R.raw.leonardo);
             } else if(id == 42) {
                 is = getActivity().getResources().openRawResource(R.raw.lord_of_olympus);
             } else if(id == 43) {
@@ -289,7 +288,7 @@ public class Story extends Fragment {
 
         }else if(level.equals("intermediate")){
             if(id == 0){
-                is = getActivity().getResources().openRawResource(R.raw.a_cold_day);
+               // is = getActivity().getResources().openRawResource(R.raw.a_cold);
 //            } else if(id == 1){
 //                is = getActivity().getResources().openRawResource(R.raw.a_mystery);
 //            } else if(id == 2){
@@ -335,7 +334,7 @@ public class Story extends Fragment {
 
         }else if(level.equals("hard")){
             if(id == 0){
-                is = getActivity().getResources().openRawResource(R.raw.a_christmas_in_march);
+           //     is = getActivity().getResources().openRawResource(R.raw.a_christmas_in_march);
             } else if(id == 1){
                // is = getActivity().getResources().openRawResource(R.raw.a_daring_escape);
             } else if(id == 2){
@@ -345,7 +344,7 @@ public class Story extends Fragment {
             } else if(id == 4){
                 is = getActivity().getResources().openRawResource(R.raw.tennis);
             } else if(id == 5){
-                is = getActivity().getResources().openRawResource(R.raw.the_blow_driver);
+             //   is = getActivity().getResources().openRawResource(R.raw.the_blow_driver);
             } else if(id == 6){
                 is = getActivity().getResources().openRawResource(R.raw.the_drive);
             } else if(id == 7){
@@ -363,9 +362,9 @@ public class Story extends Fragment {
             } else if(id == 13){
                 is = getActivity().getResources().openRawResource(R.raw.what_number);
             } else if(id == 14){
-                is = getActivity().getResources().openRawResource(R.raw.yellow_stone_national_park);
+              //  is = getActivity().getResources().openRawResource(R.raw.yellow_stone_national_park);
             }else if (id == 15){
-                is = getActivity().getResources().openRawResource(R.raw.zachs_animals);
+             //   is = getActivity().getResources().openRawResource(R.raw.zachs_animals);
             }
         }
 

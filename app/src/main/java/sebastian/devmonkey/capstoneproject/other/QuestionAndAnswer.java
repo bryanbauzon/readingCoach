@@ -1,4 +1,4 @@
-﻿package sebastian.devmonkey.capstoneproject.other;
+package sebastian.devmonkey.capstoneproject.other;
 
 public class QuestionAndAnswer {
 
@@ -294,7 +294,7 @@ public class QuestionAndAnswer {
     };
 
 
-        private String[] answer2 = {
+    private String[] answer2 = {
             "It is hot",
             "Cool",
             "He can go to the pool",
@@ -608,8 +608,5 @@ public class QuestionAndAnswer {
         }
         return null;
     }
-
-
-
 
 }

@@ -17,7 +17,6 @@ import java.util.Collections;
 import java.util.List;
 
 import sebastian.devmonkey.capstoneproject.R;
-import sebastian.devmonkey.capstoneproject.other.Arrays;
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 import sebastian.devmonkey.capstoneproject.other.QuestionAndAnswer;
 
