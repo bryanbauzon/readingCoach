@@ -284,6 +284,74 @@ public class Story extends Fragment {
                 is = getActivity().getResources().openRawResource(R.raw.television);
             } else if(id == 63) {
                 is = getActivity().getResources().openRawResource(R.raw.tennis);
+            } else if(id == 64) {
+                is = getActivity().getResources().openRawResource(R.raw.the_20);
+            } else if(id == 65) {
+                is = getActivity().getResources().openRawResource(R.raw.the_blow_dryer);
+            } else if(id == 66) {
+                is = getActivity().getResources().openRawResource(R.raw.the_cat_the_rooster_and_the_young_mouse);
+            } else if(id == 67) {
+                is = getActivity().getResources().openRawResource(R.raw.the_dog_and_his_reflection);
+            } else if(id == 68) {
+                is = getActivity().getResources().openRawResource(R.raw.the_dog_and_the_manger);
+            } else if(id == 69) {
+                is = getActivity().getResources().openRawResource(R.raw.the_donkey_in_the_lions_skin);
+            } else if(id == 70) {
+                is = getActivity().getResources().openRawResource(R.raw.the_drive);
+            } else if(id == 71) {
+                is = getActivity().getResources().openRawResource(R.raw.the_fog_and_the_fox);
+            } else if(id == 72) {
+                is = getActivity().getResources().openRawResource(R.raw.the_fox_and_the_crow);
+            } else if(id == 73) {
+                is = getActivity().getResources().openRawResource(R.raw.the_fox_and_the_grapes);
+            } else if(id == 74) {
+                is = getActivity().getResources().openRawResource(R.raw.the_hawaian_people_song);
+            } else if(id == 75) {
+                is = getActivity().getResources().openRawResource(R.raw.the_heart);
+            } else if(id == 76) {
+                is = getActivity().getResources().openRawResource(R.raw.the_interview);
+            } else if(id == 77) {
+                is = getActivity().getResources().openRawResource(R.raw.the_lion_and_the_mouse);
+            } else if(id == 78) {
+                is = getActivity().getResources().openRawResource(R.raw.the_mice_in_council);
+            } else if(id == 79) {
+                is = getActivity().getResources().openRawResource(R.raw.the_music);
+            } else if(id == 80) {
+                is = getActivity().getResources().openRawResource(R.raw.the_rabbit_and_the_turtle);
+            } else if(id == 81) {
+                is = getActivity().getResources().openRawResource(R.raw.the_red_carpet_treatment);
+            } else if(id == 82) {
+                is = getActivity().getResources().openRawResource(R.raw.the_rent_man);
+            } else if(id == 83) {
+                is = getActivity().getResources().openRawResource(R.raw.the_rooster_and_the_ax);
+            } else if(id == 84) {
+                is = getActivity().getResources().openRawResource(R.raw.the_rooster_and_the_jewel);
+            } else if(id == 85) {
+                is = getActivity().getResources().openRawResource(R.raw.the_singing_bird);
+            } else if(id == 86) {
+                is = getActivity().getResources().openRawResource(R.raw.the_sky);
+            } else if(id == 87) {
+                is = getActivity().getResources().openRawResource(R.raw.the_tree_and_the_ax);
+            } else if(id == 88) {
+                is = getActivity().getResources().openRawResource(R.raw.the_united_states);
+            } else if(id == 89) {
+                is = getActivity().getResources().openRawResource(R.raw.the_wind_and_the_sun);
+            } else if(id == 90) {
+                is = getActivity().getResources().openRawResource(R.raw.tie_your_shoes);
+            } else if(id == 91) {
+                is = getActivity().getResources().openRawResource(R.raw.time_to);
+            } else if(id == 92) {
+                is = getActivity().getResources().openRawResource(R.raw.trees);
+            } else if(id == 93) {
+                is = getActivity().getResources().openRawResource(R.raw.what_number);
+            } else if(id == 94) {
+                is = getActivity().getResources().openRawResource(R.raw.what_time_is_it);
+            } else if(id == 95) {
+                is = getActivity().getResources().openRawResource(R.raw.where_are_my_glasses);
+            } else if(id == 96) {
+                is = getActivity().getResources().openRawResource(R.raw.yellowstone_national_park);
+            } else if(id == 97) {
+                is = getActivity().getResources().openRawResource(R.raw.zach);
             }
 
         }else if(level.equals("intermediate")){
