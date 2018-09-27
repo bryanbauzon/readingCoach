@@ -1,0 +1,15 @@
+MOVIE RATINGS	"A PG-13 rating is an advisory issued by the Ratings Board to parents to determine whether children
+under age 13 should view the motion picture, as some material might not be suitable for them. A PG-13
+motion picture may go beyond the PG rating in theme, violence, nudity, sensuality, language, adult
+activities or other elements, but does not reach the restricted R category. The theme of the motion
+picture by itself will not result in a rating greater than PG-13, although depictions of activities related to
+a mature theme may result in a restricted rating for the motion picture. Any drug use will initially
+require at least a PG-13 rating. More than brief nudity will require at least a PG-13 rating, but such
+nudity in a PG-13 rated motion picture generally will not be sexually oriented. There may be depictions
+of violence in a PG-13 movie, but generally not both realistic and extreme or persistent violence. A
+motion picture’s single use of one of the harsher sexually-derived words, though only as an expletive,
+initially requires at least a PG-13 rating. More than one such usage requires an R rating. Nevertheless,
+the Ratings Board may rate such a motion picture PG-13 if, based on a special vote by a two-thirds
+majority, the Raters feel that most American parents would believe that a PG-13 rating is appropriate
+because of the context or manner in which the words are used or because the use of those words in the
+motion picture is inconspicuous."	Susan Carter

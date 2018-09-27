@@ -356,83 +356,351 @@ public class Story extends Fragment {
 
         }else if(level.equals("intermediate")){
             if(id == 0){
-               // is = getActivity().getResources().openRawResource(R.raw.a_cold);
-//            } else if(id == 1){
-//                is = getActivity().getResources().openRawResource(R.raw.a_mystery);
-//            } else if(id == 2){
-//                is = getActivity().getResources().openRawResource(R.raw.abraham_lincoln);
-//            } else if(id == 3){
-//                is = getActivity().getResources().openRawResource(R.raw.bail);
-//            } else if(id == 4){
-//                is = getActivity().getResources().openRawResource(R.raw.benjamin_franklin);
-//            } else if(id == 5){
-//                is  = getActivity().getResources().openRawResource(R.raw.birdsongs);
-//            } else if(id == 6){
-//                is = getActivity().getResources().openRawResource(R.raw.black_american_author);
-//            } else if(id == 7){
-//                is = getActivity().getResources().openRawResource(R.raw.black_bears);
-//            } else if(id == 8){
-//                is = getActivity().getResources().openRawResource(R.raw.blizzard_un_birhingha);
-//            } else if(id == 9){
-//                is = getActivity().getResources().openRawResource(R.raw.blue_whale);
-//            } else if(id == 10){
-//                is = getActivity().getResources().openRawResource(R.raw.cars);
-//            } else if(id == 11){
-//                is = getActivity().getResources().openRawResource(R.raw.city_noise);
-//            } else if(id == 12){
-//                is = getActivity().getResources().openRawResource(R.raw.clocks);
-//            } else if(id == 13){
-//                is = getActivity().getResources().openRawResource(R.raw.coins);
-//            } else if(id == 14){
-//                is = getActivity().getResources().openRawResource(R.raw.corn);
-//            } else if(id == 15){
-//                is = getActivity().getResources().openRawResource(R.raw.counting);
-//            } else if(id == 16){
-//                is = getActivity().getResources().openRawResource(R.raw.easter_island);
-//            } else if(id == 17){
-//                is = getActivity().getResources().openRawResource(R.raw.helicopters);
-//            } else if(id == 18){
-//                is = getActivity().getResources().openRawResource(R.raw.hibernation_and_estivation);
-//            } else if(id == 19){
-//                is = getActivity().getResources().openRawResource(R.raw.houses);
-//            } else if(id == 20){
-//                is = getActivity().getResources().openRawResource(R.raw.how_to_be_a_pig);
+                //array is always starts at 0;
+                is = getActivity().getResources().openRawResource(R.raw.a_cold_day);
+            } else if(id == 1){
+                is = getActivity().getResources().openRawResource(R.raw.a_mystery);
+            } else if(id == 2){
+                is = getActivity().getResources().openRawResource(R.raw.abraham_lincoln);
+            } else if(id == 3){
+                is = getActivity().getResources().openRawResource(R.raw.amazon_rainforest);
+            } else if(id == 4){
+                is = getActivity().getResources().openRawResource(R.raw.american_indian_names);
+            } else if(id == 5){
+                is = getActivity().getResources().openRawResource(R.raw.americas_first_scuptor);
+            } else if(id == 6){
+                is = getActivity().getResources().openRawResource(R.raw.americas_first_woman);
+            } else if(id == 7){
+                is = getActivity().getResources().openRawResource(R.raw.arctic_fox);
+            } else if(id == 8){
+                is = getActivity().getResources().openRawResource(R.raw.bail);
+            } else if(id == 9){
+                is = getActivity().getResources().openRawResource(R.raw.banks);
+            } else if(id == 10){
+                is = getActivity().getResources().openRawResource(R.raw.benjamin_franklin);
+            } else if(id == 11){
+                is = getActivity().getResources().openRawResource(R.raw.birdsongs);
+            } else if(id == 12){
+                is = getActivity().getResources().openRawResource(R.raw.black_american_author);
+            } else if(id == 13){
+                is = getActivity().getResources().openRawResource(R.raw.black_bears);
+            } else if(id == 14){
+                is = getActivity().getResources().openRawResource(R.raw.blizzard_un_birmingha);
+            } else if(id == 15) {
+                is = getActivity().getResources().openRawResource(R.raw.blue_whale);
+            } else if(id == 16) {
+                is = getActivity().getResources().openRawResource(R.raw.butterflies);
+            } else if(id == 17) {
+                is = getActivity().getResources().openRawResource(R.raw.cars);
+            } else if(id == 18) {
+                is = getActivity().getResources().openRawResource(R.raw.christopher_columbus);
+            } else if(id == 19) {
+                is = getActivity().getResources().openRawResource(R.raw.city_noise);
+            } else if(id == 20) {
+                is = getActivity().getResources().openRawResource(R.raw.clocks);
+            } else if(id == 21) {
+                is = getActivity().getResources().openRawResource(R.raw.coins);
+            } else if(id == 22) {
+                is = getActivity().getResources().openRawResource(R.raw.common_loon);
+            } else if(id == 23) {
+                is = getActivity().getResources().openRawResource(R.raw.corn);
+            } else if(id == 24) {
+                is = getActivity().getResources().openRawResource(R.raw.counting);
+            } else if(id == 25) {
+                is = getActivity().getResources().openRawResource(R.raw.cricket);
+            } else if(id == 26) {
+                is = getActivity().getResources().openRawResource(R.raw.discovery_of_ice_cream);
+            } else if(id == 27) {
+                is = getActivity().getResources().openRawResource(R.raw.doctor_in_chicago);
+            } else if(id == 28) {
+                is = getActivity().getResources().openRawResource(R.raw.dunkin_donuts);
+            } else if(id == 29) {
+                is = getActivity().getResources().openRawResource(R.raw.easter_island);
+            } else if(id == 30) {
+                is = getActivity().getResources().openRawResource(R.raw.garlics);
+            } else if(id == 31) {
+                is = getActivity().getResources().openRawResource(R.raw.halloween);
+            } else if(id == 32) {
+                is = getActivity().getResources().openRawResource(R.raw.helicopters);
+            } else if(id == 33) {
+                is = getActivity().getResources().openRawResource(R.raw.hibernation_and_estivation);
+            } else if(id == 34) {
+                is = getActivity().getResources().openRawResource(R.raw.houses);
+            } else if(id == 35) {
+                is = getActivity().getResources().openRawResource(R.raw.how_to_be_a_pig);
+            } else if(id == 36) {
+                is = getActivity().getResources().openRawResource(R.raw.john_cooks);
+            } else if(id == 37) {
+                is = getActivity().getResources().openRawResource(R.raw.komodo_dragon);
+            } else if(id == 38) {
+                is = getActivity().getResources().openRawResource(R.raw.largest_creature_on_earth);
+            } else if(id == 39) {
+                is = getActivity().getResources().openRawResource(R.raw.late);
+            } else if(id == 40) {
+                is = getActivity().getResources().openRawResource(R.raw.lobster);
+            } else if(id == 41) {
+                is = getActivity().getResources().openRawResource(R.raw.locks_and_keys);
+            } else if(id == 42) {
+                is = getActivity().getResources().openRawResource(R.raw.marco_polo);
+            } else if(id == 43) {
+                is = getActivity().getResources().openRawResource(R.raw.mars);
+            } else if(id == 44) {
+                is = getActivity().getResources().openRawResource(R.raw.marys_family);
+            } else if(id == 45) {
+                is = getActivity().getResources().openRawResource(R.raw.moorish_dance);
+            } else if(id == 46) {
+                is = getActivity().getResources().openRawResource(R.raw.movie_ratings);
+            } else if(id == 47) {
+                is = getActivity().getResources().openRawResource(R.raw.mummy);
+            } else if(id == 48) {
+                is = getActivity().getResources().openRawResource(R.raw.niagara_falls);
+            } else if(id == 49) {
+                is = getActivity().getResources().openRawResource(R.raw.nuts);
+            } else if(id == 50) {
+                is = getActivity().getResources().openRawResource(R.raw.olympic_game);
+            } else if(id == 51) {
+                is = getActivity().getResources().openRawResource(R.raw.panda);
+            } else if(id == 52) {
+                is = getActivity().getResources().openRawResource(R.raw.penquins);
+            } else if(id == 53) {
+                is = getActivity().getResources().openRawResource(R.raw.photography);
+            } else if(id == 54) {
+                is = getActivity().getResources().openRawResource(R.raw.rainbows);
+            } else if(id == 55) {
+                is = getActivity().getResources().openRawResource(R.raw.roller_skates);
+            } else if(id == 56) {
+                is = getActivity().getResources().openRawResource(R.raw.saltwater);
+            } else if(id == 57) {
+                is = getActivity().getResources().openRawResource(R.raw.seamounts);
+            } else if(id == 58) {
+                is = getActivity().getResources().openRawResource(R.raw.sequoya);
+            } else if(id == 59) {
+                is = getActivity().getResources().openRawResource(R.raw.shirley_chsholm);
+            } else if(id == 60) {
+                is = getActivity().getResources().openRawResource(R.raw.silk_road);
+            } else if(id == 61) {
+                is = getActivity().getResources().openRawResource(R.raw.snowball_in_space);
+            } else if(id == 62) {
+                is = getActivity().getResources().openRawResource(R.raw.soccer);
+            } else if(id == 63) {
+                is = getActivity().getResources().openRawResource(R.raw.spider);
+            } else if(id == 64) {
+                is = getActivity().getResources().openRawResource(R.raw.stage_coaches);
+            } else if(id == 65) {
+                is = getActivity().getResources().openRawResource(R.raw.terrain);
+            } else if(id == 66) {
+                is = getActivity().getResources().openRawResource(R.raw.the_brenners);
+            } else if(id == 67) {
+                is = getActivity().getResources().openRawResource(R.raw.the_bus_driver);
+            } else if(id == 68) {
+                is = getActivity().getResources().openRawResource(R.raw.the_cactus);
+            } else if(id == 69) {
+                is = getActivity().getResources().openRawResource(R.raw.the_color_green);
+            } else if(id == 70) {
+                is = getActivity().getResources().openRawResource(R.raw.the_flu);
+            } else if(id == 71) {
+                is = getActivity().getResources().openRawResource(R.raw.the_new_school);
+            } else if(id == 72) {
+                is = getActivity().getResources().openRawResource(R.raw.the_park);
+            } else if(id == 73) {
+                is = getActivity().getResources().openRawResource(R.raw.the_story_of_marian);
+            } else if(id == 74) {
+                is = getActivity().getResources().openRawResource(R.raw.the_sun);
+            } else if(id == 75) {
+                is = getActivity().getResources().openRawResource(R.raw.the_us_census);
+            } else if(id == 76) {
+                is = getActivity().getResources().openRawResource(R.raw.the_white_house);
+            } else if(id == 77) {
+                is = getActivity().getResources().openRawResource(R.raw.three_politic_warr);
+            } else if(id == 78) {
+                is = getActivity().getResources().openRawResource(R.raw.time_with_granpa);
+            } else if(id == 79) {
+                is = getActivity().getResources().openRawResource(R.raw.transportation);
+            } else if(id == 80) {
+                is = getActivity().getResources().openRawResource(R.raw.troglodytes);
+            } else if(id == 81) {
+                is = getActivity().getResources().openRawResource(R.raw.two_best_known);
+            } else if(id == 82) {
+                is = getActivity().getResources().openRawResource(R.raw.umbrellas);
+            } else if(id == 83) {
+                is = getActivity().getResources().openRawResource(R.raw.use_of_peanuts);
+            } else if(id == 84) {
+                is = getActivity().getResources().openRawResource(R.raw.use_of_tounge_in_animal);
+            } else if(id == 85) {
+                is = getActivity().getResources().openRawResource(R.raw.vet_emergency);
+            } else if(id == 86) {
+                is = getActivity().getResources().openRawResource(R.raw.water);
+            } else if(id == 87) {
+                is = getActivity().getResources().openRawResource(R.raw.what_is_a_wasp);
+            } else if(id == 88) {
+                is = getActivity().getResources().openRawResource(R.raw.why_barn_is_always);
+            } else if(id == 89) {
+                is = getActivity().getResources().openRawResource(R.raw.worth_working_for);
             }
 
 
         }else if(level.equals("hard")){
             if(id == 0){
-           //     is = getActivity().getResources().openRawResource(R.raw.a_christmas_in_march);
+                //array is always starts at 0;
+                is = getActivity().getResources().openRawResource(R.raw.a_christmas_in_march);
             } else if(id == 1){
-               // is = getActivity().getResources().openRawResource(R.raw.a_daring_escape);
+                is = getActivity().getResources().openRawResource(R.raw.a_daring_escape);
             } else if(id == 2){
-                is = getActivity().getResources().openRawResource(R.raw.taste);
+                is = getActivity().getResources().openRawResource(R.raw.accused);
             } else if(id == 3){
-                is = getActivity().getResources().openRawResource(R.raw.tea);
+                is = getActivity().getResources().openRawResource(R.raw.amazon_rainforest);
             } else if(id == 4){
-                is = getActivity().getResources().openRawResource(R.raw.tennis);
+                is = getActivity().getResources().openRawResource(R.raw.advance_critical_reading);
             } else if(id == 5){
-             //   is = getActivity().getResources().openRawResource(R.raw.the_blow_driver);
+                is = getActivity().getResources().openRawResource(R.raw.ana_finds_an);
             } else if(id == 6){
-                is = getActivity().getResources().openRawResource(R.raw.the_drive);
+                is = getActivity().getResources().openRawResource(R.raw.asian_carp);
             } else if(id == 7){
-                is = getActivity().getResources().openRawResource(R.raw.the_heart);
+                is = getActivity().getResources().openRawResource(R.raw.bathtubs);
             } else if(id == 8){
-                is = getActivity().getResources().openRawResource(R.raw.the_interview);
+                is = getActivity().getResources().openRawResource(R.raw.bb);
             } else if(id == 9){
-                is = getActivity().getResources().openRawResource(R.raw.the_music);
+                is = getActivity().getResources().openRawResource(R.raw.black_friday);
             } else if(id == 10){
-                is = getActivity().getResources().openRawResource(R.raw.the_singing_bird);
+                is = getActivity().getResources().openRawResource(R.raw.can_windmills_stalk);
             } else if(id == 11){
-                is = getActivity().getResources().openRawResource(R.raw.time_to);
+                is = getActivity().getResources().openRawResource(R.raw.canopy_of_nature);
             } else if(id == 12){
-                is = getActivity().getResources().openRawResource(R.raw.trees);
+                is = getActivity().getResources().openRawResource(R.raw.carnivorous);
             } else if(id == 13){
-                is = getActivity().getResources().openRawResource(R.raw.what_number);
+                is = getActivity().getResources().openRawResource(R.raw.cells);
             } else if(id == 14){
-              //  is = getActivity().getResources().openRawResource(R.raw.yellow_stone_national_park);
-            }else if (id == 15){
-             //   is = getActivity().getResources().openRawResource(R.raw.zachs_animals);
+                is = getActivity().getResources().openRawResource(R.raw.chocolate);
+            } else if(id == 15) {
+                is = getActivity().getResources().openRawResource(R.raw.city_girl);
+            } else if(id == 16) {
+                is = getActivity().getResources().openRawResource(R.raw.clean_water_act);
+            } else if(id == 17) {
+                is = getActivity().getResources().openRawResource(R.raw.collection_of_folklore);
+            } else if(id == 18) {
+                is = getActivity().getResources().openRawResource(R.raw.dreams);
+            } else if(id == 19) {
+                is = getActivity().getResources().openRawResource(R.raw.eating_out);
+            } else if(id == 20) {
+                is = getActivity().getResources().openRawResource(R.raw.el_dia_de_san_juan);
+            } else if(id == 21) {
+                is = getActivity().getResources().openRawResource(R.raw.europe);
+            } else if(id == 22) {
+                is = getActivity().getResources().openRawResource(R.raw.fingerprints);
+            } else if(id == 23) {
+                is = getActivity().getResources().openRawResource(R.raw.florida_manatee);
+            } else if(id == 24) {
+                is = getActivity().getResources().openRawResource(R.raw.flower_power);
+            } else if(id == 25) {
+                is = getActivity().getResources().openRawResource(R.raw.fortune_tellers);
+            } else if(id == 26) {
+                is = getActivity().getResources().openRawResource(R.raw.france);
+            } else if(id == 27) {
+                is = getActivity().getResources().openRawResource(R.raw.galaxies);
+            } else if(id == 28) {
+                is = getActivity().getResources().openRawResource(R.raw.gilrays_flower_pot);
+            } else if(id == 29) {
+                is = getActivity().getResources().openRawResource(R.raw.goodluck_for_the_good);
+            } else if(id == 30) {
+                is = getActivity().getResources().openRawResource(R.raw.guermos_surprise);
+            } else if(id == 31) {
+                is = getActivity().getResources().openRawResource(R.raw.house_around_the_wordd);
+            } else if(id == 32) {
+                is = getActivity().getResources().openRawResource(R.raw.interstate_highways);
+            } else if(id == 33) {
+                is = getActivity().getResources().openRawResource(R.raw.juan_ponce);
+            } else if(id == 34) {
+                is = getActivity().getResources().openRawResource(R.raw.just_one_touch);
+            } else if(id == 35) {
+                is = getActivity().getResources().openRawResource(R.raw.kok);
+            } else if(id == 36) {
+                is = getActivity().getResources().openRawResource(R.raw.lightning_and_thunder);
+            } else if(id == 37) {
+                is = getActivity().getResources().openRawResource(R.raw.love_train);
+            } else if(id == 38) {
+                is = getActivity().getResources().openRawResource(R.raw.marias_beatiful);
+            } else if(id == 39) {
+                is = getActivity().getResources().openRawResource(R.raw.meteors);
+            } else if(id == 40) {
+                is = getActivity().getResources().openRawResource(R.raw.mexico);
+            } else if(id == 41) {
+                is = getActivity().getResources().openRawResource(R.raw.moongooes);
+            } else if(id == 42) {
+                is = getActivity().getResources().openRawResource(R.raw.mosquitoes);
+            } else if(id == 43) {
+                is = getActivity().getResources().openRawResource(R.raw.mothers_day);
+            } else if(id == 44) {
+                is = getActivity().getResources().openRawResource(R.raw.oil_spill);
+            } else if(id == 45) {
+                is = getActivity().getResources().openRawResource(R.raw.on_the_right_track);
+            } else if(id == 46) {
+                is = getActivity().getResources().openRawResource(R.raw.oversmart_is_badluck);
+            } else if(id == 47) {
+                is = getActivity().getResources().openRawResource(R.raw.planet_mars);
+            } else if(id == 48) {
+                is = getActivity().getResources().openRawResource(R.raw.pollutions);
+            } else if(id == 49) {
+                is = getActivity().getResources().openRawResource(R.raw.potato_chips);
+            } else if(id == 50) {
+                is = getActivity().getResources().openRawResource(R.raw.raisins);
+            } else if(id == 51) {
+                is = getActivity().getResources().openRawResource(R.raw.round_and_round);
+            } else if(id == 52) {
+                is = getActivity().getResources().openRawResource(R.raw.seatbelts);
+            } else if(id == 53) {
+                is = getActivity().getResources().openRawResource(R.raw.seeing_clearly);
+            } else if(id == 54) {
+                is = getActivity().getResources().openRawResource(R.raw.sharks);
+            } else if(id == 55) {
+                is = getActivity().getResources().openRawResource(R.raw.sleep);
+            } else if(id == 56) {
+                is = getActivity().getResources().openRawResource(R.raw.suffrage);
+            } else if(id == 57) {
+                is = getActivity().getResources().openRawResource(R.raw.take_care_of_your_dog);
+            } else if(id == 58) {
+                is = getActivity().getResources().openRawResource(R.raw.taro_and_the_tofu);
+            } else if(id == 59) {
+                is = getActivity().getResources().openRawResource(R.raw.tattoo);
+            } else if(id == 60) {
+                is = getActivity().getResources().openRawResource(R.raw.the_case_of_the_unknown);
+            } else if(id == 61) {
+                is = getActivity().getResources().openRawResource(R.raw.the_cat_that_walked);
+            } else if(id == 62) {
+                is = getActivity().getResources().openRawResource(R.raw.the_clever_wizardx);
+            } else if(id == 63) {
+                is = getActivity().getResources().openRawResource(R.raw.the_coliseum);
+            } else if(id == 64) {
+                is = getActivity().getResources().openRawResource(R.raw.the_cowardly_lion);
+            } else if(id == 65) {
+                is = getActivity().getResources().openRawResource(R.raw.the_first_words);
+            } else if(id == 66) {
+                is = getActivity().getResources().openRawResource(R.raw.the_great_buddha);
+            } else if(id == 67) {
+                is = getActivity().getResources().openRawResource(R.raw.the_mini_problem);
+            } else if(id == 68) {
+                is = getActivity().getResources().openRawResource(R.raw.the_secret_soldier);
+            } else if(id == 69) {
+                is = getActivity().getResources().openRawResource(R.raw.the_son);
+            } else if(id == 70) {
+                is = getActivity().getResources().openRawResource(R.raw.the_storm);
+            } else if(id == 71) {
+                is = getActivity().getResources().openRawResource(R.raw.the_story_of_keesh);
+            } else if(id == 72) {
+                is = getActivity().getResources().openRawResource(R.raw.the_transfer);
+            } else if(id == 73) {
+                is = getActivity().getResources().openRawResource(R.raw.tracks);
+            } else if(id == 74) {
+                is = getActivity().getResources().openRawResource(R.raw.tyrannusirus_trex);
+            } else if(id == 75) {
+                is = getActivity().getResources().openRawResource(R.raw.venus);
+            } else if(id == 76) {
+                is = getActivity().getResources().openRawResource(R.raw.wampum);
+            } else if(id == 77) {
+                is = getActivity().getResources().openRawResource(R.raw.wanga);
+            } else if(id == 78) {
+                is = getActivity().getResources().openRawResource(R.raw.what_a_pig_ture);
+            } else if (id == 79) {
+                is = getActivity().getResources().openRawResource(R.raw.wild);
             }
         }
 
