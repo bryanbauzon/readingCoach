@@ -26,20 +26,10 @@ import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 public class FlashCards extends AppCompatActivity {
     TextToSpeech tts;
-    TextView textContainer,word,score;
-    Button  alertYes;
+    TextView word;
     GlobalVariable gv;
 //    RelativeLayout layout;
 
-    public String[] words = {
-            "hello",
-            "best",
-            "define",
-            "savage",
-            "deadline"
-    };
-    String lastitem = words[4];
-    int ctr = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,11 +42,8 @@ public class FlashCards extends AppCompatActivity {
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        textContainer = findViewById(R.id.text);
-        word = findViewById(R.id.words);
-        score = findViewById(R.id.score);
-//        layout = findViewById(R.id.flashCardLayout);
-//
+        word = findViewById(R.id.word);
+
 //
 //        if (GlobalVariable.color == 1){
 //            layout.setBackgroundColor(Color.BLACK);
@@ -65,13 +52,7 @@ public class FlashCards extends AppCompatActivity {
 //            score.setTextColor(Color.WHITE);
 //        }
 
-        textContainer.setTypeface(GlobalVariable.font);
-        word.setTypeface(GlobalVariable.font);
-        score.setTypeface(GlobalVariable.font);
-
-        gv.setMargins(textContainer ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
         gv.setMargins(word ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
-        gv.setMargins(score ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
 
 
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -85,7 +66,16 @@ public class FlashCards extends AppCompatActivity {
     }
 
     public void speech(View view) {
-        prompSpeech();
+
+
+        String myWord = word.getText().toString();
+        myWord = myWord.trim();
+        if(myWord.equals("")){
+            tts.speak("Sorry, Please fill-up the field.",TextToSpeech.QUEUE_FLUSH,null);
+        }else{
+            prompSpeech();
+
+        }
     }
     private void prompSpeech(){
         Intent i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
@@ -106,9 +96,9 @@ public class FlashCards extends AppCompatActivity {
             case 100:
                 if(resultCode == RESULT_OK && data != null){
                     ArrayList<String> resultData = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    textContainer.setText(resultData.get(0));
+                   // textContainer.setText(resultData.get(0));
                     //..displaying the result by the use of toast or a pop up message
-                        if(textContainer.getText().toString().equals(word.getText().toString())){
+                        if(word.getText().toString().equals(word.getText().toString())){
 
                             LayoutInflater factory = LayoutInflater.from(this);
                             final View correctDialogView = factory.inflate(R.layout.customized_alert_dialog,null);
@@ -116,34 +106,16 @@ public class FlashCards extends AppCompatActivity {
 
                             //initialization of button from custom alert dialog
                             Button yes = (Button)correctDialogView.findViewById(R.id.btnYes);
-
+                            yes.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    correctDialog.dismiss();
+                                }
+                            });
                             correctDialog.setView(correctDialogView);
                             correctDialog.show();
-                            //incerment by 1
-                            ctr++;
-                            score.setText("Score: "+ ctr);
-                            if(words[ctr].equals(5)){
-                                ctr = 0;
-                                Toast.makeText(getApplicationContext(),"You have reach the ending word. The module is still under construction",Toast.LENGTH_LONG).show();
-                                correctDialog.dismiss();
-                            }else{
-                                yes.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View view) {
-                                        correctDialog.dismiss();
-                                        word.setText(words[ctr]);
-                                        textContainer.setText(null);
-                                        prompSpeech();
-                                    }
-                                });
-
-                                word.setText(words[ctr]);
-                                textContainer.setText(null);
-                            }
-//
-                          //  textContainer.setBackgroundColor(getResources().getColor(R.color.correct));
                         }else{
-                            textContainer.setBackgroundColor(getResources().getColor(R.color.incorrect));
+
                         }
 
                 }
@@ -176,4 +148,13 @@ public class FlashCards extends AppCompatActivity {
         }
     }
 
+    public void speak(View view) {
+        String myWord = word.getText().toString();
+        myWord = myWord.trim();
+        if(myWord.equals("")){
+            tts.speak("Sorry, Please fill-up the field.",TextToSpeech.QUEUE_FLUSH,null);
+        }else{
+            tts.speak(myWord,TextToSpeech.QUEUE_FLUSH,null);
+        }
+    }
 }
