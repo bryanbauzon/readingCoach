@@ -3,6 +3,7 @@ package sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -111,6 +112,16 @@ public class IntermediateFragment extends Fragment {
                 intent.putExtra("title", title);
                 Log.e("Result", value + " " + title);
                 startActivity(intent);
+
+                SharedPreferences pref = getActivity().getSharedPreferences("story",Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = pref.edit();
+                editor.clear();
+
+                editor.putString("storyTitle",title);
+                editor.putString("id",value);
+                editor.putString("level","intermediate");
+
+                editor.apply();
             }
         });
         // Inflate the layout for this fragment

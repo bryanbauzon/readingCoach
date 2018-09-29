@@ -3,6 +3,7 @@ package sebastian.devmonkey.capstoneproject.fragments.StoryCategoryBottomNav;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
@@ -108,6 +110,20 @@ public class EasyFragment extends Fragment {
                 String title = adapterView.getItemAtPosition(i).toString();
                 intent.putExtra("title", title);
                 startActivity(intent);
+
+                //SHARED PREFERENCES FOR DASHBOARD
+                SharedPreferences pref = getActivity().getSharedPreferences("story",Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = pref.edit();
+                editor.clear();
+
+                editor.putString("storyTitle",title);
+                editor.putString("id",value);
+                editor.putString("level","easy");
+
+                editor.apply();
+                String storyTitle = pref.getString("storyTitle",null);
+                Toast.makeText(getContext(),storyTitle,Toast.LENGTH_SHORT).show();
+
             }
         });
 
