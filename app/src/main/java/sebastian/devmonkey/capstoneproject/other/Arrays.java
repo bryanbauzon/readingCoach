@@ -296,21 +296,157 @@ public class Arrays {
     };
 
     private String[] terminologiesWords = {
-            "Spurious",
-            "Gossip",
-            "Fraternizing",
-            "Vicariously",
-            "Brazen",
-            "Coveted",
-            "Deficit",
-            "Copious",
-            "Augmentation",
-            "Evoke"
+            "Abundantly",
+            "Acquiesce",
+            "Adept",
+            "Aimless",
+            "Apportioned",
+            "Babble",
+            "Barren",
+            "Bast",
+            "Blunt",
+            "Brahmanism",
+            "Carnivorous",
+            "Chrysanthemum",
+            "Chunk",
+            "Cliché",
+            "Cobbled",
+            "Commune",
+            "Conceited",
+            "Conduit",
+            "Conquered",
+            "Constructive",
+            "Coriander",
+            "Courtier",
+            "Debate",
+            "Decanter",
+            "Deceive",
+            "Decrepit",
+            "Delicacy",
+            "Delicate",
+            "Deserted",
+            "Devastating",
+            "Disposition",
+            "Distill",
+            "Distress",
+            "Diversity",
+            "Edelweiss",
+            "Eloquent",
+            "Embezzle",
+            "Encompasses",
+            "Epistle",
+            "Euphemism",
+            "Exorbitant",
+            "Extraordinary",
+            "Exuberant",
+            "Exult",
+            "Fabricate",
+            "Feast",
+            "Folklore",
+            "Frightened",
+            "Grandeur",
+            "Gratify",
+            "Groaning",
+            "Hansom",
+            "Hazardous",
+            "Herds",
+            "Hideous",
+            "Hoarding",
+            "Hoisted",
+            "Horrifying",
+            "Humanizing",
+            "Ignoble",
+            "Incessant",
+            "Incubate",
+            "Indigenous",
+            "Indignant",
+            "Indulgence",
+            "Industrious",
+            "Inevitable",
+            "Infidelity",
+            "Ingenious",
+            "Invasive",
+            "Jiffy",
+            "Legislation",
+            "Majestic",
+            "Meadow",
+            "Meek",
+            "Mere",
+            "Mongoose",
+            "Mourn",
+            "Murderous",
+            "Native",
+            "Occurrence",
+            "Om",
+            "Ornamental",
+            "Overbearing",
+            "Personages",
+            "Persuade",
+            "Petrify",
+            "Phenomenal",
+            "Pilgrimage",
+            "Plague",
+            "Postscript",
+            "Presumption",
+            "Prick",
+            "Prophetic",
+            "Prosperous",
+            "Prudent",
+            "Raging",
+            "Rage",
+            "Reciprocate",
+            "Reckoning",
+            "Reforested",
+            "Reproach",
+            "Reptiles",
+            "Sanguine",
+            "Saplings",
+            "Solemn",
+            "Solicitude",
+            "Spring",
+            ""
+
+
     };
 
     private String[] terminologiesMeaning = {
-            "not being what it purports to be; false or fake.",
-            "casual or unconstrained conversation or reports about other people, typically involving details that are not confirmed as being true.",
+            "a·bun·dant·ly\n" +
+                    "?'b?nd?ntle/Submit\n" +
+                    "adverb\n" +
+                    "adverb: abundantly\n" +
+                    "in large quantities; plentifully.\n" +
+                    "\"the plant grows abundantly in the wild\"\n" +
+                    "extremely.\n" +
+                    "\"my boss made it abundantly clear that if I didn't like it, I should look for another job\"\n",
+
+            "ac·qui·esce\\n\" +\n" +
+                    "\"?akwe'es/Submit\\n\" +\n" +
+                    "\"verb\\n\" +\n" +
+                    "\"verb: acquiesce; 3rd person present: acquiesces; past tense: acquiesced; past participle: acquiesced; gerund or present participle: acquiescing\\n\" +\n" +
+                    "\"accept something reluctantly but without protest.\\n\" +\n" +
+                    "\"\\\"Sara acquiesced in his decision\\\"\\n\"",
+
+
+            "a·dept\n" +
+                    "adjective\n" +
+                    "adjective: adept\n" +
+                    "?'dept/\n" +
+                    "1.\n" +
+                    "very skilled or proficient at something.\n" +
+                    "\"he is adept at cutting through red tape\"\n" +
+                    "synonyms:\texpert, proficient, accomplished, skillful, talented, masterly, masterful, consummate, virtuoso; More\n" +
+                    "antonyms:\tinept\n" +
+                    "noun\n" +
+                    "noun: adept; plural noun: adepts\n" +
+                    "'adept,?'dept/\n" +
+                    "1.\n" +
+                    "a person who is skilled or proficient at something.\n" +
+                    "\"they are adepts at kung fu and karate\"\n" +
+                    "synonyms:\texpert, past master, master, genius, maestro, doyen, virtuoso; More\n" +
+                    "antonyms:\tamateur",
+
+
+
             "associate or form a friendship with someone, especially when one is not supposed to.",
             "in a way that is experienced in the imagination through the actions of another person.",
             "endure an embarrassing or difficult situation by behaving with apparent confidence and lack of shame.",
