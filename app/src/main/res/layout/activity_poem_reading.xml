@@ -9,9 +9,11 @@
 
 
     <TextView
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtTitlePoem"
+        android:textStyle="bold"
         android:text="Title"
         android:textSize="20dp" />
 
@@ -20,7 +22,9 @@
     <TextView
         android:id="@+id/txtContentPoem"
         android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="asdasdasdasda"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="50dp" />
 
 </RelativeLayout>
