@@ -5,6 +5,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -63,10 +66,12 @@ public class AddJournalFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -79,13 +84,19 @@ public class AddJournalFragment extends Fragment {
         edtTitle = view.findViewById(R.id.inputTitle);
         edtContent = view.findViewById(R.id.inputContent);
 
-        btnSave = view.findViewById(R.id.save);
+        // Inflate the layout for this fragment
+        return view;
+    }
 
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = edtTitle.getText().toString();
-                String content = edtContent.getText().toString();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.save:
+
+
+                String title = edtTitle.getText().toString().trim();
+                String content = edtContent.getText().toString().trim();
                 if (!title.equals("") && !content.equals("") && db.insertData(title, content)) {
                     Toast.makeText(getActivity(), "Data added", Toast.LENGTH_LONG).show();
                     edtTitle.setText("");
@@ -100,11 +111,14 @@ public class AddJournalFragment extends Fragment {
                         edtContent.setError("Content is empty.");
                     }
                 }
-            }
-        });
+                return true;
 
-        // Inflate the layout for this fragment
-        return view;
+
+            default:
+                break;
+        }
+
+        return false;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -112,6 +126,13 @@ public class AddJournalFragment extends Fragment {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
         }
+    }
+
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.fragment_add_journal,menu);
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override

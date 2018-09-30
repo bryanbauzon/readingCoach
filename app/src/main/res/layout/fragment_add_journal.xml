@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".fragments.StoryReadingBottomNav.AddJournalFragment">
 
     <LinearLayout
@@ -15,20 +16,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/inputTitle"
+            android:padding="10px"
+            android:background="@color/white"
+            android:inputType="text"
+            android:layout_marginBottom="20px"
             android:hint="@string/txt_title"/>
 
         <EditText
+            android:padding="10px"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/inputContent"
+            android:inputType="text"
             android:hint="@string/txt_content"/>
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/save"
-            android:text="Save"/>
     </LinearLayout>
 
 </FrameLayout>

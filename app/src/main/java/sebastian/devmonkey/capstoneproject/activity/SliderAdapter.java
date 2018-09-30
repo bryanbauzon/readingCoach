@@ -25,11 +25,11 @@ public class SliderAdapter extends PagerAdapter {
             R.drawable.hhome,
             R.drawable.readingplansw,
             R.drawable.bookmarkw,
-            R.drawable.sample1,
-            R.drawable.sample1,
-            R.drawable.sample1,
+            R.drawable.terminologiesw,
+            R.drawable.journalw,
+            R.drawable.aboutw,
             R.drawable.helpw,
-            R.drawable.sample1
+            R.drawable.settingsw
     };
 
     public String[] slideHeading = {

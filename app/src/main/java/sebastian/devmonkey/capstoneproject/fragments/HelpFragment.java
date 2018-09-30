@@ -149,14 +149,12 @@ ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener
             finish.setText(null);
             finish.setEnabled(false);
             back.setText("Back");
-
         }
-
         else{
             back.setVisibility(View.VISIBLE);
             finish.setText("Next");
             back.setText("Back");
-
+            finish.setEnabled(true);
         }
     }
 
