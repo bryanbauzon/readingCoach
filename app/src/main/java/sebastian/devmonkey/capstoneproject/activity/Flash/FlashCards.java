@@ -96,9 +96,8 @@ public class FlashCards extends AppCompatActivity {
             case 100:
                 if(resultCode == RESULT_OK && data != null){
                     ArrayList<String> resultData = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                   // textContainer.setText(resultData.get(0));
-                    //..displaying the result by the use of toast or a pop up message
-                        if(word.getText().toString().equals(word.getText().toString())){
+
+                        if(word.getText().toString().equals(resultData.get(0))){
 
                             LayoutInflater factory = LayoutInflater.from(this);
                             final View correctDialogView = factory.inflate(R.layout.customized_alert_dialog,null);
@@ -110,11 +109,15 @@ public class FlashCards extends AppCompatActivity {
                                 @Override
                                 public void onClick(View view) {
                                     correctDialog.dismiss();
+                                    word.setText(null);
+                                    word.requestFocus();
                                 }
                             });
                             correctDialog.setView(correctDialogView);
                             correctDialog.show();
                         }else{
+                         //   Toast.makeText(getApplicationContext(),"Mali",Toast.LENGTH_SHORT).show();
+                            tts.speak("Opss, please try again.",TextToSpeech.QUEUE_FLUSH,null);
 
                         }
 

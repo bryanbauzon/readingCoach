@@ -82,7 +82,7 @@ public class HomeFragment extends Fragment {
             btnRedirect.setText(storyTitle);
         }else{
             btnRedirect.setEnabled(false);
-            btnRedirect.setText("");
+            btnRedirect.setText("You don't have yet open any stories.");
         }
         // Inflate the layout for this fragment
 
