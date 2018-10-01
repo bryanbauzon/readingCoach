@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -92,6 +93,20 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         Button reset = view.findViewById(R.id.btnReset);
 
         small.setOnClickListener(this);
+//        small.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                if(motionEvent.getAction() == MotionEvent.ACTION_UP){
+//                    Toast.makeText(getActivity(),"up",Toast.LENGTH_SHORT).show();
+//
+//                }else if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
+//                        Toast.makeText(getActivity(),"down",Toast.LENGTH_SHORT).show();
+//                }
+//
+//                return false;
+//            }
+//        });
+
         medium.setOnClickListener(this);
         large.setOnClickListener(this);
         fontType1.setOnClickListener(this);
@@ -105,6 +120,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         lineSpacing1.setOnClickListener(this);
         lineSpacing2.setOnClickListener(this);
         reset.setOnClickListener(this);
+
 
     return view;
     }

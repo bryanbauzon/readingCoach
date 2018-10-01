@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:text="Aa"
                 android:textSize="10dp"
-                android:background="@drawable/settingbuttons"
+
                 android:id="@+id/btnSmall"
                 />
 
@@ -80,13 +80,13 @@
                 android:id="@+id/btnFontType1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OpenSan-Bold" />
+                android:text="Serif" />
 
             <Button
                 android:id="@+id/btnFontType2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OpenSan-Italic" />
+                android:text="Sans serif" />
 
         </LinearLayout>
 

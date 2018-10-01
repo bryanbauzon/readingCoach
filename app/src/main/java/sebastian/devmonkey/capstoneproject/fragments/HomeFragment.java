@@ -96,8 +96,6 @@ public class HomeFragment extends Fragment {
                 intent.putExtra("level",level);
                 startActivity(intent);
 
-
-
             }
         });
 

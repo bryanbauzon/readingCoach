@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/story"
-        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/storys"
         android:title="@string/title_t2s" />
 
     <item
         android:id="@+id/quizzer"
-        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/quizers"
         android:title="@string/quizzer" />
 
     <item
         android:id="@+id/jounralFrag"
-        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/journals"
         android:title="@string/txtJournal" />
 
 
     <item
         android:id="@+id/settings"
-        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/settings"
         android:title="@string/settings" />
 
 </menu>
