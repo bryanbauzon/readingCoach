@@ -95,7 +95,6 @@ IntermediateFragment.OnFragmentInteractionListener, HardFragment.OnFragmentInter
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()) {
             case android.R.id.home:
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
         }
         return true;
