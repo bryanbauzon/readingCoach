@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.Poem.PoemReading"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:id="@+id/rl">
 
 
     <TextView

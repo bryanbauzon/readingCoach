@@ -51,6 +51,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     Intent intent;
     String id_temp, level;
     int id;
+    private String dummy;
 
 
     private OnFragmentInteractionListener mListener;
@@ -139,30 +140,14 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
             Collections.shuffle(available);
 
-            if (level.equals("easy")) {
+            questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));
+            a.setText(QuestionLibrary.getChoice1(available.get(0), id, level));
+            b.setText(QuestionLibrary.getChoice2(available.get(0), id, level));
+            c.setText(QuestionLibrary.getChoice3(available.get(0), id, level));
+            d.setText(QuestionLibrary.getChoice4(available.get(0), id, level));
+            answer = QuestionLibrary.getCorrectAnswer(available.get(0), id, level);
 
-                if (id == 0) {
-                    questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));
-                    a.setText(QuestionLibrary.getChoice1(available.get(0), id, level));
-                    b.setText(QuestionLibrary.getChoice2(available.get(0), id, level));
-                    c.setText(QuestionLibrary.getChoice3(available.get(0), id, level));
-                    d.setText(QuestionLibrary.getChoice4(available.get(0), id, level));
-                    answer = QuestionLibrary.getCorrectAnswer(available.get(0), id, level);
-
-                    available.remove(0);
-
-                } else if (id == 1) {
-                    questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));
-                    a.setText(QuestionLibrary.getChoice1(available.get(0), id, level));
-                    b.setText(QuestionLibrary.getChoice2(available.get(0), id, level));
-                    c.setText(QuestionLibrary.getChoice3(available.get(0), id, level));
-                    d.setText(QuestionLibrary.getChoice4(available.get(0), id, level));
-                    answer = QuestionLibrary.getCorrectAnswer(available.get(0), id, level);
-
-                    available.remove(0);
-
-                }
-            }
+            available.remove(0);
 
         } else {
             Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
@@ -170,6 +155,8 @@ public class Quizzer extends Fragment implements View.OnClickListener{
             b.setEnabled(false);
             c.setEnabled(false);
             d.setEnabled(false);
+
+
         }
     }
 

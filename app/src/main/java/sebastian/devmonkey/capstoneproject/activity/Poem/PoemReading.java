@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -22,21 +23,52 @@ public class PoemReading extends AppCompatActivity {
     GlobalVariable gv;
     String id_temp, title, level;
     InputStream is;
+    RelativeLayout rl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poem_reading);
 
+        gv = new GlobalVariable();
+
         intent = getIntent();
         txtTitle = findViewById(R.id.txtTitlePoem);
         txtContent = findViewById(R.id.txtContentPoem);
+        rl = findViewById(R.id.rl);
 
         setTitle("Poems");
 
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
+
+        //color scheme
+        if (GlobalVariable.color == 1){
+            rl.setBackgroundColor(Color.parseColor("#000000"));
+            txtTitle.setTextColor(Color.WHITE);
+            txtContent.setTextColor(Color.WHITE);
+        } else {
+            rl.setBackgroundColor(Color.WHITE);
+            txtTitle.setTextColor(Color.BLACK);
+            txtContent.setTextColor(Color.BLACK);
+        }
+
+
+        //font
+        txtTitle.setTypeface(GlobalVariable.font);
+        txtContent.setTypeface(GlobalVariable.font);
+
+        //fontsize
+        txtTitle.setTextSize(GlobalVariable.fontSize);
+        txtContent.setTextSize(GlobalVariable.fontSize);
+
+        //line spacing
+        gv.setMargins(txtTitle, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+        gv.setMargins(txtContent ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+
+        txtContent.setLineSpacing(GlobalVariable.lineSpacing, 1);
 
 
         level = intent.getStringExtra("level");
@@ -52,6 +84,7 @@ public class PoemReading extends AppCompatActivity {
         String data = "";
         StringBuffer stringBuffer = new StringBuffer();
         if(level.equals("poem")) {
+
             //testing for id
             if (id == 0) {
                 //array is always starts at 0;
