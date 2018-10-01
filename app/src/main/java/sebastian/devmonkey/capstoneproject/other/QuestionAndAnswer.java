@@ -528,7 +528,7 @@ public class QuestionAndAnswer {
                     "   What was the first U.S. car company?",
                     "    The Ford Motor Company opened a…",
                     "   Whose idea was the assembly line?" };
-    private String[][] choices16 = {
+    private String[][] internChoices16 = {
             {"   Benz", "  Ford. ",  "Duryea"," Panhard."},
         {"   1888.", "  1889. ", "   1890","1891"},
         {"   Ford.", "  Olds. ", " Duryea"," Cadillac"},
@@ -548,7 +548,7 @@ private String[] citynoiseQuestion =
         "   Who does Mr. Lee live next door to? ",
         "  How many man argue about Sheila’s barking?",
         "   Main character in the story?" };
-private String[][] choices17 = {
+private String[][] internChoices17 = {
         {"close his windows at night", "   not argue with Mr. Lee ",  "go to bed later"," talk to Elsa"},
         {"   Elsa ", "Mila", "   Elsa and Mila", "no one"},
         {"   Elsa ", "Mila", "   Elsa and Mila", "no one"},
@@ -568,7 +568,7 @@ private String[] clocksQuestion =
         "    In line 16, auditory most closely means",
         "  Use to measure time",
         "   What century does the mechanical clock in Europe appeared?" };
-private String[][] choices18 = {
+private String[][] internChoices18 = {
         {" I only", "  II only",  "III only" },
         {"  Why clocks are used ", "   How hourglasses are similar to candle clocks", " What types of clocks have been invented"},
         {" related to machines", " related to numbers ", "related to hearing"},
@@ -588,7 +588,7 @@ private String[] coinsQuestion =
         " What are coins?",
         "  If something is durable, it… ",
         "    An idea is a…" };
-private String[][] choices19 = {
+private String[][] internChoices19 = {
         {" use for money", "use to do work",  "put in the bank"," trade for something"},
         {"   a kind of money ", "a kind of animal", "   made of shells", " gold or silver"},
         {"Round, flat, metal pieces of money", " Beads made of white shells ", "   Paper bank notes", " Metal knives"},
@@ -608,7 +608,7 @@ private String[] cornQuestion =
         " Corn syrup is a…",
         "  What is bait used for?",
         " Fuel is used…"};
-private String[][] choices20 = {
+private String[][] internChoices20 = {
         {" us", " ourselves",  "United States"," Universal States"},
         {"territory in the US", "region in the US ", "   type of corn", " type of food made with corn"},
         {"fuel", " bait", "    flour", "liquid"},
@@ -628,7 +628,7 @@ private String[] countingQuestion =
         " Tokens represented …",
         "  Consisted of wedge shaped symbols…",
         "  What shape tokens were found in Iraq? "};
-private String[][] choices21 = {
+private String[][] internChoices21 = {
         {" 10,000 B.C.", "10,000 years ago",  "7,500 B.C."," 7,500 years ago"},
         {" paper", "wooden ","clay", " stone"},
         {"crops", "merchandise", " people", "Both A and B are correct"},
@@ -648,7 +648,7 @@ private String[] discoveryoficecreamQuestion =
         "  The ice-cream industry got its start in America ",
         "  Hand-cranked freezers were ",
         "  The ice-cream soda was created because"};
-private String[][] choices22 = {
+private String[][] internChoices22 = {
         {" made the first ice-cream", "made the first frozen desserts",  "ate honey and fruit"," Both a and b"},
         {" Chilled desserts are the most popular", "Ice cream is usually eaten in sodas or sundae. ","Travelers brought the idea of chilled desserts from one land to the next", " Chilled desserts were possible only after refrigerators were invented"},
         {"in 1851", "in 1816", " in 1890", " in 1846"},
@@ -668,7 +668,7 @@ private String[] doctorinchicagoQuestion =
         "  Dr. Williams was asked to head the Freedmen’s Hospital by President ",
         "  Dr. Williams helped found",
         "  The hospital that Dr. Williams helped found was needed because "};
-private String[][] choices23 = {
+private String[][] internChoices23 = {
         {"Chicago", "Detroit",  "New York"," Atlanta"},
         {" Duke University", "Northwestern University","Stanford University ", " Amherst College"},
         {"James Garfield ", "Grover Cleveland", " Warren G. Harding ", " Franklin D. Roosevelt"},
@@ -688,7 +688,7 @@ private String[] easterislandQuestion =
         " Compressed ash is …",
         "  Monuments are …",
         "  Mysteries are …"};
-private String[][] choices24 = {
+private String[][] internChoices24 = {
         {" found the island", "saw the island",  "drew pictures of the island" , "Both A and B are correct"},
         {" more than", "about", "rather", " None of the above"},
         {"pressed together", " ancient", "  hot.", " None of the above"},
@@ -708,7 +708,7 @@ private String[] garlicsQuestion =
         " The reason for the pills was to see if they mould",
         "  Cholesterol is a",
         "  It is thought that cholesterol" };
-private String[][] choices25 = {
+private String[][] internChoices25 = {
         {" melbourne", "michigan",  "mississippi" , " manchester"},
         {"garlic pills", " liver pills ", " iron pills ", " vitamin pills"},
         {" reduce the garlic level of the blood ", " increase the garlic level of the blood ", "reduce cholesterol level in the blood", " increase cholesterol level in the blood"},
@@ -728,7 +728,7 @@ private String[] helicoptersQuestion =
         " Helicopters are used in fire fighting because…",
         "  How are helicopters used as ambulances?",
         "  Why don’t helicopters need runways?" };
-private String[][] choices26 = {
+private String[][] internChoices26 = {
         {"move straight up", "fly backward",  "hover" , " hover"},
         { "they must move forward", "  they must move sideways", " they must move backwards", " both A and B are correct"},
         {" they can reach difficult spots ", "  they can hover above the fire", "their rotors can put out the fire", "both A and B are correct"},
@@ -748,7 +748,7 @@ private String[] hibernationQuestion =
         "  Animals need little food during …",
         "   Bears aren’t true hibernators because …",
         "  Estivation happens during …"};
-private String[][] choices27 = {
+private String[][] internChoices27 = {
         {"bees", "toads",  "bears" , " both A and B are correct"},
         { "both happen in winter", "  both are adaptations ", " both happen in summer", " both A and B are correct"},
         {" estivation", "  hibernation", "cold weather", "both A and B are correct"},
@@ -768,7 +768,7 @@ private String[] housesQuestion =
         "  Where is the basement of a house?",
         "   Houses have doors…",
         "  Houses have windows to…"};
-private String[][] choices28 = {
+private String[][] internChoices28 = {
         {"There are many logs in the forest", "Trees are easy to find in the forest",  "There is a lot of wood in the forest" , " All of the above"},
         { "For sleeping ", "  For cooking ", " For relaxing", " For building things"},
         {" Beside the house", "  Above the house", "Under the house", " None of the above"},
@@ -808,7 +808,7 @@ private String[] johncooksQuestion =
         " Why doesn't John use cream? ",
         "   What does John use instead of cream? ",
         "  Which dish was the easiest for John to make? "};
-private String[][] choices30 = {
+private String[][] internChoices30 = {
         {"Which dish was the easiest for John to make? ", "from the store ",  "from his garden" , " from the farmers’ market"},
         { "  the creamy one", "beef soup ", " tomato salad", " blueberry pancakes"},
         {  " He doesn’t like it", "   There was none at the store", " There was none in the garden", " There was none at the farmers’ market"},
@@ -825,7 +825,7 @@ private String[] komodoQuestion =
         " Why does the author use an exclamation mark after the least sentence?  ",
         "    Komodo dragons live on a few small islands in Indonesia, which is in Asia.",
         "  They bite prey with deadly saliva and then wait for the animal to die. "};
-private String[][] choices31 = {
+private String[][] internChoices31 = {
         {"They are carnivores", "They don’t eat very often ",  "They live throughout Asia" , " They use their tongues to smell"},
         { "  They are often sick ", "They can wait a long time ", " Smart", " Fast"},
         {  " Because the final fact is very interesting", "    It’s the end of the paragraph ", "  To make sure the reader understands the sentence ", " To tell the reader how the komodo dragon hunts"},
@@ -842,7 +842,7 @@ private String[] largestcreatureQuestion =
         " Whales are dangerous when ",
         "   When whales sing, they are",
         "   Normally whales move about"};
-private String[][] choices32 = {
+private String[][] internChoices32 = {
         {"dinosaur ", "an elephant ",  "a sperm whale" , " All of the above"},
         { "  underwater  ", "like fish ", " air just like people ", " a mixture of water and air"},
         {  " they are not in a herd ", "     they are near people ", "  there are two or more of them  ", " the article does not say"},
@@ -859,7 +859,7 @@ private String[] lateQuestion =
         " Martin remembers when his boss told him, \"I mean it.\" What does this mean?",
         "   What does Martin think will happen if he is late to work again?",
         "    What time does Martin need to be at work?  "   };
-private String[][] choices33 = {
+private String[][] internChoices33 = {
         {"He is running ", "He is angry",  "He is late" , " He is moving fast"},
         { "   because he is late ", " because he is running ", " because he is moving fast", " because he had a car accident"},
         {  " The boss is serious", "     The boss is angry ", "   The boss is emotional", " The boss is interested"},
@@ -876,7 +876,7 @@ private String[] locksandkeyQuestion =
         " The old Egyptian locks were made of?",
         "   Most keys have been made of metal since?",
         "    Most keys have been made of metal since?  "   };
-private String[][] choices34= {
+private String[][] internChoices34= {
         {  " There have always been thieves", "People like to carry keys",  "Children might run away" , " All of the above"},
         { "   They had no locks on their doors", " The keys cost too much money ", " The keys were too big ",  " All of the above"},
         {  " Metal",  "Wood", "   Glass", " All of the above"},
@@ -893,7 +893,7 @@ private String[] marcopoloQuestion =
         " Who wrote down Marco Polo’s stories?",
         "   When did Marco Polo go to jail?",
         "   There was a war between…"};
-private String[][] choices35= {
+private String[][] internChoices35= {
         {  "Niccolo", "Maffeo",  "Pope Gregory X" , " Kublai Khan"},
         { "    storyteller", " governor ", " writer ",  " trader"},
         {  " His father",  "His uncle", "   prisoner", " The emperor"},
@@ -909,7 +909,7 @@ private String[] marysfamilyQuestion =
         " Nick is sean’s father",
         "   Mary is nine years old",
         "   Mary’s mother is Jane"};
-private String[][] choices36= {
+private String[][] internChoices36= {
         {  "True", "False ",  "maybe" , " Doesn’t say"},
         {  "True", "False ",  "maybe" , " Doesn’t say"},
         {  "True", "False ",  "maybe" , " Doesn’t say"},
@@ -924,7 +924,7 @@ private String[] moorishdanceQuestion =
         " In the morris dance a hobbyhorse was ",
         "   Hobbyhorses in the morris dance were made of ",
         "    How were hobbyhorses carried in the matrix dance?"};
-private String[][] choices37= {
+private String[][] internChoices37= {
         {  "thirteenth and fourteenth centuries ", "fifteenth and sixteenth centuries",  "seventeenth and eighteenth centuries" , " nineteenth and twentieth century’s"},
         {  "Robin Hood ", "Moorish horsemen  ",  "Friar Tuck" , " All of the above"},
         {  "a children’s toy ", "a pastime ",  "part of a costume" , " a real horse"},
@@ -939,7 +939,7 @@ private String[] movieratingsQuestion =
         " The way something is oriented involves the way it is…",
         "    If something is derived, it…",
         "     If an expletive is used inconspicuously…"};
-private String[][] choices38= {
+private String[][] internChoices38= {
         {  "lewd conduct", "unlawful behavior",  "disrespect" , " an aberration or abnormality"},
         {  "scene", "movie",  "representation" , " plot"},
         {  "positioned or directed", "maintained or upheld",  "forecasted or predicted" , " born or raised"},
@@ -954,7 +954,7 @@ private String[] mummyQuestion =
         " The removed organs were carefully stored ",
         "    A special kind of salt, Natrona, was used to",
         "     After a body was completely dry, it was"};
-private String[][] choices39= {
+private String[][] internChoices39= {
         {  "the body of a dead person ", "a body preserved by drying",  "a special kind of coffin" , " None of the above"},
         {  "brain", "heart ",  "stomach" , " both a and b"},
         {  "in the coffin ", "next to the mummy ",  "in containers" , " Both a and b"},
@@ -970,7 +970,7 @@ private String[] niagaraQuestion =
         " In 1901 Anna Taylor ",
         "    What Anna Taylor did was dangerous because",
         "     Alter Anna crawled into the barrel, the barrel was"};
-private String[][] choices40= {
+private String[][] internChoices40= {
         {  "between Mexico and the United States ", "in Germany ",  "between Canada and Alaska" , " the story does not say"},
         {  "to admire their beauty ", "for an exciting boat ride ",  "to watch something dangerous" , " to see a barrel race"},
         {  "went over Niagara Falls", "swam the Niagara River ",  "watched a daring act" , " ran the rapids in a boat  "},
@@ -985,7 +985,7 @@ private String[] nutsQuestion =
         "  In line 17, inedible most closely means  ",
         "     Is nut good for your health?",
         "     Is seed good for your health?"};
-        private String[][] choices41= {
+        private String[][] internChoices41= {
         {  "I only", "II only ",  "III only" , " II and III only"},
         {  "Many cooks do not understand what nuts are", "In normal speech, some seeds are called nuts",  "Seeds are nuts, but nuts are not seeds" , " None of the above"},
         {  "familiar", "not good for health ",  "not able to be eaten" , " none of the above  "},
@@ -1000,7 +1000,7 @@ private String[] nutsQuestion =
         "  When the games had only a foot race, they 1 were completed in ",
         "     A second day was added to the games",
         "     When they were the most popular, the game lasted"};
-        private String[][] choices42= {
+        private String[][] internChoices42= {
         {  "180and a 200-yand foot race ", "ZOO-kilometer foot race ",  "foot race and a chariot race" , " 180 kilometer foot race"},
         {  "200-yard foot race was added to the games ", "wrestling was added to the games ",  "swimming was added to the games" , " only races were added to the games"},
         {  "one day", "were very complex ",  "lasted two days" , " Both b and c"},
@@ -1016,7 +1016,7 @@ private String[] nutsQuestion =
         "  Where do pandas like to hunt? ",
         "      What do panda do all winter?",
         "      How tall can a panda get?"};
-        private String[][] choices43= {
+        private String[][] internChoices43= {
         {  "when they are 1-2 years old", "when they are 1-3 years old",  "when they are 3-5 years old" , " when they are 4-5 years old"},
         {  "Winter", "Spring",  "Summer" , " Fall"},
         {  "In open spaces ", "In the woods",  "In open spaces and in the woods" , " In open spaces and near the water"},
@@ -1031,7 +1031,7 @@ private String[] nutsQuestion =
         "   In the context of the passage, which of the following best articulates the author’s opinion? ",
         "      What do panda do all winter?",
         "      How tall can a panda get?"};
-        private String[][] choices44= {
+        private String[][] internChoices44= {
         {  "I only ","II only" , " III only" , " I and II only"},
         {  "common", "humorous",  "obvious" , " popular"},
         {  "It is hard to know how de le Roche predicted a photographic-type process a full century before photography was invented. ", "It is hard to draw a comparison between early Daguerreotypists and modern-day photographers.",  "It was inaccurate to say that the Daguerreotype was a \"mirror with a memory\""," since the images were not reversed." , " It is difficult to understand why the French public preferred Daguerreotypes to painted portraiture."},
@@ -1046,7 +1046,7 @@ private String[] nutsQuestion =
         "  Roller-skating was not immediately popular because ",
         "      Skates that could be controlled were invented by a",
         "      The number of people in the United States today who roller-skate regularly is more than"};
-        private String[][] choices45= {
+        private String[][] internChoices45= {
         {  "invented roller skates in 1735 ", "was a Belagian inventor",  "is believed to have invented rollee skates" , " both b and c"},
         {  "were uncontrollable", "were part of a costume ",  "Summer" , " Both a and b"},
         {  "Merlin hurt himself while wearing skate", "People didn’t care for new ideas",  "Merlin didn’t know how to skate" , " Merlin’s skates had wooden wheels"},
@@ -1061,7 +1061,7 @@ private String[] nutsQuestion =
         "  All skippers are provided with free ",
         "      At the start of every race, there are about",
         "      The race is usually finished by only about"};
-        private String[][] choices46= {
+        private String[][] internChoices46= {
         {  "Bering Strait ", "Strait of Homuz ",  "Strait of Georgia" , " Davis Strait"},
         {  "paddle", "flare ",  "blanket" , " flag"},
         {  "fuel ", "escort vessels ",  "swimming lessons" , " anti seasickness pills"},
@@ -1076,7 +1076,7 @@ private String[] nutsQuestion =
         "  The article says that if a seamount is not too far under the sea, scientists ",
         "      The article says that seamounts are thought to be the",
         "      The article says that large seamounts disturb the water around them by"};
-        private String[][] choices47= {
+        private String[][] internChoices47= {
         {  "scientists ", "navy admirals ",  "composers" , " explorers"},
         {  "fish and divers ", "scientists  ",  "crews of ships" , " Both a and b"},
         {  "photograph it from the air  ", "like to examine it",  "find it of little or no interest" , " can determine how old it is"},
@@ -1091,7 +1091,7 @@ private String[] nutsQuestion =
         "  The At Columbia University Chisholm earned a",
         "       In 1964 she became the first black",
         "       During her four years (1964-1968) in office, Chisholm"};
-        private String[][] choices48= {
+        private String[][] internChoices48= {
         {  "graduated from Brooklyn High School ", "began attending Brooklyn College ",  "graduated from Brooklyn College" , " first entered national politics"},
         {  "combined a career with local politics ", "began working on her master’s degree   ",  "began teaching at an all-black college" , " Both a and b"},
         {  "master’s degree in education air  ", "law degree ",  "doctoral degree in political science" , " the story did not say"},
@@ -1106,7 +1106,7 @@ private String[] nutsQuestion =
         "   In the article two teams of astronomers studied the",
         "       Rhea, Dione, and Tethys are the names of",
         "       How many moons does Saturn have?"};
-        private String[][] choices49= {
+        private String[][] internChoices49= {
         {  "small planets ", "large moons",  "heavenly bodies with tails" , " none of the above"},
         {  "frozen gases and ice", "dust particles",  "Both a and b" , " Neither a nor b"},
         {  "path of comets", "path of Saturn",  "heads of comets" , " moons of Saturn"},
@@ -1121,7 +1121,7 @@ private String[] nutsQuestion =
         "   Banning means…",
         "       Penance is …",
         "        If something is frivolous, it is…"};
-        private String[][] choices50= {
+        private String[][] internChoices50= {
         {  "one thing", "similar things",  "different things" , " fancy things"},
         {  "began", "started",  "ended" , " Both A and B are correct"},
         {  "including", "perfecting",  "prohibiting" , " explaining"},
@@ -1136,7 +1136,7 @@ private String[] nutsQuestion =
         "   The story suggests that the new coaches probably got their name from the ",
         "       At first, stagecoaches should go",
         "       Another name for a turnpike road would be a"};
-        private String[][] choices51= {
+        private String[][] internChoices51= {
         {  "1604 ", "1704 ",  "1640" , " 1740"},
         {  "people could only ride inside them ", "people could ride inside and on top of them ",  "it was too dangerous to ride on top of them" , " it was cheaper to ride inside them"},
         {  "use of fresh horses at points in a journey ", "kind of horses that were used ",  "different kinds of people that rode in them" , " Both a and b"},
@@ -1151,7 +1151,7 @@ private String[] nutsQuestion =
         "   What do people sleep on now? ",
         "       At first, stagecoaches should go",
         "       Another name for a turnpike road would be a"};
-        private String[][] choices52= {
+        private String[][] internChoices52= {
         {  "springs in their terrain ", "terrain made of fur ",  "beautiful terrain" , " many terrain"},
         {  "the 1830’s. ", "the 1860’s. ",  "the 1930’s." , " the 1960’s"},
         {  "Foam mattresses ", "Water terrain ",  "terrain" , " All of the above"},
@@ -1166,7 +1166,7 @@ private String[] nutsQuestion =
         "   As used in the beginning of the story, what is the \"big news\"? ",
         "       Why does Bobby say the Brenners need a coach?",
         "       Which house does Mr. Brenner like?"};
-        private String[][] choices53= {
+        private String[][] internChoices53= {
         {  "one", "two",  "four" , " five"},
         {  "They are all girls’ names. ", "They all start with the letter B. ",  "They are all long names." , " They all end in the letter Y."},
         {  "Mrs. Brenner is pregnant with twins.  ", "The Brenners are moving to a new house.",  "The Brenners are starting a basketball team." , " The Brenners are getting some new pets."},
@@ -1183,7 +1183,7 @@ private String[] nutsQuestion =
         "   How old is Dana?",
         "       How long is Dana’s shift?",
         "       What is one reason Dana loves her job?"};
-        private String[][] choices54= {
+        private String[][] internChoices54= {
         {  "around Philadelphia", "to the police station",  "to pick up guitar players" , " to pick up school children"},
         {  "third shift  ", "evening shift. ",  "afternoon shift" , " second shift"},
         {  "15  ", "23",  "38" , " 39"},
@@ -1198,7 +1198,7 @@ private String[] nutsQuestion =
         "   Where do most cacti grow? ",
         "       Cacti prevent evaporation of water by… ",
         "       Some cactus…"};
-        private String[][] choices55= {
+        private String[][] internChoices55= {
         {  "Stems ", "  Tubes ",  "Pillars" , " Needles"},
         {  "Like balls  ", "Like tubes ",  "Like wheels" , " All of the above"},
         {  "North and South America   ", "Southern Europe ",  "Antarctica" , " Asia"},
@@ -1213,7 +1213,7 @@ private String[] nutsQuestion =
         "   	In line 11, vaccine most closely means ",
         "       Cacti prevent evaporation of water by… ",
         "       Some cactus…"};
-        private String[][] choices56= {
+        private String[][] internChoices56= {
         {  "	I only", "  	II only ",  "	I and II only" , " 	III only"},
         {  "How to wash your hands ", "How long to wash your hands ",  "How to stop the spread of the virus" , " 	What studies have shown about hand-washing"},
         {  "	nose ", "health ",  "	protection" , " shot"},
@@ -1230,7 +1230,7 @@ private String[] nutsQuestion =
         "   	What does Tracey think about most as she walks? ",
         "       When does Tracey seem to be brave?",
         "        What is Tracey’s new school like?"};
-        private String[][] choices57= {
+        private String[][] internChoices57= {
         {  "stop crying", "  	get her bag ",  "drink some juice" , " 	put on her shoes"},
         {  "They drive", "They walk",  "They run" , " 	They take the bus"},
         {  "	her math test ", "answering questions",  "	having friends" , " her teachers"},
@@ -1245,7 +1245,7 @@ private String[] nutsQuestion =
         "   	How might Reem and her friends feel after cleaning up? ",
         "       How does the park look after everyone cleans it up?",
         "        At the end of the story, why does Reem say that she needs to come back another day?"};
-        private String[][] choices58= {
+        private String[][] internChoices58= {
         {  "brooms", "  	gifts",  "mops" , "trash bags"},
         {  "that she can help make things better ", "that people do not care about the park",  "that her mom does not like to pick up trash" , " 	that the park has no trash cans"},
         {  "	cold", "good",  "	mad" , " sad"},
@@ -1260,7 +1260,7 @@ private String[] nutsQuestion =
         "   	People who had heard Marian Anderson  ",
         "        In 1930 Marian Anderson went to Europe to",
         "        The article says that because of Marian Anderson’s success in Berlin"};
-        private String[][] choices59= {
+        private String[][] internChoices59= {
         {  "famous painter ", "  talented teacher ",  "great singer" , " Both a and c"},
         {  "won a scholarship ", "studied in Berlin ",  "travelled to Europe" , " None of the above"},
         {  "	joined the church choir ", "raised money for her education ",  "thought she was talented" , " Both b and c"},
@@ -1275,7 +1275,7 @@ private String[] nutsQuestion =
         "   	In line 10, core most closely means",
         "        In 1930 Marian Anderson went to Europe to",
         "        The article says that because of Marian Anderson’s success in Berlin"};
-        private String[][] choices60= {
+        private String[][] internChoices60= {
         {  "I only", "  II only",  "III only" , " II and III only"},
         {  "what the sun is", "what the sun looks like",  "how people reacted to the sun" , " who the Greeks and Romans were"},
         {  "Centre ", "gas ",  "oxygen" , " surface"},
@@ -1290,7 +1290,7 @@ private String[] nutsQuestion =
         "   	When were computers first used in the census? ",
         "        The first census of the United States was taken in 1790",
         "        By the time of the tenth census in 1890, the population was estimated to be 40,189,209"};
-        private String[][] choices61= {
+        private String[][] internChoices61= {
         {  "1780 ", "  1790 ",  "1870 " , " 1890"},
         {  "100 ", "200",  "1920" , " 2000"},
         {  "1950", "1970  ",  "1990" , " 2000"},
@@ -1305,7 +1305,7 @@ private String[] nutsQuestion =
         "   	In line 12, palace most closely means",
         "        The first census of the United States was taken in 1790",
         "        By the time of the tenth census in 1890, the population was estimated to be 40,189,209"};
-        private String[][] choices62= {
+        private String[][] internChoices62= {
         {  "I only ", "  II only",  "III only" , " I and II only"},
         {  "I and II only ", "The design and construction of the White House ",  "The building materials and color of the White House" , " The years of White House construction"},
         {  "office", "castle  ",  "1990" , " home"},
@@ -1320,7 +1320,7 @@ private String[] nutsQuestion =
         "   	The article says that Caesar is best remembered as a ",
         "        The article says that Caesar led his armies into",
         "       The article says that Caesar was successful in politics because of his"};
-        private String[][] choices63= {
+        private String[][] internChoices63= {
         {  "engineer ", "  architect ",  "politician" , " both a and c"},
         {  "excelled in only one thing ", "did everything but excelled in nothing ",  "excelled in more than one thing" , " excelled in everything"},
         {  "historian ", "reformer   ",  "politician" , " general"},
@@ -1335,7 +1335,7 @@ private String[] nutsQuestion =
         "   	What time of year is it?",
         "        What is Ben’s favorite part of summer vacation?",
         "        Used in paragraph 4, what is the meaning of patient?"};
-        private String[][] choices64= {
+        private String[][] internChoices64= {
         {  "he is late ", "  he is scared",  "he is excited" , " he is worried"},
         {  "seven years old", "eight years old",  "nine years old" , " ten years old"},
         {  "spring", "summer",  "autumn" , " winter"},
@@ -1350,7 +1350,7 @@ private String[] nutsQuestion =
         "   	Oranges were first taken to North America by the",
         "        The article says that orange were at one time thought a proper",
         "        Mrs. Tibbits planted her orange tree"};
-        private String[][] choices65= {
+        private String[][] internChoices65= {
         {  "science", "transportation",  "industry" , " government"},
         {  "southern Africa", "southern Spain",  "southern India" , " Southern China"},
         {  "Spaniards", "Chinese",  "Arabs" , " The article does not say"},
@@ -1365,7 +1365,7 @@ private String[] nutsQuestion =
         "   	The cave dwellers of Roche l’Evéque are ",
         "         The people of Roche l’Evéque live in caves because",
         "        At first glance the cave homes of Roche l’Evéque look like a hole in"};
-        private String[][] choices66= {
+        private String[][] internChoices66= {
         {  "Latin word", "Greek word",  "Spanish word" , " French word"},
         {  "since World War II ", "since the French Revolution ",  "for as long as anyone can remember" , " The story does not say"},
         {  "ordinary people such as farmers and merchants", "criminals hiding from the police ",  "beggars with no money" , " travelers with no place to stay"},
@@ -1380,7 +1380,7 @@ private String[] nutsQuestion =
         "   	Wigwams were covered with ",
         "         Tepees were built by the tribes of the",
         "        The tribes that built tepees needed a shelter that could be"};
-        private String[][] choices67= {
+        private String[][] internChoices67= {
         {  "Seminole v", "Ojibwa",  "in Sioux" , " Choctaw"},
         {  "circle", "square ","triangle" , " rectangle"},
         {  "mud", "leaves ",  "skins" , " bark"},
@@ -1395,7 +1395,7 @@ private String[] nutsQuestion =
         "   		Another word for illustrations is… ",
         "         What is an improvement?",
         "        The best synonym for modern is…"};
-        private String[][] choices68= {
+        private String[][] internChoices68= {
         {  "art made with wood", "	art made with clay",  "writing in books" , " pictures in books"},
         {  "fashionable women ", "kings and queens ","common people" , "information"},
         {  "texts", "coats ",  "pictures" , " umbrellas"},
@@ -1410,7 +1410,7 @@ private String[] nutsQuestion =
         "   		The first step in making kura kura is to ",
         "         After the children roll the mixture into bracelets, they",
         "         The last step in making the bracelets is to"};
-        private String[][] choices69= {
+        private String[][] internChoices69= {
         {  "soup ", "stews ",  "cakes" , " All of the above"},
         {  "East Africa", "South Africa ", "Upper Volta" , " Lower Volta"},
         {  "add water, corn flour, and honey ", "boil raw peanuts and mash them ",  "press out the oil" , " fry the mixture"},
@@ -1425,7 +1425,7 @@ private String[] nutsQuestion =
         "   		The anteater uses its tongue to o ",
         "         The rattlesnakes tongue",
         "         Eagles use their tongues to help them"};
-        private String[][] choices70= {
+        private String[][] internChoices70= {
         {  "catch ants and other insects  ", "strip leaves off trees",  "suck nectar from flowers" , " cool off"},
         {  "form sounds into words ", "cool off ", " wipe their eyelids" , " suck nectar from flowers"},
         {  "catch ants and other insects", "pick up smells ",  "form sounds into words" , " wipe its eyelids"},
@@ -1440,7 +1440,7 @@ private String[] nutsQuestion =
         "   		Dr. Williams knows just how badly Lobo has been hurt when ",
         "         Around what time did Lobo's surgery end?",
         "         As used in the middle of the story, which is the best synonym for grim?"};
-        private String[][] choices71= {
+        private String[][] internChoices71= {
         {  "police station", "waiting room",  "doctor's office" , " animal hospital"},
         {  "angry", "joyful ", " relaxed" , " Tense"},
         {  "Cyrus asks for help",  " she takes a closer look",  "she sees Lobo is a lab puppy" , " she looks at the x-rays"},
@@ -1455,7 +1455,7 @@ private String[] nutsQuestion =
         "   In line 15, unsanitary most closely means ",
         "         Ponds contain?",
         "         How many % of the world’s water is a fresh water?"};
-        private String[][] choices72= {
+        private String[][] internChoices72= {
         {  "I only", "II only ",  "III only" , " II and III only"},
         {  "Fresh water is necessary for life.", "Most water in the world is salt water.  ", " Water is the most common liquid in the world." , " People cannot drink most of the world’s water. E) Only 3% of the world’s water is not salt water."},
         {  "not available ",  "not clean",  "not in liquid form" , " used for another purpose"},
@@ -1470,7 +1470,7 @@ private String[] nutsQuestion =
 //        "    The nest is made from ",
 //        "         The queen hunts for insects",
 //        "         Wasps who are workers"};
-//        private String[][] choices73= {
+//        private String[][] internChoices73= {
 //        {  "an interesting creature ", "an unpopular insect  ",  "a cousin to the bee" , " both a and b"},
 //        {  "in autumn ", "in spring ", " in summer" , " none of the above"},
 //        {  "insects and eggshells ",  "sticky pulp ",  "cells of a beehive" , " none of the above"},
@@ -1485,7 +1485,7 @@ private String[] nutsQuestion =
         "    How long have Imran and Paola been married?",
         "         At the end of the talk with her Mom, Paola seems",
         "         Why does Mom seem to know how Paola feels?"};
-        private String[][] choices74= {
+        private String[][] internChoices74= {
         {  "hear a story", "get advice",  "make her mom happy" , " get a back rub"},
         {  "Paola’s mom's house", "a restaurant ", " Paola's house" , " the chocolate shop"},
         {  "6 years",  "7 years",  "8 years" , " 10 years"},
@@ -1501,7 +1501,7 @@ private String[] nutsQuestion =
         "    Why do few plants grow in the understory? ",
         "    Why do plants in the understory have to rely on insects to pollinate them?",
         "         Which of the following is NOT true?"};
-        private String[][] choices75= {
+        private String[][] internChoices75= {
         {  "emergent layer ", "understory ",  "canopy" , " forest floor"},
         {  "canopy ", "understory ", " forest floor" , " emergent layer"},
         {  "There is not enough water. ",  "There is not enough sunlight. ",  "Their leaves are too large." , " There are not enough nutrients."},
@@ -1516,7 +1516,7 @@ private String[] nutsQuestion =
         "    What is the main prey of the Arctic fox? ",
         "    Which is NOT true about the size of an Arctic fox?",
         "         What does the word \"insulate\" mean in the sentence below? Its thick fur coat helps insulate it from the freezing temperatures and windswept snow."};
-        private String[][] choices76= {
+        private String[][] internChoices76= {
         {  "somewhat often ", "never  ",  "not often" , " very often"},
         {  "the severity of the winter. ", "the warmth of the summer. ", " the population of polar bears." , " the population of lemmings."},
         {  "lemmings",  "insects",  "birds" , " eggs"},
@@ -1531,7 +1531,7 @@ private String[] nutsQuestion =
         "    How do banks make money?            ",
         "    How does \"interest\" work?        ",
         "         What do banks NOT do?        "};
-        private String[][] choices77= {
+        private String[][] internChoices77= {
         {  "Most borrowers don’t have to pay interest. ", "Everyone pays the same amount of interest.   ",  "The story doesn’t tell." , " It depends on a lot of things."},
         {  "Buy houses", "Buy Cars ", " Start Businesses" , " All of the above"},
         {  "By saving customer deposits. ",  "Charging interest to those they lend to.",  "By having a lot of accounts." , " Electronically."},
@@ -1546,7 +1546,7 @@ private String[] nutsQuestion =
         "   Which is NOT true about Bruce Smith?            ",
         "    The Buffalo Bills are one of ______ teams to lose _______ Super Bowls without having won any.   ",
         "         Why did the Bills change their name from \"Bisons\"?"};
-        private String[][] choices78= {
+        private String[][] internChoices78= {
         {  "Who won the Super Bowl in 1991? ", "Why was the team named after Buffalo Bill Cody?",  "How many league titles did the Buffalo Bills win?" , " What team holds the record for winning the most Super Bowls?"},
         {  "Jim Kelly", "Thurman Thomas ", " O.J. Simpson" , " Bruce Smith"},
         {  "He is considered one of the best quarterbacks in NFL history.",  "He holds the NFL career record for most sacks.",  "He played most of his career with the Buffalo Bills." , " He has 200 career sacks."},
@@ -1561,7 +1561,7 @@ private String[] nutsQuestion =
         "   Which of the following is NOT true?            ",
         "    What is the second stage of life for a butterfly?",
         "         What is the third stage of life for a butterfly?"};
-        private String[][] choices79= {
+        private String[][] internChoices79= {
         {  "The butterfly is coming.", "It is hungry. ",  "To defend itself against predators." , " It is growing."},
         {  "There are about a thousand different kinds of butterflies in the world. ", "There are more than a thousand different kinds of butterflies in the world. ", " There are more than a thousand different kinds of butterflies in the world." , " There are less than a thousand different kinds of butterflies in the world."},
         {  "Butterflies must wait until blood drains into their wings before flying. ",  "The butterfly may shed its skin eight or nine times. ",  "Caterpillars turn into a liquid in the chrysalis." , " Most butterflies live a short time."},
@@ -1576,7 +1576,7 @@ private String[] nutsQuestion =
         "   Which of the following is unlikely? ",
         "    In which of the following places would there probably have never been populations of California condors?",
         "         In which of the following habitats would it be unlikely to find a California condor?"};
-        private String[][] choices80= {
+        private String[][] internChoices80= {
         {  "nine", "eight",  "ten" , " eleven"},
         {  "its strong sense of smell", "its strong sense of hearing ", " by following herds of deer and sheep" , " by following other vultures"},
         {  "A California condor feeding on a bear carcass. ",  "A California condor nesting on Valentine's Day.",  "A California condor that hasn't eaten in three days." , " Most A California condor feeding on a squirrel carcass."},
@@ -1591,7 +1591,7 @@ private String[] nutsQuestion =
         "   Select all that are true:  ",
         "Who laid out plans for the \"Long Walk\"?",
         "         Who made major renovations to the castle in 1824?"};
-        private String[][] choices81= {
+        private String[][] internChoices81= {
         {  "William the Conqueror", "George IV ",  "Edward of Windsor" , " King Edward IV"},
         {  "remodel", "rebuild ", " tear down" , " calculate"},
         {  "Windsor Castle seems dominated from a distance by a large tower. ",  "Windsor Castle is the largest castle. ",  "Windsor Castle is the oldest continually inhabited castle." , "Windsor Castle burned down many times in its history."},
@@ -1606,7 +1606,7 @@ private String[] nutsQuestion =
         "   In which era were the Chicago Bears most successful? ",
         "In its early years, the Chicago Bears…",
         "         In the 1985–1986 NFL season, the Chicago Bears…"};
-        private String[][] choices82= {
+        private String[][] internChoices82= {
         {  "defeated the New England Patriots.", "defeated the Indianapolis Colts. ",  "were defeated by the New England Patriots." , " were defeated by the Indianapolis Colts."},
         {  "was the head coach of the Chicago Bears for 40 straight years.", "controlled the team until 1983. ", " sold the team to A.E. Staley." , "bought the Bears for one million dollars."},
         {  "1960–1970",  "1930–1940 ",  "1990–2000" , "1970–1980"},
@@ -1621,7 +1621,7 @@ private String[] nutsQuestion =
         "   The king of Portugal refused to finance his trip. ",
         "In the year 1500, Columbus set sail.",
         "         Which is NOT true?           " };
-        private String[][] choices83= {
+        private String[][] internChoices83= {
         {  "The New World", "Portugal",  "Spain" , " Italy"},
         {  "True", "False ", "Maybe" , "Doesn’t say"},
         {  "True", "False ", "Maybe" , "Doesn’t say"},
@@ -1636,7 +1636,7 @@ private String[] nutsQuestion =
         "   Which of the following would be unlikely?  ",
         "In the year 1500, Columbus set sail.",
         "    The common loon is the state bird of Minnesota           " };
-        private String[][] choices84= {
+        private String[][] internChoices84= {
         {  "It has a lot of lakes and wetlands", "It has a lot of deserts ",  "It has a lot of land" , " It has a lot of mountains"},
         {  "is closely related to ducks.", "looks nothing like ducks. ", " is unrelated to ducks." , "has legs like a duck."},
         {  "A common loon diving 150 feet under the surface of a lake", "A common loon swimming in a small pond ", " A common loon floating in the ocean during the winter" , "A common loon that looks brownish in the winter"},
@@ -1651,7 +1651,7 @@ private String[] nutsQuestion =
         "   How long does it take cricket eggs to hatch?",
         "In which of the following months would it be unlikely to see a cricket outdoors?",
         "    Which of the following shows the cricket's correct life cycle?     " };
-        private String[][] choices85= {
+        private String[][] internChoices85= {
         {  "the number of females around ", "food supply",  "temperature" , " the number of predators around"},
         {  "A hot dog", "A flea ", " A match" , "A dragonfly"},
         {  "21 days", "4 days ", " 7 days" , "14 days"},
@@ -1666,7 +1666,7 @@ private String[] nutsQuestion =
         "   The coffee and donuts at Open Kettle was…",
         "What is NOT TRUE about Open Kettle?",
         "    William Rosenberg was one of four children growing up in Boston, Massachusetts" };
-        private String[][] choices87= {
+        private String[][] internChoices87= {
         {  "To start a donut shop", "He didn’t like school",  "To help his father" , " To make a plan"},
         {  "He noticed that people dunked donuts in their coffee", "He noticed there were no coffee shops ", " He noticed half of sales came from coffee and donuts" , "He noticed only kids liked donuts"},
         {  "famous. ", "expensive. ", " interesting." , "hanging."},
@@ -1682,7 +1682,7 @@ private String[] nutsQuestion =
         "   What is true about Olympus Mons? ",
         "Why is Mars red?",
         "    Mars has two moons" };
-        private String[][] choices89= {
+        private String[][] internChoices89= {
         {  "They both have two moons", "They are the same size",  "They have ice at their poles" , " They both have the highest mountain in the solar system"},
         {  "too warm for humans to live on. ", "larger than Earth." , "the home of the highest mountain on Earth.", " smaller than Earth."},
         {  "It is the highest mountain on Earth", "It is the lowest mountain on Mars", "It is much higher than the highest mountain on Earth" , "It is only a little higher than the highest mountain on Earth." },
@@ -1698,7 +1698,7 @@ private String[] nutsQuestion =
         "   Circle all of the following states that used to be part of Mexico.  ",
         "Which of the following statements is NOT true?",
         "    Which of the following forms the border between Mexico and the United States?" };
-        private String[][] choices90= {
+        private String[][] internChoices90= {
         {  "1st ", "2nd",  "3rd" , " 4th"},
         {  "tomato", "ketchup" , "banana", " armadillo"},
         {  "Colorado", "Wisconsin", "Arizona" , "Illinois" },
@@ -1713,7 +1713,7 @@ private String[] nutsQuestion =
         "  How many volcanoes have erupted in mainland Europe in the past 100 years? ",
         "What does the word \"descended\" mean in the following sentence: From his dramatic account, scientists believe the cloud of ash he witnessed that descended upon Pompeii was 20 miles high.",
         "    Why do you think Pompeii is one of the most visited sites in Italy?" };
-        private String[][] choices91= {
+        private String[][] internChoices91= {
         {  "Italy ", "Just east of Naples, Italy",  "Southern Italy" , " Europe"},
         {  "Because many people live in the path of a possible eruption.", "It is a very high volcano." , "Because it has erupted before.", " Because it buried Pompeii in the year 79 AD."},
         {  "More volcanoes have erupted in mainland Europe than on islands in the Mediterranean Sea. ", "0.", "It's impossible to say." , "1." },
@@ -1728,7 +1728,7 @@ private String[] nutsQuestion =
         "  Some peregrine falcons have been clocked at speeds of more than ____ miles per hour while ____. ",
         "Which of the following words would best describe DDT?",
         "    Which of the following statements is true?" };
-        private String[][] choices92= {
+        private String[][] internChoices92= {
         {  "Rocky Mountains", "California shore",  "Arctic tundra" , " Arizona desert"},
         {  "wood duck", "hummingbird" , "pigeon", " shorebirds"},
         {  "100; hunting ", "100; sleeping", "50; defending the nest" , "50; chasing away predators" },
@@ -1743,7 +1743,7 @@ private String[] nutsQuestion =
         "  Which of the following scenarios is unlikely? ",
         "Which of the following is NOT true?",
         "    What color is the tail of the emperor penguin?"};
-        private String[][] choices93= {
+        private String[][] internChoices93= {
         {  "orcas", "sharks",  "seals" , " skuas"},
         {  "After the egg is laid, the male ventures off to the sea first.", "The female locates her chick by sight." , "Both parents will feed chicks by regurgitating food.", " The female locates her chick by sound."},
         {  "Finding an emperor penguin after it has been underwater for 10 minutes ", "Finding an orca that has just eaten an emperor penguin ", "Finding an emperor penguin that is about 20 years old" , "Finding an emperor penguin that weighs 80 pounds" },
@@ -1758,7 +1758,7 @@ private String[] nutsQuestion =
         "  _______ was the first spacecraft to visit Mars.",
         "The red color of Mars comes from the ___ on its surface.",
         "    Scientists think any water that could possibly be found on Mars would be too _________." };
-        private String[][] choices94= {
+        private String[][] internChoices94= {
         {  "the sun ", "the moon Phobos",  "the moon Deimos" , " Earth"},
         {  "thunderstorms ", "hurricanes" , "dust storms", " blizzards"},
         {  "Viking 2 ", "Viking 1 ", "Phoenix" , "Mariner 4" },
@@ -1773,7 +1773,7 @@ private String[] nutsQuestion =
 //        "  What color is NOT in a rainbow? ",
 //        "Which of the following IS NOT true?",
 //        "    What question is answered in the last paragraph? " };
-//        private String[][] choices95= {
+//        private String[][] internChoices95= {
 //        {  "after the sun sets at night", "after a rainstorm",  "when it snows" , " before a rainstorm"},
 //        {  "the sun causes a rainstorm", "the sun comes out after a storm" , "the spectrum causes a rainstorm", " light exits many raindrops at different angles"},
 //        {  "pink", "yellow ", "indigo" , "orange" },
@@ -1787,8 +1787,8 @@ private String[] nutsQuestion =
 //        " What word best describes Sequoyah's early life in the eyes of historians?",
 //        "  Sequoyah's father was thought to have been a scout for George Washington. ",
 //        "Sequoyah was a _______________________.",
-//        "   Select all that are true from the choices below: Sequoyah began thinking about a system of written communication… " };
-//        private String[][] choices96= {
+//        "   Select all that are true from the internChoices below: Sequoyah began thinking about a system of written communication… " };
+//        private String[][] internChoices96= {
 //        {  "True", "False",  "Maybe" , " Doesn’t say"},
 //        {  "unknown", "sad" , "interesting", " light exits many raindrops at different angles"},
 //        {  "True", "False",  "Maybe" , " Doesn’t say"},
@@ -1803,7 +1803,7 @@ private String[] nutsQuestion =
         "  In China, Marco Polo worked for  Lublai Khan, the ruler of China.",
         "Marco Polo came to China from what country?",
         "   While traveling in China, Marco Polo observed many new discoveries. Which of the following is not one of the discoveries?  " };
-        private String[][] choices97= {
+        private String[][] internChoices97= {
         {  "True", "False",  "Maybe" , " Doesn’t say"},
         {  "True", "False",  "Maybe" , " Doesn’t say"},
         {  "True", "False",  "Maybe" , " Doesn’t say"},
@@ -1818,7 +1818,7 @@ private String[] nutsQuestion =
         "   Where are spiders NOT found?",
         "What would be the best title for the third paragraph?",
         "   What does \"unique\" mean in the following sentence: Spiders are unique among animals in that many spin webs out of silk.   " };
-        private String[][] choices98= {
+        private String[][] internChoices98= {
         {  "mammals ", "insects ",  "arachnids" , " tarantulas"},
         {  "Most are not harmful to humans. ", "None are harmful to humans. ",  "Most are harmful to humans." , " All are harmful to humans."},
         {  "in Antarctica ", "in cold climates ",  "in deserts" , " in homes"},
@@ -1833,7 +1833,7 @@ private String[] nutsQuestion =
         "What is a green product?",
         "   Which of the following might be an example of a green product?",
         "Green is…"};
-        private String[][] choices99= {
+        private String[][] internChoices99= {
         {  "A frog. ", "A bat. ",  "A primary color" , " A mushroom."},
         {  "not found in nature. ", "different shades of green. ",  "green products." , "not green."},
         {  "One that is mixed together. ", "One that is fun. ",  "One that is made from grass." , " One that is safe for Earth."},
@@ -1848,7 +1848,7 @@ private String[] nutsQuestion =
 //        "Based on the following sentence, which of the following might be another setting where the flu could easily spread? Most kids get the flu in the winter because germs spread more easily when kids are inside in settings such as classrooms.",
 //        "   Which of the following WOULD NOT help you in preventing the flu?",
 //        "Which sentence has the same meaning as this sentence: For most kids, the flu comes and goes, but for some, it can be a serious illness."};
-//        private String[][] choices100= {
+//        private String[][] internChoices100= {
 //        {  "most kids don't even realize they have the flu.", "the flu can't easily spread from one person to another. ",  "most kids get the flu in winter." , " medicine can help kill the flu."},
 //        {  "viruses", "colds ",  "signs" , "medicines"},
 //        {  "A city park ", "The baseball field ",  "A day-care center" , " A forest"},
@@ -1980,8 +1980,119 @@ private String[] nutsQuestion =
                 return johncooksQuestion[a];
             } else if (id == 42) {
                 return komodoQuestion[a];
+            } else if (id == 43) {
+                return largestcreatureQuestion[a];
+            } else if (id == 44) {
+                return lateQuestion[a];
+            } else if (id == 45) {
+                return null; //lobsterQuestion
+            } else if (id == 46) {
+                return locksandkeyQuestion[a];
+            } else if (id == 47) {
+                return marcopoloQuestion[a];
+            } else if (id == 48) {
+                return marsQuestion[a];
+            } else if (id == 49) {
+                return marysfamilyQuestion[a];
+            } else if (id == 50) {
+                return mexicoQuestion[a];
+            } else if (id == 51) {
+                return moorishdanceQuestion[a];
+            } else if (id == 52) {
+                return mountvesuviusQuestion[a];
+            } else if (id == 53) {
+                return movieratingsQuestion[a];
+            } else if (id == 54) {
+                return mummyQuestion[a];
+            } else if (id == 55) {
+                return niagaraQuestion[a];
+            } else if (id == 56) {
+                return nutsQuestion[a];
+            } else if (id == 57) {
+                return olympicgameQuestion[a];
+            } else if (id == 58) {
+                return pandaQuestion[a];
+            } else if (id == 59) {
+                return penquinsQuestion[a];
+            } else if (id == 60) {
+                return peregrineQuestion[a];
+            } else if (id == 61) {
+                return photographyQuestion[a];
+            } else if (id == 62) {
+                return planetmarsQuestion[a];
+            } else if (id == 63) {
+                return null; // rainbow
+            } else if (id == 64) {
+                return rollerskatesQuestion[a];
+            } else if (id == 65) {
+                return saltwaterQuestion[a];
+            } else if (id == 66) {
+                return seamountsQuestion[a];
+            } else if (id == 67) {
+                return null; // sequoya
+            } else if (id == 68) {
+                return shirleychsholmQuestion[a];
+            } else if (id == 69) {
+                return silkroadQuestion[a];
+            } else if (id == 70) {
+                return snowballsinspaceQuestion[a];
+            } else if (id == 71) {
+                return soccerQuestion[a];
+            } else if (id == 72) {
+                return spiderQuestion[a];
+            } else if (id == 73) {
+                return stagecoachesQuestion[a];
+            } else if (id == 74) {
+                return terrainQuestion[a];
+            } else if (id == 75) {
+                return thebrennersQuestion[a];
+            } else if (id == 76) {
+                return thebusdriverQuestion[a];
+            } else if (id == 77) {
+                return thecactusQuestion[a];
+            } else if (id == 78) {
+                return thecolorgreenQuestion[a];
+            } else if (id == 79) {
+                return thefluQuestion[a];
+            } else if (id == 80) {
+                return thenewschoolQuestion[a];
+            } else if (id == 81) {
+                return theparkQuestion[a];
+            } else if (id == 82) {
+                return thestoryofmarianQuestion[a];
+            } else if (id == 83) {
+                return thesunQuestion[a];
+            } else if (id == 84) {
+                return theuscensusQuestion[a];
+            } else if (id == 85) {
+                return thewhitehouseQuestion[a];
+            } else if (id == 86) {
+                return threepoliticwarQuestion[a];
+            } else if (id == 87) {
+                return timewithgranpaQuestion[a];
+            } else if (id == 88) {
+                return transportationQuestion[a];
+            } else if (id == 89) {
+                return troglodytesQuestion[a];
+            } else if (id == 90) {
+                return twobestknownQuestion[a];
+            } else if (id == 91) {
+                return umbrellasQuestion[a];
+            } else if (id == 92) {
+                return useofpeanutsQuestion[a];
+            } else if (id == 93) {
+                return useoftoungeQuestion[a];
+            } else if (id == 94) {
+                return vetemergencyQuestion[a];
+            } else if (id == 95) {
+                return waterQuestion[a];
+            } else if (id == 96) {
+                return null; //what is a wasp
+            } else if (id == 97) {
+                return whybarnQuestion[a];
+            } else if (id == 98) {
+                return worthworkingforQuestion[a];
             }
-
         }
 
         return null;
@@ -2019,6 +2130,69 @@ private String[] nutsQuestion =
 //            } else if (id == 13) {
 //                return answer14[a];
 //            }
+        } else if (level.equals("intermediate")) {
+
+            if (id == 0) {
+                return internAnswer3[a];
+            } else if (id == 1) {
+                return internAnswer4[a];
+            } else if (id == 2) {
+                return internAnswer5[a];
+            } else if (id == 3) {
+                return internAnswer75[a];
+            } else if (id == 4){
+                return internAnswer6[a];
+            } else if (id == 5){
+                return internAnswer7[a];
+            } else if (id == 6){
+                return internAnswer8[a];
+            } else if (id == 7){
+                return internAnswer76[a];
+            } else if (id == 8){
+                return internAnswer9[a];
+            } else if (id == 9){
+                return internAnswer77[a];
+            } else if (id == 10){
+                return internAnswer10[a];
+            } else if (id == 11){
+                return internAnswer11[a];
+            } else if (id == 12){
+                return internAnswer12[a];
+            } else if (id == 13){
+                return internAnswer13[a];
+            } else if (id == 14){
+                return internAnswer14[a];
+            } else if (id == 15){
+                return internAnswer15[a];
+            } else if (id == 16){
+                return internAnswer6[a];
+            } else if (id == 17){
+                return internAnswer78[a];
+            } else if (id == 18){
+                return internAnswer79[a];
+            } else if (id == 19){
+                return internAnswer80[a];
+            }else if (id == 20){
+                return internAnswer16[a];
+            } else if (id == 21){
+                return internAnswer81[a];
+            } else if (id == 22){
+                return internAnswer82[a];
+            } else if (id == 23){
+                return internAnswer83[a];
+            } else if (id == 24){
+                return internAnswer17[a];
+            } else if (id == 25){
+                return internAnswer18[a];
+            } else if (id == 26){
+                return internAnswer19[a];
+            } else if (id == 27){
+                return internAnswer84[a];
+            } else if (id == 28){
+                return internAnswer20[a];
+            } else if (id == 29){
+                return internAnswer21[a];
+            }
         }
 
         return null;
