@@ -117,7 +117,7 @@ public class FlashCards extends AppCompatActivity {
                             correctDialog.show();
                         }else{
                          //   Toast.makeText(getApplicationContext(),"Mali",Toast.LENGTH_SHORT).show();
-                            tts.speak("Opss, please try again.",TextToSpeech.QUEUE_FLUSH,null);
+                            tts.speak("Sorry, please try again.",TextToSpeech.QUEUE_FLUSH,null);
 
                         }
 
