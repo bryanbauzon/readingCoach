@@ -79,6 +79,7 @@ public class HomeFragment extends Fragment {
         final String level =  pref.getString("level",null);
 
         if(storyTitle != null){
+            btnRedirect.setEnabled(true);
             btnRedirect.setText(storyTitle);
         }else{
             btnRedirect.setEnabled(false);
