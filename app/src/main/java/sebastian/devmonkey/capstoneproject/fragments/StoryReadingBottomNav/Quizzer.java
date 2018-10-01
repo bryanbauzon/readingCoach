@@ -2,8 +2,10 @@ package sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -109,6 +111,12 @@ public class Quizzer extends Fragment implements View.OnClickListener{
         c = view.findViewById(R.id.c);
         d = view.findViewById(R.id.d);
 
+
+        a.setBackgroundResource(android.R.drawable.btn_default);
+        b.setBackgroundResource(android.R.drawable.btn_default);
+        c.setBackgroundResource(android.R.drawable.btn_default);
+        d.setBackgroundResource(android.R.drawable.btn_default);
+
         questions.setTypeface(GlobalVariable.font);
         containerScore.setTypeface(GlobalVariable.font);
 
@@ -164,17 +172,121 @@ public class Quizzer extends Fragment implements View.OnClickListener{
         containerScore.setText("" + point);
     }
 
-    private void Correct() {
-        score++;
-        updateScore(score);
-        updateQuestion();
+    private void Correct(int num) {
+
 
         Toast.makeText(getActivity(), "Correct", Toast.LENGTH_SHORT).show();
+
+
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
+        d.setEnabled(false);
+
+        if (num == 1) {
+
+            a.setBackgroundColor(Color.GREEN);
+
+
+
+        } else if (num == 2){
+
+            b.setBackgroundColor(Color.GREEN);
+
+
+        } else if (num == 3) {
+
+            c.setBackgroundColor(Color.GREEN);
+
+
+        } else if (num == 4) {
+
+            d.setBackgroundColor(Color.GREEN);
+        }
+
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Do something after 5s = 5000ms
+                score++;
+                updateScore(score);
+                updateQuestion();
+
+                a.setBackgroundResource(android.R.drawable.btn_default);
+                b.setBackgroundResource(android.R.drawable.btn_default);
+                c.setBackgroundResource(android.R.drawable.btn_default);
+                d.setBackgroundResource(android.R.drawable.btn_default);
+
+
+                a.setEnabled(true);
+                b.setEnabled(true);
+                c.setEnabled(true);
+                d.setEnabled(true);
+
+
+
+            }
+        }, 3000);
+
+
+
+
     }
 
-    private void Wrong() {
+    private void Wrong(int num) {
         Toast.makeText(getActivity(), "Wrong", Toast.LENGTH_SHORT).show();
-        updateQuestion();
+
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
+        d.setEnabled(false);
+
+
+        if (num == 1) {
+
+            a.setBackgroundColor(Color.RED);
+
+
+
+        } else if (num == 2){
+
+            b.setBackgroundColor(Color.RED);
+
+
+        } else if (num == 3) {
+
+            c.setBackgroundColor(Color.RED);
+
+
+        } else if (num == 4) {
+            d.setBackgroundColor(Color.RED);
+        }
+
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Do something after 5s = 5000ms
+                updateQuestion();
+
+                a.setBackgroundResource(android.R.drawable.btn_default);
+                b.setBackgroundResource(android.R.drawable.btn_default);
+                c.setBackgroundResource(android.R.drawable.btn_default);
+                d.setBackgroundResource(android.R.drawable.btn_default);
+
+                a.setEnabled(true);
+                b.setEnabled(true);
+                c.setEnabled(true);
+                d.setEnabled(true);
+
+
+
+            }
+        }, 3000);
+
     }
 
 
@@ -208,32 +320,33 @@ public class Quizzer extends Fragment implements View.OnClickListener{
         switch (view.getId()){
             case R.id.a:
                 if (a.getText() == answer) {
-                    Correct();
+                    Correct(1);
+
                 } else {
-                    Wrong();
+                    Wrong(1);
                 }
 
                 break;
             case R.id.b:
                 if (b.getText() == answer) {
-                    Correct();
+                    Correct(2);
                 } else {
-                    Wrong();
+                    Wrong(2);
                 }
                 break;
             case R.id.c:
                 if (c.getText() == answer) {
-                    Correct();
+                    Correct(3);
                 } else {
-                    Wrong();
+                    Wrong(3);
                 }
                 break;
 
             case R.id.d:
                 if (d.getText() == answer) {
-                    Correct();
+                    Correct(4);
                 } else {
-                    Wrong();
+                    Wrong( 4);
                 }
                 break;
 
