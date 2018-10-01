@@ -12,6 +12,7 @@
         android:id="@+id/bm"
         app:showAsAction="ifRoom"
         android:title="Bookmarks"
+        android:icon="@drawable/bookmarkicon"
         />
 
 </menu>
