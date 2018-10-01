@@ -80,6 +80,9 @@ public class HomeFragment extends Fragment {
 
         if(storyTitle != null){
             btnRedirect.setText(storyTitle);
+        }else{
+            btnRedirect.setEnabled(false);
+            btnRedirect.setText("");
         }
         // Inflate the layout for this fragment
 
