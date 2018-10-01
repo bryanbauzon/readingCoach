@@ -75,7 +75,7 @@ public class HomeFragment extends Fragment {
         //shared preferences
         SharedPreferences pref = getActivity().getSharedPreferences("story",Context.MODE_PRIVATE);
         final String storyTitle = pref.getString("storyTitle",null);
-      final String id_holder =  pref.getString("id",null);
+        final String id_holder =  pref.getString("id",null);
         final String level =  pref.getString("level",null);
 
         if(storyTitle != null){
