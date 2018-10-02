@@ -2,12 +2,15 @@ package sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -53,6 +56,9 @@ public class Story extends Fragment {
     InputStream is;
     GlobalVariable gv;
     DatabaseHelper db;
+
+
+
     private boolean check = false;
 
     private OnFragmentInteractionListener mListener;
@@ -102,6 +108,13 @@ public class Story extends Fragment {
         db = new DatabaseHelper(getActivity());
         gv = new GlobalVariable();
 
+
+
+//        SharedPreferences pref = getActivity().getSharedPreferences("bookmark",Context.MODE_PRIVATE);
+//        final String status = pref.getString("bookmarked",null);
+//
+//        if(status != null){
+//        }
         //color scheme
         if (GlobalVariable.color == 1){
             view.setBackgroundColor(Color.parseColor("#000000"));
@@ -134,10 +147,26 @@ public class Story extends Fragment {
         id_temp = intent.getStringExtra("id");
         title = intent.getStringExtra("title");
 
+
+       // Toast.makeText(getActivity(),title_holder,Toast.LENGTH_LONG).show();
+        if(db.bookmarkhasObject(id_temp)){
+          //  menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkedicon));
+            Log.e("obj","true");
+            Toast.makeText(getActivity(),"True",Toast.LENGTH_SHORT).show();
+
+        }else{
+            Log.e("obj","false");
+            Toast.makeText(getActivity(),"False",Toast.LENGTH_SHORT).show();
+
+            //   menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkicon));
+
+        }
+
+
         txtTitle.setText(title);
 
         int id = Integer.parseInt(id_temp);
-        Toast.makeText(getActivity(),id_temp, Toast.LENGTH_SHORT).show();
+
         //text to speech
         textToSpeech = new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
             @Override
@@ -741,6 +770,7 @@ public class Story extends Fragment {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
+
     }
 
     @Override
@@ -781,12 +811,12 @@ public class Story extends Fragment {
                 MenuItem menuItem = menu.findItem(R.id.t2s);
 
                 if(ctr == 1){
-                    menuItem.setTitle("Stop");
+                   // menuItem.setTitle("Stop");
                     String toSpeak = txtContent.getText().toString();
                     textToSpeech.speak(toSpeak,TextToSpeech.QUEUE_FLUSH,null);
 
                 }else{
-                    menuItem.setTitle("Speech");
+                 //   menuItem.setTitle("Speech");
                     textToSpeech.stop();
 
                     ctr = 0;
@@ -803,15 +833,25 @@ public class Story extends Fragment {
     }
 
     private void addBookmark() {
-
+        SharedPreferences pref = getActivity().getSharedPreferences("bookmark",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
         if (!db.hasObject(id_temp)) {
             db.insertDataBookmarks(title, id_temp, level);
             check = true;
             Toast.makeText(getActivity(), "Added to bookmarks", Toast.LENGTH_SHORT).show();
+
+            menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkedicon));
+
         } else {
             db.deleteDataBookmarks(id_temp);
             check = false;
             Toast.makeText(getActivity(), "Removed to bookmarks", Toast.LENGTH_SHORT).show();
+
+
+
+            editor.apply();
+            menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkicon));
+
         }
 
     }

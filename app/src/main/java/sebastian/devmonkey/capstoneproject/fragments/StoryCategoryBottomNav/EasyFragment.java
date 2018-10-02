@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
@@ -18,6 +19,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
@@ -39,6 +42,7 @@ public class EasyFragment extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String mParam1;
+    TextToSpeech textToSpeech;
     private String mParam2;
     private SearchView searchView = null;
     private SearchView.OnQueryTextListener queryTextListener;
@@ -84,7 +88,16 @@ public class EasyFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_easy, container, false);
-
+        //text to speech
+        textToSpeech = new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if(i != TextToSpeech.ERROR){
+                    textToSpeech.setLanguage(Locale.US);
+                    textToSpeech.setPitch(0.8f);
+                }
+            }
+        });
 
         Arrays storyTitle = new Arrays();
 
@@ -129,6 +142,14 @@ public class EasyFragment extends Fragment {
 
         // Inflate the layout for this fragment
         return view;
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if(textToSpeech != null){
+            textToSpeech.shutdown();
+        }
     }
 
     // TODO: Rename method, update argument and hook method into UI event
