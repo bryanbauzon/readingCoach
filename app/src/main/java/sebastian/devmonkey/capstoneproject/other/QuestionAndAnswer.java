@@ -2115,9 +2115,9 @@ private String[] nutsQuestion =
                 return answer6[a];
             } else if (id == 6) {
                 return answer7[a];
-            } //else if (id == 7) {
-//                return answer8[a];
-//            } else if (id == 8) {
+            } else if (id == 7) {
+                return answer9[a];
+            } //else if (id == 8) {
 //                return null;
 //            } else if (id == 9) {
 //                return answer10[a];
@@ -2216,9 +2216,9 @@ private String[] nutsQuestion =
                 return choices6[a][0];
             } else if (id == 6) {
                 return choices7[a][0];
-            }// else if (id == 7) {
-//                return choices8[a][0];
-//            } else if (id == 8) {
+            } else if (id == 7) {
+                return choices9[a][0];
+            } //else if (id == 8) {
 //                return null;
 //            } else if (id == 9) {
 //                return choices10[a][0];
@@ -2231,7 +2231,74 @@ private String[] nutsQuestion =
 //            } else if (id == 13) {
 //                return choices14[a][0];
 //            }
+        } else if (level.equals("intermediate")) {
+
+            if (id == 0) {
+                return internChoices3[a][0];
+            } else if (id == 1) {
+                return internChoices4[a][0];
+            } else if (id == 2) {
+                return internChoices5[a][0];
+            } else if (id == 3) {
+                return internChoices75[a][0];
+            } else if (id == 4){
+                return internChoices6[a][0];
+            } else if (id == 5){
+                return internChoices7[a][0];
+            } else if (id == 6){
+                return internChoices8[a][0];
+            } else if (id == 7){
+                return internChoices76[a][0];
+            } else if (id == 8){
+                return internChoices9[a][0];
+            } else if (id == 9){
+                return internChoices77[a][0];
+            } else if (id == 10){
+                return internChoices10[a][0];
+            } else if (id == 11){
+                return internChoices11[a][0];
+            } else if (id == 12){
+                return internChoices12[a][0];
+            } else if (id == 13){
+                return internChoices13[a][0];
+            } else if (id == 14){
+                return internChoices14[a][0];
+            } else if (id == 15){
+                return internChoices15[a][0];
+            } else if (id == 16){
+                return internChoices6[a][0];
+            } else if (id == 17){
+                return internChoices78[a][0];
+            } else if (id == 18){
+                return internChoices79[a][0];
+            } else if (id == 19){
+                return internChoices80[a][0];
+            }else if (id == 20){
+                return internChoices16[a][0];
+            } else if (id == 21){
+                return internChoices81[a][0];
+            } else if (id == 22){
+                return internChoices82[a][0];
+            } else if (id == 23){
+                return internChoices83[a][0];
+            } else if (id == 24){
+                return internChoices17[a][0];
+            } else if (id == 25){
+                return internChoices18[a][0];
+            } else if (id == 26){
+                return internChoices19[a][0];
+            } else if (id == 27){
+                return internChoices84[a][0];
+            } else if (id == 28){
+                return internChoices20[a][0];
+            } else if (id == 29){
+                return internChoices21[a][0];
+            }
         }
+
+
+
+
         return null;
     }
 
@@ -2254,9 +2321,9 @@ private String[] nutsQuestion =
                 return choices6[a][1];
             } else if (id == 6) {
                 return choices7[a][1];
-            } //else if (id == 7) {
-//                return choices8[a][1];
-//            } else if (id == 8) {
+            } else if (id == 7) {
+                return choices9[a][1];
+            } //else if (id == 8) {
 //                return null;
 //            } else if (id == 9) {
 //                return choices10[a][1];
@@ -2269,7 +2336,72 @@ private String[] nutsQuestion =
 //            } else if (id == 13) {
 //                return choices14[a][1];
 //            }
+        } else if (level.equals("intermediate")) {
+
+            if (id == 0) {
+                return internChoices3[a][1];
+            } else if (id == 1) {
+                return internChoices4[a][1];
+            } else if (id == 2) {
+                return internChoices5[a][1];
+            } else if (id == 3) {
+                return internChoices75[a][1];
+            } else if (id == 4){
+                return internChoices6[a][1];
+            } else if (id == 5){
+                return internChoices7[a][1];
+            } else if (id == 6){
+                return internChoices8[a][1];
+            } else if (id == 7){
+                return internChoices76[a][1];
+            } else if (id == 8){
+                return internChoices9[a][1];
+            } else if (id == 9){
+                return internChoices77[a][1];
+            } else if (id == 10){
+                return internChoices10[a][1];
+            } else if (id == 11){
+                return internChoices11[a][1];
+            } else if (id == 12){
+                return internChoices12[a][1];
+            } else if (id == 13){
+                return internChoices13[a][1];
+            } else if (id == 14){
+                return internChoices14[a][1];
+            } else if (id == 15){
+                return internChoices15[a][1];
+            } else if (id == 16){
+                return internChoices6[a][1];
+            } else if (id == 17){
+                return internChoices78[a][1];
+            } else if (id == 18){
+                return internChoices79[a][1];
+            } else if (id == 19){
+                return internChoices80[a][1];
+            }else if (id == 20){
+                return internChoices16[a][1];
+            } else if (id == 21){
+                return internChoices81[a][1];
+            } else if (id == 22){
+                return internChoices82[a][1];
+            } else if (id == 23){
+                return internChoices83[a][1];
+            } else if (id == 24){
+                return internChoices17[a][1];
+            } else if (id == 25){
+                return internChoices18[a][1];
+            } else if (id == 26){
+                return internChoices19[a][1];
+            } else if (id == 27){
+                return internChoices84[a][1];
+            } else if (id == 28){
+                return internChoices20[a][1];
+            } else if (id == 29){
+                return internChoices21[a][1];
+            }
         }
+
+
         return null;
     }
 
@@ -2291,9 +2423,9 @@ private String[] nutsQuestion =
                 return choices6[a][2];
             } else if (id == 6) {
                 return choices7[a][2];
-            } //else if (id == 7) {
-//                return choices8[a][2];
-//            } else if (id == 8) {
+            } else if (id == 7) {
+                return choices89[a][2];
+//            } //else if (id == 8) {
 //                return null;
 //            } else if (id == 9) {
 //                return choices10[a][2];
@@ -2306,7 +2438,74 @@ private String[] nutsQuestion =
 //            } else if (id == 13) {
 //                return choices14[a][2];
 //            }
+        } else if (level.equals("intermediate")) {
+
+            if (id == 0) {
+                return internChoices3[a][2];
+            } else if (id == 1) {
+                return internChoices4[a][2];
+            } else if (id == 2) {
+                return internChoices5[a][2];
+            } else if (id == 3) {
+                return internChoices75[a][2];
+            } else if (id == 4){
+                return internChoices6[a][2];
+            } else if (id == 5){
+                return internChoices7[a][2];
+            } else if (id == 6){
+                return internChoices8[a][2];
+            } else if (id == 7){
+                return internChoices76[a][2];
+            } else if (id == 8){
+                return internChoices9[a][2];
+            } else if (id == 9){
+                return internChoices77[a][2];
+            } else if (id == 10){
+                return internChoices10[a][2];
+            } else if (id == 11){
+                return internChoices11[a][2];
+            } else if (id == 12){
+                return internChoices12[a][2];
+            } else if (id == 13){
+                return internChoices13[a][2];
+            } else if (id == 14){
+                return internChoices14[a][2];
+            } else if (id == 15){
+                return internChoices15[a][2];
+            } else if (id == 16){
+                return internChoices6[a][2];
+            } else if (id == 17){
+                return internChoices78[a][2];
+            } else if (id == 18){
+                return internChoices79[a][2];
+            } else if (id == 19){
+                return internChoices80[a][2];
+            }else if (id == 20){
+                return internChoices16[a][2];
+            } else if (id == 21){
+                return internChoices81[a][2];
+            } else if (id == 22){
+                return internChoices82[a][2];
+            } else if (id == 23){
+                return internChoices83[a][2];
+            } else if (id == 24){
+                return internChoices17[a][2];
+            } else if (id == 25){
+                return internChoices18[a][2];
+            } else if (id == 26){
+                return internChoices19[a][2];
+            } else if (id == 27){
+                return internChoices84[a][2];
+            } else if (id == 28){
+                return internChoices20[a][2];
+            } else if (id == 29){
+                return internChoices21[a][2];
+            }
         }
+
+
+
+
         return null;
     }
 
@@ -2328,9 +2527,9 @@ private String[] nutsQuestion =
                 return choices6[a][3];
             } else if (id == 6) {
                 return choices7[a][3];
-            } //else if (id == 7) {
-//                return choices8[a][3];
-//            } else if (id == 8) {
+            } else if (id == 7) {
+                return choices9[a][3];
+            } //else if (id == 8) {
 //                return null;
 //            } else if (id == 9) {
 //                return choices10[a][3];
@@ -2343,7 +2542,73 @@ private String[] nutsQuestion =
 //            } else if (id == 13) {
 //                return choices14[a][3];
 //            }
+        } else if (level.equals("intermediate")) {
+
+            if (id == 0) {
+                return internChoices3[a][3];
+            } else if (id == 1) {
+                return internChoices4[a][3];
+            } else if (id == 2) {
+                return internChoices5[a][3];
+            } else if (id == 3) {
+                return internChoices75[a][3];
+            } else if (id == 4){
+                return internChoices6[a][3];
+            } else if (id == 5){
+                return internChoices7[a][3];
+            } else if (id == 6){
+                return internChoices8[a][3];
+            } else if (id == 7){
+                return internChoices76[a][3];
+            } else if (id == 8){
+                return internChoices9[a][3];
+            } else if (id == 9){
+                return internChoices77[a][3];
+            } else if (id == 10){
+                return internChoices10[a][3];
+            } else if (id == 11){
+                return internChoices11[a][3];
+            } else if (id == 12){
+                return internChoices12[a][3];
+            } else if (id == 13){
+                return internChoices13[a][3];
+            } else if (id == 14){
+                return internChoices14[a][3];
+            } else if (id == 15){
+                return internChoices15[a][3];
+            } else if (id == 16){
+                return internChoices6[a][3];
+            } else if (id == 17){
+                return internChoices78[a][3];
+            } else if (id == 18){
+                return internChoices79[a][3];
+            } else if (id == 19){
+                return internChoices80[a][3];
+            }else if (id == 20){
+                return internChoices16[a][3];
+            } else if (id == 21){
+                return internChoices81[a][3];
+            } else if (id == 22){
+                return internChoices82[a][3];
+            } else if (id == 23){
+                return internChoices83[a][3];
+            } else if (id == 24){
+                return internChoices17[a][3];
+            } else if (id == 25){
+                return internChoices18[a][3];
+            } else if (id == 26){
+                return internChoices19[a][3];
+            } else if (id == 27){
+                return internChoices84[a][3];
+            } else if (id == 28){
+                return internChoices20[a][3];
+            } else if (id == 29){
+                return internChoices21[a][3];
+            }
         }
+
+
+
         return null;
     }
 
