@@ -814,9 +814,14 @@ public class Story extends Fragment {
                    // menuItem.setTitle("Stop");
                     String toSpeak = txtContent.getText().toString();
                     textToSpeech.speak(toSpeak,TextToSpeech.QUEUE_FLUSH,null);
+                    menu.getItem(0).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.speech));
+
+
 
                 }else{
                  //   menuItem.setTitle("Speech");
+                    menu.getItem(0).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.defaultspeaker));
+
                     textToSpeech.stop();
 
                     ctr = 0;

@@ -57,7 +57,9 @@
         <activity
             android:name=".other.HowToUse"
             android:screenOrientation="portrait"
-            android:theme="@style/Custom"/>
+            android:theme="@style/Custom">
+
+        </activity>
 
         <activity android:name=".activity.Poem.PoemReading"
             android:screenOrientation="portrait"

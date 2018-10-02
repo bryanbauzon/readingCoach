@@ -6,7 +6,8 @@
     android:id="@+id/t2s"
     app:showAsAction="ifRoom"
     android:title="Speech"
-        android:icon="@drawable/speech"
+        android:icon="@drawable/defaultspeaker"
+
     />
 
     <item

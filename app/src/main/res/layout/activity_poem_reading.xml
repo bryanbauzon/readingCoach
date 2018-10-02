@@ -15,12 +15,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtTitlePoem"
         android:textStyle="bold"
-        android:text="Title"
-        android:textSize="20dp" />
+        android:maxLines="1"
+        android:padding="10dp"
+        />
 
 
 
     <TextView
+        android:layout_below="@+id/txtTitlePoem"
         android:id="@+id/txtContentPoem"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"

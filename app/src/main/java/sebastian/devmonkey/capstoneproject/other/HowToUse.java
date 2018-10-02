@@ -70,6 +70,7 @@ public class HowToUse extends AppCompatActivity {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean("firstStart",false);
         editor.apply();
+        editor.commit();
     }
 
     public void addDotIndicator(int position){

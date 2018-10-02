@@ -16,11 +16,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-
-
-
-
-        new Handler().postDelayed(new Runnable() {
+       new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent =  new Intent();
@@ -30,11 +26,11 @@ public class SplashScreen extends AppCompatActivity {
                 SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
                 boolean firstStart = prefs.getBoolean("firstStart",true);
 //
-                if(firstStart){
-                    intent.setClass(SplashScreen.this,HowToUse.class);
-
-                }else{
+                if(!firstStart) {
                     intent.setClass(SplashScreen.this,MainActivity.class);
+
+               }else{
+                    intent.setClass(SplashScreen.this, HowToUse.class);
 
                 }
                 startActivity(intent);
