@@ -1,4 +1,4 @@
-CELLS	"Your body is made of trillions of tiny living things. They are called cells. There are 210 different kinds of
+	"Your body is made of trillions of tiny living things. They are called cells. There are 210 different kinds of
 cells in your body. Each kind of cell has a different shape. Each kind of cell is a different size. Each kind of
 cell has a different job. The same types of cells usually work together in groups. The groups are called
 tissues. More cells can be made when the cells split. They form more cells that are just like the parents.
@@ -11,8 +11,8 @@ goes from your brain all the way down your back. Some of your cells are red bloo
 oxygen (O) through your body. They pick up carbon dioxide (CO2 ) and help your body get rid of it. Your
 body wants to eliminate CO2 because it is a waste product. Blood also helps your body stay warm.
 Conversely, blood cools off your brain, because it gets very hot. Some of your cells are white blood cells.
-The white blood cells help your body fight sickness. Some of the white blood cells, called T–cells, fight
-viruses and other cells that do not belong in your body. T–cells work with B–cells to fight off the disease
+The white blood cells help your body fight sickness. Some of the white blood cells, called T-cells, fight
+viruses and other cells that do not belong in your body. T-cells work with B-cells to fight off the disease
 cells. They tell your brain to give you a fever so the disease cells will not be able to grow. Many diseases
 cannot grow when your body is hot. And some white cells eat disease cells! Go white blood cells! Some
 of your cells are bone cells. They are also called osteocytes. Osteocytes make bone. The bone grows to

@@ -1,39 +1,7 @@
-GALAXIES
-By John Gribben
 
-Overview A galaxy is a massive complex, or system, of stars, remnants of stars, an interstellar medium of gas and dust, and dark matter. Some include multiple star systems, clusters, and interstellar clouds. Galaxies are bound by gravity and contain millions to trillions of stars. The size of some galaxies are measured in units called parsecs, while others are measured in light-years. One parsec is equivalent to about 19 trillion miles (31 trillion kilometers). An average galaxy may extend from 1,000–100,000 parsecs. A light-year is the distance that light travels in an Earth year. Light travels at nearly 300,000 kilometers per second (180,000 miles). If you were to calculate the actual size of a galaxy using numbers rather than the aforementioned units, the resulting figure would be impossible to understand or conceptualize. Galaxies are usually separated by spaces that extend over millions of parsecs. These vast spaces are called intergalactic spaces. Despite the vast distances between them, galaxies are often organized into clusters and superclusters. Clusters and superclusters are then organized into sheets and filaments. A filament, defined as structures that form the boundaries between large voids in the universe, are the largest known structures in the universe.
+
+Overview A galaxy is a massive complex, or system, of stars, remnants of stars, an interstellar medium of gas and dust, and dark matter. Some include multiple star systems, clusters, and interstellar clouds. Galaxies are bound by gravity and contain millions to trillions of stars. The size of some galaxies are measured in units called parsecs, while others are measured in light-years. One parsec is equivalent to about 19 trillion miles (31 trillion kilometers). An average galaxy may extend from 1,000ï¿½100,000 parsecs. A light-year is the distance that light travels in an Earth year. Light travels at nearly 300,000 kilometers per second (180,000 miles). If you were to calculate the actual size of a galaxy using numbers rather than the aforementioned units, the resulting figure would be impossible to understand or conceptualize. Galaxies are usually separated by spaces that extend over millions of parsecs. These vast spaces are called intergalactic spaces. Despite the vast distances between them, galaxies are often organized into clusters and superclusters. Clusters and superclusters are then organized into sheets and filaments. A filament, defined as structures that form the boundaries between large voids in the universe, are the largest known structures in the universe.
 Types of Galaxies Galaxies are usually classified according to their shape. Elliptical galaxies are round; spiral galaxies are characterized by their long, spiraling arms; and peculiar galaxies are shaped irregularly, likely because of the gravitational pull of a nearby galaxy. Scientists estimate the presence of 100 billion galaxies in the universe.
 Dark Matter About 90 percent of the mass of an average galaxy is made of up mysterious, invisible masses called dark matter. Dark matter is hypothetical; its actual existence is simply scientific and mathematical conjecture (educated guess). Only its gravitational effects on visible objects can be observed (such as the rotational curves of spiral galaxies). Some scientists think dark matter is concentrated in huge masses such as black holes.
 
 
-
-
-
-
-
-Questions
-1.) The shape of irregular galaxies is likely caused by the _____ of nearby galaxies. 
-a.) gravitational pull (-)
-b.) orbit 
-c.) size 
-d.) rotation 
-2.) The largest known structures in the universe are called _____. 
-a.) sheets 
-b.) filaments (-)
-c.) galaxies 
-d.) solar systems 
-3.) A light-year is the _____ in which light travels in one year. 
-a.) distance (-)
-b.) speed 
-c.) volume 
-d.) velocity 
-4.) The Large Magellanic Cloud is a ____ that orbits the _____. 
-a.) galaxy; sun 
-b.) star; Milky Way (-)
-c.) galaxy; Milky War 
-d.) star; sun 
-5.) Spaces in between galaxies are called _____. 
-a.) solar systems 
-b.) clusters 
-c.) intergalactic spaces (-)
-d.) interstellar clouds

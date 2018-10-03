@@ -1,12 +1,12 @@
-FINGERPRINTS	"If you enjoy watching crime shows on TV, you know that fingerprints play a large role in identifying
+"If you enjoy watching crime shows on TV, you know that fingerprints play a large role in identifying
 people. But, you might be surprised to find out that using fingerprints for identification is not a new
-science. In fact, it is very old –– dating back at least as far as 1885-1913 B.C.E. In Babylon, when people
+science. In fact, it is very old '' dating back at least as far as 1885-1913 B.C.E. In Babylon, when people
 agreed to a business contract, they pressed their fingerprints into the clay in which the contract was
 written. Thumbprints have also been found on clay seals from ancient China. In 14th century Persia,
 which is now Iran, a government doctor recognized that all fingerprints are different. In 1684, a British
 doctor, Nehemiah Grew, spoke about the ridged surfaces of the fingers. In 1686, a professor of anatomy
 (the study of the structure of the human body) named Marcello Malpighi, wrote about the ridges and
-loops in fingerprints. Malpighi’s work was considered so important that a layer of skin found on the
+loops in fingerprints. Malpighi's work was considered so important that a layer of skin found on the
 fingertips was named after him. This layer of skin is called the Malpighian layer. Although scientists had
 studied fingerprints, the value of fingerprinting in the identification of individuals did not become clear
 until later. Sir William James Herschel is generally thought to be the first European to realize that
@@ -21,11 +21,11 @@ surgeon at a Japanese hospital, began studying the furrows (also called ridges) 
 1870s. He published an article in a scientific journal about the use of fingerprints as a tool in
 identification. He also devised, or invented, a system of classifying fingerprints. He wrote Charles Darwin
 about his findings, but Darwin was getting too old to work on the findings. So, he promised to pass the
-information to his cousin, Sir Francis Galton. Using Henry Faulds’s findings, Galton published a major
+information to his cousin, Sir Francis Galton. Using Henry Faulds's findings, Galton published a major
 book on classifying fingerprints based on arches, loops, and whorls. His work with Sir Edward R. Henry
 on fingerprint classification was the basis of a classification system which is still used by law
-enforcement agencies in English–speaking countries. The Federal Bureau of Investigation (FBI) now uses
-a variation of the Galton– Henry system. Although the use of fingerprinting in identification originated in
+enforcement agencies in English'speaking countries. The Federal Bureau of Investigation (FBI) now uses
+a variation of the Galton' Henry system. Although the use of fingerprinting in identification originated in
 Britain, it has been developed in the United States. In 1924, two large fingerprint collections were
 combined to form the foundation of the Identification Division of the FBI. Within the Identification
 Division, the Integrated Automated Fingerprint Identification Systems (IAFIS) can search and find
@@ -36,4 +36,4 @@ all the fingerprints are related to criminal investigations. People need to have
 many other reasons. People have their fingerprints taken for employment, licenses, and adoption. For
 example, when people want to work for the government in classified, secret jobs, their fingerprints are
 checked to be sure they do not have a criminal background. When prospective parents adopt a child,
-their fingerprints are matched against those of all criminals for the safety of the child."	Susan Carter
+their fingerprints are matched against those of all criminals for the safety of the child."

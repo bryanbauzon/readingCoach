@@ -1,4 +1,4 @@
-BEARS	"American Black Bears live in the U.S., Canada, and Mexico. An American Black Bear can be up to seven
+	"American Black Bears live in the U.S., Canada, and Mexico. An American Black Bear can be up to seven
 feet tall if it stands on its hind legs. A mother Black Bear can have 2-4 baby bears. They have the bears in
 winter. The baby bears are called cubs. During the winter, the cubs stay with their mother in the bear
 den. During the summer, the cubs like to go outside. They like to run and play. The cubs drink milk
@@ -10,4 +10,4 @@ Brown Bears are very big. A Brown Bear can be up to ten feet tall if it stands o
 Bear cubs, Brown Bear cubs are born in winter. They drink milk until spring or summer. The mothers
 have 2- 4 cubs. Brown Bear cubs stay with their mothers for 2-4 years. The adult females, called sows,
 teach them to hunt. They like to hunt at night. They like to hunt in large, open spaces. Brown Bears eat
-mostly fruits and vegetables, but they also hunt and eat other animals."	Susan Carter
+mostly fruits and vegetables, but they also hunt and eat other animals."

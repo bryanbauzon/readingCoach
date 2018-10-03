@@ -1,4 +1,4 @@
-JULIAN	"Julian works at the bookstore. First, his job is to unload boxes of books from the truck. Then he opens
+"Julian works at the bookstore. First, his job is to unload boxes of books from the truck. Then he opens
 the boxes. After that, Julian puts the books in different piles. One pile is for books that tell true stories.
 These are called books of fact. Another pile is for books that tell stories that are not true. These are
 called books of fiction. Julian then puts the books on shelves in the bookstore. Putting books on shelves
@@ -7,4 +7,4 @@ the books. His favorite books are the ones that tell true stories about real peo
 Sunday and Monday, Julian does not work at the bookstore. On these days, he stays at home. He uses
 this time to write a story about himself. Julian grew up in Peru. Now he lives in the United States. He
 works at the bookstore to pay for school. Julian wants to be a teacher. One day, he hopes to turn his
-story into a book. He hopes to see it at the bookstore."	Susan Carter
+story into a book. He hopes to see it at the bookstore."

@@ -1,4 +1,4 @@
-EATING OUT	"It's 8pm. Mr Smith (Jack) and Mrs Smith (Jill) are celebrating their 10th wedding anniversary. They have just arrived at the restaurant.
+"It's 8pm. Mr Smith (Jack) and Mrs Smith (Jill) are celebrating their 10th wedding anniversary. They have just arrived at the restaurant.
 
 Mr Smith: Well here we are. What do you think?
 
@@ -69,4 +69,4 @@ Mr Smith: Yes that would be great, thank you.
 Mrs Smith: What a nice man, we must leave him a good tip.
 
 Mr Smith: Yes of course.
-"	Shaktii
+"
