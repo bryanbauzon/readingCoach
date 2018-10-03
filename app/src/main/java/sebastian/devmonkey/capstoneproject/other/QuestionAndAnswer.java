@@ -2136,31 +2136,31 @@ public class QuestionAndAnswer {
             } else if (id == 15) {
                 return internAnswer15[a];
             } else if (id == 16) {
-                return internAnswer6[a];
-            } else if (id == 17) {
                 return internAnswer78[a];
-            } else if (id == 18) {
+            } else if (id == 17) {
                 return internAnswer79[a];
-            } else if (id == 19) {
+            } else if (id == 18) {
                 return internAnswer80[a];
-            } else if (id == 20) {
+            } else if (id == 19) {
                 return internAnswer16[a];
-            } else if (id == 21) {
+            } else if (id == 20) {
                 return internAnswer81[a];
-            } else if (id == 22) {
+            } else if (id == 21) {
                 return internAnswer82[a];
-            } else if (id == 23) {
+            } else if (id == 22) {
                 return internAnswer83[a];
-            } else if (id == 24) {
+            } else if (id == 23) {
                 return internAnswer17[a];
-            } else if (id == 25) {
+            } else if (id == 24) {
                 return internAnswer18[a];
-            } else if (id == 26) {
+            } else if (id == 25) {
                 return internAnswer19[a];
-            } else if (id == 27) {
+            } else if (id == 26) {
                 return internAnswer84[a];
-            } else if (id == 28) {
+            } else if (id == 27) {
                 return internAnswer20[a];
+            } else if (id == 28) {
+                return internAnswer21[a];
             } else if (id == 29) {
                 return internAnswer21[a];
             }

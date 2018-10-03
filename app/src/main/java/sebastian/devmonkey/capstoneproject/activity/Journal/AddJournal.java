@@ -68,7 +68,7 @@ AddJournal extends AppCompatActivity {
         String title = edtTitle.getText().toString();
         String content = edtContent.getText().toString();
         if (!title.equals("") && !content.equals("")) {
-            //Toast.makeText(getApplicationContext(), "Data added", Toast.LENGTH_LONG).show();
+
 
             if (!db.JournalHasObject(title)){
                 db.insertData(title, content);

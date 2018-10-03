@@ -2,7 +2,6 @@ package sebastian.devmonkey.capstoneproject.activity.Flash;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.graphics.Color;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AlertDialog;
@@ -12,12 +11,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -84,8 +78,8 @@ public class FlashCards extends AppCompatActivity {
         i.putExtra(RecognizerIntent.EXTRA_PROMPT,"Say the word...");
         try{
             startActivityForResult(i,100);
-        }catch(ActivityNotFoundException a){
-            Toast.makeText(getApplicationContext(), "Intent problem", Toast.LENGTH_SHORT).show();
+        }catch(ActivityNotFoundException ignored){
+
         }
     }
     @Override
@@ -127,7 +121,6 @@ public class FlashCards extends AppCompatActivity {
                             correctDialog.setView(correctDialogView);
                             correctDialog.show();
                         }else{
-                         //   Toast.makeText(getApplicationContext(),"Mali",Toast.LENGTH_SHORT).show();
                             tts.speak("Sorry, please try again.",TextToSpeech.QUEUE_FLUSH,null);
 
                         }
