@@ -98,6 +98,7 @@ public class FlashCards extends AppCompatActivity {
                     ArrayList<String> resultData = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 
                         if(word.getText().toString().equals(resultData.get(0))){
+                            tts.speak("You got it!",TextToSpeech.QUEUE_FLUSH,null);
 
                             LayoutInflater factory = LayoutInflater.from(this);
                             final View correctDialogView = factory.inflate(R.layout.customized_alert_dialog,null);
@@ -105,12 +106,22 @@ public class FlashCards extends AppCompatActivity {
 
                             //initialization of button from custom alert dialog
                             Button yes = (Button)correctDialogView.findViewById(R.id.btnYes);
+                            Button no = (Button)correctDialogView.findViewById(R.id.btnNo);
+
                             yes.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
                                     correctDialog.dismiss();
                                     word.setText(null);
                                     word.requestFocus();
+
+                                }
+                            });
+
+                            no.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    correctDialog.dismiss();
                                 }
                             });
                             correctDialog.setView(correctDialogView);

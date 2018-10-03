@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
+import sebastian.devmonkey.capstoneproject.other.Poems;
 
 public class PoemReading extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class PoemReading extends AppCompatActivity {
     String id_temp, title, level;
     InputStream is;
     RelativeLayout rl;
+    Poems poems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class PoemReading extends AppCompatActivity {
         setContentView(R.layout.activity_poem_reading);
 
         gv = new GlobalVariable();
+        poems = new Poems();
 
         intent = getIntent();
         txtTitle = findViewById(R.id.txtTitlePoem);
@@ -87,8 +90,7 @@ public class PoemReading extends AppCompatActivity {
 
             //testing for id
             if (id == 0) {
-                //array is always starts at 0;
-                is = getResources().openRawResource(R.raw.poem_sonnet1);
+              txtContent.setText(poems.sonnet1[0]);
             } else if(id == 1){
                 is = getResources().openRawResource(R.raw.poem_sonnet2);
             } else if(id == 2){
@@ -192,20 +194,20 @@ public class PoemReading extends AppCompatActivity {
             } else if (id == 51) {
                 is = getResources().openRawResource(R.raw.poem_sonnet52);
             }
-
-            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-            if (is != null) {
-                try {
-                    //assigning the value of reader to data and test it until the condition meets,
-                    while ((data = reader.readLine()) != null) {
-                        stringBuffer.append(data + "");
-                    }
-                    txtContent.setText(stringBuffer);
-                    is.close();
-                } catch (Exception e) {
-
-                }
-            }
+//
+//            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+//            if (is != null) {
+//                try {
+//                    //assigning the value of reader to data and test it until the condition meets,
+//                    while ((data = reader.readLine()) != null) {
+//                        stringBuffer.append(data + "");
+//                    }
+//                    txtContent.setText(stringBuffer);
+//                    is.close();
+//                } catch (Exception e) {
+//
+//                }
+//            }
         }
 
     }

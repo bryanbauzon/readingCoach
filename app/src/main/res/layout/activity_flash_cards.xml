@@ -24,6 +24,7 @@
            android:background="@color/white"
            android:id="@+id/word"
            android:padding="12dp"
+           android:inputType="text"
            android:layout_height="wrap_content" />
 
        <Button

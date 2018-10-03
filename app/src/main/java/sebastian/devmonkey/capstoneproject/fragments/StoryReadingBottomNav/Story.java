@@ -815,15 +815,9 @@ public class Story extends Fragment {
                     String toSpeak = txtContent.getText().toString();
                     textToSpeech.speak(toSpeak,TextToSpeech.QUEUE_FLUSH,null);
                     menu.getItem(0).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.speech));
-
-
-
                 }else{
-                 //   menuItem.setTitle("Speech");
                     menu.getItem(0).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.defaultspeaker));
-
                     textToSpeech.stop();
-
                     ctr = 0;
                 }
                 return true;
@@ -851,12 +845,8 @@ public class Story extends Fragment {
             db.deleteDataBookmarks(id_temp);
             check = false;
             Toast.makeText(getActivity(), "Removed to bookmarks", Toast.LENGTH_SHORT).show();
-
-
-
             editor.apply();
             menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkicon));
-
         }
 
     }

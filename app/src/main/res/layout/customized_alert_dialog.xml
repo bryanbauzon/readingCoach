@@ -35,6 +35,17 @@
             android:textColor="@color/colorAccent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <Button
+            android:layout_alignParentBottom="true"
+            android:text="NO"
+            android:id="@+id/btnNo"
+            android:layout_toLeftOf="@+id/btnYes"
+            android:layout_marginRight="10dp"
+            android:background="@color/confirmationMessage"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     </RelativeLayout>
 
 </LinearLayout>

@@ -3,18 +3,18 @@
 
     <item
         android:id="@+id/nav_easy"
-        android:icon="@drawable/ic_settings"
+        android:icon="@drawable/easy"
         android:title="@string/easy" />
 
     <item
         android:id="@+id/nav_intermediate"
-        android:icon="@drawable/ic_settings"
+        android:icon="@drawable/intermediate"
         android:title="@string/intermediate" />
 
 
     <item
         android:id="@+id/nav_hard"
-        android:icon="@drawable/ic_settings"
+        android:icon="@drawable/hard"
         android:title="@string/hard" />
 
 </menu>

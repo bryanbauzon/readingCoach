@@ -365,6 +365,7 @@ public class MainActivity extends AppCompatActivity implements
             @Override
             public void onClick(View view) {
                System.exit(0);
+               finishAffinity();
             }
         });
         no.setOnClickListener(new View.OnClickListener() {
