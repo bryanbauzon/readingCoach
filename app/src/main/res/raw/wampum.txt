@@ -1,7 +1,7 @@
-WAMPUM	"Most people think money is important. They need it. They use it to buy things.
+"Most people think money is important. They need it. They use it to buy things.
 Once there were people who had never heard of money. They lived in North America when the white
 settlers came. They were the first Americans. The settlers called them Indians.
-The Indians didn’t buy or sell things. They had no use for money.
+The Indians didn't buy or sell things. They had no use for money.
 But they had something that they thought was important. They had special beads. Their name for the
 beads was wampum. The settlers called them wampum. The beads were made of shells. Some beads
 were white. Some were dark blue. Some were black. They were like tiny tubes. It took great skill to make
@@ -23,5 +23,5 @@ But the Indians did not think land could be owned. They thought it could be used
 The settlers did not know this. They gave wampum to the Indians. The Indians thought it was a gift. The
 settlers thought they had bought land.
 Neither group understood what the other thought. They had been friends. They became enemies.
-Now wampum is one word for money. It’s a joke, like calling money “bread.” But once wampum meant
-much, much more."	Susan Carter
+Now wampum is one word for money. It's a joke, like calling money 'bread.' But once wampum meant
+much, much more."	

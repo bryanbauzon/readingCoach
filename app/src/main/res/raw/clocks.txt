@@ -1,4 +1,4 @@
-CLOCKS	"Clocks are used to measure time. Clocks are used to show the time. Clocks are used so that people can
+"Clocks are used to measure time. Clocks are used to show the time. Clocks are used so that people can
 agree on the time. People use clocks to measure units of time that are shorter than natural units.
 Natural units are the day, the month, and the year. The sun rises at the beginning of each day. The moon
 is new at the beginning of each month. The sun appears at the same place in the sky at the beginning of
@@ -12,7 +12,7 @@ same speed. Pendulum clocks work with a swinging weight. The swinging weight is 
 The pendulum makes the clock parts move. Now people typically use mechanical clocks or digital clocks.
 Digital clocks show numbers on a screen. The numbers represent the time. Some people use auditory
 clocks. Auditory clocks use language to tell the time aloud. Computers also use clocks. Computers use
-internal clocks in order to work properly. In today’s world, clocks are everywhere –– in homes, schools,
+internal clocks in order to work properly. In today's world, clocks are everywhere '' in homes, schools,
 offices, and public places. Many people live their lives according to the clock. People go to work and
 return home according to the clock. School days start and end according to the clock. Airplanes take off
-and land according to the clock. It is fun to imagine a world without clocks!"	Susan Carter
+and land according to the clock. It is fun to imagine a world without clocks!"	

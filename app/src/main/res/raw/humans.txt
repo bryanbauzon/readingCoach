@@ -1,4 +1,4 @@
-HUMANS	"The human body has many parts. People have two arms and two legs. We have two hands and two feet.
+"The human body has many parts. People have two arms and two legs. We have two hands and two feet.
 We have five fingers on each hand. We have five toes on each foot. We each have two eyes on our face.
 We see with our eyes. We each have two ears. We hear with our ears. We each have one nose on our
 face. We smell with our nose. We each have one tongue. We taste with our tongue. We each have one
@@ -7,4 +7,4 @@ Humans can do many things. People can walk. We use our legs and feet to walk. We
 faster than walking. We use our legs and feet to run. We can climb. We use our arms, hands, legs and
 feet to climb. We can climb up trees or climb up ladders. We can eat and drink. We use our mouth and
 teeth to eat. We eat meat, fruit, vegetables, and other foods. We can drink lots of things, but we drink
-water the most. We also use our mouth and teeth to talk."	Susan Carter
+water the most. We also use our mouth and teeth to talk."

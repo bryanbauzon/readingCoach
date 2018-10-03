@@ -1,4 +1,4 @@
-YELLOWSTONE NATIONAL PARK	"Yellowstone National Park is in the U.S. states of Wyoming, Idaho, and Montana. It became the first
+	"Yellowstone National Park is in the U.S. states of Wyoming, Idaho, and Montana. It became the first
 National Park in 1872. There are geysers and hot springs at Yellowstone. There are also many animals at
 Yellowstone. There are elk, bison, sheep, grizzly bears, black bears, moose, coyotes, and more. More
 than 3 million people visit Yellowstone National Park each year. During the winter, visitors can ski or go
@@ -8,8 +8,8 @@ there. There are nature trails and tours. Most visitors want to see Old Faithful
 at Yellowstone. Visitors can check a schedule to see the exact time that Old Faithful is going to erupt.
 There are many other geysers and boiling springs in the area. Great Fountain Geyser erupts every 11
 hours. Excelsior Geyser produces 4,000 gallons of boiling water each minute! Boiling water is 100
-degrees Celsius, or 212 degrees Fahrenheit – that’s very hot! People also like to see the Grand Prismatic
+degrees Celsius, or 212 degrees Fahrenheit ' that's very hot! People also like to see the Grand Prismatic
 Spring. It is the largest hot spring in the park. It has many beautiful colors. The beautiful colors are
 caused by bacteria in the water. These are forms of life that have only one cell. Different bacteria live in
-different water temperatures. Visiting Yellowstone National Park can be a week–long vacation or more.
-It is beautiful, and there are activities for everyone."	Susan Carter
+different water temperatures. Visiting Yellowstone National Park can be a week'long vacation or more.
+It is beautiful, and there are activities for everyone."	

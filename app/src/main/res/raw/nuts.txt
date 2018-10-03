@@ -1,9 +1,9 @@
-NUTS	"There is a small difference between nuts and seeds. Many seeds often are called nuts. For example,
+"There is a small difference between nuts and seeds. Many seeds often are called nuts. For example,
 hazelnuts are nuts. Chestnuts are nuts. Beechnuts are nuts. Acorns are nuts. But, Brazil Nuts are not
 nuts. Cashews are not nuts. Peanuts are not nuts. Pistachios are not nuts. So what are nuts? A true nut is
 a fruit with one seed. True nuts have very hard shells. True nuts do not open on their own. You must
-crack a true nut to open it. Cooks often call seeds “nuts.” In addition, English speakers often call seeds,
-“nuts.” The difference between nuts and seeds is small, so it is not necessarily wrong to call a seed a nut.
+crack a true nut to open it. Cooks often call seeds ï¿½nuts.ï¿½ In addition, English speakers often call seeds,
+ï¿½nuts.ï¿½ The difference between nuts and seeds is small, so it is not necessarily wrong to call a seed a nut.
 Nuts are good for your health. Seeds are also good for your health. Nuts and seeds contain a lot of oil.
 They also contain a lot of energy for your body. Nuts are a good snack food. Seeds are also a good snack
 food. Nuts are good for the heart. Seeds are also good for the heart. Nuts help you grow. Seeds also help
@@ -13,4 +13,4 @@ nuts. Many animals eat seeds. Birds eat seeds. Mice eat seeds. Even some snakes 
 hundreds of nuts that people and animals can eat. There are hundreds of seeds that people and animals
 can eat. But many nuts and seeds are inedible. Look in a book or check on the internet before trying to
 eat unfamiliar seeds and nuts. Learn if new foods are safe and healthful by reading about them before
-tasting them."	Susan Carter
+tasting them."

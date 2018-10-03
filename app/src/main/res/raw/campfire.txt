@@ -1,4 +1,4 @@
-CAMPFIRE	"You need tinder, kindling, and fuel to make a campfire. Tinder is stuff that catches fire easily. such as bark from a dead tree. dry leaves. and weeds. 
+"You need tinder, kindling, and fuel to make a campfire. Tinder is stuff that catches fire easily. such as bark from a dead tree. dry leaves. and weeds.
 
 Kindling helps makes the fire grow stronger. Dry tree twigs make good kindling. 
 
@@ -7,4 +7,4 @@ Fuel is the wood that keeps the fire burning. Large dry sticks or dead tree bran
 To make a small fire. make a tapes of kindling over some tinder. When the tinder and 
 
 kindling are lit and burning, add some thin pieces of fuel. When this wood starts to burn. add thicker pieces until the tire is the size you want. 
-"	Craig Benjamin
+"

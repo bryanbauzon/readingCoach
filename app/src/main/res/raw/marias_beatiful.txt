@@ -1,4 +1,4 @@
-MARIA'S BEAUTIFUL BOWL	"Maria Montoya Martinez is a famous potter. Her name and work are known round the world. This is her
+	"Maria Montoya Martinez is a famous potter. Her name and work are known round the world. This is her
 story.
 Maria grew up in an American Indian village. It is in the state of New Mexico. It is the kind of village that
 is called a pueblo. Long, long ago the Indians there made a great deal of pottery. They made bowls. They
@@ -11,21 +11,21 @@ Maria was one of the potters. When she made a bowl, she took great care. She sha
 it smooth. Her pots were very good.
 When Maria was a young woman, some scientists were digging up things from a pueblo of long ago.
 They found pieces of a fine old bowl. They showed them to Maria. Her husband, Julian, was with her.
-“Can you make a bowl like this?” they asked.
-“I can try,” Maria said. “But I cannot paint those designs on it. I am not good at designs.”
-“Maybe your husband can do the designs,” they said. “He knows how to draw.”
+"Can you make a bowl like this?" they asked.
+"I can try," Maria said. "But I cannot paint those designs on it. I am not good at designs."
+"Maybe your husband can do the designs," they said. "He knows how to draw."
 So it was agreed. Maria would make some bowls. They would be shaped like the bowls of long ago.
 Julian would paint designs on them.
-The bowls they made were beautiful. People said, “These are fine bowls. Make some more. You can sell
-them. People will pay for fine bowls like these.”
+The bowls they made were beautiful. People said, "These are fine bowls. Make some more. You can sell
+them. People will pay for fine bowls like these."
 That is what they did. They made many bowls. Maria and Julian studied the bowls that their people had
 made long ago. They looked at old bowls in the museum. Their work got better and better. People loved
 the bowls they made. They sold every one of them.
-Now some of Maria’s people came to her. They said, “Your bowls bring you much money. Will you teach
-us to make them too?”
+Now some of Maria"s people came to her. They said, "Your bowls bring you much money. Will you teach
+us to make them too?"
 Maria agreed. She wanted to help her people. Good fortune should not be for her and Julian alone, she
 felt. It should be shared. So they taught the others.
-The Indians of Maria’s pueblo have a new way of earning money now. They make fine bowls. An old
+The Indians of Maria"s pueblo have a new way of earning money now. They make fine bowls. An old
 Indian art has been brought back. It was a dead art. But Maria and Julian made it live again.
 The pottery of the pueblo is famous now. So is Maria. She is famous for her art. And she is famous for
-helping her pueblo."	Eric Carle
+helping her pueblo."	

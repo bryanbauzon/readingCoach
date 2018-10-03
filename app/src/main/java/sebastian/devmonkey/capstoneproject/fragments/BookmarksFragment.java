@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -45,6 +46,7 @@ public class BookmarksFragment extends Fragment {
     ArrayList<String> title;
     ArrayList<String> titleid;
     ArrayList<String> level;
+    TextView textView;
 
     ArrayAdapter adapter;
 
@@ -87,14 +89,11 @@ public class BookmarksFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bookmarks, container, false);
 
-//        Arrays storyTitles = new Arrays();
-//
-//        String[] menuItems = storyTitles.getStoryTitles();
-
         db = new DatabaseHelper(getContext());
         title = new ArrayList<>();
         titleid = new ArrayList<>();
         level = new ArrayList<>();
+        textView = view.findViewById(R.id.txtNoItem);
 
 
         listView = view.findViewById(R.id.listviewBookmarks);
@@ -120,9 +119,11 @@ public class BookmarksFragment extends Fragment {
         Cursor cursor = db.viewDataBookmarks();
 
         if (cursor.getCount() == 0) {
-            Toast.makeText(getContext(), "No data to show", Toast.LENGTH_SHORT).show();
+            textView.setText("No journal entries found");
 
         } else {
+
+            textView.setText("");
 
             while (cursor.moveToNext()) {
                 //getting id in database to array

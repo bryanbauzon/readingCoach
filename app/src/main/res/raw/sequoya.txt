@@ -1,30 +1,3 @@
-SEQUOYA
-By JAMES RUMFORD
 
-Sequoyah was a Cherokee silversmith who invented the language known as the Cherokee syllabary. Virtually nothing is known about Sequoyah’s early life. Some historians believe he grew up in Tennessee. He was most likely abandoned by his father, who was thought to have been a fur trader or scout for George Washington. Sometime around 1809, Sequoyah moved to the village of Willstown, Alabama, where he established himself as a silversmith. While at Willstown, Sequoyah quickly grew enamored with the written communications used between white settlers. In 1809, Sequoyah decided to create a written Cherokee language. Sequoyah’s Cherokee alphabet took 12 years to complete. He created a system in which each syllable had a specific character (written symbol). In all, his alphabet featured 86 different characters. Sequoyah’s alphabet was quickly adopted by the Cherokee Nation and was made their official language in 1825. From 1828 to 1834, the language was used in the Cherokee Phoenix, the official newspaper of the Cherokee Nation. Sequoyah eventually endeavored to create a universal language for all Native Americans. Throughout the 1830s and early 1840s, Sequoyah traveled throughout North America seeking the support of tribes. He died sometime between 1843 and 1845 while traveling in Mexico.
 
-Questions
-1.) Sequoyah invented a language known as the Cherokee syllabary. 
-a. True (correct)
-b. False
-c. Doesn’t say
-2.) What word best describes Sequoyah's early life in the eyes of historians? 
-a.) unknown (correct)
-b.) sad 
-c.) interesting 
-d.) exciting 
-3.) Sequoyah's father was thought to have been a scout for George Washington. 
-a. True (correct)
-b. False
-c. Doesn’t say
-
-4.) Sequoyah was a _______________________. 
-a.) goldsmith 
-b.) painter 
-c.) carpenter 
-d.) silversmith (correct)
-5.) Select all that are true from the choices below: Sequoyah began thinking about a system of written communication… 
-a.) in 1846. 
-b.) in Alabama. 
-c.) in Tennessee. 
-d.) in 1809. (correct)
+Sequoyah was a Cherokee silversmith who invented the language known as the Cherokee syllabary. Virtually nothing is known about Sequoyahï¿½s early life. Some historians believe he grew up in Tennessee. He was most likely abandoned by his father, who was thought to have been a fur trader or scout for George Washington. Sometime around 1809, Sequoyah moved to the village of Willstown, Alabama, where he established himself as a silversmith. While at Willstown, Sequoyah quickly grew enamored with the written communications used between white settlers. In 1809, Sequoyah decided to create a written Cherokee language. Sequoyahï¿½s Cherokee alphabet took 12 years to complete. He created a system in which each syllable had a specific character (written symbol). In all, his alphabet featured 86 different characters. Sequoyahï¿½s alphabet was quickly adopted by the Cherokee Nation and was made their official language in 1825. From 1828 to 1834, the language was used in the Cherokee Phoenix, the official newspaper of the Cherokee Nation. Sequoyah eventually endeavored to create a universal language for all Native Americans. Throughout the 1830s and early 1840s, Sequoyah traveled throughout North America seeking the support of tribes. He died sometime between 1843 and 1845 while traveling in Mexico.
