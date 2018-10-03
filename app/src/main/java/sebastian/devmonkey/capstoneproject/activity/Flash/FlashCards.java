@@ -164,4 +164,15 @@ public class FlashCards extends AppCompatActivity {
             tts.speak(myWord,TextToSpeech.QUEUE_FLUSH,null);
         }
     }
+
+
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        if (tts != null) {
+            tts.shutdown();
+        }
+    }
 }

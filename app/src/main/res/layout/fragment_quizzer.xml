@@ -2,26 +2,29 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.StoryReadingBottomNav.Quizzer">
+    android:layout_height="wrap_content"
+    tools:context=".fragments.StoryReadingBottomNav.Quizzer"
+    android:layout_gravity="center">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
         android:layout_marginBottom="45dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/ly"
                 android:layout_width="match_parent"
-                android:layout_height="162dp"
+                android:layout_height="193dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
                 android:background="#FFA500"
-                android:orientation="vertical"
-                android:id="@+id/ly">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/score"
@@ -35,36 +38,44 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/score"
+                    android:layout_marginTop="30dp"
                     android:text="HELLO"
-                    android:textAlignment="center"
-                    android:layout_marginTop="30dp"/>
+                    android:textAlignment="center" />
 
             </LinearLayout>
 
             <Button
+                android:id="@+id/a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ly"
-                android:id="@+id/a"
-                />
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" />
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/a"
-                />
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" />
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/c"
-                android:layout_below="@id/b"
-                />
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                android:layout_below="@id/b"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" />
+
+            <Button
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/c"
-                android:id="@+id/d" />
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" />
 
         </RelativeLayout>
 

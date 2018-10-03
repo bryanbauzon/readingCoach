@@ -779,6 +779,15 @@ public class Story extends Fragment {
         mListener = null;
     }
 
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        if (textToSpeech != null) {
+            textToSpeech.shutdown();
+        }
+    }
+
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
@@ -839,6 +848,7 @@ public class Story extends Fragment {
     }
 
     private void addBookmark() {
+
         SharedPreferences pref = getActivity().getSharedPreferences("bookmark",Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
         if (!db.hasObject(id_temp)) {
@@ -849,14 +859,14 @@ public class Story extends Fragment {
         } else {
             db.deleteDataBookmarks(id_temp);
             check = false;
-<<<<<<< HEAD
+
             Toast.makeText(getActivity(), "Removed to bookmarks", Toast.LENGTH_SHORT).show();
-=======
->>>>>>> 76d91a531c72b46e87e0493473d6b8aa5838afab
+
             editor.apply();
             menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkicon));
         }
 
     }
+
 
 }
