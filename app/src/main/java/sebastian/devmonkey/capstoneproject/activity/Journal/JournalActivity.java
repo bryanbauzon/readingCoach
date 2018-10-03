@@ -75,7 +75,6 @@ public class JournalActivity extends AppCompatActivity {
                 intent.putExtra("ID", id.get(i));
                 intent.putExtra("TITLE", listItem.get(i));
                 intent.putExtra("CONTENT", content.get(i));
-                Toast.makeText(getApplicationContext(),id.get(i),Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                // finish();
 

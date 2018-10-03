@@ -799,6 +799,13 @@ public class Story extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.text_to_speech, menu);
         this.menu = menu;
+
+        if (db.hasObject(id_temp)) {
+
+            menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(), R.drawable.bookmarkedicon));
+        }
+
+
         super.onCreateOptionsMenu(menu,inflater);
     }
 
@@ -843,17 +850,11 @@ public class Story extends Fragment {
         if (!db.hasObject(id_temp)) {
             db.insertDataBookmarks(title, id_temp, level);
             check = true;
-            Toast.makeText(getActivity(), "Added to bookmarks", Toast.LENGTH_SHORT).show();
-
             menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkedicon));
 
         } else {
             db.deleteDataBookmarks(id_temp);
             check = false;
-            Toast.makeText(getActivity(), "Removed to bookmarks", Toast.LENGTH_SHORT).show();
-
-
-
             editor.apply();
             menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkicon));
 

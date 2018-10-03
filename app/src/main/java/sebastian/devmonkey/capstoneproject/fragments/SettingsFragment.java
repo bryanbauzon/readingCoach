@@ -156,37 +156,36 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         switch (view.getId()){
             case R.id.btnSmall:
                 GlobalVariable.fontSize = 15;
-                Toast.makeText(getContext(), GlobalVariable.fontSize + "", Toast.LENGTH_LONG).show();
+
                 break;
             case R.id.btnMedium:
                 GlobalVariable.fontSize = 17;
-                Toast.makeText(getContext(), GlobalVariable.fontSize + "", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnLarge:
                 GlobalVariable.fontSize = 19;
-                Toast.makeText(getContext(), GlobalVariable.fontSize + "", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnFontType1:
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Bold.ttf");
-                Toast.makeText(getContext(), "Font Changed", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnFontType2:
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Italic.ttf");
-                Toast.makeText(getContext(), "Font Changed", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnDark:
                 GlobalVariable.color  = 1;
-                Toast.makeText(getContext(), "Clicked Dark", Toast.LENGTH_LONG).show();
+
                 break;
 
 
             case R.id.btnLight:
                 GlobalVariable.color  = 0;
-                Toast.makeText(getContext(), "Clicked Light", Toast.LENGTH_LONG).show();
                 break;
 
 
@@ -196,7 +195,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.right = 10;
                 GlobalVariable.bottom = 10;
 
-                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnPageMargin2:
@@ -205,7 +204,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.right = 20;
                 GlobalVariable.bottom = 20;
 
-                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+
                 break;
 
 
@@ -216,22 +215,22 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.right = 30;
                 GlobalVariable.bottom = 30;
 
-                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnLineSpacing:
                 GlobalVariable.lineSpacing = 10;
-                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnLineSpacing1:
                 GlobalVariable.lineSpacing = 12;
-                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnLineSpacing2:
                 GlobalVariable.lineSpacing = 14;
-                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_LONG).show();
+
                 break;
 
             case R.id.btnReset:
