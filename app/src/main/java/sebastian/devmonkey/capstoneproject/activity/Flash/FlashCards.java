@@ -161,6 +161,7 @@ public class FlashCards extends AppCompatActivity {
         if(myWord.equals("")){
             tts.speak("Sorry, Please fill-up the field.",TextToSpeech.QUEUE_FLUSH,null);
         }else{
+            tts.setSpeechRate(0.8f);
             tts.speak(myWord,TextToSpeech.QUEUE_FLUSH,null);
         }
     }
