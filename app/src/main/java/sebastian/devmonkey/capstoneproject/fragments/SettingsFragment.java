@@ -30,6 +30,21 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    int ctr = 0;
+    Button small;
+    Button medium ;
+    Button large;
+    Button fontType1;
+    Button fontType2;
+    Button dark;
+    Button light;
+    Button lineSpacing;
+    Button lineSpacing1 ;
+    Button lineSpacing2 ;
+    Button pageMargin1;
+    Button pageMargin2;
+    Button pageMargin3 ;
+    Button reset ;
   //  TextView appName,overView;
     View view;
 
@@ -77,20 +92,20 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_settings,container,false);
 
-        Button small = view.findViewById(R.id.btnSmall);
-        Button medium = view.findViewById(R.id.btnMedium);
-        Button large = view.findViewById(R.id.btnLarge);
-        Button fontType1 = view.findViewById(R.id.btnFontType1);
-        Button fontType2 = view.findViewById(R.id.btnFontType2);
-        Button dark = view.findViewById(R.id.btnDark);
-        Button light = view.findViewById(R.id.btnLight);
-        Button lineSpacing = view.findViewById(R.id.btnLineSpacing);
-        Button lineSpacing1 = view.findViewById(R.id.btnLineSpacing1);
-        Button lineSpacing2 = view.findViewById(R.id.btnLineSpacing2);
-        Button pageMargin1 = view.findViewById(R.id.btnPageMargin1);
-        Button pageMargin2 = view.findViewById(R.id.btnPageMargin2);
-        Button pageMargin3 = view.findViewById(R.id.btnPageMargin3);
-        Button reset = view.findViewById(R.id.btnReset);
+         small = view.findViewById(R.id.btnSmall);
+         medium = view.findViewById(R.id.btnMedium);
+         large = view.findViewById(R.id.btnLarge);
+         fontType1 = view.findViewById(R.id.btnFontType1);
+         fontType2 = view.findViewById(R.id.btnFontType2);
+         dark = view.findViewById(R.id.btnDark);
+         light = view.findViewById(R.id.btnLight);
+         lineSpacing = view.findViewById(R.id.btnLineSpacing);
+         lineSpacing1 = view.findViewById(R.id.btnLineSpacing1);
+         lineSpacing2 = view.findViewById(R.id.btnLineSpacing2);
+         pageMargin1 = view.findViewById(R.id.btnPageMargin1);
+         pageMargin2 = view.findViewById(R.id.btnPageMargin2);
+         pageMargin3 = view.findViewById(R.id.btnPageMargin3);
+         reset = view.findViewById(R.id.btnReset);
 
         small.setOnClickListener(this);
 //        small.setOnTouchListener(new View.OnTouchListener() {
@@ -153,6 +168,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
 
 
+
         switch (view.getId()){
             case R.id.btnSmall:
                 GlobalVariable.fontSize = 15;
@@ -160,7 +176,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 break;
             case R.id.btnMedium:
                 GlobalVariable.fontSize = 17;
-
+                medium.setBackgroundResource(R.drawable.settingbuttons);
+                medium.setBackgroundColor(small.getContext().getResources().getColor(R.color.white));
                 break;
 
             case R.id.btnLarge:
