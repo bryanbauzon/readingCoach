@@ -149,18 +149,7 @@ public class Story extends Fragment {
 
 
        // Toast.makeText(getActivity(),title_holder,Toast.LENGTH_LONG).show();
-        if(db.bookmarkhasObject(id_temp)){
-          //  menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkedicon));
-            Log.e("obj","true");
-            Toast.makeText(getActivity(),"True",Toast.LENGTH_SHORT).show();
 
-        }else{
-            Log.e("obj","false");
-            Toast.makeText(getActivity(),"False",Toast.LENGTH_SHORT).show();
-
-            //   menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkicon));
-
-        }
 
 
         txtTitle.setText(title);
