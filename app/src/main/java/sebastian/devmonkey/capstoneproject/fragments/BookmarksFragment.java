@@ -109,6 +109,7 @@ public class BookmarksFragment extends Fragment {
                 intent.putExtra("title", title.get(i));
                 intent.putExtra("level", level.get(i));
                 startActivity(intent);
+              //  System.exit(0);
             }
         });
 
