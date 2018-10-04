@@ -175,8 +175,6 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     private void Correct(int num) {
 
 
-        Toast.makeText(getActivity(), "Correct", Toast.LENGTH_SHORT).show();
-
 
         a.setEnabled(false);
         b.setEnabled(false);
@@ -236,7 +234,6 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     }
 
     private void Wrong(int num) {
-        Toast.makeText(getActivity(), "Wrong", Toast.LENGTH_SHORT).show();
 
         a.setEnabled(false);
         b.setEnabled(false);

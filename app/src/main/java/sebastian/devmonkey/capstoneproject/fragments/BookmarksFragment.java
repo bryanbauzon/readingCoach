@@ -119,7 +119,7 @@ public class BookmarksFragment extends Fragment {
         Cursor cursor = db.viewDataBookmarks();
 
         if (cursor.getCount() == 0) {
-            textView.setText("No journal entries found");
+            textView.setText("No bookmarks entries found");
 
         } else {
 

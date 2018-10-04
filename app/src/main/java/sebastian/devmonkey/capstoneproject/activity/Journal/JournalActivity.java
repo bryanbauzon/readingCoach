@@ -40,9 +40,9 @@ public class JournalActivity extends AppCompatActivity {
     ArrayAdapter adapter;
     ArrayList<String> id;
     ArrayList<String> content;
-    String[]titleJournal,contentJournal;
     ListView listView;
     HashMap<String,String> titleContent;
+    TextView textView;
 
     private SearchView searchView = null;
     private SearchView.OnQueryTextListener queryTextListener;
@@ -62,6 +62,7 @@ public class JournalActivity extends AppCompatActivity {
         id = new ArrayList<>();
         content = new ArrayList<>();
         listView = findViewById(R.id.listview);
+        textView = findViewById(R.id.txtNoItem1);
 
         viewData();
 
@@ -90,9 +91,11 @@ public class JournalActivity extends AppCompatActivity {
         Cursor cursor = db.viewData();
 
         if (cursor.getCount() == 0) {
-            Toast.makeText(getApplicationContext(), "No data to show", Toast.LENGTH_SHORT).show();
+            textView.setText("No journal entries found.");
 
         } else {
+
+            textView.setText("");
 
             while (cursor.moveToNext()) {
                 //getting id in database to array
