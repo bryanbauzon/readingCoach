@@ -146,8 +146,6 @@ public class Story extends Fragment {
         level = intent.getStringExtra("level");
         id_temp = intent.getStringExtra("id");
         title = intent.getStringExtra("title");
-
-
        // Toast.makeText(getActivity(),title_holder,Toast.LENGTH_LONG).show();
 
 
@@ -1042,7 +1040,7 @@ public class Story extends Fragment {
             db.deleteDataBookmarks(id_temp);
             check = false;
 
-            Toast.makeText(getActivity(), "Removed to bookmarks", Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(getActivity(), "Removed to bookmarks", Toast.LENGTH_SHORT).show();
 
             editor.apply();
             menu.getItem(1).setIcon(ContextCompat.getDrawable(getActivity(),R.drawable.bookmarkicon));

@@ -108,7 +108,10 @@ public class BookmarksFragment extends Fragment {
                 intent.putExtra("id", titleid.get(i));
                 intent.putExtra("title", title.get(i));
                 intent.putExtra("level", level.get(i));
+                Toast.makeText(getContext(),titleid.get(i),Toast.LENGTH_SHORT).show();
+
                 startActivity(intent);
+              //  System.exit(0);
             }
         });
 

@@ -92,107 +92,158 @@ public class PoemReading extends AppCompatActivity {
             if (id == 0) {
               txtContent.setText(poems.sonnet1[0]);
             } else if(id == 1){
-                is = getResources().openRawResource(R.raw.poem_sonnet2);
+                txtContent.setText(poems.sonnet2[0]);
+                //is = getResources().openRawResource(R.raw.poem_sonnet2);
             } else if(id == 2){
-                is = getResources().openRawResource(R.raw.poem_sonnet3);
+                txtContent.setText(poems.sonnet3[0]);
+
             } else if(id == 3){
-                is = getResources().openRawResource(R.raw.poem_sonnet4);
+                txtContent.setText(poems.sonnet4[0]);
+
             } else if(id == 4){
-                is = getResources().openRawResource(R.raw.poem_sonnet5);
+                txtContent.setText(poems.sonnet5[0]);
+
             } else if(id == 5){
-                is = getResources().openRawResource(R.raw.poem_sonnet6);
+                txtContent.setText(poems.sonnet6[0]);
+
             } else if(id == 6){
-                is = getResources().openRawResource(R.raw.poem_sonnet7);
+                txtContent.setText(poems.sonnet7[0]);
+
             } else if(id == 7){
-                is = getResources().openRawResource(R.raw.poem_sonnet8);
+                txtContent.setText(poems.sonnet8[0]);
+
             } else if(id == 8){
-                is = getResources().openRawResource(R.raw.poem_sonnet9);
+                txtContent.setText(poems.sonnet9[0]);
+
             } else if(id == 9){
-                is = getResources().openRawResource(R.raw.poem_sonnet10);
+                txtContent.setText(poems.sonnet10[0]);
+
             } else if(id == 10){
-                is = getResources().openRawResource(R.raw.poem_sonnet11);
+                txtContent.setText(poems.sonnet11[0]);
+
             } else if(id == 11){
-                is = getResources().openRawResource(R.raw.poem_sonnet12);
+                txtContent.setText(poems.sonnet12[0]);
+
             } else if(id == 12){
-                is = getResources().openRawResource(R.raw.poem_sonnet13);
+                txtContent.setText(poems.sonnet13[0]);
+
             } else if(id == 13){
-                is = getResources().openRawResource(R.raw.poem_sonnet14);
+                txtContent.setText(poems.sonnet14[0]);
+
             } else if(id == 14){
-                is = getResources().openRawResource(R.raw.poem_sonnet15);
+                txtContent.setText(poems.sonnet15[0]);
+
             } else if(id == 15){
-                is = getResources().openRawResource(R.raw.poem_sonnet16);
+                txtContent.setText(poems.sonnet16[0]);
+
             } else if (id == 16) {
-                is = getResources().openRawResource(R.raw.poem_sonnet17);
+                txtContent.setText(poems.sonnet17[0]);
+
             } else if (id == 17) {
-                is = getResources().openRawResource(R.raw.poem_sonnet18);
+                txtContent.setText(poems.sonnet18[0]);
+
             } else if (id == 18) {
-                is = getResources().openRawResource(R.raw.poem_sonnet19);
+                txtContent.setText(poems.sonnet19[0]);
+
             } else if (id == 19) {
-                is = getResources().openRawResource(R.raw.poem_sonnet20);
+                txtContent.setText(poems.sonnet20[0]);
+
             } else if (id == 20) {
-                is = getResources().openRawResource(R.raw.poem_sonnet21);
+                txtContent.setText(poems.sonnet21[0]);
+
             } else if (id == 21) {
-                is = getResources().openRawResource(R.raw.poem_sonnet22);
+                txtContent.setText(poems.sonnet22[0]);
+
             } else if (id == 22) {
-                is = getResources().openRawResource(R.raw.poem_sonnet23);
+                txtContent.setText(poems.sonnet23[0]);
+
             } else if (id == 23) {
-                is = getResources().openRawResource(R.raw.poem_sonnet24);
+                txtContent.setText(poems.sonnet24[0]);
+
             } else if (id == 24) {
-                is = getResources().openRawResource(R.raw.poem_sonnet25);
+                txtContent.setText(poems.sonnet25[0]);
+
             } else if (id == 25) {
-                is = getResources().openRawResource(R.raw.poem_sonnet26);
+                txtContent.setText(poems.sonnet26[0]);
+
             } else if (id == 26) {
-                is = getResources().openRawResource(R.raw.poem_sonnet27);
+                txtContent.setText(poems.sonnet27[0]);
+
             } else if (id == 27) {
-                is = getResources().openRawResource(R.raw.poem_sonnet28);
+                txtContent.setText(poems.sonnet28[0]);
+
             } else if (id == 28) {
-                is = getResources().openRawResource(R.raw.poem_sonnet29);
+                txtContent.setText(poems.sonnet29[0]);
+
             } else if (id == 29) {
-                is = getResources().openRawResource(R.raw.poem_sonnet30);
+                txtContent.setText(poems.sonnet30[0]);
+
             } else if (id == 30) {
-                is = getResources().openRawResource(R.raw.poem_sonnet31);
+                txtContent.setText(poems.sonnet31[0]);
+
             } else if (id == 31) {
-                is = getResources().openRawResource(R.raw.poem_sonnet32);
+                txtContent.setText(poems.sonnet32[0]);
+
             } else if (id == 32) {
-                is = getResources().openRawResource(R.raw.poem_sonnet33);
+                txtContent.setText(poems.sonnet33[0]);
+
             } else if (id == 33) {
-                is = getResources().openRawResource(R.raw.poem_sonnet34);
+                txtContent.setText(poems.sonnet34[0]);
+
             } else if (id == 34) {
-                is = getResources().openRawResource(R.raw.poem_sonnet35);
+                txtContent.setText(poems.sonnet35[0]);
+
             } else if (id == 35) {
-                is = getResources().openRawResource(R.raw.poem_sonnet36);
+                txtContent.setText(poems.sonnet36[0]);
+
             } else if (id == 36) {
-                is = getResources().openRawResource(R.raw.poem_sonnet37);
+                txtContent.setText(poems.sonnet37[0]);
+
             } else if (id == 37) {
-                is = getResources().openRawResource(R.raw.poem_sonnet38);
+                txtContent.setText(poems.sonnet38[0]);
+
             } else if (id == 38) {
-                is = getResources().openRawResource(R.raw.poem_sonnet39);
+                txtContent.setText(poems.sonnet39[0]);
+
             } else if (id == 39) {
-                is = getResources().openRawResource(R.raw.poem_sonnet40);
+                txtContent.setText(poems.sonnet40[0]);
+
             } else if (id == 40) {
-                is = getResources().openRawResource(R.raw.poem_sonnet41);
+                txtContent.setText(poems.sonnet41[0]);
+
             } else if (id == 41) {
-                is = getResources().openRawResource(R.raw.poem_sonnet42);
+                txtContent.setText(poems.sonnet42[0]);
+
             } else if (id == 42) {
-                is = getResources().openRawResource(R.raw.poem_sonnet43);
+                txtContent.setText(poems.sonnet43[0]);
+
             } else if (id == 43) {
-                is = getResources().openRawResource(R.raw.poem_sonnet44);
+                txtContent.setText(poems.sonnet44[0]);
+
             } else if (id == 44) {
-                is = getResources().openRawResource(R.raw.poem_sonnet45);
+                txtContent.setText(poems.sonnet45[0]);
+
             } else if (id == 45) {
-                is = getResources().openRawResource(R.raw.poem_sonnet46);
+                txtContent.setText(poems.sonnet46[0]);
+
             } else if (id == 46) {
-                is = getResources().openRawResource(R.raw.poem_sonnet47);
+                txtContent.setText(poems.sonnet47[0]);
+
             } else if (id == 47) {
-                is = getResources().openRawResource(R.raw.poem_sonnet48);
+                txtContent.setText(poems.sonnet48[0]);
+
             } else if (id == 48) {
-                is = getResources().openRawResource(R.raw.poem_sonnet49);
+                txtContent.setText(poems.sonnet49[0]);
+
             } else if (id == 49) {
-                is = getResources().openRawResource(R.raw.poem_sonnet50);
+                txtContent.setText(poems.sonnet50[0]);
+
             } else if (id == 50) {
-                is = getResources().openRawResource(R.raw.poem_sonnet51);
+                txtContent.setText(poems.sonnet51[0]);
+
             } else if (id == 51) {
-                is = getResources().openRawResource(R.raw.poem_sonnet52);
+                txtContent.setText(poems.sonnet52[0]);
+
             }
 //
 //            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
