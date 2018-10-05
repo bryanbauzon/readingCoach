@@ -40,6 +40,7 @@ public class JournalActivity extends AppCompatActivity {
     ArrayAdapter adapter;
     ArrayList<String> id;
     ArrayList<String> content;
+    String[]titleJournal,contentJournal;
     ListView listView;
     HashMap<String,String> titleContent;
     TextView textView;

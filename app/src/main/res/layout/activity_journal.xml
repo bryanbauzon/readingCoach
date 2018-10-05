@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     android:id="@+id/journalActivityLayout"
     tools:context=".activity.Journal.JournalActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noJournal"
+        android:textAlignment="center"
+        />
 
     <ListView
         android:id="@+id/listview"

@@ -1,6 +1,7 @@
 package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,6 +16,8 @@ import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 import sebastian.devmonkey.capstoneproject.R;
+
+import static android.content.Context.MODE_PRIVATE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,6 +34,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     private static final String ARG_PARAM2 = "param2";
 
     int ctr = 0;
+
+    boolean smallB = false,mediumB = false, largeB = false,font1 = false,font2 = false, darkB = false, lightB = false;
     Button small;
     Button medium ;
     Button large;
@@ -108,20 +113,6 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
          reset = view.findViewById(R.id.btnReset);
 
         small.setOnClickListener(this);
-//        small.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View view, MotionEvent motionEvent) {
-//                if(motionEvent.getAction() == MotionEvent.ACTION_UP){
-//                    Toast.makeText(getActivity(),"up",Toast.LENGTH_SHORT).show();
-//
-//                }else if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
-//                        Toast.makeText(getActivity(),"down",Toast.LENGTH_SHORT).show();
-//                }
-//
-//                return false;
-//            }
-//        });
-
         medium.setOnClickListener(this);
         large.setOnClickListener(this);
         fontType1.setOnClickListener(this);
@@ -136,8 +127,12 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         lineSpacing2.setOnClickListener(this);
         reset.setOnClickListener(this);
 
+//
 
-    return view;
+
+
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -168,21 +163,67 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
 
 
+     //   SharedPreferences pref = getActivity().getSharedPreferences("setting",MODE_PRIVATE);
+
+
+
 
         switch (view.getId()){
             case R.id.btnSmall:
                 GlobalVariable.fontSize = 15;
 
+//
+//
+//                SharedPreferences sharedPreferences = getContext().getSharedPreferences("setting", MODE_PRIVATE);
+//                SharedPreferences.Editor editor = sharedPreferences.edit();
+//                SharedPreferences pref = getActivity().getSharedPreferences("setting",MODE_PRIVATE);
+//
+//                 boolean smallBool = pref.getBoolean("small",true);
+//
+//                 if(smallBool){
+//                     Toast.makeText(getContext(),"default color",Toast.LENGTH_SHORT).show();
+//                    small.setBackgroundResource(R.drawable.settingbuttons);
+//                    editor.clear();
+//                     editor.putBoolean("small",false);
+//                     editor.apply();
+//                 }else{
+//                     small.setBackgroundColor(small.getContext().getResources().getColor(R.color.orange));
+//                     Toast.makeText(getContext(),"fill color",Toast.LENGTH_SHORT).show();
+//                     editor.clear();
+//                     editor.putBoolean("small",true);
+//                     editor.apply();
+//                 }
+
+                   // editor.apply();
+
+              // Toast.makeText(getContext(),Boolean.toString(small),Toast.LENGTH_SHORT).show();
+
+
                 break;
             case R.id.btnMedium:
                 GlobalVariable.fontSize = 17;
-                medium.setBackgroundResource(R.drawable.settingbuttons);
-                medium.setBackgroundColor(small.getContext().getResources().getColor(R.color.white));
+//                if(!mediumB){
+//                    Toast.makeText(getContext(),"true",Toast.LENGTH_SHORT).show();
+//                    mediumB = true;
+//
+//                }else{
+//                    Toast.makeText(getContext(),"false",Toast.LENGTH_SHORT).show();
+//
+//                    mediumB = false;
+//                }
                 break;
 
             case R.id.btnLarge:
                 GlobalVariable.fontSize = 19;
-
+//                if(!font1){
+//                    Toast.makeText(getContext(),"true",Toast.LENGTH_SHORT).show();
+//                    font1 = true;
+//
+//                }else{
+//                    Toast.makeText(getContext(),"false",Toast.LENGTH_SHORT).show();
+//
+//                    font1 = false;
+//                }
                 break;
 
             case R.id.btnFontType1:
