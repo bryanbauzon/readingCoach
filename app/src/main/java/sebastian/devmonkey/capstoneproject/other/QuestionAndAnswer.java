@@ -1840,6 +1840,190 @@ public class QuestionAndAnswer {
 //        {  "most kids get the flu in winter.",  "signs" ,  "A day-care center" , "Shaking the hands of your classmates", "For most kids, the flu is a serious illness, but for some, it comes and goes. " };
 
 
+    //=================================================================
+    //HARD
+
+
+    private String [] asiancarp5= {
+            "Which statement best expresses the main idea of the second paragraph? ",
+            "Which is not a reason why Asian carp is an unpopular menu item?",
+            "Which statement would the author most likely disagree with?"
+};
+    private String [][] hardChoices5= {
+        {" Asian carp were brought to America during the 1970s to assist Southern fish farmers. "," Asian carp are remarkable cleaners, which makes them highly desirable fish to have."," Asian carp were supposed to clean ponds but they escaped and are headed north."," Asian carp are excellent at swimming upstream and cleaning up plankton."},
+        {" It is hard to prepare because of all the little bones. "," They are a very fattening fish"," Some of them are toxic and unsafe to eat."," They are bottom feeders.  "},
+        {" Asian carp outperform many native bottom feeders."," Asian carp could disrupt the ecosystem in Lake Michigan."," One species of Asian carp is the silver carp."," Asian carp are disliked because they eat salmon"}
+        };
+    private String [] hardAnswer5= {
+            "Asian carp were supposed to clean ponds but they escaped and are headed north."," They are a very fattening fish"," Asian carp are disliked because they eat salmon"};
+
+
+
+    private String [] blackfriday8= {
+    "According to the text, why do stores set prices so low on some items that they lose money?",
+                "Which is not true about Black Friday?",
+                "Where does the name Black Friday come from? ",
+                "The day before Friday?",
+                "Busiest shopping day in a year?"
+    };
+    private String [][] hardChoices8= {
+            {" They want people to enjoy the holidays."," They hope people will buy other gifts while they are in the store."," They are in a giving mood because the holiday season is just beginning."," They are trying to get rid of old items from last year to make room for new items."},
+            {" Black Friday is always the day after Thanksgiving."," Black Friday is the busiest shopping day of the year."," Black Friday is a national holiday."," Black Friday is the start of the holiday shopping season."},
+            {" The police called this day Black Friday because there is a lot of traffic"," The stores called this day Black Friday because it is a serious shopping day."," The police called this day Black Friday to remember the victims of violence."," The stores called this day Black Friday because they make a lot of money"},
+            {" Monday"," Tuesday"," Wednesday"," Thursday"},
+            {" Monday"," Tuesday"," Wednesday"," Friday"}
+            };
+    private String [] hardAnswer8= {
+            "They hope people will buy other gifts while they are in the store."," Black Friday is a national holiday."," The police called this day Black Friday because there is a lot of traffic"," Thursday"," Friday"};
+
+
+
+
+    private String [] carnivorousplants11= {
+            "Which statement would the author most likely agree with?",
+            "Which plant traps bugs in its stem and forces them to walk forward?",
+            "Which of the following statements is false?",
+            "How many minutes before the bug actually dies?",
+            "Their landing surface is?"
+    };
+    private String [][] hardChoices11= {
+            {" There are too many species of carnivorous plants."," There are too few plant species in the world."," Only a small number of plants are carnivorous"," A majority of plants are carnivorous."},
+            {" Corkscrew plants  "," Sundews"," Bladderworts"," Pitcher plants"},
+            {" Carnivorous plants get their energy from eating bugs"," Carnivorous plants do not get nutrients from the soil."," Carnivorous plants get their energy from the sun."," Carnivorous plants get their nutrients from eating bugs"},
+            {"13 mins"," 14 mins"," 15 mins"," 16 mins"},
+            {" slippery"," rough"," wet"," dry"}
+    };
+    private String [] hardAnswer11= {
+            "Only a small number of plants are carnivorous"," Corkscrew plants  "," Carnivorous plants get their energy from eating bugs"," 15 mins"," slippery"};
+
+
+
+
+    private String [] collectionoffolklore16= {
+            "Which of the following does the author use as a metaphor for the culture in which she was born?",
+            "Based on the first paragraph, it is most reasonable to conclude that while in college the author",
+            "As it is used in the passage, the highlighted word material most nearly means:",
+            "When the speaker headforemost into the world he landed in the crib of?",
+            "It is not as easy to collect as it sounds"
+    };
+    private String [][] hardChoices16= {
+            {" College"," Garment  "," Southern state"," Spy-glass"},
+            {" decided to become a professor of anthropology."," decided that she did not want to live permanently in Eatonville, Florida."," felt that her teachers prevented her from studying what she wanted."," understood her own culture in new and different ways.  "},
+            {" diversity"," fabric"," information"," money"},
+            {" Negroism"," EatonVille"," Florida"," Southern"},
+            {" folklore"," dancing"," singing"," collecting"}
+    };
+    private String [] hardAnswer16= {
+            "Garment  "," understood her own culture in new and different ways.  "," information"," Negroism"," folklore"};
+
+
+
+
+    private String [] eatingout18= {
+            "Its eight o’clock in the morning",
+            "The smiths are late",
+            "The smiths order in the bar",
+            "There are 2 main characters in the story",
+            "They are celebrating 8 years anniversary"
+    };
+    private String [][] hardChoices18= {
+            {" True"," False"," Doesn’t say"},
+            {" True"," False"," Doesn’t say"},
+            {" True"," False"," Doesn’t say"},
+            {" True"," False"," Doesn’t say"},
+            {" True"," False"," Doesn’t say"}
+    };
+    private String [] hardAnswer18= {
+            "False"," False","True"," True"," False"};
+
+
+
+    private String [] fortunetellers24= {
+            "Who is telling this story?",
+            "What is the most reasonable conclusion to make from the statement in the first paragraph, \"He felt sick.\"?",
+            "According to the passage, Tim would most likely describe the party as:",
+            "An adult couple entered the restaurant",
+            "The party was alive"
+    };
+    private String [][] hardChoices24= {
+            {" Jennifer  "," Tim"," Andy’s father"," An unnamed narrator"},
+            {" Eating xoi with his father gave Andy a stomachache."," Andy was upset when he saw Jennifer holding hands with Tim.  "," Andy was unhappy about the restaurant his father had selected."," Andy was upset with Jennifer for making him miss the party."},
+            {" mysterious"," lively"," dull"," upsetting"},
+            {" True"," False"," Doesn’t say"},
+            {" True"," False"," Doesn’t say"}
+    };
+    private String [] hardAnswer24= {
+            "An unnamed narrator"," Andy was upset when he saw Jennifer holding hands with Tim.  "," dull"," False"," False"};
+
+
+
+
+
+    private String [] gilraysflowerpot27= {
+            "Which is not an accusation that the narrator makes against Gilray?",
+            "What is the narrator implying in the following? \"Gilray had owned his flower-pot for several months, during which time (I take him at his word) he had watered it daily\"",
+            "Why does the narrator disbelieve that Gilray got the plant as a gift?",
+            "Gilray is the main character?",
+            "The story is about his friend’s flower pot?"
+    };
+    private String [][] hardChoices27= {
+            {" Gilray was too cheap to pay someone to care for his plant"," Gilray took advantage of the narrator's kindness."," Gilray fooled the narrator about the difficulty of the task."," Gilray choose the wrong person for the job."},
+            {" He is implying that Gilray never really had a plant."," He is implying that Gilray doesn't have a social life."," He is implying that Gilray could be lying.  "," He is implying that Gilray is inexperienced."},
+            {" He believes that Gilray traded his watch for it."," He argues that ladies find Gilray undesirable"," He accuses Gilray of stealing it from a garden."," He claims that Gilray got boots and a gown instead."},
+            {" True"," False"," Doesn’t say"},
+            {" True"," False"," Doesn’t say"}
+            };
+    private String [] hardAnswer27= {
+            "Gilray was too cheap to pay someone to care for his plant"," He is implying that Gilray could be lying.  "," He argues that ladies find Gilray undesirable"," True"," False"};
+
+
+
+
+    private String [] goodluckforthegood28= {
+            "Storks build their nests?",
+            "Peter needed his beak. Without it he could not?",
+            "The people in the town believed that Peter brought them good luck",
+            "The marten brought Peter good luck?",
+            "The people in the town brought Peter bad luck?"
+    };
+    private String [][] hardChoices28= {
+            {" In tree"," On houses"," Near ponds"},
+            {" Eat"," Hunt"," Build a nest"},
+            {" True"," False"," Maybe"},
+            {" True"," False"," Maybe"},
+            {" True"," False"," Maybe"}
+    };
+    private String [] hardAnswer28= {
+            "On houses"," Eat"," True"," False"," False"};
+
+
+
+
+    private String [] interstatehighways31= {
+            "Which President supported the Interstate Highway System? ",
+            "When did the Interstate Highway System begin? ",
+            "Where are the highest–numbered East– West Interstate highways located?",
+            "The year 2007 was the golden anniversary",
+            "The shortest two-digit interstate is from Emery, North Carolina to Greensboro, North Carolina."
+    };
+    private String [][] hardChoices31= {
+            {" Jefferson"," Eisenhower  "," Washington"," Bus"},
+            {"1946"," 1956  "," 1957"," 2000"},
+            {" In the Eastern U.S."," In the Western U.S."," In the Southern U.S."," In the Northern U.S"},
+            {" True"," False"," Doesn’t say"},
+            {" True"," False"," Doesn’t say"}
+    };
+    private String [] hardAnswer31= {
+            "Eisenhower  "," 1956  "," In the Northern U.S"," False"," True"};
+
+
+
+
+
+
+
+
+
     public String getQuestion(int a, int id, String level) {
 
         if (level.equals("easy")) {
@@ -1965,104 +2149,28 @@ public class QuestionAndAnswer {
                 return marsQuestion[a];
             } else if (id == 49) {
                 return marysfamilyQuestion[a];
-            } else if (id == 50) {
-                return mexicoQuestion[a];
-            } else if (id == 51) {
-                return moorishdanceQuestion[a];
-            } else if (id == 52) {
-                return mountvesuviusQuestion[a];
-            } else if (id == 53) {
-                return movieratingsQuestion[a];
-            } else if (id == 54) {
-                return mummyQuestion[a];
-            } else if (id == 55) {
-                return niagaraQuestion[a];
-            } else if (id == 56) {
-                return nutsQuestion[a];
-            } else if (id == 57) {
-                return olympicgameQuestion[a];
-            } else if (id == 58) {
-                return pandaQuestion[a];
-            } else if (id == 59) {
-                return penquinsQuestion[a];
-            } else if (id == 60) {
-                return peregrineQuestion[a];
-            } else if (id == 61) {
-                return photographyQuestion[a];
-            } else if (id == 62) {
-                return planetmarsQuestion[a];
-            } else if (id == 63) {
-                return null; // rainbow
-            } else if (id == 64) {
-                return rollerskatesQuestion[a];
-            } else if (id == 65) {
-                return saltwaterQuestion[a];
-            } else if (id == 66) {
-                return seamountsQuestion[a];
-            } else if (id == 67) {
-                return null; // sequoya
-            } else if (id == 68) {
-                return shirleychsholmQuestion[a];
-            } else if (id == 69) {
-                return silkroadQuestion[a];
-            } else if (id == 70) {
-                return snowballsinspaceQuestion[a];
-            } else if (id == 71) {
-                return soccerQuestion[a];
-            } else if (id == 72) {
-                return spiderQuestion[a];
-            } else if (id == 73) {
-                return stagecoachesQuestion[a];
-            } else if (id == 74) {
-                return terrainQuestion[a];
-            } else if (id == 75) {
-                return thebrennersQuestion[a];
-            } else if (id == 76) {
-                return thebusdriverQuestion[a];
-            } else if (id == 77) {
-                return thecactusQuestion[a];
-            } else if (id == 78) {
-                return thecolorgreenQuestion[a];
-            } else if (id == 79) {
-                return thefluQuestion[a];
-            } else if (id == 80) {
-                return thenewschoolQuestion[a];
-            } else if (id == 81) {
-                return theparkQuestion[a];
-            } else if (id == 82) {
-                return thestoryofmarianQuestion[a];
-            } else if (id == 83) {
-                return thesunQuestion[a];
-            } else if (id == 84) {
-                return theuscensusQuestion[a];
-            } else if (id == 85) {
-                return thewhitehouseQuestion[a];
-            } else if (id == 86) {
-                return threepoliticwarQuestion[a];
-            } else if (id == 87) {
-                return timewithgranpaQuestion[a];
-            } else if (id == 88) {
-                return transportationQuestion[a];
-            } else if (id == 89) {
-                return troglodytesQuestion[a];
-            } else if (id == 90) {
-                return twobestknownQuestion[a];
-            } else if (id == 91) {
-                return umbrellasQuestion[a];
-            } else if (id == 92) {
-                return useofpeanutsQuestion[a];
-            } else if (id == 93) {
-                return useoftoungeQuestion[a];
-            } else if (id == 94) {
-                return vetemergencyQuestion[a];
-            } else if (id == 95) {
-                return waterQuestion[a];
-            } else if (id == 96) {
-                return null; //what is a wasp
-            } else if (id == 97) {
-                return whybarnQuestion[a];
-            } else if (id == 98) {
-                return worthworkingforQuestion[a];
+            }
+        } else if (level.equals("hard")) {
+
+
+            if (id == 5) {
+                return asiancarp5[a];
+            } else if (id == 8) {
+                return blackfriday8[a];
+            } else if (id == 11) {
+                return carnivorousplants11[a];
+            } else if (id == 16) {
+                return collectionoffolklore16[a];
+            } else if (id == 18) {
+                return eatingout18[a];
+            } else if (id == 24) {
+                return fortunetellers24[a];
+            } else if (id == 27) {
+                return gilraysflowerpot27[a];
+            } else if (id == 28) {
+                return goodluckforthegood28[a];
+            } else if (id == 31) {
+                return interstatehighways31[a];
             }
         }
 
@@ -2164,6 +2272,26 @@ public class QuestionAndAnswer {
             } else if (id == 29) {
                 return internAnswer21[a];
             }
+        } else if (level.equals("hard")) {
+            if (id == 5) {
+                return hardAnswer5[a];
+            } else if (id == 8) {
+                return hardAnswer8[a];
+            } else if (id == 11) {
+                return hardAnswer11[a];
+            } else if (id == 16) {
+                return hardAnswer16[a];
+            } else if (id == 18) {
+                return hardAnswer18[a];
+            } else if (id == 24) {
+                return hardAnswer24[a];
+            } else if (id == 27) {
+                return hardAnswer27[a];
+            } else if (id == 28) {
+                return hardAnswer28[a];
+            } else if (id == 31) {
+                return hardAnswer31[a];
+            }
         }
 
         return null;
@@ -2264,6 +2392,26 @@ public class QuestionAndAnswer {
                 return internChoices20[a][0];
             } else if (id == 29) {
                 return internChoices21[a][0];
+            }
+        } else if (level.equals("hard")) {
+            if (id == 5) {
+                return hardChoices5[a][0];
+            } else if (id == 8) {
+                return hardChoices8[a][0];
+            } else if (id == 11) {
+                return hardChoices11[a][0];
+            } else if (id == 16) {
+                return hardChoices16[a][0];
+            } else if (id == 18) {
+                return hardChoices18[a][0];
+            } else if (id == 24) {
+                return hardChoices24[a][0];
+            } else if (id == 27) {
+                return hardChoices27[a][0];
+            } else if (id == 28) {
+                return hardChoices28[a][0];
+            } else if (id == 31) {
+                return hardChoices31[a][0];
             }
         }
 
@@ -2368,6 +2516,26 @@ public class QuestionAndAnswer {
             } else if (id == 29) {
                 return internChoices21[a][1];
             }
+        }  else if (level.equals("hard")) {
+            if (id == 5) {
+                return hardChoices5[a][1];
+            } else if (id == 8) {
+                return hardChoices8[a][1];
+            } else if (id == 11) {
+                return hardChoices11[a][1];
+            } else if (id == 16) {
+                return hardChoices16[a][1];
+            } else if (id == 18) {
+                return hardChoices18[a][1];
+            } else if (id == 24) {
+                return hardChoices24[a][1];
+            } else if (id == 27) {
+                return hardChoices27[a][1];
+            } else if (id == 28) {
+                return hardChoices28[a][1];
+            } else if (id == 31) {
+                return hardChoices31[a][1];
+            }
         }
 
 
@@ -2470,6 +2638,26 @@ public class QuestionAndAnswer {
                 return internChoices20[a][2];
             } else if (id == 29) {
                 return internChoices21[a][2];
+            }
+        }  else if (level.equals("hard")) {
+            if (id == 5) {
+                return hardChoices5[a][2];
+            } else if (id == 8) {
+                return hardChoices8[a][2];
+            } else if (id == 11) {
+                return hardChoices11[a][2];
+            } else if (id == 16) {
+                return hardChoices16[a][2];
+            } else if (id == 18) {
+                return hardChoices18[a][2];
+            } else if (id == 24) {
+                return hardChoices24[a][2];
+            } else if (id == 27) {
+                return hardChoices27[a][2];
+            } else if (id == 28) {
+                return hardChoices28[a][2];
+            } else if (id == 31) {
+                return hardChoices31[a][2];
             }
         }
 
@@ -2574,6 +2762,26 @@ public class QuestionAndAnswer {
                     return internChoices20[a][3];
                 } else if (id == 29) {
                     return internChoices21[a][3];
+                }
+            }  else if (level.equals("hard")) {
+                if (id == 5) {
+                    return hardChoices5[a][3];
+                } else if (id == 8) {
+                    return hardChoices8[a][3];
+                } else if (id == 11) {
+                    return hardChoices11[a][3];
+                } else if (id == 16) {
+                    return hardChoices16[a][3];
+                } else if (id == 18) {
+                    return hardChoices18[a][3];
+                } else if (id == 24) {
+                    return hardChoices24[a][3];
+                } else if (id == 27) {
+                    return hardChoices27[a][3];
+                } else if (id == 28) {
+                    return hardChoices28[a][3];
+                } else if (id == 31) {
+                    return hardChoices31[a][3];
                 }
             }
 
