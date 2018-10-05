@@ -14,6 +14,8 @@ import android.widget.Button;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
 
+import static android.content.Context.MODE_PRIVATE;
+
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
@@ -84,6 +86,25 @@ public class HomeFragment extends Fragment {
             btnRedirect.setEnabled(false);
             btnRedirect.setText("You don't have yet open any stories.");
         }
+
+
+//        SharedPreferences sharedPreferences = getContext().getSharedPreferences("setting", MODE_PRIVATE);
+//        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        editor.putBoolean("small",false);
+//        editor.putBoolean("medium",false);
+//        editor.putBoolean("large",false);
+//        editor.putBoolean("font1",false);
+//        editor.putBoolean("font2",false);
+//        editor.putBoolean("dark",false);
+//        editor.putBoolean("light",false);
+//        editor.putBoolean("margin1",false);
+//        editor.putBoolean("margin2",false);
+//        editor.putBoolean("margin3",false);
+//        editor.putBoolean("line1",false);
+//        editor.putBoolean("line2",false);
+//        editor.putBoolean("line3",false);
+//
+//        editor.apply();
         // Inflate the layout for this fragment
 
         btnRedirect.setOnClickListener(new View.OnClickListener() {

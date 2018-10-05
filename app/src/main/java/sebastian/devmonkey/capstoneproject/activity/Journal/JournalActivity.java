@@ -42,6 +42,7 @@ public class JournalActivity extends AppCompatActivity {
     ArrayList<String> content;
     String[]titleJournal,contentJournal;
     ListView listView;
+    TextView noJournal;
     HashMap<String,String> titleContent;
 
     private SearchView searchView = null;
@@ -53,6 +54,8 @@ public class JournalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_journal);
 
         //back Button beside activity title
+
+        noJournal = (TextView)findViewById(R.id.noJournal);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("Journal");
 
@@ -90,9 +93,16 @@ public class JournalActivity extends AppCompatActivity {
         Cursor cursor = db.viewData();
 
         if (cursor.getCount() == 0) {
-            Toast.makeText(getApplicationContext(), "No data to show", Toast.LENGTH_SHORT).show();
-
+            //Toast.makeText(getApplicationContext(), "No data to show", Toast.LENGTH_SHORT).show();
+           // searchView.setVisibility(View.INVISIBLE);
+            noJournal.setText("No Journal Entries found.");
+           // searchView.clearFocus();
         } else {
+
+          //  searchView.setVisibility(View.VISIBLE);
+
+            noJournal.setText(null);
+          //  noJournal.se
 
             while (cursor.moveToNext()) {
                 //getting id in database to array
@@ -153,6 +163,8 @@ public class JournalActivity extends AppCompatActivity {
         if (searchItem != null) {
             searchView = (SearchView) searchItem.getActionView();
         }
+
+
         if (searchView != null) {
             searchView.setSearchableInfo(searchManager.getSearchableInfo(this.getComponentName()));
 
@@ -172,7 +184,6 @@ public class JournalActivity extends AppCompatActivity {
             };
             searchView.setOnQueryTextListener(queryTextListener);
         }
-
 
         return true;
     }
