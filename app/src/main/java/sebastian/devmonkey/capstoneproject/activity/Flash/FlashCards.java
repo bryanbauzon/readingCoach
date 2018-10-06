@@ -72,6 +72,8 @@ public class FlashCards extends AppCompatActivity {
         }
     }
     private void prompSpeech(){
+//        tts.speak("Please connect to the internet or turn on your mobile data for me to translate your voice more accurate. Thank you and good day.",TextToSpeech.QUEUE_FLUSH,null);
+
         Intent i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         i.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         i.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());

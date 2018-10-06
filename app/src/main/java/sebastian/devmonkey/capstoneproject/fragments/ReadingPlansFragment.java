@@ -4,12 +4,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import java.util.Locale;
 
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Flash.FlashCards;
@@ -29,7 +33,7 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+TextToSpeech tts;
 
     ImageButton btnPoem, btnStory, btnFlashCard;
 
@@ -64,12 +68,21 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        tts = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if(i !=TextToSpeech.ERROR){
+                    tts.setLanguage(Locale.US);
+                }
+            }
+        });
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
 
         }
+
     }
 
     @Override
@@ -125,7 +138,15 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
                 startActivity(new Intent(getActivity(), StoryCategory.class));
                 break;
             case R.id.btnFlashCards:
-                startActivity(new Intent(getActivity(), FlashCards.class));
+
+                tts.speak("Please connect to the internet or turn on your mobile data, for me to translate your voice more accurate. Thank you and good day.",TextToSpeech.QUEUE_FLUSH,null);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(new Intent(getActivity(), FlashCards.class));
+
+                    }
+                },500);
                // Toast.makeText(getActivity(), "flash cards Button Clicked", Toast.LENGTH_SHORT).show();
                 break;
         }

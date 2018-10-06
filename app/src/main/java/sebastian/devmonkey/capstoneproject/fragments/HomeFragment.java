@@ -3,6 +3,7 @@ package sebastian.devmonkey.capstoneproject.fragments;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -79,8 +80,13 @@ public class HomeFragment extends Fragment {
         final String id_holder =  pref.getString("id",null);
         final String level =  pref.getString("level",null);
 
+       // Typeface typeface = getResources().getFont(R.menu.)
+        Typeface type =Typeface.createFromAsset(getActivity().getAssets(),"fonts/typo.otf");
+        btnRedirect.setTypeface(type);
+
         if(storyTitle != null){
             btnRedirect.setEnabled(true);
+
             btnRedirect.setText(storyTitle);
         }else{
             btnRedirect.setEnabled(false);

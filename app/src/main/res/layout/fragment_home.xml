@@ -60,10 +60,12 @@
                     android:textColor="@color/colorPrimary"
                     android:id="@+id/btnRedirect"
                     android:layout_marginTop="20dp"
+
                     android:text="HELLO WORLD"
                     android:textStyle="bold"
                     android:background="@drawable/dashydashy"
                     android:textSize="20sp"
+
                     android:layout_alignParentBottom="true"
 />
             </RelativeLayout>
