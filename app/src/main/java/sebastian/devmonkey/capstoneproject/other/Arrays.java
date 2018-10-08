@@ -260,7 +260,7 @@ public class Arrays {
             "KOK",
             "LIGHTNING AND THUNDER",
             "LOVE TRAIN",
-            "MARIA'S BEAUTIFUL",
+            "MARIA'S BEAUTIFUL BOWL",
             "METEORS",
             "MEXICO",
             "MOONGOOES",
