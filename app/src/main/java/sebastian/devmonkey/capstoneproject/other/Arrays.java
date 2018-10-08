@@ -64,7 +64,6 @@ public class Arrays {
             "AIRPLANES",
             "ALLIGATORS",
             "AMERICAN CRAWL",
-            "AMERICA'S FIRST SCUPTOR",
             "AN ADVENTURE",
             "BEARS",
             "BEDS",
@@ -91,7 +90,6 @@ public class Arrays {
             "HELICOPTERS",
             "HOUSES",
             "HOW ARE YOU",
-            "HOW SEEDS GROW",
             "HOW WARTHOG LIVES",
             "HOW WORMS GET INSIDE AN APPLE",
             "HUMANS",
@@ -108,7 +106,7 @@ public class Arrays {
             "MY HOUSE",
             "NEW SHOES FOR MADDY",
             "ONE HUNDRED DOLLARS"
-//            "PAPER",
+            //"PAPER"
 //            "PARTS OF A PIANO",
 //            "PAUL COOKS",
 //            "RAINY DAY",

@@ -2,217 +2,1339 @@ package sebastian.devmonkey.capstoneproject.other;
 
 public class QuestionAndAnswer {
 
-    private String[] question1 = {
-            "The race in the story was the",
-            "The story an then the people were sure DePalma would win because he had been..",
-            "When DePalma's car stopped, he was",
-            "DePalma's car stopped because",
-            "When the car was whizzed by DePalma as he was pushing his car, he"
-    };
+    private String [] milesrace1 = {
+"The race in the story was the",
+"The story an then the people were sure DePalma would win because he had been",
+"When DePalma's car stopped, he was ",
+" DePalma's car stopped because",
+"When the car was whizzed by DePalma as he was pushing his car, he"};
 
-    private String[] question2 = {
-            "What is the weather like today?",
-            "Sam is hot, but Sam wants to be..",
-            "How can Sam get cool?",
-            "Why does Sam talk to Andrea?",
-            "Is the pool open?"
-    };
-
-
-    private String[] question3 = {
-            "What is at the door of the house?",
-            "What happens at the end of the story?",
-            "Is the dog dry or wet?",
-            "How does the wet dog look? \n I. strong \n II. cute \n III. small",
-            "What day of the week is it in the story?"
-    };
+    private String [][] choices1 = {
+            {"Monaco Grand Prix","Canadian Grand Prix"," Indianapolis 500 ","Grand National Championship"},
+        {"is not easily upset","upholds high standards","maintains a positive viewpoint", "considers all outcomes before making a decision"},
+        {"miracle","disaster","drudgery","teamwork"},
+        { "Flying Home","A Christmas War","Granting Clifton's Wish","The Disappointing Letter"},
+        {"appreciative"," disappointed","estranged","remorseful"}
+        };
+private String [] answer1 = {
+        "excited to disappointed"," maintains a positive viewpoint"," teamwork"," Granting Clifton's Wish"," appreciative"};
 
 
-    private String[] question4 = {
-            "In 1600 the English played a game like the modern 5 game of",
-            "In the old English game the players moved the ban by",
-            "To keep from being hurt, the players wore",
-            "The name of the English game was ",
-            "The name of the game came from the French word for "
-    };
-
-    private String[] question5 = {
-            "How are helicopters used as ambulances?",
-            "Why don’t helicopters need runways?",
-            "Helicopters are able to…",
-            "When airplanes move upward…",
-            "Airplanes are used in fire fighting because…"
-    };
 
 
-    private String[] question6 = {
-            "What kind of animal is an alligator?",
-            "What does an alligator look like? \n I. It has long legs. \n II. It has a long tail. \n III. It has sharp teeth.",
-            "What do alligators eat? \n I. birds \n II. plants \n III. fish",
-            "According to the story, most alligators are",
-            "The opposite of sharp is"
-    };
 
 
-    private String[] question7 = {
-            "People have been swimming competitively",
-            "England led in competitive swimming by",
-            "In 1844 a group of Native American swimmers",
-            "The Native Americans used this swimming style",
-            "The crawl was first developed"
-    };
 
 
-    private String[] question9 = {
-            "Where does Jaime live?",
-            "What kind of animal is Go-Go?",
-            "In the middle of the story, they walk across the field. This means they walk",
-            "What does Jaime do at the beginning of the story?",
-            "What does Jaime want to do at the end of the story?"
-    };
 
 
-    private String[][] choices = {
-            {"Monaco Grand Prix", "Canadian Grand Prix", "Indianapolis 500", "Grand National Championship"},
-            {"leading for most of the race", "was considered the best driver in the world", "had the best car in the world", "All of the above"},
-            {"just starting the race", "just crossing the finish line", "going into the last lap", "None of the above"},
-            {"it got too hot", "ran out of gas", "lost a tire", "the story does not say"},
-            {"waved a flag", "moved off the speedway", "stood still", "None of the above"}
-    };
 
 
-    private String[][] choices2 = {
-            {"It is cold", "It is cool", "It is warm", "It is hot"},
-            {"Cold", "Cool", "Warm", "Hot"},
-            {"He can go to the library", "He can go to the pool", "He can go to school", "He can go to work"},
-            {"Because she is his friend", "Because she knows his sister", "Because Sam needs to know what time it is", "Because Sam wants to know if the pool is open"},
-            {"Yes, the pool is open", "No, the pool is not open", "None of the choices", "Both A and B"}
-    };
 
 
-    private String[][] choices3 = {
-            {"A man", "A cat", "A dog", "A snake"},
-            {"Anna keeps the dog", "Anna takes the dog to the hospital", "Anna’s mom feeds the dog", "Anna dries the dog with a towel"},
-            {"The dog is dry", "The dog is wet", "Maybe", "None of the above"},
-            {"I only", "I and II", "II and III", "I, II, and III"},
-            {"Monday", "Tuesday", "Wednesday", "Thursday"}
-    };
+
+private String []  acalltothepool2 = {
+        "What is the weather like today?",
+        "Sam is hot, but Sam wants to be",
+        "How can Sam get cool?",
+        "Why does Sam talk to Andrea?",
+        "Is the pool open?" };
+
+private String [][] choices2 = {
+        {"cold","cool","warm","hot"},
+        {"cold","cool","warm","hot"},
+        {"He can go to the library.","He can go to the pool","He can go to school.","He can go to work."},
+        {"because she is his friend","because she knows his sister","because Sam needs to know what time it is","because Sam wants to know if the pool is open "},
+        {"Yes, the pool is open. ","No, the pool is not open. The pool is closed.","None of the choices","Both A and B"}
+        };
+
+private String [] answer2 = {
+        "hot","cool","He can go to the pool","because Sam wants to know if the pool is open ","Yes, the pool is open. "};
 
 
-    private String[][] choices4 = {
-            {"football", "rugby", "soccer", "None of the above"},
-            {"kicking it with their feet", "hitting it with their arms", "hitting it with their hands", "All of the above"},
-            {"special boots", "special pads", "arm braces", "leg braces"},
-            {"soccer", "balloon", "football", "rugby"},
-            {"a large ball", "balloon", "football", "rugby"}
-    };
 
 
-    private String[][] choices5 = {
-            {"They chase suspects on the ground", "They airlift people out of accidents", "They can drop water on fires", "They lift trees out of forests"},
-            {"They can take off without moving forward", "They can hover in the air", "They can fly backward", "They are small"},
-            {"move straight up", "fly backward", "hover", "All of the above"},
-            {"they must move forward", "they must move sideways", "they must move backwards", "Both A and B are correct"},
-            {"they can reach difficult spots", "they can hover above the fire", "their rotors can put out the fire", "Both A and B are correct"}
-    };
 
 
-    private String[][] choices6 = {
-            {"an amphibian", "a mammal", "a reptile", "a fish"},
-            {"I only", "I and II", "II and III", "I, II, and III"},
-            {"I only", "I and II", "I and III", "I, II, and III"},
-            {"big and long", "tall and skinny", "small and weak", "fat and funny"},
-            {"dull", "big", "soft", "smart"}
-    };
 
 
-    private String[][] choices7 = {
-            {"only fifty years", "over one hundred years", "since the crawl was developed", "since the breast stroke was developed"},
-            {"building pools", "developing the breast stroke", "holding races", "Both a and c"},
-            {"was surprised by an English teem", "showed them selves faster than English swimmers", "was dismayed by English swimming", "learned the English way of swimming"},
-            {"breast stroke", "back stroke", "side stroke", "free style"},
-            {"in Australia", "by English people", "in England", "Both a and b"}
-    };
 
 
-    private String[][] choices9 = {
-            {"He lives in a house in the city", "He lives in an apartment in the country", "He lives in a house in the country", "He lives in an apartment in the city"},
-            {"a dog", "a cat", "a pig", "a bird"},
-            {"under the field", "close to the field", "away from the field", "from one side of the field to the other side"},
-            {"go home", "walk out of the house", "go fishing in the river", "climb a mountain"},
-            {"go home", "climb a mountain", "go fishing in the river", "play a game with Go-Go"}
-    };
+
+private String []  ahappyvisitor3 = {
+        "What is at the door of the house?",
+        "What happens at the end of the story?",
+        "Is the dog dry or wet?",
+        "How does the wet dog look? \n I. strong \nII. cute \nIII. small",
+        "What day of the week is it in the story?" };
+
+private String [][] choices3 = {
+        {"man","cat","dog ","snake"},
+        {"Anna keeps the dog","Anna takes the dog to the hospital.","Anna’s mom feeds the dog.","Anna dries the dog with a towel."},
+        {"The dog is dry.","The dog is wet. ","Maybe","None of the above"},
+        {"I only","I and II","II and III ","I, II, and III"},
+        {"Monday","Tuesday","Wednesday","Thursday "}
+        };
+
+private String [] answer3 = {
+        "dog ","Anna keeps the dog","The dog is wet. ","II and III ","Thursday "};
 
 
-    private String[] answer1 = {
-            "Indianapolis 500",
-            "leading for most of the race",
-            "going into the last lap",
-            "the story does not say",
-            "None of the above"
-    };
+private String []  airballoon= {
+        "In 1600 the English played a game like the modern 5 game of ",
+        "In the old English game the players moved the ban by ",
+        "To keep from being hurt, the players wore ",
+        "The name of the English game was ",
+        "The name of the game came from the French word for " };
+
+private String [][] choices4 = {
+        {"football ","rugby ","soccer ","None of the above "},
+        {"kicking it with their feet ","hitting it with their arms ","hitting it with their hands ","All of the above "},
+        {"special boots ","special pads ","arm braces ","leg braces "},
+        {"soccer ","balloon ","football ","rugby "},
+        {"a large ball ","balloon ","football ","rugby "}
+        };
+
+private String [] answer4 = {
+        "rugby ","All of the above ","arm braces ","balloon ","a large ball "};
 
 
-    private String[] answer2 = {
-            "It is hot",
-            "Cool",
-            "He can go to the pool",
-            "Because Sam wants to know if the pool is open",
-            "Yes, the pool is open"
-    };
 
 
-    private String[] answer3 = {
-            "A dog",
-            "Anna keeps the dog",
-            "The dog is wet",
-            "II and III",
-            "Thursday"
-    };
 
 
-    private String[] answer4 = {
-            "rugby",
-            "All of the above",
-            "arm braces",
-            "balloon",
-            "a large ball"
-    };
 
 
-    private String[] answer5 = {
-            "They airlift people out of accidents",
-            "They can take off without moving forward",
-            "move straight up",
-            "they must move forward",
-            "Both A and B are correct"
-    };
+
+private String []  airplanes = {
+        "How are helicopters used as ambulances? ",
+        "Why don’t helicopters need runways? ",
+        "Helicopters are able to… ",
+        "When airplanes move upward… ",
+        "Airplanes are used in fire fighting because… " };
+
+private String [][] choices5 = {
+        {"They chase suspects on the ground. ","They airlift people out of accidents.  ","They can drop water on fires. ","They lift trees out of forests. "},
+        {"They can take off without moving forward.  ","They can hover in the air. ","They can fly backward.","They are small"},
+        {"move straight up.  ","fly backward. ","hover","All of the above "},
+        {"they must move forward.  ","they must move sideways. ","they must move backwards. ","Both A and B are correct. "},
+        {"they can reach difficult spots. ","they can hover above the fire. ","their rotors can put out the fire. ","Both A and B are correct "}
+        };
+
+private String [] answer5 = {
+        "They airlift people out of accidents.  ","They can take off without moving forward.  ","move straight up.  ","they must move forward.  ","Both A and B are correct "};
 
 
-    private String[] answer6 = {
-            "a reptile",
-            "II and III",
-            "I and III",
-            "big and long",
-            "dull"
-    };
-
-    private String[] answer7 = {
-            "over one hundred years",
-            "Both a and c",
-            "showed them selves faster than English swimmers",
-            "free style",
-            "Both a and b"
-    };
 
 
-    private String[] answer9 = {
-            "He lives in a house in the country",
-            "a dog",
-            "from one side of the field to the other side",
-            "walk out of the house",
-            "go home"
-    };
+
+
+
+
+
+
+
+private String []  alligators= {
+        "What kind of animal is an alligator?",
+        "What does an alligator look like? \n . I. It has long legs. \nII. It has a long tail. \nIII. It has sharp teeth.",
+        "What do alligators eat? \n I. birds \nII. plants \nIII. fish ",
+        "According to the story, most alligators are",
+        "The opposite of sharp is" };
+
+private String [][] choices6 = {
+        {"amphibian","mammal","reptile ","fish"},
+        {"I only","I and II","II and III ",". I, II, and III"},
+        {"I only","I and II","I and III","I, II, and III"},
+        {"big and long ","tall and skinny","small and weak","fat and funny"},
+        {"dull ","big","soft","smart"}
+        };
+
+private String [] answer6 = {
+        "reptile ","II and III ","I and III ","big and long ","dull "};
+
+
+
+
+
+
+
+
+
+
+
+private String []  americancrawl= {
+        "People have been swimming competitively",
+        "England led in competitive swimming by ",
+        "In 1844 a group of Native American swimmers ",
+        "The Native Americans used this swimming style ",
+        "The crawl was first developed " };
+
+private String [][] choices7 = {
+        {"only fifty years ","over one hundred years ","since the crawl was developed ","since the breast stroke was developed "},
+        {"building pools ","developing the breast stroke ","holding races ","Both a and c "},
+        {"was surprised by an English teem ","showed them selves faster than English swimmers ","was dismayed by English swimming ","learned the English way of swimming "},
+        {"breast stroke ","back stroke ","side stroke ","free style "},
+        {"in England","in Australia ","by English people ","Both a and b "}
+        };
+
+private String [] answer7 = {
+        "over one hundred years ","Both a and c ","showed them selves faster than English swimmers ","free style ","Both a and b "};
+
+
+
+
+
+
+
+
+
+private String []  anadventure= {
+        "Where does Jaime live?",
+        "What kind of animal is Go-Go?",
+        "In the middle of the story, they walk across the field. This means they walk",
+        "What does Jaime do at the beginning of the story?",
+        "What does Jaime want to do at the end of the story?" };
+
+private String [][] choices8 = {
+        {"He lives in a house in the city.","He lives in an apartment in the country.","He lives in a house in the country","He lives in an apartment in the city."},
+        {"dog ","cat","pig","bird"},
+        {"under the field","close to the field","away from the field","from one side of the field to the other side "},
+        {"go home","walk out of the house ","go fishing in the river","climb a mountain"},
+        {"go home ","climb a mountain","go fishing in the river","play a game with Go-Go"}
+        };
+
+private String [] answer8 = {
+        "He lives in a house in the country","dog ","from one side of the field to the other side ","walk out of the house ","go home "};
+
+
+
+
+
+
+
+
+
+
+private String []  bears= {
+        "When are bear cubs born?",
+        "What do bears do all winter?",
+        "How tall can a Brown Bear get?",
+        "Brown Bears leave their mothers…",
+        "Where do black bears like to hunt?" };
+
+private String [][] choices9 = {
+        {"Winter ","Spring","Summer","Fall"},
+        {"They learn to hunt.","They run and play.","They fish.","They rest. "},
+        {"Under 7 feet","Up to 8 feet","Under 9 feet","Up to 10 feet "},
+        {"when they are 1-2 years old.","when they are 2-4 years old. ","when they are 3-5 years old.","when they are 4-5 years old."},
+        {"In open spaces","In the woods ","In open spaces and in the woods",""}
+        };
+
+private String [] answer9 = {
+        "Winter ","They rest. ","Up to 10 feet ","In the woods ","In open spaces and near the water"};
+
+
+
+
+
+
+
+
+private String []  beds= {
+        "King Tut and Louis 14 they both had…",
+        "How many beds did Louis 14 they have?",
+        "Who liked to talk in bed?",
+        "The modern waterbed was invented in…",
+        "What do people sleep on now?" };
+
+private String [][] choices10 = {
+        {"springs in their beds.","beds made of fur","beautiful beds. ","many beds."},
+        {"3,000","1,715","1,643","413 "},
+        {"Egyptian people","French people","The king of France ","Both A and C are correct."},
+        {"1830’s.","1860’s.","1930’s.","1960’s. "},
+        {"Foam mattresses","Waterbeds","Airbeds","All of the above "}
+        };
+
+private String [] answer10 = {
+        "beautiful beds. ","413 ","The king of France ","1960’s. ","All of the above "};
+
+
+
+
+
+
+
+
+
+private String []  bellahides= {
+        "Where does Mom find Bella?",
+        "How does Mom find Bella?",
+        "When does Bella hide?",
+        "What does Mom say will happen when Bella sees the doctor?",
+        "How does Bella feel when Mom says she will not get a shot?" };
+
+private String [][] choices11 = {
+        {"in the kitchen","in the closet","next to the bookcase","behind the sofa "},
+        {"Bella makes a noise.","Dad helps Mom.","Mom sees Bellas leg.","The puppy makes a noise. "},
+        {"when she is bored","when she is scared ","when she is happy","all the time"},
+        {"Bella will get her ears checked. ","Bella will get a shot.","Bella will get to bring her puppy.","Bella will get her eyes checked."},
+        {"angry","better ","smart","tired"}
+        };
+
+private String [] answer11 = {
+        "behind the sofa ","The puppy makes a noise. ","when she is scared ","Bella will get her ears checked. ","better "};
+
+
+
+
+
+
+
+
+
+
+
+private String []  bigcitynoise= {
+        "What could Mr. Lucas do to sleep better?",
+        "Who says Simba is a bad dog?",
+        "Who does Mr. Cheek live next door to?",
+        "What does Olaf mean when he says Simba is as bad as the buses?",
+        "According to Olaf, what could be done about noise in a big town?" };
+
+private String [][] choices12 = {
+        {"close his windows at night ","not argue with Mr. Cheek","go to bed later","talk to Olaf"},
+        {"Olaf","Mr. Lucas ","Olaf and Mr. Lucas","no one"},
+        {"Olaf","Mr. Lucas ","Olaf and Mr. Lucas","no one"},
+        {"that Simba barks at the buses","that Simba and the buses argue","that Simba runs down the street at night","that Simba and the buses both make noise "},
+        {"People could ride bikes.","Dogs could be inside.","People could walk everywhere.","Nothing can be done. "}
+        };
+
+private String [] answer12 = {
+        "close his windows at night ","Mr. Lucas ","Mr. Lucas ","that Simba and the buses both make noise ","Nothing can be done. "};
+
+
+
+
+
+
+
+
+
+private String []  birds= {
+        "What is this passage about?",
+        "What birds can fly?",
+        "According to the passage, which of these birds cannot fly?",
+        "All birds are",
+        "How many wings does the bird has?" };
+
+private String [][] choices13 = {
+        {"what birds are like ","why some birds can’t fly","where birds have feathers"},
+        {"all birds","most birds ","some birds"},
+        {"swans","eagles","turkeys "},
+        {"animals ","blue jays","penguins"},
+        {"1","2","3"}
+        };
+
+private String [] answer13 = {
+        "what birds are like ","most birds ","turkeys ","animals ","2"};
+
+
+
+
+
+
+
+
+
+
+
+
+
+private String []  birdsnest= {
+        "A father house wren ",
+        "The males song a is used to attract ",
+        "Once the female has chosen a nest, she ",
+        "Once the eggs are laid, the mother and father ",
+        "The father wren cleans out the nest when the " };
+
+private String [][] choices14 = {
+        {"builds nests in the spring ","builds nests before his flight north","lives in each nest he builds ","Both a and c "},
+        {"female ","helps the female choose a nest ","tells which nest he prefers ","none of the above "},
+        {"rebuilds part of it ","puts feathers outside it ","puts feathers inside it ","Both a and c "},
+        {"guard the nest ","sit on them ","have different jobs","none of the above "},
+        {"chicks have built a new one ","chicks have left the nest ","female flies south f ","summer is over "}
+        };
+
+private String [] answer14 = {
+        "builds nests in the spring ","female ","Both a and c ","have different jobs","chicks have left the nest "};
+
+
+
+
+
+
+
+
+
+
+
+
+
+private String []  bullied= {
+        "Why hasn't Bryan's mom helped him?",
+        "Why doesn’t Bryan tell his mom he is being bullied?",
+        "What does Bryan do when he stays home from school?",
+        "Who tells Bryan that he should tell someone about being bullied?",
+        "What is likely to happen if Bryan keeps missing school?" };
+
+private String [][] choices15 = {
+        {"She is busy at work.","She does not care.","She does not know. ","She does not want to."},
+        {"She might hurt the mean kids.","He is scared of what the bullies will do if he tells an adult. ","She might talk to the teachers at the school.","She will make Bryan go to school."},
+        {"does his homework","plays video games","gets scared","reads books "},
+        {"Link B ","Bryan’s mom","the school counselor","the school principal"},
+        {"He will get into a fight.","His grades will fall. ","Link will stop being his friend.","The bullies will come to his house."}
+        };
+
+private String [] answer15 = {
+        "She does not know. ","He is scared of what the bullies will do if he tells an adult. ","reads books ","Link B ","His grades will fall. "};
+
+
+
+
+
+
+
+
+
+
+
+private String []  butterfly= {
+        "How many wings does a butterfly have?",
+        "According to the passage, what happens to a butterfly as it gets older?",
+        "What does fade mean?",
+        "Where do most butterflies live?",
+        "What is a butterfly?" };
+
+private String [][] choices16 = {
+        {"2","4","6"},
+        {"Its wings fall off.","It becomes a caterpillar.","The colors on its wings fade. "},
+        {"to lose color ","to get darker","to change order"},
+        {"in hot places","in cool, dry places","in warm places that are not too dry "},
+        {"reptile","insect ","mammal"}
+        };
+
+private String [] answer16 = {
+        "4","The colors on its wings fade. ","to lose color ","in warm places that are not too dry ","insect "};
+
+
+
+
+
+
+
+
+
+
+private String []  bythewater= {
+        "Where does Nestor live?",
+        "What does Nestor do each day?",
+        "Nestor lives in a house \"by the water.\" What is another way to write this?",
+        "When do the children come to the water?",
+        "What kind of person does Nestor seem to be?" };
+
+private String [][] choices17 = {
+        {"on a farm",". on a mountain top","in a boat on the water","in a house by the water "},
+        {"He sits by the water. ","He plays by the water.","He runs by the water.","He swims in the water"},
+        {"in the water","over the water","close to the water ","far away from the water"},
+        {"in the morning","in the afternoon ","in the evening","at night"},
+        {"calm ","sad","loud","young"}
+        };
+
+private String [] answer17 = {
+        "in a house by the water ","He sits by the water. ","far away from the water","in the afternoon ","calm "};
+
+
+
+
+
+
+
+
+
+
+
+private String []  campfire= {
+        "The story says that dead tree bark can be used as ",
+        "The story says that dry twigs can be used ",
+        "The story says that large pieces of wood can be used ",
+        "A campfire is started with ",
+        "When the kindling is burning" };
+
+private String [][] choices18 = {
+        {"fuel ","kindling ","tinder ","All of the above "},
+        {"as tinder ","as kindling ","to make a fire grow stronger ","Both b and c "},
+        {"as fuel ","for kindling ","to start a camfire ","instead of tree bark "},
+        {"kindling on top of tinder ","tinder on top of kindling ","large pieces of fuel ","thick pieces of wood "},
+        {"the tinder should be added ","tree bark should be added ","fuel should be added ","the fire is the right size "}
+        };
+
+private String [] answer18 = {
+        "All of the above ","Both b and c ","as fuel ","kindling on top of tinder ","fuel should be added "};
+
+
+
+
+
+
+
+
+
+
+private String []  cannedgoods= {
+        "In the early 1800, every ",
+        "The article says that sail on were often weak and ill because ",
+        "Food spoiled because",
+        "Because the sailors ate only rice and beans, ",
+        "Nicholas Appert was a " };
+
+private String [][] choices19 = {
+        {"sailor was weak or ill ","sailors at sea had difficultly staying strong","weak and ill sailors often went to sea","Both b and c"},
+        {"they didnt get enough for the right food ","they did not like fruit ","they didnt get enough for the right food ","they ate spoiled food ","All of the above "},
+        {"the sailors ate nothing but rice and beans ","the fruits and vegetables were not fresh ","there was no way to keep it fresh ","All of the above "},
+        {"their strength faded ","they returned home ill ","they returned home ","Both a and "},
+        {"sailor","farmer","ships captain","The story does not say"}
+        };
+
+private String [] answer19 = {
+        "sailors at sea had difficultly staying strong","there was no food at their ship","there was no way to keep it fresh ","Both a and ","The story does not say"};
+
+
+
+
+
+
+
+
+private String []  dandelions= {
+        "The dandelion parts that are eaten are the ",
+        "Dandelions can be eaten ",
+        "Dandelion greens are the leaves of",
+        "The edge of a dandelion leat looks like ",
+        "The name dent de lion means " };
+
+private String [][] choices20 = {
+        {"roots ","leaves ","Both a and b ","Neither a nor b "},
+        {"fresh in salads ","boiled, with salt and pepper ","Both a and b  ","Neither a nor b"},
+        {"an autumn plants ","summer plants ","spring plants ","winter plants "},
+        {"row of a teeth ","hairs ","seeds ","None of the above "},
+        {"rough edge ","lion's tooth ","little plant ","None of the above "}
+        };
+
+private String [] answer20 = {
+        "leaves ","Both a and b  ","spring plants ","row of a teeth ","lion's tooth "};
+
+
+
+
+
+
+
+
+
+
+
+
+
+private String []  differenttypesofpeople= {
+        "The story says that all people ",
+        "The story says that some Mongolians especially like to drink ",
+        "Most Mongolians seem to think that coffee ",
+        "Some Chinese have a certain worm that they",
+        "Some Chinese prefer to drink their tea with " };
+
+private String [][] choices21 = {
+        {"can't get along together ","usually like the same foods ","need to eat ","like to laugh "},
+        {"bears milk ","tea with brown sugar ","sour horses milk ","hot water with grains in it "},
+        {"is better than tea","should be taken cold ","is a good medicine ","tastes just awful "},
+        {"sprinkle in soup ","try crisp and eat 1 ","put in their vegetable gardens ","None of the above  "},
+        {"None of the above ","milk","sugar","lemon"}
+        };
+
+private String [] answer21 = {
+        "need to eat ","sour horses milk ","tastes just awful ","try crisp and eat 1 ","None of the above "};
+
+
+
+
+
+
+
+
+
+
+
+private String []  dogs= {
+        "The opposite of pull is…",
+        "How tall are the smallest dogs?",
+        "How tall are the biggest dogs?",
+        "What can all dogs do well?",
+        "How old was the oldest dog?" };
+
+private String [][] choices22 = {
+        {"receive","carry","push","help"},
+        {"3 inches","5 inches","6 inches","13 inches"},
+        {"1 foot","2 feet","3 feet ","5 feet"},
+        {"see","hear","smell","Both B and C are correct "},
+        {"5 years old","10 years old","13 years old","24 years old"}
+        };
+
+private String [] answer22 = {
+        "push","6 inches","3 feet ","Both B and C are correct ","24 years old"};
+
+
+private String [] empressoftheblues = {
+        "What was Bessie Smith called?",
+        "Bessie and Andrew Smith performed…",
+        "When did Smith make her first record?",
+        "Smith recorded \"St. Louis Blues\" with…",
+        "Which company did Smith record for?" };
+
+private String [][] choices23 = {
+        {"Ma","Ma Blue","Mother of the Blues","Empress of the Blues"},
+
+        {"in the White Elephant Saloon","in Chattanooga, Tennessee","on Broadway"," in a tavern"},
+        {"1912","1920","1923 ","1929"},
+        {"Louis Armstrong ","James P. Johnson","Coleman Hawkins","None of the above"},
+        {"White Elephant","Broadway","Columbia ","None of the above"}
+        };
+
+private String [] answer23 = {
+        "Empress of the Blues","in Chattanooga, Tennessee","1923 ","Louis Armstrong ","Columbia "};
+
+
+
+
+
+
+
+
+
+
+
+private String [] fish = {
+        "How many kinds of fish do people know about?",
+        "There are many…",
+        "How fast can the fastest fish swim?",
+        "How long can sharks be?",
+        "How much does the heaviest fish weigh?" };
+
+private String [][] choices24 = {
+        {"10,000","15,000","25,000 "," 40,000"},
+        {"kinds of fish","sizes of fish","colors of fish","All of the above "},
+        {"10 miles per hour","20 miles per hour","40 miles per hour","70 miles per hour "},
+        {"40 feet","50 feet ","60 feet","70 feet"},
+        {"15 pounds","150 pounds","15 tons ","150 tons"}
+        };
+
+private String [] answer24 = {
+        "25,000 ","All of the above ","70 miles per hour ","50 feet ","15 tons "};
+
+
+
+
+
+
+
+
+
+
+
+private String [] flags = {
+        "The first flags were made of…",
+        "How many flags do most ships fly?",
+        "Another word for cloth is…",
+        "Ships are…",
+        "Another way to say represents is…" };
+
+private String [][] choices25 = {
+        {"wood","cloth","rings","metal"},
+        {"0","1","2","3"},
+        {"color","fabric","metal","wood"},
+        {"boats","coins","flags","teams"},
+        {"flies","visits","works on","stands for"}
+        };
+
+private String [] answer25 = {
+        "wood","1","fabric","boats","stands for"};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+private String [] fried = {
+        "As used in paragraph 1, which is the best synonym for futile?",
+        "As used at in paragraph 1, what does it mean to acquiesce?",
+        "\"I abhor the State Fair.\"\n Which of the following is the best way to rewrite the above sentence(from paragraph 4) while keeping its original meaning as used in the story? ",
+        "According the passage, Valerie regards the state fair with",
+        "As used in paragraph 8, which is the best antonym for deleterious?" };
+
+private String [][] choices26 = {
+        {"arduous"," enervating","preposterous","ineffective "},
+        {"to give in ","to speak kindly","to pay attention","to answer the phone"},
+        {"I really dislike the State Fair","I am bored by the State Fair","I have no time for the State Fair","I am uncertain about the State Fair"},
+        {"ambivalence","condescension","jubilance ","Nonchalance"},
+        {"amicable","beneficial ","fortuitous","pathetic"}
+        };
+
+private String [] answer26 = {
+        "ineffective ","to give in","I really dislike the State Fair","jubilance ","beneficial "};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+private String [] grass = {
+        "What is the main point of this passage? ",
+        "What is an experiment? ",
+        "What happens after a few days? ",
+        "What is the opposite of dull? ",
+        "According to the passage, how long does it take for the grass to become dull?" };
+
+private String [][] choices27 = {
+        {"Buckets are bad","Grass need sunlight","Grass is not pretty when it is dull"},
+        {"a way to grow grass ","a way to test an idea  ","a way to use a bucket "},
+        {"The grass turns brown","The grass gets very dull ","The grass is not as green "},
+        {"bright ","brown","sunlight"},
+        {"month","week","few days"}
+        };
+
+private String [] answer27 = {
+        "Grass need sunlight","a way to test an idea ","The grass is not as green  ","bright  ","week"};
+
+
+
+
+
+
+
+
+
+
+
+
+private String [] greengrass = {
+        "What is the main point of this passage?",
+        "What is an experiment?",
+        "What happens after a few days?",
+        "What is the opposite of dull?",
+        "According to the passage, how long does it take for the grass to become dull?" };
+
+private String [][] choices28 = {
+        {"Buckets are bad","Plants need sunlight","Grass is not pretty when it is dull"},
+        {"a way to grow grass","a way to test an idea ",""},
+        {"The grass turns brown","The grass gets very dull","The grass is not as green "},
+        {"bright ","brown","sunlight"},
+        {"a month","a week ","a few days"}
+        };
+
+private String [] answer28 = {
+        "Plants need sunlight","a way to test an idea ","The grass is not as green ","bright ","a week"};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+private String [] grifin = {
+        "When does Griffin take violin lessons?",
+        "When does Mr. Thomas tell Griffin to practice?",
+        "When does Griffin practice the violin?",
+        "How does Griffin feel about the violin?",
+        "What does Mr. Thomas teach Griffin?" };
+
+private String [][] choices29 = {
+        {"on Tuesdays after soccer"," on Thursdays after soccer","on Tuesdays after school ","on Thursdays after school"},
+        {"every day","most days","only on Tuesdays","when he wants to"},
+        {"every day","most days ","never","only on Tuesdays"},
+        {"He loves it","He thinks it is hard","He hates to practice","He does not like the sound"},
+        {"to play soccer","to fix old clocks","to play the violin ","to build birdhouses"}
+        };
+
+private String [] answer29 = {
+        "on Tuesdays after school","every day","most days","He loves it","to play the violin "};
+
+
+
+
+
+
+
+
+
+
+private String [] grifinstalent = {
+        "When does Griffin take violin lessons?",
+        "When does Mr. Thomas tell Griffin to practice?",
+        "When does Griffin practice the violin?",
+        "How does Griffin feel about the violin?",
+        "What does Mr. Thomas teach Griffin?" };
+
+private String [][] choices30 = {
+        {"on Tuesdays after soccer","on Thursdays after soccer","on Tuesdays after school ","on Thursdays after school"},
+        {"every day ","most days","only on Tuesdays","when he wants to"},
+        {"every day","most days ","never","only on Tuesdays"},
+        {"He loves it","He thinks it is hard","He hates to practice","He does not like the sound"},
+        {"to play soccer","to fix old clocks","to play the violin ","to build birdhouses"}
+        };
+
+private String [] answer30 = {
+        "on Tuesdays after school ","every day ","most days ","He loves it","to play the violin "};
+
+
+
+
+
+
+
+
+
+
+
+private String []  helicopters= {
+        "Helicopters are able to…",
+        "When airplanes move upward…",
+        "Helicopters are used in fire fighting because…",
+        "How are helicopters used as ambulances?",
+        "Why don’t helicopters need runways?" };
+
+private String [][] choices31 = {
+        {"move straight up","fly backward.","hover","All of the above"},
+        {"they must move forward","they must move sideways.","they must move backwards.","Both A and B are correct."},
+        {"they can reach difficult spots.","they can hover above the fire.","their rotors can put out the fire.","Both A and B are correct "},
+        {"They chase suspects on the ground.","They airlift people out of accidents","They can drop water on fires.","They lift trees out of forests."},
+        {"They can take off without moving forward. ","They can hover in the air.","They can fly backward.","They are small.s"}
+        };
+
+private String [] answer31 = {
+        "move straight up","they must move forward","Both A and B are correct ","They airlift people out of accidents","They can take off without moving forward. "};
+
+
+
+
+
+
+
+
+
+
+
+
+
+private String []  houses= {
+        "Why are many forest houses made of logs?",
+        "Why do houses have bedrooms?",
+        "Where is the basement of a house?",
+        "Houses have doors…",
+        "Houses have windows to…" };
+
+private String [][] choices32 = {
+        {"There are many logs in the forest.","Trees are easy to find in the forest.","There is a lot of wood in the forest.","All of the above "},
+        {"sleeping ","cooking","relaxing","building things"},
+        {"Beside the house","Above the house","Under the house ","None of the above"},
+        {"so people can enter and exit","so people can sleep.","so people can cook and eat.","Both A and B are correct."},
+        {"let people go outside.","let people look outside.","let air into the house from outdoors.","Both B and C are correct. "}
+        };
+
+private String [] answer32 = {
+        "All of the above ","sleeping ","Under the house ","so people can enter and exit","Both B and C are correct. "};
+
+
+
+
+
+
+
+private String []  howareyou= {
+        "How does Julia feel?",
+        "What does Anita think Julia should do?",
+        "Relax means ______________.",
+        "Soon is __________________.",
+        "Who is the character in the story?" };
+
+private String [][] choices33 = {
+        {"Good","Bad","Sick","B and C"},
+        {"Exercise","Eat something","Drink something","Relax "},
+        {"exercise.","rest","study","none of the above."},
+        {"now","a long time from now.","a short time from now. ","never"},
+        {"Anita and Julia ","Julian and Anna","Joan and Anne","Joseph and John"}
+        };
+
+private String [] answer33 = {
+        "B and C","Relax ","rest","a short time from now. ","Anita and Julia "};
+
+
+
+
+
+
+
+
+
+
+private String []  howwarthoglives= {
+        "The article says the warthog is one of the",
+        "According to the article The warthog has ",
+        "While it eats, the warthog",
+        "When the warthog is running, its tail",
+        "The article says that the warthog is" };
+
+private String [][] choices34 = {
+        {"biggest animals in the world","fastest animals in the world","smallest animals in the world","strangest animals in the world "},
+        {"long legs and pointed ears ","bumps on its body and whiskers like a lion","long neck and pointed teeth","mane and a bumpy face "},
+        {"stands","kneels ","sits","lies down"},
+        {"sticks straight up ","is tucked  between the hind legs","moves from side to side","lies on the warthogs back"},
+        {"brave animal that is loyal to its family ","alone animal that often abandon its family","dangerous and feared by most other animals","an animal that fights often with other warthogs"}
+        };
+
+private String [] answer34 = {
+        "strangest animals in the world ","mane and a bumpy face ","kneels ","sticks straight up ","brave animal that is loyal to its family "};
+
+
+
+
+
+
+
+
+
+
+private String []  howwormsgetinsideanapple= {
+        "The story says that little tunnels are often found inside ",
+        "The little tunnels are made by ",
+        "In summer a small fly lands on the fruit and ",
+        "In autumn when the fruit falls to the ground, the worms",
+        "The story says that the worms winter home is inside " };
+
+private String [][] choices35 = {
+        {"sweet pears ","bitter berries ","soft apples ","sweet apples "},
+        {"eggs ","worms ","tubes ","flies "},
+        {"lays eggs on the skin ","lays eggs inside the fruit ","dies there ","spins a web on the leaves "},
+        {"crawl into tree bark","die","crawl onto the ground ","None of the above"},
+        {"the fruit","nut","hard case ","animal"}
+        };
+
+private String [] answer35 = {
+        "sweet apples ","worms ","lays eggs inside the fruit ","crawl onto the ground ",""};
+
+
+
+
+
+
+
+
+private String []  humans= {
+        "Fingers are part of your…",
+        "Your face has your…",
+        "Your tongue is part of your…",
+        "You use your lungs to…",
+        "To climb is to…" };
+
+private String [][] choices36 = {
+        {"leg","foot","nose","hand "},
+        {"eyes, nose and mouth","arms, legs and feet.","fingers and toes.","feet and toes."},
+        {"ear","nose","chest","mouth"},
+        {"eat","hear","smell","breathe"},
+        {"go in","go up","taste food","drink water"}
+        };
+
+private String [] answer36 = {
+        "hand ","eyes, nose and mouth","mouth","breathe","go up"};
+
+
+
+
+
+
+
+
+
+
+
+private String []  ifly= {
+        "Who is telling this story?",
+        "What does Bristol like to do in the airplane?",
+        "Bristol points at something outside the window. What does she point at?",
+        "Why does the little boy like to fly?",
+        "Who is narrate  the story?" };
+
+private String [][] choices37 = {
+        {"Bristol","little boy","pilot","friend"},
+        {"look out the window ","run in the yard","sit in the back","be the pilot"},
+        {"giraffe","her dad","cloud ","tree"},
+        {"because he is very young","because he is very little","because he doesn’t like airplanes","because he is afraid to be up high "},
+        {"Bristol","little boy","pilot ","friend"}
+        };
+
+private String [] answer37 = {
+        "pilot","look out the window ","cloud ","because he is afraid to be up high ","pilot "};
+
+
+
+
+
+
+
+private String []  icefishing= {
+        "Tents are…",
+        "Another way to say check is…",
+        "Something that is risky is…",
+        "What can you use for bait?",
+        "How thick must the ice be?" };
+
+private String [][] choices38 = {
+        {"hats","boots","heaters","shelters "},
+        {"look over carefully. ","cut with an ax.","follow the rule.","use the right tool."},
+        {"safe","thick","crispy","dangerous"},
+        {"Hot chocolate","Small fish","Worms","Both B and C are correct. "},
+        {"2 inches","3 inches","4 inches ","5 inches"}
+        };
+
+private String [] answer38 = {
+        "shelters ","look over carefully. ","dangerous","Both B and C are correct. ","4 inches "};
+
+
+
+
+
+
+
+private String []  julian= {
+        "Where does Julian work?",
+        "What must Julian do first at his job?",
+        "What is the second thing Julian must do at his job?",
+        "In how many piles must Julian put the books?",
+        "In what piles are the books placed?" };
+
+private String [][] choices39 = {
+        {"on a truck","at a bookstore ","in Peru","at an art store"},
+        {"open the boxes of books","read through all of the books","unload boxes of books ","sort through piles of books"},
+        {"open boxes ","tape boxes shut","put books on shelves","put books in piles"},
+        {"one","two","three","four"},
+        {"easy and hard","long and short","true and not true ","funny and not funny"}
+        };
+
+private String [] answer39 = {
+        "at a bookstore ","unload boxes of books ","open boxes ","two","true and not true "};
+
+
+
+
+
+
+
+
+
+
+private String []  jupiter= {
+        "What is true about Jupiter?",
+        "Which is a comparison used in the story? ",
+        "Powerful storms is the answer to what question? ",
+        "Jupiter is one of the Gas Giants",
+        "Jupiter is known for its Great Red Spot" };
+
+private String [][] choices40 = {
+        {"It is the 5th largest planet in the solar system  ","It has a rocky surface ","You could stand on Jupiter "},
+        {"Jupiter is compared to the Gas Giants  ","Jupiter’s size is compared to the size of the sun. ","Jupiter’s color is compared to the color of the Great Red Spot "},
+        {"What is inside the Great Red Spot?  ","What is inside Jupiter? ","What is inside the Gas Giants? "},
+        {"true","false","doesn’t say"},
+        {"true","false","doesn’t say"}
+        };
+
+private String [] answer40 = {
+        "It is the 5th largest planet in the solar system  ","Jupiter is compared to the Gas Giants  ","What is inside the Great Red Spot?  ","true","true"};
+
+
+
+
+
+
+
+
+
+private String []  landofafrica= {
+        "The story says that Africa has many kinds of ",
+        "The story says that Africa has ",
+        "Africas largest desert is ",
+        "The story says that the grasslands of Africa have ",
+        "The story says that the grass in the grasslands grows tall " };
+
+private String [][] choices41 = {
+        {"animals ","land areas ","countries","trees"},
+        {"lakes and trees ","mountains and rivers ","deserts and grasslands ","grasslands and plains"},
+        {"the Sahara ","in the north ","in the south ","Both a and b"},
+        {"small trees and grass ","large trees and bushes", "tall grass and flowers ","tall grass and large trees "},
+        {"near the rivers ","at the equator ","in the south ","when it rains" }
+        };
+
+private String [] answer41 = {
+        "land areas ","grasslands and plains","Both a and b","small trees and grass ","when it rains"};
+
+
+
+
+
+
+
+
+
+private String []  leonardodavinci= {
+        "When did Leonardo start the Mona Lisa?",
+        "Where is the Mona Lisa now?",
+        "What was one of Leonardo’s talents?",
+        "What was one of Leonardo’s ideas?",
+        "Leonardo was 27 years older than…" };
+
+private String [][] choices42 = {
+        {"1495","1498","1503","1519"},
+        {"Florence","France ","Milan","None of the above"},
+        {"He could dance.","He was a pilot.","He could cook.","He knew math. "},
+        {"He drew plans for a helicopter. ","He made drawings of a TV.","He got power from plants.","He built a zoo."},
+        {"Raphael","Aristotle","Socrates","Michelangelo"}
+        };
+
+private String [] answer42 = {
+        "1503","France ","He knew math. ","He drew plans for a helicopter. ","Michelangelo"};
+
+
+
+
+
+
+
+
+
+private String []  lordofolympus= {
+        "The Roman name for Zeus was ",
+        "Zeus lived on",
+        "According to the article, Zeus controlled ",
+        "According to the article, Zeus",
+        "The Greeks thought of Zeus" };
+
+private String [][] choices43 = {
+        {"jove","jupiter","chief","both a and b"},
+        {"Mount Olympus", "in Greece ","with other gods ", "All of the above"},
+        {"in the seasons ","death ","rain ","happiness "},
+        {"knew and saw everything ","often held back thunder","is often shown as a crown of leaves","None of the above"},
+        {"as a god who could be angry","as a god who could show pity","as one of the family","both a and b "}
+        };
+
+private String [] answer43 = {
+        "both a and b","All of the above","rain ","knew and saw everything ","both a and b "};
+
+
+
+
+
+
+
+private String []  money= {
+        "Tools are things you…",
+        "A deer is…",
+        "What are coins?",
+        "If something is durable, it…",
+        "An idea is a…" };
+
+private String [][] choices44 = {
+        {"use for money.","use to do work. ","put in the bank.",""},
+        {"kind of money.","kind of animal","made of shells.","gold or silver."},
+        {"Round, flat, metal pieces of money ","Beads made of white shells","Paper bank notes","Metal knives"},
+        {"is strong and can last a long time. ","made of metal.","can be used as money","None of the above."},
+        {"coin","train","string","thought"}
+        };
+
+private String [] answer44 = {
+        "use to do work. ","kind of animal","Round, flat, metal pieces of money ","is strong and can last a long time. ","thought"};
+
+
+
+
+
+
+
+private String []  myfamily= {
+        "How many sisters do I have?",
+        "How old is my mom?",
+        "My dad is",
+        "What is the name of my dog?",
+        "What colour is my dog?" };
+
+private String [][] choices45 = {
+        {"one","two","three","four"},
+        {"twenty-five years old","thirty years old","forty years old ","thirty-five years old"},
+        {"doctor","pilot","lawyer","engineer"},
+        {"julia","paw","andre","carrie"},
+        {"white","black","brown","yellow"}
+        };
+
+private String [] answer45 = {
+        "two","forty years old ","engineer","paw","brown"};
+
+
+
+
+
+
+
+
+private String []  myfriend= {
+        "Where does Julie’s friend live?",
+        "Is Julie’s friend a girl or a boy?",
+        "How old is Julie’s friend?",
+        "What is Julie’s friend's first name?",
+        "What is my friend's last name?" };
+
+private String [][] choices46 = {
+        {"colorado","texas","california"},
+        {"girl","boy","has no friend"},
+        {"15","16","17"},
+        {"jenny","jesica","julie"},
+        {"rowan","randal","roberts"}
+        };
+
+private String [] answer46 = {
+        "california","girl","17","jessica","roberts"};
+
+
+
+
+
+
+
+private String []  myhouse= {
+        "What is the United States?",
+        "What is North Carolina?",
+        "What is Chapel Hill?",
+        "How is the weather in Chapel Hill?",
+        "What is my house made of?" };
+
+private String [][] choices47 = {
+        {"city","state","country"},
+        {"city","state","country"},
+        {"city","state","country"},
+        {"rainy","sunny","cloudy"},
+        {"wood","brick","metal"}
+        };
+
+private String [] answer47 = {
+        "country","city","city","sunny","brick"};
+
+
+
+
+
+
+private String []  newshoesformandy= {
+        "Which shoes have a hole?",
+        "Which shoes does Maddy want to buy?",
+        "How does Maddy feel about the long wait at the store?",
+        "Who does Maddy see in the store?",
+        "When can Maddy wear her shoes to school?" };
+
+private String [][] choices48 = {
+        {"the green flip-flops","the red sandals","the pink shoes with hearts "},
+        {"the purple sneakers ","the red sandals","the pink shoes with hearts "},
+        {"She is happy about it.","She is excited about it.","She feels okay about it. "},
+        {"lot of people ","her older sister","neighbors"},
+        {"when she learns how to tie the laces ","tomorrow","yesterday"}
+        };
+
+private String [] answer48 = {
+        "the pink shoes with hearts ","the purple sneakers ","She feels okay about it. ","lot of people ",""};
+
+
+
+
+
+
+
+
+
+private String []  onehundreddollars= {
+        "What kind of man does Leonard seem to be?",
+        "As used at the end of the story, what does it mean to be honest?",
+        "How does Leonard seem to feel about what he has done?",
+        "What does the police officer give Leonard?",
+        "What kind of man does the police officer seem to be?" };
+
+private String [][] choices49 = {
+        {"bad","dumb","good"},
+        {"feel good","want more","truthful"},
+        {"angry","happy","sad"},
+        {"advice","handshake","money to eat"},
+        {"angry","busy","kind"}
+        };
+
+private String [] answer49 = {
+        "good","truthful","angry","advice","busy"};
+
+
+
+
+
+
+
+private String []  paper= {
+        "According to the passage, which of the following statements is/are true?\n I) Ninety-five percent of paper is made from pine trees.\nII) Computers will take away the need for paper.\nIII) There will probably always be uses for paper. ",
+        "What is the main idea of the second paragraph?",
+        "In line 12, sand most closely means",
+        "The people draw on a?",
+        "How many % does the paper made of tree?" };
+
+private String [][] choices50 = {
+        {"I only","II only","III only "},
+        {"What is made of paper","What paper is made of ","What people think of paper"},
+        {"grainy mineral","paint","polish or smooth"},
+        {"stone","wood","paper"},
+        {"95","96","97"}
+        };
+
+private String [] answer50 = {
+        "III only ","What paper is made of ","polish or smooth","paper","95"};
 
 
     //-------
@@ -2960,25 +4082,107 @@ private String [] hardAnswer28= {
 public String getQuestion(int a, int id, String level) {
 
         if (level.equals("easy")) {
-            if (id == 0) {
-                return question1[a];
-            } else if (id == 1) {
-                return question2[a];
-            } else if (id == 2) {
-                return question3[a];
-            } else if (id == 3) {
-                return question4[a];
-            } else if (id == 4) {
-                return question5[a];
-            } else if (id == 5) {
-                return question6[a];
-            } else if (id == 6) {
-                return question7[a];
-            } else if (id == 7) {
-                return null;
-            } else if (id == 8) {
-                return question9[a];
-            }
+                if (id == 0) {
+                        return milesrace1[a];
+                } else if (id == 1) {
+                        return acalltothepool2[a];
+                } else if (id == 2) {
+                        return ahappyvisitor3[a];
+                } else if (id == 3) {
+                        return airballoon[a];
+                } else if (id == 4) {
+                        return airplanes[a];
+                } else if (id == 5) {
+                        return alligators[a];
+                } else if (id == 6) {
+                        return americancrawl[a];
+                } else if (id == 7) {
+                        return anadventure[a];
+                } else if (id == 8) {
+                        return bears[a];
+                } else if (id == 9) {
+                        return beds[a];
+                } else if (id == 10) {
+                        return bellahides[a];
+                } else if (id == 11) {
+                        return bigcitynoise[a];
+                } else if (id == 12) {
+                        return birds[a];
+                } else if (id == 13) {
+                        return birdsnest[a];
+                } else if (id == 14) {
+                        return bullied[a];
+                } else if (id == 15) {
+                        return bluewhaleQuestion16[a];
+                } else if (id == 16) {
+                        return butterfly[a];
+                } else if (id == 17) {
+                        return bythewater[a];
+                } else if (id == 18) {
+                        return campfire[a];
+                } else if (id == 19) {
+                        return cannedgoods[a];
+                } else if (id == 20) {
+                        return dandelions[a];
+                } else if (id == 21) {
+                        return differenttypesofpeople[a];
+                } else if (id == 22) {
+                        return dogs[a];
+                } else if (id == 23) {
+                        return empressoftheblues[a];
+                } else if (id == 24) {
+                        return fish[a];
+                } else if (id == 25) {
+                        return flags[a];
+                } else if (id == 26) {
+                        return fried[a];
+                } else if (id == 27) {
+                        return grass[a];
+                } else if (id == 28) {
+                        return greengrass[a];
+                } else if (id == 29) {
+                        return grifin[a];
+                } else if (id == 30) {
+                        return  grifinstalent[a];
+                } else if (id == 31) {
+                        return helicopters[a];
+                } else if (id == 32) {
+                        return houses[a];
+                } else if (id == 33) {
+                        return howareyou[a];
+                } else if (id == 34) {
+                        return howwarthoglives[a];
+                } else if (id == 35) {
+                        return howwormsgetinsideanapple[a];
+                } else if (id == 36) {
+                        return humans[a];
+                } else if (id == 37) {
+                        return ifly[a];
+                } else if (id == 38) {
+                        return icefishing[a];
+                } else if (id == 39) {
+                        return julian[a];
+                } else if (id == 40) {
+                        return jupiter[a];
+                } else if (id == 41) {
+                        return landofafrica[a];
+                } else if (id == 42) {
+                        return leonardodavinci[a];
+                } else if (id == 43) {
+                        return lordofolympus[a];
+                } else if (id == 44) {
+                        return money[a];
+                } else if (id == 45) {
+                        return myfamily[a];
+                } else if (id == 46) {
+                        return myfriend[a];
+                } else if (id == 47) {
+                        return myhouse[a];
+                } else if (id == 48) {
+                        return newshoesformandy[a];
+                } else if (id == 49) {
+                        return onehundreddollars[a];
+                }
 
         } else if (level.equals("intermediate")) {
 
@@ -3195,35 +4399,107 @@ public String getQuestion(int a, int id, String level) {
     public String getCorrectAnswer(int a, int id, String level) {
 
         if (level.equals("easy")) {
-            if (id == 0) {
-                return answer1[a];
-            } else if (id == 1) {
-                return answer2[a];
-            } else if (id == 2) {
-                return answer3[a];
-            } else if (id == 3) {
-                return answer4[a];
-            } else if (id == 4) {
-                return answer5[a];
-            } else if (id == 5) {
-                return answer6[a];
-            } else if (id == 6) {
-                return answer7[a];
-            } else if (id == 7) {
-                return answer9[a];
-            } //else if (id == 8) {
-//                return null;
-//            } else if (id == 9) {
-//                return answer10[a];
-//            } else if (id == 10) {
-//                return answer11[a];
-//            } else if (id == 11) {
-//                return answer12[a];
-//            } else if (id == 12) {
-//                return answer13[a];
-//            } else if (id == 13) {
-//                return answer14[a];
-//            }
+                if (id == 0) {
+                        return answer1[a];
+                } else if (id == 1) {
+                        return answer2[a];
+                } else if (id == 2) {
+                        return answer3[a];
+                } else if (id == 3) {
+                        return answer4[a];
+                } else if (id == 4) {
+                        return answer5[a];
+                } else if (id == 5) {
+                        return answer6[a];
+                } else if (id == 6) {
+                        return answer7[a];
+                } else if (id == 7) {
+                        return answer8[a];
+                } else if (id == 8) {
+                        return answer9[a];
+                } else if (id == 9) {
+                        return answer10[a];
+                } else if (id == 10) {
+                        return answer11[a];
+                } else if (id == 11) {
+                        return answer12[a];
+                } else if (id == 12) {
+                        return answer13[a];
+                } else if (id == 13) {
+                        return answer14[a];
+                } else if (id == 14) {
+                        return answer15[a];
+                } else if (id == 15) {
+                        return answer16[a];
+                } else if (id == 16) {
+                        return answer17[a];
+                } else if (id == 17) {
+                        return answer18[a];
+                } else if (id == 18) {
+                        return answer19[a];
+                } else if (id == 19) {
+                        return answer20[a];
+                } else if (id == 20) {
+                        return answer21[a];
+                } else if (id == 21) {
+                        return answer22[a];
+                } else if (id == 22) {
+                        return answer23[a];
+                } else if (id == 23) {
+                        return answer24[a];
+                } else if (id == 24) {
+                        return answer25[a];
+                } else if (id == 25) {
+                        return answer26[a];
+                } else if (id == 26) {
+                        return answer27[a];
+                } else if (id == 27) {
+                        return answer28[a];
+                } else if (id == 28) {
+                        return answer29[a];
+                } else if (id == 29) {
+                        return answer30[a];
+                } else if (id == 30) {
+                        return  answer31[a];
+                } else if (id == 31) {
+                        return answer32[a];
+                } else if (id == 32) {
+                        return answer33[a];
+                } else if (id == 33) {
+                        return answer34[a];
+                } else if (id == 34) {
+                        return answer35[a];
+                } else if (id == 35) {
+                        return answer36[a];
+                } else if (id == 36) {
+                        return answer37[a];
+                } else if (id == 37) {
+                        return answer38[a];
+                } else if (id == 38) {
+                        return answer39[a];
+                } else if (id == 39) {
+                        return answer40[a];
+                } else if (id == 40) {
+                        return answer41[a];
+                } else if (id == 41) {
+                        return answer42[a];
+                } else if (id == 42) {
+                        return answer43[a];
+                } else if (id == 43) {
+                        return answer44[a];
+                } else if (id == 44) {
+                        return answer45[a];
+                } else if (id == 45) {
+                        return answer46[a];
+                } else if (id == 46) {
+                        return answer47[a];
+                } else if (id == 47) {
+                        return answer48[a];
+                } else if (id == 48) {
+                        return answer49[a];
+                } else if (id == 49) {
+                        return answer50[a];
+                }
         } else if (level.equals("intermediate")) {
 
             if (id == 0) {
@@ -3443,35 +4719,107 @@ public String getQuestion(int a, int id, String level) {
     public String getChoice1(int a, int id, String level) {
 
         if (level.equals("easy")) {
-            if (id == 0) {
-                return choices[a][0];
-            } else if (id == 1) {
-                return choices2[a][0];
-            } else if (id == 2) {
-                return choices3[a][0];
-            } else if (id == 3) {
-                return choices4[a][0];
-            } else if (id == 4) {
-                return choices5[a][0];
-            } else if (id == 5) {
-                return choices6[a][0];
-            } else if (id == 6) {
-                return choices7[a][0];
-            } else if (id == 7) {
-                return choices9[a][0];
-            } //else if (id == 8) {
-//                return null;
-//            } else if (id == 9) {
-//                return choices10[a][0];
-//            } else if (id == 10) {
-//                return choices11[a][0];
-//            } else if (id == 11) {
-//                return choices12[a][0];
-//            } else if (id == 12) {
-//                return choices13[a][0];
-//            } else if (id == 13) {
-//                return choices14[a][0];
-//            }
+                if (id == 0) {
+                        return choices1[a][0];
+                } else if (id == 1) {
+                        return choices2[a][0];
+                } else if (id == 2) {
+                        return choices3[a][0];
+                } else if (id == 3) {
+                        return choices4[a][0];
+                } else if (id == 4) {
+                        return choices5[a][0];
+                } else if (id == 5) {
+                        return choices6[a][0];
+                } else if (id == 6) {
+                        return choices7[a][0];
+                } else if (id == 7) {
+                        return choices8[a][0];
+                } else if (id == 8) {
+                        return choices9[a][0];
+                } else if (id == 9) {
+                        return choices10[a][0];
+                } else if (id == 10) {
+                        return choices11[a][0];
+                } else if (id == 11) {
+                        return choices12[a][0];
+                } else if (id == 12) {
+                        return choices13[a][0];
+                } else if (id == 13) {
+                        return choices14[a][0];
+                } else if (id == 14) {
+                        return choices15[a][0];
+                } else if (id == 15) {
+                        return choices16[a][0];
+                } else if (id == 16) {
+                        return choices17[a][0];
+                } else if (id == 17) {
+                        return choices18[a][0];
+                } else if (id == 18) {
+                        return choices19[a][0];
+                } else if (id == 19) {
+                        return choices20[a][0];
+                } else if (id == 20) {
+                        return choices21[a][0];
+                } else if (id == 21) {
+                        return choices22[a][0];
+                } else if (id == 22) {
+                        return choices23[a][0];
+                } else if (id == 23) {
+                        return choices24[a][0];
+                } else if (id == 24) {
+                        return choices25[a][0];
+                } else if (id == 25) {
+                        return choices26[a][0];
+                } else if (id == 26) {
+                        return choices27[a][0];
+                } else if (id == 27) {
+                        return choices28[a][0];
+                } else if (id == 28) {
+                        return choices29[a][0];
+                } else if (id == 29) {
+                        return choices30[a][0];
+                } else if (id == 30) {
+                        return  choices31[a][0];
+                } else if (id == 31) {
+                        return choices32[a][0];
+                } else if (id == 32) {
+                        return choices33[a][0];
+                } else if (id == 33) {
+                        return choices34[a][0];
+                } else if (id == 34) {
+                        return choices35[a][0];
+                } else if (id == 35) {
+                        return choices36[a][0];
+                } else if (id == 36) {
+                        return choices37[a][0];
+                } else if (id == 37) {
+                        return choices38[a][0];
+                } else if (id == 38) {
+                        return choices39[a][0];
+                } else if (id == 39) {
+                        return choices40[a][0];
+                } else if (id == 40) {
+                        return choices41[a][0];
+                } else if (id == 41) {
+                        return choices42[a][0];
+                } else if (id == 42) {
+                        return choices43[a][0];
+                } else if (id == 43) {
+                        return choices44[a][0];
+                } else if (id == 44) {
+                        return choices45[a][0];
+                } else if (id == 45) {
+                        return choices46[a][0];
+                } else if (id == 46) {
+                        return choices47[a][0];
+                } else if (id == 47) {
+                        return choices48[a][0];
+                } else if (id == 48) {
+                        return choices49[a][0];
+                } else if (id == 49) {
+                        return choices50[a][0];
+                }
         } else if (level.equals("intermediate")) {
 
             if (id == 0) {
@@ -3688,36 +5036,107 @@ public String getQuestion(int a, int id, String level) {
     public String getChoice2(int a, int id, String level) {
 
         if (level.equals("easy")) {
-            if (id == 0) {
-                return choices[a][1];
-            } else if (id == 1) {
-                return choices2[a][1];
-
-            } else if (id == 2) {
-                return choices3[a][1];
-            } else if (id == 3) {
-                return choices4[a][1];
-            } else if (id == 4) {
-                return choices5[a][1];
-            } else if (id == 5) {
-                return choices6[a][1];
-            } else if (id == 6) {
-                return choices7[a][1];
-            } else if (id == 7) {
-                return choices9[a][1];
-            } //else if (id == 8) {
-//                return null;
-//            } else if (id == 9) {
-//                return choices10[a][1];
-//            } else if (id == 10) {
-//                return choices11[a][1];
-//            } else if (id == 11) {
-//                return choices12[a][1];
-//            } else if (id == 12) {
-//                return choices13[a][1];
-//            } else if (id == 13) {
-//                return choices14[a][1];
-//            }
+                if (id == 0) {
+                        return choices1[a][1];
+                } else if (id == 1) {
+                        return choices2[a][1];
+                } else if (id == 2) {
+                        return choices3[a][1];
+                } else if (id == 3) {
+                        return choices4[a][1];
+                } else if (id == 4) {
+                        return choices5[a][1];
+                } else if (id == 5) {
+                        return choices6[a][1];
+                } else if (id == 6) {
+                        return choices7[a][1];
+                } else if (id == 7) {
+                        return choices8[a][1];
+                } else if (id == 8) {
+                        return choices9[a][1];
+                } else if (id == 9) {
+                        return choices10[a][1];
+                } else if (id == 10) {
+                        return choices11[a][1];
+                } else if (id == 11) {
+                        return choices12[a][1];
+                } else if (id == 12) {
+                        return choices13[a][1];
+                } else if (id == 13) {
+                        return choices14[a][1];
+                } else if (id == 14) {
+                        return choices15[a][1];
+                } else if (id == 15) {
+                        return choices16[a][1];
+                } else if (id == 16) {
+                        return choices17[a][1];
+                } else if (id == 17) {
+                        return choices18[a][1];
+                } else if (id == 18) {
+                        return choices19[a][1];
+                } else if (id == 19) {
+                        return choices20[a][1];
+                } else if (id == 20) {
+                        return choices21[a][1];
+                } else if (id == 21) {
+                        return choices22[a][1];
+                } else if (id == 22) {
+                        return choices23[a][1];
+                } else if (id == 23) {
+                        return choices24[a][1];
+                } else if (id == 24) {
+                        return choices25[a][1];
+                } else if (id == 25) {
+                        return choices26[a][1];
+                } else if (id == 26) {
+                        return choices27[a][1];
+                } else if (id == 27) {
+                        return choices28[a][1];
+                } else if (id == 28) {
+                        return choices29[a][1];
+                } else if (id == 29) {
+                        return choices30[a][1];
+                } else if (id == 30) {
+                        return  choices31[a][1];
+                } else if (id == 31) {
+                        return choices32[a][1];
+                } else if (id == 32) {
+                        return choices33[a][1];
+                } else if (id == 33) {
+                        return choices34[a][1];
+                } else if (id == 34) {
+                        return choices35[a][1];
+                } else if (id == 35) {
+                        return choices36[a][1];
+                } else if (id == 36) {
+                        return choices37[a][1];
+                } else if (id == 37) {
+                        return choices38[a][1];
+                } else if (id == 38) {
+                        return choices39[a][1];
+                } else if (id == 39) {
+                        return choices40[a][1];
+                } else if (id == 40) {
+                        return choices41[a][1];
+                } else if (id == 41) {
+                        return choices42[a][1];
+                } else if (id == 42) {
+                        return choices43[a][1];
+                } else if (id == 43) {
+                        return choices44[a][1];
+                } else if (id == 44) {
+                        return choices45[a][1];
+                } else if (id == 45) {
+                        return choices46[a][1];
+                } else if (id == 46) {
+                        return choices47[a][1];
+                } else if (id == 47) {
+                        return choices48[a][1];
+                } else if (id == 48) {
+                        return choices49[a][1];
+                } else if (id == 49) {
+                        return choices50[a][1];
+                }
         } else if (level.equals("intermediate")) {
 
             if (id == 0) {
@@ -3933,37 +5352,107 @@ public String getQuestion(int a, int id, String level) {
     public String getChoice3(int a, int id, String level) {
 
         if (level.equals("easy")) {
-            if (id == 0) {
-                return choices[a][2];
-            } else if (id == 1) {
-                return choices2[a][2];
-
-            } else if (id == 2) {
-                return choices3[a][2];
-            } else if (id == 3) {
-                return choices4[a][2];
-            } else if (id == 4) {
-                return choices5[a][2];
-            } else if (id == 5) {
-                return choices6[a][2];
-            } else if (id == 6) {
-                return choices7[a][2];
-            } else if (id == 8) {
-                return choices9[a][2];
-            }
-//            } //else if (id == 8) {
-//                return null;
-//            } else if (id == 9) {
-//                return choices10[a][2];
-//            } else if (id == 10) {
-//                return choices11[a][2];
-//            } else if (id == 11) {
-//                return choices12[a][2];
-//            } else if (id == 12) {
-//                return choices13[a][2];
-//            } else if (id == 13) {
-//                return choices14[a][2];
-//            }
+                if (id == 0) {
+                        return choices1[a][2];
+                } else if (id == 1) {
+                        return choices2[a][2];
+                } else if (id == 2) {
+                        return choices3[a][2];
+                } else if (id == 3) {
+                        return choices4[a][2];
+                } else if (id == 4) {
+                        return choices5[a][2];
+                } else if (id == 5) {
+                        return choices6[a][2];
+                } else if (id == 6) {
+                        return choices7[a][2];
+                } else if (id == 7) {
+                        return choices8[a][2];
+                } else if (id == 8) {
+                        return choices9[a][2];
+                } else if (id == 9) {
+                        return choices10[a][2];
+                } else if (id == 10) {
+                        return choices11[a][2];
+                } else if (id == 11) {
+                        return choices12[a][2];
+                } else if (id == 12) {
+                        return choices13[a][2];
+                } else if (id == 13) {
+                        return choices14[a][2];
+                } else if (id == 14) {
+                        return choices15[a][2];
+                } else if (id == 15) {
+                        return choices16[a][2];
+                } else if (id == 16) {
+                        return choices17[a][2];
+                } else if (id == 17) {
+                        return choices18[a][2];
+                } else if (id == 18) {
+                        return choices19[a][2];
+                } else if (id == 19) {
+                        return choices20[a][2];
+                } else if (id == 20) {
+                        return choices21[a][2];
+                } else if (id == 21) {
+                        return choices22[a][2];
+                } else if (id == 22) {
+                        return choices23[a][2];
+                } else if (id == 23) {
+                        return choices24[a][2];
+                } else if (id == 24) {
+                        return choices25[a][2];
+                } else if (id == 25) {
+                        return choices26[a][2];
+                } else if (id == 26) {
+                        return choices27[a][2];
+                } else if (id == 27) {
+                        return choices28[a][2];
+                } else if (id == 28) {
+                        return choices29[a][2];
+                } else if (id == 29) {
+                        return choices30[a][2];
+                } else if (id == 30) {
+                        return  choices31[a][2];
+                } else if (id == 31) {
+                        return choices32[a][2];
+                } else if (id == 32) {
+                        return choices33[a][2];
+                } else if (id == 33) {
+                        return choices34[a][2];
+                } else if (id == 34) {
+                        return choices35[a][2];
+                } else if (id == 35) {
+                        return choices36[a][2];
+                } else if (id == 36) {
+                        return choices37[a][2];
+                } else if (id == 37) {
+                        return choices38[a][2];
+                } else if (id == 38) {
+                        return choices39[a][2];
+                } else if (id == 39) {
+                        return choices40[a][2];
+                } else if (id == 40) {
+                        return choices41[a][2];
+                } else if (id == 41) {
+                        return choices42[a][2];
+                } else if (id == 42) {
+                        return choices43[a][2];
+                } else if (id == 43) {
+                        return choices44[a][2];
+                } else if (id == 44) {
+                        return choices45[a][2];
+                } else if (id == 45) {
+                        return choices46[a][2];
+                } else if (id == 46) {
+                        return choices47[a][2];
+                } else if (id == 47) {
+                        return choices48[a][2];
+                } else if (id == 48) {
+                        return choices49[a][2];
+                } else if (id == 49) {
+                        return choices50[a][2];
+                }
         } else if (level.equals("intermediate")) {
 
             if (id == 0) {
@@ -4182,35 +5671,107 @@ public String getQuestion(int a, int id, String level) {
         public String getChoice4( int a, int id, String level){
 
             if (level.equals("easy")) {
-                if (id == 0) {
-                    return choices[a][3];
-                } else if (id == 1) {
-                    return choices2[a][3];
-                } else if (id == 2) {
-                    return choices3[a][3];
-                } else if (id == 3) {
-                    return choices4[a][3];
-                } else if (id == 4) {
-                    return choices5[a][3];
-                } else if (id == 5) {
-                    return choices6[a][3];
-                } else if (id == 6) {
-                    return choices7[a][3];
-                } else if (id == 7) {
-                    return choices9[a][3];
-                } //else if (id == 8) {
-//                return null;
-//            } else if (id == 9) {
-//                return choices10[a][3];
-//            } else if (id == 10) {
-//                return choices11[a][3];
-//            } else if (id == 11) {
-//                return choices12[a][3];
-//            } else if (id == 12) {
-//                return choices13[a][3];
-//            } else if (id == 13) {
-//                return choices14[a][3];
-//            }
+                    if (id == 0) {
+                            return choices1[a][3];
+                    } else if (id == 1) {
+                            return choices2[a][3];
+                    } else if (id == 2) {
+                            return choices3[a][3];
+                    } else if (id == 3) {
+                            return choices4[a][3];
+                    } else if (id == 4) {
+                            return choices5[a][3];
+                    } else if (id == 5) {
+                            return choices6[a][3];
+                    } else if (id == 6) {
+                            return choices7[a][3];
+                    } else if (id == 7) {
+                            return choices8[a][3];
+                    } else if (id == 8) {
+                            return choices9[a][3];
+                    } else if (id == 9) {
+                            return choices10[a][3];
+                    } else if (id == 10) {
+                            return choices11[a][3];
+                    } else if (id == 11) {
+                            return choices12[a][3];
+                    } else if (id == 12) {
+                            return choices13[a][3];
+                    } else if (id == 13) {
+                            return choices14[a][3];
+                    } else if (id == 14) {
+                            return choices15[a][3];
+                    } else if (id == 15) {
+                            return choices16[a][3];
+                    } else if (id == 16) {
+                            return choices17[a][3];
+                    } else if (id == 17) {
+                            return choices18[a][3];
+                    } else if (id == 18) {
+                            return choices19[a][3];
+                    } else if (id == 19) {
+                            return choices20[a][3];
+                    } else if (id == 20) {
+                            return choices21[a][3];
+                    } else if (id == 21) {
+                            return choices22[a][3];
+                    } else if (id == 22) {
+                            return choices23[a][3];
+                    } else if (id == 23) {
+                            return choices24[a][3];
+                    } else if (id == 24) {
+                            return choices25[a][3];
+                    } else if (id == 25) {
+                            return choices26[a][3];
+                    } else if (id == 26) {
+                            return choices27[a][3];
+                    } else if (id == 27) {
+                            return choices28[a][3];
+                    } else if (id == 28) {
+                            return choices29[a][3];
+                    } else if (id == 29) {
+                            return choices30[a][3];
+                    } else if (id == 30) {
+                            return  choices31[a][3];
+                    } else if (id == 31) {
+                            return choices32[a][3];
+                    } else if (id == 32) {
+                            return choices33[a][3];
+                    } else if (id == 33) {
+                            return choices34[a][3];
+                    } else if (id == 34) {
+                            return choices35[a][3];
+                    } else if (id == 35) {
+                            return choices36[a][3];
+                    } else if (id == 36) {
+                            return choices37[a][3];
+                    } else if (id == 37) {
+                            return choices38[a][3];
+                    } else if (id == 38) {
+                            return choices39[a][3];
+                    } else if (id == 39) {
+                            return choices40[a][3];
+                    } else if (id == 40) {
+                            return choices41[a][3];
+                    } else if (id == 41) {
+                            return choices42[a][3];
+                    } else if (id == 42) {
+                            return choices43[a][3];
+                    } else if (id == 43) {
+                            return choices44[a][3];
+                    } else if (id == 44) {
+                            return choices45[a][3];
+                    } else if (id == 45) {
+                            return choices46[a][3];
+                    } else if (id == 46) {
+                            return choices47[a][3];
+                    } else if (id == 47) {
+                            return choices48[a][3];
+                    } else if (id == 48) {
+                            return choices49[a][3];
+                    } else if (id == 49) {
+                            return choices50[a][3];
+                    }
             } else if (level.equals("intermediate")) {
 
                 if (id == 0) {
