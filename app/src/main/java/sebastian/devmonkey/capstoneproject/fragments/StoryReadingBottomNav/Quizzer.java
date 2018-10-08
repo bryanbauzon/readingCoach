@@ -157,14 +157,6 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
             available.remove(0);
 
-        } else {
-            Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
-            a.setEnabled(false);
-            b.setEnabled(false);
-            c.setEnabled(false);
-            d.setEnabled(false);
-
-
         }
     }
 
@@ -175,58 +167,64 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     private void Correct(int num) {
 
 
+        if(!available.isEmpty()) {
 
-        a.setEnabled(false);
-        b.setEnabled(false);
-        c.setEnabled(false);
-        d.setEnabled(false);
+            a.setEnabled(false);
+            b.setEnabled(false);
+            c.setEnabled(false);
+            d.setEnabled(false);
 
-        if (num == 1) {
+            if (num == 1) {
 
-            a.setBackgroundColor(Color.GREEN);
-
-
-
-        } else if (num == 2){
-
-            b.setBackgroundColor(Color.GREEN);
+                a.setBackgroundColor(Color.GREEN);
 
 
-        } else if (num == 3) {
+            } else if (num == 2) {
 
-            c.setBackgroundColor(Color.GREEN);
-
-
-        } else if (num == 4) {
-
-            d.setBackgroundColor(Color.GREEN);
-        }
+                b.setBackgroundColor(Color.GREEN);
 
 
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // Do something after 5s = 5000ms
-                score++;
-                updateScore(score);
-                updateQuestion();
+            } else if (num == 3) {
 
-                a.setBackgroundResource(android.R.drawable.btn_default);
-                b.setBackgroundResource(android.R.drawable.btn_default);
-                c.setBackgroundResource(android.R.drawable.btn_default);
-                d.setBackgroundResource(android.R.drawable.btn_default);
+                c.setBackgroundColor(Color.GREEN);
 
 
-                a.setEnabled(true);
-                b.setEnabled(true);
-                c.setEnabled(true);
-                d.setEnabled(true);
+            } else if (num == 4) {
 
-
-
+                d.setBackgroundColor(Color.GREEN);
             }
-        }, 3000);
+
+
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // Do something after 5s = 5000ms
+                    score++;
+                    updateScore(score);
+                    updateQuestion();
+
+                    a.setBackgroundResource(android.R.drawable.btn_default);
+                    b.setBackgroundResource(android.R.drawable.btn_default);
+                    c.setBackgroundResource(android.R.drawable.btn_default);
+                    d.setBackgroundResource(android.R.drawable.btn_default);
+
+
+                    a.setEnabled(true);
+                    b.setEnabled(true);
+                    c.setEnabled(true);
+                    d.setEnabled(true);
+
+
+                }
+            }, 3000);
+
+        } else {
+            a.setEnabled(false);
+            b.setEnabled(false);
+            c.setEnabled(false);
+            d.setEnabled(false);
+        }
 
 
 
@@ -235,54 +233,60 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
     private void Wrong(int num) {
 
-        a.setEnabled(false);
-        b.setEnabled(false);
-        c.setEnabled(false);
-        d.setEnabled(false);
+        if (!available.isEmpty()) {
+
+            a.setEnabled(false);
+            b.setEnabled(false);
+            c.setEnabled(false);
+            d.setEnabled(false);
 
 
-        if (num == 1) {
+            if (num == 1) {
 
-            a.setBackgroundColor(Color.RED);
-
-
-
-        } else if (num == 2){
-
-            b.setBackgroundColor(Color.RED);
+                a.setBackgroundColor(Color.RED);
 
 
-        } else if (num == 3) {
+            } else if (num == 2) {
 
-            c.setBackgroundColor(Color.RED);
-
-
-        } else if (num == 4) {
-            d.setBackgroundColor(Color.RED);
-        }
+                b.setBackgroundColor(Color.RED);
 
 
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // Do something after 5s = 5000ms
-                updateQuestion();
+            } else if (num == 3) {
 
-                a.setBackgroundResource(android.R.drawable.btn_default);
-                b.setBackgroundResource(android.R.drawable.btn_default);
-                c.setBackgroundResource(android.R.drawable.btn_default);
-                d.setBackgroundResource(android.R.drawable.btn_default);
-
-                a.setEnabled(true);
-                b.setEnabled(true);
-                c.setEnabled(true);
-                d.setEnabled(true);
+                c.setBackgroundColor(Color.RED);
 
 
-
+            } else if (num == 4) {
+                d.setBackgroundColor(Color.RED);
             }
-        }, 3000);
+
+
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // Do something after 5s = 5000ms
+                    updateQuestion();
+
+                    a.setBackgroundResource(android.R.drawable.btn_default);
+                    b.setBackgroundResource(android.R.drawable.btn_default);
+                    c.setBackgroundResource(android.R.drawable.btn_default);
+                    d.setBackgroundResource(android.R.drawable.btn_default);
+
+                    a.setEnabled(true);
+                    b.setEnabled(true);
+                    c.setEnabled(true);
+                    d.setEnabled(true);
+
+
+                }
+            }, 3000);
+        } else {
+            a.setEnabled(false);
+            b.setEnabled(false);
+            c.setEnabled(false);
+            d.setEnabled(false);
+        }
 
     }
 
