@@ -1238,7 +1238,7 @@ public class QuestionAndAnswer {
     private String[] internAnswer82 =
             {"trash bags", "that she can help make things better ", "good", "better", "to clean up more trash"};
 
-    private String[] thestoryofmarianQuestion83 =
+    private String[] thstoryofmarianQuestion83 =
             {"    	Marian Anderson became a ",
                     "      	When Marian Anderson was eight years old, she",
                     "   	People who had heard Marian Anderson  ",

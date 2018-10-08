@@ -144,11 +144,9 @@ TextToSpeech tts;
                     @Override
                     public void run() {
                         startActivity(new Intent(getActivity(), FlashCards.class));
-
                     }
                 },500);
-               // Toast.makeText(getActivity(), "flash cards Button Clicked", Toast.LENGTH_SHORT).show();
-                break;
+               break;
         }
     }
 

@@ -28,6 +28,9 @@ import java.util.Locale;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
+import sebastian.devmonkey.capstoneproject.stories.Easy;
+import sebastian.devmonkey.capstoneproject.stories.Hard;
+import sebastian.devmonkey.capstoneproject.stories.Intermediate;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -56,6 +59,10 @@ public class Story extends Fragment {
     InputStream is;
     GlobalVariable gv;
     DatabaseHelper db;
+
+    Easy easy;
+    Hard hard;
+    Intermediate intermediate;
 
 
 
@@ -93,6 +100,9 @@ public class Story extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         setHasOptionsMenu(true);
+        easy = new Easy();
+        hard = new Hard();
+        intermediate = new Intermediate();
     }
 
     @Override
@@ -171,8 +181,8 @@ public class Story extends Fragment {
         if(level.equals("easy")){
             //testing for id
             if(id == 0){
-                //array is always starts at 0;
-                is = getActivity().getResources().openRawResource(R.raw.miles_race);
+                txtContent.setText(easy.story1[0]);
+              //  is = getActivity().getResources().openRawResource(R.raw.miles_race);
                 txtAuthor.setText("Gerry Sarko");
             } else if(id == 1){
                 is = getActivity().getResources().openRawResource(R.raw.a_call_to_the_pool);
@@ -914,7 +924,7 @@ public class Story extends Fragment {
 //            }
         }
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+       /* BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         if(is != null){
             try {
                 //assigning the value of reader to data and test it until the condition meets,
@@ -926,7 +936,7 @@ public class Story extends Fragment {
             }catch (Exception e){
 
             }
-        }
+        }*/
 
 
         // Inflate the layout for this fragment
