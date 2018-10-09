@@ -7,7 +7,9 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
@@ -26,6 +28,7 @@ import java.io.InputStreamReader;
 import java.util.Locale;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.fragments.BookmarksFragment;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 import sebastian.devmonkey.capstoneproject.stories.Easy;
@@ -49,6 +52,8 @@ public class Story extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
 
     private Menu menu;
     TextView txtContent, txtTitle, txtAuthor;
@@ -103,6 +108,8 @@ public class Story extends Fragment {
         easy = new Easy();
         hard = new Hard();
         intermediate = new Intermediate();
+
+
     }
 
     @Override
@@ -119,7 +126,7 @@ public class Story extends Fragment {
         gv = new GlobalVariable();
 
 
-
+     //   getActivity().onBackPressed();
 //        SharedPreferences pref = getActivity().getSharedPreferences("bookmark",Context.MODE_PRIVATE);
 //        final String status = pref.getString("bookmarked",null);
 //
@@ -179,291 +186,219 @@ public class Story extends Fragment {
         String data = "";
         StringBuffer stringBuffer = new StringBuffer();
         if(level.equals("easy")){
-            //testing for id
-            if(id == 0){
-                txtContent.setText(easy.story1[0]);
-              //  is = getActivity().getResources().openRawResource(R.raw.miles_race);
-                txtAuthor.setText("Gerry Sarko");
-            } else if(id == 1){
-                is = getActivity().getResources().openRawResource(R.raw.a_call_to_the_pool);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 2){
-                is = getActivity().getResources().openRawResource(R.raw.a_happy_visitor);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 3){
-                is = getActivity().getResources().openRawResource(R.raw.air_ballons);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 4){
-                is = getActivity().getResources().openRawResource(R.raw.airplanes);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 5){
-                is = getActivity().getResources().openRawResource(R.raw.alligators);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 6){
-                is = getActivity().getResources().openRawResource(R.raw.american_crawl);
-                txtAuthor.setText("Daniel Abraham");
-            } else if(id == 7){
-                is = getActivity().getResources().openRawResource(R.raw.americas_first_scuptor);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 8){
-                is = getActivity().getResources().openRawResource(R.raw.an_adventure);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 9){
-                is = getActivity().getResources().openRawResource(R.raw.bears);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 10){
-                is = getActivity().getResources().openRawResource(R.raw.beds);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 11){
-                is = getActivity().getResources().openRawResource(R.raw.bella_hides);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 12){
-                is = getActivity().getResources().openRawResource(R.raw.big_city_noise);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 13){
-                is = getActivity().getResources().openRawResource(R.raw.birds);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 14){
-                is = getActivity().getResources().openRawResource(R.raw.birds_nest);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 15) {
-                is = getActivity().getResources().openRawResource(R.raw.bullied);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 16) {
-                is = getActivity().getResources().openRawResource(R.raw.butterfly);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 17) {
-                is = getActivity().getResources().openRawResource(R.raw.by_the_water);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 18) {
-                is = getActivity().getResources().openRawResource(R.raw.campfire);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 19) {
-                is = getActivity().getResources().openRawResource(R.raw.canned_goods);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 20) {
-                is = getActivity().getResources().openRawResource(R.raw.dandelions);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 21) {
-                is = getActivity().getResources().openRawResource(R.raw.different_type_of_people);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 22) {
-                is = getActivity().getResources().openRawResource(R.raw.dogs);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 23) {
-                is = getActivity().getResources().openRawResource(R.raw.empress_of_the_blues);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 24) {
-                is = getActivity().getResources().openRawResource(R.raw.fish);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 25) {
-                is = getActivity().getResources().openRawResource(R.raw.flags);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 26) {
-                is = getActivity().getResources().openRawResource(R.raw.fried);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 27) {
-                is = getActivity().getResources().openRawResource(R.raw.grass);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 28) {
-                is = getActivity().getResources().openRawResource(R.raw.green_grass);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 29) {
-                is = getActivity().getResources().openRawResource(R.raw.griffin);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 30) {
-                is = getActivity().getResources().openRawResource(R.raw.griffins_talent);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 31) {
-                is = getActivity().getResources().openRawResource(R.raw.helicopters);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 32) {
-                is = getActivity().getResources().openRawResource(R.raw.houses);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 33) {
-                is = getActivity().getResources().openRawResource(R.raw.how_are_you);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 34) {
-                is = getActivity().getResources().openRawResource(R.raw.how_seeds_grow);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 35) {
-                is = getActivity().getResources().openRawResource(R.raw.how_warthog_lives);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 36) {
-                is = getActivity().getResources().openRawResource(R.raw.how_worms_get_inside_apple);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 37) {
-                is = getActivity().getResources().openRawResource(R.raw.humans);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 38) {
-                is = getActivity().getResources().openRawResource(R.raw.i_fly);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 39) {
-                is = getActivity().getResources().openRawResource(R.raw.ice_fishing);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 40) {
-                is = getActivity().getResources().openRawResource(R.raw.julian);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 41) {
-                is = getActivity().getResources().openRawResource(R.raw.land_of_africa);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 42) {
-                is = getActivity().getResources().openRawResource(R.raw.leonardo);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 43) {
-                is = getActivity().getResources().openRawResource(R.raw.lord_of_olympus);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 44) {
-                is = getActivity().getResources().openRawResource(R.raw.money);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 45) {
-                is = getActivity().getResources().openRawResource(R.raw.my_family);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 46) {
-                is = getActivity().getResources().openRawResource(R.raw.my_friend);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 47) {
-                is = getActivity().getResources().openRawResource(R.raw.my_house);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 48) {
-                is = getActivity().getResources().openRawResource(R.raw.new_shoes_for_mandy);
-                txtAuthor.setText("Susan Carter");
-            } else if(id == 49) {
-                is = getActivity().getResources().openRawResource(R.raw.one_hundred_dollars);
-                txtAuthor.setText("Susan Carter");
-            } //else if(id == 50) {
-//                is = getActivity().getResources().openRawResource(R.raw.paper);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 51) {
-//                is = getActivity().getResources().openRawResource(R.raw.parts_of_piano);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 52) {
-//                is = getActivity().getResources().openRawResource(R.raw.paul_cooks);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 53) {
-//                is = getActivity().getResources().openRawResource(R.raw.rainy_day);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 54) {
-//                is = getActivity().getResources().openRawResource(R.raw.running);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 55) {
-//                is = getActivity().getResources().openRawResource(R.raw.seeing_stars);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 56) {
-//                is = getActivity().getResources().openRawResource(R.raw.sky);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 57) {
-//                is = getActivity().getResources().openRawResource(R.raw.soap);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 58) {
-//                is = getActivity().getResources().openRawResource(R.raw.soda_pop);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 59) {
-//                is = getActivity().getResources().openRawResource(R.raw.story_of_lord_sandwich);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 60) {
-//                is = getActivity().getResources().openRawResource(R.raw.talia);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 61) {
-//                is = getActivity().getResources().openRawResource(R.raw.taste);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 62) {
-//                is = getActivity().getResources().openRawResource(R.raw.tea);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 63) {
-//                is = getActivity().getResources().openRawResource(R.raw.television);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 64) {
-//                is = getActivity().getResources().openRawResource(R.raw.tennis);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 65) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_20);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 66) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_blow_dryer);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 67) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_cat_the_rooster_and_the_young_mouse);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 68) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_dog_and_the_manger);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 69) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_donkey_in_the_lions_skin);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 70) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_drive);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 71) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_fog_and_the_fox);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 72) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_fox_and_the_crow);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 73) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_fox_and_the_grapes);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 74) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_hawaian_people_song);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 75) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_heart);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 76) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_interview);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 77) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_lion_and_the_mouse);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 78) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_mice_in_council);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 79) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_music);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 80) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_rabbit_and_the_turtle);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 81) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_red_carpet_treatment);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 82) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_rent_man);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 83) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_rooster_and_the_ax);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 84) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_rooster_and_the_jewel);
-//                txtAuthor.setText("Susan Carter");
-//            } else if(id == 85) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_singing_bird);
-//            } else if(id == 86) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_sky);
-//            } else if(id == 87) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_tree_and_the_ax);
-//            } else if(id == 88) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_united_states);
-//            } else if(id == 89) {
-//                is = getActivity().getResources().openRawResource(R.raw.the_wind_and_the_sun);
-//            } else if(id == 90) {
-//                is = getActivity().getResources().openRawResource(R.raw.tie_your_shoes);
-//            } else if(id == 91) {
-//                is = getActivity().getResources().openRawResource(R.raw.time_to);
-//            } else if(id == 92) {
-//                is = getActivity().getResources().openRawResource(R.raw.trees);
-//            } else if(id == 93) {
-//                is = getActivity().getResources().openRawResource(R.raw.what_number);
-//            } else if(id == 94) {
-//                is = getActivity().getResources().openRawResource(R.raw.what_time_is_it);
-//            } else if(id == 95) {
-//                is = getActivity().getResources().openRawResource(R.raw.where_are_my_glasses);
-//            } else if(id == 96) {
-//                is = getActivity().getResources().openRawResource(R.raw.yellowstone_national_park);
-//            } else if(id == 97) {
-//                is = getActivity().getResources().openRawResource(R.raw.zach);
-//            }
 
+            for(int x = 0; x <= easy.story.length; x++){
+                if(id == x){
+                    txtContent.setText(easy.story[x]);
+                    ///Log.println(Integer.toString(x));
+                    System.out.println(x);
+                }
+            }
+            txtAuthor.setText("Susan Carter");
+
+//            //testing for id
+//            if(id == 0){
+//                txtContent.setText(easy.story[0]);
+//              //  is = getActivity().getResources().openRawResource(R.raw.miles_race);
+//                txtAuthor.setText("Gerry Sarko");
+//            } else if(id == 1){
+//                txtContent.setText(easy.story[1]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 2){
+//                txtContent.setText(easy.story[2]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 3){
+//                txtContent.setText(easy.story[3]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 4){
+//                txtContent.setText(easy.story[4]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 5){
+//                txtContent.setText(easy.story[5]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 6){
+//                txtContent.setText(easy.story[6]);
+//
+//                txtAuthor.setText("Daniel Abraham");
+//            } else if(id == 7){
+//                txtContent.setText(easy.story[7]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } //else if(id == 8){
+//                txtContent.setText(easy.story9[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 9){
+//                txtContent.setText(easy.story10[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 10){
+//                txtContent.setText(easy.story11[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 11){
+//                txtContent.setText(easy.story12[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 12){
+//                txtContent.setText(easy.story13[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 13){
+//                txtContent.setText(easy.story14[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 14){
+//                txtContent.setText(easy.story15[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 15) {
+//                txtContent.setText(easy.story16[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 16) {
+//                txtContent.setText(easy.story17[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 17) {
+//                txtContent.setText(easy.story18[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 18) {
+//                txtContent.setText(easy.story19[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 19) {
+//                txtContent.setText(easy.story20[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 20) {
+//                txtContent.setText(easy.story21[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 21) {
+//                txtContent.setText(easy.story22[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 22) {
+//                txtContent.setText(easy.story23[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 23) {
+//                txtContent.setText(easy.story24[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 24) {
+//                txtContent.setText(easy.story25[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 25) {
+//                txtContent.setText(easy.story26[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 26) {
+//                txtContent.setText(easy.story27[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 27) {
+//                txtContent.setText(easy.story28[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 28) {
+//                txtContent.setText(easy.story29[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 29) {
+//                txtContent.setText(easy.story30[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 30) {
+//                txtContent.setText(easy.story31[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 31) {
+//                txtContent.setText(easy.story32[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 32) {
+//                txtContent.setText(easy.story33[0]);
+//
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 33) {
+//                txtContent.setText(easy.story34[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 34) {
+//                txtContent.setText(easy.story35[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 35) {
+//                txtContent.setText(easy.story36[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 36) {
+//                txtContent.setText(easy.story37[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 37) {
+//                txtContent.setText(easy.story38[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 38) {
+//                txtContent.setText(easy.story39[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 39) {
+//                txtContent.setText(easy.story40[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 40) {
+//                txtContent.setText(easy.story41[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 41) {
+//                txtContent.setText(easy.story42[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 42) {
+//                txtContent.setText(easy.story43[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 43) {
+//                txtContent.setText(easy.story44[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 44) {
+//                txtContent.setText(easy.story45[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 45) {
+//                txtContent.setText(easy.story46[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 46) {
+//                txtContent.setText(easy.story47[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 47) {
+//                txtContent.setText(easy.story48[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 48) {
+//                txtContent.setText(easy.story49[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            } else if(id == 49) {
+//                txtContent.setText(easy.story50[0]);
+//
+//                txtAuthor.setText("Susan Carter");
+//            }
         }else if(level.equals("intermediate")){
             if(id == 0){
                 //array is always starts at 0;
@@ -1008,6 +943,8 @@ public class Story extends Fragment {
         super.onCreateOptionsMenu(menu,inflater);
     }
 
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -1032,10 +969,15 @@ public class Story extends Fragment {
                 addBookmark();
                 return true;
 
+             //   default:
+
+
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
     private void addBookmark() {
 

@@ -2,61 +2,72 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".fragments.StoryReadingBottomNav.Quizzer"
-    android:layout_gravity="center">
+    >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp"
-        android:layout_marginBottom="45dp">
+        <LinearLayout
 
-        <RelativeLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="no of questions"
+                   android:id="@+id/noQuestion"
+                   />
+               <TextView
+                   android:id="@+id/score"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Score:     "
+                    android:layout_alignParentRight="true"
+                   android:textColor="@color/colorPrimary"
 
-            <LinearLayout
-                android:id="@+id/ly"
-                android:layout_width="match_parent"
-                android:layout_height="193dp"
-                android:layout_marginBottom="3dp"
-                android:layout_marginTop="3dp"
-                android:background="@color/orange"
-                android:orientation="vertical">
-
-
-
-                <TextView
-                    android:id="@+id/question"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/score"
-                    android:layout_marginTop="30dp"
-                    android:textStyle="bold"
-                    android:text="HELLO"
-                    android:textAlignment="center"
-                    android:textSize="30dp"/>
+                   />
+           </RelativeLayout>
 
 
-                <TextView
-                    android:id="@+id/score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:textAlignment="center"
-                    android:layout_marginTop="20dp"/>
+        </LinearLayout>
 
-            </LinearLayout>
 
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:textStyleww="bold"
+        android:text="HELLO"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
             <Button
                 android:id="@+id/a"
+                android:layout_centerInParent="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ly"
+
                 android:layout_marginBottom="3dp"
                 android:layout_marginTop="3dp" />
 
@@ -84,9 +95,5 @@
                 android:layout_centerVertical="true"
                 android:layout_marginBottom="3dp"
                 android:layout_marginTop="3dp" />
-
         </RelativeLayout>
-
-    </LinearLayout>
-
 </FrameLayout>

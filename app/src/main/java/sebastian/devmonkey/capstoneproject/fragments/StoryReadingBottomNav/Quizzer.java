@@ -48,7 +48,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
     private String answer;
     private int score = 0;
-    TextView questions = null, containerScore = null;
+    TextView questions = null, containerScore = null,noQuestions = null;
     GlobalVariable gv;
     Intent intent;
     String id_temp, level;
@@ -111,6 +111,8 @@ public class Quizzer extends Fragment implements View.OnClickListener{
         c = view.findViewById(R.id.c);
         d = view.findViewById(R.id.d);
 
+        noQuestions = view.findViewById(R.id.noQuestion);
+        noQuestions.setText("No. of Questions: ");
 
         a.setBackgroundResource(android.R.drawable.btn_default);
         b.setBackgroundResource(android.R.drawable.btn_default);
@@ -161,7 +163,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     }
 
     private void updateScore (int point) {
-        containerScore.setText("" + point);
+        containerScore.setText("Score: " + point);
     }
 
     private void Correct(int num) {
@@ -217,7 +219,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
 
                 }
-            }, 3000);
+            }, 4000);
 
         } else {
             a.setEnabled(false);
@@ -280,7 +282,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
 
                 }
-            }, 3000);
+            }, 4000);
         } else {
             a.setEnabled(false);
             b.setEnabled(false);

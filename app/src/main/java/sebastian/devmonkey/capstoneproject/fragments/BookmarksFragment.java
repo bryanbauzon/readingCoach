@@ -48,7 +48,7 @@ public class BookmarksFragment extends Fragment {
     ArrayList<String> level;
     TextView textView;
 
-    ArrayAdapter adapter;
+    public ArrayAdapter adapter;
 
     private OnFragmentInteractionListener mListener;
 
@@ -81,6 +81,9 @@ public class BookmarksFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+//        adapter.notifyDataSetChanged();
+//        listView.invalidateViews();
+
     }
 
     @Override
@@ -108,9 +111,10 @@ public class BookmarksFragment extends Fragment {
                 intent.putExtra("id", titleid.get(i));
                 intent.putExtra("title", title.get(i));
                 intent.putExtra("level", level.get(i));
-                Toast.makeText(getContext(),titleid.get(i),Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getContext(),titleid.get(i),Toast.LENGTH_SHORT).show();
 
                 startActivity(intent);
+               // getActivity().finish();
               //  System.exit(0);
             }
         });
@@ -140,6 +144,11 @@ public class BookmarksFragment extends Fragment {
             adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, title);
 
             listView.setAdapter(adapter);
+//            adapter.notifyDataSetChanged();
+//            listView.getLastVisiblePosition();
+//            listView.getFirstVisiblePosition();
+
+
         }
     }
 

@@ -85,6 +85,12 @@ TextToSpeech tts;
 
     }
 
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

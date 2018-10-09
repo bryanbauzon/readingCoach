@@ -2,6 +2,7 @@ package sebastian.devmonkey.capstoneproject.fragments;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -50,6 +51,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     Button pageMargin2;
     Button pageMargin3 ;
     Button reset ;
+
+
   //  TextView appName,overView;
     View view;
 
@@ -89,6 +92,53 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
+
+//
+//        if(valueText.equals("small")){
+//            removeIndicatorsTextSize();
+//            small.setPaintFlags(large.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+//            small.setTextColor(getResources().getColor(R.color.orange));
+//        }else if(valueText.equals("medium")){
+//            removeIndicatorsTextSize();
+//            medium.setPaintFlags(large.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+//            medium.setTextColor(getResources().getColor(R.color.orange));
+//        }else if(valueText.equals("large")){
+//            removeIndicatorsTextSize();
+//            large.setPaintFlags(large.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+//            large.setTextColor(getResources().getColor(R.color.orange));
+//        }else{
+//            removeIndicatorsTextSize();
+//
+//        }
+//
+////
+//
+//        if(valueFont.equals("fonttype1")){
+//            removeIndicatorsTextSize();
+//            fontType1.setPaintFlags(fontType1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+//            fontType1.setTextColor(getResources().getColor(R.color.orange));
+//        }else if(valueFont.equals("fonttype2")){
+//            removeIndicatorsTextSize();
+//            fontType2.setPaintFlags(fontType1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+//            fontType2.setTextColor(getResources().getColor(R.color.orange));
+//        }else{
+//            removeIndicatorsTextSize();
+//
+//        }
+//
+//        if(valueTheme.equals("dark")){
+//            removeIndicatorsTextSize();
+//            dark.setPaintFlags(dark.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+//            dark.setTextColor(getResources().getColor(R.color.orange));
+//        }else if(valueTheme.equals("light")){
+//            removeIndicatorsTextSize();
+//            light.setPaintFlags(fontType1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+//            light.setTextColor(getResources().getColor(R.color.orange));
+//        }else{
+//            removeIndicatorsTextSize();
+//        }
+
+
     }
 
     @Override
@@ -127,9 +177,19 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         lineSpacing2.setOnClickListener(this);
         reset.setOnClickListener(this);
 
-//
+        fontType1.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+        fontType2.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+        dark.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+        light.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
 
+        SharedPreferences preferences = getActivity().getPreferences(Context.MODE_PRIVATE);
+        String valueText = preferences.getString("activeText",null);
+        String valueFont = preferences.getString("activeFont",null);
+        String valueTheme = preferences.getString("activeTheme",null);
 
+        Toast.makeText(getContext(),valueText,Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(),valueFont,Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(),valueTheme,Toast.LENGTH_SHORT).show();
 
 
         return view;
@@ -162,6 +222,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View view) {
 
+        SharedPreferences preferences = getActivity().getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
 
      //   SharedPreferences pref = getActivity().getSharedPreferences("setting",MODE_PRIVATE);
 
@@ -171,79 +233,80 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         switch (view.getId()){
             case R.id.btnSmall:
                 GlobalVariable.fontSize = 15;
-
-//
-//
-//                SharedPreferences sharedPreferences = getContext().getSharedPreferences("setting", MODE_PRIVATE);
-//                SharedPreferences.Editor editor = sharedPreferences.edit();
-//                SharedPreferences pref = getActivity().getSharedPreferences("setting",MODE_PRIVATE);
-//
-//                 boolean smallBool = pref.getBoolean("small",true);
-//
-//                 if(smallBool){
-//                     Toast.makeText(getContext(),"default color",Toast.LENGTH_SHORT).show();
-//                    small.setBackgroundResource(R.drawable.settingbuttons);
-//                    editor.clear();
-//                     editor.putBoolean("small",false);
-//                     editor.apply();
-//                 }else{
-//                     small.setBackgroundColor(small.getContext().getResources().getColor(R.color.orange));
-//                     Toast.makeText(getContext(),"fill color",Toast.LENGTH_SHORT).show();
-//                     editor.clear();
-//                     editor.putBoolean("small",true);
-//                     editor.apply();
-//                 }
-
-                   // editor.apply();
-
-              // Toast.makeText(getContext(),Boolean.toString(small),Toast.LENGTH_SHORT).show();
-
+                removeIndicatorsTextSize();
+                small.setPaintFlags(small.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+                small.setTextColor(getResources().getColor(R.color.orange));
+                editor.clear();
+                editor.putString("activeText","small");
+                editor.apply();
 
                 break;
             case R.id.btnMedium:
                 GlobalVariable.fontSize = 17;
-//                if(!mediumB){
-//                    Toast.makeText(getContext(),"true",Toast.LENGTH_SHORT).show();
-//                    mediumB = true;
-//
-//                }else{
-//                    Toast.makeText(getContext(),"false",Toast.LENGTH_SHORT).show();
-//
-//                    mediumB = false;
-//                }
+                removeIndicatorsTextSize();
+                medium.setPaintFlags(medium.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+                medium.setTextColor(getResources().getColor(R.color.orange));
+                editor.clear();
+                editor.putString("activeText","medium");
+                editor.apply();
+
                 break;
 
             case R.id.btnLarge:
                 GlobalVariable.fontSize = 19;
-//                if(!font1){
-//                    Toast.makeText(getContext(),"true",Toast.LENGTH_SHORT).show();
-//                    font1 = true;
-//
-//                }else{
-//                    Toast.makeText(getContext(),"false",Toast.LENGTH_SHORT).show();
-//
-//                    font1 = false;
-//                }
+                removeIndicatorsTextSize();
+                large.setPaintFlags(large.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+                large.setTextColor(getResources().getColor(R.color.orange));
+                editor.clear();
+
+                editor.putString("activeText","large");
+                editor.apply();
+
                 break;
 
             case R.id.btnFontType1:
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Bold.ttf");
+               removeIndicatorFontType();
+               fontType1.setPaintFlags(fontType1.getPaintFlags() |  Paint.UNDERLINE_TEXT_FLAG);
 
+                fontType1.setTextColor(getResources().getColor(R.color.orange));
+                editor.clear();
+                editor.putString("activeFont","fonttype1");
+                editor.apply();
                 break;
 
             case R.id.btnFontType2:
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Italic.ttf");
+                removeIndicatorFontType();
+                fontType2.setPaintFlags(fontType2.getPaintFlags() |  Paint.UNDERLINE_TEXT_FLAG);
 
+                fontType2.setTextColor(getResources().getColor(R.color.orange));
+                editor.clear();
+                editor.putString("activeFont","fonttype2");
+                editor.apply();
                 break;
 
             case R.id.btnDark:
                 GlobalVariable.color  = 1;
+                removeIndicatorTheme();
+                dark.setPaintFlags(dark.getPaintFlags() |  Paint.UNDERLINE_TEXT_FLAG);
 
+                dark.setTextColor(getResources().getColor(R.color.orange));
+                editor.clear();
+                editor.putString("activeTheme","light");
+                editor.apply();
                 break;
 
 
             case R.id.btnLight:
                 GlobalVariable.color  = 0;
+                removeIndicatorTheme();
+                light.setPaintFlags(light.getPaintFlags() |  Paint.UNDERLINE_TEXT_FLAG);
+
+                light.setTextColor(getResources().getColor(R.color.orange));
+                editor.clear();
+                editor.putString("activeTheme","light");
+                editor.apply();
                 break;
 
 
@@ -306,6 +369,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.lineSpacing = 0;
 
 
+
         }
     }
 
@@ -324,21 +388,33 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         void onFragmentInteraction(Uri uri);
     }
 
-//    private void RefreshActivity() {
-//        new Handler().post(new Runnable() {
-//
-//            @Override
-//            public void run()
-//            {
-//                Intent intent = getActivity().getIntent();
-//                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK
-//                        | Intent.FLAG_ACTIVITY_NO_ANIMATION);
-//                getActivity().overridePendingTransition(0, 0);
-//                getActivity().finish();
-//
-//                getActivity().overridePendingTransition(0, 0);
-//                startActivity(intent);
-//            }
-//        });
-//    }
+    private void removeIndicatorsTextSize(){
+        small.setPaintFlags(small.getPaintFlags() & (~Paint.UNDERLINE_TEXT_FLAG));
+        medium.setPaintFlags(medium.getPaintFlags() & (~Paint.UNDERLINE_TEXT_FLAG));
+        large.setPaintFlags(large.getPaintFlags() & (~Paint.UNDERLINE_TEXT_FLAG));
+
+
+
+
+
+        small.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+        medium.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+        large.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+
+
+
+    }
+    private void removeIndicatorFontType(){
+        fontType1.setPaintFlags(fontType1.getPaintFlags() & (~Paint.UNDERLINE_TEXT_FLAG));
+        fontType2.setPaintFlags(fontType2.getPaintFlags() & (~Paint.UNDERLINE_TEXT_FLAG));
+        fontType1.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+        fontType2.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+    }
+    private void removeIndicatorTheme(){
+
+        dark.setPaintFlags(dark.getPaintFlags() & (~Paint.UNDERLINE_TEXT_FLAG));
+        light.setPaintFlags(light.getPaintFlags() & (~Paint.UNDERLINE_TEXT_FLAG));
+        dark.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+        light.setTextColor(getResources().getColor(R.color.colorPrimaryBlack));
+    }
 }
