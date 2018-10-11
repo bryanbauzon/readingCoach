@@ -54,6 +54,7 @@
     <string name="easy">Easy</string>
     <string name="intermediate">Intermediate</string>
     <string name="hard">Hard</string>
+    <string name="reset">Do you want to reset the settings?</string>
 
 
 </resources>

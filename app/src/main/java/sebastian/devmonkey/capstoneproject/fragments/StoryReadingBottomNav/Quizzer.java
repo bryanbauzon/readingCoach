@@ -53,6 +53,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     Intent intent;
     String id_temp, level;
     int id;
+    int ctr = 6;
     private String dummy;
 
 
@@ -147,9 +148,10 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
     private void updateQuestion() {
         if (!available.isEmpty()) {
+            ctr--;
+            noQuestions.setText("No. of Questions: "+ctr);
 
             Collections.shuffle(available);
-
             questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));
             a.setText(QuestionLibrary.getChoice1(available.get(0), id, level));
             b.setText(QuestionLibrary.getChoice2(available.get(0), id, level));

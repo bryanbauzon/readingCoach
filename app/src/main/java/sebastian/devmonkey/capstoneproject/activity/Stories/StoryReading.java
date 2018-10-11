@@ -48,6 +48,9 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
         loadFragment(new Story());
 
 
+
+
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener

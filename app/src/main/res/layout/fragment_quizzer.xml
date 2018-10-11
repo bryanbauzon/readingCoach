@@ -8,9 +8,9 @@
     >
 
         <LinearLayout
-
             android:orientation="vertical"
             android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
             android:layout_height="wrap_content">
            <RelativeLayout
                android:layout_width="match_parent"
@@ -38,20 +38,23 @@
 
 
 <RelativeLayout
+android:layout_marginTop="25dp"
     android:layout_width="match_parent"
-    android:layout_height="220dp">
+    android:background="#fda85c"
+
+    android:layout_height="190dp">
     <TextView
         android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:textStyleww="bold"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
         android:text="HELLO"
+        android:textColor="#3f3f3f"
+
         android:textAlignment="center"
         android:textSize="20dp"/>
-
-
 </RelativeLayout>
 
 

@@ -4,10 +4,12 @@ public class Easy {
 
 
 
-    public String[] story = {"People at the 1912 Indianapolis 500 automobile race were certain that Ralph DePalma would win. He had led for most of the 500-mile (BM-kilometer) race. Only a disaster could stop him from winning.Then it happened. Going into the last lap, his car suddenly stopped. DePalma jumped out and began to push it.\n\nAs he pushed, cars whizzed by at speeds of 160 km/h (100 mph). But he did not seem to mind. He slowly made his war toward the finish line.\nDePalmas car crossed the line just before Joe Dawson, the man in second place, roared past. But the prize went to Dawson. There is a rule that the winning car has to cross the finish line under its own power. ",
-
+    public String[] story = {
+            //500 MILES RACE
+            "People at the 1912 Indianapolis 500 automobile race were certain that Ralph DePalma would win. He had led for most of the 500-mile (BM-kilometer) race. Only a disaster could stop him from winning.Then it happened. Going into the last lap, his car suddenly stopped. DePalma jumped out and began to push it.\n\nAs he pushed, cars whizzed by at speeds of 160 km/h (100 mph). But he did not seem to mind. He slowly made his war toward the finish line.\nDePalmas car crossed the line just before Joe Dawson, the man in second place, roared past. But the prize went to Dawson. There is a rule that the winning car has to cross the finish line under its own power. ",
+            //A CALL TO THE POOL
             "My name is Sam. Today is very hot. The sun is very strong. I am hot. I want to be cool. How can I get cool? \n  Wait...I know! \n I can go to the pool. The pool is cool. I can swim in the pool.\n Is the pool open?  Or is the pool closed? Where is the phone? I need to call the pool. I need to find out if the pool is open or closed. \n Hello. My name is Andrea. I am at the pool. Can I help you? \n Hi, Andrea. Is the pool open? \n Yes. The pool is open \n  Okay. Thank you! \n You are welcome. Bye! \n  Great! The pool is open! Now I can cool down!",
-
+            //A HAPPY VISITOR
             "It is Thursday. It is raining today. It is a rainy day. Anna is inside the house. Anna is watching TV. Anna is"+
                     "watching TV inside the house. Anna cannot go outside. It is raining outside. Anna cannot go outside"+
                     "because it is raining outside. Anna is bored. Wait! Anna hears someone at the door.\n\n Someone is at the"+
@@ -17,21 +19,19 @@ public class Easy {
                     "There is a dog at the door!' Anna says. 'What?' says Anna s mom.\n\n A dog? Anna s mom comes to the"+
                     "door. Anna s mom sees the wet dog. The wet dog looks cute. 'Can we keep it? asks Anna. Yes, we"+
                     "can,' says Anna s mom. The dog is happy.",
-
-            "The word balloon has had an interesting history. \n"+
+            //AIR BALLOON
+            "The word balloon  has had an interesting history. \n"+
                     "In 1600 the English played a game of football much like the modern game of rugby. The players either kicked a ball or hit it with their arms and hands. The bell was no large that the players wore wooden arm braces to keep from being hurt. \n"+
                     "Both the game and the bell were called balloon, which came horn the Punch word hellon. meaning a large hell. But I for larger bell was invented by the Montgolfier brothers of France in 1783. This was a huge beg Elled with hot air, which rose high above the earth. \n"+
                     "This. too, was called a balloon and led to the sort of balloons we have today.",
-
+            //AIRPLANES
             "Airplanes can do three things that airplanes cannot do. \n  First, when airplanes move upward, they must also move forward, but helicopters can move straight up without moving ahead. Second, helicopters can fly backward, which airplanes cannot do. Third, helicopters can use their rotors to hover in the air (stay in one place) which is impossible for planes. Because helicopters can perform actions that airplanes cannot, they are used for different tasks. Since helicopters can take off without moving forward, they do not need a runway for takeoff. They are used in congested areas where there is no room for airplanes or in isolated areas which do not have airports. Because they can hover, they are used on fire fighting missions to drop water on fires. They are used in logging operations to lift trees out of forests. Helicopters are used as air ambulances to airlift patients out of situations which are difficult to reach by conventional ambulances. The police use helicopters to follow suspects on the ground or to search for cars on the ground."+
                     "Of course, helicopters have military uses because of their design and capabilities.",
-
-
-
+            //ALLIGATORS
             "An alligator is a very big reptile. Alligators can grow to be more than 15 feet long. An alligator has a long"+
                     "tail, short legs, strong jaws, and sharp teeth. It eats fish, mammals, and birds. Alligators live in rivers and"+
                     "swamps where the weather is very warm. There are lots of alligators in Florida.",
-
+            //AMERICAN CRAWL
             "Being able to swim has always been s valued skill."+
                     "But competitive swimming is just over one hundred years old."+
                     "Racing in the water began in Europe only about fifty years before the first modern Olympics."+
@@ -42,17 +42,7 @@ public class Easy {
                     "The Americans used a kind of free style that was much faster. \n\n A short time later an English family, who had moved to Australia, developed the crawl, an overhand swimming method."+
                     "One of that same family also took it to America."+
                     "Charles Daniels, an early user of the crawl, changed the kicking rhythm to develop the American crawl.",
-
-            "Patience Wright was America s first sculptor."+
-                    "She was born in New Jersey in 1725."+
-                    "As a child she made likenesses with bread dough of her family and friends."+
-                    "She was married to a local farmer and experimented with wax figures."+
-                    "Perhaps she was inspired by the popular travelling exhibits of wax images.  \n At forty-four she was widowed. She decided to move to New York to start a waxworks museum."+
-                    "It was very successful; people delighted in her wax figures of criminals and great people of history."+
-                    "She then moved to London. She was successful there, too. She even made wax portraits of the king and queen."+
-                    "The American Revolution made her less popular, however."+
-                    "She was supposed to have been a spy for Benjamin Franklin during the Revolution, sending him information in the wax heads of dolls. Again popular after the war, she died in 1786. She wanted to be returned to her ?dear America,? but she was buried in England.",
-
+            //AN ADVENTURES
             "Jaime is a boy. Jaime lives in a house. Jaime lives in the country. \nJaime lives in a house in the country."+
                     "Jaime has a dog. The dog is named Go-Go. \nJaime and Go-Go are friends. Jaime and Go-Go are bored.\n"+
                     "They want to do something new. They want to do something fun.\n They want to do something exciting.\n\n"+
@@ -63,7 +53,7 @@ public class Easy {
                     "Jaime. They walk toward the mountain. Jaime stops. He looks back at the house. 'I am a little tired,'"+
                     "Jaime says to Go-Go. Go-Go licks Jaime's face. Jaime turns around. 'Come on, Go-Go.\n We will climb the"+
                     "mountain tomorrow,' Jaime says. Jaime starts to walk home. Go-Go runs after Jaime.",
-
+            //BEARS
             "American Black Bears live in the U.S., Canada, and Mexico."+
                     "An American Black Bear can be up to seven"+
                     "feet tall if it stands on its hind legs."+
@@ -89,7 +79,7 @@ public class Easy {
                     "They like to hunt at night. They like to hunt in large, open spaces."+
                     "Black Bears eat"+
                     "mostly fruits and vegetables, but they also hunt and eat other animals.",
-
+            //BEDS
             "A long time ago, people didn t sleep in beds."+
                     "Ten thousand years ago, people probably slept on leaves and animal furs."+
                     "Long ago in Egypt, people ate, slept, and talked to friends in bed. "+
@@ -108,7 +98,7 @@ public class Easy {
                     "100 years after people started to put springs under their mattress, the modern waterbed was invented."+
                     "Today there are different kinds of beds. Some people have waterbeds. Some sleep on mats.Others"+
                     "sleep on foam mattresses or airbeds.",
-
+            //BELLA HIDES
             "Bella is hiding. She is behind the sofa with her pet puppy, Sir."+
                     "Bella is hiding from her mom. She does not"+
                     "want to go to the doctor."+
@@ -123,7 +113,7 @@ public class Easy {
                     "doctor just wants to check your ears.' 'Will I have to get a shot?' asks Bella.\n 'No,' says her mom. "+
                     "That"+
                     "makes Bella feel better. Bella grabs her mom's hand. They go to see the doctor.",
-
+            //BIG CITY
             "My name is Olaf. I live in a big city."+
                     "I live on a busy road. During the day and at night, cars go by. "+
                     "Buses go"+
@@ -144,11 +134,11 @@ public class Easy {
                     "You should take your dog inside at night,yells Mr. Lucas. The two men argue about Simba's barking"+
                     "almost every day. I think this is funny. To me, Simba is as bad as the cars. He is as bad as the buses. He is"+
                     "as bad as the trucks. This is what living in a big city is like. There is a lot of noise.",
-
-            "A bird is a kind of animal. A bird has two wings. Birds are the only animal with feathers. Pigeons, eagles,\"+\n" +
-                    "\"swans, and blue jays are all different kinds of birds. Most birds can fly. Turkeys and penguins are two\"+\n" +
+            //BIRDS
+            "A bird is a kind of animal. A bird has two wings. Birds are the only animal with feathers. Pigeons, eagles\n" +
+                    "\"swans, and blue jays are all different kinds of birds. Most birds can fly. Turkeys and penguins are two\n" +
                     "kinds of birds that cannot fly.",
-
+            //BIRDS NEST
             "One nest isn t enough for a father house wren."+
                     "In spring, after he flies north, he builds several nests."+
                     "Then his bubbling song attracts a female. "+
@@ -168,6 +158,7 @@ public class Easy {
                     "perfect their songs by listening to adult birds and interacting with other birds. Birds in a local area might "+
                     "learn variations in the basic song which help them recognize other members of their group.",
 
+            //BULLIED
             "Bryan doesn't like going to school anymore. "+
                     "He is tired of being bullied. "+
                     "Some of the bigger boys at"+
@@ -191,14 +182,14 @@ public class Easy {
                     "probably right. "+
                     "He will tell his mom about the bullies when she gets home from work tonight. He will see "+
                     "what happens.",
-
+            //BUTTERFLY
             "The butterfly is a beautiful insect. The butterfly has four thin wings. "+
                     "The wings have many different"+
                     "colors on them. As time passes, the colors on its wings fade. "+
                     "This means they are not as bright."+
                     "Butterflies live all over the world."+
                     "Most butterflies live where it is very warm and not too dry.",
-
+            //BY THE WATER
             "I live in a house by the water. I sit by the water each day. "+
                     "I take my bag there with me. In it, I pack a book "+
                     "and a blanket. "+
@@ -219,7 +210,7 @@ public class Easy {
                     "hear the water. I see the boats. I eat my lunch.  \n Later, the sky gets dark. I gather all of my things and go"+
                     "back to the house. I get in bed. "+
                     "I hear the water through my open window. The sound puts me to sleep.",
-
+            //CAMPFIRE
             "You need tinder, kindling, and fuel to make a campfire. "+
                     "Tinder is stuff that catches fire easily. such as bark from a dead tree, dry leaves, and weeds."+
                     "Kindling helps makes the fire grow stronger. Dry tree twigs make good kindling. "+
@@ -229,7 +220,7 @@ public class Easy {
                     "When the tinder and "+
                     "kindling are lit and burning, add some thin pieces of fuel. "+
                     "When this wood starts to burn add thicker pieces until the tire is the size you want.",
-
+            //CANNED GOODS
             "In the early 1800, sailors returning from a long time at sea were often weak or ill. "+
                     "They had not been getting enough good food on board their ship. "+
                     "Unlike today, there was no way to keep fruits, vegetables, and meat fresh.\n\n"+
@@ -238,6 +229,7 @@ public class Easy {
                     "Luckily, Nicholas Appert decided to do something about this. He worked at the problem for a year. "+
                     "Then, in 1811, he invented a way of canning food. "+
                     "Food could now be kept a long time, and sailors could enjoy their meals at sea.",
+            //DANDELIONS
             "Dandelions are good to eat! For years, people in all parts of the world have eaten them. "+
                     "They use the young spring leaves of the plant. Some people boil them and eat them with salt and pepper. "+
                     "Some people use them in salads. These spring leaves are called dandelion greens. "+
@@ -246,6 +238,7 @@ public class Easy {
                     "Long ago, the peeple of France gave the plant the name dent de lion, which means lions tooth. "+
                     "But to the people of England, the name sounded like dandelion. "+
                     "And thats what they called this little plant.",
+            //DIFFERENT TYPES OF PEOPLE
             "People can be different in many ways, but in one way we re all alike."+
                     "All of us need to eat. What we like to eat can be very different. "+
                     "Some Mongolians like to drink sour horse s milk. "+
@@ -254,7 +247,7 @@ public class Easy {
                     "But they think that sugar. milk, or lemon in tea is awful. "+
                     "ln another part of the world people think food that comes in tins is not fit to eat. "+
                     "It s all a matter of what were used to!",
-
+            //DOGS
             "There are wild dogs and pet dogs."+
                     "Pet dogs are helpers and friends to people. "+
                     "There were no pet dogs"+
@@ -279,7 +272,7 @@ public class Easy {
                     "dogs can smell very well. They can smell 40 times better than humans! "+
                     "Dogs live 5 to 13 years, but some"+
                     "dogs live much longer. One dog lived to be 24 years old!",
-
+            //EMPIRES OF BLUES
             "Bessie Smith was the Empress of the Blues. "+
                     "But long before she earned that title, she and her brother "+
                     "Andrew performed on the streets of Chattanooga, Tennessee. "+
@@ -303,7 +296,7 @@ public class Easy {
                     "Today Bessie Smith is still remembered as "+
                     "the Empress of the Blues."+
                     "Bessie Smith was admitted into the Rock and Roll Hall of Fame in 1989.",
-
+          //FISH
             "There are many kinds of fish."+
                     "There are big fish, small fish, long fish, and short fish. "+
                     "People know about"+
@@ -323,7 +316,7 @@ public class Easy {
                     "Some fish can smell. Some can hear sounds in the water. "+
                     "Fish can feel pain. When they get hurt, it feels"+
                     "bad.",
-
+        //FLAGS
             "The first flags were probably in China. People flew flags in China over 4,000 years ago. Each part of the"+
                     "army had its own flag so the \nsoldiers could see their leaders. Early flags were sticks of wood. They had"+
                     "pictures cut into the wood.\n\n Iran had metal flags about 3,000 years ago.\n Old Greek coins show pictures of"+
@@ -337,8 +330,7 @@ public class Easy {
                     "For example, a red flag tells the train to stop, just like a stop sign.\n\n A blue, white, or green flag tells the"+
                     "train that it can go.\n A blue flag on the side of a train means someone is working on the train. It means"+
                     "nobody can move the train.",
-
-
+        //FRIED
             "My cell phone rings again. It is futile to ignore it anymore. "+
                     "Valerie is persistent. When Valerie wants "+
                     "something, she will continue to bedevil me until I acquiesce. "+
@@ -363,8 +355,9 @@ public class Easy {
                     "inconsequential compared to my desire to hang with Val. "+
                     "Alas, I ignore my anti-fair bias for the"+
                     "teenth year. 'Pick me up at noon,' I say and hang up the phone.",
+            //GRASS
             "Grass need sunlight and water to make their own food.\n You can do an experiment to test if this is true. Place a bucket over a patch of green grass.\n After a few days, lift the bucket. You will see that the grass is not as green anymore.\n\n If you leave the bucket in place for a week, the grass will become very dull. This happens because the grass cannot make food in the dark. Remove the bucket. \n\nIn a few days, the grass will start turning green again.",
-
+            //GREEN GRASS
             "Plants need sunlight and water to make their own food. "+
                     "You can do an experiment to test if this is true."+
                     "Place a bucket over a patch of green grass. After a few days, lift the bucket."+
@@ -375,8 +368,19 @@ public class Easy {
                     "happens because the grass cannot make food in the dark. Remove the bucket. "+
                     "In a few days, the grass "+
                     "will start turning green again.",
-
-
+            //GRIFFIN
+            "Griffin  plays the violin. He takes lessons after school on Tuesdays."+
+                    "Griffin's violin teacher is Mr. Thomas."+
+                    "Mr. Thomas tells Griffin to practice every day. "+
+                    "Griffin practices his violin on most days. "+
+                    "On the days Griffin does not practice his violin, he plays soccer with his friends or fixes old clocks for fun. "+
+                    "You are a"+
+                    "boy of many talents, Griffin's parents tell him. 'That means you are good at doing many things.' "+
+                    "Griffin"+
+                    "likes it when his parents say this to him. He loves playing the violin. He loves playing soccer. "+
+                    "He loves "+
+                    "fixing clocks. Griffin loves to do many things, but he does not have the time to do them all every day.",
+            //GRIFFIN
             "Griffin plays the violin. He takes lessons after school on Tuesdays."+
                     "Griffin's violin teacher is Mr. Thomas."+
                     "Mr. Thomas tells Griffin to practice every day. "+
@@ -388,21 +392,7 @@ public class Easy {
                     "likes it when his parents say this to him. He loves playing the violin. He loves playing soccer. "+
                     "He loves "+
                     "fixing clocks. Griffin loves to do many things, but he does not have the time to do them all every day.",
-
-            "Griffin plays the violin. He takes lessons after school on Tuesdays."+
-                    "Griffin's violin teacher is Mr. Thomas."+
-                    "Mr. Thomas tells Griffin to practice every day. "+
-                    "Griffin practices his violin on most days. "+
-                    "On the days Griffin does not practice his violin, he plays soccer with his friends or fixes old clocks for fun. "+
-                    "You are a"+
-                    "boy of many talents, Griffin's parents tell him. 'That means you are good at doing many things.' "+
-                    "Griffin"+
-                    "likes it when his parents say this to him. He loves playing the violin. He loves playing soccer. "+
-                    "He loves "+
-                    "fixing clocks. Griffin loves to do many things, but he does not have the time to do them all every day.",
-
-
-
+        //HELICOPTERS
             "Helicopters are very different from airplanes. "+
                     " They can do three things that airplanes cannot do. "+
                     "First,"+
@@ -424,6 +414,7 @@ public class Easy {
                     "follow suspects on the ground or to search for cars on the ground. "+
                     "Of course, helicopters have military "+
                     "uses because of their design and capabilities.",
+
             "There are houses all over the world. Some houses are large. Some are small. "+
                     "Some are made of wood.Some are made of rock. Some are made of mud. Some are made of cloth. "+
                     "In cold places, some houses are made of ice ' frozen water! "+
@@ -445,25 +436,13 @@ public class Easy {
                     "home!",
 
             "Julia: Hi Anita. How are you?"+
-
                     " \n Anita: I am fine, thanks. How are you?"+
-
                     " \n Julia: I feel bad. I think I am sick.\n"+
                     "Anita: Hmm, that is not good.\n"+
                     "Julia: Yes, I know.\n"+
                     "Anita: Well, I think you should try to relax."+
                     "\n Julia: Okay.\nAnita: I hope you feel better soon.\n Julia: Yeah, I do too!",
 
-
-            "During summer months plants work hard. Their roots take in water."+
-                    "Their leaves make food and their flowers make seeds."+
-                    "As the seeds grow, the flower petals drop off. "+
-                    "Soon nothing is left of each flower but the little swelling where the seeds are growing."+
-                    "As the days pass, the swellings begin to change and become berries, or nuts, or other kinds of fruits, inside the fruits are the seeds."+
-                    "These seeds must now go travelling."+
-                    "Some will float through the air. "+
-                    "Others will catch hold of an animal s fur."+
-                    "Some will be dropped by animals that ate the fruits, and in each seed a plant waits to begin its life.",
             "The warthog is one of the strangest creatures in the world it has a mane curving tusks, bumps on its face and a tufted tell like a lion."+
                     "Whats more It kneels when it eats."+
                     "When warthogs run, their tails stand straight up in the air."+
@@ -471,12 +450,16 @@ public class Easy {
                     "Warthogs make up for their strange looks with courage and family loyalty."+
                     "When warthogs go to sleep at night, the young ones enter the burrows first."+
                     "Then the adults back in, so that they face the outside, and their ready to defend their family.",
+
+
             "The sweetest apples often have little tunnels inside-tunnels made by little worms."+
                     "How did worms get there? ln the middle of summer a special kind of fly lands on the apple.\n\n "+
                     "She pokes a sharp tube on her stomach into the fruit. Eggs slide through the tube into the apple.\n"+
                     "From the eggs come worms that eat the fruit.\n "+
                     "ln autumn when the apples fall to the ground, the worms crawl out, and a hard case forms around each one. \n\n"+
                     "That is the worms winter home. Inside the case the worm turns into a fly and next summer the fly comes out of its case just as apples are growing sweet.",
+
+
             "The human body has many parts. People have two arms and two legs.\n "+
                     "We have two hands and two feet.\n"+
                     "We have five fingers on each hand.\n "+
@@ -498,6 +481,7 @@ public class Easy {
                     "We eat meat, fruit, vegetables, and other foods. We can drink lots of things, but we drink "+
                     "water the most."+
                     "We also use our mouth and teeth to talk.",
+
             "I fly airplanes for a living. I am a pilot."+
                     "Sometimes I take my little girl with me. Her name is Bristol.Bristol"+
                     "likes to look out the window of the airplane. She likes to look at the clouds. "+
@@ -548,6 +532,7 @@ public class Easy {
                     "He works at the bookstore to pay for school. "+
                     "Julian wants to be a teacher. One day, he hopes to turn his "+
                     "story into a book. He hopes to see it at the bookstore.",
+
             "Jupiter is the 5th planet from the sun."+
                     "It is the largest planet in the solar system. "+
                     "It is so large that all of the other planets combined could fit inside Jupiter. "+
@@ -557,6 +542,9 @@ public class Easy {
                     "This is an area of Jupiter with raging storms way more powerful than any on Earth. "+
                     "Scientists don t know why it is red. "+
                     "They do know that winds inside the spot blow twice as fast as any race car on Earth can drive.",
+
+
+
 
             "Africa has many kinds of land areas. "+
                     "Deserts, forests, grasslands, and mountains are all found there."+
@@ -568,6 +556,8 @@ public class Easy {
                     "This happens when it rains. Africa also has different kinds of weather. "+
                     "It is hot near the equator. It can be cold in the mountains and in the south. "+
                     "Some places have a great deal at rain, but some parts have almost no rain at all.",
+
+
             "Leonardo da Vinci was born in 1452 in the area of Florence, Italy. "+
                     "He did many things. He was a scientist."+
 
@@ -596,6 +586,9 @@ public class Easy {
                     "Leonardo lived at the same time as Michelangelo and Raphael. He was 27 "+
                     "years older than Michelangelo. "+
                     "He was 31 years older than Raphael. Leonardo died in 1519.",
+
+
+
 
             "Zeus was the chief of all the Greek gods. The Romans knew him as Jove or as Jupiter."+
                     "All human affairs were ruled by him. His home end the home of merest to the gods was on Mount Olympus in Greece. "+
@@ -627,6 +620,9 @@ public class Easy {
                     "looks like, money is an idea. "+
                     "It is the thought that people can trade something they have for something"+
                     "they want. Money makes trading easier.",
+
+
+
             "Hi, my name is Eric. I am 12. I want to talk about my family. I have two sisters. "+
                     "Their names are Rachel"+
                     "and Carrie. Rachel is 18 years old. Carrie is 10 years old. "+
@@ -647,6 +643,8 @@ public class Easy {
                     "I like to eat lunch with her. "+
                     "We eat lunch"+
                     "on Monday, Tuesday, and Wednesday. Jessica is my friend.",
+
+
             "My house is in the United States. I live in the United States. "+
                     "The United States is a country. My house is"+
                     "in North Carolina. I live in North Carolina. \n"+
@@ -656,6 +654,9 @@ public class Easy {
                     "on a hill. It is a city on a small mountain. \n"+
                     "My house is red. My house is brick. "+
                     "I live in a red brick house.",
+
+
+
             "Maddy loves to jump rope, ride her scooter, and ride her skate board. \n"+
                     "One day, Maddy gets a hole in the"+
                     "shoes she likes best while riding her scooter. "+
@@ -679,6 +680,7 @@ public class Easy {
                     "Finally, she learns how to tie her laces."+
 
                     "She gets to wear her new shoes to school on Monday.\n 'I did it,' she says with a big smile.",
+
 
             "Leonard James is a homeless man. "+
                     "For him, life is always hard. He is always hungry. "+
@@ -716,6 +718,36 @@ public class Easy {
                     "'Hold on,' the police officer says. \n"+
                     "He reaches in his own pocket and gives Leonard ten dollars. 'Get"+
                     "yourself something to eat.'"
+            ///>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+//            "Patience Wright was America s first sculptor."+
+//                    "She was born in New Jersey in 1725."+
+//                    "As a child she made likenesses with bread dough of her family and friends."+
+//                    "She was married to a local farmer and experimented with wax figures."+
+//                    "Perhaps she was inspired by the popular travelling exhibits of wax images.  \n At forty-four she was widowed. She decided to move to New York to start a waxworks museum."+
+//                    "It was very successful; people delighted in her wax figures of criminals and great people of history."+
+//                    "She then moved to London. She was successful there, too. She even made wax portraits of the king and queen."+
+//                    "The American Revolution made her less popular, however."+
+//                    "She was supposed to have been a spy for Benjamin Franklin during the Revolution, sending him information in the wax heads of dolls. Again popular after the war, she died in 1786. She wanted to be returned to her ?dear America,? but she was buried in England.",
+//
+//
+//
+
+//            "During summer months plants work hard. Their roots take in water."+
+//                    "Their leaves make food and their flowers make seeds."+
+//                    "As the seeds grow, the flower petals drop off. "+
+//                    "Soon nothing is left of each flower but the little swelling where the seeds are growing."+
+//                    "As the days pass, the swellings begin to change and become berries, or nuts, or other kinds of fruits, inside the fruits are the seeds."+
+//                    "These seeds must now go travelling."+
+//                    "Some will float through the air. "+
+//                    "Others will catch hold of an animal s fur."+
+//                    "Some will be dropped by animals that ate the fruits, and in each seed a plant waits to begin its life.",
+//
+
+
+
+
 
     };
 

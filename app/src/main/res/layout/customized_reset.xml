@@ -14,35 +14,43 @@
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/colorAccent"
-        android:text="@string/txtJournal"
+        android:text="@string/message"
         />
     <RelativeLayout
         android:layout_width="wrap_content"
         android:padding="15dp"
         android:layout_height="180dp">
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txt_title"
-            android:id="@+id/txtTitle"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/txt_content"
-            android:layout_below="@+id/txtTitle"
-            android:id="@+id/txtContent"
+            android:text="@string/reset"
+            android:layout_marginTop="26dp"
+            android:textSize="20sp"
             />
         <Button
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:text="@string/btn_save"
-            android:id="@+id/btnSave"
-            android:background="@color/correct"
-            android:textColor="@color/colorAccent"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textColor="@color/colorAccent"
+            android:background="@color/correct"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnYesreset"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:layout_toLeftOf="@id/btnYesreset"
+            android:id="@+id/btnNoreset"
+            android:layout_alignParentBottom="true"
+            android:background="@color/no"
+            android:textColor="@color/colorAccent"
+
+            android:layout_marginRight="10dp"
+            />
     </RelativeLayout>
 
 

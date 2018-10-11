@@ -36,7 +36,7 @@ public class ReadingPlansFragment extends Fragment implements View.OnClickListen
 TextToSpeech tts;
 
     ImageButton btnPoem, btnStory, btnFlashCard;
-
+   // TextToSpeech textToSpeech;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -85,12 +85,13 @@ TextToSpeech tts;
 
     }
 
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        if(tts != null){
+//            tts.shutdown();
+//        }
+//    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

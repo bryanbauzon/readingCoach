@@ -209,13 +209,13 @@ public class Arrays {
             "LOCKS AND KEYS",
             "MARCO POLO",
             "MARS",
-            "MARYS FAMILY",
-            "MEXICO",
-            "MOORISH DANCE",
-            "MOVIE RATINGS",
-            "MUMMY",
-            "NIAGARA FALLS",
-            "NUTS"
+            "MARYS FAMILY"
+           // "MEXICO",
+//            "MOORISH DANCE",
+//            "MOVIE RATINGS",
+//            "MUMMY",
+//            "NIAGARA FALLS",
+//            "NUTS"
 //            "OLYMPIC GAME",
 //            "PANDA",
 //            "PENQUINS"
@@ -429,9 +429,6 @@ public class Arrays {
             "Vigor",
             "Wintry",
             "Wither"
-
-
-
     };
 
     private String[] terminologiesMeaning = {

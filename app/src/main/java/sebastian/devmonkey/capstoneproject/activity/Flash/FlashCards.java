@@ -46,7 +46,7 @@ public class FlashCards extends AppCompatActivity {
 //            score.setTextColor(Color.WHITE);
 //        }
 
-        gv.setMargins(word ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
+      //  gv.setMargins(word ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
 
 
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
