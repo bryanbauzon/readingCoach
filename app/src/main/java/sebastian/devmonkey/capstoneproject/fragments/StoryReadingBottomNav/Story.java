@@ -129,16 +129,6 @@ public class Story extends Fragment {
         db = new DatabaseHelper(getActivity());
         gv = new GlobalVariable();
 
-
-
-
-        //   getActivity().onBackPressed();
-//        SharedPreferences pref = getActivity().getSharedPreferences("bookmark",Context.MODE_PRIVATE);
-//        final String status = pref.getString("bookmarked",null);
-//
-//        if(status != null){
-//        }
-        //color scheme
         if (GlobalVariable.color == 1){
             view.setBackgroundColor(Color.parseColor("#3f3f3f"));
             txtTitle.setTextColor(Color.WHITE);
@@ -148,7 +138,6 @@ public class Story extends Fragment {
             view.setBackgroundColor(Color.parseColor("#d5d5d5"));
             txtContent.setTextColor(Color.parseColor("#383838"));
             txtTitle.setTextColor(Color.parseColor("#383838"));
-
 
         }else {
             view.setBackgroundColor(Color.WHITE);

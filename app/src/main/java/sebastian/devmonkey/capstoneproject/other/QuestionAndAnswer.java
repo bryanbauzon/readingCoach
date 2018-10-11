@@ -19,20 +19,6 @@ public class QuestionAndAnswer {
 private String [] answer1 = {
         "excited to disappointed"," maintains a positive viewpoint"," teamwork"," Granting Clifton's Wish"," appreciative"};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 private String []  acalltothepool2 = {
         "What is the weather like today?",
         "Sam is hot, but Sam wants to be",
@@ -206,15 +192,6 @@ private String [][] choices8 = {
 private String [] answer8 = {
         "He lives in a house in the country","dog ","from one side of the field to the other side ","walk out of the house ","go home "};
 
-
-
-
-
-
-
-
-
-
 private String []  bears= {
         "When are bear cubs born?",
         "What do bears do all winter?",
@@ -233,13 +210,6 @@ private String [][] choices9 = {
 private String [] answer9 = {
         "Winter ","They rest. ","Up to 10 feet ","In the woods ","In open spaces and near the water"};
 
-
-
-
-
-
-
-
 private String []  beds= {
         "King Tut and Louis 14 they both had…",
         "How many beds did Louis 14 they have?",
@@ -257,15 +227,6 @@ private String [][] choices10 = {
 
 private String [] answer10 = {
         "beautiful beds. ","413 ","The king of France ","1960’s. ","All of the above "};
-
-
-
-
-
-
-
-
-
 private String []  bellahides= {
         "Where does Mom find Bella?",
         "How does Mom find Bella?",
@@ -311,13 +272,6 @@ private String [][] choices12 = {
 
 private String [] answer12 = {
         "close his windows at night ","Mr. Lucas ","Mr. Lucas ","that Simba and the buses both make noise ","Nothing can be done. "};
-
-
-
-
-
-
-
 
 
 private String []  birds= {
