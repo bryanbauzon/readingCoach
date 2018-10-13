@@ -168,7 +168,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
         containerScore.setText("Score: " + point);
     }
 
-    private void Correct(int num) {
+    private void Correct() {
 
 
         if(!available.isEmpty()) {
@@ -178,25 +178,29 @@ public class Quizzer extends Fragment implements View.OnClickListener{
             c.setEnabled(false);
             d.setEnabled(false);
 
-            if (num == 1) {
-
+            if (a.getText() == answer){
                 a.setBackgroundColor(Color.GREEN);
-
-
-            } else if (num == 2) {
-
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.RED);
+            } else if (b.getText() == answer){
+                a.setBackgroundColor(Color.RED);
                 b.setBackgroundColor(Color.GREEN);
-
-
-            } else if (num == 3) {
-
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.RED);
+            } else if (c.getText() == answer) {
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.RED);
                 c.setBackgroundColor(Color.GREEN);
-
-
-            } else if (num == 4) {
-
+                d.setBackgroundColor(Color.RED);
+            } else if (d.getText() == answer) {
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.RED);
                 d.setBackgroundColor(Color.GREEN);
             }
+
+
 
 
             final Handler handler = new Handler();
@@ -224,10 +228,59 @@ public class Quizzer extends Fragment implements View.OnClickListener{
             }, 4000);
 
         } else {
+
             a.setEnabled(false);
             b.setEnabled(false);
             c.setEnabled(false);
             d.setEnabled(false);
+
+            if (a.getText() == answer){
+                a.setBackgroundColor(Color.GREEN);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.RED);
+            } else if (b.getText() == answer){
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.GREEN);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.RED);
+            } else if (c.getText() == answer) {
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.GREEN);
+                d.setBackgroundColor(Color.RED);
+            } else if (d.getText() == answer) {
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.GREEN);
+            }
+
+
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // Do something after 5s = 5000ms
+
+                    score++;
+                    updateScore(score);
+
+                    a.setBackgroundResource(android.R.drawable.btn_default);
+                    b.setBackgroundResource(android.R.drawable.btn_default);
+                    c.setBackgroundResource(android.R.drawable.btn_default);
+                    d.setBackgroundResource(android.R.drawable.btn_default);
+
+                    a.setEnabled(false);
+                    b.setEnabled(false);
+                    c.setEnabled(false);
+                    d.setEnabled(false);
+
+
+                }
+            }, 4000);
+
+
         }
 
 
@@ -235,7 +288,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
     }
 
-    private void Wrong(int num) {
+    private void Wrong() {
 
         if (!available.isEmpty()) {
 
@@ -245,24 +298,28 @@ public class Quizzer extends Fragment implements View.OnClickListener{
             d.setEnabled(false);
 
 
-            if (num == 1) {
-
-                a.setBackgroundColor(Color.RED);
-
-
-            } else if (num == 2) {
-
+            if (a.getText() == answer){
+                a.setBackgroundColor(Color.GREEN);
                 b.setBackgroundColor(Color.RED);
-
-
-            } else if (num == 3) {
-
                 c.setBackgroundColor(Color.RED);
-
-
-            } else if (num == 4) {
                 d.setBackgroundColor(Color.RED);
+            } else if (b.getText() == answer){
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.GREEN);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.RED);
+            } else if (c.getText() == answer) {
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.GREEN);
+                d.setBackgroundColor(Color.RED);
+            } else if (d.getText() == answer) {
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.GREEN);
             }
+
 
 
             final Handler handler = new Handler();
@@ -286,10 +343,56 @@ public class Quizzer extends Fragment implements View.OnClickListener{
                 }
             }, 4000);
         } else {
+
+
+
             a.setEnabled(false);
             b.setEnabled(false);
             c.setEnabled(false);
             d.setEnabled(false);
+
+            if (a.getText() == answer){
+                a.setBackgroundColor(Color.GREEN);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.RED);
+            } else if (b.getText() == answer){
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.GREEN);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.RED);
+            } else if (c.getText() == answer) {
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.GREEN);
+                d.setBackgroundColor(Color.RED);
+            } else if (d.getText() == answer) {
+                a.setBackgroundColor(Color.RED);
+                b.setBackgroundColor(Color.RED);
+                c.setBackgroundColor(Color.RED);
+                d.setBackgroundColor(Color.GREEN);
+            }
+
+
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // Do something after 5s = 5000ms
+
+                    a.setBackgroundResource(android.R.drawable.btn_default);
+                    b.setBackgroundResource(android.R.drawable.btn_default);
+                    c.setBackgroundResource(android.R.drawable.btn_default);
+                    d.setBackgroundResource(android.R.drawable.btn_default);
+
+                    a.setEnabled(false);
+                    b.setEnabled(false);
+                    c.setEnabled(false);
+                    d.setEnabled(false);
+
+
+                }
+            }, 4000);
         }
 
     }
@@ -324,34 +427,35 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
         switch (view.getId()){
             case R.id.a:
+
                 if (a.getText() == answer) {
-                    Correct(1);
+                    Correct();
 
                 } else {
-                    Wrong(1);
+                    Wrong();
                 }
 
                 break;
             case R.id.b:
                 if (b.getText() == answer) {
-                    Correct(2);
+                    Correct();
                 } else {
-                    Wrong(2);
+                    Wrong();
                 }
                 break;
             case R.id.c:
                 if (c.getText() == answer) {
-                    Correct(3);
+                    Correct();
                 } else {
-                    Wrong(3);
+                    Wrong();
                 }
                 break;
 
             case R.id.d:
                 if (d.getText() == answer) {
-                    Correct(4);
+                    Correct();
                 } else {
-                    Wrong( 4);
+                    Wrong();
                 }
                 break;
 

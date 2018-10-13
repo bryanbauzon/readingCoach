@@ -3,21 +3,21 @@ package sebastian.devmonkey.capstoneproject.other;
 public class QuestionAndAnswer {
 
     private String [] milesrace1 = {
-"The race in the story was the",
-"The story an then the people were sure DePalma would win because he had been",
-"When DePalma's car stopped, he was ",
-" DePalma's car stopped because",
-"When the car was whizzed by DePalma as he was pushing his car, he"};
+        "The race in the story was the",
+        "The story an then the people were sure DePalma would win because he had been",
+        "When DePalma's car stopped, he was ",
+        "DePalma's car stopped because",
+        "When the car was whizzed by DePalma as he was pushing his car, he"};
 
     private String [][] choices1 = {
-            {"Monaco Grand Prix","Canadian Grand Prix"," Indianapolis 500 ","Grand National Championship"},
-        {"is not easily upset","upholds high standards","maintains a positive viewpoint", "considers all outcomes before making a decision"},
-        {"miracle","disaster","drudgery","teamwork"},
-        { "Flying Home","A Christmas War","Granting Clifton's Wish","The Disappointing Letter"},
-        {"appreciative"," disappointed","estranged","remorseful"}
+            {"Monaco Grand Prix","Canadian Grand Prix","Indianapolis 500","Grand National Championship"},
+        {"leading for most of the race","was considered the best driver in the world","had the best car in the world", "All of the above"},
+        {"just starting the race","just crossing the finish line","going into the last lap","None of the above"},
+        { "it got too hot","ran out of gas","lost a tire","the story does not say"},
+        {"waved a flag"," moved off the speedway","stood still","None of the above"}
         };
 private String [] answer1 = {
-        "excited to disappointed"," maintains a positive viewpoint"," teamwork"," Granting Clifton's Wish"," appreciative"};
+        "Indianapolis 500","leading for most of the race","going into the last lap","the story does not say", "None of the above"};
 
 private String []  acalltothepool2 = {
         "What is the weather like today?",
@@ -1766,15 +1766,15 @@ private String [] answer50 = {
             "unexplainable"};
 
     private String[] garlicsQuestion36 =
-            {"   The study in the article involved volunteers from the University of",
-                    "     The volunteers were asked to take ",
-                    " The reason for the pills was to see if they mould",
-                    "  Cholesterol is a",
-                    "  It is thought that cholesterol"};
+            {"The study in the article involved volunteers from the University of",
+                    "The volunteers were asked to take ",
+                    "The reason for the pills was to see if they mould",
+                    "Cholesterol is a",
+                    "It is thought that cholesterol"};
     private String[][] internChoices36 = {
             {" melbourne", "michigan", "mississippi", " manchester"},
             {"garlic pills", " liver pills ", " iron pills ", " vitamin pills"},
-            {" reduce the garlic level of the blood ", " increase the garlic level of the blood ", "reduce cholesterol level in the blood", " increase cholesterol level in the blood"},
+            {"reduce the garlic level of the blood", " increase the garlic level of the blood ", "reduce cholesterol level in the blood", " increase cholesterol level in the blood"},
             {"chemical that builds up on artery walls", "type of blood ", " type of garlic ", " medicine taken to cure heart disease"},
             {" helps lower garlic levels in the blood ", " contributes to heart disease only in rats ", "cause brain damage only in human", "none of the above"}
     };
@@ -1865,10 +1865,10 @@ private String [] answer50 = {
 
 
     private String[] johncooksQuestion42 =
-            {"   Where does John get cucumbers and tomatoes? ",
-                    "       Which dish does John like best? ",
+            {"Where does John get cucumbers and tomatoes? ",
+                    "Which dish does John like best? ",
                     " Why doesn't John use cream? ",
-                    "   What does John use instead of cream? ",
+                    "What does John use instead of cream? ",
                     "  Which dish was the easiest for John to make? "};
     private String[][] internChoices42 = {
             {"Which dish was the easiest for John to make? ", "from the store ", "from his garden", " from the farmers’ market"},
@@ -2558,10 +2558,10 @@ private String [] answer50 = {
 
     private String[] articfoxQuestion8 =
             {"How often do Arctic foxes eat snowy owls? ",
-                    "      		Populations of Arctic foxes rise and fall according to….",
-                    "    What is the main prey of the Arctic fox? ",
-                    "    Which is NOT true about the size of an Arctic fox?",
-                    "         What does the word \"insulate\" mean in the sentence below? Its thick fur coat helps insulate it from the freezing temperatures and windswept snow."};
+                    "Populations of Arctic foxes rise and fall according to….",
+                    "What is the main prey of the Arctic fox? ",
+                    "Which is NOT true about the size of an Arctic fox?",
+                    "What does the word \"insulate\" mean in the sentence below? Its thick fur coat helps insulate it from the freezing temperatures and windswept snow."};
     private String[][] internChoices8 = {
             {"somewhat often ", "never  ", "not often", " very often"},
             {"the severity of the winter. ", "the warmth of the summer. ", " the population of polar bears.", " the population of lemmings."},
@@ -4067,77 +4067,74 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 14) {
                         return bullied[a];
                 } else if (id == 15) {
-                        return bluewhaleQuestion16[a];
-                } else if (id == 16) {
                         return butterfly[a];
-                } else if (id == 17) {
+                } else if (id == 16) {
                         return bythewater[a];
-                } else if (id == 18) {
+                } else if (id == 17) {
                         return campfire[a];
-                } else if (id == 19) {
+                } else if (id == 18) {
                         return cannedgoods[a];
-                } else if (id == 20) {
+                } else if (id == 19) {
                         return dandelions[a];
-                } else if (id == 21) {
+                } else if (id == 20) {
                         return differenttypesofpeople[a];
-                } else if (id == 22) {
+                } else if (id == 21) {
                         return dogs[a];
-                } else if (id == 23) {
+                } else if (id == 22) {
                         return empressoftheblues[a];
-                } else if (id == 24) {
+                } else if (id == 23) {
                         return fish[a];
-                } else if (id == 25) {
+                } else if (id == 24) {
                         return flags[a];
-                } else if (id == 26) {
+                } else if (id == 25) {
                         return fried[a];
-                } else if (id == 27) {
+                } else if (id == 26) {
                         return grass[a];
-                } else if (id == 28) {
+                } else if (id == 27) {
                         return greengrass[a];
-                } else if (id == 29) {
+                } else if (id == 28) {
                         return grifin[a];
-                } else if (id == 30) {
+                } else if (id == 29) {
                         return  grifinstalent[a];
-                } else if (id == 31) {
+                } else if (id == 30) {
                         return helicopters[a];
-                } else if (id == 32) {
+                } else if (id == 31) {
                         return houses[a];
-                } else if (id == 33) {
+                } else if (id == 32) {
                         return howareyou[a];
-                } else if (id == 34) {
+                } else if (id == 33) {
                         return howwarthoglives[a];
-                } else if (id == 35) {
+                } else if (id == 34) {
                         return howwormsgetinsideanapple[a];
-                } else if (id == 36) {
+                } else if (id == 35) {
                         return humans[a];
-                } else if (id == 37) {
+                } else if (id == 36) {
                         return ifly[a];
-                } else if (id == 38) {
+                } else if (id == 37) {
                         return icefishing[a];
-                } else if (id == 39) {
+                } else if (id == 38) {
                         return julian[a];
-                } else if (id == 40) {
+                } else if (id == 39) {
                         return jupiter[a];
-                } else if (id == 41) {
+                } else if (id == 40) {
                         return landofafrica[a];
-                } else if (id == 42) {
+                } else if (id == 41) {
                         return leonardodavinci[a];
-                } else if (id == 43) {
+                } else if (id == 42) {
                         return lordofolympus[a];
-                } else if (id == 44) {
+                } else if (id == 43) {
                         return money[a];
-                } else if (id == 45) {
+                } else if (id == 44) {
                         return myfamily[a];
-                } else if (id == 46) {
+                } else if (id == 45) {
                         return myfriend[a];
-                } else if (id == 47) {
+                } else if (id == 46) {
                         return myhouse[a];
-                } else if (id == 48) {
+                } else if (id == 47) {
                         return newshoesformandy[a];
-                } else if (id == 49) {
+                } else if (id == 48) {
                         return onehundreddollars[a];
                 }
-
         } else if (level.equals("intermediate")) {
 
             if (id == 0) {
@@ -4451,8 +4448,6 @@ public String getQuestion(int a, int id, String level) {
                         return answer48[a];
                 } else if (id == 48) {
                         return answer49[a];
-                } else if (id == 49) {
-                        return answer50[a];
                 }
         } else if (level.equals("intermediate")) {
 
@@ -4771,8 +4766,6 @@ public String getQuestion(int a, int id, String level) {
                         return choices48[a][0];
                 } else if (id == 48) {
                         return choices49[a][0];
-                } else if (id == 49) {
-                        return choices50[a][0];
                 }
         } else if (level.equals("intermediate")) {
 
@@ -5088,8 +5081,6 @@ public String getQuestion(int a, int id, String level) {
                         return choices48[a][1];
                 } else if (id == 48) {
                         return choices49[a][1];
-                } else if (id == 49) {
-                        return choices50[a][1];
                 }
         } else if (level.equals("intermediate")) {
 
@@ -5404,8 +5395,6 @@ public String getQuestion(int a, int id, String level) {
                         return choices48[a][2];
                 } else if (id == 48) {
                         return choices49[a][2];
-                } else if (id == 49) {
-                        return choices50[a][2];
                 }
         } else if (level.equals("intermediate")) {
 
@@ -5723,8 +5712,6 @@ public String getQuestion(int a, int id, String level) {
                             return choices48[a][3];
                     } else if (id == 48) {
                             return choices49[a][3];
-                    } else if (id == 49) {
-                            return choices50[a][3];
                     }
             } else if (level.equals("intermediate")) {
 
