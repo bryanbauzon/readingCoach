@@ -88,7 +88,10 @@ public class HelpFragment extends Fragment {
         mDotLayout =  (LinearLayout)getView().findViewById(R.id.dotLayoutHelp);
 
 
-        finish.setText("Next");
+        finish.setText(null);
+        back.setText(null);
+        finish.setEnabled(false);
+        back.setEnabled(false);
         dots = new TextView[8];
 
         sliderAdapter = new SliderAdapter(getContext());
@@ -140,21 +143,14 @@ ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener
         addDotIndicator(position);
         currentPage = position;
         if(position == 0  ){
-            back.setVisibility(View.INVISIBLE);
-            finish.setText("Next");
-            back.setText(null);
-          }else if(currentPage == dots.length - 1){
-            finish.setEnabled(true);
-            back.setVisibility(View.VISIBLE);
-            finish.setText(null);
-            finish.setEnabled(false);
-            back.setText("Back");
+            invisibleButton();
+
+        }else if(currentPage == dots.length - 1){
+            invisibleButton();
+
         }
         else{
-            back.setVisibility(View.VISIBLE);
-            finish.setText("Next");
-            back.setText("Back");
-            finish.setEnabled(true);
+            invisibleButton();
         }
     }
 
@@ -163,6 +159,15 @@ ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener
 
     }
 };
+
+    private void invisibleButton(){
+        back.setVisibility(View.INVISIBLE);
+        finish.setVisibility(View.INVISIBLE);
+        finish.setText(null);
+        back.setText(null);
+        back.setEnabled(false);
+        finish.setEnabled(false);
+    }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     @Override

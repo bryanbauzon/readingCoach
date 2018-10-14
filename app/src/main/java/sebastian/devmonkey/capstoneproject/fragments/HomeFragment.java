@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.tomer.fadingtextview.FadingTextView;
+
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Stories.StoryReading;
 
@@ -36,6 +38,7 @@ public class HomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     Button btnRedirect;
+    FadingTextView trivia;
 
     private OnFragmentInteractionListener mListener;
 
@@ -75,6 +78,8 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View myview =  inflater.inflate(R.layout.fragment_home, container, false);
         btnRedirect = (Button)myview.findViewById(R.id.btnRedirect);
+
+        trivia = (FadingTextView)myview.findViewById(R.id.trivia);
         //shared preferences
         SharedPreferences pref = getActivity().getSharedPreferences("story",Context.MODE_PRIVATE);
         final String storyTitle = pref.getString("storyTitle",null);
@@ -82,37 +87,18 @@ public class HomeFragment extends Fragment {
         final String level =  pref.getString("level",null);
 
        // Typeface typeface = getResources().getFont(R.menu.)
-        Typeface type =Typeface.createFromAsset(getActivity().getAssets(),"fonts/typo.otf");
+        Typeface type =Typeface.createFromAsset(getActivity().getAssets(),"fonts/sanserif.ttf");
         btnRedirect.setTypeface(type);
+        trivia.setTypeface(type);
 
         if(storyTitle != null){
             btnRedirect.setEnabled(true);
-
             btnRedirect.setText(storyTitle);
         }else{
             btnRedirect.setEnabled(false);
             btnRedirect.setText("You don't have yet open any stories.");
         }
 
-
-//        SharedPreferences sharedPreferences = getContext().getSharedPreferences("setting", MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        editor.putBoolean("small",false);
-//        editor.putBoolean("medium",false);
-//        editor.putBoolean("large",false);
-//        editor.putBoolean("font1",false);
-//        editor.putBoolean("font2",false);
-//        editor.putBoolean("dark",false);
-//        editor.putBoolean("light",false);
-//        editor.putBoolean("margin1",false);
-//        editor.putBoolean("margin2",false);
-//        editor.putBoolean("margin3",false);
-//        editor.putBoolean("line1",false);
-//        editor.putBoolean("line2",false);
-//        editor.putBoolean("line3",false);
-//
-//        editor.apply();
-        // Inflate the layout for this fragment
 
         btnRedirect.setOnClickListener(new View.OnClickListener() {
             @Override

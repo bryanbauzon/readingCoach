@@ -732,21 +732,21 @@ private String [] answer28 = {
 
 
 
-
-private String [] grifin = {
-        "When does Griffin take violin lessons?",
-        "When does Mr. Thomas tell Griffin to practice?",
-        "When does Griffin practice the violin?",
-        "How does Griffin feel about the violin?",
-        "What does Mr. Thomas teach Griffin?" };
-
-private String [][] choices29 = {
-        {"on Tuesdays after soccer"," on Thursdays after soccer","on Tuesdays after school ","on Thursdays after school"},
-        {"every day","most days","only on Tuesdays","when he wants to"},
-        {"every day","most days ","never","only on Tuesdays"},
-        {"He loves it","He thinks it is hard","He hates to practice","He does not like the sound"},
-        {"to play soccer","to fix old clocks","to play the violin ","to build birdhouses"}
-        };
+//
+//private String [] grifin = {
+//        "When does Griffin take violin lessons?",
+//        "When does Mr. Thomas tell Griffin to practice?",
+//        "When does Griffin practice the violin?",
+//        "How does Griffin feel about the violin?",
+//        "What does Mr. Thomas teach Griffin?" };
+//
+//private String [][] choices29 = {
+//        {"on Tuesdays after soccer"," on Thursdays after soccer","on Tuesdays after school ","on Thursdays after school"},
+//        {"every day","most days","only on Tuesdays","when he wants to"},
+//        {"every day","most days ","never","only on Tuesdays"},
+//        {"He loves it","He thinks it is hard","He hates to practice","He does not like the sound"},
+//        {"to play soccer","to fix old clocks","to play the violin ","to build birdhouses"}
+//        };
 
 private String [] answer29 = {
         "on Tuesdays after school","every day","most days","He loves it","to play the violin "};
@@ -4093,8 +4093,8 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return greengrass[a];
                 } else if (id == 28) {
-                        return grifin[a];
-                } else if (id == 29) {
+//                        return grifin[a];
+//                } else if (id == 29) {
                         return  grifinstalent[a];
                 } else if (id == 30) {
                         return helicopters[a];
@@ -4725,8 +4725,8 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return choices28[a][0];
                 } else if (id == 28) {
-                        return choices29[a][0];
-                } else if (id == 29) {
+//                        return choices29[a][0];
+//                } else if (id == 29) {
                         return choices30[a][0];
                 } else if (id == 30) {
                         return  choices31[a][0];
@@ -5040,8 +5040,8 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return choices28[a][1];
                 } else if (id == 28) {
-                        return choices29[a][1];
-                } else if (id == 29) {
+//                        return choices29[a][1];
+//                } else if (id == 29) {
                         return choices30[a][1];
                 } else if (id == 30) {
                         return  choices31[a][1];
@@ -5354,8 +5354,8 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return choices28[a][2];
                 } else if (id == 28) {
-                        return choices29[a][2];
-                } else if (id == 29) {
+//                        return choices29[a][2];
+//                } else if (id == 29) {
                         return choices30[a][2];
                 } else if (id == 30) {
                         return  choices31[a][2];
@@ -5671,8 +5671,8 @@ public String getQuestion(int a, int id, String level) {
                     } else if (id == 27) {
                             return choices28[a][3];
                     } else if (id == 28) {
-                            return choices29[a][3];
-                    } else if (id == 29) {
+//                            return choices29[a][3];
+//                    } else if (id == 29) {
                             return choices30[a][3];
                     } else if (id == 30) {
                             return  choices31[a][3];

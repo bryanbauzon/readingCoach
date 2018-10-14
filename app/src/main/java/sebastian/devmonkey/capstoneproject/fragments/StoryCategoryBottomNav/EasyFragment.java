@@ -134,8 +134,7 @@ public class EasyFragment extends Fragment {
                 editor.putString("level","easy");
 
                 editor.apply();
-                String storyTitle = pref.getString("storyTitle",null);
-                Toast.makeText(getContext(),storyTitle,Toast.LENGTH_SHORT).show();
+               // String storyTitle = pref.getString("storyTitle",null);
 
             }
         });

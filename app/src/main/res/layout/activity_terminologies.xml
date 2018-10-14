@@ -8,7 +8,6 @@
 
     tools:context=".activity.Terminologies">
     <RelativeLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -20,8 +19,8 @@
             android:textStyle="bold"
             android:textSize="20dp" />
         <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:background="@drawable/speakers"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/txtTerminologyTitle"
