@@ -186,6 +186,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
 
         methods();
+       // defaultSetting();
         SharedPreferences preferences = getActivity().getSharedPreferences("settings",MODE_PRIVATE);
 
       //  SharedPreferences preferences = getActivity().getPreferences("settings",MODE_PRIVATE);
@@ -214,6 +215,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             }
         }else{
             removeIndicatorSpacing();
+            defaultSetting();
         }
 
         if(valueMargin != null){
@@ -247,6 +249,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             }
         }else{
             removeIndicatorMargin();
+            defaultSetting();
         }
 
         if(valueFont != null){
@@ -263,6 +266,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
         }else{
             removeIndicatorFontType();
+            defaultSetting();
         }
 
         if(valueText != null){
@@ -285,6 +289,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
         }else{
             removeIndicatorsTextSize();
+            defaultSetting();
         }
 
         if(valueTheme != null){
@@ -306,6 +311,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
           //  cs.setText(valueTheme);
         }else{
             removeIndicatorTheme();
+            defaultSetting();
         }
 
 
@@ -508,6 +514,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                             SharedPreferences.Editor editor = preferences.edit();
                                 editor.clear();
                                 editor.apply();
+                                defaultSetting();
                            Toast.makeText(getContext(),"The setting has been set to default",Toast.LENGTH_LONG).show();
                             resetDialog.dismiss();
 
@@ -546,12 +553,27 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         small.setBackgroundResource(R.drawable.settingbuttons);
         medium.setBackgroundResource(R.drawable.settingbuttons);
         large.setBackgroundResource(R.drawable.settingbuttons);
+    }
+    private void defaultSetting(){
+        lineSpacing.setBackgroundResource(R.drawable.activelinespacinga);
+        pageMargin1.setBackgroundResource(R.drawable.activemargina);
+        small.setBackgroundResource(R.drawable.activebuttonsettings);
+        fontType1.setBackgroundResource(R.drawable.activebuttonsettings);
+        light.setBackgroundResource(R.drawable.activebuttonsettings);
 
+        SharedPreferences preferences = getActivity().getSharedPreferences("settings",MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("activeSpacing","a");
+        editor.putString("activeMargin","a");
+        editor.putString("activeTheme","light");
+        editor.putString("activeFont","fonttype1");
+        editor.putString("activeText","small");
+        editor.apply();
     }
     private void removeIndicatorFontType(){
+
         fontType1.setBackgroundResource(R.drawable.settingbuttons);
         fontType2.setBackgroundResource(R.drawable.settingbuttons);
-
     }
     private void removeIndicatorTheme(){
         dark.setBackgroundResource(R.drawable.settingbuttons);
@@ -559,24 +581,30 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         sepia.setBackgroundResource(R.drawable.settingbuttons);
     }
     private void removeIndicatorMargin(){
+
         pageMargin1.setBackgroundResource(R.drawable.deactivemargina);
         pageMargin2.setBackgroundResource(R.drawable.deactivemarginb);
         pageMargin3.setBackgroundResource(R.drawable.deactivemarginc);
+      //  pageMargin1.setBackgroundResource(R.drawable.activemargina);
+        //editor.apply();
     }
     private void removeIndicatorSpacing(){
+
         lineSpacing.setBackgroundResource(R.drawable.deactivelinespacinga);
         lineSpacing1.setBackgroundResource(R.drawable.deactivelinespacingb);
         lineSpacing2.setBackgroundResource(R.drawable.deactivelinespacingc);
     }
+
     private void reset(){
         GlobalVariable.fontSize = 15;
-        GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Regular.ttf");
+        GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/serif.ttf");
         GlobalVariable.left = 0;
         GlobalVariable.top = 0;
         GlobalVariable.right = 0;
         GlobalVariable.bottom = 0;
         GlobalVariable.color  = 0;
         GlobalVariable.lineSpacing = 0;
+
     }
     private void methods(){
         removeIndicatorTheme();

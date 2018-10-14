@@ -123,13 +123,7 @@
                       android:layout_height="wrap_content"
                       android:orientation="horizontal">
 
-                      <Button
-                          android:id="@+id/btnDark"
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_marginRight="10dp"
-                          android:background="@drawable/activebuttonsettings"
-                          android:text="Dark" />
+
 
                       <Button
                           android:id="@+id/btnLight"
@@ -138,6 +132,13 @@
                           android:layout_marginRight="10dp"
                           android:background="@drawable/activebuttonsettings"
                           android:text="Light" />
+                      <Button
+                          android:id="@+id/btnDark"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginRight="10dp"
+                          android:background="@drawable/activebuttonsettings"
+                          android:text="Dark" />
                       <Button
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
