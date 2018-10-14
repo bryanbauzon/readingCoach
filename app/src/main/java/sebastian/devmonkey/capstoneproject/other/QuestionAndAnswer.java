@@ -58,12 +58,12 @@ private String [][] choices3 = {
         {"man","cat","dog ","snake"},
         {"Anna keeps the dog","Anna takes the dog to the hospital.","Anna’s mom feeds the dog.","Anna dries the dog with a towel."},
         {"The dog is dry.","The dog is wet. ","Maybe","None of the above"},
-        {"I only","I and II","II and III ","I, II, and III"},
+        {"I only","I and II","II and III","I, II, and III"},
         {"Monday","Tuesday","Wednesday","Thursday "}
         };
 
 private String [] answer3 = {
-        "dog ","Anna keeps the dog","The dog is wet. ","II and III ","Thursday "};
+        "dog ","Anna keeps the dog","The dog is wet. ","II and III","Thursday "};
 
 
 private String []  airballoon= {
@@ -136,7 +136,7 @@ private String [][] choices6 = {
         };
 
 private String [] answer6 = {
-        "reptile ","II and III ","I and III ","big and long ","dull "};
+        "reptile ","II and III ","I and III","big and long ","dull "};
 
 
 
@@ -282,11 +282,11 @@ private String []  birds= {
         "How many wings does the bird has?" };
 
 private String [][] choices13 = {
-        {"what birds are like ","why some birds can’t fly","where birds have feathers"},
-        {"all birds","most birds ","some birds"},
-        {"swans","eagles","turkeys "},
-        {"animals ","blue jays","penguins"},
-        {"1","2","3"}
+        {"what birds are like ","why some birds can’t fly","where birds have feathers", "none of the above"},
+        {"all birds","most birds ","some birds", "none of the above"},
+        {"swans","eagles","turkeys ", "none of the above"},
+        {"animals ","blue jays","penguins", "none of the above"},
+        {"1","2","3" , "none of the above"}
         };
 
 private String [] answer13 = {
@@ -370,11 +370,11 @@ private String []  butterfly= {
         "What is a butterfly?" };
 
 private String [][] choices16 = {
-        {"2","4","6"},
-        {"Its wings fall off.","It becomes a caterpillar.","The colors on its wings fade. "},
-        {"to lose color ","to get darker","to change order"},
-        {"in hot places","in cool, dry places","in warm places that are not too dry "},
-        {"reptile","insect ","mammal"}
+        {"2","4","6" , "none of the above"},
+        {"Its wings fall off.","It becomes a caterpillar.","The colors on its wings fade. " , "none of the above"},
+        {"to lose color ","to get darker","to change order", "none of the above"},
+        {"in hot places","in cool, dry places","in warm places that are not too dry ", "none of the above"},
+        {"reptile","insect ","mammal", "none of the above"}
         };
 
 private String [] answer16 = {
@@ -680,11 +680,11 @@ private String [] grass = {
         "According to the passage, how long does it take for the grass to become dull?" };
 
 private String [][] choices27 = {
-        {"Buckets are bad","Grass need sunlight","Grass is not pretty when it is dull"},
-        {"a way to grow grass ","a way to test an idea  ","a way to use a bucket "},
-        {"The grass turns brown","The grass gets very dull ","The grass is not as green "},
-        {"bright ","brown","sunlight"},
-        {"month","week","few days"}
+        {"Buckets are bad","Grass need sunlight","Grass is not pretty when it is dull" , "none of the above"},
+        {"a way to grow grass ","a way to test an idea  ","a way to use a bucket ", "none of the above"},
+        {"The grass turns brown","The grass gets very dull ","The grass is not as green ", "none of the above"},
+        {"bright ","brown","sunlight", "none of the above"},
+        {"month","week","few days", "none of the above"}
         };
 
 private String [] answer27 = {
@@ -709,11 +709,11 @@ private String [] greengrass = {
         "According to the passage, how long does it take for the grass to become dull?" };
 
 private String [][] choices28 = {
-        {"Buckets are bad","Plants need sunlight","Grass is not pretty when it is dull"},
-        {"a way to grow grass","a way to test an idea ",""},
-        {"The grass turns brown","The grass gets very dull","The grass is not as green "},
-        {"bright ","brown","sunlight"},
-        {"a month","a week ","a few days"}
+        {"Buckets are bad","Plants need sunlight","Grass is not pretty when it is dull", "none of the above"},
+        {"a way to grow grass","a way to test an idea ", "none of the above"},
+        {"The grass turns brown","The grass gets very dull","The grass is not as green ", "none of the above"},
+        {"bright ","brown","sunlight", "none of the above"},
+        {"a month","a week ","a few days", "none of the above"}
         };
 
 private String [] answer28 = {
@@ -1032,11 +1032,11 @@ private String []  jupiter= {
         "Jupiter is known for its Great Red Spot" };
 
 private String [][] choices40 = {
-        {"It is the 5th largest planet in the solar system  ","It has a rocky surface ","You could stand on Jupiter "},
-        {"Jupiter is compared to the Gas Giants  ","Jupiter’s size is compared to the size of the sun. ","Jupiter’s color is compared to the color of the Great Red Spot "},
-        {"What is inside the Great Red Spot?  ","What is inside Jupiter? ","What is inside the Gas Giants? "},
-        {"true","false","doesn’t say"},
-        {"true","false","doesn’t say"}
+        {"It is the 5th largest planet in the solar system  ","It has a rocky surface ","You could stand on Jupiter ", "none of the above"},
+        {"Jupiter is compared to the Gas Giants  ","Jupiter’s size is compared to the size of the sun. ","Jupiter’s color is compared to the color of the Great Red Spot ", "none of the above"},
+        {"What is inside the Great Red Spot?  ","What is inside Jupiter? ","What is inside the Gas Giants? ", "none of the above"},
+        {"true","false","doesn’t say", "none of the above"},
+        {"true","false","doesn’t say", "none of the above"}
         };
 
 private String [] answer40 = {
@@ -1134,7 +1134,7 @@ private String []  money= {
         "An idea is a…" };
 
 private String [][] choices44 = {
-        {"use for money.","use to do work. ","put in the bank.",""},
+        {"use for money.","use to do work. ","put in the bank.", "none of the above"},
         {"kind of money.","kind of animal","made of shells.","gold or silver."},
         {"Round, flat, metal pieces of money ","Beads made of white shells","Paper bank notes","Metal knives"},
         {"is strong and can last a long time. ","made of metal.","can be used as money","None of the above."},
@@ -1183,11 +1183,11 @@ private String []  myfriend= {
         "What is my friend's last name?" };
 
 private String [][] choices46 = {
-        {"colorado","texas","california"},
-        {"girl","boy","has no friend"},
-        {"15","16","17"},
-        {"jenny","jesica","julie"},
-        {"rowan","randal","roberts"}
+        {"colorado","texas","california", "none of the above"},
+        {"girl","boy","has no friend", "none of the above"},
+        {"15","16","17", "none of the above"},
+        {"jenny","jesica","julie", "none of the above"},
+        {"rowan","randal","roberts", "none of the above"}
         };
 
 private String [] answer46 = {
@@ -1207,11 +1207,11 @@ private String []  myhouse= {
         "What is my house made of?" };
 
 private String [][] choices47 = {
-        {"city","state","country"},
-        {"city","state","country"},
-        {"city","state","country"},
-        {"rainy","sunny","cloudy"},
-        {"wood","brick","metal"}
+        {"city","state","country", "none of the above"},
+        {"city","state","country", "none of the above"},
+        {"city","state","country", "none of the above"},
+        {"rainy","sunny","cloudy", "none of the above"},
+        {"wood","brick","metal", "none of the above"}
         };
 
 private String [] answer47 = {
@@ -1230,11 +1230,11 @@ private String []  newshoesformandy= {
         "When can Maddy wear her shoes to school?" };
 
 private String [][] choices48 = {
-        {"the green flip-flops","the red sandals","the pink shoes with hearts "},
-        {"the purple sneakers ","the red sandals","the pink shoes with hearts "},
-        {"She is happy about it.","She is excited about it.","She feels okay about it. "},
-        {"lot of people ","her older sister","neighbors"},
-        {"when she learns how to tie the laces ","tomorrow","yesterday"}
+        {"the green flip-flops","the red sandals","the pink shoes with hearts ", "none of the above"},
+        {"the purple sneakers ","the red sandals","the pink shoes with hearts ", "none of the above"},
+        {"She is happy about it.","She is excited about it.","She feels okay about it. ", "none of the above"},
+        {"lot of people ","her older sister","neighbors", "none of the above"},
+        {"when she learns how to tie the laces ","tomorrow","yesterday", "none of the above"}
         };
 
 private String [] answer48 = {
@@ -1256,11 +1256,11 @@ private String []  onehundreddollars= {
         "What kind of man does the police officer seem to be?" };
 
 private String [][] choices49 = {
-        {"bad","dumb","good"},
-        {"feel good","want more","truthful"},
-        {"angry","happy","sad"},
-        {"advice","handshake","money to eat"},
-        {"angry","busy","kind"}
+        {"bad","dumb","good", "none of the above"},
+        {"feel good","want more","truthful", "none of the above"},
+        {"angry","happy","sad", "none of the above"},
+        {"advice","handshake","money to eat", "none of the above"},
+        {"angry","busy","kind", "none of the above"}
         };
 
 private String [] answer49 = {
@@ -1280,11 +1280,11 @@ private String []  paper= {
         "How many % does the paper made of tree?" };
 
 private String [][] choices50 = {
-        {"I only","II only","III only "},
-        {"What is made of paper","What paper is made of ","What people think of paper"},
-        {"grainy mineral","paint","polish or smooth"},
-        {"stone","wood","paper"},
-        {"95","96","97"}
+        {"I only","II only","III only ", "none of the above"},
+        {"What is made of paper","What paper is made of ","What people think of paper", "none of the above"},
+        {"grainy mineral","paint","polish or smooth", "none of the above"},
+        {"stone","wood","paper", "none of the above"},
+        {"95","96","97", "none of the above"}
         };
 
 private String [] answer50 = {
@@ -1352,7 +1352,7 @@ private String [] answer50 = {
             " What else was stolen from the apartment?",
             "  If something is said with alarm, how is it said?"};
     private String[][] internChoices2 = {
-            {" She eats them.     ", " She sells them.     ", " She hides them.         ", "She gives them away."},
+            {" She eats them.", " She sells them.", " She hides them.", "She gives them away."},
             {"Ms. Gervis will start baking cakes again.", " Ms. Gervis will bake him extra cakes.      ", " Ms. Gervis will give him her secret recipe.     ", "   Ms. Gervis will give him money and jewels."},
             {" something that is wrong.       ", " something that happens at night", " something a robber leaves behind                ", "something that cannot be explained."},
             {"  crystal", "  jewelry", " money", "nothing"},
@@ -1372,7 +1372,7 @@ private String [] answer50 = {
             "   Abraham Lincoln was the _____ president of the United States."};
     private String[][] internChoices3 = {
             {" Illinois", " Indiana", "  Kentucky", " Tennessee"},
-            {"   4.", " 6.      ", "7.", "   8."},
+            {"4.", " 6.", "7.", "8."},
             {" He helped his neighbors.", " He enjoyed running.", "He studied wars.", " He studied law."},
             {" 1838", "  1840", "1861", "  1863"},
             {" 1st", "6th.", "  12th", "16th."}
@@ -1473,7 +1473,7 @@ private String [] answer50 = {
     private String[][] internChoices11 = {
             {"   The New England Courant", " The New England Gazette ", "Pennsylvania Courant", " Pennsylvania Gazette"},
             {"  Richard Franklin", "Richard Saunders", "  Thomas Jefferson", "    Benjamin Saunders"},
-            {"1729.", "1733", "    1743.", " 1749."},
+            {"1729.", "1733", "1743.", " 1749."},
             {"   Electricity", "Swim suits", " Bifocals", "   Both B and C are correct."},
             {"The Declaration of Independence", "The New England Courant", "Poor Richard’s Almanac", " The Pennsylvania Gazette"}
     };
@@ -1632,11 +1632,11 @@ private String [] answer50 = {
                     "  Use to measure time",
                     "   What century does the mechanical clock in Europe appeared?"};
     private String[][] internChoices25 = {
-            {" I only", "  II only", "III only"},
-            {"  Why clocks are used ", "   How hourglasses are similar to candle clocks", " What types of clocks have been invented"},
-            {" related to machines", " related to numbers ", "related to hearing"},
-            {"clock", "compass", "watch"},
-            {"13th", "14th", "15th"}
+            {" I only", "  II only", "III only", "none of the above"},
+            {"  Why clocks are used ", "   How hourglasses are similar to candle clocks", " What types of clocks have been invented", "none of the above"},
+            {" related to machines", " related to numbers ", "related to hearing", "none of the above"},
+            {"clock", "compass", "watch", "none of the above"},
+            {"13th", "14th", "15th", "none of the above"}
     };
     private String[] internAnswer25 = {
             "III only",
@@ -1792,7 +1792,7 @@ private String [] answer50 = {
                     "  How are helicopters used as ambulances?",
                     "  Why don’t helicopters need runways?"};
     private String[][] internChoices38 = {
-            {"move straight up", "fly backward", "hover", " hover"},
+            {"move straight up", "fly backward", "hover", "none of the above"},
             {"they must move forward", "  they must move sideways", " they must move backwards", " both A and B are correct"},
             {" they can reach difficult spots ", "  they can hover above the fire", "their rotors can put out the fire", "both A and B are correct"},
             {"They chase suspects on the ground", "They airlift people out of accidents ", "They can drop water on fires", " They lift trees out of forests"},
@@ -2893,11 +2893,11 @@ private String [] adaringscape2 = {
         " Could Ellen read and write?"
         };
 private String [][] hardChoices2 = {
-        {"There was no slavery in the North","There was slavery in the North"," They want to have vacation in North"},
-        {"By Bus","By Train","By Airplane"},
-        {"1848","1948","1448"},
-        {"Ellen","Mr. Cray","Black Servant"},
-        {"No"," Yes"," Maybe"}
+        {"There was no slavery in the North","There was slavery in the North"," They want to have vacation in North" , "none of the above"},
+        {"By Bus","By Train","By Airplane", "none of the above"},
+        {"1848","1948","1448", "none of the above"},
+        {"Ellen","Mr. Cray","Black Servant", "none of the above"},
+        {"No"," Yes"," Maybe", "none of the above"}
         };
 
 private String [] hardAnswer2 = {
@@ -3316,11 +3316,11 @@ private String [] goodluck29= {
         "The people in the town brought Peter bad luck?"
         };
 private String [][] hardChoices29= {
-        {" In tree"," On houses"," Near ponds"},
+        {" In tree"," On houses"," Near ponds", "none of the above"},
         {" Eat"," Hunt"," Build a nest"},
-        {" True"," False"," Maybe"},
-        {" True"," False"," Maybe"},
-        {" True"," False"," Maybe"}
+        {" True"," False"," Maybe", "none of the above"},
+        {" True"," False"," Maybe", "none of the above"},
+        {" True"," False"," Maybe", "none of the above"}
         };
 private String [] hardAnswer29= {
         "On houses"," Eat"," True"," False"," False"};
@@ -3501,11 +3501,11 @@ private String [] ontherighttrack45= {
         "Who is between Jan and Midge in the competition?"
         };
 private String [][] hardChoices45= {
-        {" Midge"," Fridge"," Ridge"},
-        {" Man Ross"," Jan Ross"," Fan Ross"},
-        {" Swimming"," Distance Race"," Basketball"},
-        {" Midge"," Jan Ross"," The coach"},
-        {" Blue haired girl"," Pink haired girl"}
+        {" Midge"," Fridge"," Ridge", "none of the above"},
+        {" Man Ross"," Jan Ross"," Fan Ross", "none of the above"},
+        {" Swimming"," Distance Race"," Basketball", "none of the above"},
+        {" Midge"," Jan Ross"," The coach", "none of the above"},
+        {" Blue haired girl"," Pink haired girl", "Red haired girl", "none of the above"}
         };
 private String [] hardAnswer45= {
         " Midge"," Jan Ross"," Distance Race"," Midge"," Red haired girl"};
@@ -3520,11 +3520,11 @@ private String [] oversmartisbadluck46= {
         "What was the fox planning to do if the rooster came down from the tree?"
         };
 private String [][] hardChoices46= {
-        {" Paragraph 6"," Paragraph 8"," Paragraph 13"},
-        {" To help the fox"," To help tease the fox"," To spread the news about the new law"},
-        {" Honest and Kind"," . Clever, but not clever enough"," A faithful friend"},
-        {" Foolish and Proud"," Simple-minded"," Not easily fooled"},
-        {" Feed lunch to the rooster"," Walk home with the rooster"," Eat the rooster"}
+        {" Paragraph 6"," Paragraph 8"," Paragraph 13", "none of the above"},
+        {" To help the fox"," To help tease the fox"," To spread the news about the new law", "none of the above"},
+        {" Honest and Kind"," . Clever, but not clever enough"," A faithful friend", "none of the above"},
+        {" Foolish and Proud"," Simple-minded"," Not easily fooled", "none of the above"},
+        {" Feed lunch to the rooster"," Walk home with the rooster"," Eat the rooster", "none of the above"}
         };
 private String [] hardAnswer46= {
         " Paragraph 8"," To spread the news about the new law"," Honest and Kind"," Not easily fooled"," Eat the rooster"};
@@ -3560,11 +3560,11 @@ private String [] roundandround51= {
         "What helps to make today’s wheels turn easily?"
         };
 private String [][] hardChoices51= {
-        {" A rod or a pin"," A flat, round object that turns"," A rod and a round object joined together"},
-        {" To help move sledges"," To pull sledges"," To help move people"},
-        {" Using logs as rollers"," Cutting away parts of logs"," Finding logs under sledges"},
-        {" Wheels and axles are now all in one piece."," Axles now move very slowly."," Wheels now turn while the axle remains still."},
-        {" Grease in the hubs"," Axles that turn"," More powerful engines"}
+        {" A rod or a pin"," A flat, round object that turns"," A rod and a round object joined together", "none of the above"},
+        {" To help move sledges"," To pull sledges"," To help move people", "none of the above"},
+        {" Using logs as rollers"," Cutting away parts of logs"," Finding logs under sledges", "none of the above"},
+        {" Wheels and axles are now all in one piece."," Axles now move very slowly."," Wheels now turn while the axle remains still.", "none of the above"},
+        {" Grease in the hubs"," Axles that turn"," More powerful engines", "none of the above"}
         };
 private String [] hardAnswer51= {
         " A flat, round object that turns"," To help move sledges"," Using logs as rollers"," Wheels now turn while the axle remains still."," Grease in the hubs"};
@@ -3637,11 +3637,11 @@ private String [] hardAnswer17= {
             "They are celebrating 8 years anniversary"
 };
 private String [][] hardChoices19= {
-        {" True"," False"," Doesn’t say"},
-        {" True"," False"," Doesn’t say"},
-        {" True"," False"," Doesn’t say"},
-        {" True"," False"," Doesn’t say"},
-        {" True"," False"," Doesn’t say"}
+        {" True"," False"," Doesn’t say", "none of the above"},
+        {" True"," False"," Doesn’t say", "none of the above"},
+        {" True"," False"," Doesn’t say", "none of the above"},
+        {" True"," False"," Doesn’t say", "none of the above"},
+        {" True"," False"," Doesn’t say", "none of the above"}
         };
 private String [] hardAnswer19= {
         "False"," False","True"," True"," False"};
@@ -3657,11 +3657,11 @@ private String [] hardAnswer19= {
             "The party was alive"
     };
     private String [][] hardChoices25= {
-            {" Jennifer  "," Tim"," Andy’s father"," An unnamed narrator"},
+            {" Jennifer  "," Tim"," Andy’s father"," An unnamed narrator", "none of the above"},
             {" Eating xoi with his father gave Andy a stomachache."," Andy was upset when he saw Jennifer holding hands with Tim.  "," Andy was unhappy about the restaurant his father had selected."," Andy was upset with Jennifer for making him miss the party."},
             {" mysterious"," lively"," dull"," upsetting"},
-            {" True"," False"," Doesn’t say"},
-            {" True"," False"," Doesn’t say"}
+            {" True"," False"," Doesn’t say", "none of the above"},
+            {" True"," False"," Doesn’t say", "none of the above"}
     };
     private String [] hardAnswer25= {
             " An unnamed narrator"," Andy was upset when he saw Jennifer holding hands with Tim.  "," dull"," False"," False"};
@@ -3679,8 +3679,8 @@ private String [][] hardChoices28= {
         {" Gilray was too cheap to pay someone to care for his plant"," Gilray took advantage of the narrator's kindness."," Gilray fooled the narrator about the difficulty of the task."," Gilray choose the wrong person for the job."},
         {" He is implying that Gilray never really had a plant."," He is implying that Gilray doesn't have a social life."," He is implying that Gilray could be lying.  "," He is implying that Gilray is inexperienced."},
         {" He believes that Gilray traded his watch for it."," He argues that ladies find Gilray undesirable"," He accuses Gilray of stealing it from a garden."," He claims that Gilray got boots and a gown instead."},
-        {" True"," False"," Doesn’t say"},
-        {" True"," False"," Doesn’t say"}
+        {" True"," False"," Doesn’t say", "none of the above"},
+        {" True"," False"," Doesn’t say", "none of the above"}
         };
 private String [] hardAnswer28= {
         " Gilray was too cheap to pay someone to care for his plant"," He is implying that Gilray could be lying.  "," He argues that ladies find Gilray undesirable"," True"," False"};
@@ -3699,8 +3699,8 @@ private String [] hardAnswer28= {
             {" Jefferson"," Eisenhower  "," Washington"," Bus"},
             {"1946"," 1956  "," 1957"," 2000"},
             {" In the Eastern U.S."," In the Western U.S."," In the Southern U.S."," In the Northern U.S"},
-            {" True"," False"," Doesn’t say"},
-            {" True"," False"," Doesn’t say"}
+            {" True"," False"," Doesn’t say", "none of the above"},
+            {" True"," False"," Doesn’t say", "none of the above"}
     };
     private String [] hardAnswer32= {
             " Eisenhower  "," 1956  "," In the Northern U.S"," False"," True"};
@@ -3718,314 +3718,13 @@ private String [] hardAnswer28= {
             {" The native Hawaiians imported them to solve a problem with their crops."," The Asians brought them to Hawaii when they first arrived."," The Europeans brought them on their ships.  "," The rats were able to swim to Hawaii from Asia. "},
             {" To come from a place  "," To go to a place"," To become independent"," To wander the world"},
             {" The mongoose was introduced to Hawaii"," The black rat was introduced to Hawaii"," The black rat migrated to Europe  "," Plantation owners bred mongooses"},
-            {" True"," False"," Doesn’t say"},
-            {" True"," False"," Doesn’t say"}
+            {" True"," False"," Doesn’t say", "none of the above"},
+            {" True"," False"," Doesn’t say", "none of the above"}
     };
     private String [] hardAnswer41= {
             " The Europeans brought them on their ships.  "," To come from a place  "," The black rat migrated to Europe  "," False"," True"};
 
 
-
-
-//private String [] seeingclearly= {
-//        "What proverb best fits this story?",
-//        "As used at the beginning of the passage, which is the best antonym for stealthily?",
-//        "As stated near the beginning of the story, if Donna is eschewing candy and soda, she is",
-//        "Using the passage as a guide, which best describes the meaning of Forty is the new twenty?",
-//        "As used in the middle of the passage, which is the best antonym for innocuous?"
-//        };
-//private String [] choices32= {
-//        {" Time marches on"," Time heals all wounds."," A stitch in time saves nine."," There is no time like the present."},
-//        {" secretly"," patiently"," blatantly"," sneakily"},
-//        {" overindulging in them"," avoiding them"," eating them in moderation"," eating them responsibly
-//        "},
-//        {" If you are in good shape and health, being 40 can feel like 20"," When people turn 40, they are likely to say they are in their 20s."," If you are 20 and are not in great shape, you can feel like you are 40.
-//        "," If you stay away from junk food, you can look 40 even when you are 20."},
-//        {" dangerous"," difficult"," juvenile"," mature"}
-//        };
-//private String [] answer32= {
-//        "Time marches on"," blatantly"," avoiding them"," If you are in good shape and health, being 40 can feel like 20"," dangerous"};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//private String [] takecareofyour= {
-//        "Be firm and patient in teaching your dog the rules",
-//        "If your dog makes a mistake, make it go without food that day",
-//        "If you have to scold your dog, walk over to it",
-//        "When your dog does something that pleases you, make sure the dog knows that you are pleased",
-//        "Make sure your dog never gets too hot"
-//        };
-//private String [] choices33= {
-//        {" Yes"," No"," Maybe"},
-//        {" Yes"," No"," Maybe"},
-//        {" Yes"," No"," Maybe"},
-//        {" Yes"," No"," Maybe"},
-//        {" Yes"," No"," Maybe"}
-//        };
-//private String [] answer33= {
-//        "Yes"," No"," Yes"," Yes"," Yes"};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//private String [] taroandthetofu= {
-//        "Why didn’t the old man come to Taro’s house?",
-//        "Why did Taro buy the chocolate?",
-//        "Why did the old man give Taro extra money?",
-//        "Where did the voices come from?",
-//        "How did Taro probably feel at the end of the story"
-//        };
-//private String [] choices16= {
-//        {" He was too ill to come."," He was playing a trick on Taro."," He had to stay with his grandson who was ill."},
-//        {" It was his reward for going to get the tofu"," It was to be a present for the old man."," It was for his sister."},
-//        {" He made a mistake"," He was giving Taro a present."," He wanted Taro to buy more tofu."},
-//        {" From the nearby trees"," From his own thoughts"," From people in the sweetshop"},
-//        {" Sad and Angry"," Excited and Impatient"," Warm and Good"}
-//        };
-//private String [] answer16= {
-//        "He had to stay with his grandson who was ill."," It was his reward for going to get the tofu"," He made a mistake"," From his own thoughts"," Warm and Good"};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//private String [] tattoo= {
-//        "What other title would best fit this passage?",
-//        "As used in paragraph 1, which is the best antonym for obtuse?",
-//        "What was Justin's attitude when he showed his mother the tattoo?",
-//        "As used in paragraph 2, which is the best antonym for impervious?",
-//        "As used in paragraph 4, which is the best antonym for exacerbated?"
-//        };
-//private String [] choices35= {
-//        {" House Rules"," Visiting Pop-Pop"," Straight A's"," Body Piercings"},
-//        {" foolhardy"," intelligent"," passionate"," Stubborn"},
-//        {" willfully defiant"," cautiously jubilant"," convincingly contrite"," obviously melodramatic"},
-//        {" elated"," impenetrable"," invigorated"," vulnerable"},
-//        {" intensified"," evened"," extinguished"," decreased"}
-//        };
-//private String [] answer35= {
-//        "House Rules"," intelligent"," willfully defiant"," vulnerable"," decreased"};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//private String [] thecaseoftheunknown= {
-//        "How long did Mrs. Sydney known Kate Holmes?",
-//        "What did Jed Wright found in Michigan?",
-//        "The only relative Wright has after his parent died? The only relative Wright has after his parent died?",
-//        "A good friend of Jed Wright?",
-//        "How did Dan know Alf?"
-//        };
-//private String [] choices16= {
-//        {"1 Year"," 2 Years"," All her life"},
-//        {" Copper Mine"," Gold"," Diamond"},
-//        {" Sister"," Brother"," Aunties"},
-//        {" Nicole"," Dan Cole"," Dane Cole"},
-//        {" Because they are twins so they are look alike."," Because they claim to be Alf Wright"," Because he saw a picture."}
-//        };
-//private String [] answer16= {
-//        "All her life"," Copper Mine"," Brother"," Dan Cole"," Because they are twins so they are look alike.
-//        "};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//private String [] thecleverwizard= {
-//        "The noble lied to the lung about the wizard because",
-//        "The king wanted the wizard killed because",
-//        "The wizard was a wise man because",
-//        "The king’s question was probably meant to show that",
-//        "The Wizard’s answer really was wise because"
-//        };
-//private String [] choices37= {
-//        {" he wanted to do away with the wizard"," he was afraid of the wizard"," the wizard didn’t like him"},
-//        {" the wizard lied to the king"," the king believed the noble"," the wizard lied to the people"},
-//        {" he knew about the past, present, and future"," he took money for giving advice"," he always knew the answer to a question"},
-//        {" he was wiser than the wizard"," be and the wizard were both wise"," the wizard was not as wiser as he thought he was"},
-//        {" it proved that he could see into the future"," it made the king a happy man"," it changed the king’s mind about killing the wizard"}
-//        };
-//private String [] answer37= {
-//        "he wanted to do away with the wizard"," the king believed the noble"," he knew about the past, present, and future"," the wizard was not as wiser as he thought he was"," it changed the king’s mind about killing the wizard"};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//private String [] thefirstwords= {
-//        "Linnette learned about Maud",
-//        "Linnette’s father got her a parrot because?",
-//        "Linnette’s father came home with two parrots because?",
-//        "The parrots would not talk to Linnette because",
-//        "The parrot’s first words showed that they"
-//        };
-//private String [] choices38= {
-//        {" At her Aunt Fern’s"," When she got home from aunt fern’s"," From books about parrots"},
-//        {" he kept asking for me"," He wanted one"," She needed one"},
-//        {" They were the only pair in the pet shop"," The pet shop owner game him a good price"," He thought they looked nice together"},
-//        {" They didn’t know how"," She didn’t talk to them"," They liked talking to each other best"},
-//        {" Were ready to talk to Linnette"," Still wanted to talk to each other"," Didn’t like their cages"}
-//        };
-//private String [] answer38= {
-//        "At her Aunt Fern’s"," he kept asking for me"," The pet shop owner game him a good price"," They liked talking to each other best"," Still wanted to talk to each other"};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//private String [] thegreatbuddha= {
-//        "How are people supposed to feel when they look at the statue?",
-//        "What does the third eye of the statue mean?",
-//        "What does the bump on the statue’s head mean?",
-//        "What do the long ears of the statue mean?",
-//        "The statue’s eyes are half-closed. What does this mean?"
-//        };
-//private String [] choices39= {
-//        {" Afraid"," Peaceful"," Angry"},
-//        {" Buddha is blind"," Buddha sees everything"," Buddha has three ways of looking at things"},
-//        {" Buddha knows everything"," Buddha has had many fights"," Buddha fell and hurt himself"},
-//        {" Buddha hears everything"," Buddha is deaf"," Buddha is not human"},
-//        {" Buddha doesn’t like the bright sunlight"," Buddha is asleep"," Buddha is at peace"}
-//        };
-//private String [] answer39= {
-//        "Peaceful"," Buddha sees everything"," Buddha knows everything"," Buddha hears everything"," Buddha is at peace"};
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//private String [] theminiproblem= {
-//        "In the beginning of the story, Lily&#39;s anger was described as palpable because it was",
-//        "As used in the beginning of the story, which is the best antonym for insurmountable?",
-//        "As used in the beginning of the story, which best describes the act of being relegated?",
-//        "As used in the beginning of the story, the expression par for the course implies that something",
-//        "What is ironic about the title of this passage?"
-//        };
-//private String [] choices40= {
-//        {" unusual"," irrational"," difficult to understand"," easy to feel"},
-//        {" sane"," phony"," unjustified"," surpassable"},
-//        {" A star athlete is given a coveted award."," A disobedient dog is put in the garage to sleep"," After being tested, swimmers are put into groups according to their ability levels."," The birthday boy is taken to his favorite restaurant."},
-//        {" is to be expected"," cannot be undone"," is sure to cause anger"," was meant to be hurtful"},
-//        {" Lily has a big problem."," Tommy is perfectly happy."," Lily does not get a mini bike."," Lily’s parents do not realize there is actually a problem"}
-//        };
-//private String [] answer40= {
-//        "easy to feel"," surpassable"," A disobedient dog is put in the garage to sleep"," is to be expected"," Lily has a big problem."};
-//
-//
-//
-//
-//
-//
-//
 
 
 

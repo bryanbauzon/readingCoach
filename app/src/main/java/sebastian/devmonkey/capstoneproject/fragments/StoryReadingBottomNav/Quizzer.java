@@ -283,9 +283,6 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
         }
 
-
-
-
     }
 
     private void Wrong() {
