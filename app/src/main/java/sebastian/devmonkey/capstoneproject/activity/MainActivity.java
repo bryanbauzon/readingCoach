@@ -364,7 +364,8 @@ public class MainActivity extends AppCompatActivity implements
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               System.exit(0);
+               System.exit(1);
+           // finishAndRemoveTask()
                finishAffinity();
             }
         });

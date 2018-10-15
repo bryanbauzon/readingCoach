@@ -3,7 +3,7 @@ package sebastian.devmonkey.capstoneproject.stories;
 public class Intermediate {
 
     public String[] story = {
-      //A COLD DAY
+            //A COLD DAY
             "It is a frigid January day in York, Pennsylvania."+
                     "The temperature is below freezing."+
                     "Snow is starting to fall. Dr. James turns on the television to check the weather."+
@@ -28,7 +28,7 @@ public class Intermediate {
                     "Is everyone okay? Dr. James asks. \n Yes, yes, we are fine."+
                     "We slipped on a patch of ice, the driver says.\n"+
                     "'This would have been a good day to stay home in bed.",
-            //A MYSTERY
+
             "Something is very wrong,' says the detective.\n"+
                     "'I know!' says Ms. Gervis."+
                     "'It is wrong that someone has stolen from me!'"+
@@ -130,20 +130,6 @@ public class Intermediate {
                     "The name might be that of a fear-inspiring animal such as Bear or Buffalo or that of a noble bird,"+
                     "such as Eagle, Hawk, or Owl.",
             //AMERICA'S FIRST SCUPTOR
-            "As a girl, Louisa Bethune showed great promise in planning houses and various other structures."+
-                    "As an adult, she was determined to become Americas first woman architect."+
-                    "Young architects then usually learned their skills by working in the drafting rooms of professional architects."+
-            "Most architects didnt want to employ women."+
-                    "But Louise convinced a well-known architect to give her a chance."+
-                    "She worked from six in the morning to six in the evening. She wasnt paid much."+
-                    "But she learned as she worked, and her employer allowed her to use his large library.\n\n"+
-                    "In 1881, after five years of work and study, Louise set up her own office."+
-                    "She advertised that the first professional woman architect in the country was ready for business."+
-                    "Louise insisted that she would not be limited to designing private homes just because she was a woman."+
-                    "She sought out a variety of jobs and designed chapels, storage buildings, factories, and schools."+
-                    "She did very well, inspiring other women to become architects."+
-                    "She often spoke out for fair treatment for women and equal pay for equal work.",
-            //AMERICA'S FIRST WOMAN
             "Patience Wright was Americas first sculptor."+
                     "She was born in New Jersey in 1725."+
                     "As a child she made likenesses with bread dough of her family and friends."+
@@ -157,6 +143,20 @@ public class Intermediate {
                     "She was supposed to have been a spy for Benjamin Franklin during the Revolution,"+
                     "sending him information in the wax heads of dolls. Again popular after the war, she died in 1786."+
                     "She wanted to be returned to her dear America, but she was buried in England.",
+            //AMERICA'S FIRST WOMAN ARCHITECT
+            "As a girl, Louisa Bethune showed great promise in planning houses and various other structures."+
+                    "As an adult, she was determined to become Americas first woman architect."+
+                    "Young architects then usually learned their skills by working in the drafting rooms of professional architects."+
+                    "Most architects didnt want to employ women."+
+                    "But Louise convinced a well-known architect to give her a chance."+
+                    "She worked from six in the morning to six in the evening. She wasnt paid much."+
+                    "But she learned as she worked, and her employer allowed her to use his large library.\n\n"+
+                    "In 1881, after five years of work and study, Louise set up her own office."+
+                    "She advertised that the first professional woman architect in the country was ready for business."+
+                    "Louise insisted that she would not be limited to designing private homes just because she was a woman."+
+                    "She sought out a variety of jobs and designed chapels, storage buildings, factories, and schools."+
+                    "She did very well, inspiring other women to become architects."+
+                    "She often spoke out for fair treatment for women and equal pay for equal work.",
             //ARCTIC FOX
             "The Arctic fox is a small fox found commonly in the arctic regions of the world."+
                     "Measuring a little less than three feet in length,"+
@@ -173,8 +173,24 @@ public class Intermediate {
                     "The Arctic fox is sometimes preyed upon by polar bears."+
                     "Arctic fox vixens (female foxes) can give birth to as many as twenty-five kits (baby foxes) in the springtime (the largest of any carnivore)."+
                     "Most litters, however, contain between five and eight kits. Both male and female foxes help take care of the young. While the Arctic fox is common throughout much of the Arctic region, it is exceedingly rare in the Scandinavian nations of Norway, Sweden, and Finland, where populations never recovered from severe overhunting."+
-                    "In addition, recent movements of the red fox into Arctic fox territory (probably as a result of global warming) threaten the Arctic fox population as well.",
+                   "In addition, recent movements of the red fox into Arctic fox territory (probably as a result of global warming) threaten the Arctic fox population as well.",
             //BAIL
+            "The phone rang at Pratt Taylor’s house at nearly three in the morning. Pratt fumbled for the phone in the dark."+
+                    "He answered groggily after the fourth ring. 'Hello,' Pratt mumbled into the receiver."+
+                    "'Mr.Taylor. Thank goodness. I need your help.' Pratt knew the voice, for sure."+
+                    "But still drowsy, he could not quite place it. 'Mr. Taylor!' the man said again in a raspy, loud whisper."+
+                    "'I am in jail. I was allowed one phone call. I’m calling you.' Then, the fog cleared."+
+                    "Although nearly ten years had passed since their last encounter, Pratt was able to discern something familiar in this voice."+
+                    "It belonged to a boy named Martin'Hall, easily one of the most brilliant math students he had ever taught."+
+                    "But while Pratt recalled that Martin possessed an enviable aptitude for math, he also had a knack for getting into trouble."+
+                    "\n\nStill, they had forged a strong student-teacher bond, and when Martin graduated from Linebrook High School,Pratt had told him, 'Call me if there is anything you ever need."+
+                    "'So here it was – the call in the middle of the night. 'Yes, Martin. Is that you?' 'Yes, Mr.Taylor. Can you help?' 'What do you need?' 'Bailmoney.'"+
+                    "'What did you do?' 'We’ll talk about that later. Can you get me one thousand bucks?' Pratt knew he could, but he was hesitant."+
+                    "What had Martin done? What was Pratt getting himself into? Pratt’s belief in honoring his word determined his decision."+
+                    "'Yes, I can. Where shall I bring it?' 'I’m at Jessup in Maryland. My brother will come by your place in the morning."+
+                    "Give the money to him, and he will come and bail me out.' 'Okay.' Upon hanging up the phone,."+
+                    "Pratt was overcome by a dreadful feeling – his intuition told him that the decision to bail Martin out would be one that would vex him for a very, very long time.",
+             //BANKS
             "Banks are places where people can keep their money."+
                     "Most people use banks to save money in their savings accounts and to pay money from their checking accounts."+
                     "Today, when a person earns money from their job,"+
@@ -186,7 +202,7 @@ public class Intermediate {
                     "The bank makes money from lending by charging interest."+
                     "In other words, people have to pay back more than they borrowed."+
                     "This amount depends on how risky the bank thinks the borrower is and how fast the loan is paid back among other things.",
-            //BANKS
+            //BENJAMIN FRANKLIN
             "Benjamin Franklin was born in 1706 in Boston, Massachusetts."+
                     "He came from a big family. He had 16 brothers and sisters."+
                     "When Benjamin was 15, his brother started the first Boston newspaper."+
@@ -208,11 +224,11 @@ public class Intermediate {
                     "Franklin was also very interested in American politics."+
                     "He helped Thomas Jefferson write the Declaration of Independence."+
                     "In 1776, he and other people signed the Declaration of Independence.Franklin died on April 17, 1790. He was 84 years old.",
-            //BENJAMINS FRANKLIN
+            //BIRDS SONG
             "Why do birds sing? You might assume that birds sing because they are happy."+
                     "While birds might be happy, they sing in order to communicate."+
-            "One reason they sing is to stake a claim on territory. Birds"+
-            "sing to warn other birds to stay off their property."+
+                    "One reason they sing is to stake a claim on territory. Birds"+
+                    "sing to warn other birds to stay off their property."+
                     "For example, a robin might stake a claim on a piece of"+
                     "land which measures about 200 feet wide by 200 feet long."+
                     "This amount of land provides enough worms for the robin to feed its family.\n" +
@@ -225,7 +241,7 @@ public class Intermediate {
                     "in order to warn of danger and to locate one another. "+
                     "Birds sing instinctively.Young birds learn to perfect their songs by listening to adult birds and interacting with other birds. "+
                     "Birds in a local area might learn variations in the basic song which help them recognize other members of their group.",
-            //BIRD SONGS
+            //BLACK AMERICAN AUTHOR
             "Paul Laurence Dunbar was one of the first black American authors to win world fame for stories and poems." +
                     "He was born in Ohio in 1872. "+
                     "He was the son of former slaves who told him many tales of plantation life. "+
@@ -239,7 +255,7 @@ public class Intermediate {
                     "In his later writing he often used the rough speech of untaught blacks, "+
                     "for he knew the importance of preserving their ways. "+
                     "He died in 1906, and his poems and stories are still read and enjoyed.",
-            //BLACK AMERICAN AUTHOR
+             //BLACK BEARS
             "American Black Bears live in the U.S., Canada, and Mexico. "+
                     "An American Black Bear can be up to seven"+
                     "feet tall if it stands on its hind legs. "+
@@ -267,11 +283,7 @@ public class Intermediate {
                     "They like to hunt at night. They like to hunt in large, open spaces."+
                     "Black Bears eat"+
                     "mostly fruits and vegetables, but they also hunt and eat other animals.",
-            //BLACK BEARS
-            "An Black Bear can be up to seven feet tall if it stands on its hind legs. A mother Black Bear can have 2-4 baby bears."+
-                    " They have the bears in winter. The baby bears are called cubs. During the winter, the cubs stay with their mother in the bear den. During the summer, the cubs like to go outside. They like to run and play. The cubs drink milk provided by their mother. The cubs eat nuts, berries, and insects. The cubs also love to eat honey. During the winter, the cubs sleep in the den with their mothers. They rest all winter. The cubs will leave their mother the next summer. They will move away to start their own family. Brown Bears live in the North. \n\nThey live in Wyoming, Montana, Idaho, Washington, Alaska, Canada, and northern Eurasia. Brown Bears are very big. A Brown Bear can be up to ten feet tall if it stands on its hind legs. Like Black Bear cubs, Brown Bear cubs are born in winter. They drink milk until spring or summer. The mothers have 2- 4 cubs. Brown Bear cubs stay with their mothers for 2-4 years. The adult females, called sows, teach them to hunt. They like to hunt at night. They like to hunt in large, open spaces. Brown Bears eat mostly fruits and vegetables, but they also hunt and eat other animals.",
-           //BLIZZARD
-
+             //BLIZZARD
             "The Turner kids were not accustomed to snow. "+
                     "The most they ever got in their southern city of "+
                     "Birmingham was an inch or so per year. "+
@@ -297,7 +309,7 @@ public class Intermediate {
                     "The Turner parents were in shock. "+
                     "Most folks in "+
                     "town were ill-prepared for such a storm."+
-            "They had no shovels to dig their way out and no salt to keep"+
+                    "They had no shovels to dig their way out and no salt to keep"+
                     "from slipping. "+
                     "They had no idea what to do. While the adults seemed paralyzed with disbelief."+
                     "Turner kids set about having the time of their lives. \n\n "+
@@ -319,7 +331,7 @@ public class Intermediate {
                     "Krill are tiny shrimp-like animals. "+
                     "The whale simply opens its mouth, fills it with krill and salt water, and filters the water out of plates in its mouth called baleen. "+
                     "The blue whale may eat over 8,000 pounds of krill in a single day!",
-            //BUFFALO
+             //BUFFALO BILLS
             "The Buffalo Bills have played in Buffalo, New York, since they were founded in 1959. "+
                     "The Bills are the only team to play in the state of New York as both other New York teams, "+
                     "the Jets and Giants, play in New Jersey. "+
@@ -357,13 +369,13 @@ public class Intermediate {
                     "it pumps its wings to send blood through them so that it can fly. "+
                     "Most butterflies only live a couple of weeks just enough time to drink flower nectar and to mate. "+
                     "Some, like the monarch butterfly, however, may live many months.",
-            //CALIFORNIA
+           //CALIFORNIA
             "Description: The massive California condor is one of Americas largest and rarest birds. The adult is mostly black with large white wing patches and a featherless head. The color of the head can vary from white, to pink, to orange, depending on the condors emotional state. The male condor has a tuft of black feathers extending from the base of the neck. The condors wingspan can exceed nine feet, and the average adult weighs in excess of 20 pounds. "+
                     "Diet: The California condor eats carrion. It actually has no sense of smell and finds dead animals by observing the movements of vultures and eagles. They prefer to eat large mammals such as deer, goats, horses, sheep, and even bears. The huge condor dominates other birds at carcasses, except the golden eagle. Condors in the wild can go days or weeks without eating before gorging themselves on several pounds of dead animal. "+
                     "Reproduction: The California condors notoriously slow rate of reproduction has undoubtedly contributed to its population decline. Females become reproductively mature at age six and choose a mate for life. The simple nest is built in a cave or upon a cliff, and the female lays one or two eggs every other February or March. After about eight weeks, the eggs hatch. The young condor(s) can fly after about six months. "+
                     "Range/Habitat: The California condor once roamed the entire American Southwest from Texas to California and into parts of northern Mexico. Today, it is restricted to designated habitats in Arizona (such as the Grand Canyon) and Southern California. California condors prefer dry, mountainous habitats with large trees and scrub growth."+
-            "Status: The California condor is one of Americas most critically endangered animals. Today, there are about 300 individuals in existence, which is actually a significant improvement over the 22 individuals that were confirmed in existence in 1987. All 22 of those birds were captured and cared for in captivity that year for the purpose of saving the species from certain extinction. Although the condor was never common, populations of condors plummeted because of habitat destruction, pesticides, lead shot (which would contaminate carcasses), and electrical towers (which the birds would collide with). In a landmark effort, biologists from the San Diego Zoo initiated a captive breeding program with the condors and successfully increased their numbers to the point where some individuals could be re-released into the wild. Scientists took advantage of the condors tendency to double clutch, or lay another egg, if the first is lost or destroyed. Newly released condors have been trained to avoid electrical towers and"+ "people. In 2003, the first young condor fledged in the wild since 1981. Furthermore, a female condor recently laid an egg in Mexico, marking the first time a condor has nested in Mexico since the 1930s.",
-            //CARS
+                    "Status: The California condor is one of Americas most critically endangered animals. Today, there are about 300 individuals in existence, which is actually a significant improvement over the 22 individuals that were confirmed in existence in 1987. All 22 of those birds were captured and cared for in captivity that year for the purpose of saving the species from certain extinction. Although the condor was never common, populations of condors plummeted because of habitat destruction, pesticides, lead shot (which would contaminate carcasses), and electrical towers (which the birds would collide with). In a landmark effort, biologists from the San Diego Zoo initiated a captive breeding program with the condors and successfully increased their numbers to the point where some individuals could be re-released into the wild. Scientists took advantage of the condors tendency to double clutch, or lay another egg, if the first is lost or destroyed. Newly released condors have been trained to avoid electrical towers and"+ "people. In 2003, the first young condor fledged in the wild since 1981. Furthermore, a female condor recently laid an egg in Mexico, marking the first time a condor has nested in Mexico since the 1930s.",
+           // 20//CARS
             "Karl Benz invented the modern car in 1888 in Germany. "+
                     "Emile Roger worked for Benz in France. He "+
                     "made cars in France. "+
@@ -391,7 +403,7 @@ public class Intermediate {
                     "These cars cause air pollution. They get the air dirty."+
                     "Now many people are looking for cleaner cars. "+
                     "And, many car companies are looking for cleaner fuels.",
-            //CASTLE
+            //21//CASTLE
             " Windsor Palace is the worlds largest and oldest continuously inhabited castle. "+
                     "Occupying over 484,000 square feet, it is over 240 times the size of an average house. "+
                     "William the Conqueror built the first castle on the grounds between 1070 and 1086, but the castle that exists today was largely built by Edward of Windsor in 1350. "+
@@ -404,12 +416,12 @@ public class Intermediate {
                     "The Long Walk, a three-mile-long avenue running south from the castle. "+
                     "Charles II also had the royal apartments and St. Georges Hall rebuilt. "+
                     "The royal apartments were spectacular, with numerous carvings, frescoes, and tapestries."+
-            "The artwork acquired during the rebuilding of Windsor Castle became known as the Royal Collection, "+
+                    "The artwork acquired during the rebuilding of Windsor Castle became known as the Royal Collection, "+
                     "which remains relatively unchanged today. \n"+
                     "In 1824, George IV moved into the castle and was granted 300,000 pounds to renovate Windsor Castle."+
                     "The entire castle was remodeled and the architect, Jeffrey Wyattville, succeeded in blending the castle to seem like one entity rather than a collection of buildings."+
                     "Wyattville raised and lowered the heights of various buildings to give them symmetry and improved the appearance and structure of others.",
-            //CHICAGO BEARS
+           // 22//CHICAGO BEARS
             "The Chicago Bears are a member of the National Football Conference (NFC) North Division."+
                     "They were founded in 1919. "+
                     "They initially played in Decatur, Illinois, and moved to Chicago in 1921. "+
@@ -431,7 +443,7 @@ public class Intermediate {
                     "During the 1985 season, the Bears achieved a record of 15 wins and one loss. "+
                     "In 1995, the Bears made it to Super Bowl XLI but were defeated by Peyton Manning and the Indianapolis Colts, 29-17. "+
                     "On November 18, 2010, the Bears secured the record for the most wins by any NFL franchise with their 700th.",
-            //CHRISTOPHER COLUMBUS
+           // 23//CHRISTOPHER COLUMBUS
             "Christopher Columbus was born in Genoa, Italy, in 1451. "+
                     "While spending most of his early years at sea, Columbus began to believe that he could find a shortcut to the Indies by sailing west across the Atlantic Ocean. "+
                     "Unfortunately, the king of Portugal refused to finance such a trip, and Columbus was forced to present his idea to the king and queen of Spain. "+
@@ -447,7 +459,7 @@ public class Intermediate {
                     "He died with the belief he had found the shortcut to the Indies. "+
                     "Soon, however, other explorers and nations understood the importance of his discoveries. :"+
                     "Columbuss discoveries set the stage for the Age of Explorationone of the most fascinating and exciting times in world history.",
-            //city noise
+            //24//city noise
             "My name is Elsa. I live in a big city. "+
                     "I live on a busy road. During the day and at night, cars go by. Buses go by. "+
                     "Trucks go by. People do not seem to hear the noise during the day. "+
@@ -465,7 +477,7 @@ public class Intermediate {
                     "To me, Sheila is as bad as the cars. He is as bad as the buses. "+
                     "He is as bad as the trucks. This is what living in a big city is like. "+
                     "There is a lot of noise.",
-            //clocks
+            //2.5//clocks
             "Clocks are used to measure time. Clocks are used to show the time. "+
                     "Clocks are used so that people canagree on the time. "+
                     "People use clocks to measure units of time that are shorter than natural units."+
@@ -504,7 +516,7 @@ public class Intermediate {
                     "Airplanes take off"+
                     "and land according to the clock. "+
                     "It is fun to imagine a world without clocks!",
-            //coins
+            //26//coins
             "Nine thousand years ago, people did not have money. "+
                     "They traded animals for things they wanted. "+
                     "They traded crops for what they wanted. "+
@@ -528,7 +540,7 @@ public class Intermediate {
                     "No matter what it looks like, money is an idea. "+
                     "It is the thought that people can trade something they have for something they want. "+
                     "Money makes trading easier.",
-            //COMMON LOONS
+            //27//COMMON LOONS
             "The common loon is the state bird of Minnesota."+
                     "It lives on large lakes and wet lands in northern North America in the summer and on lakes, rivers, and coast lines in the winter. "+
                     "The common loon is glossy, dark-green with lots of white patterns on its back. "+
@@ -540,7 +552,7 @@ public class Intermediate {
                     "Loons are named for their eerie calls, which often echo across the northern lakes at night or early in the morning. "+
                     "Sometimes, several loons call at once producing a chorus of yodels. "+
                     "The common loon is sometimes called the great northern diver because it can dive as deep as 200 feet in search of fish.",
-            //CORN
+           // 28//CORN
 
             " Corn is the most popular crop in the United States. "+
                     "More than half the corn in the US is grown in Iowa,"+
@@ -567,7 +579,7 @@ public class Intermediate {
                     "The fuel is ethanol. "+
                     "Some companies add ethanol to gas. "+
                     "Gas with ethanol is cheaper than other gas.",
-            //COUNTING
+            //29//COUNTING
             " Archaeologists believe that counting large quantities began about 10,000 years ago. "+
                     "Early farmers had to account for communally stored crops. "+
                     "Early counting systems involved small tokens which represented farmers stores. "+
@@ -581,7 +593,7 @@ public class Intermediate {
                     "At the same time, other cultures were independently developing numbering and writing systems. "+
                     "Soon philosophers began to discover than nature was subject to laws which could be expressed with numbers.",
 
-            //CRICKET
+            //30//CRICKET
             "Description: The adult house cricket is about two centimeters in length. "+
                     "The body is usually light brown with black markings about the head and thorax. "+
                     "The female is told from the male by the presence of an ovipositor, a long extension attached to the end of the abdomen, used for depositing eggs in the soil. \n"+
@@ -590,7 +602,7 @@ public class Intermediate {
                     "Reproduction: Crickets reach sexual maturity between eight and twelve weeks after birth. Males attract mates by rubbing their wings together to produce a noise sometimes referred to as 'chirping'. Technically, this process is called stridulation. Interestingly enough, the rate in which a cricket 'chirps' is determined by the temperature outside. When it is warmer, crickets chirp faster. Scientists can actually tell the exact outdoor temperature by timing the rate of cricket 'chirpings'. After the male mates with the female, the female will\n"+
                     "lay between 50 and 100 eggs in the ground or another soft surface. The eggs hatch in about two weeks. Life Cycle: Incomplete Metamorphosis: egg -> nymph -> adult Diet: House crickets will eat just about anything including soft plant matter, insects, young crickets, and decomposing matter.",
 
-            //DALLAS COWBOYS
+            //31//DALLAS COWBOYS
 
             "The Dallas Cowboys have been an NFL team since 1960. "+
                     "They are one of two teams that play professional football in the state of Texas. "+
@@ -610,7 +622,7 @@ public class Intermediate {
                     "In 2009, Cowboys Stadium opened. "+
                     "It can hold over 110,000 people, making it the largest domed stadium in the world. "+
                     "It cost over one billion dollars to build!",
-            //DISCOVERY OF ICE CREAMS
+            //32//DISCOVERY OF ICE CREAMS
             "Frozen Desserts started with the early Greece and Romans. "+
                     "Their slaves added honey and fruit flavors to snow. "+
                     "Marco Polo discovered such ices in the Orient. "+
@@ -626,7 +638,7 @@ public class Intermediate {
                     "An unknown 'soda jerk' discovered the sundae. "+
                     "Local laws prevented the mixing of sodas on Sunday. "+
                     "So this hero combined ice cream and syrup-without the carbonation-and called it a 'Sunday.",
-            //DOCTOR IN CHICAGO
+            //33//DOCTOR IN CHICAGO
 
             "Daniel Kale Williams became a doctor in Chicago in 1888. "+
                     "After graduating, he taught at Northwestern Universitys medical school. "+
@@ -643,7 +655,7 @@ public class Intermediate {
                     "Without X rays or blood transfusions, he opened the mens chest and sewed up his heart. "+
                     "The bold operation succeeded. "+
                     "The man lived. ",
-            //DUNKIN DONUTS
+            //34//DUNKIN DONUTS
             "William Rosenberg was one of four children growing up in Boston, Massachusetts. "+
                     "His father was a grocery store owner. Because of the familys money problems, "+
                     "William left school in the eighth grade to help his father at his store. "+
@@ -655,7 +667,7 @@ public class Intermediate {
                     "He noticed that customers often dunked their donuts into their coffee. "+
                     "Thus, the name 'Dunkin Donuts' was born",
 
-            //EASTER ISLAND
+            //35//EASTER ISLAND
             " One of South America's mysteries is Easter Island. "+
                     "Easter Island, also called Rapa Nui and Isla de Pascua,"+
                     "3,600 km (2,237 mi) west of Chile, is a volcanic island with an interesting and partly unknown history."+
@@ -672,7 +684,7 @@ public class Intermediate {
                     "But the purpose of"+
                     "the statues and the reason they were abandoned remain mysteries.",
 
-            //GARLICS
+            //36//GARLICS
             "People often do strange things in the name of science. "+
                     "Recently, a group of volunteers at the University of Michigan were united to take an unusual pill every day. "+
                     "The pill contained garlic. "+
@@ -687,7 +699,7 @@ public class Intermediate {
                     "They take garlic pills (equivalent to two to three garlic cloves) every day for a month. "+
                     "Then their blood is rechecked to see if the garlic has had any effect on their cholesterol level. "+
                     "It's too early to tell but scientists may someday, have us eating garlic to stay healthy.",
-            //HALLOWEEN
+            //37//HALLOWEEN
             " The word Halloween is short for 'All hallows Evening', 'hallow' means 'holy.' "+
                     "The evening gets its name because the next day, November 1, "+
                     "is a religious festival day called All Saints Day. "+
@@ -702,10 +714,10 @@ public class Intermediate {
                     "The pumpkin is simply a symbol of the harvest. "+
                     "Stealing gates, garbage cans, and chairs--a 21 popular Halloween prank until recently--was a relic of the time when gates and gate posts disappeared and were said to have been stolen by evil spirits. "+
                     "According to tradition, everything connected with the festive evening smacks f the supernatural.",
-            //HELICOPTERS
+            //38//HELICOPTERS
             "Helicopters are very different from airplanes. "+
                     "They can do three things that airplanes cannot do. "+
-            "First,when airplanes move upward, they must also move forward, but helicopters can move straight up without moving ahead. "+
+                    "First,when airplanes move upward, they must also move forward, but helicopters can move straight up without moving ahead. "+
                     "Second, helicopters can fly backward, which airplanes cannot do. "+
                     "Third,helicopters can use their rotors to hover in the air (stay in one place) which is impossible for planes."+
 
@@ -724,7 +736,7 @@ public class Intermediate {
                     "Of course, helicopters have military "+
                     "uses because of their design and capabilities.",
 
-            //HIBERNATION AND ESTIVATION
+            //39//HIBERNATION AND ESTIVATION
             "Some animals hibernate or go into a deep sleep as an adaptation to the cold months of winter."+
 
                     "Hibernation is different from normal sleep. "+
@@ -742,7 +754,7 @@ public class Intermediate {
                     "It does not need to eat because it is not using much energy. "+
                     "Some animals burrow underground, where it is cooler,before they begin to estivate. "+
                     "Some animals which estivate are reptiles, bees, hedgehogs, frogs, toads,and earthworms.",
-            //HOUSES
+            //40//HOUSES
             "There are houses all over the world. Some houses are large. Some are small. "+
                     "Some are made of wood."+
                     "Some are made of rock. Some are made of mud. Some are made of cloth."+
@@ -761,9 +773,9 @@ public class Intermediate {
                     "Some houses are fancy. They are painted bright colors, and are very decorative. "+
                     "Some houses not fancy they are plain and simple. Houses look very different in different parts of the world. "+
                     "But, people who live in a house probably all agree that there is no place like home!",
-            //HOW TO BE A PIG
+            //41//HOW TO BE A PIG
             "To be a pig, youd first need a round, thought snout like a built-in shovel, "+
-            "it would help you root or grab for food. "+
+                    "it would help you root or grab for food. "+
                     "Youd have poor eyesight, but your senses of smell and hearing would be excellent. "+
                     "In spite of your barrel-shaped body and little legs, youd be a swift, "+
                     "sure-footed runner and a good swimmer. \n"+
@@ -777,7 +789,7 @@ public class Intermediate {
                     "But hippos and elephants like mud baths too. "+
                     "Mud soothes insect bites and protects and cools pigs hides. "+
                     "Even tame pigs wallow in the mud. ",
-            //JOHN COOKS
+            //42//JOHN COOKS
             "Johns wife knows John loves to read cook books. "+
                     "She decides to get him one for his birthday. "+
                     "John tells her he will try to make a new recipe for three days in a row. "+
@@ -790,7 +802,7 @@ public class Intermediate {
                     "On Wednesday, John makes a tomato salad with cucumbers and onions. "+
                     "He picks the cucumbers and tomatoes from his garden. He likes this dish best. "+
                     "It was also the easiest for him to make.",
-            //KOMODO DRAGON
+            //43//KOMODO DRAGON
             "Did you know that dragons really do exist? "+
                     "These dragons, however, cannot fly, and dont breathe fire. "+
                     "These dragons are called komodo dragons. "+
@@ -815,7 +827,7 @@ public class Intermediate {
                     "Its heart can weigh more than fifty-four kilograms (1200 pounds). "+
                     "Some of its arteries are so large a small child could crawl through them.",
 
-            //LATE
+            //45//LATE
             "Martin is in a hurry. He is late to work again. "+
                     "Martins boss doesnt like it when he is late. "+
                     "Martin was late last week. "+
@@ -846,7 +858,7 @@ public class Intermediate {
                     "Martin says to himself. "+
                     "He will see if the car is still outside his house when he gets off work.",
 
-            //LOBSTER
+          //  46//LOBSTER
             "Lobsters are a kind of ocean creature called crustaceans. "+
                     "Crabs and shrimp are crustaceans too. "+
                     "Lobsters, and most other crustaceans, are found throughout the worlds oceans, often under rocks or in cracks on the sea floor. "+
@@ -858,7 +870,7 @@ public class Intermediate {
                     "Did you know that lobsters only turn red after they are cooked? "+
                     "In the wild they can be grayish, yellow, green, blue or multi-colored.",
 
-            //LOCK AND KEYS
+            //47//LOCK AND KEYS
             "Locks and keys have been in use for thousands of years. "+
                     "Why? Because there have always been thieves."+
                     "In Egypt a lock that is about four thousand years old was found."+
@@ -870,7 +882,7 @@ public class Intermediate {
                     "In Greece, long ago, people had locks and keys."+
 
                     "But they had a hard time taking their keys with them when they left their homes. The keys were too big."+
-            "They were so big that they had to be carried on peoples backs. Some people left their key with a man"+
+                    "They were so big that they had to be carried on peoples backs. Some people left their key with a man"+
                     "who sat near their front door. He unlocked the door for the family or their friends. But if thieves came,"+
                     "he used the big key to fight them off. The Romans were the first to make keys of iron. Since that time"+
                     "most keys have been made of metal. Rich people used to have keys made of gold or silver. Some of"+
@@ -882,7 +894,7 @@ public class Intermediate {
                     "many kinds as they can. And there are many kinds of keys to find. Think of all the things that have locks!"+
                     "Houses and cars are just two of them. You might like to save keys too. Look for keys that no one wants"+
                     "anymore. Ask your friends for their old keys. It may open the door to lots of fun.'",
-            //MARCO POLO
+            //48//MARCO POLO
             "Marco Polo was born in 1254 in the Venetian Republic. "+
                     "The city of Venice, Italy was at the center of the Venetian Republic. "+
                     "When he was 17 years old, he went to China with his father, Niccolo, and his uncle,"+
@@ -906,7 +918,7 @@ public class Intermediate {
                     "He became very rich. "+
                     "In 1300 he got married, and he and his wife had three children."+
                     "Marco Polo died in 1324. He was almost 70 years old.",
-            //MARS
+            //49//MARS
             "Mars, sometimes called the red planet, is the fourth planet from the sun. "+
                     "Its surface is made up of iron, which is why it looks red. "+
                     "Mars is only about half of the size of Earth and is too cold for humans to live on, "+
@@ -917,7 +929,7 @@ public class Intermediate {
                     "Mars is also the home of Olympus Mons, the highest mountain in the solar system. "+
                     "It is three times higher than the highest mountain on Earth.",
 
-            //MARYS FAMILY
+            //50//MARYS FAMILY
             "Mary is ten years old. "+
                     "She is from Dorset. "+
                     "Her hair is long and brown."+

@@ -22,11 +22,7 @@ public class SplashScreen extends AppCompatActivity {
                 Intent intent =  new Intent();
                 //startActivity(new Intent(SplashScreen.this,MainActivity.class));
 
-                SharedPreferences preferences = getSharedPreferences("settings",MODE_PRIVATE);
 
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.clear();
-                editor.apply();
                 SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
                 boolean firstStart = prefs.getBoolean("firstStart",true);
 //
