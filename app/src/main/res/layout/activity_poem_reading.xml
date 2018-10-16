@@ -16,16 +16,25 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtTitlePoem"
         android:textStyle="bold"
-
+android:text="asdasdasdasd"
         android:textAlignment="center"
         android:maxLines="1"
+        android:textSize="20sp"
         android:padding="10dp"
         />
 
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitlePoem"
+            android:text="William Shakespare"
+            android:textAlignment="center"
+            android:id="@+id/a"
+            android:layout_marginBottom="50dp"
+            />
 
     <TextView
-        android:layout_below="@+id/txtTitlePoem"
+        android:layout_below="@+id/a"
         android:id="@+id/txtContentPoem"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"

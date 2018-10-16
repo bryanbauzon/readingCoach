@@ -555,12 +555,6 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         large.setBackgroundResource(R.drawable.settingbuttons);
     }
     private void defaultSetting(){
-        lineSpacing.setBackgroundResource(R.drawable.activelinespacinga);
-        pageMargin1.setBackgroundResource(R.drawable.activemargina);
-        small.setBackgroundResource(R.drawable.activebuttonsettings);
-        fontType1.setBackgroundResource(R.drawable.activebuttonsettings);
-        light.setBackgroundResource(R.drawable.activebuttonsettings);
-
         SharedPreferences preferences = getActivity().getSharedPreferences("settings",MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("activeSpacing","a");
@@ -569,6 +563,14 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         editor.putString("activeFont","fonttype1");
         editor.putString("activeText","small");
         editor.apply();
+
+        lineSpacing.setBackgroundResource(R.drawable.activelinespacinga);
+        pageMargin1.setBackgroundResource(R.drawable.activemargina);
+        small.setBackgroundResource(R.drawable.activebuttonsettings);
+        fontType1.setBackgroundResource(R.drawable.activebuttonsettings);
+        light.setBackgroundResource(R.drawable.activebuttonsettings);
+
+
     }
     private void removeIndicatorFontType(){
 

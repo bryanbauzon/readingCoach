@@ -129,6 +129,26 @@ public class Story extends Fragment {
         db = new DatabaseHelper(getActivity());
         gv = new GlobalVariable();
 
+
+        SharedPreferences preferences = getActivity().getSharedPreferences("settings",MODE_PRIVATE);
+
+        //  SharedPreferences preferences = getActivity().getPreferences("settings",MODE_PRIVATE);
+        String valueFont = preferences.getString("activeFont",null);
+
+
+        if(valueFont != null){
+            if(valueFont == "fonttype1"){
+                GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/serif.ttf");
+
+            }else if(valueFont == "fonttype2"){
+                GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/sanserif.ttf");
+               }
+
+        }else{
+            GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/serif.ttf");
+
+          }
+
         if (GlobalVariable.color == 1){
             view.setBackgroundColor(Color.parseColor("#3f3f3f"));
             txtTitle.setTextColor(Color.WHITE);
@@ -150,8 +170,7 @@ public class Story extends Fragment {
         txtContent.setTypeface(GlobalVariable.font);
 
         //fontsize
-        txtTitle.setTextSize(GlobalVariable.fontSize);
-        txtContent.setTextSize(GlobalVariable.fontSize);
+
 
         //line spacing
         gv.setMargins(txtTitle, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);

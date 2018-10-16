@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:text="@string/yes"
             android:textColor="@color/colorAccent"
-            android:background="@color/yes"
+            android:background="@color/correct"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:id="@+id/btnYes"
