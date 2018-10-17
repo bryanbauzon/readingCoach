@@ -199,18 +199,18 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         if(valueSpacing != null){
             if(valueSpacing.equals("a")){
                 removeIndicatorSpacing();
-                lineSpacing.setBackgroundResource(R.drawable.activelinespacinga);
+                lineSpacing.setBackgroundResource(R.drawable.deactivelinespacinga);
                 GlobalVariable.lineSpacing = 5;
 
             }else if(valueSpacing.equals("b")){
                 removeIndicatorSpacing();
-                lineSpacing1.setBackgroundResource(R.drawable.activelinespacingb);
+                lineSpacing1.setBackgroundResource(R.drawable.deactivelinespacingb);
                 GlobalVariable.lineSpacing = 15;
 
 
             }else{
                 removeIndicatorSpacing();
-                lineSpacing2.setBackgroundResource(R.drawable.activelinespacingc);
+                lineSpacing2.setBackgroundResource(R.drawable.deactivelinespacingc);
                 GlobalVariable.lineSpacing = 25;
             }
         }else{
@@ -223,7 +223,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
                 removeIndicatorMargin();
 
-                pageMargin1.setBackgroundResource(R.drawable.activemargina);
+                pageMargin1.setBackgroundResource(R.drawable.deactivemargina);
                 GlobalVariable.left = 10;
                 GlobalVariable.top = 10;
                 GlobalVariable.right = 10;
@@ -231,7 +231,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
             }else if(valueMargin.equals("b")){
                 removeIndicatorMargin();
-                pageMargin2.setBackgroundResource(R.drawable.activemarginb);
+                pageMargin2.setBackgroundResource(R.drawable.deactivemarginb);
 
                 GlobalVariable.left = 30;
                 GlobalVariable.top = 30;
@@ -239,7 +239,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.bottom = 30;
             }else {
                 removeIndicatorMargin();
-                pageMargin3.setBackgroundResource(R.drawable.activemarginc);
+                pageMargin3.setBackgroundResource(R.drawable.deactivemarginc);
 
                 GlobalVariable.left = 40;
                 GlobalVariable.top = 40;
@@ -256,11 +256,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             if(valueFont.equals("fonttype1")){
                 removeIndicatorFontType();
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/serif.ttf");
-                fontType1.setBackgroundResource(R.drawable.activebuttonsettings);
+                fontType1.setBackgroundResource(R.drawable.settingbuttons);
             }else{
                 removeIndicatorFontType();
 
-                fontType2.setBackgroundResource(R.drawable.activebuttonsettings);
+                fontType2.setBackgroundResource(R.drawable.settingbuttons);
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/sanserif.ttf");
             }
 
@@ -272,17 +272,17 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         if(valueText != null){
             if(valueText.equals("small")){
                 removeIndicatorsTextSize();
-                small.setBackgroundResource(R.drawable.activebuttonsettings);
+                small.setBackgroundResource(R.drawable.settingbuttons);
                 GlobalVariable.fontSize = 15;
             }else if(valueText.equals("medium")){
                 removeIndicatorsTextSize();
 
-                medium.setBackgroundResource(R.drawable.activebuttonsettings);
+                medium.setBackgroundResource(R.drawable.settingbuttons);
                 GlobalVariable.fontSize = 17;
             }else if(valueText.equals("large")){
                 removeIndicatorsTextSize();
 
-                large.setBackgroundResource(R.drawable.activebuttonsettings);
+                large.setBackgroundResource(R.drawable.settingbuttons);
                 GlobalVariable.fontSize = 19;
             }
 
@@ -296,16 +296,16 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             if(valueTheme.equals("dark")){
                 GlobalVariable.color  = 1;
                 removeIndicatorTheme();
-                dark.setBackgroundResource(R.drawable.activebuttonsettings);
+                dark.setBackgroundResource(R.drawable.settingbuttons);
             }else if(valueTheme.equals("sepia")){
                 GlobalVariable.color  = 2;
                 removeIndicatorTheme();
-                sepia.setBackgroundResource(R.drawable.activebuttonsettings);
+                sepia.setBackgroundResource(R.drawable.settingbuttons);
 
             }else {
                 GlobalVariable.color  = 0;
                 removeIndicatorTheme();
-                light.setBackgroundResource(R.drawable.activebuttonsettings);
+                light.setBackgroundResource(R.drawable.settingbuttons);
 
             }
           //  cs.setText(valueTheme);
@@ -352,7 +352,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             case R.id.btnSmall:
                 GlobalVariable.fontSize = 15;
                 removeIndicatorsTextSize();
-                small.setBackgroundResource(R.drawable.activebuttonsettings);
+                small.setBackgroundResource(R.drawable.settingbuttons);
                 editor.putString("activeText","small");
                 editor.apply();
 
@@ -360,7 +360,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             case R.id.btnMedium:
                 GlobalVariable.fontSize = 17;
                 removeIndicatorsTextSize();
-                medium.setBackgroundResource(R.drawable.activebuttonsettings);
+                medium.setBackgroundResource(R.drawable.settingbuttons);
 
 
                 editor.putString("activeText","medium");
@@ -371,7 +371,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             case R.id.btnLarge:
                 GlobalVariable.fontSize = 19;
                 removeIndicatorsTextSize();
-                large.setBackgroundResource(R.drawable.activebuttonsettings);
+                large.setBackgroundResource(R.drawable.settingbuttons);
 
 
                 editor.putString("activeText","large");
@@ -382,7 +382,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             case R.id.btnFontType1:
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/serif.ttf");
                removeIndicatorFontType();
-                fontType1.setBackgroundResource(R.drawable.activebuttonsettings);
+                fontType1.setBackgroundResource(R.drawable.settingbuttons);
 
                 editor.putString("activeFont","fonttype1");
                 editor.apply();
@@ -391,7 +391,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             case R.id.btnFontType2:
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/sanserif.ttf");
                 removeIndicatorFontType();
-                fontType2.setBackgroundResource(R.drawable.activebuttonsettings);
+                fontType2.setBackgroundResource(R.drawable.settingbuttons);
 
                 editor.putString("activeFont","fonttype2");
                 editor.apply();
@@ -401,7 +401,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.color  = 1;
 
                 removeIndicatorTheme();
-                dark.setBackgroundResource(R.drawable.activebuttonsettings);
+                dark.setBackgroundResource(R.drawable.settingbuttons);
                 editor.putString("activeTheme","dark");
                 editor.apply();
                 break;
@@ -411,7 +411,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.color  = 0;
 
                 removeIndicatorTheme();
-                light.setBackgroundResource(R.drawable.activebuttonsettings);
+                light.setBackgroundResource(R.drawable.settingbuttons);
               //  editor.clear();
                 editor.putString("activeTheme","light");
                 editor.apply();
@@ -420,7 +420,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             case R.id.btnSepia:
                 GlobalVariable.color = 2;
                 removeIndicatorTheme();
-                sepia.setBackgroundResource(R.drawable.activebuttonsettings);
+                sepia.setBackgroundResource(R.drawable.settingbuttons);
                 editor.putString("activeTheme","sepia");
                 editor.apply();
                 break;
@@ -433,7 +433,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.bottom = 10;
 
                 removeIndicatorMargin();
-                pageMargin1.setBackgroundResource(R.drawable.activemargina);
+                pageMargin1.setBackgroundResource(R.drawable.deactivemargina);
                 editor.putString("activeMargin","a");
                 editor.apply();
                 break;
@@ -445,7 +445,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.bottom = 30;
 
                 removeIndicatorMargin();
-                pageMargin2.setBackgroundResource(R.drawable.activemarginb);
+                pageMargin2.setBackgroundResource(R.drawable.deactivemarginb);
                 editor.putString("activeMargin","b");
                 editor.apply();
 
@@ -460,7 +460,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.bottom = 40;
 
                 removeIndicatorMargin();
-                pageMargin3.setBackgroundResource(R.drawable.activemarginc);
+                pageMargin3.setBackgroundResource(R.drawable.deactivemarginc);
                 editor.putString("activeMargin","c");
                 editor.apply();
                 break;
@@ -469,7 +469,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.lineSpacing = 5;
 
                 removeIndicatorSpacing();
-                lineSpacing.setBackgroundResource(R.drawable.activelinespacinga);
+                lineSpacing.setBackgroundResource(R.drawable.deactivelinespacinga);
                 editor.putString("activeSpacing","a");
                 editor.apply();
 
@@ -479,7 +479,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 GlobalVariable.lineSpacing = 15;
 
                 removeIndicatorSpacing();
-                lineSpacing1.setBackgroundResource(R.drawable.activelinespacingb);
+                lineSpacing1.setBackgroundResource(R.drawable.deactivelinespacingb);
                 editor.putString("activeSpacing","b");
                 editor.apply();
 
@@ -488,7 +488,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
             case R.id.btnLineSpacing2:
                 GlobalVariable.lineSpacing = 25;
                 removeIndicatorSpacing();
-                lineSpacing2.setBackgroundResource(R.drawable.activelinespacingc);
+                lineSpacing2.setBackgroundResource(R.drawable.deactivelinespacingc);
                 editor.putString("activeSpacing","c");
                 editor.apply();
                 break;
@@ -550,9 +550,9 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     }
 
     private void removeIndicatorsTextSize(){
-        small.setBackgroundResource(R.drawable.settingbuttons);
-        medium.setBackgroundResource(R.drawable.settingbuttons);
-        large.setBackgroundResource(R.drawable.settingbuttons);
+        small.setBackgroundResource(R.drawable.activebuttonsettings);
+        medium.setBackgroundResource(R.drawable.activebuttonsettings);
+        large.setBackgroundResource(R.drawable.activebuttonsettings);
     }
     private void defaultSetting(){
         SharedPreferences preferences = getActivity().getSharedPreferences("settings",MODE_PRIVATE);
@@ -564,37 +564,37 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         editor.putString("activeText","small");
         editor.apply();
 
-        lineSpacing.setBackgroundResource(R.drawable.activelinespacinga);
-        pageMargin1.setBackgroundResource(R.drawable.activemargina);
-        small.setBackgroundResource(R.drawable.activebuttonsettings);
-        fontType1.setBackgroundResource(R.drawable.activebuttonsettings);
-        light.setBackgroundResource(R.drawable.activebuttonsettings);
+        lineSpacing.setBackgroundResource(R.drawable.deactivelinespacingb);
+        pageMargin1.setBackgroundResource(R.drawable.deactivelinespacingc);
+        small.setBackgroundResource(R.drawable.deactivelinespacingb);
+        fontType1.setBackgroundResource(R.drawable.deactivelinespacingc);
+        light.setBackgroundResource(R.drawable.deactivelinespacingb);
 
 
     }
     private void removeIndicatorFontType(){
 
-        fontType1.setBackgroundResource(R.drawable.settingbuttons);
-        fontType2.setBackgroundResource(R.drawable.settingbuttons);
+        fontType1.setBackgroundResource(R.drawable.activebuttonsettings);
+        fontType2.setBackgroundResource(R.drawable.activebuttonsettings);
     }
     private void removeIndicatorTheme(){
-        dark.setBackgroundResource(R.drawable.settingbuttons);
-        light.setBackgroundResource(R.drawable.settingbuttons);
-        sepia.setBackgroundResource(R.drawable.settingbuttons);
+        dark.setBackgroundResource(R.drawable.activebuttonsettings);
+        light.setBackgroundResource(R.drawable.activebuttonsettings);
+        sepia.setBackgroundResource(R.drawable.activebuttonsettings);
     }
     private void removeIndicatorMargin(){
 
-        pageMargin1.setBackgroundResource(R.drawable.deactivemargina);
-        pageMargin2.setBackgroundResource(R.drawable.deactivemarginb);
-        pageMargin3.setBackgroundResource(R.drawable.deactivemarginc);
+        pageMargin1.setBackgroundResource(R.drawable.activemargina);
+        pageMargin2.setBackgroundResource(R.drawable.activemarginb);
+        pageMargin3.setBackgroundResource(R.drawable.activemarginc);
       //  pageMargin1.setBackgroundResource(R.drawable.activemargina);
         //editor.apply();
     }
     private void removeIndicatorSpacing(){
 
-        lineSpacing.setBackgroundResource(R.drawable.deactivelinespacinga);
-        lineSpacing1.setBackgroundResource(R.drawable.deactivelinespacingb);
-        lineSpacing2.setBackgroundResource(R.drawable.deactivelinespacingc);
+        lineSpacing.setBackgroundResource(R.drawable.activelinespacinga);
+        lineSpacing1.setBackgroundResource(R.drawable.activelinespacingb);
+        lineSpacing2.setBackgroundResource(R.drawable.activelinespacingc);
     }
 
     private void reset(){
