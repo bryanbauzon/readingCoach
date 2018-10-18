@@ -507,19 +507,6 @@ public class Hard {
             "management facility. He is now one of New Orleans' few multimillionaires. 'So, I have all this money"+
             "now and live to help others,' said Mr. Fanchon. 'That is why I’ve helped you.",
 
-                "  I was glad when somebody told me, “You may go and collect Negro folklore.” In a way, it would not be a new experience for me. "+
-                        "When I pitched headforemost into the world I landed in the crib of Negroism. It was fitting me like a tight chemise. I couldn't see it for wearing it. "+
-                        "It was only when I was off in college, away from my native surroundings that I could stand off and look at my garment. "+
-                        "Then I had to have the spy-glass of anthropology to look through. I was asked where I wanted to work and I said, “Florida."+
-                        "It’s a place that draws people Negroes from every Southern state and some from the North and West.”"+
-                        "So I knew that it was possible for me to get a cross section of the Negro South in one state. "+
-                        "And then I realized that I felt new myself, so it looked sensible for me to choose familiar ground. \n"+
-                        " I started in Eatonville, Florida, because I knew that the town was full of material and that I could get it without causing any hurt or harm. "+
-                        "As early as I could remember, it was the habit of the men particularly to gather on the store porch in the evenings and swap stories. "+
-                        "Even the women would stop and break a breath with them at times. As a child when I was sent down to the store, "+
-                        "I'd drag out my leaving to hear more. Folklore is not as easy to collect as it sounds. "+
-                        "The ideal source is where there are the fewest outside influences, but these people are reluctant at times to reveal that which the soul lives by. "+
-                        "I knew that even I would have some hindrance among strangers. But here in Eatonville I knew everybody was going to help me.",
                 //
                 "  The relationship between my mother, sister and me had been cold and inimical for as long as I could "+
                         "remember. To me, my mother was irrational, hurling hurtful invectives for the slightest infraction."+
@@ -648,37 +635,6 @@ public class Hard {
                         "Sometimes it rains on Saint John's Day. Then the Mexicans say 'San Juan llora.' That means 'Saint John"+
                         "is crying.' But that won't stop the fun. Rain or shine, it's a fine day to get wet.",
 
-                "Europe is the second smallest continent, after Australia. Surprisingly, there are 44 countries in Europe. "+
-                        "Over 700 million people live in Europe. European ideas are everywhere in the world. "+
-                        "You can see examples of European culture, language, and buildings all around the world. "+
-                        "In sports, European soccer is very popular. Soccer teams from Europe have gone to the World Cup finals every year except 1930 and 1950. "+
-                        "Many people say that the British, Italian, and Spanish soccer leagues are the world’s best. Cycling is also very popular in Europe – especially in France. "+
-                        "The Tour de France is the biggest bicycle race in the world. In 1903, when the race first began, racers had to ride along the entire border of France. "+
-                        "That’s a long distance! In industry, Germany makes the most cars in Europe. In fact, if you visit Germany, you can go on a tour of the BMW factory. "+
-                        "You can also go on a tour of the Porsche factory in Stuttgart, Germany. England is famous for china and pottery. "+
-                        "Of course, the Champagne region in France is famous for its wine. Only a certain famous, bubbly wine from this area can be called by the name “champagne.” "+
-                        "Flower farming is an important industry in Holland. Holland is famous for its tulips. "+
-                        "Europe is also famous for its food. The oldest cookbook in Europe was called De Re Coquinaria, or, "+
-                        "“The Art of Cooking”. It was written in Latin. There is much controversy over the identity of the book’s author. "+
-                        "Some people think the book was written by a very good cook named Marcus Gavius Apicus. Others don’t think that this book came from him. "+
-                        "The book does not tell how to prepare the dishes, but it does tell what to put in each dish. "+
-                        "European historical architecture are among the most well–known in the world. One example of a famous architectural structure is called “Stonehenge,” in England."+
-                        "Stonehenge has many, very large stones set up in circles. No one knows why the stones were set up that way, because it was at a time before history was recorded. \n "+
-                        "Many people think Stonehenge is holy. In addition to Stonehenge, The “Acropolis” in Athens, Greece is also very famous for its architectural structures. "+
-                        "The Acropolis is a flat–topped hill, which lies about 150 meters above sea level. Many historical temples and other buildings were built on the Acropolis. "+
-                        "The Acropolis is a huge tourist site. About 14 million people visit this location each year. Modern European buildings are also tourist sites."+
-                "The Eiffel Tower is the fifth tallest building in France. When it was built in 1889, it was the world’s tallest building. "+
-                        "More than 200,000,000 people have visited the Eiffel Tower since it was built. It was named after Gustave Eiffel, who designed it."+
-                        " It is now a symbol of France. The year 2009 marks the 150th birthday of another famous tourist site in Europe: Big Ben. "+
-                        "Big Ben is located atop the Westminster Palace in London, England. Big Ben is the largest four–faced chiming clock in the world."+
-                        "Chiming clocks are clocks that use bells to make their sound. Big Ben is a universal symbol of the United Kingdom. \n"+
-                        "Many European cities are famous for their churches and castles. The Sistine Chapel in the Vatican is the place where cardinals, very high Catholic bishops, "+
-                        "meet to pick a new pope. The ceiling of the Sistine Chapel was painted by the artist Michelangelo. "+
-                        "The Cathedral of Seville, Spain, is also very magnificent. This grand cathedral is beautifully decorated with outstanding colors. "+
-                        "It is also the place where Christopher Columbus is buried. England is now getting ready for the 2012 Olympics. "+
-                        "About 4,000 companies and 15,000 workers are working to get the city of Stratford ready. The workers are building a new shopping center and many new hotels, "+
-                        "with about 2,000 hotel rooms just for Olympics visitors! Since so many people live in Europe, they expect many visitors. "+
-                        "As the Olympic planners say, London, England is less than a 3–hour flight away for more than 300 million people.",
 
                 "If you enjoy watching crime shows on TV, you know that fingerprints play a large role in identifying"+
                         "people. But, you might be surprised to find out that using fingerprints for identification is not a new"+
@@ -798,21 +754,6 @@ public class Hard {
                         "and ceilings with colorful murals painted by artist Charles Le Brun. \n\nThe Hall of Mirrors has also played a prominent role in history. "+
                         "Both the Proclamation of the German Empire in 1871, after the Franco-Prussian War, and the signing of the Treaty of Versailles that formally ended World War I, "+
                         "were signed there.",
-
-                "A galaxy is a massive complex, or system, of stars, remnants of stars, an interstellar medium of gas and dust, and dark matter. Some include multiple star systems,"+
-                        "clusters, and interstellar clouds. Galaxies are bound by gravity and contain millions to trillions of stars. The sizes of some galaxies are measured in units "+
-                        "called parsecs, while others are measured in light-years. One parsec is equivalent to about 19 trillion miles (31 trillion kilometers). An average galaxy may extend "+
-                        "from 1,000-100,000 parsecs. A light-year is the distance that light travels in an Earth year. Light travels at nearly 300,000 kilometers per second (180,000 miles). "+
-                        "If you were to calculate the actual size of a galaxy using numbers rather than the aforementioned units, the resulting figure would be impossible to understand or "+
-                        "conceptualize. \n\nGalaxies is usually separated by spaces that extend over millions of parsecs. These vast spaces are called intergalactic spaces. Despite the vast"+
-                        "distances between them, galaxies are often organized into clusters and super clusters. Clusters and super clusters are then organized into sheets and filaments.  "+
-                        "A filament, defined as structures that form the boundaries between large voids in the universe, are the largest known structures in the universe."+
-                        "Types of Galaxies are usually classified according to their shape. Elliptical galaxies are round; spiral galaxies are characterized by their long, spiraling arms; "+
-                        "and peculiar galaxies are shaped irregularly, likely because of the gravitational pull of a nearby galaxy. Scientists estimate the presence of 100 billion galaxies "+
-                        "in the universe."+
-                        "Dark Matter About 90 percent of the mass of an average galaxy is made of up mysterious, invisible masses called dark matter. Dark matter is hypothetical;its actual "+
-                        "existence is simply scientific and mathematical conjecture (educated guess). Only its gravitational effects on visible objects can be observed "+
-                        "(such as the rotational curves of spiral galaxies). Some scientists think dark matter is concentrated in huge masses such as black holes.",
 
                 "I charge Gilray's unreasonable to his ignoble passion for cigarettes; and the story of his flower-pot has therefore an obvious moral. "+
                         "The want of dignity he displayed about that flower-pot, on his return to London, would have made any one sorry for him. I had my own work to look after, "+
@@ -959,21 +900,6 @@ public class Hard {
                         "the remainder of the cost.",
 
 
-                "Juan Ponce de Leon was born in 1460 in Santeveras, Spain. De Leon was an explorer and fighter from an early age. He helped fight the Muslims in southern Spain in the "+
-                        "early 1490s. He was on board Christopher Columbus's second expedition to the Americas in 1493. Rather than returning to Spain, the adventurer remained at an island "+
-                        "called Santo Domingo (now called the Dominican Republic). De Leon was soon appointed as the governor of the Higuey region of Santo Domingo. Like many Spanish "+
-                        "explorers, he was bloodthirsty for gold. When he heard rumors that a nearby island called Borinquen (now Puerto Rico) was full of gold, he invaded the island and"+
-                        "brutally conquered the natives. He was soon appointed governor of the island but lost his title in 1511 because of his extreme brutality towards the natives. "+
-                        "De Leon's misfortunes as governor did not stop him from looking for gold and the Fountain of Youth. During his search, he conquered many islands, including Bimini.\n"+
-                        "After returning to Puerto Rico, de Leon took three ships and 200 men on a mission to explore lands to the north. De Leon hoped to find the Fountain of Youth, a"+
-                        "mythical spring that was said to make anyone who drank its water young forever. After making several stops at Caribbean islands, de Leon and his men reached "+
-                        "the east coast of Florida (St. Augustine) on April 2, 1513. He named the land 'Pascua de Florida,' or Feast of Flowers because he discovered it on Palm Sunday. "+
-                "He claimed all of the land for Spain. On April 8, 1513, de Leon and his men left northern Florida and sailed south along the Gulf Stream. After a fight between "+
-                "his men and natives in southern Florida, he sailed to Cuba. He tried to sail back to Bimini but could not find it. De Leon soon returned to Puerto Rico, where he "+
-                "sacked a rebellion of natives against Spanish rule. After returning to Spain, he was named Captain General by the king on September 27, 1514. De Leon did not return "+
-                "to the New World until 1521 when he once again tried to find the island of Bimini. Instead, de Leon and his men landed on the Gulf Coast of Florida where they were "+
-                "met by hostile Indians who shot his men with arrows. De Leon himself was wounded and died a short time after sailing to Havana, Cuba, in July of 1521.",
-
                 "I am sitting in a chair next to Momma’s bed. I am watching her get ready for a party. She opens the"+
                         "beautiful jewelry box on her nightstand. It is the size of a shoebox. It is wooden. It has colorful stones on"+
                         "top. They are red, green, yellow, and blue. To me, the box looks magical. It looks like it has special"+
@@ -991,41 +917,6 @@ public class Hard {
             "jewelry box. The box quickly flips open by itself! Jewels fly into the air. They dance around my head. I"+
             "feel strange. I fall down to the floor. I wake up in a place I have never seen before.",
 
-
-                "Did you know that humans aren't the only species that use language? Bees communicate by dancing. Whales talk to each other by singing. And some apes talk to humans by"+
-                        "using American Sign Language. Meet Koko: a female gorilla born at the San Francisco Zoo on July 4th, 1971. Koko learned sign language from her trainer, Dr. Penny "+
-                        "Patterson. Patterson began teaching sign language to Koko in 1972, when Koko was one year old. Koko must have been a good student, because two years later she moved"+
-                        "onto the Stanford University campus with Dr. Patterson. Koko continued to learn on the campus until 1976. That's when she began living full-time with Patterson's "+
-                        "group, the Gorilla Foundation. Patterson and Koko's relationship has blossomed ever since. Dr. Patterson says that Koko has mastered sign language. She says that "+
-                        "Koko knows over 1,000 words, and that Koko makes up new words. For example, Koko didn't know the sign for ring, so she signed the words finger and bracelet. "+
-                        "Dr. Patterson thinks that this shows meaningful and constructive use of language. Not everyone agrees with Dr. Patterson. Some argue that apes like Koko do not"+
-                        "understand the meaning of what they are doing. \n"+
-                        "Skeptics say that these apes are just performing complex tricks. For example, if Koko points to an apple and signs red or apple, Dr. Patterson will give her an "+
-                        "apple. They argue that Koko does not really know what the sign apple means. She only knows that that if she makes the right motion, one which Dr. Patterson has "+
-                        "shown her, then she gets an apple. The debate is unresolved, but one thing is for certain: Koko is an extraordinary ape. Sign language isn't the only unusual thing "+
-                        "about Koko. She's also been a pet-owner. In 1983, at the age of 12, researchers said that Koko asked for a cat for Christmas. They gave Koko a stuffed cat. Koko was "+
-                        "not happy. She did not play with it, and she continued to sign sad. So for her birthday in 1984, they let her pick a cat out of an abandoned liter. Koko picked a gray"+
-                        " cat and named him 'All Ball.' Dr. Patterson said that Koko loved and nurtured All Ball as though he were a baby gorilla. Sadly, All Ball got out of Koko's cage and "+
-                "was hit by a car. Patterson reported that Koko signed 'Bad, sad, bad' and 'Frown, cry, frown, sad' when she broke the news to her. It seems like Patterson and Koko "+
-                "have a good relationship, but not everyone agrees with it. Some critics believe that Patterson is humanizing the ape. They believe that apes should be left in the"+
-                "most natural state possible. Even Dr. Patterson struggles with these feelings. When asked if her findings could be duplicated by another group of scientists,"+
-                "she said, 'We don't think that it would be ethical to do again.' She went on to argue that animals should not be kept in such unnatural circumstances.\n"+
-                "Nonetheless, Koko lives in her foundation today. As for the future, Dr. Patterson and the Gorilla Foundation would love to get Koko to an ape preserve in Maui, "+
-                        "but they are having trouble securing the land. So unless you have a few million dollars to spare, Koko's going to be spending her time in Woodland, California with"+
-                        "Dr. Patterson. Koko probably doesn't mind that. If she moved to Hawaii, she'd have to give up her Facebook page and Twitter feed, and she's got like 50 thousand "+
-                        "likes.' Some may deny that she knows sign language, but nobody says that she doesn't know social networking.",
-
-
-
-                "Lightning is a streak of electricity that occurs in every thunderstorm. You see lightning before you hear thunder because light travels faster than sound. Lightning"+
-                        "is caused when the negative charge of electricity in the rain clouds meets the positive charge of electricity in the falling raindrops. Most lightning occurs from "+
-                "cloud to cloud, but some lightning occurs from cloud to ground, where it can start fires, melt metal, or be deadly to people. Although 90 percent of people survive "+
-                        "lightning strikes, they can cause major internal injuries, burns, and hearing loss. 240,000 people are struck by lightning or are injured as a result of lightning "+
-                        "every year. \n"+
-                        "Thunder is caused by the rapid expansion of air and temperature inside and around a lightning strike. Such an expansion of air is known as a sonic "+
-                        "shock wave. Did you know you can calculate the distance of lightning from its thunder? Thunder occurs after lightning because the light travels much more quickly "+
-                        "than sound. In normal circumstances, lightning is 0.2 miles distance from a given location for every second that passes between the lightning and its thunder. Thus,"+
-                        "if you see lightning in the sky and hear thunder five seconds later, the lightning is about one mile from your location.",
 
                 "When I was a little girl, I loved for my mom to tell me stories about herself. No matter how tired she"+
                         "was, she never adumbrated them. She would fill the tales with the minutest details, and they were"+
@@ -1094,31 +985,6 @@ public class Hard {
                         "Indian art has been brought back. It was a dead art. But Maria and Julian made it live again."+
                         "The pottery of the pueblo is famous now. So is Maria. She is famous for her art. And she is famous for"+
                         "helping her pueblo.",
-
-
-                "To understand meteors, one must also understand meteoroids and meteorites. First, a meteoroid is a particle in the solar system. The meteoroid may be as small as a "+
-                        "grain of sand, or, as large as a boulder. When the meteoroid enters the Earth's atmosphere, and becomes visible as a shooting star, it is called a meteor. If the "+
-                        "meteor makes it to the ground, it is called a meteorite. Meteors, also called shooting stars, occur in the Earth's mesosphere at an altitude of about 40-60 miles. "+
-                        "Millions of meteors enter the Earth's atmosphere every day, though the vast majority are observed at night. Their visibility in the night sky is due to air friction "+
-                        "which causes the meteor to glow and emit a trail of gasses and melted particles that lasts for about a second. Meteor showers are relatively common events that occur "+
-                        "when the Earth passes through a trail of debris left by a comet.\n"+
-                "Sometimes Meteoroids make it throughout the atmosphere and hit the ground, where they are referred"+
-                        " to as meteorites. There are over 31,000 documented meteorites that have been found, although only five or six new ones are found every year. The largest meteorite "+
-                        "ever found was in the African nation of Namibia. It weighs over 100 tons and left a huge impact crater in the ground. Scientists believe the massive Berringer Crater "+
-                        "in Arizona was formed when a 300,000 ton meteorite crashed to the ground over 49,000 years ago. On November 30, 1954, the Hodges Meteorite (actually a fragment of a "+
-                        "meteorite) crashed through the roof of the residence of Ann Hodges in the town of Sylacauga, Alabama. \n"+
-                        "It bounced off a table before striking her in the leg. "+
-                        "Although she was badly bruised, she was not seriously injured. It was the first recorded instance of a meteorite injuring a human. The actual meteorite was donated "+
-                        "to the Alabama Museum of Natural History after various legal battles concerning ownership. Some scientists believe the impact of a large meteorite from an asteroid "+
-                        "or comet in Mexico's Yucatan Peninsula was responsible for the extinction of dinosaurs some 65 million years ago. Such an impact would have had catastrophic global"+
-                        "consequences including immediate climate change, numerous earthquakes, volcano eruptions, wildfires, and massive supertsuanims, along with the proliferation of "+
-                        "massive amounts of dust and debris that would block solar energy and lead to a disruption in photosynthesis. Most meteorites that reach the Earth are classified as"+
-                        "chondrites or achondrites, while a small percentage are iron meteorites and stony-iron meteorites. Most meteorites are chondrites. Chondrites contain silicate "+
-                        "materials that were melted in space, amino acids, and other presolar grains, particles likely formed from stellar explosions. Diamond and graphite are among "+
-                        "materials found to be present in these grains. Chondrites are thought to be over 4.5 billion years of age and to have originated in the asteroid belt, where they "+
-                        "never formed larger bodies. Achondrites are less common. These types of meteorites seem to be similar to igneous rock. Iron meteorites make up less than five percent"+
-                        "of meteorite finds. These types of meteorites are thought to come from the core of asteroids that were once molten. Finally, stony-iron meteorites constitute less "+
-                        "than one percent of all meteorite falls. They are made of iron-nickel metal and different silicates.",
 
                 "The country of Mexico is the third largest nation in terms of land area, and second largest nation in terms of population in North America. As of 2006, Mexico's"+
                         "population was well over 100,000,000 people. Mexico is located south of the United States and north of the nations of Belize and Guatemala. The Rio Bravo "+
@@ -1333,34 +1199,6 @@ public class Hard {
             "Senor Fox ran into the dogs.And Senor Rooster smiled in his tree. If you dig a pit to catch someone"+
             "innocent, you often fall into it yourself. Over smart is bad luck.",
 
-                "What does this planet look like? Mars, commonly referred to as the, red planet,' is the fourth planet from the sun. Its reddish color comes from the high amounts of"+
-                "iron oxide on its surface. Mars has surface features similar to those found on the moon and on Earth. It has mountain ranges, volcanic fields, valleys, ice caps, "+
-                        "canyons, and deserts. It has numerous impact craters including one discovered in 2008 that measures more than 6,000 miles in length and nearly 5,000 miles in width. "+
-                        "It is, by far, the largest impact crater ever discovered. Mars is also home to Olympus Mons, the highest discovered mountain in the solar system. A person standing "+
-                        "on the surface of Mars (in any location in which the mountain was visible) would have no chance of viewing the top. With the peak at 88,600 feet, Olympus Mons is "+
-                        "about three times as high as Mount Everest, the highest peak on Earth.\n\n Mars' Valles Marineris is the solar system's largest canyon, measuring more than seven miles"+
-                        "deep. How big is this planet? Mars is much smaller than the Earth. Its surface area occupies 28 percent of Earth's, its mass is only 10 percent of Earth's, and its "+
-                        "volume is about 15 percent of Earth's. How long does it take to orbit the sun? 687 days  What is its gravity like? Gravity on Mars is 38 percent that of the Earth."+
-                        "A 100-pound earthling would weigh 38 pounds on Mars.  How far is it from the sun? From the Earth, On average, Mars is located 138,000,000 miles from the sun. "+
-                        "When Mars and Earth are on the same side of the sun, the two planets may come within 35,000,000 miles of each other. When they are on opposite sides of the sun,"+
-                        "they may be as far as 399,000,000 miles apart. What is its atmosphere like? Mars has an extremely thin atmosphere. 95 percent of it is carbon dioxide, 3 percent is "+
-                        "nitrogen, 1.6 percent is argon, and the remainder consists of traces of oxygen and water. What's the temperature like? Of all the planets, Mars, temperatures are "+
-                        "most similar to those on Earth. Temperatures can range from about -220 Fahrenheit during a Mars (Martian) winter to a temperate 68 degrees Fahrenheit in summer, "+
-                        "though on average the temperature is about -80 Fahrenheit. Unlike Earth, however, the thin atmosphere gives rise to fearsome dust storms that may envelop the entire "+
-                        "planet and cause overall temperatures to rise. \n"+
-                        "How many moons does it have? Mars has two moons, Phobos and Deimos. Both are small and irregularly shaped and may be former asteroids. Interestingly, "+
-                        "Phobos orbits Mars at a distance of only about 5,500 miles away from its center, the closest any moon orbits its parent planet. In fact, if a person were to stand "+
-                        "on Phobos and look toward Mars, Mars would look approximately 6,400 times larger than the full moon appears from Earth-taking up almost a quarter of the celestial "+
-                        "hemisphere. Because Phobos has a particularly low orbit, scientists believe it will eventually crash into Mars or break up into pieces, possibly forming rings around"+
-                        "the planet. \n"+
-                        "Interesting facts: *There has long been speculation concerning the possibility of life and/or liquid water on Mars. However, the planet's thin atmosphere prevents "+
-                        "water from accumulating for any time over significant portions of the planet. Some evidence on the planet's surface suggests the presence of liquid water at some"+
-                        "point in history, but scientists think this water would be too salty or acidic to support life as we know it. Furthermore, fierce solar winds and poor heat "+
-                        "transfer across its surface would make sustained life virtually impossible. There is compelling evidence, however, that Mars was once much more habitable to life "+
-                        "than it is today. *Many spacecrafts have attempted to visit Mars, the most notable of which was NASA's Mariner 4, the first to visit in a fly-by in 1965. In 1976, "+
-                        "Viking 1 and 2 became the first spacecrafts to conduct successful and sustained landings on Mars. They provided the first color photographs of the 'red planet.' "+
-                "In May of 2008, the NASA Phoenix Mars Lander touched down on the north polar region of Mars to study surface features. By December, however, NASA had lost contact "+
-                "with the lander and the mission was declared over.",
 
                 "Thick black smoke curling out of smokestacks, horrible 'tasting chemicals in your drinking water,"+
                 "pesticides in your food  these are examples of pollution. Pollution is any contamination of the"+
@@ -1425,14 +1263,48 @@ public class Hard {
                 "pounds of potato chips are produced from 100 pounds of potatoes. Americans consume 2-4 billion pounds of potato chips every year and spend more than $7 billion a "+
                 "year on them.",
 
-                "Raisins are dried grapes that have been eaten for thousands of years. Nearly 3,500 years ago, the first raisins were discovered as grapes that were drying in the sun "+
-                        "on a vine. In medieval Europe, raisins were used as sweeteners, medicine, and even as a form of money! In America, raisins were first grown after an 1873 heat wave "+
-                        "in California destroyed its valuable grape crop, leaving only dried, wrinkly, but tasty grapes on the vines. Soon, farmers began developing seedless grapes in "+
-                        "California that were thin-skinned and sweet. These grapes would be purposely dried in the sun and became the popular dark raisin we eat and enjoy today. Later, a "+
-                        "golden variety of raisin was made by treating grapes with a chemical called sulfur dioxide and using special methods to dry them. Today, Central California remains "+
-                        "the center of the world’s raisin industry, producing nearly 95 percent of the world’s raisins. Its green valleys, sunny climate, and hot temperatures provide the "+
-                        "perfect conditions for grapes that are dried into raisins.",
-
 
         };
+
+        public String[] author = {
+                "Susan Carter",
+                "Eric Carle",
+                "Susan Carter",
+                "Susan Carter",
+                "Susan Carter",
+                "L. Frank Baum",
+                "Susan Carter",
+                "Susan Carter",
+                "Herman Hesse",
+                "Eric Carle",
+                "Susan Carter",
+                "Susan Carter",
+                "Susan Carter",
+                "Susan Carter",
+                "Susan Carter",
+                "Susan Carter",
+                "Craig Benjamin",
+                "Susan Carter",
+                "Shaktii",
+                "Eric Carle",
+                "Susan Carter",
+                "Susan Carter",
+                "Susan Carter",
+                "Craig Benjamin",
+                "J.M. Barrie",
+                "Susan Carter",
+                "Susan Carter",
+                "Susan Carter",
+                "George Walk",
+                "Susan Carter",
+                "J.M. Barrie",
+                "Susan Carter",
+                "Susan Carter",
+                "Craig Benjamin",
+                "Keith Galves",
+                "Stine Gaiman",
+                "Susan Carter",
+
+        };
+
 }

@@ -223,7 +223,7 @@ public class Story extends Fragment {
             for(int x = 0; x <= intermediate.story.length;x++){
                 if(id==x){
                     txtContent.setText(intermediate.story[x]);
-//                    txtAuthor.setText(intermediate.author[x]);
+                    txtAuthor.setText(intermediate.author[x]);
                 }
 
 

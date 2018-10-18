@@ -3978,61 +3978,41 @@ public String getQuestion(int a, int id, String level) {
             } else if (id == 21) {
                 return fingerprint22[a];
             } else if (id == 22) {
-                return null; //florida matale
-            } else if (id == 23) {
                 return flowerpower24[a];
-            } else if (id == 24) {
+            } else if (id == 23) {
                 return fortunetellers25[a];
-            } else if (id == 25) {
-                return null; // france
-            } else if (id == 26) {
-                return null; // galaxies
-            } else if (id == 27) {
+            } else if (id == 24) {
                 return gilraysflowerpot28[a];
-            } else if (id == 28) {
+            } else if (id == 25) {
                 return goodluck29[a];
-            } else if (id == 29) {
+            } else if (id == 26) {
                 return guermosurprise30[a];
-            } else if (id == 30) {
+            } else if (id == 27) {
                 return housearoundtheworld31[a];
-            } else if (id == 31) {
+            } else if (id == 28) {
                 return interstatehighways32[a];
-            } else if (id == 32) {
-                return null; //juanponce
-            } else if (id == 33) {
+            } else if (id == 29) {
                 return justonetouch34[a];
-            } else if (id == 34) {
-                return null; // kok
-            } else if (id == 35) {
-                return null; // lightning and thunder
-            } else if (id == 36) {
+            } else if (id == 30) {
                 return lovetrain37[a];
-            } else if (id == 37) {
+            } else if (id == 31) {
                 return mariasbeautifulbowl38[a];
-            } else if (id == 38) {
-                return null; //meteor
-            } else if (id == 39) {
+            } else if (id == 32) {
                 return mexicoQuestion51[a];
-            }  else if (id == 40) {
+            }  else if (id == 33) {
                 return mongooses41[a];
-            } else if (id == 41) {
+            } else if (id == 34) {
                 return mosquitoes42[a];
-            } else if (id == 42) {
+            } else if (id == 35) {
                 return mothersday43[a];
-            } else if (id == 43) {
+            } else if (id == 36) {
                 return oilspill44[a];
-            } else if (id == 44) {
+            } else if (id == 37) {
                 return ontherighttrack45[a];
-            } else if (id == 45) {
+            } else if (id == 38) {
                 return oversmartisbadluck46[a];
-            } else if (id == 46) {
-                return null; // planet mars
-            } else if (id == 47) {
-                return pollutions48[a];
-            } else if (id == 48) {
-                return null; // potato chips
-            } else if (id == 49) {
-                return null; // raisin
+            } else if (id == 39) {
+                    return pollutions48[a];
             }
 
         }
@@ -4290,61 +4270,41 @@ public String getQuestion(int a, int id, String level) {
             } else if (id == 21) {
                 return hardAnswer22[a];
             } else if (id == 22) {
-                return null; //florida matale
-            } else if (id == 23) {
                 return hardAnswer24[a];
-            } else if (id == 24) {
+            } else if (id == 23) {
                 return hardAnswer25[a];
-            } else if (id == 25) {
-                return null; // france
-            } else if (id == 26) {
-                return null; // galaxies
-            } else if (id == 27) {
+            } else if (id == 24) {
                 return hardAnswer28[a];
-            } else if (id == 28) {
+            } else if (id == 25) {
                 return hardAnswer29[a];
-            } else if (id == 29) {
+            } else if (id == 26) {
                 return hardAnswer30[a];
-            } else if (id == 30) {
+            } else if (id == 27) {
                 return hardAnswer31[a];
-            } else if (id == 31) {
+            } else if (id == 28) {
                 return hardAnswer32[a];
-            } else if (id == 32) {
-                return null; //juanponce
-            } else if (id == 33) {
+            } else if (id == 29) {
                 return hardAnswer34[a];
-            } else if (id == 34) {
-                return null; // kok
-            } else if (id == 35) {
-                return null; // lightning and thunder
-            } else if (id == 36) {
+            } else if (id == 30) {
                 return hardAnswer37[a];
-            } else if (id == 37) {
+            } else if (id == 31) {
                 return hardAnswer38[a];
-            } else if (id == 38) {
-                return null; //meteor
-            } else if (id == 39) {
+            } else if (id == 32) {
                 return hardAnswer51[a];
-            } else if (id == 40) {
+            } else if (id == 33) {
                 return hardAnswer41[a];
-            } else if (id == 41) {
+            } else if (id == 34) {
                 return hardAnswer42[a];
-            } else if (id == 42) {
+            } else if (id == 35) {
                 return hardAnswer43[a];
-            } else if (id == 43) {
+            } else if (id == 36) {
                 return hardAnswer44[a];
-            } else if (id == 44) {
+            } else if (id == 37) {
                 return hardAnswer45[a];
-            } else if (id == 45) {
-                return null; //lobsterQuestion
-            } else if (id == 46) {
-                return null;
-            } else if (id == 47) {
-                return hardAnswer48[a];
-            } else if (id == 48) {
-                return null;
-            } else if (id == 49) {
-                return null;
+            } else if (id == 38) {
+                return hardAnswer46[a];
+            } else if (id == 39) {
+                    return hardAnswer48[a];
             }
         }
 
@@ -4553,107 +4513,87 @@ public String getQuestion(int a, int id, String level) {
             }
         } else if (level.equals("hard")) {
 
-            if (id == 0) {
-                return hardChoices1[a][0];
-            } else if (id == 1) {
-                return hardChoices2[a][0];
-            } else if (id == 2){
-                return hardChoices3[a][0];
-            } else if (id == 3) {
-                return hardChoices4[a][0];
-            } else if (id == 4) {
-                return hardChoices5[a][0];
-            } else if (id == 5) {
-                return hardChoices6[a][0];
-            } else if (id == 6) {
-                return hardChoices7[a][0];
-            } else if (id == 7) {
-                return hardChoices8[a][0];
-            } else if (id == 8) {
-                return hardChoices9[a][0];
-            } else if (id == 9) {
-                return hardChoices10[a][0];
-            } else if (id == 10) {
-                return hardChoices11[a][0];
-            } else if (id == 11) {
-                return hardChoices12[a][0];
-            } else if (id == 12) {
-                return hardChoices13[a][0];
-            } else if (id == 13) {
-                return hardChoices14[a][0];
-            } else if (id == 14) {
-                return hardChoice15[a][0];
-            } else if (id == 15) {
-                return hardChoices16[a][0];
-            } else if (id == 16) {
-                return hardChoices17[a][0];
-            } else if (id == 17) {
-                return hardChoices18[a][0];
-            } else if (id == 18) {
-                return hardChoices19[a][0];
-            } else if (id == 19) {
-                return hardChoices20[a][0];
-            } else if (id == 20) {
-                return hardChoices21[a][0];
-            } else if (id == 21) {
-                return hardChoices22[a][0];
-            } else if (id == 22) {
-                return null; //florida matale
-            } else if (id == 23) {
-                return hardChoices24[a][0];
-            } else if (id == 24) {
-                return hardChoices25[a][0];
-            } else if (id == 25) {
-                return null; // france
-            } else if (id == 26) {
-                return null; // galaxies
-            } else if (id == 27) {
-                return hardChoices28[a][0];
-            } else if (id == 28) {
-                return hardChoices29[a][0];
-            } else if (id == 29) {
-                return hardChoices30[a][0];
-            } else if (id == 30) {
-                return hardChoices31[a][0];
-            } else if (id == 31) {
-                return hardChoices32[a][0];
-            } else if (id == 32) {
-                return null; //juanponce
-            } else if (id == 33) {
-                return hardChoices34[a][0];
-            } else if (id == 34) {
-                return null; // kok
-            } else if (id == 35) {
-                return null; // lightning and thunder
-            } else if (id == 36) {
-                return hardChoices37[a][0];
-            } else if (id == 37) {
-                return hardChoices38[a][0];
-            } else if (id == 38) {
-                return null; //meteor
-            } else if (id == 39) {
-                return internChoices51[a][0];
-            } else if (id == 40) {
-                return hardChoices41[a][0];
-            } else if (id == 41) {
-                return hardChoices42[a][0];
-            } else if (id == 42) {
-                return null; //juanponce
-            } else if (id == 43) {
-                return hardChoices44[a][0];
-            } else if (id == 44) {
-                return null; // kok
-            } else if (id == 45) {
-                return null; // lightning and thunder
-            } else if (id == 46) {
-                return null;
-            } else if (id == 47) {
-                return hardChoices48[a][0];
-            } else if (id == 48) {
-                return null; //meteor
-            } else if (id == 49) {
-                return internChoices40[a][0];
-            }
+                if (id == 0) {
+                        return hardChoices1[a][0];
+                } else if (id == 1) {
+                        return hardChoices2[a][0];
+                } else if (id == 2){
+                        return hardChoices3[a][0];
+                } else if (id == 3) {
+                        return hardChoices4[a][0];
+                } else if (id == 4) {
+                        return hardChoices5[a][0];
+                } else if (id == 5) {
+                        return hardChoices6[a][0];
+                } else if (id == 6) {
+                        return hardChoices7[a][0];
+                } else if (id == 7) {
+                        return hardChoices8[a][0];
+                } else if (id == 8) {
+                        return hardChoices9[a][0];
+                } else if (id == 9) {
+                        return hardChoices10[a][0];
+                } else if (id == 10) {
+                        return hardChoices11[a][0];
+                } else if (id == 11) {
+                        return hardChoices12[a][0];
+                } else if (id == 12) {
+                        return hardChoices13[a][0];
+                } else if (id == 13) {
+                        return hardChoices14[a][0];
+                } else if (id == 14) {
+                        return hardChoice15[a][0];
+                } else if (id == 15) {
+                        return hardChoices16[a][0];
+                } else if (id == 16) {
+                        return hardChoices17[a][0];
+                } else if (id == 17) {
+                        return hardChoices18[a][0];
+                } else if (id == 18) {
+                        return hardChoices19[a][0];
+                } else if (id == 19) {
+                        return hardChoices20[a][0];
+                } else if (id == 20) {
+                        return hardChoices21[a][0];
+                } else if (id == 21) {
+                        return hardChoices22[a][0];
+                } else if (id == 22) {
+                        return hardChoices24[a][0];
+                } else if (id == 23) {
+                        return hardChoices25[a][0];
+                } else if (id == 24) {
+                        return hardChoices28[a][0];
+                } else if (id == 25) {
+                        return hardChoices29[a][0];
+                } else if (id == 26) {
+                        return hardChoices30[a][0];
+                } else if (id == 27) {
+                        return hardChoices31[a][0];
+                } else if (id == 28) {
+                        return hardChoices32[a][0];
+                } else if (id == 29) {
+                        return hardChoices34[a][0];
+                } else if (id == 30) {
+                        return hardChoices37[a][0];
+                } else if (id == 31) {
+                        return hardChoices38[a][0];
+                } else if (id == 32) {
+                        return hardChoices51[a][0];
+                } else if (id == 33) {
+                        return hardChoices41[a][0];
+                } else if (id == 34) {
+                        return hardChoices42[a][0];
+                } else if (id == 35) {
+                        return hardChoices43[a][0];
+                } else if (id == 36) {
+                        return hardChoices44[a][0];
+                } else if (id == 37) {
+                        return hardChoices45[a][0];
+                } else if (id == 38) {
+                        return hardChoices46[a][0];
+                } else if (id == 39) {
+                        return hardChoices48[a][0];
+                }
         }
 
 
@@ -4862,107 +4802,87 @@ public String getQuestion(int a, int id, String level) {
             }
         } else if (level.equals("hard")) {
 
-            if (id == 0) {
-                return hardChoices1[a][1];
-            } else if (id == 1) {
-                return hardChoices2[a][1];
-            } else if (id == 2){
-                return hardChoices3[a][1];
-            } else if (id == 3) {
-                return hardChoices4[a][1];
-            } else if (id == 4) {
-                return hardChoices5[a][1];
-            } else if (id == 5) {
-                return hardChoices6[a][1];
-            } else if (id == 6) {
-                return hardChoices7[a][1];
-            } else if (id == 7) {
-                return hardChoices8[a][1];
-            } else if (id == 8) {
-                return hardChoices9[a][1];
-            } else if (id == 9) {
-                return hardChoices10[a][1];
-            } else if (id == 10) {
-                return hardChoices11[a][1];
-            } else if (id == 11) {
-                return hardChoices12[a][1];
-            } else if (id == 12) {
-                return hardChoices13[a][1];
-            } else if (id == 13) {
-                return hardChoices14[a][1];
-            } else if (id == 14) {
-                return hardChoice15[a][1];
-            } else if (id == 15) {
-                return hardChoices16[a][1];
-            } else if (id == 16) {
-                return hardChoices17[a][1];
-            } else if (id == 17) {
-                return hardChoices18[a][1];
-            } else if (id == 18) {
-                return hardChoices19[a][1];
-            } else if (id == 19) {
-                return hardChoices20[a][1];
-            } else if (id == 20) {
-                return hardChoices21[a][1];
-            } else if (id == 21) {
-                return hardChoices22[a][1];
-            } else if (id == 22) {
-                return null; //florida matale
-            } else if (id == 23) {
-                return hardChoices24[a][1];
-            } else if (id == 24) {
-                return hardChoices25[a][1];
-            } else if (id == 25) {
-                return null; // france
-            } else if (id == 26) {
-                return null; // galaxies
-            } else if (id == 27) {
-                return hardChoices28[a][1];
-            } else if (id == 28) {
-                return hardChoices29[a][1];
-            } else if (id == 29) {
-                return hardChoices30[a][1];
-            } else if (id == 30) {
-                return hardChoices31[a][1];
-            } else if (id == 31) {
-                return hardChoices32[a][1];
-            } else if (id == 32) {
-                return null; //juanponce
-            } else if (id == 33) {
-                return hardChoices34[a][1];
-            } else if (id == 34) {
-                return null; // kok
-            } else if (id == 35) {
-                return null; // lightning and thunder
-            } else if (id == 36) {
-                return hardChoices37[a][1];
-            } else if (id == 37) {
-                return hardChoices38[a][1];
-            } else if (id == 38) {
-                return null; //meteor
-            } else if (id == 39) {
-                return internChoices51[a][1];
-            } else if (id == 40) {
-                return hardChoices41[a][1];
-            } else if (id == 41) {
-                return hardChoices42[a][1];
-            } else if (id == 42) {
-                return null; //juanponce
-            } else if (id == 43) {
-                return hardChoices44[a][1];
-            } else if (id == 44) {
-                return null; // kok
-            } else if (id == 45) {
-                return null; // lightning and thunder
-            } else if (id == 46) {
-                return null;
-            } else if (id == 47) {
-                return hardChoices48[a][1];
-            } else if (id == 48) {
-                return null; //meteor
-            } else if (id == 49) {
-                return internChoices40[a][1];
-            }
+                if (id == 0) {
+                        return hardChoices1[a][1];
+                } else if (id == 1) {
+                        return hardChoices2[a][1];
+                } else if (id == 2){
+                        return hardChoices3[a][1];
+                } else if (id == 3) {
+                        return hardChoices4[a][1];
+                } else if (id == 4) {
+                        return hardChoices5[a][1];
+                } else if (id == 5) {
+                        return hardChoices6[a][1];
+                } else if (id == 6) {
+                        return hardChoices7[a][1];
+                } else if (id == 7) {
+                        return hardChoices8[a][1];
+                } else if (id == 8) {
+                        return hardChoices9[a][1];
+                } else if (id == 9) {
+                        return hardChoices10[a][1];
+                } else if (id == 10) {
+                        return hardChoices11[a][1];
+                } else if (id == 11) {
+                        return hardChoices12[a][1];
+                } else if (id == 12) {
+                        return hardChoices13[a][1];
+                } else if (id == 13) {
+                        return hardChoices14[a][1];
+                } else if (id == 14) {
+                        return hardChoice15[a][1];
+                } else if (id == 15) {
+                        return hardChoices16[a][1];
+                } else if (id == 16) {
+                        return hardChoices17[a][1];
+                } else if (id == 17) {
+                        return hardChoices18[a][1];
+                } else if (id == 18) {
+                        return hardChoices19[a][1];
+                } else if (id == 19) {
+                        return hardChoices20[a][1];
+                } else if (id == 20) {
+                        return hardChoices21[a][1];
+                } else if (id == 21) {
+                        return hardChoices22[a][1];
+                } else if (id == 22) {
+                        return hardChoices24[a][1];
+                } else if (id == 23) {
+                        return hardChoices25[a][1];
+                } else if (id == 24) {
+                        return hardChoices28[a][1];
+                } else if (id == 25) {
+                        return hardChoices29[a][1];
+                } else if (id == 26) {
+                        return hardChoices30[a][1];
+                } else if (id == 27) {
+                        return hardChoices31[a][1];
+                } else if (id == 28) {
+                        return hardChoices32[a][1];
+                } else if (id == 29) {
+                        return hardChoices34[a][1];
+                } else if (id == 30) {
+                        return hardChoices37[a][1];
+                } else if (id == 31) {
+                        return hardChoices38[a][1];
+                } else if (id == 32) {
+                        return hardChoices51[a][1];
+                } else if (id == 33) {
+                        return hardChoices41[a][1];
+                } else if (id == 34) {
+                        return hardChoices42[a][1];
+                } else if (id == 35) {
+                        return hardChoices43[a][1];
+                } else if (id == 36) {
+                        return hardChoices44[a][1];
+                } else if (id == 37) {
+                        return hardChoices45[a][1];
+                } else if (id == 38) {
+                        return hardChoices46[a][1];
+                } else if (id == 39) {
+                        return hardChoices48[a][1];
+                }
         }
 
 
@@ -5170,107 +5090,87 @@ public String getQuestion(int a, int id, String level) {
             }
         } else if (level.equals("hard")) {
 
-            if (id == 0) {
-                return hardChoices1[a][2];
-            } else if (id == 1) {
-                return hardChoices2[a][2];
-            } else if (id == 2){
-                return hardChoices3[a][2];
-            } else if (id == 3) {
-                return hardChoices4[a][2];
-            } else if (id == 4) {
-                return hardChoices5[a][2];
-            } else if (id == 5) {
-                return hardChoices6[a][2];
-            } else if (id == 6) {
-                return hardChoices7[a][2];
-            } else if (id == 7) {
-                return hardChoices8[a][2];
-            } else if (id == 8) {
-                return hardChoices9[a][2];
-            } else if (id == 9) {
-                return hardChoices10[a][2];
-            } else if (id == 10) {
-                return hardChoices11[a][2];
-            } else if (id == 11) {
-                return hardChoices12[a][2];
-            } else if (id == 12) {
-                return hardChoices13[a][2];
-            } else if (id == 13) {
-                return hardChoices14[a][2];
-            } else if (id == 14) {
-                return hardChoice15[a][2];
-            } else if (id == 15) {
-                return hardChoices16[a][2];
-            } else if (id == 16) {
-                return hardChoices17[a][2];
-            } else if (id == 17) {
-                return hardChoices18[a][2];
-            } else if (id == 18) {
-                return hardChoices19[a][2];
-            } else if (id == 19) {
-                return hardChoices20[a][2];
-            } else if (id == 20) {
-                return hardChoices21[a][2];
-            } else if (id == 21) {
-                return hardChoices22[a][2];
-            } else if (id == 22) {
-                return null; //florida matale
-            } else if (id == 23) {
-                return hardChoices24[a][2];
-            } else if (id == 24) {
-                return hardChoices25[a][2];
-            } else if (id == 25) {
-                return null; // france
-            } else if (id == 26) {
-                return null; // galaxies
-            } else if (id == 27) {
-                return hardChoices28[a][2];
-            } else if (id == 28) {
-                return hardChoices29[a][2];
-            } else if (id == 29) {
-                return hardChoices30[a][2];
-            } else if (id == 30) {
-                return hardChoices31[a][2];
-            } else if (id == 31) {
-                return hardChoices32[a][2];
-            } else if (id == 32) {
-                return null; //juanponce
-            } else if (id == 33) {
-                return hardChoices34[a][2];
-            } else if (id == 34) {
-                return null; // kok
-            } else if (id == 35) {
-                return null; // lightning and thunder
-            } else if (id == 36) {
-                return hardChoices37[a][2];
-            } else if (id == 37) {
-                return hardChoices38[a][2];
-            } else if (id == 38) {
-                return null; //meteor
-            } else if (id == 39) {
-                return internChoices51[a][2];
-            } else if (id == 40) {
-                return hardChoices41[a][2];
-            } else if (id == 41) {
-                return hardChoices42[a][2];
-            } else if (id == 42) {
-                return null; //juanponce
-            } else if (id == 43) {
-                return hardChoices44[a][2];
-            } else if (id == 44) {
-                return null; // kok
-            } else if (id == 45) {
-                return null; // lightning and thunder
-            } else if (id == 46) {
-                return null;
-            } else if (id == 47) {
-                return hardChoices48[a][2];
-            } else if (id == 48) {
-                return null; //meteor
-            } else if (id == 49) {
-                return internChoices40[a][2];
-            }
+                if (id == 0) {
+                        return hardChoices1[a][2];
+                } else if (id == 1) {
+                        return hardChoices2[a][2];
+                } else if (id == 2){
+                        return hardChoices3[a][2];
+                } else if (id == 3) {
+                        return hardChoices4[a][2];
+                } else if (id == 4) {
+                        return hardChoices5[a][2];
+                } else if (id == 5) {
+                        return hardChoices6[a][2];
+                } else if (id == 6) {
+                        return hardChoices7[a][2];
+                } else if (id == 7) {
+                        return hardChoices8[a][2];
+                } else if (id == 8) {
+                        return hardChoices9[a][2];
+                } else if (id == 9) {
+                        return hardChoices10[a][2];
+                } else if (id == 10) {
+                        return hardChoices11[a][2];
+                } else if (id == 11) {
+                        return hardChoices12[a][2];
+                } else if (id == 12) {
+                        return hardChoices13[a][2];
+                } else if (id == 13) {
+                        return hardChoices14[a][2];
+                } else if (id == 14) {
+                        return hardChoice15[a][2];
+                } else if (id == 15) {
+                        return hardChoices16[a][2];
+                } else if (id == 16) {
+                        return hardChoices17[a][2];
+                } else if (id == 17) {
+                        return hardChoices18[a][2];
+                } else if (id == 18) {
+                        return hardChoices19[a][2];
+                } else if (id == 19) {
+                        return hardChoices20[a][2];
+                } else if (id == 20) {
+                        return hardChoices21[a][2];
+                } else if (id == 21) {
+                        return hardChoices22[a][2];
+                } else if (id == 22) {
+                        return hardChoices24[a][2];
+                } else if (id == 23) {
+                        return hardChoices25[a][2];
+                } else if (id == 24) {
+                        return hardChoices28[a][2];
+                } else if (id == 25) {
+                        return hardChoices29[a][2];
+                } else if (id == 26) {
+                        return hardChoices30[a][2];
+                } else if (id == 27) {
+                        return hardChoices31[a][2];
+                } else if (id == 28) {
+                        return hardChoices32[a][2];
+                } else if (id == 29) {
+                        return hardChoices34[a][2];
+                } else if (id == 30) {
+                        return hardChoices37[a][2];
+                } else if (id == 31) {
+                        return hardChoices38[a][2];
+                } else if (id == 32) {
+                        return hardChoices51[a][2];
+                } else if (id == 33) {
+                        return hardChoices41[a][2];
+                } else if (id == 34) {
+                        return hardChoices42[a][2];
+                } else if (id == 35) {
+                        return hardChoices43[a][2];
+                } else if (id == 36) {
+                        return hardChoices44[a][2];
+                } else if (id == 37) {
+                        return hardChoices45[a][2];
+                } else if (id == 38) {
+                        return hardChoices46[a][2];
+                } else if (id == 39) {
+                        return hardChoices48[a][2];
+                }
         }
 
 
@@ -5481,107 +5381,87 @@ public String getQuestion(int a, int id, String level) {
                 }
             } else if (level.equals("hard")) {
 
-                if (id == 0) {
-                    return hardChoices1[a][3];
-                } else if (id == 1) {
-                    return hardChoices2[a][3];
-                } else if (id == 2){
-                    return hardChoices3[a][3];
-                } else if (id == 3) {
-                    return hardChoices4[a][3];
-                } else if (id == 4) {
-                    return hardChoices5[a][3];
-                } else if (id == 5) {
-                    return hardChoices6[a][3];
-                } else if (id == 6) {
-                    return hardChoices7[a][3];
-                } else if (id == 7) {
-                    return hardChoices8[a][3];
-                } else if (id == 8) {
-                    return hardChoices9[a][3];
-                } else if (id == 9) {
-                    return hardChoices10[a][3];
-                } else if (id == 10) {
-                    return hardChoices11[a][3];
-                } else if (id == 11) {
-                    return hardChoices12[a][3];
-                } else if (id == 12) {
-                    return hardChoices13[a][3];
-                } else if (id == 13) {
-                    return hardChoices14[a][3];
-                } else if (id == 14) {
-                    return hardChoice15[a][3];
-                } else if (id == 15) {
-                    return hardChoices16[a][3];
-                } else if (id == 16) {
-                    return hardChoices17[a][3];
-                } else if (id == 17) {
-                    return hardChoices18[a][3];
-                } else if (id == 18) {
-                    return hardChoices19[a][3];
-                } else if (id == 19) {
-                    return hardChoices20[a][3];
-                } else if (id == 20) {
-                    return hardChoices21[a][3];
-                } else if (id == 21) {
-                    return hardChoices22[a][3];
-                } else if (id == 22) {
-                    return null; //florida matale
-                } else if (id == 23) {
-                    return hardChoices24[a][3];
-                } else if (id == 24) {
-                    return hardChoices25[a][3];
-                } else if (id == 25) {
-                    return null; // france
-                } else if (id == 26) {
-                    return null; // galaxies
-                } else if (id == 27) {
-                    return hardChoices28[a][3];
-                } else if (id == 28) {
-                    return hardChoices29[a][3];
-                } else if (id == 29) {
-                    return hardChoices30[a][3];
-                } else if (id == 30) {
-                    return hardChoices31[a][3];
-                } else if (id == 31) {
-                    return hardChoices32[a][3];
-                } else if (id == 32) {
-                    return null; //juanponce
-                } else if (id == 33) {
-                    return hardChoices34[a][3];
-                } else if (id == 34) {
-                    return null; // kok
-                } else if (id == 35) {
-                    return null; // lightning and thunder
-                } else if (id == 36) {
-                    return hardChoices37[a][3];
-                } else if (id == 37) {
-                    return hardChoices38[a][3];
-                } else if (id == 38) {
-                    return null; //meteor
-                } else if (id == 39) {
-                    return internChoices51[a][3];
-                } else if (id == 40) {
-                    return hardChoices41[a][3];
-                } else if (id == 41) {
-                    return hardChoices42[a][3];
-                } else if (id == 42) {
-                    return null; //juanponce
-                } else if (id == 43) {
-                    return hardChoices44[a][3];
-                } else if (id == 44) {
-                    return null; // kok
-                } else if (id == 45) {
-                    return null; // lightning and thunder
-                } else if (id == 46) {
-                    return null;
-                } else if (id == 47) {
-                    return hardChoices48[a][3];
-                } else if (id == 48) {
-                    return null; //meteor
-                } else if (id == 49) {
-                    return internChoices40[a][3];
-                }
+                    if (id == 0) {
+                            return hardChoices1[a][3];
+                    } else if (id == 1) {
+                            return hardChoices3[a][3];
+                    } else if (id == 2){
+                            return hardChoices3[a][3];
+                    } else if (id == 3) {
+                            return hardChoices4[a][3];
+                    } else if (id == 4) {
+                            return hardChoices5[a][3];
+                    } else if (id == 5) {
+                            return hardChoices6[a][3];
+                    } else if (id == 6) {
+                            return hardChoices7[a][3];
+                    } else if (id == 7) {
+                            return hardChoices8[a][3];
+                    } else if (id == 8) {
+                            return hardChoices9[a][3];
+                    } else if (id == 9) {
+                            return hardChoices10[a][3];
+                    } else if (id == 10) {
+                            return hardChoices11[a][3];
+                    } else if (id == 11) {
+                            return hardChoices12[a][3];
+                    } else if (id == 12) {
+                            return hardChoices13[a][3];
+                    } else if (id == 13) {
+                            return hardChoices14[a][3];
+                    } else if (id == 14) {
+                            return hardChoice15[a][3];
+                    } else if (id == 15) {
+                            return hardChoices16[a][3];
+                    } else if (id == 16) {
+                            return hardChoices17[a][3];
+                    } else if (id == 17) {
+                            return hardChoices18[a][3];
+                    } else if (id == 18) {
+                            return hardChoices19[a][3];
+                    } else if (id == 19) {
+                            return hardChoices20[a][3];
+                    } else if (id == 20) {
+                            return hardChoices21[a][3];
+                    } else if (id == 21) {
+                            return hardChoices22[a][3];
+                    } else if (id == 22) {
+                            return hardChoices24[a][3];
+                    } else if (id == 23) {
+                            return hardChoices25[a][3];
+                    } else if (id == 24) {
+                            return hardChoices28[a][3];
+                    } else if (id == 25) {
+                            return hardChoices29[a][3];
+                    } else if (id == 26) {
+                            return hardChoices30[a][3];
+                    } else if (id == 27) {
+                            return hardChoices31[a][3];
+                    } else if (id == 28) {
+                            return hardChoices32[a][3];
+                    } else if (id == 29) {
+                            return hardChoices34[a][3];
+                    } else if (id == 30) {
+                            return hardChoices37[a][3];
+                    } else if (id == 31) {
+                            return hardChoices38[a][3];
+                    } else if (id == 32) {
+                            return hardChoices51[a][3];
+                    } else if (id == 33) {
+                            return hardChoices41[a][3];
+                    } else if (id == 34) {
+                            return hardChoices42[a][3];
+                    } else if (id == 35) {
+                            return hardChoices43[a][3];
+                    } else if (id == 36) {
+                            return hardChoices44[a][3];
+                    } else if (id == 37) {
+                            return hardChoices45[a][3];
+                    } else if (id == 38) {
+                            return hardChoices46[a][3];
+                    } else if (id == 39) {
+                            return hardChoices48[a][3];
+                    }
             }
 
 
