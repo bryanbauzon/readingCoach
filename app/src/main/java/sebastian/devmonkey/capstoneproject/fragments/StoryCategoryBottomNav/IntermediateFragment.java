@@ -110,6 +110,7 @@ public class IntermediateFragment extends Fragment {
                 intent.putExtra("id",value);
                 String title = adapterView.getItemAtPosition(i).toString();
                 intent.putExtra("title", title);
+                intent.putExtra("bookmark", "0");
                 Log.e("Result", value + " " + title);
                 startActivity(intent);
 

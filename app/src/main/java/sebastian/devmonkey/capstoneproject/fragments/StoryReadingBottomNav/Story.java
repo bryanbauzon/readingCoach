@@ -29,6 +29,7 @@ import java.io.InputStreamReader;
 import java.util.Locale;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.fragments.BookmarksFragment;
 import sebastian.devmonkey.capstoneproject.fragments.SettingsFragment;
 import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
@@ -184,6 +185,7 @@ public class Story extends Fragment {
         level = intent.getStringExtra("level");
         id_temp = intent.getStringExtra("id");
         title = intent.getStringExtra("title");
+
        // Toast.makeText(getActivity(),title_holder,Toast.LENGTH_LONG).show();
 
 

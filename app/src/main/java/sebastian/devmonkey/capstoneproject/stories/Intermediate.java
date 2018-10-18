@@ -602,26 +602,6 @@ public class Intermediate {
                     "Reproduction: Crickets reach sexual maturity between eight and twelve weeks after birth. Males attract mates by rubbing their wings together to produce a noise sometimes referred to as 'chirping'. Technically, this process is called stridulation. Interestingly enough, the rate in which a cricket 'chirps' is determined by the temperature outside. When it is warmer, crickets chirp faster. Scientists can actually tell the exact outdoor temperature by timing the rate of cricket 'chirpings'. After the male mates with the female, the female will\n"+
                     "lay between 50 and 100 eggs in the ground or another soft surface. The eggs hatch in about two weeks. Life Cycle: Incomplete Metamorphosis: egg -> nymph -> adult Diet: House crickets will eat just about anything including soft plant matter, insects, young crickets, and decomposing matter.",
 
-            //31//DALLAS COWBOYS
-
-            "The Dallas Cowboys have been an NFL team since 1960. "+
-                    "They are one of two teams that play professional football in the state of Texas. "+
-                    "It took the Cowboys eleven years before they made the Super Bowl, the NFL championship game. "+
-                    "They lost that game to the Baltimore Colts by a score of 16 to 13. "+
-                    "The Cowboys soon got much better! In the 1970s, they played in five Super Bowls and won two of them. "+
-                    "After they defeated the Denver Broncos in Super Bowl 12, "+
-                    "people started calling them Americas Team! "+
-                    "Although the Cowboys failed to make any Super Bowls in the 1980s, "+
-                    "they played in three Super Bowls in the 1990s and won all three of them, "+
-                    "including two in a row against the Buffalo Bills and one against their big rival, the Pittsburgh Steelers. \n"+
-                    " It was during this time that quarter back Troy Aikman, running back Emmitt Smith, "+
-                    "and wide receiver Michael Irvin all became big stars. "+
-                    "All three would eventually become members of the Pro Football Hall of Fame. "+
-                    "The Cowboys won their last Super Bowl in 1995 and havent made it back since. "+
-                    "That hasnt discouraged owner Jerry Jones from spending big bucks, though.   "+
-                    "In 2009, Cowboys Stadium opened. "+
-                    "It can hold over 110,000 people, making it the largest domed stadium in the world. "+
-                    "It cost over one billion dollars to build!",
             //32//DISCOVERY OF ICE CREAMS
             "Frozen Desserts started with the early Greece and Romans. "+
                     "Their slaves added honey and fruit flavors to snow. "+
@@ -857,18 +837,6 @@ public class Intermediate {
                     "'That was not right,'"+
                     "Martin says to himself. "+
                     "He will see if the car is still outside his house when he gets off work.",
-
-          //  46//LOBSTER
-            "Lobsters are a kind of ocean creature called crustaceans. "+
-                    "Crabs and shrimp are crustaceans too. "+
-                    "Lobsters, and most other crustaceans, are found throughout the worlds oceans, often under rocks or in cracks on the sea floor. "+
-                    "Lobsters have five pairs of legs, three of which are claws. "+
-                    "The front claws, sometimes called pincers, are larger than the others. \n"+
-                    "Scientists believe lobsters can live up to 70 years! People love to eat lobsters!"+
-                    "The state of Maine is famous for the lobsters found along its Atlantic coast. "+
-                    "Here, lobsters are often served with melted butter, corn on the cob, and French fries."+
-                    "Did you know that lobsters only turn red after they are cooked? "+
-                    "In the wild they can be grayish, yellow, green, blue or multi-colored.",
 
             //47//LOCK AND KEYS
             "Locks and keys have been in use for thousands of years. "+

@@ -11,9 +11,11 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.activity.MainActivity;
 import sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav.AddJournalFragment;
 import sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav.Quizzer;
 import sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav.Story;
@@ -26,12 +28,16 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
     private ActionBar toolbar;
 
     DatabaseHelper db;
+    String bookmark;
 
     public TextToSpeech textToSpeech;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story_reading);
+
+        Intent intent = getIntent();
+        bookmark = intent.getStringExtra("bookmark");
 
         toolbar = getSupportActionBar();
 
@@ -106,8 +112,14 @@ public class StoryReading extends AppCompatActivity implements sebastian.devmonk
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case android.R.id.home:
-                //startActivity(new Intent(getApplicationContext(), StoryCategory.class));
-                finish();
+
+                if (bookmark.equals("0")){
+                    finish();
+                } else if (bookmark.equals("1")){
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
                 return true;
 
         }

@@ -108,6 +108,7 @@ public class HomeFragment extends Fragment {
                 intent.putExtra("id",id_holder);
                 intent.putExtra("title",storyTitle);
                 intent.putExtra("level",level);
+                intent.putExtra("bookmark", "0");
                 startActivity(intent);
 
             }

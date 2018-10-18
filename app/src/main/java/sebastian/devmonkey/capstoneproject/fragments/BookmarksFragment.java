@@ -81,9 +81,6 @@ public class BookmarksFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-//        adapter.notifyDataSetChanged();
-//        listView.invalidateViews();
-
     }
 
     @Override
@@ -111,11 +108,10 @@ public class BookmarksFragment extends Fragment {
                 intent.putExtra("id", titleid.get(i));
                 intent.putExtra("title", title.get(i));
                 intent.putExtra("level", level.get(i));
-              //  Toast.makeText(getContext(),titleid.get(i),Toast.LENGTH_SHORT).show();
+                intent.putExtra("bookmark", "1");
 
                 startActivity(intent);
-               // getActivity().finish();
-              //  System.exit(0);
+
             }
         });
 

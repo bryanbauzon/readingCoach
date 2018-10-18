@@ -122,6 +122,7 @@ public class EasyFragment extends Fragment {
                 intent.putExtra("id",value);
                 String title = adapterView.getItemAtPosition(i).toString();
                 intent.putExtra("title", title);
+                intent.putExtra("bookmark", "0");
                 startActivity(intent);
 
                 //SHARED PREFERENCES FOR DASHBOARD

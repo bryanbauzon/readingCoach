@@ -748,8 +748,8 @@ private String [] answer28 = {
 //        {"to play soccer","to fix old clocks","to play the violin ","to build birdhouses"}
 //        };
 
-private String [] answer29 = {
-        "on Tuesdays after school","every day","most days","He loves it","to play the violin "};
+//private String [] answer29 = {
+//        "on Tuesdays after school","every day","most days","He loves it","to play the violin "};
 
 
 
@@ -3792,46 +3792,44 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return greengrass[a];
                 } else if (id == 28) {
-//                        return grifin[a];
-//                } else if (id == 29) {
                         return  grifinstalent[a];
-                } else if (id == 30) {
+                } else if (id == 29) {
                         return helicopters[a];
-                } else if (id == 31) {
+                } else if (id == 30) {
                         return houses[a];
-                } else if (id == 32) {
+                } else if (id == 31) {
                         return howareyou[a];
-                } else if (id == 33) {
+                } else if (id == 32) {
                         return howwarthoglives[a];
-                } else if (id == 34) {
+                } else if (id == 33) {
                         return howwormsgetinsideanapple[a];
-                } else if (id == 35) {
+                } else if (id == 34) {
                         return humans[a];
-                } else if (id == 36) {
+                } else if (id == 35) {
                         return ifly[a];
-                } else if (id == 37) {
+                } else if (id == 36) {
                         return icefishing[a];
-                } else if (id == 38) {
+                } else if (id == 37) {
                         return julian[a];
-                } else if (id == 39) {
+                } else if (id == 38) {
                         return jupiter[a];
-                } else if (id == 40) {
+                } else if (id == 39) {
                         return landofafrica[a];
-                } else if (id == 41) {
+                } else if (id == 40) {
                         return leonardodavinci[a];
-                } else if (id == 42) {
+                } else if (id == 41) {
                         return lordofolympus[a];
-                } else if (id == 43) {
+                } else if (id == 42) {
                         return money[a];
-                } else if (id == 44) {
+                } else if (id == 43) {
                         return myfamily[a];
-                } else if (id == 45) {
+                } else if (id == 44) {
                         return myfriend[a];
-                } else if (id == 46) {
+                } else if (id == 45) {
                         return myhouse[a];
-                } else if (id == 47) {
+                } else if (id == 46) {
                         return newshoesformandy[a];
-                } else if (id == 48) {
+                } else if (id == 47) {
                         return onehundreddollars[a];
                 }
         } else if (level.equals("intermediate")) {
@@ -3897,44 +3895,40 @@ public String getQuestion(int a, int id, String level) {
             } else if (id == 29) {
                 return cricketQuestion30[a];
             } else if (id == 30) {
-                return  null; // dallas cowboys
-            } else if (id == 31) {
                 return discoveryoficecreamQuestion32[a];
-            } else if (id == 32) {
+            } else if (id == 31) {
                 return doctorinchicagoQuestion33[a];
-            } else if (id == 33) {
+            } else if (id == 32) {
                 return dunkindonutsQuestion34[a];
-            } else if (id == 34) {
+            } else if (id == 33) {
                 return easterislandQuestion35[a];
-            } else if (id == 35) {
+            } else if (id == 34) {
                 return garlicsQuestion36[a];
-            } else if (id == 36) {
+            } else if (id == 35) {
                 return halloweenQuestion37[a];
-            } else if (id == 37) {
+            } else if (id == 36) {
                 return helicoptersQuestion38[a];
-            } else if (id == 38) {
+            } else if (id == 37) {
                 return hibernationQuestion39[a];
-            } else if (id == 39) {
+            } else if (id == 38) {
                 return housesQuestion40[a];
-            } else if (id == 40) {
+            } else if (id == 39) {
                 return howtobepigQuestion41[a];
-            } else if (id == 41) {
+            } else if (id == 40) {
                 return johncooksQuestion42[a];
-            } else if (id == 42) {
+            } else if (id == 41) {
                 return komodoQuestion43[a];
-            } else if (id == 43) {
+            } else if (id == 42) {
                 return largestcreatureQuestion44[a];
-            } else if (id == 44) {
+            } else if (id == 43) {
                 return lateQuestion45[a];
-            } else if (id == 45) {
-                return null; //lobsterQuestion
-            } else if (id == 46) {
+            } else if (id == 44) {
                 return locksandkeyQuestion47[a];
-            } else if (id == 47) {
+            } else if (id == 45) {
                 return marcopoloQuestion48[a];
-            } else if (id == 48) {
+            } else if (id == 46) {
                 return marsQuestion49[a];
-            } else if (id == 49) {
+            } else if (id == 47) {
                 return marysfamilyQuestion50[a];
             }
         } else if (level.equals("hard")) {
@@ -4106,46 +4100,44 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return answer28[a];
                 } else if (id == 28) {
-                        return answer29[a];
-                } else if (id == 29) {
                         return answer30[a];
-                } else if (id == 30) {
+                } else if (id == 29) {
                         return  answer31[a];
-                } else if (id == 31) {
+                } else if (id == 30) {
                         return answer32[a];
-                } else if (id == 32) {
+                } else if (id == 31) {
                         return answer33[a];
-                } else if (id == 33) {
+                } else if (id == 32) {
                         return answer34[a];
-                } else if (id == 34) {
+                } else if (id == 33) {
                         return answer35[a];
-                } else if (id == 35) {
+                } else if (id == 34) {
                         return answer36[a];
-                } else if (id == 36) {
+                } else if (id == 35) {
                         return answer37[a];
-                } else if (id == 37) {
+                } else if (id == 36) {
                         return answer38[a];
-                } else if (id == 38) {
+                } else if (id == 37) {
                         return answer39[a];
-                } else if (id == 39) {
+                } else if (id == 38) {
                         return answer40[a];
-                } else if (id == 40) {
+                } else if (id == 39) {
                         return answer41[a];
-                } else if (id == 41) {
+                } else if (id == 40) {
                         return answer42[a];
-                } else if (id == 42) {
+                } else if (id == 41) {
                         return answer43[a];
-                } else if (id == 43) {
+                } else if (id == 42) {
                         return answer44[a];
-                } else if (id == 44) {
+                } else if (id == 43) {
                         return answer45[a];
-                } else if (id == 45) {
+                } else if (id == 44) {
                         return answer46[a];
-                } else if (id == 46) {
+                } else if (id == 45) {
                         return answer47[a];
-                } else if (id == 47) {
+                } else if (id == 46) {
                         return answer48[a];
-                } else if (id == 48) {
+                } else if (id == 47) {
                         return answer49[a];
                 }
         } else if (level.equals("intermediate")) {
@@ -4211,44 +4203,40 @@ public String getQuestion(int a, int id, String level) {
             } else if (id == 29) {
                 return internAnswer30[a];
             } else if (id == 30) {
-                return  null; // dallas cowboys
-            } else if (id == 31) {
                 return internAnswer32[a];
-            } else if (id == 32) {
+            } else if (id == 31) {
                 return internAnswer33[a];
-            } else if (id == 33) {
+            } else if (id == 32) {
                 return internAnswer34[a];
-            } else if (id == 34) {
+            } else if (id == 33) {
                 return internAnswer35[a];
-            } else if (id == 35) {
+            } else if (id == 34) {
                 return internAnswer36[a];
-            } else if (id == 36) {
+            } else if (id == 35) {
                 return internAnswer37[a];
-            } else if (id == 37) {
+            } else if (id == 36) {
                 return internAnswer38[a];
-            } else if (id == 38) {
+            } else if (id == 37) {
                 return internAnswer39[a];
-            } else if (id == 39) {
+            } else if (id == 38) {
                 return internAnswer40[a];
-            } else if (id == 40) {
+            } else if (id == 39) {
                 return internAnswer41[a];
-            } else if (id == 41) {
+            } else if (id == 40) {
                 return internAnswer42[a];
-            } else if (id == 42) {
+            } else if (id == 41) {
                 return internAnswer43[a];
-            } else if (id == 43) {
+            } else if (id == 42) {
                 return internAnswer44[a];
-            } else if (id == 44) {
+            } else if (id == 43) {
                 return internAnswer45[a];
-            } else if (id == 45) {
-                return null; //lobsterQuestion
-            } else if (id == 46) {
+            } else if (id == 44) {
                 return internAnswer47[a];
-            } else if (id == 47) {
+            } else if (id == 45) {
                 return internAnswer48[a];
-            } else if (id == 48) {
+            } else if (id == 46) {
                 return internAnswer49[a];
-            } else if (id == 49) {
+            } else if (id == 47) {
                 return internAnswer50[a];
             }
 
@@ -4424,46 +4412,44 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return choices28[a][0];
                 } else if (id == 28) {
-//                        return choices29[a][0];
-//                } else if (id == 29) {
                         return choices30[a][0];
-                } else if (id == 30) {
+                } else if (id == 29) {
                         return  choices31[a][0];
-                } else if (id == 31) {
+                } else if (id == 30) {
                         return choices32[a][0];
-                } else if (id == 32) {
+                } else if (id == 31) {
                         return choices33[a][0];
-                } else if (id == 33) {
+                } else if (id == 32) {
                         return choices34[a][0];
-                } else if (id == 34) {
+                } else if (id == 33) {
                         return choices35[a][0];
-                } else if (id == 35) {
+                } else if (id == 34) {
                         return choices36[a][0];
-                } else if (id == 36) {
+                } else if (id == 35) {
                         return choices37[a][0];
-                } else if (id == 37) {
+                } else if (id == 36) {
                         return choices38[a][0];
-                } else if (id == 38) {
+                } else if (id == 37) {
                         return choices39[a][0];
-                } else if (id == 39) {
+                } else if (id == 38) {
                         return choices40[a][0];
-                } else if (id == 40) {
+                } else if (id == 39) {
                         return choices41[a][0];
-                } else if (id == 41) {
+                } else if (id == 40) {
                         return choices42[a][0];
-                } else if (id == 42) {
+                } else if (id == 41) {
                         return choices43[a][0];
-                } else if (id == 43) {
+                } else if (id == 42) {
                         return choices44[a][0];
-                } else if (id == 44) {
+                } else if (id == 43) {
                         return choices45[a][0];
-                } else if (id == 45) {
+                } else if (id == 44) {
                         return choices46[a][0];
-                } else if (id == 46) {
+                } else if (id == 45) {
                         return choices47[a][0];
-                } else if (id == 47) {
+                } else if (id == 46) {
                         return choices48[a][0];
-                } else if (id == 48) {
+                } else if (id == 47) {
                         return choices49[a][0];
                 }
         } else if (level.equals("intermediate")) {
@@ -4529,44 +4515,40 @@ public String getQuestion(int a, int id, String level) {
             } else if (id == 29) {
                 return internChoices30[a][0];
             } else if (id == 30) {
-                return  null; // dallas cowboys
-            } else if (id == 31) {
                 return  internChoices32[a][0];
-            } else if (id == 32) {
+            } else if (id == 31) {
                 return  internChoices33[a][0];
-            } else if (id == 33) {
+            } else if (id == 32) {
                 return  internChoices34[a][0];
-            } else if (id == 34) {
+            } else if (id == 33) {
                 return  internChoices35[a][0];
-            } else if (id == 35) {
+            } else if (id == 34) {
                 return  internChoices36[a][0];
-            } else if (id == 36) {
+            } else if (id == 35) {
                 return  internChoices37[a][0];
-            } else if (id == 37) {
+            } else if (id == 36) {
                 return  internChoices38[a][0];
-            } else if (id == 38) {
+            } else if (id == 37) {
                 return  internChoices39[a][0];
-            } else if (id == 39) {
+            } else if (id == 38) {
                 return  internChoices40[a][0];
-            } else if (id == 40) {
+            } else if (id == 39) {
                 return  internChoice41[a][0];
-            } else if (id == 41) {
+            } else if (id == 40) {
                 return  internChoices42[a][0];
-            } else if (id == 42) {
+            } else if (id == 41) {
                 return  internChoices43[a][0];
-            } else if (id == 43) {
+            } else if (id == 42) {
                 return  internChoices44[a][0];
-            } else if (id == 44) {
+            } else if (id == 43) {
                 return  internChoices45[a][0];
-            } else if (id == 45) {
-                return null; //lobsterQuestion
-            } else if (id == 46) {
+            } else if (id == 44) {
                 return  internChoices47[a][0];
-            } else if (id == 47) {
+            } else if (id == 45) {
                 return  internChoices48[a][0];
-            } else if (id == 48) {
+            } else if (id == 46) {
                 return  internChoices49[a][0];
-            } else if (id == 49) {
+            } else if (id == 47) {
                 return  internChoices50[a][0];
             }
         } else if (level.equals("hard")) {
@@ -4739,46 +4721,44 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return choices28[a][1];
                 } else if (id == 28) {
-//                        return choices29[a][1];
-//                } else if (id == 29) {
                         return choices30[a][1];
-                } else if (id == 30) {
+                } else if (id == 29) {
                         return  choices31[a][1];
-                } else if (id == 31) {
+                } else if (id == 30) {
                         return choices32[a][1];
-                } else if (id == 32) {
+                } else if (id == 31) {
                         return choices33[a][1];
-                } else if (id == 33) {
+                } else if (id == 32) {
                         return choices34[a][1];
-                } else if (id == 34) {
+                } else if (id == 33) {
                         return choices35[a][1];
-                } else if (id == 35) {
+                } else if (id == 34) {
                         return choices36[a][1];
-                } else if (id == 36) {
+                } else if (id == 35) {
                         return choices37[a][1];
-                } else if (id == 37) {
+                } else if (id == 36) {
                         return choices38[a][1];
-                } else if (id == 38) {
+                } else if (id == 37) {
                         return choices39[a][1];
-                } else if (id == 39) {
+                } else if (id == 38) {
                         return choices40[a][1];
-                } else if (id == 40) {
+                } else if (id == 39) {
                         return choices41[a][1];
-                } else if (id == 41) {
+                } else if (id == 40) {
                         return choices42[a][1];
-                } else if (id == 42) {
+                } else if (id == 41) {
                         return choices43[a][1];
-                } else if (id == 43) {
+                } else if (id == 42) {
                         return choices44[a][1];
-                } else if (id == 44) {
+                } else if (id == 43) {
                         return choices45[a][1];
-                } else if (id == 45) {
+                } else if (id == 44) {
                         return choices46[a][1];
-                } else if (id == 46) {
+                } else if (id == 45) {
                         return choices47[a][1];
-                } else if (id == 47) {
+                } else if (id == 46) {
                         return choices48[a][1];
-                } else if (id == 48) {
+                } else if (id == 47) {
                         return choices49[a][1];
                 }
         } else if (level.equals("intermediate")) {
@@ -4844,44 +4824,40 @@ public String getQuestion(int a, int id, String level) {
             } else if (id == 29) {
                 return internChoices30[a][1];
             } else if (id == 30) {
-                return  null; // dallas cowboys
-            } else if (id == 31) {
                 return  internChoices32[a][1];
-            } else if (id == 32) {
+            } else if (id == 31) {
                 return  internChoices33[a][1];
-            } else if (id == 33) {
+            } else if (id == 32) {
                 return  internChoices34[a][1];
-            } else if (id == 34) {
+            } else if (id == 33) {
                 return  internChoices35[a][1];
-            } else if (id == 35) {
+            } else if (id == 34) {
                 return  internChoices36[a][1];
-            } else if (id == 36) {
+            } else if (id == 35) {
                 return  internChoices37[a][1];
-            } else if (id == 37) {
+            } else if (id == 36) {
                 return  internChoices38[a][1];
-            } else if (id == 38) {
+            } else if (id == 37) {
                 return  internChoices39[a][1];
-            } else if (id == 39) {
+            } else if (id == 38) {
                 return  internChoices40[a][1];
-            } else if (id == 40) {
+            } else if (id == 39) {
                 return  internChoice41[a][1];
-            } else if (id == 41) {
+            } else if (id == 40) {
                 return  internChoices42[a][1];
-            } else if (id == 42) {
+            } else if (id == 41) {
                 return  internChoices43[a][1];
-            } else if (id == 43) {
+            } else if (id == 42) {
                 return  internChoices44[a][1];
-            } else if (id == 44) {
+            } else if (id == 43) {
                 return  internChoices45[a][1];
-            } else if (id == 45) {
-                return null; //lobsterQuestion
-            } else if (id == 46) {
+            } else if (id == 44) {
                 return  internChoices47[a][1];
-            } else if (id == 47) {
+            } else if (id == 45) {
                 return  internChoices48[a][1];
-            } else if (id == 48) {
+            } else if (id == 46) {
                 return  internChoices49[a][1];
-            } else if (id == 49) {
+            } else if (id == 47) {
                 return  internChoices50[a][1];
             }
         } else if (level.equals("hard")) {
@@ -5053,46 +5029,44 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 27) {
                         return choices28[a][2];
                 } else if (id == 28) {
-//                        return choices29[a][2];
-//                } else if (id == 29) {
                         return choices30[a][2];
-                } else if (id == 30) {
+                } else if (id == 29) {
                         return  choices31[a][2];
-                } else if (id == 31) {
+                } else if (id == 30) {
                         return choices32[a][2];
-                } else if (id == 32) {
+                } else if (id == 31) {
                         return choices33[a][2];
-                } else if (id == 33) {
+                } else if (id == 32) {
                         return choices34[a][2];
-                } else if (id == 34) {
+                } else if (id == 33) {
                         return choices35[a][2];
-                } else if (id == 35) {
+                } else if (id == 34) {
                         return choices36[a][2];
-                } else if (id == 36) {
+                } else if (id == 35) {
                         return choices37[a][2];
-                } else if (id == 37) {
+                } else if (id == 36) {
                         return choices38[a][2];
-                } else if (id == 38) {
+                } else if (id == 37) {
                         return choices39[a][2];
-                } else if (id == 39) {
+                } else if (id == 38) {
                         return choices40[a][2];
-                } else if (id == 40) {
+                } else if (id == 39) {
                         return choices41[a][2];
-                } else if (id == 41) {
+                } else if (id == 40) {
                         return choices42[a][2];
-                } else if (id == 42) {
+                } else if (id == 41) {
                         return choices43[a][2];
-                } else if (id == 43) {
+                } else if (id == 42) {
                         return choices44[a][2];
-                } else if (id == 44) {
+                } else if (id == 43) {
                         return choices45[a][2];
-                } else if (id == 45) {
+                } else if (id == 44) {
                         return choices46[a][2];
-                } else if (id == 46) {
+                } else if (id == 45) {
                         return choices47[a][2];
-                } else if (id == 47) {
+                } else if (id == 46) {
                         return choices48[a][2];
-                } else if (id == 48) {
+                } else if (id == 47) {
                         return choices49[a][2];
                 }
         } else if (level.equals("intermediate")) {
@@ -5158,44 +5132,40 @@ public String getQuestion(int a, int id, String level) {
             } else if (id == 29) {
                 return internChoices30[a][2];
             } else if (id == 30) {
-                return  null; // dallas cowboys
-            } else if (id == 31) {
                 return  internChoices32[a][2];
-            } else if (id == 32) {
+            } else if (id == 31) {
                 return  internChoices33[a][2];
-            } else if (id == 33) {
+            } else if (id == 32) {
                 return  internChoices34[a][2];
-            } else if (id == 34) {
+            } else if (id == 33) {
                 return  internChoices35[a][2];
-            } else if (id == 35) {
+            } else if (id == 34) {
                 return  internChoices36[a][2];
-            } else if (id == 36) {
+            } else if (id == 35) {
                 return  internChoices37[a][2];
-            } else if (id == 37) {
+            } else if (id == 36) {
                 return  internChoices38[a][2];
-            } else if (id == 38) {
+            } else if (id == 37) {
                 return  internChoices39[a][2];
-            } else if (id == 39) {
+            } else if (id == 38) {
                 return  internChoices40[a][2];
-            } else if (id == 40) {
+            } else if (id == 39) {
                 return  internChoice41[a][2];
-            } else if (id == 41) {
+            } else if (id == 40) {
                 return  internChoices42[a][2];
-            } else if (id == 42) {
+            } else if (id == 41) {
                 return  internChoices43[a][2];
-            } else if (id == 43) {
+            } else if (id == 42) {
                 return  internChoices44[a][2];
-            } else if (id == 44) {
+            } else if (id == 43) {
                 return  internChoices45[a][2];
-            } else if (id == 45) {
-                return null; //lobsterQuestion
-            } else if (id == 46) {
+            } else if (id == 44) {
                 return  internChoices47[a][2];
-            } else if (id == 47) {
+            } else if (id == 45) {
                 return  internChoices48[a][2];
-            } else if (id == 48) {
+            } else if (id == 46) {
                 return  internChoices49[a][2];
-            } else if (id == 49) {
+            } else if (id == 47) {
                 return  internChoices50[a][2];
             }
         } else if (level.equals("hard")) {
@@ -5370,46 +5340,44 @@ public String getQuestion(int a, int id, String level) {
                     } else if (id == 27) {
                             return choices28[a][3];
                     } else if (id == 28) {
-//                            return choices29[a][3];
-//                    } else if (id == 29) {
                             return choices30[a][3];
-                    } else if (id == 30) {
+                    } else if (id == 29) {
                             return  choices31[a][3];
-                    } else if (id == 31) {
+                    } else if (id == 30) {
                             return choices32[a][3];
-                    } else if (id == 32) {
+                    } else if (id == 31) {
                             return choices33[a][3];
-                    } else if (id == 33) {
+                    } else if (id == 32) {
                             return choices34[a][3];
-                    } else if (id == 34) {
+                    } else if (id == 33) {
                             return choices35[a][3];
-                    } else if (id == 35) {
+                    } else if (id == 34) {
                             return choices36[a][3];
-                    } else if (id == 36) {
+                    } else if (id == 35) {
                             return choices37[a][3];
-                    } else if (id == 37) {
+                    } else if (id == 36) {
                             return choices38[a][3];
-                    } else if (id == 38) {
+                    } else if (id == 37) {
                             return choices39[a][3];
-                    } else if (id == 39) {
+                    } else if (id == 38) {
                             return choices40[a][3];
-                    } else if (id == 40) {
+                    } else if (id == 39) {
                             return choices41[a][3];
-                    } else if (id == 41) {
+                    } else if (id == 40) {
                             return choices42[a][3];
-                    } else if (id == 42) {
+                    } else if (id == 41) {
                             return choices43[a][3];
-                    } else if (id == 43) {
+                    } else if (id == 42) {
                             return choices44[a][3];
-                    } else if (id == 44) {
+                    } else if (id == 43) {
                             return choices45[a][3];
-                    } else if (id == 45) {
+                    } else if (id == 44) {
                             return choices46[a][3];
-                    } else if (id == 46) {
+                    } else if (id == 45) {
                             return choices47[a][3];
-                    } else if (id == 47) {
+                    } else if (id == 46) {
                             return choices48[a][3];
-                    } else if (id == 48) {
+                    } else if (id == 47) {
                             return choices49[a][3];
                     }
             } else if (level.equals("intermediate")) {
@@ -5475,44 +5443,40 @@ public String getQuestion(int a, int id, String level) {
                 } else if (id == 29) {
                     return internChoices30[a][3];
                 } else if (id == 30) {
-                    return  null; // dallas cowboys
-                } else if (id == 31) {
                     return  internChoices32[a][3];
-                } else if (id == 32) {
+                } else if (id == 31) {
                     return  internChoices33[a][3];
-                } else if (id == 33) {
+                } else if (id == 32) {
                     return  internChoices34[a][3];
-                } else if (id == 34) {
+                } else if (id == 33) {
                     return  internChoices35[a][3];
-                } else if (id == 35) {
+                } else if (id == 34) {
                     return  internChoices36[a][3];
-                } else if (id == 36) {
+                } else if (id == 35) {
                     return  internChoices37[a][3];
-                } else if (id == 37) {
+                } else if (id == 36) {
                     return  internChoices38[a][3];
-                } else if (id == 38) {
+                } else if (id == 37) {
                     return  internChoices39[a][3];
-                } else if (id == 39) {
+                } else if (id == 38) {
                     return  internChoices40[a][3];
-                } else if (id == 40) {
+                } else if (id == 39) {
                     return  internChoice41[a][3];
-                } else if (id == 41) {
+                } else if (id == 40) {
                     return  internChoices42[a][3];
-                } else if (id == 42) {
+                } else if (id == 41) {
                     return  internChoices43[a][3];
-                } else if (id == 43) {
+                } else if (id == 42) {
                     return  internChoices44[a][3];
-                } else if (id == 44) {
+                } else if (id == 43) {
                     return  internChoices45[a][3];
-                } else if (id == 45) {
-                    return null; //lobsterQuestion
-                } else if (id == 46) {
+                } else if (id == 44) {
                     return  internChoices47[a][3];
-                } else if (id == 47) {
+                } else if (id == 45) {
                     return  internChoices48[a][3];
-                } else if (id == 48) {
+                } else if (id == 46) {
                     return  internChoices49[a][3];
-                } else if (id == 49) {
+                } else if (id == 47) {
                     return  internChoices50[a][3];
                 }
             } else if (level.equals("hard")) {
