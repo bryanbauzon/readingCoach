@@ -108,7 +108,7 @@ public class TerminologiesFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), Terminologies.class);
-                String value = Long.toString(l);
+                String value = adapterView.getItemAtPosition(i).toString();
                 intent.putExtra("id",value);
                 startActivity(intent);
             }

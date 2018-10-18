@@ -105,55 +105,7 @@ public class Arrays {
             "MY HOUSE",
             "NEW SHOES FOR MADDY",
             "ONE HUNDRED DOLLARS"
-            //"PAPER"
-//            "PARTS OF A PIANO",
-//            "PAUL COOKS",
-//            "RAINY DAY",
-//            "RUNNING",
-//            "SEEING STARS",
-//            "SKY",
-//            "SOAP",
-//            "SODA POP",
-//            "STORY OF LORD SANDWICH",
-//            "TALIA",
-//            "TASTE",
-//            "TEA",
-//            "TELEVISIONS",
-//            "TENNIS",
-//            "THE 20",
-//            "THE BLOW DRYER",
-//            "THE CAT , THE ROOSTER AND THE YOUNG MOUSE WRITER",
-//            "THE DOG AND HIS REFLECTION",
-//            "THE DOG AND THE MANGER",
-//            "THE DONKEY IN THE LION'S SKIN",
-//            "THE DRIVE",
-//            "THE FOG AND THE FOX",
-//            "THE FOX AND THE CROW",
-//            "THE FOX AND THE GRAPES",
-//            "THE HAWAIIAN PEOPLE SONG",
-//            "THE HEART",
-//            "THE INTERVIEW",
-//            "THE LION AND THE MOUSE",
-//            "THE MICE IN COUNCIL",
-//            "THE MUSIC",
-//            "THE RABBIT AND THE TURTLE",
-//            "THE RED CARPET TREATMENT",
-//            "THE RENT MAN",
-//            "THE ROOSTER AND THE FOX",
-//            "THE ROOSTER AND THE JEWEL",
-//            "THE SINGING BIRD",
-//            "THE SKY",
-//            "THE TREES AND THE AX",
-//            "THE UNITED STATES",
-//            "THE WIND AND THE SUN",
-//            "TIE YOUR SHOES",
-//            "TIME TO",
-//            "TREES",
-//            "WHAT NUMBER",
-//            "WHAT TIME IS IT",
-//            "WHERE ARE MY GLASSES",
-//            "YELLOWSTONE NATIONAL PARK",
-//            "ZACH"
+
 
 
      };
@@ -2756,9 +2708,9 @@ public class Arrays {
 
 
 
-//    public int getLength() {
-//        return mQuestion.length;
-//    }
+    public int getTerminologiesLength() {
+        return terminologiesWords.length;
+    }
 
 
 }

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.lang.reflect.Array;
 import java.util.Locale;
@@ -18,7 +19,6 @@ public class Terminologies extends AppCompatActivity {
 
     TextView txtTitle, txtMeaning;
     String getID;
-    int id;
     TextToSpeech textToSpeech;
 
     @Override
@@ -43,16 +43,20 @@ public class Terminologies extends AppCompatActivity {
         txtTitle = findViewById(R.id.txtTerminologyTitle);
         txtMeaning = findViewById(R.id.txtTerminologyMeaning);
 
+        Arrays arrays = new Arrays();
+
 
         Intent intent = getIntent();
         getID = intent.getStringExtra("id");
 
-        id = Integer.parseInt(getID);
-
-        Arrays arrays = new Arrays();
-
-        txtTitle.setText(arrays.getTerminologiesWords1(id));
-        txtMeaning.setText(arrays.getTerminologiesMeaning(id));
+        for (int x=0; x < arrays.getTerminologiesLength(); x++ ){
+            if (getID.equals(arrays.getTerminologiesWords1(x))){
+                Toast.makeText(getApplicationContext(), arrays.getTerminologiesWords1(x), Toast.LENGTH_SHORT).show();
+                txtTitle.setText(arrays.getTerminologiesWords1(x));
+                txtMeaning.setText(arrays.getTerminologiesMeaning(x));
+                break;
+            }
+        }
 
     }
 

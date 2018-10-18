@@ -707,37 +707,65 @@ public class Easy {
                     "'Hold on,' the police officer says. \n"+
                     "He reaches in his own pocket and gives Leonard ten dollars. 'Get"+
                     "yourself something to eat.'"
-            ///>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        };
 
 
-//            "Patience Wright was America s first sculptor."+
-//                    "She was born in New Jersey in 1725."+
-//                    "As a child she made likenesses with bread dough of her family and friends."+
-//                    "She was married to a local farmer and experimented with wax figures."+
-//                    "Perhaps she was inspired by the popular travelling exhibits of wax images.  \n At forty-four she was widowed. She decided to move to New York to start a waxworks museum."+
-//                    "It was very successful; people delighted in her wax figures of criminals and great people of history."+
-//                    "She then moved to London. She was successful there, too. She even made wax portraits of the king and queen."+
-//                    "The American Revolution made her less popular, however."+
-//                    "She was supposed to have been a spy for Benjamin Franklin during the Revolution, sending him information in the wax heads of dolls. Again popular after the war, she died in 1786. She wanted to be returned to her ?dear America,? but she was buried in England.",
-//
-//
-//
 
-//            "During summer months plants work hard. Their roots take in water."+
-//                    "Their leaves make food and their flowers make seeds."+
-//                    "As the seeds grow, the flower petals drop off. "+
-//                    "Soon nothing is left of each flower but the little swelling where the seeds are growing."+
-//                    "As the days pass, the swellings begin to change and become berries, or nuts, or other kinds of fruits, inside the fruits are the seeds."+
-//                    "These seeds must now go travelling."+
-//                    "Some will float through the air. "+
-//                    "Others will catch hold of an animal s fur."+
-//                    "Some will be dropped by animals that ate the fruits, and in each seed a plant waits to begin its life.",
-//
+    public String[] author = {
+            "Gerry Sarko",
+            "Susan Carter",
+            "Susan Carter",
+            "Jack London",
+            "Eric Carle",
+            "Susan Carter",
+            "Daniel Abraham",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Craig Benjamin",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Craig Benjamin",
+            "Gerry Sarko",
+            "Dave Wolverton",
+            "Craig Benjamin",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Craig Benjamin",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Patricia Munch",
+            "Chris van",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Alice Munro",
+            "Dave Wolverton",
+            "Susan Carter",
+            "Chris van",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+            "Susan Carter",
+
 
 
 
 
 
     };
-
-        }
+}

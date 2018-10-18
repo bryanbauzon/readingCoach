@@ -78,6 +78,8 @@ public class PoemReading extends AppCompatActivity {
         id_temp = intent.getStringExtra("id");
         title = intent.getStringExtra("title");
 
+
+
         txtTitle.setText(title);
 
         int id = Integer.parseInt(id_temp);
