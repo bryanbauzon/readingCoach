@@ -177,7 +177,6 @@ public class TerminologiesFragment extends Fragment {
                 @Override
                 public boolean onQueryTextChange(String newText) {
                     listviewAdapter.getFilter().filter(newText);
-
                     return true;
                 }
                 @Override

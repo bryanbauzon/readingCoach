@@ -315,7 +315,6 @@ public class Arrays {
             "Brahmanism",
             "Canoe",
             "Carnivorous",
-            "Chrysanthemum",
             "Chunk",
             "Cliché",
             "Cobbled",

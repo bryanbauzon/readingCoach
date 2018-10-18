@@ -11,6 +11,7 @@ public class GlobalVariable {
 
     //font
     public static Typeface font;
+    public static int fontType = 0;
 
 
     //page margin
@@ -20,7 +21,7 @@ public class GlobalVariable {
     public static int bottom = 0;
 
     //line spacing
-    public static float lineSpacing = 0;
+    public static int lineSpacing = 0;
 
 
     public static int color = 0;

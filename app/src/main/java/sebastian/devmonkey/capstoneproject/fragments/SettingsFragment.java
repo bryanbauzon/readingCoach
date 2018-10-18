@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import sebastian.devmonkey.capstoneproject.other.DatabaseHelper;
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 import sebastian.devmonkey.capstoneproject.R;
 
@@ -35,8 +36,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    int ctr = 0;
+    DatabaseHelper db;
 
     boolean smallB = false,mediumB = false, largeB = false,font1 = false,font2 = false, darkB = false, lightB = false;
     Button small;
@@ -97,50 +97,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         }
 
 
-//
-//        if(valueText.equals("small")){
-//            removeIndicatorsTextSize();
-//            small.setPaintFlags(large.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-//            small.setTextColor(getResources().getColor(R.color.orange));
-//        }else if(valueText.equals("medium")){
-//            removeIndicatorsTextSize();
-//            medium.setPaintFlags(large.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-//            medium.setTextColor(getResources().getColor(R.color.orange));
-//        }else if(valueText.equals("large")){
-//            removeIndicatorsTextSize();
-//            large.setPaintFlags(large.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-//            large.setTextColor(getResources().getColor(R.color.orange));
-//        }else{
-//            removeIndicatorsTextSize();
-//
-//        }
-//
-////
-//
-//        if(valueFont.equals("fonttype1")){
-//            removeIndicatorsTextSize();
-//            fontType1.setPaintFlags(fontType1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-//            fontType1.setTextColor(getResources().getColor(R.color.orange));
-//        }else if(valueFont.equals("fonttype2")){
-//            removeIndicatorsTextSize();
-//            fontType2.setPaintFlags(fontType1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-//            fontType2.setTextColor(getResources().getColor(R.color.orange));
-//        }else{
-//            removeIndicatorsTextSize();
-//
-//        }
-//
-//        if(valueTheme.equals("dark")){
-//            removeIndicatorsTextSize();
-//            dark.setPaintFlags(dark.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-//            dark.setTextColor(getResources().getColor(R.color.orange));
-//        }else if(valueTheme.equals("light")){
-//            removeIndicatorsTextSize();
-//            light.setPaintFlags(fontType1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-//            light.setTextColor(getResources().getColor(R.color.orange));
-//        }else{
-//            removeIndicatorsTextSize();
-//        }
+
 
 
     }
@@ -150,6 +107,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_settings,container,false);
+
+        db = new DatabaseHelper(getActivity());
 
          small = view.findViewById(R.id.btnSmall);
          medium = view.findViewById(R.id.btnMedium);
@@ -380,6 +339,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.btnFontType1:
+                GlobalVariable.fontType = 0;
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/serif.ttf");
                removeIndicatorFontType();
                 fontType1.setBackgroundResource(R.drawable.settingbuttons);
@@ -389,6 +349,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.btnFontType2:
+                GlobalVariable.fontType = 1;
                 GlobalVariable.font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/sanserif.ttf");
                 removeIndicatorFontType();
                 fontType2.setBackgroundResource(R.drawable.settingbuttons);
@@ -527,10 +488,6 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                         }
                     });
 
-
-
-
-
         }
     }
 
@@ -608,7 +565,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         GlobalVariable.lineSpacing = 0;
 
     }
-    private void methods(){
+    public void methods(){
         removeIndicatorTheme();
         removeIndicatorFontType();
         removeIndicatorsTextSize();
@@ -616,4 +573,13 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         removeIndicatorSpacing();
         reset();
     }
+
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        db.updateDataSettings(GlobalVariable.fontSize, GlobalVariable.fontType, GlobalVariable.color, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom, GlobalVariable.lineSpacing);
+    }
+
+
 }
