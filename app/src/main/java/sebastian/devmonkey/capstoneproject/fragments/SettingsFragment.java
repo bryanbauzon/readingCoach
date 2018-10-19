@@ -522,10 +522,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         editor.apply();
 
         lineSpacing.setBackgroundResource(R.drawable.deactivelinespacingb);
-        pageMargin1.setBackgroundResource(R.drawable.deactivelinespacingc);
-        small.setBackgroundResource(R.drawable.deactivelinespacingb);
-        fontType1.setBackgroundResource(R.drawable.deactivelinespacingc);
-        light.setBackgroundResource(R.drawable.deactivelinespacingb);
+        pageMargin1.setBackgroundResource(R.drawable.deactivemargina);
+        small.setBackgroundResource(R.drawable.settingbuttons);
+        fontType1.setBackgroundResource(R.drawable.settingbuttons);
+        light.setBackgroundResource(R.drawable.settingbuttons);
+
 
 
     }
@@ -575,11 +576,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
     }
 
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        db.updateDataSettings(GlobalVariable.fontSize, GlobalVariable.fontType, GlobalVariable.color, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom, GlobalVariable.lineSpacing);
-    }
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        db.updateDataSettings(GlobalVariable.fontSize, GlobalVariable.fontType, GlobalVariable.color, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom, GlobalVariable.lineSpacing);
+//    }
 
 
 }

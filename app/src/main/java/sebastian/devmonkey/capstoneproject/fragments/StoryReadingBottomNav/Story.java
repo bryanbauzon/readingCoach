@@ -199,8 +199,9 @@ public class Story extends Fragment {
             @Override
             public void onInit(int i) {
                 if(i != TextToSpeech.ERROR){
-                    textToSpeech.setLanguage(Locale.US);
-                    textToSpeech.setPitch(0.8f);
+                    textToSpeech.setLanguage(Locale.UK);
+                    textToSpeech.setPitch(0.7f);
+                    textToSpeech.setSpeechRate(0.8f);
                 }
             }
         });

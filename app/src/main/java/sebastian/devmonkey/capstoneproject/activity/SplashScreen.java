@@ -22,13 +22,6 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        db = new DatabaseHelper(this);
-
-        if(!db.SettingshasObject()){
-            db.insertDataSettings(GlobalVariable.fontSize, GlobalVariable.fontType, GlobalVariable.color, GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom, GlobalVariable.lineSpacing);
-        } else {
-            UpdateSettings();
-        }
 
 
 
@@ -37,9 +30,6 @@ public class SplashScreen extends AppCompatActivity {
                public void run() {
                    Intent intent =  new Intent();
                    //startActivity(new Intent(SplashScreen.this,MainActivity.class));
-
-
-
 
                    SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
                    boolean firstStart = prefs.getBoolean("firstStart",true);
@@ -67,33 +57,33 @@ public class SplashScreen extends AppCompatActivity {
 
 
 
-    private void UpdateSettings() {
-
-        Cursor cursor = db.viewDataSettings();
-
-
-        while (cursor.moveToNext()) {
-
-            GlobalVariable.fontSize = cursor.getInt(1);
-            GlobalVariable.fontType = cursor.getInt(2);
-            GlobalVariable.color = cursor.getInt(3);
-            GlobalVariable.left = cursor.getInt(4);
-            GlobalVariable.top = cursor.getInt(5);
-            GlobalVariable.right = cursor.getInt(6);
-            GlobalVariable.bottom = cursor.getInt(7);
-            GlobalVariable.lineSpacing = cursor.getInt(8);
-        }
-
-
-
-        if (GlobalVariable.fontType == 0) {
-            GlobalVariable.font = Typeface.createFromAsset(this.getAssets(), "fonts/serif.ttf");
-        } else if (GlobalVariable.fontType == 1) {
-            GlobalVariable.font = Typeface.createFromAsset(this.getAssets(), "fonts/sanserif.ttf");
-        }
-
-
-
-    }
+//    private void UpdateSettings() {
+//
+//        Cursor cursor = db.viewDataSettings();
+//
+//
+//        while (cursor.moveToNext()) {
+//
+//            GlobalVariable.fontSize = cursor.getInt(1);
+//            GlobalVariable.fontType = cursor.getInt(2);
+//            GlobalVariable.color = cursor.getInt(3);
+//            GlobalVariable.left = cursor.getInt(4);
+//            GlobalVariable.top = cursor.getInt(5);
+//            GlobalVariable.right = cursor.getInt(6);
+//            GlobalVariable.bottom = cursor.getInt(7);
+//            GlobalVariable.lineSpacing = cursor.getInt(8);
+//        }
+//
+//
+//
+//        if (GlobalVariable.fontType == 0) {
+//            GlobalVariable.font = Typeface.createFromAsset(this.getAssets(), "fonts/serif.ttf");
+//        } else if (GlobalVariable.fontType == 1) {
+//            GlobalVariable.font = Typeface.createFromAsset(this.getAssets(), "fonts/sanserif.ttf");
+//        }
+//
+//
+//
+//    }
 
 }

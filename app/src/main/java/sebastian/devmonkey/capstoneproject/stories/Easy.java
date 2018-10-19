@@ -6,7 +6,7 @@ public class Easy {
 
     public String[] story = {
             //500 MILES RACE
-            "People at the 1912 Indianapolis 500 automobile race were certain that Ralph DePalma would win. He had led for most of the 500-mile (BM-kilometer) race. Only a disaster could stop him from winning.Then it happened. Going into the last lap, his car suddenly stopped. DePalma jumped out and began to push it.\n\nAs he pushed, cars whizzed by at speeds of 160 km/h (100 mph). But he did not seem to mind. He slowly made his war toward the finish line.\nDePalmas car crossed the line just before Joe Dawson, the man in second place, roared past. But the prize went to Dawson. There is a rule that the winning car has to cross the finish line under its own power. ",
+            "People at the nineteen-twelve Indianapolis 500 automobile race were certain that Ralph DePalma would win. He had led for most of the 500-mile (BM-kilometer) race. Only a disaster could stop him from winning.Then it happened. Going into the last lap, his car suddenly stopped. DePalma jumped out and began to push it.\n\nAs he pushed, cars whizzed by at speeds of 160 km/h (100 mph). But he did not seem to mind. He slowly made his war toward the finish line.\nDePalmas car crossed the line just before Joe Dawson, the man in second place, roared past. But the prize went to Dawson. There is a rule that the winning car has to cross the finish line under its own power. ",
             //A CALL TO THE POOL
             "My name is Sam. Today is very hot. The sun is very strong. I am hot. I want to be cool. How can I get cool? \n  Wait...I know! \n I can go to the pool. The pool is cool. I can swim in the pool.\n Is the pool open?  Or is the pool closed? Where is the phone? I need to call the pool. I need to find out if the pool is open or closed. \n Hello. My name is Andrea. I am at the pool. Can I help you? \n Hi, Andrea. Is the pool open? \n Yes. The pool is open \n  Okay. Thank you! \n You are welcome. Bye! \n  Great! The pool is open! Now I can cool down!",
             //A HAPPY VISITOR
@@ -21,7 +21,7 @@ public class Easy {
                     "can,' says Anna s mom. The dog is happy.",
             //AIR BALLOON
             "The word balloon  has had an interesting history. \n"+
-                    "In 1600 the English played a game of football much like the modern game of rugby. The players either kicked a ball or hit it with their arms and hands. The bell was no large that the players wore wooden arm braces to keep from being hurt. \n"+
+                    "In sixteen-hundred the English played a game of football much like the modern game of rugby. The players either kicked a ball or hit it with their arms and hands. The bell was no large that the players wore wooden arm braces to keep from being hurt. \n"+
                     "Both the game and the bell were called balloon, which came horn the Punch word hellon. meaning a large hell. But I for larger bell was invented by the Montgolfier brothers of France in 1783. This was a huge beg Elled with hot air, which rose high above the earth. \n"+
                     "This. too, was called a balloon and led to the sort of balloons we have today.",
             //AIRPLANES
