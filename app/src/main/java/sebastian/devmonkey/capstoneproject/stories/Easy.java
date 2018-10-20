@@ -364,8 +364,7 @@ public class Easy {
                     "You will see that the grass is "+
                     "not as green anymore. "+
                     "If you leave the bucket in place for a week, the grass will become very dull. "+
-                    "This"+
-                    "happens because the grass cannot make food in the dark. Remove the bucket. "+
+                    "This happens because the grass cannot make food in the dark. Remove the bucket. "+
                     "In a few days, the grass "+
                     "will start turning green again.",
 
@@ -449,19 +448,19 @@ public class Easy {
                     "That is the worms winter home. Inside the case the worm turns into a fly and next summer the fly comes out of its case just as apples are growing sweet.",
 
 
-            "The human body has many parts. People have two arms and two legs.\n "+
+            "The human body has many parts. People have two arms and two legs. "+
                     "We have two hands and two feet.\n"+
                     "We have five fingers on each hand.\n "+
-                    "We have five toes on each foot.\n\n "+
+                    "We have five toes on each foot. "+
                     "We each have two eyes on our face.\n"+
                     "We see with our eyes.\n "+
                     "We each have two ears. We hear with our ears. We each have one nose on our face.\n "+
                     "We smell with our nose. We each have one tongue. We taste with our tongue. \n"+
-                    "We each have one\n\n"+
+                    "We each have one "+
                     "brain. We think with our brain. We each have two lungs in our chest.\n\n "+
                     "We breathe with our lungs.\n"+
                     "Humans can do many things. \n"+
-                    "People can walk. We use our legs and feet to walk. We can run. \n \n Running is "+
+                    "People can walk. We use our legs and feet to walk. We can run.  Running is "+
                     "faster than walking. "+
                     "We use our legs and feet to run. We can climb. We use our arms, hands, legs and"+
                     "feet to climb. "+
