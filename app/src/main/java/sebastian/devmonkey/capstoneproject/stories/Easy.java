@@ -6,7 +6,7 @@ public class Easy {
 
     public String[] story = {
             //500 MILES RACE
-            "People at the nineteen-twelve Indianapolis 500 automobile race were certain that Ralph DePalma would win. He had led for most of the 500-mile (BM-kilometer) race. Only a disaster could stop him from winning.Then it happened. Going into the last lap, his car suddenly stopped. DePalma jumped out and began to push it.\n\nAs he pushed, cars whizzed by at speeds of 160 km/h (100 mph). But he did not seem to mind. He slowly made his war toward the finish line.\nDePalmas car crossed the line just before Joe Dawson, the man in second place, roared past. But the prize went to Dawson. There is a rule that the winning car has to cross the finish line under its own power. ",
+            "People at the nineteen-twelve Indianapolis 500 automobile race were certain that Ralph De Palma would win. He had led for most of the 500-mile (BM-kilometer) race. Only a disaster could stop him from winning.Then it happened. Going into the last lap, his car suddenly stopped. DePalma jumped out and began to push it.\n\nAs he pushed, cars whizzed by at speeds of 160 km/h (100 mph). But he did not seem to mind. He slowly made his war toward the finish line.\nDePalmas car crossed the line just before Joe Dawson, the man in second place, roared past. But the prize went to Dawson. There is a rule that the winning car has to cross the finish line under its own power. ",
             //A CALL TO THE POOL
             "My name is Sam. Today is very hot. The sun is very strong. I am hot. I want to be cool. How can I get cool? \n  Wait...I know! \n I can go to the pool. The pool is cool. I can swim in the pool.\n Is the pool open?  Or is the pool closed? Where is the phone? I need to call the pool. I need to find out if the pool is open or closed. \n Hello. My name is Andrea. I am at the pool. Can I help you? \n Hi, Andrea. Is the pool open? \n Yes. The pool is open \n  Okay. Thank you! \n You are welcome. Bye! \n  Great! The pool is open! Now I can cool down!",
             //A HAPPY VISITOR
@@ -17,7 +17,7 @@ public class Easy {
                     "sees a small dog. The dog is wet. The dog is wet from the rain. 'Awww! You are all wet!' Anna says to"+
                     "the dog. 'You are very cute!' 'Mom!' Anna says. 'Yes, dear?says Anna s mom. There is a dog here!"+
                     "There is a dog at the door!' Anna says. 'What?' says Anna s mom.\n\n A dog? Anna s mom comes to the"+
-                    "door. Anna s mom sees the wet dog. The wet dog looks cute. 'Can we keep it? asks Anna. Yes, we"+
+                    "door. Anna s mom sees the wet dog. The wet dog looks cute. 'Can we keep it? asks Anna. Yes, we "+
                     "can,' says Anna s mom. The dog is happy.",
             //AIR BALLOON
             "The word balloon  has had an interesting history. \n"+
@@ -390,7 +390,7 @@ public class Easy {
                     "Third,"+
                     "helicopters can use their rotors to hover in the air (stay in one place) which is impossible for planes."+
                     "Because helicopters can perform actions that airplanes cannot, they are used for different tasks.  \n Since"+
-                    "helicopters can take off without moving forward, they do not need a runway for take off. "+
+                    " helicopters can take off without moving forward, they do not need a runway for take off. "+
                     "They are used "+
                     "in congested areas where there is no room for airplanes or in isolated areas which do not have airports."+
                     "Because they can hover, they are used on fire fighting missions to drop water on fires. "+
@@ -614,9 +614,9 @@ public class Easy {
             "Hi, my name is Eric. I am 12. I want to talk about my family. I have two sisters. "+
                     "Their names are Rachel"+
                     "and Carrie. Rachel is 18 years old. Carrie is 10 years old. "+
-                    "They are very nice. My mother s name is Julia."+
+                    "They are very nice. My mother's name is Julia."+
                     "She is 40 years old. My mother is also very nice. "+
-                    "My father s name is Andre. He is smart. He is an"+
+                    "My father's name is Andre. He is smart. He is an"+
                     "engineer. He builds bridges. "+
                     "I also have a dog. My dog s name is Paw. He is a big dog. He is a brown dog."+
                     "He is a big brown dog. "+

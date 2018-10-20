@@ -81,7 +81,7 @@ public class Intermediate {
                     "The Amazon rain forest gets its life from the majestic Amazon River,"+
                     "the worlds second-largest river, which runs directly through the heart of the region."+
                     "The rain forest itself is simply the drainage basin for the river and its many tributaries."+
-                    "The vast forest itself consists of four layers,"+
+                    "The vast forest itself consists of four layers, "+
                     "each featuring its own ecosystems and specially adapted plants and animals.\n\n"+
                     "The forest floor is the lowest region."+
                     "Since only 2 percent of the sunlight filters through the top layers to the understory,"+
