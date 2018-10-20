@@ -471,68 +471,18 @@ public class Hard {
             "management facility. He is now one of New Orleans' few multimillionaires. 'So, I have all this money"+
             "now and live to help others,' said Mr. Fanchon. 'That is why I’ve helped you.",
 
-                "Josiah Hodge collapsed in a seat at the Cafe du Monde restaurant in New Orleans. He put his head in his"+
-            "hands and let out a deep sigh. Josiah had come to New Orleans to do a public service. He had come up"+
-            "with the idea to develop a play for children affected by Hurricane Katrina, and he had secured a modest"+
-            "grant from the government to do so. But he hadn’t accounted for the major hindrance he would face:"+
-            "blistering heat in August with no clean water to drink. Buying water for his crew of 38 volunteers for"+
-            "weeks on end would be far too expensive to do on his shoestring budget, and he had no one to turn to"+
-            "on such short notice for help. Josiah feared he would have to close up the production and return home."+
-            "As he sipped on a glass of soda, he found it ironic that water, which flooded this city and left many"+
-            "residents without homes or hope, would now be his downfall as he tried to spread the joy of theater to"+
-            "its children. 'Hello, sir,' a man at the table next to him said. 'What brings you to New Orleans?' Josiah"+
-            "shook his head. Later, he would find it amusing that this man knew just by looking that Josiah was not a"+
-            "local. \n"+
-            "  For now, he was just tired and irritated. 'Look, I don’t mean to be rude, but I’ve had a bad day,"+
-            "Josiah said. 'I don’t much feel like talking. 'What brings you to town?' the man said, pleasantly. Josiah"+
-            "grudgingly talked a bit about his work as a theater director in Manhattan and his dream to bring a top-"+
-            "flight play to the children of New Orleans. The next day, as Josiah left a blazing hot outdoor studio, he"+
-            "noticed the same man from the restaurant, parked on the street. A shock of fluffy white hair framed his"+
-            "dark face, making him look almost saintly. 'Look, sir, what do you want? 'To help. 'How? 'What do"+
-            "you need? 'What I really need is clean water. That’s all I need. 'Josiah turned and walked away. He had"+
-            "been rude, he knew, but he was so frustrated by this problem. When he arrived back at his hotel room"+
-            "that evening, the front desk clerk handed Josiah an unmarked envelope. Inside was a check for $2,000."+
-            "The memo line read, 'For water.' Josiah was flabbergasted. Who was this man” As he pondered his"+
-            "good fortune, the phone rang in his hotel room. 'Will that get you some water?' a voice said on the"+
-            "other end. 'Why, yes, yes it will,' Josiah said. 'Thank you so much for your generosity.'My wife and I"+
-            "would like to take you to dinner.' Josiah could not refuse! This man was his savior, and his curiosity had"+
-            "gotten the best of him. Who was this benefactor” At dinner, Etienne Fanchon and his wife, Adelaide,"+
-            "formally introduced themselves. Mr. Fanchon never graduated from high school, but inherited 5 acres of"+
-            "land from his father upon his death. For years, Mr. Fanchon grew cucumbers on the land, barely making"+
-            "a living. \n"+
-            "  One day, a neighbor offered Fanchon a bag of money if Mr. Fanchon would let him bury three"+
-            "old trucks at the back of his property. Mr. Fanchon took the bag and agreed. Later, he could not believe"+
-            "how much money was in the bag. 'And just for letting him bury some trucks!' The next morning, Mr."+
-            "Fanchon said, he woke up, picked all the cucumbers off his land, and converted the 5 acres into a waste"+
-            "management facility. He is now one of New Orleans' few multimillionaires. 'So, I have all this money"+
-            "now and live to help others,' said Mr. Fanchon. 'That is why I’ve helped you.",
+                "I was glad when somebody told me, \"You may go and collect Negro folklore.\" In a way, it would not be a new experience for me. \n" +
+                        "When I pitched headforemost into the world I landed in the crib of Negroism. It was fitting me like a tight chemise. I couldn't see it for wearing it. It was only when I was off in college, away from my native surroundings, that I could stand off and look at my garment. \n" +
+                        "Then I had to have the spy-glass of anthropology to look through. I was asked where I wanted to work and I said, “Florida. It’s a place that draws people—Negroes from every Southern state and some from the North and West.” So I knew that it was possible for me to get a cross section of the Negro South in one state. And then I realized that I felt new myself, so it looked sensible for me to choose familiar ground. I started in Eatonville, Florida, because I knew that the town was full of material and that I could get it without causing any hurt or harm. " +
+                        "\nAs early as I could remember, it was the habit of the men particularly to gather on the store porch in the evenings and swap stories. Even the women would stop and break a breath with them at times. As a child when I was sent down to the store, I'd drag out my leaving to hear more. Folklore is not as easy to collect as it sounds. The ideal source is where there are the fewest outside influences, but these people are reluctant at times to reveal that which the soul lives by. I knew that even I would have some hindrance among strangers. But here in Eatonville I knew everybody was going to help me.",
 
                 //
                 "  The relationship between my mother, sister and me had been cold and inimical for as long as I could "+
                         "remember. To me, my mother was irrational, hurling hurtful invectives for the slightest infraction."+
                         "Don’t matter, 'my mother grumbled when I asked her where she moved my watercolor paints. 'It isn’t"+
                 "like you got talent.' The time our mailbox got knocked off she somehow got it in her head that I was the "+
-                "culprit. 'Never respected nothing"," I heard her say. And my sister took my mother’s side against me "+
-            "every time. Five years my senior, Tammy seemed not to have a brain in her head. \n "+
-            "  She dithered about"+
-            "everything, incapable of making any firm decision. No matter how often my mother deprecated her"+
-            "dumb, ugly, fat' 'Tammy made futile attempts to fawn her way back into mother’s good graces. My"+
-            "father would pontificate, 'You three are more alike than you know.' In April of 2000, my mother kicked"+
-            "us both out of the house. (Dad had been exiled many years before.) After that, my sister and I went our"+
-            "separate ways. It was then that I began having recurring dreams. In one, I am running to catch up with a"+
-            "woman. Each time I get near, I trip and fall. Another woman, smiling and shouting my name, comes with"+
-            "great alacrity and offers her hand, but when I reach to grab it, she disappears. In another, a female"+
-            "professor hands me a test. Although I have spent hours studying for it, I know none of the answers. \n"+
-            "  The professor derides me for my poor performance. I watch while she relays my ignorance to the class with"+
-            "comic hilarity. These dreams were not hard to understand. In fact, it was just the opposite; they were"+
-            "pellucid, and absent any knowledge of dream interpretation, I was still able to devise their significance. I"+
-            "knew that they both reflected the pugnacious relationship I shared with my mother and sister. However,"+
-            "there was one dream I could never quite construe. I bite into an apple. All my teeth fall out. I had this"+
-            "dream far more than any of the others. Years later, in an effort to heal our fractious relationship, Mom,"+
-            "Tammy and I elected to go to counseling together. After several sessions, I told my dream about teeth"+
-            "tumbling out of my head. 'My God, Crystal,' said my mother. 'I’ve had the exact same dream many"+
-            "times. 'Me, too,' said Tammy solemnly. Breakthrough” No idea. But I was reminded of the words of"+
-            "my now-dead father. Maybe the three of us are more alike than we know.",
+                "culprit. 'Never respected nothing",
+
 
                 "It's 8pm. Mr. Smith (Jack) and Mrs. Smith (Jill) are celebrating their 10th wedding anniversary. They have just arrived at the restaurant.\n"+
 
@@ -636,72 +586,53 @@ public class Hard {
                         "is crying.' But that won't stop the fun. Rain or shine, it's a fine day to get wet.",
 
 
-                "If you enjoy watching crime shows on TV, you know that fingerprints play a large role in identifying"+
-                        "people. But, you might be surprised to find out that using fingerprints for identification is not a new"+
-                        "science. In fact, it is very old '' dating back at least as far as 1885-1913 B.C.E. In Babylon, when people"+
-                        "agreed to a business contract, they pressed their fingerprints into the clay in which the contract was"+
-                        "written. Thumbprints have also been found on clay seals from ancient China. In 14th century Persia,"+
-                        "which is now Iran, a government doctor recognized that all fingerprints are different. In 1684, a British"+
-                        "doctor, Nehemiah Grew, spoke about the ridged surfaces of the fingers. In 1686, a professor of anatomy"+
-                        "(the study of the structure of the human body) named Marcello Malpighi, wrote about the ridges and"+
-                        "loops in fingerprints. Malpighi's work was considered so important that a layer of skin found on the"+
-                        "fingertips was named after him. This layer of skin is called the Malpighian layer. \n"+
-                        "Although scientists had"+
-                        "studied fingerprints, the value of fingerprinting in the identification of individuals did not become clear"+
-                        "until later. Sir William James Herschel is generally thought to be the first European to realize that"+
-                        "fingerprints were unique to each person. In his work as chief magistrate in the Hoogly district in"+
-                        "Jungipoor, India, Herschel asked people to put their handprints on contracts. Herschel believed that"+
-                        "personal contact with the contracts made people more likely to honor their commitments, or to keep"+
-                        "their promises. As he looked at more and more handprints, he began to see that all the handprints were"+
-                        "different. He started to believe that fingerprints were unique, which means they are all different from"+
-                        "each other, and permanent, which means that they do not ever change. To prove that they never"+
-                        "change, Herschel kept track of his own fingerprints over his entire lifetime. Dr. Henry Faulds, a British"+
-                        "surgeon at a Japanese hospital, began studying the furrows (also called ridges) on fingertips in the"+
-                        "1870s. He published an article in a scientific journal about the use of fingerprints as a tool in"+
-                        "identification. He also devised, or invented, a system of classifying fingerprints. He wrote Charles Darwin"+
-                        "about his findings, but Darwin was getting too old to work on the findings. So, he promised to pass the"+
-                        "information to his cousin, Sir Francis Galton. Using Henry Fault’s findings, Galton published a major"+
-                        "book on classifying fingerprints based on arches, loops, and whorls. His work with Sir Edward R. Henry"+
-                        "on fingerprint classification was the basis of a classification system which is still used by law "+
-                        "enforcement agencies in English ‘speaking countries. \n "+
-                        "The Federal Bureau of Investigation (FBI) now uses"+
-                        "a variation of the Galton' Henry system. Although the use of fingerprinting in identification originated in"+
-                        "Britain, it has been developed in the United States. In 1924, two large fingerprint collections were"+
-                        "combined to form the foundation of the Identification Division of the FBI. Within the Identification"+
-                        "Division, the Integrated Automated Fingerprint Identification Systems (IAFIS) can search and find"+
-                        "fingerprints anywhere in the United States within thirty minutes. The IAFIS can compare results with"+
-                        "automated fingerprint systems in countries around the world. The IAFIS has the fingerprints of more"+
-                        "than 250 million people on file. About one in six Americans has fingerprints on file with the FBI. But not"+
-                        "all the fingerprints are related to criminal investigations. People need to have their fingerprints taken for"+
-                        "many other reasons. People have their fingerprints taken for employment, licenses, and adoption. For"+
-                        "example, when people want to work for the government in classified, secret jobs, their fingerprints are"+
-                        "checked to be sure they do not have a criminal background. When prospective parents adopt a child, "+
-                        "their fingerprints are matched against those of all criminals for the safety of the child.",
+                "Europe is the second smallest continent, after Australia. Surprisingly, there are 44 countries in Europe. Over 700 million people live in Europe. European ideas are everywhere in the world. You can see examples of European culture, language, and buildings all around the world. In sports, European soccer is very popular. " +
+                        "\nSoccer teams from Europe have gone to the World Cup finals every year except 1930 and 1950. Many people say that the British, Italian, and Spanish soccer leagues are the world’s best. Cycling is also very popular in Europe – especially in France. The Tour de France is the biggest bicycle race in the world. In 1903, when the race first began, racers had to ride along the entire border of France. " +
+                        "\nThat’s a long distance! In industry, Germany makes the most cars in Europe. In fact, if you visit Germany, you can go on a tour of the BMW factory. You can also go on a tour of the Porsche factory in Stuttgart, Germany. England is famous for china and pottery. Of course, the Champagne region in France is famous for its wine. Only a certain famous, bubbly wine from this area can be called by the name “champagne.” " +
+                        "\nFlower farming is an important industry in Holland. Holland is famous for its tulips. Europe is also famous for its food. The oldest cookbook in Europe was called De Re Coquinaria, or, “The Art of Cooking”. It was written in Latin. There is much controversy over the identity of the book’s author. Some people think the book was written by a very good cook named Marcus Gavius Apicus. Others don’t think that this book came from him. The book does not tell how to prepare the dishes, but it does tell what to put in each dish. European historical architecture are among the most well–known in the world. One example of a famous architectural structure is called “Stonehenge,” in England. " +
+                        "\nStonehenge has many, very large stones set up in circles. No one knows why the stones were set up that way, because it was at a time before history was recorded. Many people think Stonehenge is holy. In addition to Stonehenge, The “Acropolis” in Athens, Greece is also very famous for its architectural structures. The Acropolis is a flat–topped hill, which lies about 150 meters above sea level. Many historical temples and other buildings were built on the Acropolis. The Acropolis is a huge tourist site. About 14 million people visit this location each year. Modern European buildings are also tourist sites. The Eiffel Tower is the fifth tallest building in France. When it was built in 1889, it was the world’s tallest building. " +
+                        "\nMore than 200,000,000 people have visited the Eiffel Tower since it was built. It was named after Gustave Eiffel, who designed it. It is now a symbol of France. The year 2009 marks the 150th birthday of another famous tourist site in Europe: Big Ben. Big Ben is located atop the Westminster Palace in London, England. Big Ben is the largest four–faced chiming clock in the world. Chiming clocks are clocks that use bells to make their sound. Big Ben is a universal symbol of the United Kingdom. Many European cities are famous for their churches and castles. The Sistine Chapel in the Vatican is the place where cardinals, very high Catholic bishops, meet to pick a new pope. The ceiling of the Sistine Chapel was painted by the artist Michelangelo. " +
+                        "\nThe Cathedral of Seville, Spain, is also very magnificent. This grand cathedral is beautifully decorated with outstanding colors. It is also the place where Christopher Columbus is buried. England is now getting ready for the 2012 Olympics. About 4,000 companies and 15,000 workers are working to get the city of Stratford ready. The workers are building a new shopping center and many new hotels, with about 2,000 hotel rooms just for Olympics visitors! Since so many people live in Europe, they expect many visitors. As the Olympic planners say, London, England is less than a 3–hour flight away for more than 300 million people.",
 
-                "The unmistakable Florida manatee is mostly grayish or brown, oftentimes with algae growing on its thick, wrinkled skin."+
-                        "It is perfectly adapted for life in tropical waters. The body of the Florida manatee is similar to that of a seal, "+
-                        "and its face resembles the face of a walrus without the tusks. Manatees have specialized forelimb flippers that enable them to move through the water "+
-                        "with great agility. The manatee's flippers also enable it to grasp food and bring it to the mouth."+
-                        "Manatees have nostrils located at the tops of their heads for easy breathing. "+
-                        "Nostrils also have tight-fitting flaps that keep water out when they're underwater. "+
-                        "Manatees have incredible lung capacity and can stay underwater for as long as 15 minutes. "+
-                        "Their presence is often revealed by powerful gusts of air (breaths) at the surface of the water."+
-                        "Their powerful, flat tails help propel their massive bodies through the water. Florida manatees are typically ten feet in length and weigh over 1,000 pounds. "+
-                        "The Florida manatee is actually a subspecies of the more widespread West Indian manatee.\n "+
-                        "The Florida manatee summers through much of the East and Gulf Coasts. "+
-                        "Individuals may wander as far north as Virginia and as far west as Louisiana in both fresh and salt water. "+
-                        "In winter, manatees migrate to warm waters off the coasts of Florida and Georgia. Hundreds of manatees may congregate in winter near large cities such as "+
-                        "Tampa and Fort Lauderdale, Florida. Manatees rarely survive in water that dips below 68 degrees Fahrenheit. "+
-                        "Manatees are known as 'gentle giants' and are purely herbivorous. Manatees eat vast amounts of aquatic plants. "+
-                "A manatee may eat as much as 15 percent of its body weight per day. Manatees are slow-moving animals. They are even slower to reproduce. \n"+
-                "Females become mature after five to nine years and have calves every two to five years. Young manatees nurse their young underwater and stay with their mothers for"+
-                "about two years. Manatee populations have plummeted in America over the last few decades. While natural causes such as disease, red tide, and stress brought on "+
-                "by cold water have certainly had an impact on population, much of the manatee's decline can be attributed to human activity. The destruction of the manatee's "+
-                "wetland habitats for housing developments has been the primary cause of the animal's decline. As humans populated southern Florida at an astonishing rate in the "+
-                "last few decades, they increasingly came into contact with manatees. Collisions with boats and lacerations inflicted by boat propellers resulted in the deaths of "+
-                "thousands of manatees. Pollution of coastal waters and the careless disposal of fishing lines and other objects into manatee waters exacerbated the problem. "+
-                "Today, however, strict laws have been implemented, making those who interfere with manatees subject to fines and even imprisonment. Many organizations have "+
-                "launched programs aimed at saving manatees and educating the public.",
+                "If you enjoy watching crime shows on TV, you know that fingerprints play a large role in identifying\n" +
+                        "people. But, you might be surprised to find out that using fingerprints for identification is not a new\n" +
+                        "science. In fact, it is very old –– dating back at least as far as 1885-1913 B.C.E. In Babylon, when people\n" +
+                        "agreed to a business contract, they pressed their fingerprints into the clay in which the contract was\n" +
+                        "written. Thumbprints have also been found on clay seals from ancient China. In 14th century Persia,\n" +
+                        "which is now Iran, a government doctor recognized that all fingerprints are different. In 1684, a British\n" +
+                        "doctor, Nehemiah Grew, spoke about the ridged surfaces of the fingers. In 1686, a professor of anatomy\n" +
+                        "(the study of the structure of the human body) named Marcello Malpighi, wrote about the ridges and\n" +
+                        "loops in fingerprints. Malpighi’s work was considered so important that a layer of skin found on the\n" +
+                        "fingertips was named after him. This layer of skin is called the Malpighian layer. Although scientists had\n" +
+                        "studied fingerprints, the value of fingerprinting in the identification of individuals did not become clear\n" +
+                        "until later. Sir William James Herschel is generally thought to be the first European to realize that\n" +
+                        "fingerprints were unique to each person. In his work as chief magistrate in the Hoogly district in\n" +
+                        "Jungipoor, India, Herschel asked people to put their handprints on contracts. Herschel believed that\n" +
+                        "personal contact with the contracts made people more likely to honor their commitments, or to keep\n" +
+                        "their promises. As he looked at more and more handprints, he began to see that all the handprints were\n" +
+                        "different. He started to believe that fingerprints were unique, which means they are all different from\n" +
+                        "each other, and permanent, which means that they do not ever change. To prove that they never\n" +
+                        "change, Herschel kept track of his own fingerprints over his entire lifetime. Dr. Henry Faulds, a British\n" +
+                        "surgeon at a Japanese hospital, began studying the furrows (also called ridges) on fingertips in the\n" +
+                        "1870s. He published an article in a scientific journal about the use of fingerprints as a tool in\n" +
+                        "identification. He also devised, or invented, a system of classifying fingerprints. He wrote Charles Darwin\n" +
+                        "about his findings, but Darwin was getting too old to work on the findings. So, he promised to pass the\n" +
+                        "information to his cousin, Sir Francis Galton. Using Henry Faulds’s findings, Galton published a major\n" +
+                        "book on classifying fingerprints based on arches, loops, and whorls. His work with Sir Edward R. Henry\n" +
+                        "on fingerprint classification was the basis of a classification system which is still used by law\n" +
+                        "enforcement agencies in English–speaking countries. The Federal Bureau of Investigation (FBI) now uses\n" +
+                        "a variation of the Galton– Henry system. Although the use of fingerprinting in identification originated in\n" +
+                        "Britain, it has been developed in the United States. In 1924, two large fingerprint collections were\n" +
+                        "combined to form the foundation of the Identification Division of the FBI. Within the Identification\n" +
+                        "Division, the Integrated Automated Fingerprint Identification Systems (IAFIS) can search and find\n" +
+                        "fingerprints anywhere in the United States within thirty minutes. The IAFIS can compare results with\n" +
+                        "automated fingerprint systems in countries around the world. The IAFIS has the fingerprints of more\n" +
+                        "than 250 million people on file. About one in six Americans has fingerprints on file with the FBI. But not\n" +
+                        "all the fingerprints are related to criminal investigations. People need to have their fingerprints taken for\n" +
+                        "many other reasons. People have their fingerprints taken for employment, licenses, and adoption. For\n" +
+                        "example, when people want to work for the government in classified, secret jobs, their fingerprints are\n" +
+                        "checked to be sure they do not have a criminal background. When prospective parents adopt a child,\n" +
+                        "their fingerprints are matched against those of all criminals for the safety of the child.",
 
                 "When her grandmother's health began to deteriorate in the fall of 1994, Mary would make the drive"+
                         "from Washington, DC to Winchester, VA every few days. She hated highway driving, finding it ugly and"+
@@ -742,19 +673,6 @@ public class Hard {
                         "thought was love.",
 
 
-                "Versailles is the site of the Palace of Versailles, one of the most storied buildings in the history of France. It was originally built as a hunting chateau by"+
-                        "King Louis VIII in 1624. In 1669, King Louis XIV began searching for a grand site where he could conduct the affairs of France and control the government."+
-                        " He settled on the hunting palace and expanded it into the world’s largest palace. In addition, the king hoped to build a governmental center apart from Paris. "+
-                        "The palace took 36,000 workers 50 years to build. \n"+
-                        "The palace is spread out over 280 acres and can house 20,000 people! "+
-                        "The palace features over 700 rooms and 67 staircases. There are dozens of unique rooms, features, gardens, and halls. One of the most renowned rooms of the "+
-                        "Palace of Versailles is the Hall of Mirrors. Recently restored, the Hall of Mirrors is the centerpiece of the dazzling building. "+
-                        "Originally added to the palace in 1684, the Hall of Mirrors was built to be a dazzling display of the power and wealth of the French monarchy. "+
-                        "The hall, which measures 73 meters in length, features 357 gold-coated stucco mirrors, ornate paintings, crystal chandeliers, marble fixtures, a parquet floor, "+
-                        "and ceilings with colorful murals painted by artist Charles Le Brun. \n\nThe Hall of Mirrors has also played a prominent role in history. "+
-                        "Both the Proclamation of the German Empire in 1871, after the Franco-Prussian War, and the signing of the Treaty of Versailles that formally ended World War I, "+
-                        "were signed there.",
-
                 "I charge Gilray's unreasonable to his ignoble passion for cigarettes; and the story of his flower-pot has therefore an obvious moral. "+
                         "The want of dignity he displayed about that flower-pot, on his return to London, would have made any one sorry for him. I had my own work to look after, "+
                         "and really could not be tending his chrysanthemum all day. After he came back, however, there was no reasoning with him, and I admit that I never did water his plant,"+
@@ -785,8 +703,9 @@ public class Hard {
                         "is surely sufficient. It is not so, however, when Gilray is one of them. I soon hated the sight of my name in his handwriting. It was not as if he had said outright "+
                         "that he wrote entirely to know whether I was watering his plant. His references to it were introduced with all the appearance of afterthoughts. Often they took the "+
                         "form of postscripts: 'By the way, are you watering my chrysanthemum?' or, 'The chrysanthemum ought to be a beauty by this time 'or, 'You must be quite an adept now "+
-            "at watering plants.' Gilray declares now that, in answer to one of these ingenious epistles, I wrote to him saying that 'I had just been watering his chrysanthemum."+
-            "My belief is that I did no such thing",
+                        "at watering plants.' Gilray declares now that, in answer to one of these ingenious epistles, I wrote to him saying that 'I had just been watering his chrysanthemum."+
+                        "My belief is that I did no such thing",
+
 
                 "The storks you often see in pictures are white storks. People used to say that they brought new babies."+
                         "(They do. They bring baby storks.)"+
@@ -1245,23 +1164,9 @@ public class Hard {
                         "effects will continue to increase, and that some species of animals will become extinct. There is also"+
                         "general agreement, or consensus, that humans need to take steps to reduce emissions of waste"+
                         "products and greenhouse gases into the atmosphere, make adaptations to the changes that are"+
-                        "occurring, and figure out ways of reversing the trends of pollution and global warming.",
+                        "occurring, and figure out ways of reversing the trends of pollution and global warming."
 
-                "Peru's Inca Indians first grew potatoes in the Andes Mountains in about 200 BC. Spanish conquistadors brought potatoes to Europe, and colonists brought them to "+
-                        "America. Potatoes are fourth on the list of the world's food staples after wheat, corn, and rice. Today, Americans consume about 140 pounds of potatoes per person "+
-                        "every year, while Europeans eat twice as many. One of our favorite ways to eat potatoes is in the form of potato chips. While Benjamin Franklin was the American "+
-                        "ambassador to France, he went to a banquet where potatoes were prepared in 20 different ways. Thomas Jefferson, who succeeded Franklin as our French ambassador,"+
-                        "brought the recipe for thick-cut, French-fried potatoes to America. He served French fries to guests at the White House in 1802 and at his home, Monticello.\n"+
-                        "A Native American chef named George Crum created the first potato chips on August 24, 1853, at Moon Lake Lodge in Saratoga, New York. He became angry when a diner "+
-                        "complained that his French fries were too thick, so he sliced the potatoes as thinly as possible, making them too thin and crisp to eat with a fork. The diner loved "+
-                "them, and potato chips were born. In 1860, Chef Crum opened his own restaurant and offered a basket of potato chips on every table. Joe 'Spud' Murphy and Seamus Burke"+
-                "produced the world's first seasoned crisps, cheese & onion and salt & vinegar chips, in the 1950s in Ireland.\n"+
-                "In the United Kingdom and Ireland, crisps are what "+
-                "we, in the United States, call potato chips, while their chips refer to our French fries. Ketchup-flavored chips are popular in the Middle East and Canada. Seaweed"+
-                "flavored chips are popular in Asia, and chicken-flavored chips are popular in Mexico. Other flavors from around the world include: paprika, pickled onion, béarnaise, "+
-                "meat pie, chili crab, salmon teriyaki, borscht, Caesar salad, roasted sausage, firecracker lobster, roast ox, haggis and black pepper, olive, and spaghetti. About 27"+
-                "pounds of potato chips are produced from 100 pounds of potatoes. Americans consume 2-4 billion pounds of potato chips every year and spend more than $7 billion a "+
-                "year on them.",
+
 
 
         };
@@ -1297,7 +1202,10 @@ public class Hard {
                 "Susan Carter",
                 "George Walk",
                 "Susan Carter",
+                "Susan Carter",
+                "Eric Carle",
                 "J.M. Barrie",
+                "Susan Carter",
                 "Susan Carter",
                 "Susan Carter",
                 "Craig Benjamin",

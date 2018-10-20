@@ -211,7 +211,7 @@ public class Story extends Fragment {
         StringBuffer stringBuffer = new StringBuffer();
         if(level.equals("easy")){
 
-            for(int x = 0; x <= easy.story.length; x++){
+            for(int x = 0; x < easy.story.length; x++){
                 if(id == x){
                     txtContent.setText(easy.story[x]);
                     txtAuthor.setText(easy.author[x]);
@@ -221,7 +221,7 @@ public class Story extends Fragment {
 
 
         }else if(level.equals("intermediate")){
-            for(int x = 0; x <= intermediate.story.length;x++){
+            for(int x = 0; x < intermediate.story.length;x++){
                 if(id==x){
                     txtContent.setText(intermediate.story[x]);
                     txtAuthor.setText(intermediate.author[x]);
@@ -233,11 +233,11 @@ public class Story extends Fragment {
 
 
         }else  {
-            for(int x = 0;x <= hard.story.length; x++){
+            for(int x = 0;x < hard.story.length; x++){
                 if(id == x){
                     txtContent.setText(hard.story[x]);
+                    txtAuthor.setText(hard.author[x]);
                 }
-                txtAuthor.setText("Susan Carter");
             }
 
         }
