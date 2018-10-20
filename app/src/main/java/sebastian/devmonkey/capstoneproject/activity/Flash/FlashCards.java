@@ -53,7 +53,9 @@ public class FlashCards extends AppCompatActivity {
             @Override
             public void onInit(int i) {
                 if(i !=TextToSpeech.ERROR){
-                    tts.setLanguage(Locale.US);
+                    tts.setLanguage(Locale.UK);
+                    tts.setPitch(0.7f);
+                  //  textToSpeech.setSpeechRate(0.8f);
                 }
             }
         });

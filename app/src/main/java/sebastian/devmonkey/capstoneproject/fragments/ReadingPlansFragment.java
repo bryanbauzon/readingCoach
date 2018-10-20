@@ -72,7 +72,9 @@ TextToSpeech tts;
             @Override
             public void onInit(int i) {
                 if(i !=TextToSpeech.ERROR){
-                    tts.setLanguage(Locale.US);
+                    tts.setLanguage(Locale.UK);
+                    tts.setPitch(0.7f);
+                    tts.setSpeechRate(0.8f);
                 }
             }
         });
