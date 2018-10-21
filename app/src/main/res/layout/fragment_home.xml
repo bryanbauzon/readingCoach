@@ -53,22 +53,21 @@
                     android:textSize="15sp"
                     android:fontFamily="s"
                     />
+
                 <Button
-                    android:padding="10dp"
+                    android:id="@+id/btnRedirect"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#f1f1f1"
-                    android:id="@+id/btnRedirect"
                     android:layout_above="@+id/trivia"
-
-                    android:text="HELLO WORLD"
-                    android:textStyle="bold"
-                    android:background="@drawable/test"
-                    android:textSize="20sp"
-
                     android:layout_alignParentBottom="true"
-/>
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/test"
+                    android:padding="10dp"
+                    android:text="HELLO WORLD"
+                    android:textColor="#f1f1f1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
 </FrameLayout>

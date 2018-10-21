@@ -712,17 +712,6 @@ public class Arrays {
                     "MATHEMATICS\n" +
                     "relating to, based on, or denoting mathematical proofs that show how an entity may in principle be constructed or arrived at in a finite number of steps.",
 
-            "con·trive\n" +
-                    "k?n'triv/Submit\n" +
-                    "verb\n" +
-                    "verb: contrive; 3rd person present: contrives; past tense: contrived; past participle: contrived; gerund or present participle: contriving\n" +
-                    "create or bring about (an object or a situation) by deliberate use of skill and artifice.\n" +
-                    "\"his opponents contrived a crisis\"\n" +
-                    "synonyms:\tbring about, engineer, manufacture, orchestrate, stage-manage, create, devise, concoct, construct, plan, fabricate, plot, hatch; More\n" +
-                    "manage to do something foolish or create an undesirable situation.\n" +
-                    "\"the poor guy in some way contrived to hang himself\"\n" +
-                    "synonyms:\tbring about, engineer, manufacture, orchestrate, stage-manage, create, devise, concoct, construct, plan, fabricate, plot, hatch; informalwangle, set up\n" +
-                    "\"his opponents contrived a cabinet crisis\"",
 
 
 
@@ -2416,6 +2405,35 @@ public class Arrays {
                     "a moth, typically yellow-brown in color, with fast darting flight. The eggs are scattered in flight and the larvae live underground feeding on roots, where they can be a serious pest.\n" +
                     "3.\n" +
                     "a light, adjustable reel for holding a skein of silk or wool.",
+
+
+            "swift/Submit\n" +
+                    "adjective\n" +
+                    "adjective: swift; comparative adjective: swifter; superlative adjective: swiftest\n" +
+                    "1.\n" +
+                    "happening quickly or promptly.\n" +
+                    "\"a remarkably swift recovery\"\n" +
+                    "synonyms:\tprompt, rapid, sudden, immediate, instant, instantaneous; abrupt, hasty, hurried, precipitate, headlong\n" +
+                    "\"a swift decision\"\n" +
+                    "antonyms:\tunhurried\n" +
+                    "moving or capable of moving at high speed.\n" +
+                    "\"the water was very swift\"\n" +
+                    "synonyms:\tfast, rapid, quick, speedy, high-speed, fast-paced, brisk, lively; express, breakneck; fleet-footed; informalnippy, supersonic\n" +
+                    "\"swift runners\"\n" +
+                    "antonyms:\tslow, sluggish\n" +
+                    "adverbliterary\n" +
+                    "adverb: swift\n" +
+                    "1.\n" +
+                    "swiftly.\n" +
+                    "\"streams that ran swift and clear\"\n" +
+                    "noun\n" +
+                    "noun: swift; plural noun: swifts; noun: Eurasian swift; plural noun: Eurasian swifts; noun: swift moth; plural noun: swift moths\n" +
+                    "1.\n" +
+                    "a swift-flying insectivorous bird with long slender wings and a superficial resemblance to a swallow, spending most of its life on the wing.\n" +
+                    "2.\n" +
+                    "a moth, typically yellow-brown in color, with fast darting flight. The eggs are scattered in flight and the larvae live underground feeding on roots, where they can be a serious pest.\n" +
+                    "3.\n" +
+                    "a light, adjustable reel for holding a skein of silk or wool.\n",
 
 
             "tem·per·ance\n" +
