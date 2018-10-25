@@ -53,7 +53,9 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     Intent intent;
     String id_temp, level;
     int id;
-    int ctr = 6;
+    int ctr = 1;
+    int counter = 0;
+
     private String dummy;
 
 
@@ -113,7 +115,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
         d = view.findViewById(R.id.d);
 
         noQuestions = view.findViewById(R.id.noQuestion);
-        noQuestions.setText("No. of Questions: ");
+        noQuestions.setText("Q ");
 
         a.setBackgroundResource(android.R.drawable.btn_default);
         b.setBackgroundResource(android.R.drawable.btn_default);
@@ -148,8 +150,8 @@ public class Quizzer extends Fragment implements View.OnClickListener{
 
     private void updateQuestion() {
         if (!available.isEmpty()) {
-            ctr--;
-            noQuestions.setText("No. of Questions: "+ctr);
+            counter++;
+            noQuestions.setText("Question No.: "+counter);
 
             Collections.shuffle(available);
             questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));

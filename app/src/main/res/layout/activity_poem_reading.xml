@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".activity.Poem.PoemReading"
     android:padding="10dp"
+    android:layout_marginLeft="20dp"
+
+    android:layout_marginRight="20dp"
     android:id="@+id/rl">
 
 
@@ -19,7 +22,7 @@
 android:text="asdasdasdasd"
         android:textAlignment="center"
         android:maxLines="1"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:padding="10dp"
         />
 
@@ -41,6 +44,7 @@ android:text="asdasdasdasd"
         android:text="asdasdasdasda"
         android:textAlignment="center"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:layout_marginTop="50dp" />
 
 </RelativeLayout>

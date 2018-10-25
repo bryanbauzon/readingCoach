@@ -97,7 +97,7 @@ public class HomeFragment extends Fragment {
             btnRedirect.setText(storyTitle);
         }else{
             btnRedirect.setEnabled(false);
-            btnRedirect.setText("You don't have yet open any stories.");
+            btnRedirect.setText("You haven't read any stories yet");
         }
 
 

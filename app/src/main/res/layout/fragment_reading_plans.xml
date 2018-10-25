@@ -40,7 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="158dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/btn_story"
+                    android:src="@drawable/btn_reading_selection"
                     android:id="@+id/btnStory"
                     />
 
@@ -59,14 +59,7 @@
                     android:layout_margin="10dp"
                     android:id="@+id/btnFlashCards"
                     />
-
-
-
             </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
-
-
-
 </FrameLayout>

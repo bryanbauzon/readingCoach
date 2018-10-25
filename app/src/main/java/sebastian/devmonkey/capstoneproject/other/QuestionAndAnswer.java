@@ -37,16 +37,6 @@ private String [][] choices2 = {
 private String [] answer2 = {
         "hot","cool","He can go to the pool","because Sam wants to know if the pool is open ","Yes, the pool is open. "};
 
-
-
-
-
-
-
-
-
-
-
 private String []  ahappyvisitor3 = {
         "What is at the door of the house?",
         "What happens at the end of the story?",
@@ -64,8 +54,6 @@ private String [][] choices3 = {
 
 private String [] answer3 = {
         "dog ","Anna keeps the dog","The dog is wet. ","II and III","Thursday "};
-
-
 private String []  airballoon= {
         "In 1600 the English played a game like the modern 5 game of ",
         "In the old English game the players moved the ban by ",
@@ -1093,15 +1081,6 @@ private String [][] choices42 = {
 
 private String [] answer42 = {
         "1503","France ","He knew math. ","He drew plans for a helicopter. ","Michelangelo"};
-
-
-
-
-
-
-
-
-
 private String []  lordofolympus= {
         "The Roman name for Zeus was ",
         "Zeus lived on",
@@ -1265,12 +1244,6 @@ private String [][] choices49 = {
 
 private String [] answer49 = {
         "good","truthful","angry","advice","busy"};
-
-
-
-
-
-
 
 private String []  paper= {
         "According to the passage, which of the following statements is/are true?\n I) Ninety-five percent of paper is made from pine trees.\nII) Computers will take away the need for paper.\nIII) There will probably always be uses for paper. ",
