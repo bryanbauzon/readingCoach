@@ -134,29 +134,8 @@ public class Easy {
                     "You should take your dog inside at night,yells Mr. Lucas. The two men argue about Simba's barking"+
                     "almost every day. I think this is funny. To me, Simba is as bad as the cars. He is as bad as the buses. He is"+
                     "as bad as the trucks. This is what living in a big city is like. There is a lot of noise.",
-            //BIRDS
-//            "A bird is a kind of animal. A bird has two wings. Birds are the only animal with feathers. Pigeons, eagles\n" +
-//                    "\"swans, and blue jays are all different kinds of birds. Most birds can fly. Turkeys and penguins are two\n" +
-//                    "kinds of birds that cannot fly.",
-            //BIRDS NEST
-            "One nest isn t enough for a father house wren."+
-                    "In spring, after he flies north, he builds several nests."+
-                    "Then his bubbling song attracts a female. "+
-                    "She looks at each of the male s sample nests before finally choosing one. "+
-                    "She arranges the twigs to suit herself and lines the nest with feathers."+
-                    "Then she sits on her brown-spotted eggs while the father guards the nest. "+
-                    "Once the chicks are hatched and big enough to find their own food, the father wren gets busy again."+
-                    "He cleans out the old nest and starts building new ones. "+
-                    "He helps raise two or three sets of chicks in a summer, then flies south for a rest. "+
-                    " \n \n Birds also sing to find a"+
-                    "mate. "+
-                    "The length and complexity of the mating song gives information about the fitness of the bird."+
-                    "Healthy birds can sing longer, more complicated songs. "+
-                    "Birds call to one another in shorter vocalizations "+
-                    "in order to warn of danger and to locate one another. "+
-                    "Birds sing instinctively. Young birds learn to "+
-                    "perfect their songs by listening to adult birds and interacting with other birds. Birds in a local area might "+
-                    "learn variations in the basic song which help them recognize other members of their group.",
+
+
 
             //BULLIED
             "Bryan doesn't like going to school anymore. "+
@@ -210,43 +189,7 @@ public class Easy {
                     "hear the water. I see the boats. I eat my lunch.  \n Later, the sky gets dark. I gather all of my things and go"+
                     "back to the house. I get in bed. "+
                     "I hear the water through my open window. The sound puts me to sleep.",
-            //CAMPFIRE
-//            "You need tinder, kindling, and fuel to make a campfire. "+
-//                    "Tinder is stuff that catches fire easily. such as bark from a dead tree, dry leaves, and weeds."+
-//                    "Kindling helps makes the fire grow stronger. Dry tree twigs make good kindling. "+
-//                    "Fuel is the wood that keeps the fire burning. "+
-//                    "Large dry sticks or dead tree branches broken into large pieces make good fuel. "+
-//                    "To make a small fire make a tapes of kindling over some tinder. "+
-//                    "When the tinder and "+
-//                    "kindling are lit and burning, add some thin pieces of fuel. "+
-//                    "When this wood starts to burn add thicker pieces until the tire is the size you want.",
-            //CANNED GOODS
-//            "In the early 1800, sailors returning from a long time at sea were often weak or ill. "+
-//                    "They had not been getting enough good food on board their ship. "+
-//                    "Unlike today, there was no way to keep fruits, vegetables, and meat fresh.\n\n"+
-//                    "In just a few days most food spoiled and had to be thrown away. "+
-//                    "The sailors then ate only dried rice and beans.\n\n This was not the right kind of food to keep them strong. "+
-//                    "Luckily, Nicholas Appert decided to do something about this. He worked at the problem for a year. "+
-//                    "Then, in 1811, he invented a way of canning food. "+
-//                    "Food could now be kept a long time, and sailors could enjoy their meals at sea.",
-            //DANDELIONS
-//            "Dandelions are good to eat! For years, people in all parts of the world have eaten them. "+
-//                    "They use the young spring leaves of the plant. Some people boil them and eat them with salt and pepper. "+
-//                    "Some people use them in salads. These spring leaves are called dandelion greens. "+
-//                    "The dandelion got its name in a strange way. "+
-//                    "Each dandelion leaf has rough edges that look like a row of teeth. "+
-//                    "Long ago, the peeple of France gave the plant the name dent de lion, which means lions tooth. "+
-//                    "But to the people of England, the name sounded like dandelion. "+
-//                    "And thats what they called this little plant.",
-            //DIFFERENT TYPES OF PEOPLE
-//            "People can be different in many ways, but in one way we re all alike."+
-//                    "All of us need to eat. What we like to eat can be very different. "+
-//                    "Some Mongolians like to drink sour horse s milk. "+
-//                    "But give them some coffee and they run for water to wash the bad taste from their mouths. "+
-//                    "Some Chinese like a certain worm that is fried until crisp. They eat it like salted nuts. "+
-//                    "But they think that sugar. milk, or lemon in tea is awful. "+
-//                    "ln another part of the world people think food that comes in tins is not fit to eat. "+
-//                    "It s all a matter of what were used to!",
+
             //DOGS
             "There are wild dogs and pet dogs."+
                     "Pet dogs are helpers and friends to people. "+
@@ -355,31 +298,7 @@ public class Easy {
                     "inconsequential compared to my desire to hang with Val. "+
                     "Alas, I ignore my anti-fair bias for the"+
                     "teenth year. 'Pick me up at noon,' I say and hang up the phone.",
-            //GRASS
-          //  "Grass need sunlight and water to make their own food.\n You can do an experiment to test if this is true. Place a bucket over a patch of green grass.\n After a few days, lift the bucket. You will see that the grass is not as green anymore.\n\n If you leave the bucket in place for a week, the grass will become very dull. This happens because the grass cannot make food in the dark. Remove the bucket. \n\nIn a few days, the grass will start turning green again.",
-            //GREEN GRASS
-//            "Plants need sunlight and water to make their own food. "+
-//                    "You can do an experiment to test if this is true."+
-//                    "Place a bucket over a patch of green grass. After a few days, lift the bucket."+
-//                    "You will see that the grass is "+
-//                    "not as green anymore. "+
-//                    "If you leave the bucket in place for a week, the grass will become very dull. "+
-//                    "This happens because the grass cannot make food in the dark. Remove the bucket. "+
-//                    "In a few days, the grass "+
-//                    "will start turning green again.",
 
-            //GRIFFIN TALENT
-//            "Griffin plays the violin. He takes lessons after school on Tuesdays."+
-//                    "Griffin's violin teacher is Mr. Thomas."+
-//                    "Mr. Thomas tells Griffin to practice every day. "+
-//                    "Griffin practices his violin on most days. "+
-//                    "On the days Griffin does not practice his violin, he plays soccer with his friends or fixes old clocks for fun. "+
-//                    "You are a"+
-//                    "boy of many talents, Griffin's parents tell him. 'That means you are good at doing many things.' "+
-//                    "Griffin"+
-//                    "likes it when his parents say this to him. He loves playing the violin. He loves playing soccer. "+
-//                    "He loves "+
-//                    "fixing clocks. Griffin loves to do many things, but he does not have the time to do them all every day.",
         //HELICOPTERS
             "Helicopters are very different from airplanes. "+
                     " They can do three things that airplanes cannot do. "+
@@ -423,30 +342,6 @@ public class Easy {
                     "But, people who live in a house probably all agree that there is no place like"+
                     "home!",
 
-//            "Julia: Hi Anita. How are you?"+
-//                    " \n Anita: I am fine, thanks. How are you?"+
-//                    " \n Julia: I feel bad. I think I am sick.\n"+
-//                    "Anita: Hmm, that is not good.\n"+
-//                    "Julia: Yes, I know.\n"+
-//                    "Anita: Well, I think you should try to relax."+
-//                    "\n Julia: Okay.\nAnita: I hope you feel better soon.\n Julia: Yeah, I do too!",
-
-//            "The warthog is one of the strangest creatures in the world it has a mane curving tusks, bumps on its face and a tufted tell like a lion."+
-//                    "Whats more It kneels when it eats."+
-//                    "When warthogs run, their tails stand straight up in the air."+
-//                    "A whole group of them trotting with tails at attention is one of the funniest sights to be seen on the African plains. "+
-//                    "Warthogs make up for their strange looks with courage and family loyalty."+
-//                    "When warthogs go to sleep at night, the young ones enter the burrows first."+
-//                    "Then the adults back in, so that they face the outside, and their ready to defend their family.",
-
-
-//            "The sweetest apples often have little tunnels inside-tunnels made by little worms."+
-//                    "How did worms get there? ln the middle of summer a special kind of fly lands on the apple.\n\n "+
-//                    "She pokes a sharp tube on her stomach into the fruit. Eggs slide through the tube into the apple.\n"+
-//                    "From the eggs come worms that eat the fruit.\n "+
-//                    "ln autumn when the apples fall to the ground, the worms crawl out, and a hard case forms around each one. \n\n"+
-//                    "That is the worms winter home. Inside the case the worm turns into a fly and next summer the fly comes out of its case just as apples are growing sweet.",
-
 
             "The human body has many parts. People have two arms and two legs. "+
                     "We have two hands and two feet.\n"+
@@ -470,17 +365,6 @@ public class Easy {
                     "water the most."+
                     "We also use our mouth and teeth to talk.",
 
-//            "I fly airplanes for a living. I am a pilot."+
-//                    "Sometimes I take my little girl with me. Her name is Bristol.Bristol"+
-//                    "likes to look out the window of the airplane. She likes to look at the clouds. "+
-//                    "She thinks the clouds look "+
-//                    "like animals. She points at one with her finger. "+
-//                    "I see a giraffe 'she says. I also have a little boy. "+
-//                    "My little boy does not like to be up high. He does not come with me on the airplane. "+
-//                    "He likes to play airplane with "+
-//                    "me. We play airplane when I get home. We run around the yard. "+
-//                    "We wave our arms in the air. We make "+
-//                    "airplane noises.",
 
             "The first tip for a good day of ice fishing is to wear the right clothes. "+
                     "You should dress in layers.Wear 2 or 3 shirts, so you can take off a layer when you are warm. "+
@@ -521,29 +405,6 @@ public class Easy {
                     "Julian wants to be a teacher. One day, he hopes to turn his "+
                     "story into a book. He hopes to see it at the bookstore.",
 
-//            "Jupiter is the 5th planet from the sun."+
-//                    "It is the largest planet in the solar system. "+
-//                    "It is so large that all of the other planets combined could fit inside Jupiter. "+
-//                    "Jupiter is one of the Gas Giants."+
-//                    "This means you could not stand on Jupiter because it has no surface. "+
-//                    "Jupiter is known for its Great Red Spot. "+
-//                    "This is an area of Jupiter with raging storms way more powerful than any on Earth. "+
-//                    "Scientists don t know why it is red. "+
-//                    "They do know that winds inside the spot blow twice as fast as any race car on Earth can drive.",
-
-
-
-
-//            "Africa has many kinds of land areas. "+
-//                    "Deserts, forests, grasslands, and mountains are all found there."+
-//                    "Deserts cover more than a third of the land. "+
-//                    "The Sahara, its largest desert, is in the north. "+
-//                    "The land there is sand and bare rock. There is little water. "+
-//                    "Grasslands cover part of the land. These have some small trees. "+
-//                    "The grass may grow almost four meters (twelve feet) high. "+
-//                    "This happens when it rains. Africa also has different kinds of weather. "+
-//                    "It is hot near the equator. It can be cold in the mountains and in the south. "+
-//                    "Some places have a great deal at rain, but some parts have almost no rain at all.",
 
 
             "Leonardo da Vinci was born in 1452 in the area of Florence, Italy. "+
@@ -610,38 +471,6 @@ public class Easy {
                     "they want. Money makes trading easier.",
 
 
-
-//            "Hi, my name is Eric. I am 12. I want to talk about my family. I have two sisters. "+
-//                    "Their names are Rachel"+
-//                    "and Carrie. Rachel is 18 years old. Carrie is 10 years old. "+
-//                    "They are very nice. My mother's name is Julia."+
-//                    "She is 40 years old. My mother is also very nice. "+
-//                    "My father's name is Andre. He is smart. He is an"+
-//                    "engineer. He builds bridges. "+
-//                    "I also have a dog. My dog s name is Paw. He is a big dog. He is a brown dog."+
-//                    "He is a big brown dog. "+
-//                    "I love my family.",
-
-//            "My name is Julie. I have a friend. My friend lives in California."+
-//                    "My friend is a girl. She is seventeen years"+
-//                    "old. Her name is Jessica Roberts. "+
-//                    "Jessica is cool. I like her a lot. She likes to read. She is a good reader."+
-//
-//                    "She is good at math, too. It is her best subject. Jessica is smart. "+
-//                    "I like to eat lunch with her. "+
-//                    "We eat lunch"+
-//                    "on Monday, Tuesday, and Wednesday. Jessica is my friend.",
-//
-//
-//            "My house is in the United States. I live in the United States. "+
-//                    "The United States is a country. My house is"+
-//                    "in North Carolina. I live in North Carolina. \n"+
-//                    "North Carolina is a state. The weather in North Carolina is nice."+
-//                    "It is sunny.The sky is blue. My house is in Chapel Hill. I live in Chapel Hill. \n"+
-//                    "Chapel Hill is a city. It is a city"+
-//                    "on a hill. It is a city on a small mountain. \n"+
-//                    "My house is red. My house is brick. "+
-//                    "I live in a red brick house.",
 
 
 

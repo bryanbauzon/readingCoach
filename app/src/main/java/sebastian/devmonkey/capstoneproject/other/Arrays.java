@@ -91,7 +91,6 @@ public class Arrays {
 
 
     private String[] storyTitles = {"500 MILES RACE",
-
             "A HAPPY VISITOR.",
             "AIRPLANES",
             "AMERICAN CRAWL",
@@ -100,7 +99,6 @@ public class Arrays {
             "BEDS",
             "BELLA HIDES",
             "BIG CITY NOISE",
-            "BIRD'S NEST",
             "BULLIED",
             "BY THE WATER",
             "DOGS",
@@ -139,7 +137,7 @@ public class Arrays {
             "SHORT PASSAGE 20",
             "SHORT PASSAGE 21",
             "SHORT PASSAGE 22",
-            "SHORT PASSAGE 23",
+            "SHORT PASSAGE 23"
 
 
 
@@ -194,15 +192,6 @@ public class Arrays {
             "MARCO POLO",
             "MARS",
             "MARYS FAMILY"
-           // "MEXICO",
-//            "MOORISH DANCE",
-//            "MOVIE RATINGS",
-//            "MUMMY",
-//            "NIAGARA FALLS",
-//            "NUTS"
-//            "OLYMPIC GAME",
-//            "PANDA",
-//            "PENQUINS"
     };
     private String[] storyHardTitle = {
             "A CHRISTMAS IN MARCH",
