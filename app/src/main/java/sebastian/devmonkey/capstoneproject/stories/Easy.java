@@ -710,926 +710,927 @@ public class Easy {
             ///SHORT PASSAGE 1
             "On February 3, 1956, Autherine Lucy became the first African-American student to attend the University\n" +
                     "of Alabama, although the dean of women refused to allow Autherine to live in a university dormitory. White students rioted in protest of her admission, and the federal government had to assume command of the Alabama National " +
-                    "Guard in order to protect her. Nonetheless, on her first day in class, Autherine bravely took a seat in\n" +
-                    "the front row. She remembers being surprised\n" +
-                    "that the professor of the class appeared not to\n" +
-                    "notice she was even in class. Later, she would\n" +
-                    "appreciate his seeming indifference, as he was\n" +
-                    "one of only a few professors to speak out in favor\n" +
-                    "of her right to attend the university.\n" +
-                    "For protection, Autherine was taken in and\n" +
-                    "out of classroom buildings by the back door and\n" +
-                    "driven from class to class by an assistant to the\n" +
-                    "university president. The students continued to\n" +
-                    "riot, and one day, the windshield of the car she\n" +
-                    "was in was broken. University officials suspended\n" +
-                    "her, saying it was for her own safety. When her\n" +
-                    "attorney issued a statement in her name protesting\n" +
-                    "her suspension, the university used it as\n" +
-                    "grounds for expelling her for insubordination.\n" +
-                    "Although she never finished her education at the\n" +
-                    "University of Alabama, Autherine Lucy’s courage\n" +
-                    "was an inspiration to African-American students\n" +
-                    "who followed her lead and desegregated universities\n" +
+                    "Guard in order to protect her. Nonetheless, on her first day in class, Autherine bravely took a seat in" +
+                    "the front row. She remembers being surprised" +
+                    "that the professor of the class appeared not to" +
+                    "notice she was even in class. Later, she would " +
+                    "appreciate his seeming indifference, as he was " +
+                    "one of only a few professors to speak out in favor " +
+                    "of her right to attend the university. " +
+                    "For protection, Autherine was taken in and " +
+                    "out of classroom buildings by the back door and " +
+                    "driven from class to class by an assistant to the " +
+                    "university president. The students continued to " +
+                    "riot, and one day, the windshield of the car she " +
+                    "was in was broken. University officials suspended " +
+                    "her, saying it was for her own safety. When her " +
+                    "attorney issued a statement in her name protesting " +
+                    "her suspension, the university used it as " +
+                    "grounds for expelling her for insubordination. " +
+                    "Although she never finished her education at the " +
+                    "University of Alabama, Autherine Lucy’s courage " +
+                    "was an inspiration to African-American students " +
+                    "who followed her lead and desegregated universities " +
                     "all over the United States.",
 
 
             ///SHORT PASSAGE 2
 
-            "The crystal clear, blue water and the magnificent\n" +
-                    "sun make the Caribbean island of Saint Maarten\n" +
-                    "a favorite vacation spot, one that is popular with\n" +
-                    "North Americans during their winter holidays\n" +
-                    "from December through March, as well as with\n" +
-                    "South Americans and Europeans from April\n" +
-                    "through August. The French and Dutch settled\n" +
-                    "on the island in the 1600s, and to this day, the\n" +
-                    "island is divided between the two of them. The\n" +
-                    "French capital is Marigot; the Dutch capital is\n" +
-                    "Philipsburg.\n" +
-                    "Tourists soon discover that St. Maarten has\n" +
-                    "an intriguing history. Ancient artifacts found on\n" +
-                    "the island date back to the Stone Age, 6,000 years\n" +
-                    "ago! Tourists also learn that 1,200 years ago the\n" +
-                    "Arawak Indians inhabited all the islands of the\n" +
-                    "West Indies and were a peaceful people living\n" +
-                    "under the guidance of their chiefs. Three hundred\n" +
-                    "years after the Arawaks first arrived on St.\n" +
-                    "Maarten, in the 1300s, they were defeated and\n" +
-                    "forced to abandon the island by a hostile tribe of\n" +
-                    "Indians originating in South America. This new\n" +
-                    "tribe was called the Carib. The Caribbean Sea\n" +
-                    "was named after them. Unlike the Arawaks, they\n" +
-                    "had no permanent chiefs or leaders, except in\n" +
-                    "times of strife. And they were extremely warlike.\n" +
-                    "Worse, they were cannibalistic, eating the enemy\n" +
-                    "warriors they captured. In fact, the very word\n" +
-                    "cannibal comes from the Spanish name for the\n" +
-                    "Carib Indians. The Spanish arrived in the fifteenth\n" +
-                    "century and, unfortunately, they carried\n" +
-                    "diseases to which the Indians had no immunity.\n" +
-                    "Many Indians succumbed to common European\n" +
-                    "illnesses; others died from the hard labor forced\n" +
+            "The crystal clear, blue water and the magnificent " +
+                    "sun make the Caribbean island of Saint Maarten " +
+                    "a favorite vacation spot, one that is popular with " +
+                    "North Americans during their winter holidays " +
+                    "from December through March, as well as with " +
+                    "South Americans and Europeans from April " +
+                    "through August. The French and Dutch settled " +
+                    "on the island in the 1600s, and to this day, the " +
+                    "island is divided between the two of them. The " +
+                    "French capital is Marigot; the Dutch capital is " +
+                    "Philipsburg. " +
+                    "Tourists soon discover that St. Maarten has " +
+                    "an intriguing history. Ancient artifacts found on " +
+                    "the island date back to the Stone Age, 6,000 years " +
+                    "ago! Tourists also learn that 1,200 years ago the " +
+                    "Arawak Indians inhabited all the islands of the " +
+                    "West Indies and were a peaceful people living " +
+                    "under the guidance of their chiefs. Three hundred " +
+                    "years after the Arawaks first arrived on St. " +
+                    "Maarten, in the 1300s, they were defeated and " +
+                    "forced to abandon the island by a hostile tribe of " +
+                    "Indians originating in South America. This new " +
+                    "tribe was called the Carib. The Caribbean Sea " +
+                    "was named after them. Unlike the Arawaks, they " +
+                    "had no permanent chiefs or leaders, except in " +
+                    "times of strife. And they were extremely warlike. " +
+                    "Worse, they were cannibalistic, eating the enemy " +
+                    "warriors they captured. In fact, the very word " +
+                    "cannibal comes from the Spanish name for the " +
+                    "Carib Indians. The Spanish arrived in the fifteenth " +
+                    "century and, unfortunately, they carried " +
+                    "diseases to which the Indians had no immunity. " +
+                    "Many Indians succumbed to common European " +
+                    "illnesses; others died from the hard labor forced " +
                     "upon them.",
 
             ///SHORT PASSAGE 3
 
-            "A metaphor is a poetic device that deals with\n" +
-                    "comparison. It compares similar qualities of two\n" +
-                    "dissimilar objects. With a simple metaphor, one\n" +
-                    "object becomes the other: Love is a rose. Although\n" +
-                    "this does not sound like a particularly rich image,\n" +
-                    "a metaphor can communicate so much about a\n" +
-                    "particular image that poets use them more than\n" +
-                    "any other type of figurative language. The reason\n" +
-                    "for this is that poets compose their poetry to\n" +
-                    "express what they are experiencing emotionally\n" +
-                    "at that moment. Consequently, what the poet\n" +
-                    "imagines love to be may or may not be our perception\n" +
-                    "of love. Therefore, the poet’s job is to\n" +
-                    "enable us to experience it, to feel it the same way\n" +
-                    "that the poet does. We should be able to nod in\n" +
-                    "agreement and say, “Yes, that’s it! I understand\n" +
-                    "precisely where this person is coming from.”\n" +
-                    "Let’s analyze this remarkably unsophisticated\n" +
-                    "metaphor concerning love and the rose to\n" +
-                    "see what it offers. Because the poet uses a comparison\n" +
-                    "with a rose, first we must examine the\n" +
-                    "characteristics of that flower. A rose is spectacular\n" +
-                    "in its beauty, its petals are velvety soft, and its\n" +
-                    "aroma is soothing and pleasing. It’s possible to\n" +
-                    "say that a rose is actually a veritable feast to the\n" +
-                    "senses: the visual, the tactile, and the aural [more\n" +
-                    "commonly known as the senses of sight, touch,\n" +
-                    "and sound]. The rose’s appearance seems to border\n" +
-                    "on perfection, each petal seemingly symmetrical\n" +
-                    "in form. Isn’t this the way one’s love should\n" +
-                    "be? A loved one should be a delight to one’s\n" +
-                    "senses and seem perfect. However, there is\n" +
-                    "another dimension added to the comparison by\n" +
-                    "using a rose. Roses have thorns. This is the comprehensive\n" +
-                    "image the poet wants to communicate;\n" +
-                    "otherwise, a daisy or a mum would have\n" +
-                    "been presented to the audience as the ultimate\n" +
-                    "representation of love—but the poet didn’t,\n" +
-                    "instead conveying the idea that roses can be\n" +
-                    "treacherous. So can love, the metaphor tells us.\n" +
-                    "When one reaches out with absolute trust to\n" +
-                    "touch the object of his or her affection, ouch, a\n" +
-                    "thorn can cause great harm! “Be careful,” the\n" +
-                    "metaphor admonishes: Love is a feast to the\n" +
-                    "senses, but it can overwhelm us, and it can also\n" +
-                    "hurt us. It can prick us and cause acute suffering.\n" +
-                    "This is the poet’s perception of love—an admonition.\n" +
-                    "What is the point? Just this: It took almost\n" +
-                    "14 sentences to clarify what a simple metaphor\n" +
-                    "communicates in only five words! That is the\n" +
-                    "artistry and the joy of the simple metaphor.\n",
+            "A metaphor is a poetic device that deals with " +
+                    "comparison. It compares similar qualities of two " +
+                    "dissimilar objects. With a simple metaphor, one " +
+                    "object becomes the other: Love is a rose. Although " +
+                    "this does not sound like a particularly rich image, " +
+                    "a metaphor can communicate so much about a " +
+                    "particular image that poets use them more than " +
+                    "any other type of figurative language. The reason " +
+                    "for this is that poets compose their poetry to " +
+                    "express what they are experiencing emotionally " +
+                    "at that moment. Consequently, what the poet " +
+                    "imagines love to be may or may not be our perception " +
+                    "of love. Therefore, the poet’s job is to " +
+                    "enable us to experience it, to feel it the same way " +
+                    "that the poet does. We should be able to nod in " +
+                    "agreement and say, “Yes, that’s it! I understand " +
+                    "precisely where this person is coming from.” " +
+                    "Let’s analyze this remarkably unsophisticated " +
+                    "metaphor concerning love and the rose to " +
+                    "see what it offers. Because the poet uses a comparison " +
+                    "with a rose, first we must examine the " +
+                    "characteristics of that flower. A rose is spectacular " +
+                    "in its beauty, its petals are velvety soft, and its " +
+                    "aroma is soothing and pleasing. It’s possible to " +
+                    "say that a rose is actually a veritable feast to the " +
+                    "senses: the visual, the tactile, and the aural [more " +
+                    "commonly known as the senses of sight, touch, " +
+                    "and sound]. The rose’s appearance seems to border " +
+                    "on perfection, each petal seemingly symmetrical " +
+                    "in form. Isn’t this the way one’s love should " +
+                    "be? A loved one should be a delight to one’s " +
+                    "senses and seem perfect. However, there is " +
+                    "another dimension added to the comparison by " +
+                    "using a rose. Roses have thorns. This is the comprehensive " +
+                    "image the poet wants to communicate; " +
+                    "otherwise, a daisy or a mum would have " +
+                    "been presented to the audience as the ultimate" +
+                    "representation of love—but the poet didn’t, " +
+                    "instead conveying the idea that roses can be " +
+                    "treacherous. So can love, the metaphor tells us. " +
+                    "When one reaches out with absolute trust to " +
+                    "touch the object of his or her affection, ouch, a " +
+                    "thorn can cause great harm! “Be careful,” the " +
+                    "metaphor admonishes: Love is a feast to the " +
+                    "senses, but it can overwhelm us, and it can also " +
+                    "hurt us. It can prick us and cause acute suffering. " +
+                    "This is the poet’s perception of love—an admonition. " +
+                    "What is the point? Just this: It took almost " +
+                    "14 sentences to clarify what a simple metaphor " +
+                    "communicates in only five words! That is the " +
+                    "artistry and the joy of the simple metaphor. ",
             ///SHORT PASSAGE 4
 
-            "The composer Wolfgang Amadeus Mozart’s\n" +
-                    "remarkable musical talent was apparent even\n" +
-                    "before most children can sing a simple nursery\n" +
-                    "rhyme. Wolfgang’s older sister Maria Anna (who\n" +
-                    "the family called Nannerl) was learning the\n" +
-                    "clavier, an early keyboard instrument, when\n" +
-                    "her three-year-old brother took an interest in\n" +
-                    "playing. As Nannerl later recalled, Wolfgang\n" +
-                    "“often spent much time at the clavier picking out\n" +
-                    "thirds, which he was always striking, and his\n" +
-                    "pleasure showed that it sounded good.” Their\n" +
-                    "father Leopold, an assistant concertmaster at\n" +
-                    "the Salzburg Court, recognized his children’s\n" +
-                    "unique gifts and soon devoted himself to their\n" +
-                    "musical education.\n" +
-                    "Born in Salzburg, Austria, on January 27,\n" +
-                    "1756, Wolfgang had composed his first original\n" +
-                    "work by age five. Leopold planned to take Nannerl\n" +
-                    "and Wolfgang on tour to play before the\n" +
-                    "European courts. Their first venture was to\n" +
-                    "nearby Munich where the children played for\n" +
-                    "Maximillian III Joseph, elector of Bavaria.\n" +
-                    "Leopold soon set his sights on the capital of the\n" +
-                    "Hapsburg Empire, Vienna. On their way to\n" +
-                    "Vienna, the family stopped in Linz, where Wolfgang\n" +
-                    "gave his first public concert. By this time,\n" +
-                    "Wolfgang was not only a virtuoso harpsichord\n" +
-                    "player, but he had also mastered the violin. The\n" +
-                    "audience at Linz was stunned by the six-year-old,\n" +
-                    "and word of his genius soon traveled to Vienna.\n" +
-                    "In a much anticipated concert, the Mozart children\n" +
-                    "appeared at the Schonbrunn Palace on\n" +
-                    "October 13, 1762. They utterly charmed the\n" +
-                    "emperor and empress.\n" +
-                    "Following this success, Leopold was inundated\n" +
-                    "with invitations for the children to play,\n" +
-                    "for a fee. Leopold seized the opportunity and\n" +
-                    "booked as many concerts as possible at courts\n" +
-                    "throughout Europe. A concert could last three\n" +
-                    "hours, and the children played at least two per a\n" +
-                    "day. Today, Leopold might be considered the\n" +
-                    "worst kind of stage parent, but at the time, it was\n" +
-                    "not uncommon for prodigies to make extensive\n" +
-                    "concert tours. Even so, it was an exhausting schedule\n" +
-                    "for a child who was just past the age of needing\n" +
+            "The composer Wolfgang Amadeus Mozart’s " +
+                    "remarkable musical talent was apparent even " +
+                    "before most children can sing a simple nursery " +
+                    "rhyme. Wolfgang’s older sister Maria Anna (who " +
+                    "the family called Nannerl) was learning the " +
+                    "clavier, an early keyboard instrument, when " +
+                    "her three-year-old brother took an interest in " +
+                    "playing. As Nannerl later recalled, Wolfgang " +
+                    "“often spent much time at the clavier picking out " +
+                    "thirds, which he was always striking, and his " +
+                    "pleasure showed that it sounded good.” Their " +
+                    "father Leopold, an assistant concertmaster at " +
+                    "the Salzburg Court, recognized his children’s " +
+                    "unique gifts and soon devoted himself to their " +
+                    "musical education. " +
+                    "Born in Salzburg, Austria, on January 27, " +
+                    "1756, Wolfgang had composed his first original " +
+                    "work by age five. Leopold planned to take Nannerl " +
+                    "and Wolfgang on tour to play before the " +
+                    "European courts. Their first venture was to " +
+                    "nearby Munich where the children played for " +
+                    "Maximillian III Joseph, elector of Bavaria. " +
+                    "Leopold soon set his sights on the capital of the " +
+                    "Hapsburg Empire, Vienna. On their way to " +
+                    "Vienna, the family stopped in Linz, where Wolfgang " +
+                    "gave his first public concert. By this time, " +
+                    "Wolfgang was not only a virtuoso harpsichord " +
+                    "player, but he had also mastered the violin. The " +
+                    "audience at Linz was stunned by the six-year-old, " +
+                    "and word of his genius soon traveled to Vienna. " +
+                    "In a much anticipated concert, the Mozart children " +
+                    "appeared at the Schonbrunn Palace on " +
+                    "October 13, 1762. They utterly charmed the " +
+                    "emperor and empress. " +
+                    "Following this success, Leopold was inundated " +
+                    "with invitations for the children to play, " +
+                    "for a fee. Leopold seized the opportunity and " +
+                    "booked as many concerts as possible at courts " +
+                    "throughout Europe. A concert could last three " +
+                    "hours, and the children played at least two per a " +
+                    "day. Today, Leopold might be considered the " +
+                    "worst kind of stage parent, but at the time, it was " +
+                    "not uncommon for prodigies to make extensive " +
+                    "concert tours. Even so, it was an exhausting schedule " +
+                    "for a child who was just past the age of needing " +
                     "an afternoon nap.",
 
-            "\tFirefighters are often asked to speak to school and\n" +
-                    "community groups about the importance of fire\n" +
-                    "safety, particularly fire prevention and detection.\n" +
-                    "Because smoke detectors reduce the risk of dying\n" +
-                    "in a fire by half, firefighters often provide audiences\n" +
-                    "with information on how to install these\n" +
-                    "protective devices in their homes.\n" +
-                    "\tSpecifically, they tell them these things: A\n" +
-                    "smoke detector should be placed on each floor\n" +
-                    "of a home. While sleeping, people are in particular\n" +
-                    "danger of an emergent fire, and there must\n" +
-                    "be a detector outside each sleeping area. A good\n" +
-                    "site for a detector would be a hallway that runs\n" +
-                    "between living spaces and bedrooms.\n" +
-                    "\tBecause of the dead-air space that might be\n" +
-                    "missed by turbulent hot air bouncing around\n" +
-                    "above a fire, smoke detectors should be installed\n" +
-                    "either on the ceiling at least four inches from the\n" +
-                    "nearest wall, or high on a wall at least four, but no\n" +
-                    "further than twelve, inches from the ceiling.\n" +
-                    "\tDetectors should not be mounted near windows,\n" +
-                    "exterior doors, or other places where drafts\n" +
-                    "might direct the smoke away from the unit. Nor\n" +
-                    "should they be placed in kitchens and garages,\n" +
-                    "where cooking and gas fumes are likely to cause\n" +
+            "\tFirefighters are often asked to speak to school and " +
+                    "community groups about the importance of fire " +
+                    "safety, particularly fire prevention and detection. " +
+                    "Because smoke detectors reduce the risk of dying " +
+                    "in a fire by half, firefighters often provide audiences " +
+                    "with information on how to install these " +
+                    "protective devices in their homes. " +
+                    "\tSpecifically, they tell them these things: A " +
+                    "smoke detector should be placed on each floor " +
+                    "of a home. While sleeping, people are in particular " +
+                    "danger of an emergent fire, and there must " +
+                    "be a detector outside each sleeping area. A good " +
+                    "site for a detector would be a hallway that runs " +
+                    "between living spaces and bedrooms. " +
+                    "\tBecause of the dead-air space that might be " +
+                    "missed by turbulent hot air bouncing around " +
+                    "above a fire, smoke detectors should be installed " +
+                    "either on the ceiling at least four inches from the " +
+                    "nearest wall, or high on a wall at least four, but no " +
+                    "further than twelve, inches from the ceiling. " +
+                    "\tDetectors should not be mounted near windows, " +
+                    "exterior doors, or other places where drafts " +
+                    "might direct the smoke away from the unit. Nor " +
+                    "should they be placed in kitchens and garages, " +
+                    "where cooking and gas fumes are likely to cause " +
                     "false alarms.",
 
-            "\tSaving energy means saving money. Homeowners\n" +
-                    "and renters know this basic fact, but they often\n" +
-                    "don’t know what kinds of adjustments they can\n" +
-                    "make in their homes and apartments that will\n" +
-                    "result in savings.\n" +
-                    "\tFor those willing to spend some time and\n" +
-                    "money to reap long-term energy savings, an\n" +
-                    "energy audit is the way to go. An energy auditor\n" +
-                    "will come into your home and assess its energy\n" +
-                    "efficiency. The auditor will pinpoint areas of your\n" +
-                    "home that use the most energy and offer solutions to\n" +
-                    "lower your energy use and costs. Trained energy\n" +
-                    "auditors know what to look for and can locate a\n" +
-                    "variety of flaws that may be resulting in energy\n" +
-                    "inefficiency, including inadequate insulation, construction\n" +
-                    "flaws, and uneven heat distribution.\n" +
-                    "\tThere are quicker and less costly measures\n" +
-                    "that can be taken as well. One way to save money\n" +
-                    "is to replace incandescent lights with fluorescents.\n" +
-                    "This can result in a savings of more than 50% on\n" +
-                    "your monthly lighting costs.\n" +
-                    "\tWhen it’s time to replace old appliances, it’s\n" +
-                    "wise to spend a bit more for an energy-efficient\n" +
-                    "model, and be sure that you are taking advantage\n" +
-                    "of energy-saving settings already on your current\n" +
-                    "refrigerator, dishwasher, washing machine,\n" +
-                    "or dryer.\n" +
-                    "\tWindows provide another opportunity to\n" +
-                    "cut your energy costs. Caulk old windows that\n" +
-                    "might be leaky to prevent drafts, and choose\n" +
-                    "double-paned windows if you’re building an\n" +
-                    "addition or replacing old windows.\n" +
-                    "Most areas of your home or apartment\n" +
-                    "offer opportunities to save energy and money.\n" +
-                    "The results are significant and are well worth\n" +
+            "\tSaving energy means saving money. Homeowners " +
+                    "and renters know this basic fact, but they often " +
+                    "don’t know what kinds of adjustments they can " +
+                    "make in their homes and apartments that will " +
+                    "result in savings " +
+                    "\tFor those willing to spend some time and " +
+                    "money to reap long-term energy savings, an " +
+                    "energy audit is the way to go. An energy auditor " +
+                    "will come into your home and assess its energy " +
+                    "efficiency. The auditor will pinpoint areas of your " +
+                    "home that use the most energy and offer solutions to " +
+                    "lower your energy use and costs. Trained energy " +
+                    "auditors know what to look for and can locate a " +
+                    "variety of flaws that may be resulting in energy " +
+                    "inefficiency, including inadequate insulation, construction " +
+                    "flaws, and uneven heat distribution. " +
+                    "\tThere are quicker and less costly measures " +
+                    "that can be taken as well. One way to save money " +
+                    "is to replace incandescent lights with fluorescents. " +
+                    "This can result in a savings of more than 50% on" +
+                    "your monthly lighting costs. " +
+                    "\tWhen it’s time to replace old appliances, it’s " +
+                    "wise to spend a bit more for an energy-efficient " +
+                    "model, and be sure that you are taking advantage " +
+                    "of energy-saving settings already on your current " +
+                    "refrigerator, dishwasher, washing machine, " +
+                    "or dryer. " +
+                    "Windows provide another opportunity to " +
+                    "cut your energy costs. Caulk old windows that " +
+                    "might be leaky to prevent drafts, and choose " +
+                    "double-paned windows if you’re building an " +
+                    "addition or replacing old windows. " +
+                    "Most areas of your home or apartment " +
+                    "offer opportunities to save energy and money. " +
+                    "The results are significant and are well worth " +
                     "the effort.",
-            "Yesterday, I was exposed to what has been called\n" +
-                    "“a dining experience like no other.”At lunchtime,\n" +
-                    "Dilly’s Deli is so crowded, I wondered when the\n" +
-                    "fire marshal had last visited the establishment.\n" +
-                    "The line snaked out the door to the corner, and by\n" +
-                    "the time I reached the counter, I was freezing. I\n" +
-                    "decided on the hamburger steak special; the other\n" +
-                    "specials being liver and onions or tuna casserole.\n" +
-                    "Each special is offered with two side dishes, but\n" +
-                    "there was no potato salad left and the green beans\n" +
-                    "were cooked nearly beyond recognition. I chose\n" +
-                    "the gelatin of the day and what turned out to be\n" +
-                    "the blandest coleslaw I have ever eaten.\n" +
-                    "At Dilly’s, you sit at one of four long tables.\n" +
-                    "The couple sitting across from me was having an\n" +
-                    "argument. The truck driver next to me told me\n" +
-                    "more than I wanted to know about highway\n" +
-                    "taxes. After I had tasted all of the food on my\n" +
-                    "plate, I rose to leave, whereupon one of the people\n" +
-                    "working behind the counter yelled at me to clean\n" +
-                    "up after myself. Throwing away that plate of food\n" +
+            "Yesterday, I was exposed to what has been called " +
+                    "“a dining experience like no other.”At lunchtime, " +
+                    "Dilly’s Deli is so crowded, I wondered when the " +
+                    "fire marshal had last visited the establishment. " +
+                    "The line snaked out the door to the corner, and by " +
+                    "the time I reached the counter, I was freezing. I " +
+                    "decided on the hamburger steak special; the other " +
+                    "specials being liver and onions or tuna casserole. " +
+                    "Each special is offered with two side dishes, but " +
+                    "there was no potato salad left and the green beans " +
+                    "were cooked nearly beyond recognition. I chose " +
+                    "the gelatin of the day and what turned out to be " +
+                    "the blandest coleslaw I have ever eaten. " +
+                    "At Dilly’s, you sit at one of four long tables. " +
+                    "The couple sitting across from me was having an " +
+                    "argument. The truck driver next to me told me " +
+                    "more than I wanted to know about highway " +
+                    "taxes. After I had tasted all of the food on my " +
+                    "plate, I rose to leave, whereupon one of the people " +
+                    "working behind the counter yelled at me to clean " +
+                    "up after myself. Throwing away that plate of food " +
                     "was the most enjoyable part of dining at Dilly’s.",
-            "During those barren winter months, with windows\n" +
-                    "overlooking long-dead gardens, leafless\n" +
-                    "trees, and lawns that seem to have an ashy look\n" +
-                    "about them, nothing soothes the jangled nerves\n" +
-                    "more than the vibrant green of plants surrounding\n" +
-                    "the living spaces of one’s home. People browse\n" +
-                    "through garden stores just to get a whiff of chlorophyll\n" +
-                    "and to choose a plant or two to bring spring\n" +
-                    "back into their winter-gray lives.\n" +
-                    "Now there is even more of a need for “the\n" +
-                    "green,” in light of recent articles warning us of the\n" +
-                    "hazards of chemicals that we, ourselves, introduce\n" +
-                    "into our homes. Each time we bring clothes\n" +
-                    "home from the cleaners, we release those chemicals\n" +
-                    "into the closed-in air of our dwellings. Every\n" +
-                    "cleanser releases its own assortment of fumes.\n" +
-                    "Some of the chemicals are formaldehyde, chlorine,\n" +
-                    "benzene, styrene, etc. Read the labels on\n" +
-                    "many home products, the ingredients aren’t even\n" +
-                    "listed! During the winter, when those same windows\n" +
-                    "are shut tight, we breathe in these chemicals—causing\n" +
-                    "symptoms much like allergies. In\n" +
-                    "fact, most people probably dismiss the effects of\n" +
-                    "these chemicals simply as a flare up of some\n" +
-                    "allergy or other. The truth is that we are experiencing\n" +
-                    "a syndrome that is called Multiple Chemical\n" +
-                    "Sensitivity. Now, what has this got to do with\n" +
-                    "green plants? Everything healthy! Research has\n" +
-                    "been conducted with two types of plants that\n" +
-                    "have actually removed much of these harmful\n" +
-                    "chemicals from the air.\n" +
-                    "The two plants that seem to be the best bet\n" +
-                    "for ridding one’s home of such chemicals are\n" +
-                    "ferns and palms. These plants release moisture as\n" +
-                    "part of photosynthesis and, as they do, pull\n" +
-                    "chemicals from the air into their leaves. Even\n" +
-                    "NASA has conducted some greenhouse experiments\n" +
-                    "for long-term space exploration. Within\n" +
-                    "hours, their plants [palms] had removed almost\n" +
-                    "all traces of formaldehyde in the room. Both\n" +
-                    "species of plants are ancient, dating back more\n" +
-                    "than a hundred million years. Another trait they\n" +
-                    "share is that they both live long lives, 100 years or\n" +
-                    "more. This we expect from trees, but ferns and\n" +
-                    "palms are plants; plants that can grow to 65 feet\n" +
-                    "in the proper setting! Even their individual leaves\n" +
-                    "live for one to two years [ferns] and one to nine\n" +
-                    "years [palms]. Perhaps it is their primal qualities\n" +
-                    "that have contributed to their ability to purify\n" +
+            "During those barren winter months, with windows " +
+                    "overlooking long-dead gardens, leafless " +
+                    "trees, and lawns that seem to have an ashy look " +
+                    "about them, nothing soothes the jangled nerves" +
+                    "more than the vibrant green of plants surrounding " +
+                    "the living spaces of one’s home. People browse " +
+                    "through garden stores just to get a whiff of chlorophyll " +
+                    "and to choose a plant or two to bring spring " +
+                    "back into their winter-gray lives. " +
+                    "Now there is even more of a need for “the " +
+                    "green,” in light of recent articles warning us of the " +
+                    "hazards of chemicals that we, ourselves, introduce " +
+                    "into our homes. Each time we bring clothes " +
+                    "home from the cleaners, we release those chemicals " +
+                    "into the closed-in air of our dwellings. Every " +
+                    "cleanser releases its own assortment of fumes." +
+                    "Some of the chemicals are formaldehyde, chlorine, " +
+                    "benzene, styrene, etc. Read the labels on " +
+                    "many home products, the ingredients aren’t even " +
+                    "listed! During the winter, when those same windows " +
+                    "are shut tight, we breathe in these chemicals—causing " +
+                    "symptoms much like allergies. In " +
+                    "fact, most people probably dismisFs the effects of " +
+                    "fact, most people probably dismisFs the effects of " +
+                    "these chemicals simply as a flare up of some " +
+                    "allergy or other. The truth is that we are experiencing " +
+                    "a syndrome that is called Multiple Chemical " +
+                    "Sensitivity. Now, what has this got to do with " +
+                    "green plants? Everything healthy! Research has " +
+                    "been conducted with two types of plants that " +
+                    "have actually removed much of these harmful " +
+                    "chemicals from the air. " +
+                    "The two plants that seem to be the best bet " +
+                    "for ridding one’s home of such chemicals are " +
+                    "ferns and palms. These plants release moisture as " +
+                    "part of photosynthesis and, as they do, pull " +
+                    "chemicals from the air into their leaves. Even " +
+                    "NASA has conducted some greenhouse experiments " +
+                    "for long-term space exploration. Within " +
+                    "hours, their plants [palms] had removed almost " +
+                    "all traces of formaldehyde in the room. Both " +
+                    "species of plants are ancient, dating back more " +
+                    "than a hundred million years. Another trait they " +
+                    "share is that they both live long lives, 100 years or " +
+                    "more. This we expect from trees, but ferns and " +
+                    "palms are plants; plants that can grow to 65 feet " +
+                    "in the proper setting! Even their individual leaves " +
+                    "live for one to two years [ferns] and one to nine " +
+                    "years [palms]. Perhaps it is their primal qualities " +
+                    "that have contributed to their ability to purify " +
                     "their environment.",
-            "In his famous study of myth, The Hero with a\n" +
-                    "Thousand Faces, Joseph Campbell writes about\n" +
-                    "the archetypal hero who has ventured outside the\n" +
-                    "boundaries of the village and, after many trials\n" +
-                    "and adventures, has returned with the boon that\n" +
-                    "will save or enlighten his fellows. Like Carl Jung,\n" +
-                    "Campbell believes that the story of the hero is part\n" +
-                    "of the collective unconscious of all humankind.\n" +
-                    "He likens the returning hero to the sacred or\n" +
-                    "tabooed personage described by James Frazier in\n" +
-                    "The Golden Bough. Such an individual must, in\n" +
-                    "many instances of myth, be insulated from the\n" +
-                    "rest of society, “not merely for his own sake but\n" +
-                    "for the sake of others; for since the virtue of holiness\n" +
-                    "is, so to say, a powerful explosive which the\n" +
-                    "smallest touch can detonate, it is necessary in the\n" +
-                    "interest of the general safety to keep it within\n" +
-                    "narrow bounds.”\n" +
-                    "There is __________ between the archetypal\n" +
-                    "hero who has journeyed into the wilderness\n" +
-                    "and the poet who has journeyed into the realm of\n" +
-                    "imagination. Both places are dangerous and full\n" +
-                    "of wonders, and both, at their deepest levels, are\n" +
-                    "journeys that take place in the kingdom of the\n" +
-                    "unconscious mind, a place that, in Campbell’s\n" +
-                    "words, “goes down into unsuspected Aladdin\n" +
-                    "caves. There are not only jewels but dangerous\n" +
+            "In his famous study of myth, The Hero with a " +
+                    "Thousand Faces, Joseph Campbell writes about " +
+                    "the archetypal hero who has ventured outside the " +
+                    "boundaries of the village and, after many trials " +
+                    "and adventures, has returned with the boon that " +
+                    "will save or enlighten his fellows. Like Carl Jung, " +
+                    "Campbell believes that the story of the hero is part " +
+                    "of the collective unconscious of all humankind. " +
+                    "He likens the returning hero to the sacred or " +
+                    "tabooed personage described by James Frazier in " +
+                    "The Golden Bough. Such an individual must, in " +
+                    "many instances of myth, be insulated from the " +
+                    "rest of society, “not merely for his own sake but " +
+                    "for the sake of others; for since the virtue of holiness " +
+                    "is, so to say, a powerful explosive which the " +
+                    "smallest touch can detonate, it is necessary in the " +
+                    "interest of the general safety to keep it within " +
+                    "narrow bounds. " +
+                    "There is __________ between the archetypal " +
+                    "hero who has journeyed into the wilderness " +
+                    "and the poet who has journeyed into the realm of " +
+                    "imagination. Both places are dangerous and full " +
+                    "of wonders, and both, at their deepest levels, are " +
+                    "journeys that take place in the kingdom of the " +
+                    "unconscious mind, a place that, in Campbell’s " +
+                    "words, “goes down into unsuspected Aladdin " +
+                    "caves. There are not only jewels but dangerous " +
                     "jinn abide . . . ”",
 
-            " The coast of the state of Maine is one of the most\n" +
-                    "irregular in the world. A straight line running\n" +
-                    "from the southernmost coastal city to the northernmost\n" +
-                    "coastal city would measure about 225\n" +
-                    "miles. If you followed the coastline between these\n" +
-                    "points, you would travel more than ten times as\n" +
-                    "far. This irregularity is the result of what is called\n" +
-                    "a drowned coastline. The term comes from the\n" +
-                    "glacial activity of the ice age. At that time, the\n" +
-                    "whole area that is now Maine was part of a\n" +
-                    "mountain range that towered above the sea. As\n" +
-                    "the glacier descended, however, it expended\n" +
-                    "enormous force on those mountains, and they\n" +
-                    "sank into the sea.\n" +
-                    "As the mountains sank, ocean water charged\n" +
-                    "over the lowest parts of the remaining land, forming\n" +
-                    "a series of twisting inlets and lagoons of contorted\n" +
-                    "grottos and nooks. The highest parts of\n" +
-                    "the former mountain range, nearest the shore,\n" +
-                    "remained as islands. Mt. Desert Island is one of\n" +
-                    "the most famous of all the islands left behind by\n" +
-                    "the glacier. Marine fossils found here were 225 feet\n" +
-                    "above sea level, indicating the level of the shoreline\n" +
-                    "prior to the glacier.\n" +
-                    "The 2,500-mile-long rocky and jagged\n" +
-                    "coastline of Maine keeps watch over nearly two\n" +
-                    "thousand islands. Many of these islands are tiny\n" +
-                    "and uninhabited, but many are home to thriving\n" +
-                    "communities. Mt. Desert Island is one of the\n" +
-                    "largest, most beautiful of the Maine coast islands.\n" +
-                    "Measuring 16 miles by 12 miles, Mt. Desert was\n" +
-                    "essentially formed as two distinct islands. It is\n" +
-                    "split almost in half by Somes Sound, a deep and\n" +
-                    "narrow stretch of water, seven miles long.\n" +
-                    "For years, Mt. Desert Island, particularly its\n" +
-                    "major settlement, Bar Harbor, afforded summer\n" +
-                    "homes for the wealthy. Recently though, Bar\n" +
-                    "Harbor has become a burgeoning arts community\n" +
-                    "as well. But, the best part of the island is the\n" +
-                    "unspoiled forest land known as Acadia National\n" +
-                    "Park. Because the island sits on the boundary\n" +
-                    "line between the temperate and sub-Arctic\n" +
-                    "zones, the island supports the flora and fauna of\n" +
-                    "both zones as well as beach, inland, and alpine\n" +
-                    "plants. It also lies in a major bird migration lane\n" +
-                    "and is a resting spot for many birds. The establishment\n" +
-                    "of Acadia National Park in 1916 means\n" +
-                    "that this natural reserve will be perpetually available\n" +
-                    "to all people, not just the wealthy. Visitors to\n" +
-                    "Acadia may receive nature instruction from the\n" +
-                    "park naturalists as well as enjoy camping, hiking,\n" +
-                    "cycling, and boating. Or they may choose to\n" +
-                    "spend time at the archeological museum, learning\n" +
-                    "about the Stone Age inhabitants of the\n" +
-                    "island.\n" +
-                    "The best view on Mt. Desert Island is from\n" +
-                    "the top of Cadillac Mountain. This mountain\n" +
-                    "rises 1,532 feet, making it the highest mountain\n" +
-                    "on the Atlantic seaboard. From the summit, you\n" +
-                    "can gaze back toward the mainland or out over\n" +
-                    "the Atlantic Ocean and contemplate the beauty\n" +
-                    "created by a retreating glacier.\n",
+            " The coast of the state of Maine is one of the most " +
+                    "irregular in the world. A straight line running " +
+                    "from the southernmost coastal city to the northernmost " +
+                    "coastal city would measure about 225 " +
+                    "miles. If you followed the coastline between these " +
+                    "points, you would travel more than ten times as " +
+                    "far. This irregularity is the result of what is called " +
+                    "a drowned coastline. The term comes from the " +
+                    "glacial activity of the ice age. At that time, the " +
+                    "whole area that is now Maine was part of a " +
+                    "mountain range that towered above the sea. As " +
+                    "the glacier descended, however, it expended " +
+                    "enormous force on those mountains, and they " +
+                    "sank into the sea. " +
+                    "As the mountains sank, ocean water charged " +
+                    "over the lowest parts of the remaining land, forming " +
+                    "a series of twisting inlets and lagoons of contorted " +
+                    "grottos and nooks. The highest parts of " +
+                    "the former mountain range, nearest the shore, " +
+                    "remained as islands. Mt. Desert Island is one of " +
+                    "the most famous of all the islands left behind by " +
+                    "the glacier. Marine fossils found here were 225 feet " +
+                    "above sea level, indicating the level of the shoreline " +
+                    "prior to the glacier. " +
+                    "The 2,500-mile-long rocky and jagged " +
+                    "coastline of Maine keeps watch over nearly two " +
+                    "thousand islands. Many of these islands are tiny " +
+                    "and uninhabited, but many are home to thriving " +
+                    "communities. Mt. Desert Island is one of the " +
+                    "largest, most beautiful of the Maine coast islands. " +
+                    "Measuring 16 miles by 12 miles, Mt. Desert was " +
+                    "essentially formed as two distinct islands. It is " +
+                    "split almost in half by Somes Sound, a deep and " +
+                    "narrow stretch of water, seven miles long. " +
+                    "For years, Mt. Desert Island, particularly its " +
+                    "major settlement, Bar Harbor, afforded summer " +
+                    "homes for the wealthy. Recently though, Bar " +
+                    "Harbor has become a burgeoning arts community " +
+                    "as well. But, the best part of the island is the " +
+                    "unspoiled forest land known as Acadia National " +
+                    "Park. Because the island sits on the boundary " +
+                    "line between the temperate and sub-Arctic " +
+                    "zones, the island supports the flora and fauna of " +
+                    "both zones as well as beach, inland, and alpine " +
+                    "plants. It also lies in a major bird migration lane " +
+                    "and is a resting spot for many birds. The establishment " +
+                    "of Acadia National Park in 1916 means " +
+                    "that this natural reserve will be perpetually available " +
+                    "to all people, not just the wealthy. Visitors to " +
+                    "Acadia may receive nature instruction from the" +
+                    "park naturalists as well as enjoy camping, hiking, " +
+                    "cycling, and boating. Or they may choose to " +
+                    "spend time at the archeological museum, learning " +
+                    "about the Stone Age inhabitants of the " +
+                    "island. " +
+                    "The best view on Mt. Desert Island is from " +
+                    "the top of Cadillac Mountain. This mountain " +
+                    "rises 1,532 feet, making it the highest mountain " +
+                    "on the Atlantic seaboard. From the summit, you " +
+                    "can gaze back toward the mainland or out over " +
+                    "the Atlantic Ocean and contemplate the beauty " +
+                    "created by a retreating glacier. ",
 
-            "Today, bicycles are elegantly simple machines that\n" +
-                    "are common around the world. Many people ride\n" +
-                    "bicycles for recreation, whereas others use them as\n" +
-                    "a means of transportation. The first bicycle, called\n" +
-                    "a draisienne, was invented in Germany in 1818 by\n" +
-                    "Baron Karl de Drais de Sauerbrun. Because it was\n" +
-                    "made of wood, the draisienne wasn’t very durable\n" +
-                    "nor did it have pedals. Riders moved it by pushing\n" +
-                    "their feet against the ground.\n" +
-                    "In 1839, Kirkpatrick Macmillan, a Scottish\n" +
-                    "blacksmith, invented a much better bicycle.\n" +
-                    "Macmillan’s machine had tires with iron rims to\n" +
-                    "keep them from getting worn down. He also used\n" +
-                    "foot-operated cranks, similar to pedals, so his\n" +
-                    "bicycle could be ridden at a quick pace. It didn’t\n" +
-                    "look much like the modern bicycle, though,\n" +
-                    "because its back wheel was substantially larger\n" +
-                    "than its front wheel. Although Macmillan’s bicycles\n" +
-                    "could be ridden easily, they were never produced\n" +
-                    "in large numbers.\n" +
-                    "In 1861, Frenchman Pierre Michaux and\n" +
-                    "his brother Ernest invented a bicycle with an\n" +
-                    "improved crank mechanism. They called their\n" +
-                    "bicycle a vélocipède, but most people called it a\n" +
-                    "“bone shaker” because of the jarring effect of\n" +
-                    "the wood and iron frame. Despite the unflattering\n" +
-                    "nickname, the vélocipède was a hit. After a few\n" +
-                    "years, the Michaux family was making hundreds\n" +
-                    "of the machines annually, mostly for fun-seeking\n" +
-                    "young people.\n" +
-                    "Ten years later, James Starley, an English\n" +
-                    "inventor, made several innovations that revolutionized\n" +
-                    "bicycle design. He made the front wheel\n" +
-                    "many times larger than the back wheel, put a gear\n" +
-                    "on the pedals to make the bicycle more efficient,\n" +
-                    "and lightened the wheels by using wire spokes.\n" +
-                    "Although this bicycle was much lighter and less\n" +
-                    "tiring to ride, it was still clumsy, extremely topheavy,\n" +
-                    "and ridden mostly for entertainment.\n" +
-                    "It wasn’t until 1874 that the first truly modern\n" +
-                    "bicycle appeared on the scene. Invented by\n" +
-                    "another Englishman, H.J. Lawson, the safety bicycle\n" +
-                    "would look familiar to today’s cyclists. The\n" +
-                    "safety bicycle had equal-sized wheels, which made\n" +
-                    "it much less prone to toppling over. Lawson also\n" +
-                    "attached a chain to the pedals to drive the rear\n" +
-                    "wheel. By 1893, the safety bicycle had been further\n" +
-                    "improved with air-filled rubber tires, a diamondshaped\n" +
-                    "frame, and easy braking. With the\n" +
-                    "improvements provided by Lawson, bicycles\n" +
-                    "became extremely popular and useful for transportation.\n" +
-                    "Today, they are built, used, and enjoyed\n" +
+            "Today, bicycles are elegantly simple machines that " +
+                    "are common around the world. Many people ride " +
+                    "bicycles for recreation, whereas others use them as " +
+                    "a means of transportation. The first bicycle, called " +
+                    "a draisienne, was invented in Germany in 1818 by " +
+                    "Baron Karl de Drais de Sauerbrun. Because it was " +
+                    "made of wood, the draisienne wasn’t very durable " +
+                    "nor did it have pedals. Riders moved it by pushing " +
+                    "their feet against the ground. " +
+                    "In 1839, Kirkpatrick Macmillan, a Scottish " +
+                    "blacksmith, invented a much better bicycle. " +
+                    "Macmillan’s machine had tires with iron rims to " +
+                    "keep them from getting worn down. He also used " +
+                    "foot-operated cranks, similar to pedals, so his " +
+                    "bicycle could be ridden at a quick pace. It didn’t " +
+                    "look much like the modern bicycle, though, " +
+                    "because its back wheel was substantially larger " +
+                    "than its front wheel. Although Macmillan’s bicycles " +
+                    "could be ridden easily, they were never produced " +
+                    "in large numbers. " +
+                    "In 1861, Frenchman Pierre Michaux and " +
+                    "his brother Ernest invented a bicycle with an " +
+                    "improved crank mechanism. They called their " +
+                    "bicycle a vélocipède, but most people called it a " +
+                    "“bone shaker” because of the jarring effect of " +
+                    "the wood and iron frame. Despite the unflatterin " +
+                    "nickname, the vélocipède was a hit. After a few " +
+                    "years, the Michaux family was making hundreds " +
+                    "of the machines annually, mostly for fun-seeking " +
+                    "young people. " +
+                    "Ten years later, James Starley, an English " +
+                    "inventor, made several innovations that revolutionized " +
+                    "bicycle design. He made the front wheel " +
+                    "many times larger than the back wheel, put a gear " +
+                    "on the pedals to make the bicycle more efficient, " +
+                    "and lightened the wheels by using wire spokes. " +
+                    "Although this bicycle was much lighter and less " +
+                    "tiring to ride, it was still clumsy, extremely topheavy, " +
+                    "and ridden mostly for entertainment. " +
+                    "It wasn’t until 1874 that the first truly modern " +
+                    "bicycle appeared on the scene. Invented by " +
+                    "another Englishman, H.J. Lawson, the safety bicycle " +
+                    "would look familiar to today’s cyclists. The " +
+                    "safety bicycle had equal-sized wheels, which made " +
+                    "it much less prone to toppling over. Lawson also " +
+                    "attached a chain to the pedals to drive the rear " +
+                    "wheel. By 1893, the safety bicycle had been further " +
+                    "improved with air-filled rubber tires, a diamondshaped " +
+                    "frame, and easy braking. With the " +
+                    "improvements provided by Lawson, bicycles " +
+                    "became extremely popular and useful for transportation. " +
+                    "Today, they are built, used, and enjoyed " +
                     "all over the world",
 
-            "Greyhound racing is the sixth most popular spectator\n" +
-                    "sport in the United States. Over the last\n" +
-                    "decade, a growing number of racers have been\n" +
-                    "adopted to spend their retirement as household\n" +
-                    "pets, once their racing careers are over.\n" +
-                    "Many people hesitate to adopt a retired racing\n" +
-                    "greyhound because they think only very old\n" +
-                    "dogs are available. Actually, even champion racers\n" +
-                    "only work until they are about three-and-ahalf\n" +
-                    "years old. Because greyhounds usually live to\n" +
-                    "be 12 to 15 years old, their retirement is much\n" +
-                    "longer than their racing careers.\n" +
-                    "People worry that a greyhound will be more\n" +
-                    "nervous and active than other breeds and will\n" +
-                    "need a large space to run. These are false impressions.\n" +
-                    "Greyhounds have naturally sweet, mild dispositions,\n" +
-                    "and while they love to run, they are\n" +
-                    "sprinters rather than distance runners and are\n" +
-                    "sufficiently exercised with a few daily laps around\n" +
-                    "a fenced-in backyard.\n" +
-                    "Greyhounds do not make good watchdogs,\n" +
-                    "but they are very good with children, get along\n" +
-                    "well with other dogs (and usually cats as well),\n" +
-                    "and are affectionate and loyal. They are intelligent,\n" +
-                    "well-behaved dogs, usually housebroken in\n" +
-                    "only a few days. A retired racing greyhound is a\n" +
+            "Greyhound racing is the sixth most popular spectator " +
+                    "sport in the United States. Over the last " +
+                    "decade, a growing number of racers have been " +
+                    "adopted to spend their retirement as household " +
+                    "pets, once their racing careers are over. " +
+                    "Many people hesitate to adopt a retired racing " +
+                    "greyhound because they think only very old " +
+                    "dogs are available. Actually, even champion racers " +
+                    "only work until they are about three-and-ahalf " +
+                    "years old. Because greyhounds usually live to " +
+                    "be 12 to 15 years old, their retirement is much " +
+                    "longer than their racing careers. " +
+                    "People worry that a greyhound will be more " +
+                    "nervous and active than other breeds and will " +
+                    "need a large space to run. These are false impressions. " +
+                    "Greyhounds have naturally sweet, mild dispositions, " +
+                    "and while they love to run, they are " +
+                    "sprinters rather than distance runners and are " +
+                    "sufficiently exercised with a few daily laps around " +
+                    "a fenced-in backyard. " +
+                    "Greyhounds do not make good watchdogs, " +
+                    "but they are very good with children, get along " +
+                    "well with other dogs (and usually cats as well), " +
+                    "and are affectionate and loyal. They are intelligent, " +
+                    "well-behaved dogs, usually housebroken in " +
+                    "only a few days. A retired racing greyhound is a " +
                     "wonderful pet for almost anyone.",
 
-            "The lives of the Ancient Greeks revolved around\n" +
-                    "eris, a concept by which they defined the universe.\n" +
-                    "They believed that the world existed in a\n" +
-                    "condition of opposites. If there was good, then\n" +
-                    "there was evil, if there was love, then there was\n" +
-                    "hatred; joy, then sorrow; war then peace; and so\n" +
-                    "on. The Greeks believed that good eris occured\n" +
-                    "when one held a balanced outlook on life and\n" +
-                    "coped with problems as they arose. It was a kind\n" +
-                    "of ease of living that came from trying to bring\n" +
-                    "together the great opposing forces in nature. Bad\n" +
-                    "eris was evident in the violent conditions that\n" +
-                    "ruled men’s lives. Although these things were\n" +
-                    "found in nature and sometimes could not be\n" +
-                    "controlled, it was believed that bad eris occurred\n" +
-                    "when one ignored a problem, letting it grow\n" +
-                    "larger until it destroyed not only that person,\n" +
-                    "but his family as well. The Ancient Greeks saw\n" +
-                    "eris as a goddess: Eris, the Goddess of Discord,\n" +
-                    "better known as Trouble.\n" +
-                    "One myth that expresses this concept of\n" +
-                    "bad eris deals with the marriage of King Peleus\n" +
-                    "and the river goddess Thetis. Zeus, the supreme\n" +
-                    "ruler, learns that Thetis would bear a child strong\n" +
-                    "enough to destroy its father. Not wanting to\n" +
-                    "father his own ruin, Zeus convinces Thetis to\n" +
-                    "marry a human, a mortal whose child could\n" +
-                    "never challenge the gods. He promises her,\n" +
-                    "among other things, the greatest wedding in all of\n" +
-                    "Heaven and Earth and allows the couple to invite\n" +
-                    "whomever they please. This is one of the first\n" +
-                    "mixed marriages of Greek Mythology and the\n" +
-                    "lesson learned from it still applies today. They do\n" +
-                    "invite everyone . . . except Eris, the Goddess of\n" +
-                    "Discord. In other words, instead of facing the\n" +
-                    "problems brought on by a mixed marriage, they\n" +
-                    "turn their backs on them. They refused to deal\n" +
-                    "directly with their problems and the result is\n" +
-                    "tragic. In her fury, Eris arrives, ruins the wedding,\n" +
-                    "causes a jealous feud between the three major\n" +
-                    "goddesses over a golden apple, and sets in place\n" +
-                    "the conditions that lead to the Trojan War. The\n" +
-                    "war would take place 20 years in the future, but\n" +
-                    "it would result in the death of the only child of\n" +
-                    "the bride and groom, Achilles. Eris would destroy\n" +
-                    "the parents’ hopes for their future, leaving the\n" +
-                    "couple with no legitimate heirs to the throne.\n" +
-                    "Hence, when we are told, “If you don’t\n" +
-                    "invite trouble, trouble comes,” it means that if we\n" +
-                    "don’t deal with our problems, our problems will\n" +
-                    "deal with us . . . with a vengeance! It is easy to see\n" +
-                    "why the Greeks considered many of their myths\n" +
-                    "learning myths, for this one teaches us the best\n" +
+            "The lives of the Ancient Greeks revolved around " +
+                    "eris, a concept by which they defined the universe. " +
+                    "They believed that the world existed in  " +
+                    "condition of opposites. If there was good, then " +
+                    "there was evil, if there was love, then there was " +
+                    "hatred; joy, then sorrow; war then peace; and so " +
+                    "on. The Greeks believed that good eris occured " +
+                    "when one held a balanced outlook on life and " +
+                    "coped with problems as they arose. It was a kin " +
+                    "of ease of living that came from trying to bring " +
+                    "together the great opposing forces in nature. Bad " +
+                    "eris was evident in the violent conditions that " +
+                    "ruled men’s lives. Although these things were " +
+                    "found in nature and sometimes could not be " +
+                    "controlled, it was believed that bad eris occurred " +
+                    "when one ignored a problem, letting it grow " +
+                    "larger until it destroyed not only that person, " +
+                    "but his family as well. The Ancient Greeks saw " +
+                    "eris as a goddess: Eris, the Goddess of Discord, " +
+                    "better known as Trouble. " +
+                    "One myth that expresses this concept of " +
+                    "bad eris deals with the marriage of King Peleus " +
+                    "and the river goddess Thetis. Zeus, the supreme " +
+                    "ruler, learns that Thetis would bear a child strong " +
+                    "enough to destroy its father. Not wanting to " +
+                    "father his own ruin, Zeus convinces Thetis to " +
+                    "marry a human, a mortal whose child could " +
+                    "never challenge the gods. He promises her, " +
+                    "among other things, the greatest wedding in all of " +
+                    "Heaven and Earth and allows the couple to invite " +
+                    "whomever they please. This is one of the first " +
+                    "mixed marriages of Greek Mythology and the " +
+                    "lesson learned from it still applies today. They do " +
+                    "invite everyone . . . except Eris, the Goddess of " +
+                    "Discord. In other words, instead of facing the " +
+                    "problems brought on by a mixed marriage, they " +
+                    "turn their backs on them. They refused to deal " +
+                    "directly with their problems and the result is " +
+                    "tragic. In her fury, Eris arrives, ruins the wedding, " +
+                    "causes a jealous feud between the three major " +
+                    "goddesses over a golden apple, and sets in place " +
+                    "the conditions that lead to the Trojan War. The " +
+                    "war would take place 20 years in the future, but " +
+                    "it would result in the death of the only child of " +
+                    "the bride and groom, Achilles. Eris would destroy " +
+                    "the parents’ hopes for their future, leaving the " +
+                    "couple with no legitimate heirs to the throne. " +
+                    "Hence, when we are told, “If you don’t " +
+                    "invite trouble, trouble comes,” it means that if we " +
+                    "don’t deal with our problems, our problems will " +
+                    "deal with us . . . with a vengeance! It is easy to see " +
+                    "why the Greeks considered many of their myths " +
+                    "learning myths, for this one teaches us the best " +
                     "way to defeat that which can destroy us.",
-            "She was one of those pretty, charming women\n" +
-                    "who are born, as if by an error of Fate, into a\n" +
-                    "petty official’s family. She had no dowry,1 no\n" +
-                    "hopes, nor the slightest chance of being loved\n" +
-                    "and married by a rich man—so she slipped into\n" +
-                    "marriage with a minor civil servant.\n" +
-                    "Unable to afford jewels, she dressed simply:\n" +
-                    "But she was wretched, for women have neither\n" +
-                    "caste nor breeding—in them beauty, grace, and\n" +
-                    "charm replace pride of birth. Innate refinement,\n" +
-                    "instinctive elegance, and wit give them their place\n" +
-                    "on the only scale that counts, and these make\n" +
-                    "humble girls the peers of the grandest ladies.\n" +
-                    "She suffered, feeling that every luxury should\n" +
-                    "rightly have been hers. The poverty of her rooms—\n" +
-                    "the shabby walls, the worn furniture, the ugly\n" +
-                    "upholstery caused her pain. All these things that\n" +
-                    "another woman of her class would not even have\n" +
-                    "noticed, made her angry. The very sight of the little\n" +
-                    "Breton girl who cleaned for her awoke rueful\n" +
-                    "thoughts and the wildest dreams in her mind. She\n" +
-                    "dreamt of rooms with Oriental hangings,lighted by\n" +
-                    "tall, bronze torches, and with two huge footmen in\n" +
-                    "knee breeches made drowsy by the heat from the\n" +
-                    "stove, asleep in the wide armchairs. She dreamt of\n" +
-                    "great drawing rooms upholstered in old silks, with\n" +
-                    "fragile little tables holding priceless knickknacks,\n" +
-                    "and of enchanting little sitting rooms designed for\n" +
-                    "tea-time chats with famous, sought-after men\n" +
-                    "whose attentions all women longed for.\n" +
-                    "She sat down to dinner at her round table\n" +
-                    "with its three-day-old cloth, and watched her husband\n" +
-                    "lift the lid of the soup tureen and delightedly\n" +
-                    "exclaim:“Ah, a good homemade beef stew! There’s\n" +
-                    "nothing better!” She visualized elegant dinners\n" +
-                    "with gleaming silver and gorgeous china. She\n" +
-                    "yearned for wall hangings peopled with knights\n" +
-                    "and ladies and exotic birds in a fairy forest. She\n" +
-                    "dreamt of eating the pink flesh of trout or the\n" +
-                    "wings of grouse. She had no proper wardrobe, no\n" +
-                    "jewels, nothing. And those were the only things\n" +
-                    "that she loved—she felt she was made for them.\n" +
-                    "She would have so loved to charm, to be envied, to\n" +
+            "She was one of those pretty, charming women " +
+                    "who are born, as if by an error of Fate, into a " +
+                    "petty official’s family. She had no dowry,1 no " +
+                    "hopes, nor the slightest chance of being loved " +
+                    "and married by a rich man—so she slipped into " +
+                    "marriage with a minor civil servant. " +
+                    "Unable to afford jewels, she dressed simply: " +
+                    "But she was wretched, for women have neither " +
+                    "caste nor breeding—in them beauty, grace, and " +
+                    "charm replace pride of birth. Innate refinement, " +
+                    "instinctive elegance, and wit give them their place " +
+                    "on the only scale that counts, and these make " +
+                    "humble girls the peers of the grandest ladies. " +
+                    "She suffered, feeling that every luxury should " +
+                    "rightly have been hers. The poverty of her rooms— " +
+                    "the shabby walls, the worn furniture, the ugly " +
+                    "upholstery caused her pain. All these things that " +
+                    "another woman of her class would not even have " +
+                    "noticed, made her angry. The very sight of the little " +
+                    "Breton girl who cleaned for her awoke rueful " +
+                    "thoughts and the wildest dreams in her mind. She " +
+                    "dreamt of rooms with Oriental hangings,lighted by " +
+                    "tall, bronze torches, and with two huge footmen in " +
+                    "knee breeches made drowsy by the heat from the " +
+                    "stove, asleep in the wide armchairs. She dreamt of " +
+                    "great drawing rooms upholstered in old silks, with " +
+                    "fragile little tables holding priceless knickknacks, " +
+                    "and of enchanting little sitting rooms designed for " +
+                    "tea-time chats with famous, sought-after men " +
+                    "whose attentions all women longed for. " +
+                    "She sat down to dinner at her round table " +
+                    "with its three-day-old cloth, and watched her husband " +
+                    "lift the lid of the soup tureen and delightedly " +
+                    "exclaim:“Ah, a good homemade beef stew! There’s " +
+                    "nothing better!” She visualized elegant dinners " +
+                    "with gleaming silver and gorgeous china. She " +
+                    "yearned for wall hangings peopled with knights " +
+                    "and ladies and exotic birds in a fairy forest. She " +
+                    "dreamt of eating the pink flesh of trout or the " +
+                    "wings of grouse. She had no proper wardrobe, no " +
+                    "jewels, nothing. And those were the only things " +
+                    "that she loved—she felt she was made for them. " +
+                    "She would have so loved to charm, to be envied, to " +
                     "be admired and sought after.",
 
-            "\t(1) The worst and longest economic crisis in the\n" +
-                    "modern industrial world, the Great Depression in\n" +
-                    "the United States had devastating consequences\n" +
-                    "for American society. At its lowest depth\n" +
-                    "(1932–33), more than 16 million people were\n" +
-                    "unemployed, more than 5,000 banks had closed,\n" +
-                    "and over 85,000 businesses had failed. Millions of\n" +
-                    "Americans lost their jobs, their savings, and even\n" +
-                    "their homes. The homeless built shacks for temporary\n" +
-                    "shelter—these emerging shantytowns\n" +
-                    "were nicknamed Hoovervilles; a bitter homage to\n" +
-                    "President Herbert Hoover, who refused to give\n" +
-                    "government assistance to the jobless. The effects\n" +
-                    "of the Depression—severe unemployment rates\n" +
-                    "and a sharp drop in the production and sales of\n" +
-                    "goods—could also be felt abroad, where many\n" +
-                    "European nations still struggled to recover from\n" +
-                    "World War I.\n" +
-                    "\t(2) Although the stock market crash of 1929\n" +
-                    "marked the onset of the depression, it was not the\n" +
-                    "cause of it: Deep, underlying fissures already\n" +
-                    "existed in the economy of the Roaring Twenties.\n" +
-                    "For example, the tariff and war-debt policies after\n" +
-                    "World War I contributed to the instability of the\n" +
-                    "banking system. American banks made loans to\n" +
-                    "European countries following World War I. However,\n" +
-                    "the United States kept high tariffs on goods\n" +
-                    "imported from other nations. These policies\n" +
-                    "worked against one another. If other countries\n" +
-                    "could not sell goods in the United States, they\n" +
-                    "could not make enough money to pay back their\n" +
-                    "loans or to buy American goods.\n" +
-                    "\t(3) And while the United States seemed to\n" +
-                    "be enjoying a prosperous period in the 1920s, the\n" +
-                    "wealth was not evenly distributed. Businesses\n" +
-                    "made gains in productivity, but only one segment\n" +
-                    "of the population—the wealthy—reaped\n" +
-                    "large profits. Workers received only a small share\n" +
-                    "of the wealth they helped produce. At the same\n" +
-                    "time, Americans spent more than they earned.\n" +
-                    "Advertising encouraged Americans to buy cars,\n" +
-                    "radios, and household appliances instead of saving\n" +
-                    "or purchasing only what they could afford.\n" +
-                    "Easy credit policies allowed consumers to borrow\n" +
-                    "money and accumulate debt. Investors also wildly\n" +
-                    "speculated on the stock market, often borrowing\n" +
-                    "money on credit to buy shares of a company.\n" +
-                    "Stocks increased beyond their worth, but\n" +
-                    "investors were willing to pay inflated prices\n" +
-                    "because they believed stocks would continue to\n" +
-                    "rise. This bubble burst in the fall of 1929, when\n" +
-                    "investors lost confidence that stock prices would\n" +
-                    "keep rising. As investors sold off stocks, the market\n" +
-                    "spiraled downward. The stock market crash\n" +
-                    "affected the economy in the same way that a\n" +
-                    "stressful event can affect the human body, lowering\n" +
-                    "its resistance to infection.\n" +
-                    "\t(4) The ensuing depression led to the election\n" +
-                    "of President Franklin D. Roosevelt in 1932.\n" +
-                    "Roosevelt introduced relief measures that would\n" +
-                    "revive the economy and bring needed relief to\n" +
-                    "Americans suffering the effects of the depression.\n" +
-                    "In his 100 days in office, Roosevelt and\n" +
-                    "Congress passed major legislation that saved\n" +
-                    "banks from closing and regained public confidence.\n" +
-                    "These measures, called the New Deal,\n" +
-                    "included the Agricultural Adjustment Act, which\n" +
-                    "paid farmers to slow their production in order\n" +
-                    "to stabilize food prices; the Federal Deposit\n" +
-                    "Insurance Corporation, which insured bank\n" +
-                    "deposits if banks failed; and the Securities and\n" +
-                    "Exchange Commission, which regulated the\n" +
-                    "stock market. Although the New Deal offered\n" +
-                    "relief, it did not end the Depression. The economy\n" +
-                    "sagged until the nation entered World War\n" +
-                    "II. However, the New Deal changed the relationship\n" +
-                    "between government and American citizens,\n" +
-                    "by expanding the role of the central\n" +
-                    "government in regulating the economy and creating\n" +
+            "\t(1) The worst and longest economic crisis in the " +
+                    "modern industrial world, the Great Depression in " +
+                    "the United States had devastating consequences " +
+                    "for American society. At its lowest depth " +
+                    "(1932–33), more than 16 million people were " +
+                    "unemployed, more than 5,000 banks had closed, " +
+                    "and over 85,000 businesses had failed. Millions of " +
+                    "Americans lost their jobs, their savings, and even " +
+                    "their homes. The homeless built shacks for temporary " +
+                    "shelter—these emerging shantytowns " +
+                    "were nicknamed Hoovervilles; a bitter homage to " +
+                    "President Herbert Hoover, who refused to give " +
+                    "government assistance to the jobless. The effects " +
+                    "of the Depression—severe unemployment rates " +
+                    "and a sharp drop in the production and sales of " +
+                    "goods—could also be felt abroad, where many " +
+                    "European nations still struggled to recover from " +
+                    "World War I. " +
+                    "\t(2) Although the stock market crash of 1929 " +
+                    "marked the onset of the depression, it was not the " +
+                    "cause of it: Deep, underlying fissures already " +
+                    "existed in the economy of the Roaring Twenties. " +
+                    "For example, the tariff and war-debt policies after " +
+                    "World War I contributed to the instability of the " +
+                    "banking system. American banks made loans to " +
+                    "European countries following World War I. However, " +
+                    "the United States kept high tariffs on goods " +
+                    "imported from other nations. These policies " +
+                    "worked against one another. If other countries " +
+                    "could not sell goods in the United States, they " +
+                    "could not make enough money to pay back their " +
+                    "loans or to buy American goods. " +
+                    "\t(3) And while the United States seemed to " +
+                    "be enjoying a prosperous period in the 1920s, the " +
+                    "wealth was not evenly distributed. Businesses " +
+                    "made gains in productivity, but only one segment " +
+                    "of the population—the wealthy—reaped " +
+                    "large profits. Workers received only a small share " +
+                    "of the wealth they helped produce. At the same " +
+                    "time, Americans spent more than they earned. " +
+                    "Advertising encouraged Americans to buy cars, " +
+                    "radios, and household appliances instead of saving " +
+                    "or purchasing only what they could afford. " +
+                    "Easy credit policies allowed consumers to borrow " +
+                    "money and accumulate debt. Investors also wildly " +
+                    "speculated on the stock market, often borrowing " +
+                    "money on credit to buy shares of a company. " +
+                    "Stocks increased beyond their worth, but " +
+                    "investors were willing to pay inflated prices " +
+                    "because they believed stocks would continue to " +
+                    "rise. This bubble burst in the fall of 1929, when " +
+                    "investors lost confidence that stock prices would " +
+                    "keep rising. As investors sold off stocks, the market " +
+                    "spiraled downward. The stock market crash " +
+                    "affected the economy in the same way that a " +
+                    "stressful event can affect the human body, lowering " +
+                    "its resistance to infection. " +
+                    "\t(4) The ensuing depression led to the election " +
+                    "of President Franklin D. Roosevelt in 1932. " +
+                    "Roosevelt introduced relief measures that would " +
+                    "revive the economy and bring needed relief to " +
+                    "Americans suffering the effects of the depression. " +
+                    "In his 100 days in office, Roosevelt and " +
+                    "Congress passed major legislation that saved " +
+                    "banks from closing and regained public confidence. " +
+                    "These measures, called the New Deal, " +
+                    "included the Agricultural Adjustment Act, which " +
+                    "paid farmers to slow their production in order " +
+                    "to stabilize food prices; the Federal Deposit " +
+                    "Insurance Corporation, which insured bank " +
+                    "deposits if banks failed; and the Securities and " +
+                    "Exchange Commission, which regulated the " +
+                    "stock market. Although the New Deal offered " +
+                    "relief, it did not end the Depression. The economy " +
+                    "sagged until the nation entered World War " +
+                    "II. However, the New Deal changed the relationship " +
+                    "between government and American citizens, " +
+                    "by expanding the role of the central " +
+                    "government in regulating the economy and creating " +
                     "social assistance programs.",
 
-            "\t(1) The immune system is equal in complexity to\n" +
-                    "the combined intricacies of the brain and nervous\n" +
-                    "system. The success of the immune system in\n" +
-                    "defending the body relies on a dynamic regulatory\n" +
-                    "communications network consisting of millions\n" +
-                    "and millions of cells. Organized into sets and subsets,\n" +
-                    "these cells pass information back and forth\n" +
-                    "like clouds of bees swarming around a hive. The\n" +
-                    "result is a sensitive system of checks and balances\n" +
-                    "that produces an immune response that is\n" +
-                    "prompt, appropriate, effective, and self-limiting.\n" +
-                    "\t(2) At the heart of the immune system is the\n" +
-                    "ability to distinguish between self and non-self.\n" +
-                    "When immune defenders encounter cells or\n" +
-                    "organisms carrying foreign or non-self molecules,\n" +
-                    "the immune troops move quickly to eliminate\n" +
-                    "the intruders. Virtually every body cell\n" +
-                    "carries distinctive molecules that identify it as\n" +
-                    "self. The body’s immune defenses do not normally\n" +
-                    "attack tissues that carry a self-marker.\n" +
-                    "Rather, immune cells and other body cells coexist\n" +
-                    "peaceably in a state known as self-tolerance.\n" +
-                    "When a normally functioning immune system\n" +
-                    "attacks a non-self molecule, the system has the\n" +
-                    "ability to remember the specifics of the foreign\n" +
-                    "body. Upon subsequent encounters with the same\n" +
-                    "species of molecules, the immune system reacts\n" +
-                    "accordingly. With the possible exception of antibodies\n" +
-                    "passed during lactation, this so-called\n" +
-                    "immune system memory is not inherited. Despite\n" +
-                    "the occurrence of a virus in your family, your\n" +
-                    "immune system must learn from experience with\n" +
-                    "the many millions of distinctive non-self molecules\n" +
-                    "in the sea of microbes in which we live.\n" +
-                    "Learning entails producing the appropriate molecules\n" +
-                    "and cells to match up with and counteract\n" +
-                    "each non-self invader.\n" +
-                    "\t(3) Any substance capable of triggering an\n" +
-                    "immune response is called an antigen. Antigens\n" +
-                    "are not to be confused with allergens, which are\n" +
-                    "most often harmless substances (such as ragweed\n" +
-                    "pollen or cat hair) that provoke the immune system\n" +
-                    "to set off the inappropriate and harmful\n" +
-                    "response known as allergy. An antigen can be a\n" +
-                    "virus, a bacterium, a fungus, a parasite, or even a\n" +
-                    "portion or product of one of these organisms.\n" +
-                    "Tissues or cells from another individual (except\n" +
-                    "an identical twin, whose cells carry identical selfmarkers)\n" +
-                    "also act as antigens; because the\n" +
-                    "immune system recognizes transplanted tissues as\n" +
-                    "foreign, it rejects them. The body will even reject\n" +
-                    "nourishing proteins unless they are first broken\n" +
-                    "down by the digestive system into their primary,\n" +
-                    "non-antigenic building blocks. An antigen\n" +
-                    "announces its foreignness by means of intricate\n" +
-                    "and characteristic shapes called epitopes, which\n" +
-                    "protrude from its surface. Most antigens, even\n" +
-                    "the simplest microbes, carry several different\n" +
-                    "kinds of epitopes on their surface; some may even\n" +
-                    "carry several hundred. Some epitopes will be\n" +
-                    "more effective than others at stimulating an\n" +
-                    "immune response. Only in abnormal situations\n" +
-                    "does the immune system wrongly identify self as\n" +
-                    "non-self and execute a misdirected immune\n" +
-                    "attack. The result can be a so-called autoimmune\n" +
-                    "disease such as rheumatoid arthritis or systemic\n" +
-                    "lupus erythematosis. The painful side effects of\n" +
-                    "these diseases are caused by a person’s immune\n" +
+            "\t(1) The immune system is equal in complexity to" +
+                    "the combined intricacies of the brain and nervous" +
+                    "system. The success of the immune system in" +
+                    "defending the body relies on a dynamic regulatory" +
+                    "communications network consisting of millions" +
+                    "and millions of cells. Organized into sets and subsets," +
+                    "these cells pass information back and forth" +
+                    "like clouds of bees swarming around a hive. The" +
+                    "result is a sensitive system of checks and balances" +
+                    "that produces an immune response that is" +
+                    "prompt, appropriate, effective, and self-limiting." +
+                    "\t(2) At the heart of the immune system is the" +
+                    "ability to distinguish between self and non-self." +
+                    "When immune defenders encounter cells or" +
+                    "organisms carrying foreign or non-self molecules," +
+                    "the immune troops move quickly to eliminate" +
+                    "the intruders. Virtually every body cell" +
+                    "carries distinctive molecules that identify it as" +
+                    "self. The body’s immune defenses do not normally" +
+                    "attack tissues that carry a self-marker." +
+                    "Rather, immune cells and other body cells coexist" +
+                    "peaceably in a state known as self-tolerance." +
+                    "When a normally functioning immune system" +
+                    "attacks a non-self molecule, the system has the" +
+                    "ability to remember the specifics of the foreign" +
+                    "body. Upon subsequent encounters with the same" +
+                    "species of molecules, the immune system reacts" +
+                    "accordingly. With the possible exception of antibodies" +
+                    "passed during lactation, this so-called" +
+                    "immune system memory is not inherited. Despite" +
+                    "the occurrence of a virus in your family, your" +
+                    "immune system must learn from experience with" +
+                    "the many millions of distinctive non-self molecules" +
+                    "in the sea of microbes in which we live." +
+                    "Learning entails producing the appropriate molecules" +
+                    "and cells to match up with and counteract" +
+                    "each non-self invader." +
+                    "\t(3) Any substance capable of triggering an" +
+                    "immune response is called an antigen. Antigens" +
+                    "are not to be confused with allergens, which are" +
+                    "most often harmless substances (such as ragweed" +
+                    "pollen or cat hair) that provoke the immune system" +
+                    "to set off the inappropriate and harmful" +
+                    "response known as allergy. An antigen can be a" +
+                    "virus, a bacterium, a fungus, a parasite, or even a" +
+                    "portion or product of one of these organisms." +
+                    "Tissues or cells from another individual (except" +
+                    "an identical twin, whose cells carry identical selfmarkers)" +
+                    "also act as antigens; because the" +
+                    "immune system recognizes transplanted tissues as" +
+                    "foreign, it rejects them. The body will even reject" +
+                    "nourishing proteins unless they are first broken" +
+                    "down by the digestive system into their primary," +
+                    "non-antigenic building blocks. An antigen" +
+                    "announces its foreignness by means of intricate" +
+                    "and characteristic shapes called epitopes, which" +
+                    "protrude from its surface. Most antigens, even" +
+                    "the simplest microbes, carry several different" +
+                    "kinds of epitopes on their surface; some may even" +
+                    "carry several hundred. Some epitopes will be" +
+                    "more effective than others at stimulating an" +
+                    "immune response. Only in abnormal situations" +
+                    "does the immune system wrongly identify self as" +
+                    "non-self and execute a misdirected immune" +
+                    "attack. The result can be a so-called autoimmune" +
+                    "disease such as rheumatoid arthritis or systemic" +
+                    "lupus erythematosis. The painful side effects of" +
+                    "these diseases are caused by a person’s immune" +
                     "system actually attacking itself.",
 
-            "\t(1) A pioneer leader for women’s rights, Susan B.\n" +
-                    "Anthony became one of the leading women\n" +
-                    "reformers of the nineteenth century. In Rochester,\n" +
-                    "New York, she began her first public crusade on\n" +
-                    "behalf of temperance. The temperance movement\n" +
-                    "dealt with the abuses of women and children\n" +
-                    "who suffered from alcoholic husbands. Also,\n" +
-                    "she worked tirelessly against slavery and for\n" +
-                    "women’s rights. Anthony helped write the history\n" +
-                    "of woman suffrage.\n" +
-                    "\t(2) At the time Anthony lived, women did\n" +
-                    "not have the right to vote. Because she voted in\n" +
-                    "the 1872 election, a U.S. Marshall arrested\n" +
-                    "Anthony. She hoped to prove that women had the\n" +
-                    "legal right to vote under the provisions of the\n" +
-                    "fourteenth and fifteenth amendments to the Constitution.\n" +
-                    "At her trial, a hostile federal judge found\n" +
-                    "her guilty and fined her $100, which she refused\n" +
-                    "to pay.\n" +
-                    "\t(3) Anthony did not work alone. She collaborated\n" +
-                    "with reformers of women’s rights such\n" +
-                    "as Elizabeth Cady Stanton and Amelia Bloomer.\n" +
-                    "Susan worked for the American Anti-Slavery\n" +
-                    "Society with Frederick Douglass, a fugitive slave\n" +
-                    "and black abolitionist. On July 2, 1979, the U.S.\n" +
-                    "Mint honored her work by issuing the Susan B.\n" +
-                    "Anthony dollar coin. Although Anthony did not\n" +
-                    "live to see the fruits of her efforts, the establishment\n" +
-                    "of the nineteenth amendment is indebted to\n" +
+            "\t(1) A pioneer leader for women’s rights, Susan B." +
+                    "Anthony became one of the leading women" +
+                    "reformers of the nineteenth century. In Rochester," +
+                    "New York, she began her first public crusade on" +
+                    "behalf of temperance. The temperance movement" +
+                    "dealt with the abuses of women and children" +
+                    "who suffered from alcoholic husbands. Also," +
+                    "she worked tirelessly against slavery and for" +
+                    "women’s rights. Anthony helped write the history" +
+                    "of woman suffrage." +
+                    "\t(2) At the time Anthony lived, women did" +
+                    "not have the right to vote. Because she voted in" +
+                    "the 1872 election, a U.S. Marshall arrested" +
+                    "Anthony. She hoped to prove that women had the" +
+                    "legal right to vote under the provisions of the" +
+                    "fourteenth and fifteenth amendments to the Constitution." +
+                    "At her trial, a hostile federal judge found" +
+                    "her guilty and fined her $100, which she refused" +
+                    "to pay." +
+                    "\t(3) Anthony did not work alone. She collaborated" +
+                    "with reformers of women’s rights such" +
+                    "as Elizabeth Cady Stanton and Amelia Bloomer." +
+                    "Susan worked for the American Anti-Slavery" +
+                    "Society with Frederick Douglass, a fugitive slave" +
+                    "and black abolitionist. On July 2, 1979, the U.S." +
+                    "Mint honored her work by issuing the Susan B." +
+                    "Anthony dollar coin. Although Anthony did not" +
+                    "live to see the fruits of her efforts, the establishment" +
+                    "of the nineteenth amendment is indebted to" +
                     "her efforts.",
 
-            "Kwanzaa is a holiday celebrated by many African\n" +
-                    "Americans from December 26 to January 1. It\n" +
-                    "pays tribute to the rich cultural roots of Americans\n" +
-                    "of African ancestry, and celebrates family,\n" +
-                    "community, and culture. Kwanzaa means the first\n" +
-                    "or the first fruits of the harvest and is based on the\n" +
-                    "ancient African first-fruit harvest celebrations.\n" +
-                    "The modern holiday of Kwanzaa was founded in\n" +
-                    "1966 by Dr. Maulana Karenga, a professor at the\n" +
-                    "California State University in Long Beach, California.\n" +
-                    "The seven-day celebration encourages\n" +
-                    "people to think about their African roots as well\n" +
-                    "as their life in present-day America.\n" +
-                    "The seven fundamental principles on which\n" +
-                    "Kwanzaa is based are referred to as the Nguzo Saba.\n" +
-                    "These rules consist of unity, self-determination,\n" +
-                    "collective work and responsibility, cooperative\n" +
-                    "economics, purpose, creativity, and faith. Participants\n" +
-                    "celebrate by performing rituals such as lighting\n" +
-                    "the kinara. The kinara is symbolic of the\n" +
-                    "continental Africans. Each of its seven candles represents\n" +
-                    "a distinct principle beginning with unity,\n" +
-                    "the black center candle. Talking with family,\n" +
-                    "drumming, singing, and dancing are all part of the\n" +
+            "Kwanzaa is a holiday celebrated by many African" +
+                    "Americans from December 26 to January 1. It" +
+                    "pays tribute to the rich cultural roots of Americans" +
+                    "of African ancestry, and celebrates family," +
+                    "community, and culture. Kwanzaa means the first" +
+                    "or the first fruits of the harvest and is based on the" +
+                    "ancient African first-fruit harvest celebrations." +
+                    "The modern holiday of Kwanzaa was founded in" +
+                    "1966 by Dr. Maulana Karenga, a professor at the" +
+                    "California State University in Long Beach, California." +
+                    "The seven-day celebration encourages" +
+                    "people to think about their African roots as well" +
+                    "as their life in present-day America." +
+                    "The seven fundamental principles on which" +
+                    "Kwanzaa is based are referred to as the Nguzo Saba." +
+                    "These rules consist of unity, self-determination," +
+                    "collective work and responsibility, cooperative" +
+                    "economics, purpose, creativity, and faith. Participants" +
+                    "celebrate by performing rituals such as lighting" +
+                    "the kinara. The kinara is symbolic of the" +
+                    "continental Africans. Each of its seven candles represents" +
+                    "a distinct principle beginning with unity," +
+                    "the black center candle. Talking with family," +
+                    "drumming, singing, and dancing are all part of the" +
                     "celebration activities",
-            "1) The Woodstock Music and Art Fair—better\n" +
-                    "known to its participants and to history simply as\n" +
-                    "“Woodstock”—should have been a colossal failure.\n" +
-                    "2) Just a month prior to its August 15, 1969\n" +
-                    "opening, the fair’s organizers were informed by\n" +
-                    "the council of Wallkill, New York, that permission\n" +
-                    "to hold the festival was withdrawn. 3) Amazingly,\n" +
-                    "not only was a new site found, but word spread to\n" +
-                    "the public of the fair’s new location. 4) At the\n" +
-                    "new site, fences that were supposed to facilitate\n" +
-                    "ticket collection never materialized, and all\n" +
-                    "attempts at gathering tickets were abandoned. 5)\n" +
-                    "Crowd estimates of 30,000 kept rising; by the end\n" +
-                    "of the three days, some estimated the crowd at\n" +
-                    "500,000. 6) Then, on opening night, it began to\n" +
-                    "rain. 7) Off and on, throughout all three days,\n" +
-                    "huge summer storms rolled over the gathering. 8)\n" +
-                    "In spite of these problems, most people think of\n" +
-                    "Woodstock not only as a fond memory but as\n" +
+            "1) The Woodstock Music and Art Fair—better" +
+                    "known to its participants and to history simply as" +
+                    "“Woodstock”—should have been a colossal failure." +
+                    "2) Just a month prior to its August 15, 1969" +
+                    "opening, the fair’s organizers were informed by" +
+                    "the council of Wallkill, New York, that permission" +
+                    "to hold the festival was withdrawn. 3) Amazingly," +
+                    "not only was a new site found, but word spread to" +
+                    "the public of the fair’s new location. 4) At the" +
+                    "new site, fences that were supposed to facilitate" +
+                    "ticket collection never materialized, and all" +
+                    "attempts at gathering tickets were abandoned. 5)" +
+                    "Crowd estimates of 30,000 kept rising; by the end" +
+                    "of the three days, some estimated the crowd at" +
+                    "500,000. 6) Then, on opening night, it began to" +
+                    "rain. 7) Off and on, throughout all three days," +
+                    "huge summer storms rolled over the gathering. 8)" +
+                    "In spite of these problems, most people think of" +
+                    "Woodstock not only as a fond memory but as" +
                     "the defining moment for an entire generation.",
-            "\tLast spring, employees of the Hartville Corporation\n" +
-                    "organized a weeklong strike to protest poor\n" +
-                    "working conditions and unreasonable company\n" +
-                    "policies. The strike resulted in huge financial\n" +
-                    "losses for the company and the threat of a\n" +
-                    "national boycott on Hartville products. The situation\n" +
-                    "resulted in the formation of an employee\n" +
-                    "task force, supported by Hartville management, to\n" +
-                    "review circumstances that led to the strike. The\n" +
-                    "task-force findings follow:\n" +
-                    "\t¦ Hartville’s overtime pay schedule is well\n" +
-                    "below the national level, and overtime is\n" +
-                    "mandatory at least once a week.\n" +
-                    "\t¦ Employees working in the manufacturing\n" +
-                    "department have an alarmingly high rate of\n" +
-                    "repetitive stress injury. The equipment they\n" +
-                    "are working with is extremely old and dangerous\n" +
-                    "and does not meet current health and\n" +
-                    "safety standards. The task force recommended\n" +
-                    "that equipment be evaluated and brought upto-date\n" +
-                    "immediately.\n" +
-                    "\t¦ Sick and personal day policies are unclear.\n" +
-                    "Employees report conflicting and/or confusing\n" +
-                    "policies relating to sick and personal days,\n" +
-                    "which have resulted in numerous misunderstandings\n" +
-                    "about procedures and allowances as\n" +
-                    "well as unfair disciplinary action.\n" +
-                    "\t¦ In the past four years, five pregnant women\n" +
-                    "with clean work records were terminated\n" +
-                    "soon after their pregnancies were public. In all\n" +
-                    "five cases, the grounds for firing were not\n" +
-                    "specifically cited, although one of the employees\n" +
-                    "was told by her immediate supervisor that\n" +
-                    "new mothers make very unreliable employees.\n" +
-                    "\t¦ Hartville’s upper management is largely\n" +
-                    "unaware of the dissatisfaction of employees.\n" +
-                    "There is evidence that middle management\n" +
-                    "withholds vital information leading to upper\n" +
-                    "management’s underestimation of the severity\n" +
+            "\tLast spring, employees of the Hartville Corporation" +
+                    "organized a weeklong strike to protest poor" +
+                    "working conditions and unreasonable company" +
+                    "policies. The strike resulted in huge financial" +
+                    "losses for the company and the threat of a" +
+                    "national boycott on Hartville products. The situation" +
+                    "resulted in the formation of an employee" +
+                    "task force, supported by Hartville management, to" +
+                    "review circumstances that led to the strike. The" +
+                    "task-force findings follow:" +
+                    "\t¦ Hartville’s overtime pay schedule is well" +
+                    "below the national level, and overtime is" +
+                    "mandatory at least once a week." +
+                    "\t¦ Employees working in the manufacturing" +
+                    "department have an alarmingly high rate of" +
+                    "repetitive stress injury. The equipment they" +
+                    "are working with is extremely old and dangerous" +
+                    "and does not meet current health and" +
+                    "safety standards. The task force recommended" +
+                    "that equipment be evaluated and brought upto-date" +
+                    "immediately." +
+                    "\t¦ Sick and personal day policies are unclear." +
+                    "Employees report conflicting and/or confusing" +
+                    "policies relating to sick and personal days," +
+                    "which have resulted in numerous misunderstandings" +
+                    "about procedures and allowances as" +
+                    "well as unfair disciplinary action." +
+                    "\t¦ In the past four years, five pregnant women" +
+                    "with clean work records were terminated" +
+                    "soon after their pregnancies were public. In all" +
+                    "five cases, the grounds for firing were not" +
+                    "specifically cited, although one of the employees" +
+                    "was told by her immediate supervisor that" +
+                    "new mothers make very unreliable employees." +
+                    "\t¦ Hartville’s upper management is largely" +
+                    "unaware of the dissatisfaction of employees." +
+                    "There is evidence that middle management" +
+                    "withholds vital information leading to upper" +
+                    "management’s underestimation of the severity" +
                     "of employee discontent.",
 
-            "Mental and physical health professionals may\n" +
-                    "consider referring clients and patients to a music\n" +
-                    "therapist for a number of reasons. It seems a particularly\n" +
-                    "good choice for the social worker who is\n" +
-                    "coordinating a client’s case. Music therapists use\n" +
-                    "music to establish a relationship with the patient\n" +
-                    "and to improve the patient’s health, using highly\n" +
-                    "structured musical interactions. Patients and\n" +
-                    "therapists may sing, play instruments, dance,\n" +
-                    "compose, or simply listen to music.\n" +
-                    "The course of training for music therapists\n" +
-                    "is comprehensive. In addition to formal musical\n" +
-                    "and therapy training, music therapists are taught\n" +
-                    "to discern what kinds of interventions will be\n" +
-                    "most beneficial for each individual patient.\n" +
-                    "Because each patient is different and has different\n" +
-                    "goals, the music therapist must be able to understand\n" +
-                    "the patient’s situation and choose the music\n" +
-                    "and activities that will do the most toward helping\n" +
-                    "the patient achieve his or her goals. The referring\n" +
-                    "social worker can help this process by clearly\n" +
-                    "communicating each client’s history.\n" +
-                    "Although patients may develop their musical\n" +
-                    "skills, that is not the main goal of music therapy.\n" +
-                    "Any client who needs particular work on\n" +
-                    "communication or on academic, emotional, and\n" +
-                    "social skills, and who is not responding to traditional\n" +
-                    "therapy, is an excellent candidate for\n" +
+            "Mental and physical health professionals may" +
+                    "consider referring clients and patients to a music" +
+                    "therapist for a number of reasons. It seems a particularly" +
+                    "good choice for the social worker who is" +
+                    "coordinating a client’s case. Music therapists use" +
+                    "music to establish a relationship with the patient" +
+                    "and to improve the patient’s health, using highly" +
+                    "structured musical interactions. Patients and" +
+                    "therapists may sing, play instruments, dance," +
+                    "compose, or simply listen to music." +
+                    "The course of training for music therapists" +
+                    "is comprehensive. In addition to formal musical" +
+                    "and therapy training, music therapists are taught" +
+                    "to discern what kinds of interventions will be" +
+                    "most beneficial for each individual patient." +
+                    "Because each patient is different and has different" +
+                    "goals, the music therapist must be able to understand" +
+                    "the patient’s situation and choose the music" +
+                    "and activities that will do the most toward helping" +
+                    "the patient achieve his or her goals. The referring" +
+                    "social worker can help this process by clearly" +
+                    "communicating each client’s history." +
+                    "Although patients may develop their musical" +
+                    "skills, that is not the main goal of music therapy." +
+                    "Any client who needs particular work on" +
+                    "communication or on academic, emotional, and" +
+                    "social skills, and who is not responding to traditional" +
+                    "therapy, is an excellent candidate for" +
                     "music therapy",
-            "Typically, people think of genius, whether it manifests\n" +
-                    "in Mozart’s composition of symphonies at\n" +
-                    "age five or Einstein’s discovery of relativity, as\n" +
-                    "having a quality not just of the supernatural, but\n" +
-                    "also of the eccentric. People see genius as a good\n" +
-                    "abnormality; moreover, they think of genius as a\n" +
-                    "completely unpredictable abnormality. Until\n" +
-                    "recently, psychologists regarded the quirks of\n" +
-                    "genius as too erratic to describe intelligibly; however,\n" +
-                    "Anna Findley’s ground-breaking study\n" +
-                    "uncovers predictable patterns in the biographies\n" +
-                    "of geniuses. These patterns do not dispel the common\n" +
-                    "belief that there is a kind of supernatural\n" +
-                    "intervention in the lives of unusually talented\n" +
-                    "men and women, however, even though they\n" +
-                    "occur with regularity. __________, Findley shows\n" +
-                    "that all geniuses experience three intensely productive\n" +
-                    "periods in their lives, one of which always\n" +
-                    "occurs shortly before their deaths; this is true\n" +
+            "Typically, people think of genius, whether it manifests" +
+                    "in Mozart’s composition of symphonies at" +
+                    "age five or Einstein’s discovery of relativity, as" +
+                    "having a quality not just of the supernatural, but" +
+                    "also of the eccentric. People see genius as a good" +
+                    "abnormality; moreover, they think of genius as a" +
+                    "completely unpredictable abnormality. Until" +
+                    "recently, psychologists regarded the quirks of" +
+                    "genius as too erratic to describe intelligibly; however," +
+                    "Anna Findley’s ground-breaking study" +
+                    "uncovers predictable patterns in the biographies" +
+                    "of geniuses. These patterns do not dispel the common" +
+                    "belief that there is a kind of supernatural" +
+                    "intervention in the lives of unusually talented" +
+                    "men and women, however, even though they" +
+                    "occur with regularity. __________, Findley shows" +
+                    "that all geniuses experience three intensely productive" +
+                    "periods in their lives, one of which always" +
+                    "occurs shortly before their deaths; this is true" +
                     "whether the genius lives to 19 or 90.",
 
-            "O’Connell Street is the main thoroughfare of\n" +
-                    "Dublin City. Although it is not a particularly long\n" +
-                    "street, Dubliners will proudly tell the visitor that\n" +
-                    "it is the widest street in all of Europe. This claim\n" +
-                    "usually meets with protests, especially from\n" +
-                    "French tourists, claiming the Champs Elysees of\n" +
-                    "Paris as Europe’s widest street. But the witty\n" +
-                    "Dubliner will not easily relinquish bragging rights\n" +
-                    "and will trump the French visitor with a fine distinction:\n" +
-                    "The Champs Elysees is a boulevard;\n" +
-                    "O’Connell is a street.\n" +
-                    "Divided by several important monuments\n" +
-                    "running the length of its center, the street is\n" +
-                    "named for Daniel O’Connell, an Irish patriot.\n" +
-                    "_____________________________. O’Connell\n" +
-                    "stands high above the unhurried crowds of shoppers,\n" +
-                    "business people, and students on a sturdy\n" +
-                    "column, surrounded by four serene angels seated\n" +
-                    "at each corner of the monument’s base. Further\n" +
-                    "up the street is the famous General Post Office\n" +
-                    "that locals affectionately call the GPO. During\n" +
-                    "the 1916 rebellion, the GPO was taken over from\n" +
-                    "British rule and occupied by Irish rebels, sparking\n" +
-                    "weeks of armed combat in the city’s center. To this\n" +
-                    "day, the angels of O’Connell’s monument bear the\n" +
-                    "marks of the fighting: One sits reading calmly,\n" +
-                    "apparently unaware of the bullet hole dimpling\n" +
-                    "her upper arm; another, reaching out to stroke the\n" +
-                    "ears of a huge bronze Irish wolfhound has survived\n" +
-                    "what should be a mortal wound to her\n" +
+            "O’Connell Street is the main thoroughfare of" +
+                    "Dublin City. Although it is not a particularly long" +
+                    "street, Dubliners will proudly tell the visitor that" +
+                    "it is the widest street in all of Europe. This claim" +
+                    "usually meets with protests, especially from" +
+                    "French tourists, claiming the Champs Elysees of" +
+                    "Paris as Europe’s widest street. But the witty" +
+                    "Dubliner will not easily relinquish bragging rights" +
+                    "and will trump the French visitor with a fine distinction:" +
+                    "The Champs Elysees is a boulevard;" +
+                    "O’Connell is a street." +
+                    "Divided by several important monuments" +
+                    "running the length of its center, the street is" +
+                    "named for Daniel O’Connell, an Irish patriot." +
+                    "_____________________________. O’Connell" +
+                    "stands high above the unhurried crowds of shoppers," +
+                    "business people, and students on a sturdy" +
+                    "column, surrounded by four serene angels seated" +
+                    "at each corner of the monument’s base. Further" +
+                    "up the street is the famous General Post Office" +
+                    "that locals affectionately call the GPO. During" +
+                    "the 1916 rebellion, the GPO was taken over from" +
+                    "British rule and occupied by Irish rebels, sparking" +
+                    "weeks of armed combat in the city’s center. To this" +
+                    "day, the angels of O’Connell’s monument bear the" +
+                    "marks of the fighting: One sits reading calmly," +
+                    "apparently unaware of the bullet hole dimpling" +
+                    "her upper arm; another, reaching out to stroke the" +
+                    "ears of a huge bronze Irish wolfhound has survived" +
+                    "what should be a mortal wound to her " +
                     "heart."
 
 
