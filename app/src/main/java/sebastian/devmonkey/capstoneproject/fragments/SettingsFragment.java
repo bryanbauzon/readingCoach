@@ -145,7 +145,9 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
 
         methods();
-       // defaultSetting();
+        lineSpacing.setBackgroundResource(R.drawable.activelinespacinga);
+
+        // defaultSetting();
         SharedPreferences preferences = getActivity().getSharedPreferences("settings",MODE_PRIVATE);
 
       //  SharedPreferences preferences = getActivity().getPreferences("settings",MODE_PRIVATE);
@@ -521,7 +523,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
         editor.putString("activeText","small");
         editor.apply();
 
-        lineSpacing.setBackgroundResource(R.drawable.deactivelinespacingb);
+        lineSpacing.setBackgroundResource(R.drawable.deactivelinespacinga);
         pageMargin1.setBackgroundResource(R.drawable.deactivemargina);
         small.setBackgroundResource(R.drawable.settingbuttons);
         fontType1.setBackgroundResource(R.drawable.settingbuttons);

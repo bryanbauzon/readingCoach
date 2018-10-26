@@ -1,5 +1,6 @@
 package sebastian.devmonkey.capstoneproject.fragments.StoryReadingBottomNav;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -7,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,7 +49,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
     Button a,b,c,d;
 
     private String answer;
-    private int score = 0;
+    public int score = 0;
     TextView questions = null, containerScore = null,noQuestions = null;
     GlobalVariable gv;
     Intent intent;
@@ -148,23 +150,7 @@ public class Quizzer extends Fragment implements View.OnClickListener{
         return view;
     }
 
-    private void updateQuestion() {
-        if (!available.isEmpty()) {
-            counter++;
-            noQuestions.setText("Question No.: "+counter);
 
-            Collections.shuffle(available);
-            questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));
-            a.setText(QuestionLibrary.getChoice1(available.get(0), id, level));
-            b.setText(QuestionLibrary.getChoice2(available.get(0), id, level));
-            c.setText(QuestionLibrary.getChoice3(available.get(0), id, level));
-            d.setText(QuestionLibrary.getChoice4(available.get(0), id, level));
-            answer = QuestionLibrary.getCorrectAnswer(available.get(0), id, level);
-
-            available.remove(0);
-
-        }
-    }
 
     private void updateScore (int point) {
         containerScore.setText("Score: " + point);
@@ -463,11 +449,51 @@ public class Quizzer extends Fragment implements View.OnClickListener{
         }
 
     }
+    private void updateQuestion() {
+        if (!available.isEmpty()) {
+            counter++;
+            noQuestions.setText("Question No.: "+counter);
 
 
+                Collections.shuffle(available);
+                questions.setText(QuestionLibrary.getQuestion(available.get(0), id, level));
+                a.setText(QuestionLibrary.getChoice1(available.get(0), id, level));
+                b.setText(QuestionLibrary.getChoice2(available.get(0), id, level));
+                c.setText(QuestionLibrary.getChoice3(available.get(0), id, level));
+                d.setText(QuestionLibrary.getChoice4(available.get(0), id, level));
+                answer = QuestionLibrary.getCorrectAnswer(available.get(0), id, level);
 
+                available.remove(0);
+
+
+        }else{
+           showDialog();
+        }
+    }
+
+    protected void showDialog(){
+
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.setCancelable(true);
+
+        View view  = getActivity().getLayoutInflater().inflate(R.layout.scoreboard, null);
+        dialog.setContentView(view);
+
+        TextView scores = (TextView) view.findViewById(R.id.score);
+        //TextView delete = (TextView) view.findViewById(R.id.delete);
+        scores.setText(score);
+        Button okay = (Button)view.findViewById(R.id.okay);
+       okay.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               dialog.dismiss();
+           }
+       });
+               dialog.show();
+    };
     /**
-     * This interface must be implemented by activities that contain this
+     * This interface must be imp
+     * lemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.

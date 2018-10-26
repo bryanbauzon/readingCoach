@@ -124,13 +124,7 @@ public class JournalActivity extends AppCompatActivity {
                 getData.put("title", cursor.getString(1));
                 getData.put("date", cursor.getString(3));
                 data.add(getData);
-
-
-
             }
-
-
-
 
             adapter = new SimpleAdapter(this, data,
                     android.R.layout.simple_list_item_2,

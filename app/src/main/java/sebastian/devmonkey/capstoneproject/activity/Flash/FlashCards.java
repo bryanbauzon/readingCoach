@@ -49,7 +49,7 @@ public class FlashCards extends AppCompatActivity {
 //        word.setText(arrays.terminologiesWords[ctr]);
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        Toast.makeText(getApplicationContext(),word.getText().toString(),Toast.LENGTH_LONG).show();
+      //  Toast.makeText(getApplicationContext(),word.getText().toString(),Toast.LENGTH_LONG).show();
 
 
 
@@ -100,7 +100,7 @@ public class FlashCards extends AppCompatActivity {
             case 100:
                 if(resultCode == RESULT_OK && data != null){
                     ArrayList<String> resultData = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    Toast.makeText(getApplicationContext(),resultData.get(0),Toast.LENGTH_LONG).show();
+                  //  Toast.makeText(getApplicationContext(),resultData.get(0),Toast.LENGTH_LONG).show();
                     holder = word.getText().toString();
                         if(resultData.get(0).equalsIgnoreCase(holder)){
                             tts.speak("You got it!",TextToSpeech.QUEUE_FLUSH,null);
@@ -117,6 +117,7 @@ public class FlashCards extends AppCompatActivity {
                                 public void onClick(View view) {
                                     ctr = rand.nextInt(arrays.terminologiesWords.length);
                                     word.setText(arrays.terminologiesWords[ctr]);
+                                    tts.speak("The next word is "+word.getText().toString(),TextToSpeech.QUEUE_FLUSH,null);
                                     correctDialog.dismiss();
                                 }
                             });
