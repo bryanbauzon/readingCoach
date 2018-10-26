@@ -73,8 +73,8 @@ TextToSpeech tts;
             public void onInit(int i) {
                 if(i !=TextToSpeech.ERROR){
                     tts.setLanguage(Locale.UK);
-                    tts.setPitch(0.7f);
-                    tts.setSpeechRate(0.8f);
+               //     tts.setPitch(0.7f);
+                  //  tts.setSpeechRate(0.8f);
                 }
             }
         });
@@ -140,7 +140,7 @@ TextToSpeech tts;
                 break;
             case R.id.btnFlashCards:
 
-                tts.speak("Please connect to the internet or turn on your mobile data, for me to translate your voice more accurate. Thank you and good day.",TextToSpeech.QUEUE_FLUSH,null);
+                tts.speak("Please connect to the internet or turn on your mobile data, for me to translate your voice more accurate. Thank you!",TextToSpeech.QUEUE_FLUSH,null);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {

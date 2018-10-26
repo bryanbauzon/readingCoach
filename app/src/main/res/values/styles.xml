@@ -5,6 +5,7 @@
         <!-- Customize your theme here. -->
 
         <item name="colorPrimary">#262626</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
@@ -14,9 +15,10 @@
     <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorPrimary">@color/colorPrimaryBlack</item>
     </style>
-    <style name="DrawArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-        <item name="spinBars">true</item>
-        <item name="color">@color/white</item>
+ 
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/colorAccent</item>
+
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="AppTheme.PopupOverlay" tools:ignore="ResourceCycle"/>
