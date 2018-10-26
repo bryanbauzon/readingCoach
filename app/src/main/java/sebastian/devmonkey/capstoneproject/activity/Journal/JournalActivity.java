@@ -37,7 +37,9 @@ public class JournalActivity extends AppCompatActivity {
 
     DatabaseHelper db;
     ArrayList<String> listItem;
-    ArrayAdapter adapter;
+    SimpleAdapter adapter;
+    List<Map<String, String>> data;
+    Map<String, String> getData;
     ArrayList<String> id;
     ArrayList<String> content;
     String[]titleJournal,contentJournal;
@@ -85,7 +87,6 @@ public class JournalActivity extends AppCompatActivity {
                 intent.putExtra("TITLE", listItem.get(i));
                 intent.putExtra("CONTENT", content.get(i));
                 startActivity(intent);
-               // finish();
 
             }
         });
@@ -97,6 +98,7 @@ public class JournalActivity extends AppCompatActivity {
     private void viewData() {
 
         Cursor cursor = db.viewData();
+        data = new ArrayList<>();
 
         if (cursor.getCount() == 0) {
             textView.setText("No journal entries found.");
@@ -110,17 +112,33 @@ public class JournalActivity extends AppCompatActivity {
                 id.add(cursor.getString(0));
 
                 //getting title in database
-               listItem.add(cursor.getString(1)); // index 1 is the name, index 0 is id
+                listItem.add(cursor.getString(1)); // index 1 is the name, index 0 is id
 
                 //getting content
                 content.add(cursor.getString(2));
 
                 titleContent.put(cursor.getString(1),cursor.getString(2));
 
+
+                getData = new HashMap<String, String>(2);
+                getData.put("title", cursor.getString(1));
+                getData.put("date", cursor.getString(3));
+                data.add(getData);
+
+
+
             }
 
 
-            adapter = new ArrayAdapter< >(this, android.R.layout.simple_list_item_1, listItem);
+
+
+            adapter = new SimpleAdapter(this, data,
+                    android.R.layout.simple_list_item_2,
+                    new String[] {"title", "date"},
+                    new int[] {android.R.id.text1,
+                            android.R.id.text2});
+
+
             listView.setAdapter(adapter);
 
 

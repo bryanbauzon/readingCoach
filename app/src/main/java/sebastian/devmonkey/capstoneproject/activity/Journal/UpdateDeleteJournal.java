@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import sebastian.devmonkey.capstoneproject.R;
@@ -46,6 +47,7 @@ public class UpdateDeleteJournal extends AppCompatActivity {
 
         edtTitle.setText(title);
         edtContent.setText(content);
+       // txtDate.setText(date);
 
 
     }
