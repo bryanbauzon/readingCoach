@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements
      */
     private void loadNavHeader() {
         // name, website
-       txtName.setText("BRAINIAC");
+       txtName.setText("Reading Coach");
 
     }
 

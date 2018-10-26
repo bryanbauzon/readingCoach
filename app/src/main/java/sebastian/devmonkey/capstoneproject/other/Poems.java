@@ -873,7 +873,8 @@ public class Poems {
             "Alberto Ríos",
             "Emily Dickinson",
             "Heidi Garnett",
-            "Lorna Crozier"
+            "Lorna Crozier",
+            "Arthur Sze"
     };
 
 }

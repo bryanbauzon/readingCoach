@@ -265,7 +265,7 @@ public class Arrays {
 
     };
 
-    private String[] terminologiesWords = {
+    public String[] terminologiesWords = {
             "Abundantly",
             "Acquiesce",
             "Adept",

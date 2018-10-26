@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import sebastian.devmonkey.capstoneproject.activity.Journal.JournalActivity;
+
 public class DatabaseHelper extends SQLiteOpenHelper{
 
     private static final String DB_NAME = "capstone.db";
@@ -20,7 +22,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String CONTENT = "CONTENT";
 
 
-    private static final String CREATE_TABLE = "CREATE TABLE " + DB_TABLE + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, CONTENT TEXT)";
+    private static final String CREATE_TABLE = "CREATE TABLE " + DB_TABLE + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, CONTENT TEXT,DATETIME TEXT)";
 
     private static final String CREATE_TABLE_BOOKMARKS = "CREATE TABLE " + DB_TABLE_BOOKMARKS + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,TITLE TEXT, TITLEID TEXT, LEVEL TEXT)";
 
@@ -80,6 +82,28 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         String query = "SELECT *  FROM " + DB_TABLE ;
 
         return db.rawQuery(query, null);
+
+    }
+
+    public void journalContent(){
+        Cursor cursor = null;
+
+        try{
+            SQLiteDatabase db = this.getReadableDatabase();
+            cursor = db.rawQuery("SELECT * FROM tbl_journal",null);
+
+            cursor.moveToFirst();
+            while (cursor.moveToNext()){
+                JournalActivity.titles.add(cursor.getString(1));
+                JournalActivity.contents.add(cursor.getString(2));
+                JournalActivity.dates.add(cursor.getString(3));
+            }
+            cursor.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
 
     }
 

@@ -12,16 +12,24 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Random;
 
 import sebastian.devmonkey.capstoneproject.R;
+import sebastian.devmonkey.capstoneproject.other.Arrays;
 import sebastian.devmonkey.capstoneproject.other.GlobalVariable;
 
 public class FlashCards extends AppCompatActivity {
     TextToSpeech tts;
     TextView word;
     GlobalVariable gv;
+    Arrays arrays;
+    int ctr = 0;
+    Random rand;
+    String holder = "";
 //    RelativeLayout layout;
 
     @Override
@@ -29,24 +37,22 @@ public class FlashCards extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash_cards);
         setTitle("Flash Cards");
-
         gv = new GlobalVariable();
+        arrays = new Arrays();
+        rand = new Random();
+
+        word = findViewById(R.id.words);
 
 
+        ctr = rand.nextInt(arrays.terminologiesWords.length);
+        word.setText(arrays.terminologiesWords[ctr]);
+//        word.setText(arrays.terminologiesWords[ctr]);
         //back Button beside activity title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Toast.makeText(getApplicationContext(),word.getText().toString(),Toast.LENGTH_LONG).show();
 
-        word = findViewById(R.id.word);
 
-//
-//        if (GlobalVariable.color == 1){
-//            layout.setBackgroundColor(Color.BLACK);
-//            textContainer.setTextColor(Color.WHITE);
-//            word.setTextColor(Color.WHITE);
-//            score.setTextColor(Color.WHITE);
-//        }
 
-      //  gv.setMargins(word ,GlobalVariable.left, GlobalVariable.top, GlobalVariable.right, GlobalVariable.bottom);
 
 
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -94,14 +100,14 @@ public class FlashCards extends AppCompatActivity {
             case 100:
                 if(resultCode == RESULT_OK && data != null){
                     ArrayList<String> resultData = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-
-                        if(word.getText().toString().equals(resultData.get(0))){
+                    Toast.makeText(getApplicationContext(),resultData.get(0),Toast.LENGTH_LONG).show();
+                    holder = word.getText().toString();
+                        if(resultData.get(0).equalsIgnoreCase(holder)){
                             tts.speak("You got it!",TextToSpeech.QUEUE_FLUSH,null);
 
                             LayoutInflater factory = LayoutInflater.from(this);
                             final View correctDialogView = factory.inflate(R.layout.customized_alert_dialog,null);
                             final AlertDialog correctDialog = new AlertDialog.Builder(this).create();
-
                             //initialization of button from custom alert dialog
                             Button yes = (Button)correctDialogView.findViewById(R.id.btnYes);
                             Button no = (Button)correctDialogView.findViewById(R.id.btnNo);
@@ -109,10 +115,9 @@ public class FlashCards extends AppCompatActivity {
                             yes.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
+                                    ctr = rand.nextInt(arrays.terminologiesWords.length);
+                                    word.setText(arrays.terminologiesWords[ctr]);
                                     correctDialog.dismiss();
-                                    word.setText(null);
-                                    word.requestFocus();
-
                                 }
                             });
 

@@ -14,37 +14,49 @@
            android:layout_marginTop="20dp"
            android:layout_centerHorizontal="true"
            android:layout_height="150dp"
+           android:id="@+id/hello"
            android:src="@drawable/logo"
            />
 
-       <EditText
-           android:layout_centerVertical="true"
-           android:layout_width="550px"
-           android:hint="Enter a word...."
-           android:background="@color/white"
-           android:id="@+id/word"
-           android:padding="12dp"
-           android:inputType="text"
+
+       <TextView
+           android:layout_width="match_parent"
+           android:id="@+id/words"
+           android:textAlignment="center"
+           android:textSize="50sp"
+
+           android:textColor="@color/white"
+           android:layout_marginTop="50dp"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/hello"
            android:layout_height="wrap_content" />
 
-       <Button
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_centerVertical="true"
-           android:layout_toRightOf="@+id/word"
-           android:background="@color/orange"
-           android:textColor="@color/white"
-           android:onClick="speak"
-           android:text="Listen"
-           android:id="@+id/btnSpeak"
-           />
-       <Button
-           android:text="@string/btn_speech_to_text"
+
+       <LinearLayout
+           android:orientation="vertical"
            android:layout_width="match_parent"
+           android:layout_height="wrap_content"
            android:layout_alignParentBottom="true"
-           android:onClick="speech"
-           android:background="@color/story"
-           android:textColor="@color/colorAccent"
-           android:layout_height="wrap_content" />
+           >
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/orange"
+                  android:textColor="@color/white"
+                  android:onClick="speak"
+                  android:layout_marginBottom="10dp"
+                  android:text="Listen"
+                  android:id="@+id/btnSpeak"
+                  />
+              <Button
+                  android:text="Speak"
+                  android:layout_width="match_parent"
+                  android:layout_below="@+id/btnSpeak"
+                  android:onClick="speech"
+                  android:background="@color/story"
+                  android:textColor="@color/colorAccent"
+                  android:layout_height="wrap_content" />
+
+       </LinearLayout>
 
 </RelativeLayout>

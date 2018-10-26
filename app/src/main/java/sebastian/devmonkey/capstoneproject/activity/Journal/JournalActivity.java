@@ -45,6 +45,13 @@ public class JournalActivity extends AppCompatActivity {
     HashMap<String,String> titleContent;
     TextView textView;
 
+    //-------------------------------------------------------------------------------
+    public static ArrayList<String> itemIdList = new ArrayList<String>();
+    public static ArrayList<String> titles = new ArrayList<String>();
+    public static ArrayList<String> contents = new ArrayList<String>();
+    public static ArrayList<String> dates = new ArrayList<String>();
+    //-------------------------------------------------------------------------------
+
     private SearchView searchView = null;
     private SearchView.OnQueryTextListener queryTextListener;
 

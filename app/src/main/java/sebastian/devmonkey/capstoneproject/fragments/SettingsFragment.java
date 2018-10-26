@@ -237,12 +237,12 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 removeIndicatorsTextSize();
 
                 medium.setBackgroundResource(R.drawable.settingbuttons);
-                GlobalVariable.fontSize = 17;
+                GlobalVariable.fontSize = 25;
             }else if(valueText.equals("large")){
                 removeIndicatorsTextSize();
 
                 large.setBackgroundResource(R.drawable.settingbuttons);
-                GlobalVariable.fontSize = 19;
+                GlobalVariable.fontSize = 35;
             }
 
 
@@ -317,7 +317,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
 
                 break;
             case R.id.btnMedium:
-                GlobalVariable.fontSize = 17;
+                GlobalVariable.fontSize = 25;
                 removeIndicatorsTextSize();
                 medium.setBackgroundResource(R.drawable.settingbuttons);
 
@@ -328,7 +328,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.btnLarge:
-                GlobalVariable.fontSize = 19;
+                GlobalVariable.fontSize = 35;
                 removeIndicatorsTextSize();
                 large.setBackgroundResource(R.drawable.settingbuttons);
 

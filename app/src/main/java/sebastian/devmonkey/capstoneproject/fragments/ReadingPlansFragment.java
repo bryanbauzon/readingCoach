@@ -18,6 +18,7 @@ import java.util.Locale;
 import sebastian.devmonkey.capstoneproject.R;
 import sebastian.devmonkey.capstoneproject.activity.Flash.FlashCards;
 import sebastian.devmonkey.capstoneproject.activity.Poem.PoemCategory;
+import sebastian.devmonkey.capstoneproject.activity.Poem.PoemReading;
 import sebastian.devmonkey.capstoneproject.activity.Stories.StoryCategory;
 
 /**
@@ -41,7 +42,7 @@ TextToSpeech tts;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    public static int ctr = 0;
     private OnFragmentInteractionListener mListener;
 
     public ReadingPlansFragment() {
@@ -91,7 +92,7 @@ TextToSpeech tts;
                              Bundle savedInstanceState) {
 
         View myView = inflater.inflate(R.layout.fragment_reading_plans, container, false);
-
+        ctr++;
         btnPoem = (ImageButton) myView.findViewById(R.id.btnPoems);
         btnStory = (ImageButton) myView.findViewById(R.id.btnStory);
         btnFlashCard = (ImageButton) myView.findViewById(R.id.btnFlashCards);
@@ -139,8 +140,8 @@ TextToSpeech tts;
                 startActivity(new Intent(getActivity(), StoryCategory.class));
                 break;
             case R.id.btnFlashCards:
-
-                tts.speak("Please connect to the internet or turn on your mobile data, for me to translate your voice more accurate. Thank you!",TextToSpeech.QUEUE_FLUSH,null);
+                ctr++;
+                tts.speak("Please connect to the internet or turn on your mobile data, for me to translate your voice more accurate, Thank you!",TextToSpeech.QUEUE_FLUSH,null);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -165,4 +166,6 @@ TextToSpeech tts;
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+     
 }

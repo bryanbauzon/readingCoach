@@ -166,7 +166,7 @@ public class TerminologiesFragment extends Fragment {
         inflater.inflate(R.menu.search, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
-
+        //searchItem.
         if (searchItem != null) {
             searchView = (SearchView) searchItem.getActionView();
         }

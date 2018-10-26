@@ -3,6 +3,7 @@ package sebastian.devmonkey.capstoneproject.activity.Poem;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
@@ -23,7 +24,7 @@ public class PoemCategory extends AppCompatActivity {
 
     ListView listView;
     ArrayAdapter<String> listviewAdapter;
-
+TextToSpeech textToSpeech;
     private SearchView searchView = null;
     private SearchView.OnQueryTextListener queryTextListener;
 
@@ -119,5 +120,14 @@ public class PoemCategory extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
 
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if(textToSpeech != null){
+            textToSpeech.stop();
+            textToSpeech.shutdown();
+        }
     }
 }
